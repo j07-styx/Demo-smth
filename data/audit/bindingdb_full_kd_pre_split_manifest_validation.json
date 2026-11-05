@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "PRE_SPLIT TECHNICAL CANDIDATE MANIFESTS ONLY; no scientific cohort or trained model",
+  "tasks_validated": 15145,
+  "eligible_episode_tasks": 1146,
+  "compound_identity_groupings": 78493,
+  "invariants": [
+    "unique task and compound identities",
+    "median replicate metadata nonnegative",
+    "10 queries and >=5 supports disjoint",
+    "deterministic label-independent SHA order",
+    "K prefixes nested",
+    "episode compound universe matches task",
+    "no train-test split is committed"
+  ]
+}

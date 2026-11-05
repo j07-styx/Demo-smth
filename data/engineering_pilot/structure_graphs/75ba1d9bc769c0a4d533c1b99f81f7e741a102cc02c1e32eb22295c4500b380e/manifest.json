@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "ADCK4",
+  "pilot_split": "val",
+  "sequence_sha256": "75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e",
+  "uniprot_accession": "Q96D53",
+  "alphafold_model": "AF-Q96D53-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 544,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 544,
+  "reference_length": 544,
+  "complete_residue_count": 544,
+  "backbone_coverage": 1.0,
+  "graph_edges": 15428,
+  "pdb_sha256": "d83e4ad583cad73f65b4d3902a984dd518fc46d7ac778f5fae0a398211fc11f9",
+  "pae_sha256": "3265df3394a82478fd2b61d7bdead50a9ed03a86c150e6bac72974451cbf9363",
+  "graph_sha256": "5256ee6f9f03b0aa5f56c6476515db30002a0c0fb99078a5d85c3c11160c2633",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

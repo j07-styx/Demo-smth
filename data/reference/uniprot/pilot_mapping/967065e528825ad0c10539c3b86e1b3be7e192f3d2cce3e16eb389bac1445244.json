@@ -1,0 +1,19 @@
+{
+  "source_sha256": "967065e528825ad0c10539c3b86e1b3be7e192f3d2cce3e16eb389bac1445244",
+  "pilot_split": "train",
+  "source_name": "MYO3A",
+  "searched_gene": "MYO3A",
+  "query_length": 1616,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q8NEV4",
+      "start0": 0,
+      "end0": 1616,
+      "reference_length": 1616,
+      "reference_sha256": "967065e528825ad0c10539c3b86e1b3be7e192f3d2cce3e16eb389bac1445244",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

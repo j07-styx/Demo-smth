@@ -1,0 +1,27 @@
+{
+  "source_sha256": "de9ec681ea51b9c4fc73401fedf2e829c2e2202c2903c4de357ed45eb5f57aef",
+  "pilot_split": "train",
+  "source_name": "MEK6",
+  "searched_gene": "MAP2K6",
+  "query_length": 334,
+  "candidate_reference_count": 2,
+  "reference_matches": [
+    {
+      "accession": "P52564",
+      "start0": 0,
+      "end0": 334,
+      "reference_length": 334,
+      "reference_sha256": "de9ec681ea51b9c4fc73401fedf2e829c2e2202c2903c4de357ed45eb5f57aef",
+      "is_reviewed": true
+    },
+    {
+      "accession": "A8K3Y2",
+      "start0": 0,
+      "end0": 334,
+      "reference_length": 334,
+      "reference_sha256": "de9ec681ea51b9c4fc73401fedf2e829c2e2202c2903c4de357ed45eb5f57aef",
+      "is_reviewed": false
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

@@ -1,0 +1,19 @@
+{
+  "source_sha256": "744d5ccf2c2f2e4cb990e2fcf1f89ac3f7654a740f31c0b4bf39c7fef8d2bfc5",
+  "pilot_split": "train",
+  "source_name": "MUSK",
+  "searched_gene": "MUSK",
+  "query_length": 869,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "O15146",
+      "start0": 0,
+      "end0": 869,
+      "reference_length": 869,
+      "reference_sha256": "744d5ccf2c2f2e4cb990e2fcf1f89ac3f7654a740f31c0b4bf39c7fef8d2bfc5",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

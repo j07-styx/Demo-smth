@@ -1,0 +1,25 @@
+{
+  "status": "TECHNICAL_ONLY_QUARANTINED_NOT_EXPERIMENTALLY_VERIFIED",
+  "input_source": "BindingDB full 202611 and MMseqs2 preliminary components",
+  "counts": {
+    "source_candidates": 80139,
+    "records_after_technical_checks": 80034,
+    "invalid_rdkit_molecule": 93,
+    "source_sequence_hash_mismatch": 10,
+    "nonfinite_or_extreme_pkd": 2,
+    "technical_tasks": 15145,
+    "tasks_ge15": 1146,
+    "eligible_tasks_with_discordant_replicates": 95,
+    "eligible_tasks_missing_ph": 1082,
+    "eligible_tasks_missing_temp": 1107,
+    "tasks_ge30": 377,
+    "tasks_with_fewer_than_10_distinct_k5_draws": 47,
+    "eligible_tasks_with_multiple_target_names": 2
+  },
+  "component_threshold": ">=30% identity over >=80% shorter length; MMseqs2 local search",
+  "episode_policy": "10 query compounds by task+compound hash; 10 predetermined nested support draws per task by compound hash, disjoint under canonical isomeric SMILES; no split assigned",
+  "task_manifest": "bindingdb_full_kd_candidate_tasks_PRE_SPLIT.jsonl",
+  "episode_manifest": "bindingdb_full_kd_candidate_episodes_PRE_SPLIT.jsonl",
+  "compound_medians": "bindingdb_full_kd_compound_median_candidates.jsonl",
+  "warning": "Do not train/validate or claim assay provenance from these files until construct/assay QC and group splits are locked. Source conditions and chemical standardization can alter eligibility."
+}

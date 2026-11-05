@@ -1,0 +1,73 @@
+{
+  "scope": "Provenance fields for exact-looking-Kd candidate reactant IDs, full November 2026 BindingDB export",
+  "status": "SOURCE PROVENANCE EXTRACTED; scientifically uncurated",
+  "counts": {
+    "source_rows": 3243660,
+    "missing_ph": 76467,
+    "missing_temp": 77999,
+    "matched_candidate_rows": 80139,
+    "missing_target_structure_id": 10591,
+    "missing_article_doi": 35615,
+    "sequence_hash_mismatch": 10,
+    "candidate_ids_missing_from_export": 0
+  },
+  "top_source_categories": [
+    [
+      "ChEMBL",
+      53829
+    ],
+    [
+      "US Patent",
+      20643
+    ],
+    [
+      "PubChem",
+      2697
+    ],
+    [
+      "Curated from the literature by BindingDB",
+      2430
+    ],
+    [
+      "D3R",
+      391
+    ],
+    [
+      "CSAR",
+      94
+    ],
+    [
+      "WIPO",
+      55
+    ]
+  ],
+  "raw_source_file_sha256": "470a3c2e4aebe3c493de3e9e46e739592eb8e29b3adafb5189c875442268a0b2",
+  "fields_preserved": [
+    "BindingDB Reactant_set_id",
+    "Ligand SMILES",
+    "BindingDB MonomerID",
+    "Target Name",
+    "Target Source Organism According to Curator or DataSource",
+    "Number of Protein Chains in Target (>1 implies a multichain complex)",
+    "BindingDB Target Chain Sequence 1",
+    "UniProt (SwissProt) Primary ID of Target Chain 1",
+    "UniProt (TrEMBL) Primary ID of Target Chain 1",
+    "PDB ID(s) of Target Chain 1",
+    "PDB ID(s) for Ligand-Target Complex",
+    "Kd (nM)",
+    "Ki (nM)",
+    "IC50 (nM)",
+    "EC50 (nM)",
+    "pH",
+    "Temp (C)",
+    "Curation/DataSource",
+    "Article DOI",
+    "BindingDB Entry DOI",
+    "PMID",
+    "PubChem AID",
+    "Patent Number",
+    "Date of publication",
+    "Date in BindingDB"
+  ],
+  "note": "Target sequence is represented by exact hash + length; full source sequence is retained in original ZIP and candidate JSONL. Physical constructs can differ despite sequence identity."
+}

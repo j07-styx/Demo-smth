@@ -1,0 +1,318 @@
+{
+  "status": "LABEL_BLIND_AUTOMATED_REVIEW_TRIAGE_NOT_ASSAY_APPROVAL",
+  "tier_task_counts": {
+    "not_K5_eligible": 13999,
+    "requires_priority_review": 105,
+    "all_K5_tasks": 1146,
+    "missing_conditions_review": 1022,
+    "no_hard_flag_K5_tasks": 1041,
+    "all_K20_tasks": 377,
+    "no_hard_flag_K20_tasks": 299,
+    "no_automated_flags": 19,
+    "no_flag_K5_tasks": 19
+  },
+  "per_flag_task_counts": {
+    "ph_not_reported": 14652,
+    "temperature_not_reported": 14837,
+    "replicates_disagree_over_0_1_pKd": 170,
+    "within_assay_ph_variation": 60,
+    "some_multicomponent_smiles": 15,
+    "multiple_target_name_annotations": 9,
+    "within_assay_temp_variation": 5,
+    "multiple_or_missing_uniprot_ids": 1
+  },
+  "unique_protein_components_by_tier": {
+    "all_K5": 168,
+    "no_hard_flag_K5": 158,
+    "all_K20": 81,
+    "no_hard_flag_K20": 72,
+    "no_flag_K5": 6
+  },
+  "review_examples": {
+    "not_K5_eligible": [
+      {
+        "task_id": "a25bd3f8cf7b596bc9d3f33ab6d766e3b6ff8f35fda48ccf043d9390cbfa6aa5",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "3c73da4cdc41617d09889daa35f84f9e3b4f912a5b5e1100511bcb521788b553",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "4ab8690e9ab513569ccaf790bc46ee4ecb78c05263e4ded4ec509c88e576a6c9",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "edca614668ef6739bbb943f704f827cb145df5d10f0b202e396fd2dcad03b115",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "65dc534cc61a50f7b2783bdc89aec4d112932f4484f5cacdcc209ad8f7a147f6",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "1ef302c896cd2aaf10a67ed3c31690cdd454cade11741b8cbec37aae1173c49d",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "5b62b76fd84fe61eba73e03ad2b61a4174c776b38cbcca4c828b62e267598003",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "2da12137182698118b2b7a47c4e4ff83131569bbdf7c8e3353a804f20a749418",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "f72d5da3e86aa02f93faecdc967ddc2afaedbac0fd4e30de1f62703f8417be85",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "5cf567031e85a69a7853dca3dc31dc7290a07fe1245ed644292fde6f9ee81ef3",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      }
+    ],
+    "requires_priority_review": [
+      {
+        "task_id": "1f85a4974e075c4e07def780433bdd1a135154b028df9a569d2326bb0e0f60aa",
+        "flags": [
+          "replicates_disagree_over_0_1_pKd",
+          "within_assay_ph_variation"
+        ]
+      },
+      {
+        "task_id": "42309928886e276b9989fc095a85e3087e331a209846c0be8cba1472b01b24d2",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "af1714de042b2da7bea0479477294ab5035e950fdc1f957cea8d0eda4aea8469",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "99b15104a5b3ba2b6cd9799da75732b5ae84c2e47f1be55a776fde0dd076241a",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "25ab5911b906d0de49631f0b35a6751d3580f379946f01563560dbbf6e8ddbc1",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "3300f4675b2a23b2f4126c7f0b4ec211c92d2ecf52fddb5a1547497a46069e5e",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "5313f0ecd575b2be6b8fd6d04603b3071e442cef725bad4af29df2bfe0df4bce",
+        "flags": [
+          "multiple_target_name_annotations",
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "36d3464a68ea0bfad74f8004bc2bbdfa22a16822226485986dc5fa22500388c9",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "034754fc9adc44ae2486b02fdb57638e9d1c3a0e310ed6ea66cc81bea6846822",
+        "flags": [
+          "replicates_disagree_over_0_1_pKd",
+          "within_assay_ph_variation"
+        ]
+      },
+      {
+        "task_id": "3e05431d928ba853e1ba811f618dd5c50c9f6b482e6f2aa08bbc933fc8612394",
+        "flags": [
+          "ph_not_reported",
+          "replicates_disagree_over_0_1_pKd",
+          "temperature_not_reported"
+        ]
+      }
+    ],
+    "missing_conditions_review": [
+      {
+        "task_id": "ba8117e41bb7c3ce236b05f5442a53d7fb9eff6370207690bf9f1c3103eb1ecf",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "6dac0205d6bb9bce773baf0146823f36e0b28926c23e1112a3291ec765f96d9b",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "c05f632bef3c441488dcf6ece879a463f621675662b29e78053bdafc70eb1a82",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "178f973f21ee9df7624e347db3027c51db1648cb2e333c796612596d76defe52",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "9c0bad84a54c231901c058dd4e0e1055a8ec3316f546d8c6884a77ad54b82e88",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "9eadf3c7d51e6f2441127707e9553b94f6d5ea13284c11bd24449b35f5f98ecc",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "fd48aa6ce095e709d6e4b55c33486b81b48183226203b42764f2e6ffc7c942cf",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "98c6e262c0e3d2838a1aed75f7ab351f0a33311aef1e8ac712f5623d4fba66d7",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "604c4e560bcb7c5af661342ddd9394c5d72bb5b827c901486abfe3443f0f07be",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      },
+      {
+        "task_id": "bd63cae5ee8e3a31b3e37cbd62ccf592ebbdbaacc2ce2c4b761a547186ee3720",
+        "flags": [
+          "ph_not_reported",
+          "temperature_not_reported"
+        ]
+      }
+    ],
+    "no_automated_flags": [
+      {
+        "task_id": "21858d3e6485a3382362b9530e476ca0deb2777bdfac5ecee62f809c3cca7fcb",
+        "flags": []
+      },
+      {
+        "task_id": "11efe135bd6106e470f9405d3743b964a0579c91d4590df4cbbf06a8004ebb37",
+        "flags": []
+      },
+      {
+        "task_id": "cc3bada685a90e9f0d488f5aa368da4914fce34a526e6a710b2946f2482dc1a0",
+        "flags": []
+      },
+      {
+        "task_id": "bb390676f23b2f075fed13bd6a2db016ac85d72b807c6410e55faa46991e6219",
+        "flags": []
+      },
+      {
+        "task_id": "1d4ed30e1e7370873ab31b75e056cdd687fc255e6909c43776ed1c5d6de1a028",
+        "flags": []
+      },
+      {
+        "task_id": "5b70e64f6d795de2c73068b75e5c558421877ccfa6e5b6fe0c62aade563044a4",
+        "flags": []
+      },
+      {
+        "task_id": "63329ea688eceb8df65397b783246a086223ded8a3883c4ff36bb80f4a74180f",
+        "flags": []
+      },
+      {
+        "task_id": "c3c8418c1d9961059932e313ba8b55900221b2dccd91aaf9ea4d14d02aeef3a2",
+        "flags": []
+      },
+      {
+        "task_id": "80546484d5b6a6edfb1fd6c84742105a3feb46e36ec88cb57e376408bf59c565",
+        "flags": []
+      },
+      {
+        "task_id": "05fe57397fe8317d6bce1d227d23c830cce7c130f66378f8de7a47afefcabd59",
+        "flags": []
+      }
+    ]
+  },
+  "rules": {
+    "hard_review_flags": [
+      "assay_text_unavailable",
+      "multiple_or_missing_uniprot_ids",
+      "multiple_target_name_annotations",
+      "replicates_disagree_over_0_1_pKd",
+      "some_multicomponent_smiles",
+      "within_assay_ph_variation",
+      "within_assay_temp_variation"
+    ],
+    "soft_missing_metadata_flags": [
+      "ph_not_reported",
+      "temperature_not_reported"
+    ],
+    "no_hard_flag": "not evidence that any assay is truly comparable",
+    "missing_conditions": "unknown pH or temperature is not proof of incompatible measurements"
+  },
+  "warning": "No target or assay certified. Do not train or split on triage-only output."
+}

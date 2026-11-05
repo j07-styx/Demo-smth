@@ -1,0 +1,24 @@
+{
+  "source": "Full November 2026 BindingDB Kd candidates and BindingDB_Assays_202611_tsv.zip",
+  "status": "PRELIMINARY; text pattern matches do not prove assay compatibility",
+  "counts": {
+    "candidate_records": 80139,
+    "assay_metadata_rows": 224453,
+    "task_total": 15179,
+    "assay_match_tasks": 15179,
+    "assay_match_records": 80139,
+    "assay_named_tasks": 15179,
+    "assay_described_tasks": 15179,
+    "signal_kd_tasks": 11254,
+    "signal_biochemical_tasks": 3715,
+    "signal_ph_tasks": 824,
+    "signal_kinetics_tasks": 74,
+    "signal_cellular_tasks": 66,
+    "signal_temperature_tasks": 450,
+    "signal_ki_tasks": 52,
+    "signal_ic50_tasks": 76
+  },
+  "assay_keys_found": 14553,
+  "assay_keys_sought": 14553,
+  "warning": "Assay identity from ENTRYID_ASSAYID is a metadata join, not sufficient to establish comparable experimental measurements. Missing descriptions and mixed assay modalities require scientific review."
+}

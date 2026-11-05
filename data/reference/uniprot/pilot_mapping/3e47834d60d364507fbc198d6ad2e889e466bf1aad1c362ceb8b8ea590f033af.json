@@ -1,0 +1,19 @@
+{
+  "source_sha256": "3e47834d60d364507fbc198d6ad2e889e466bf1aad1c362ceb8b8ea590f033af",
+  "pilot_split": "train",
+  "source_name": "ARK5",
+  "searched_gene": "NUAK1",
+  "query_length": 661,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "O60285",
+      "start0": 0,
+      "end0": 661,
+      "reference_length": 661,
+      "reference_sha256": "3e47834d60d364507fbc198d6ad2e889e466bf1aad1c362ceb8b8ea590f033af",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

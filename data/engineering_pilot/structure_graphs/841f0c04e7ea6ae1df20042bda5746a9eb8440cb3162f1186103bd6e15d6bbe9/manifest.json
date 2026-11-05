@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "OSR1",
+  "pilot_split": "val",
+  "sequence_sha256": "841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9",
+  "uniprot_accession": "O95747",
+  "alphafold_model": "AF-O95747-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 527,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 527,
+  "reference_length": 527,
+  "complete_residue_count": 527,
+  "backbone_coverage": 1.0,
+  "graph_edges": 14592,
+  "pdb_sha256": "8ac7be447f7ca4eebaa2a9d5904a8ab31ea431429b14a7bab66ae5ae5d8428dd",
+  "pae_sha256": "890be5410a23e96f5565d8dbea36d11a9c931cb86ebe481bf3d0dbd23c0ffb68",
+  "graph_sha256": "93614ba344499edead4b90f0bf39fb6b3680a98d1b1b27a991d6d026a7892cf2",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

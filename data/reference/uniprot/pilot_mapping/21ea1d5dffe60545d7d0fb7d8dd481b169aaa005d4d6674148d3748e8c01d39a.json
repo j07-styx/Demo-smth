@@ -1,0 +1,19 @@
+{
+  "source_sha256": "21ea1d5dffe60545d7d0fb7d8dd481b169aaa005d4d6674148d3748e8c01d39a",
+  "pilot_split": "val",
+  "source_name": "TEC",
+  "searched_gene": "TEC",
+  "query_length": 631,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P42680",
+      "start0": 0,
+      "end0": 631,
+      "reference_length": 631,
+      "reference_sha256": "21ea1d5dffe60545d7d0fb7d8dd481b169aaa005d4d6674148d3748e8c01d39a",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

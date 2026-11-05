@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "CDK8",
+  "pilot_split": "train",
+  "sequence_sha256": "94598ef6b31dd758a4cd8c66de1f93dc6081f3eca13ae4ee8a1c6bbd21e668ef",
+  "uniprot_accession": "P49336",
+  "alphafold_model": "AF-P49336-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 464,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 464,
+  "reference_length": 464,
+  "complete_residue_count": 464,
+  "backbone_coverage": 1.0,
+  "graph_edges": 12146,
+  "pdb_sha256": "6635ee42201d3da43da536adb5a5c3a04f974ac90a69286d9c86e77919d842ee",
+  "pae_sha256": "6255a1b3486be36bea4fb4f8e4e9a866408541e37f094d230f8120da546b07c9",
+  "graph_sha256": "186d0b223c776130b142b19adb8ec7f19aed528e782d6190ea018723a3658ffe",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "esm2_t33_650M_UR50D",
+  "layer": 33,
+  "checkpoint_sha256": "ea9d0522b335a8778dea6535a65301f10208dece28cd5865482b0b1fc446168c",
+  "esm_version": "2.0.0",
+  "dtype": "float16",
+  "window": 1000,
+  "overlap": 128
+}

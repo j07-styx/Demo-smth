@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "CLK1",
+  "pilot_split": "train",
+  "sequence_sha256": "f3b618f7f525879ec1eb5098b27675243997eeea419eb453488cfefab098226f",
+  "uniprot_accession": "P49759",
+  "alphafold_model": "AF-P49759-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 484,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 484,
+  "reference_length": 484,
+  "complete_residue_count": 484,
+  "backbone_coverage": 1.0,
+  "graph_edges": 12969,
+  "pdb_sha256": "8e2a50f74c2e8032533d6e51ede8d6b8c2bb9bfb53e3d51ef4ab1f8401984c9d",
+  "pae_sha256": "a4b8080591f51bd0013226981cb0b37aa7e50c77749215326dc0eee3744f2c71",
+  "graph_sha256": "2957eb92d427dd81b6dee33529997987d899b4ee02d4d3590463392e8a581695",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

@@ -1,0 +1,19 @@
+{
+  "source_sha256": "8c250a7cb49dc01160749bf1243fd2ac9f511dce4d2d365659a10f56fb09442d",
+  "pilot_split": "val",
+  "source_name": "ICK",
+  "searched_gene": "CILK1",
+  "query_length": 632,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q9UPZ9",
+      "start0": 0,
+      "end0": 632,
+      "reference_length": 632,
+      "reference_sha256": "8c250a7cb49dc01160749bf1243fd2ac9f511dce4d2d365659a10f56fb09442d",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

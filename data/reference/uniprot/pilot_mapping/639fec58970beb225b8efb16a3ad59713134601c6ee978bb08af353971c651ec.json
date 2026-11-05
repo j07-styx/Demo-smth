@@ -1,0 +1,27 @@
+{
+  "source_sha256": "639fec58970beb225b8efb16a3ad59713134601c6ee978bb08af353971c651ec",
+  "pilot_split": "train",
+  "source_name": "TGFBR1",
+  "searched_gene": "TGFBR1",
+  "query_length": 503,
+  "candidate_reference_count": 2,
+  "reference_matches": [
+    {
+      "accession": "P36897",
+      "start0": 0,
+      "end0": 503,
+      "reference_length": 503,
+      "reference_sha256": "639fec58970beb225b8efb16a3ad59713134601c6ee978bb08af353971c651ec",
+      "is_reviewed": true
+    },
+    {
+      "accession": "Q5T7S2",
+      "start0": 0,
+      "end0": 503,
+      "reference_length": 503,
+      "reference_sha256": "639fec58970beb225b8efb16a3ad59713134601c6ee978bb08af353971c651ec",
+      "is_reviewed": false
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

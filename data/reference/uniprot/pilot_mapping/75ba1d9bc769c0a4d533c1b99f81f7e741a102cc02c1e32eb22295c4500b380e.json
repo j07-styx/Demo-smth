@@ -1,0 +1,19 @@
+{
+  "source_sha256": "75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e",
+  "pilot_split": "val",
+  "source_name": "ADCK4",
+  "searched_gene": "COQ8B",
+  "query_length": 544,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q96D53",
+      "start0": 0,
+      "end0": 544,
+      "reference_length": 544,
+      "reference_sha256": "75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

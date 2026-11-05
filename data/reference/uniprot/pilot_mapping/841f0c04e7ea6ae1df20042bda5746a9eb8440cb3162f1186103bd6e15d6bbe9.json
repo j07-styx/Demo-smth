@@ -1,0 +1,19 @@
+{
+  "source_sha256": "841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9",
+  "pilot_split": "val",
+  "source_name": "OSR1",
+  "searched_gene": "OXSR1",
+  "query_length": 527,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "O95747",
+      "start0": 0,
+      "end0": 527,
+      "reference_length": 527,
+      "reference_sha256": "841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

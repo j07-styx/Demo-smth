@@ -1,0 +1,19 @@
+{
+  "source_sha256": "7ab5b525fea8768fc737859eeebcf6ade0c08d9d38caea0e34d6faa992152924",
+  "pilot_split": "train",
+  "source_name": "WEE1",
+  "searched_gene": "WEE1",
+  "query_length": 646,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q86V29",
+      "start0": 0,
+      "end0": 646,
+      "reference_length": 646,
+      "reference_sha256": "7ab5b525fea8768fc737859eeebcf6ade0c08d9d38caea0e34d6faa992152924",
+      "is_reviewed": false
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

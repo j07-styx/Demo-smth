@@ -1,0 +1,59 @@
+{
+  "scope": "BindingDB Articles subset; not the full 202611 export",
+  "source_rows": 2430,
+  "rdkit_invalid_smiles_rows": 29,
+  "canonicalization_changes": 1637,
+  "canonical_policy": "RDKit canonical isomeric SMILES without parent/salt normalization; preliminary stereochemistry-preserving string identity",
+  "candidate_groups_total": 529,
+  "candidate_groups_ge15": 29,
+  "candidate_groups_ge30": 8,
+  "protein_screen_ge15": {
+    "eligible_unique_sequences": 28,
+    "connected_components": 24,
+    "similarity_edges": 7,
+    "component_sizes": [
+      4,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "alignment_policy": "Biopython local; match=2 mismatch=-1 open=-10 extend=-0.5; >=30% identity over aligned positions; aligned coverage >=80% shorter. PRELIMINARY only, domain homology unverified."
+  },
+  "protein_screen_ge30": {
+    "eligible_unique_sequences": 7,
+    "connected_components": 4,
+    "similarity_edges": 6,
+    "component_sizes": [
+      4,
+      1,
+      1,
+      1
+    ],
+    "alignment_policy": "Biopython local; match=2 mismatch=-1 open=-10 extend=-0.5; >=30% identity over aligned positions; aligned coverage >=80% shorter. PRELIMINARY only, domain homology unverified."
+  },
+  "warnings": [
+    "No authoritative target construct identity, assay condition equivalence or exact Kd semantic review yet",
+    "Protein clustering only on preliminary eligible subset can undercount edges through excluded sequences",
+    "No chemical scaffold / assay / train-validation-test manifests; cannot claim split feasibility"
+  ]
+}

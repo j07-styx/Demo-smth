@@ -1,0 +1,157 @@
+{
+  "scope": "BindingDB Articles subset only; NOT full BindingDB",
+  "status": "PRELIMINARY: exact lexical Kd, single chain and canonical amino acids, mapped assay keys; NO RDKit or independent construct/assay QC",
+  "input_archive_sha256": "423609987c3589ca204d59380da7087fe7c67fe0e73b411347e0698ed5fbbdc8",
+  "assay_map_sha256": "1451f19a4762871b1f5c5f95a41688295caf0460b590ebc5bf1bac2f798013c3",
+  "counts": {
+    "source_rows": 93712,
+    "kd_nonempty": 2650,
+    "kd_positive_exact_lexical": 2490,
+    "preliminary_candidate_rows": 2453,
+    "kd_qualified_bound": 160,
+    "duplicate_reactant_ids": 10,
+    "excluded_non_single_chain_or_unknown": 27,
+    "candidate_assay_linked_rows": 2430,
+    "excluded_no_assay_link": 23
+  },
+  "construct_assay_groups_preliminary": 555,
+  "unique_construct_sequences_preliminary": 442,
+  "groups_ge_15_raw_smiles": 29,
+  "groups_ge_30_raw_smiles": 8,
+  "constructs_with_ge15_group": 28,
+  "constructs_with_ge30_group": 7,
+  "duplicate_group_smiles_records": 92,
+  "duplicate_group_smiles_disagree_gt_0_1_pKd": 45,
+  "largest_group_sizes": [
+    83,
+    52,
+    50,
+    43,
+    43,
+    43,
+    43,
+    43,
+    29,
+    27,
+    25,
+    25,
+    24,
+    24,
+    24,
+    24,
+    24,
+    22,
+    21,
+    18
+  ],
+  "top_20_groups": [
+    {
+      "seq_sha256": "edbd5d8a5deb16bfd31ff3029c7897b816b752cb26cd0dcf23d089dcdd841586",
+      "assay_key": "9878_2",
+      "raw_smiles_count": 83
+    },
+    {
+      "seq_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+      "assay_key": "11791_2",
+      "raw_smiles_count": 52
+    },
+    {
+      "seq_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+      "assay_key": "11791_3",
+      "raw_smiles_count": 50
+    },
+    {
+      "seq_sha256": "5862305c8302b2d7dd9de31f34102a1220d9099d9f6f7b961610ed4337934880",
+      "assay_key": "8407_1",
+      "raw_smiles_count": 43
+    },
+    {
+      "seq_sha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "assay_key": "8407_1",
+      "raw_smiles_count": 43
+    },
+    {
+      "seq_sha256": "e4a9ea745635c950475641c84676edde20d12f8fc62fb2c5df55eabe66448254",
+      "assay_key": "8407_1",
+      "raw_smiles_count": 43
+    },
+    {
+      "seq_sha256": "d89aa1703772ab0d843c4b6d2d4fdb768a09306cfd03519f41314fa57166024c",
+      "assay_key": "8407_1",
+      "raw_smiles_count": 43
+    },
+    {
+      "seq_sha256": "9a0b636052d7bfbc9f8a5dc7fc8a2030c65e938473ac234df2c8550a0d071815",
+      "assay_key": "8407_1",
+      "raw_smiles_count": 43
+    },
+    {
+      "seq_sha256": "bcc60fee0662835b3366cde2738a40ea6a4f21bcb54e300eb4fd63a63a6cbea6",
+      "assay_key": "7255_1",
+      "raw_smiles_count": 29
+    },
+    {
+      "seq_sha256": "ce10c0afc887b600958931bcf9b50751a77681b259fb0f5d61f1717ec1e7cb8f",
+      "assay_key": "7672_1",
+      "raw_smiles_count": 27
+    },
+    {
+      "seq_sha256": "9abd88979dbbdef02b63e021dea98ae14cb976caa27c39878da46f99f3182fe5",
+      "assay_key": "2880_1",
+      "raw_smiles_count": 25
+    },
+    {
+      "seq_sha256": "09790ca752b2c4d89d139f9aed5ae97351dcf32149a9e6a065260be51c045776",
+      "assay_key": "3046_1",
+      "raw_smiles_count": 25
+    },
+    {
+      "seq_sha256": "18fcd61221ac38d04dac6ba1884d8ecd1c47c0e94922905c5b51382d95849c3a",
+      "assay_key": "2880_1",
+      "raw_smiles_count": 24
+    },
+    {
+      "seq_sha256": "fb8da08246dc330fe0eb723207d7b2cdeb217624326ca1b60f695572e8614ecb",
+      "assay_key": "2880_1",
+      "raw_smiles_count": 24
+    },
+    {
+      "seq_sha256": "351664067c22d7e6a071e811ddb3b5759e91101e0c46d4454fc61ce4bca10fa2",
+      "assay_key": "3211_1",
+      "raw_smiles_count": 24
+    },
+    {
+      "seq_sha256": "f90f3ab73b6172d8d35c2fb50ff4595200d9218735b09e4c1469b867a029b25f",
+      "assay_key": "6802_1",
+      "raw_smiles_count": 24
+    },
+    {
+      "seq_sha256": "b4dde59d09a72762757501a659d62a606d41edfe4669447bd0f8030fd7f8497e",
+      "assay_key": "7694_1",
+      "raw_smiles_count": 24
+    },
+    {
+      "seq_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+      "assay_key": "5399_2",
+      "raw_smiles_count": 22
+    },
+    {
+      "seq_sha256": "5a85ff49095e74867e71119eeb994a5c9a53f925f67bf4778daea26503a01844",
+      "assay_key": "5698_1",
+      "raw_smiles_count": 21
+    },
+    {
+      "seq_sha256": "5e1d27cf205f02790837f05655f384dec7a71dd0ea539f7a40085ec7bf2113ef",
+      "assay_key": "1671_1",
+      "raw_smiles_count": 18
+    }
+  ],
+  "limitations": [
+    "A numeric Kd field is only a lexical exact candidate: original publication assay semantics are not verified.",
+    "Raw SMILES identity is not stereochemistry-aware RDKit standardization and can overcount unique compounds.",
+    "Matching target sequence strings does not establish biological construct equivalence.",
+    "Assay linkage identifies an ENTRYID_ASSAYID identifier, not necessarily sufficient experimental-condition compatibility.",
+    "Unknown assay fields, duplicates, source overlap, pH/temperature and all required leakage-safe splits remain to be audited.",
+    "No train/test split, affinity training or performance comparison is made from this audit."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "api": "https://alphafold.ebi.ac.uk/api/prediction/P15056",
+  "entry": "AF-P15056-F1",
+  "version": 6,
+  "status": "Canonical protein-only engineering fixture, not assigned to any measured mutant/assay",
+  "structure.pdb": {
+    "url": "https://alphafold.ebi.ac.uk/files/AF-P15056-F1-model_v6.pdb",
+    "sha256": "73e7fde74dca04df65fb3370fd969cd485d83b2f9dd102975f10a87fdfa78766"
+  },
+  "pae.json": {
+    "url": "https://alphafold.ebi.ac.uk/files/AF-P15056-F1-predicted_aligned_error_v6.json",
+    "sha256": "0bac168e589769551baa11340c188dd3b10d89210b3b7434cf4248306da684d8"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_sha256": "86474905e2d1f55fde60c48c187f901d56f9e9fdd998cfbe2c648a843b6e9aab",
+  "pilot_split": "val",
+  "source_name": "NEK9",
+  "searched_gene": "NEK9",
+  "query_length": 979,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q8TD19",
+      "start0": 0,
+      "end0": 979,
+      "reference_length": 979,
+      "reference_sha256": "86474905e2d1f55fde60c48c187f901d56f9e9fdd998cfbe2c648a843b6e9aab",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

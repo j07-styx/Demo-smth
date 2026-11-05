@@ -1,0 +1,19 @@
+{
+  "source_sha256": "266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd",
+  "pilot_split": "val",
+  "source_name": "FRK",
+  "searched_gene": "FRK",
+  "query_length": 505,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P42685",
+      "start0": 0,
+      "end0": 505,
+      "reference_length": 505,
+      "reference_sha256": "266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

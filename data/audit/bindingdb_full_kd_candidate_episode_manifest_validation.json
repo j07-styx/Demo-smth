@@ -1,0 +1,22 @@
+{
+  "status": "PRE_SPLIT_MANIFEST_IDENTITY_CHECK_PASSED",
+  "counts": {
+    "compound_median_records": 78493,
+    "episodes": 1146,
+    "episodes_K20": 377,
+    "tasks": 15145,
+    "tasks_with_quality_flags": 14907
+  },
+  "checks": [
+    "unique task IDs",
+    "protein-component membership",
+    "source-independent task identity hash",
+    "unique compound IDs and canonical identities",
+    "10 deterministic disjoint query IDs",
+    "support candidates disjoint from queries",
+    "nested K prefixes",
+    "no final test split or approval status",
+    "task sizes equal generated compound records"
+  ],
+  "scope": "Technical identity checks only; assay and construct QC remain pending"
+}

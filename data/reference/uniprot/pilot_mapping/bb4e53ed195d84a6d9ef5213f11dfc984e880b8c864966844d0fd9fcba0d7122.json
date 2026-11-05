@@ -1,0 +1,19 @@
+{
+  "source_sha256": "bb4e53ed195d84a6d9ef5213f11dfc984e880b8c864966844d0fd9fcba0d7122",
+  "pilot_split": "train",
+  "source_name": "NEK11",
+  "searched_gene": "NEK11",
+  "query_length": 645,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q8NG66",
+      "start0": 0,
+      "end0": 645,
+      "reference_length": 645,
+      "reference_sha256": "bb4e53ed195d84a6d9ef5213f11dfc984e880b8c864966844d0fd9fcba0d7122",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

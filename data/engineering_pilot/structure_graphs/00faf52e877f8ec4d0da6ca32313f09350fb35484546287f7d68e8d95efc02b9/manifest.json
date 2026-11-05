@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "MKNK2",
+  "pilot_split": "train",
+  "sequence_sha256": "00faf52e877f8ec4d0da6ca32313f09350fb35484546287f7d68e8d95efc02b9",
+  "uniprot_accession": "Q9HBH9",
+  "alphafold_model": "AF-Q9HBH9-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 465,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 465,
+  "reference_length": 465,
+  "complete_residue_count": 465,
+  "backbone_coverage": 1.0,
+  "graph_edges": 12595,
+  "pdb_sha256": "dbbfd33fb69757c348971ccc71a93eabeb56ccee530b982cefa8b74c1412f826",
+  "pae_sha256": "af58ef8ebdea5f6665825da9c6955c4e606253a1a57b8306a0852fc4d8b37554",
+  "graph_sha256": "0b929cc8f8a80b90bf908949f7d995ef238a4f96a5b4edd9a8f6b33ae115f352",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

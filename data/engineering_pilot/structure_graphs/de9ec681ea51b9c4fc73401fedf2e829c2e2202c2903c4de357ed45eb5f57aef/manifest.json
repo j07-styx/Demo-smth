@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "MEK6",
+  "pilot_split": "train",
+  "sequence_sha256": "de9ec681ea51b9c4fc73401fedf2e829c2e2202c2903c4de357ed45eb5f57aef",
+  "uniprot_accession": "P52564",
+  "alphafold_model": "AF-P52564-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 334,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 334,
+  "reference_length": 334,
+  "complete_residue_count": 334,
+  "backbone_coverage": 1.0,
+  "graph_edges": 9628,
+  "pdb_sha256": "beb36a483588e530e18e6eef6afc07e324dabaf619c43076bf074960a552f55a",
+  "pae_sha256": "527efc4eca4ded0dd904c47b2da171ae9f79b861a7ad16f2237187d1e1053054",
+  "graph_sha256": "2d58f6b1f837955fba79daa4735b57b4283ad7a3e323410af6a70e6eaa8e3395",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

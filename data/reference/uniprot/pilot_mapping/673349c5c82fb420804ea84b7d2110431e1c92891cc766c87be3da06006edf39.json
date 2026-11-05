@@ -1,0 +1,19 @@
+{
+  "source_sha256": "673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39",
+  "pilot_split": "val",
+  "source_name": "MEK5",
+  "searched_gene": "MAP2K5",
+  "query_length": 448,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q13163",
+      "start0": 0,
+      "end0": 448,
+      "reference_length": 448,
+      "reference_sha256": "673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

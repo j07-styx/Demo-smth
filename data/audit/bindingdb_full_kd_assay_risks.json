@@ -1,0 +1,105 @@
+{
+  "scope": "Full BindingDB candidate exact-looking-Kd records and published assay text",
+  "status": "SCREENING ONLY; text is not a substitute for manual endpoint or assay verification",
+  "cohort_flags": {
+    "ge15": {
+      "tasks": 1146,
+      "unique_seq_count_not_calculated": 0,
+      "records": 43629,
+      "name_present": 1146,
+      "description_present": 1146,
+      "term_ph": 188,
+      "without_explicit_Kd_wording": 618,
+      "tasks_with_discordant_replicates": 95,
+      "term_kd": 528,
+      "term_biochemical": 375,
+      "term_ki": 5,
+      "Ki_or_IC50_wording": 18,
+      "term_kinetics": 21,
+      "term_temperature": 88,
+      "term_ic50": 14,
+      "term_cellular": 11
+    },
+    "ge30": {
+      "tasks": 377,
+      "unique_seq_count_not_calculated": 0,
+      "records": 28004,
+      "name_present": 377,
+      "description_present": 377,
+      "without_explicit_Kd_wording": 193,
+      "term_ph": 119,
+      "term_biochemical": 159,
+      "term_ki": 3,
+      "Ki_or_IC50_wording": 8,
+      "tasks_with_discordant_replicates": 73,
+      "term_kd": 184,
+      "term_kinetics": 18,
+      "term_temperature": 58,
+      "term_ic50": 5,
+      "term_cellular": 3
+    }
+  },
+  "sample_missing_Kd_wording": [
+    {
+      "assay_key": "8044_1",
+      "canonical_compounds": 16,
+      "name": "ThermoFluor&reg; Assay",
+      "description_excerpt": "ThermoFluor&reg; experiments were carried out using instruments owned by Janssen Research and Discovery, L.L.C. through its acquisition of 3-Dimensional Pharmaceuticals, Inc. 1,8-ANS (Invitrogen) was used as a fluorescent dye. Protein and compound solutions are dispensed into black 384-well polyprop"
+    },
+    {
+      "assay_key": "50034019_158",
+      "canonical_compounds": 26,
+      "name": "ChEMBL_774588 (CHEMBL1908805)",
+      "description_excerpt": "Binding constant for MKNK2 kinase domain"
+    },
+    {
+      "assay_key": "3655_1",
+      "canonical_compounds": 24,
+      "name": "Kinase Inhibitor Selectivity Profiling Assay",
+      "description_excerpt": "Kinase inhibitors are a new class of therapeutics with a propensity to inhibit multiple targets. The biological consequences of multi-kinase activity are poorly defined, and an important step toward understanding the relationship between selectivity, efficacy and safety is the exploration of how inh"
+    },
+    {
+      "assay_key": "50034019_282",
+      "canonical_compounds": 44,
+      "name": "ChEMBL_774493 (CHEMBL1908710)",
+      "description_excerpt": "Binding constant for LCK kinase domain"
+    },
+    {
+      "assay_key": "50038921_181",
+      "canonical_compounds": 22,
+      "name": "ChEMBL_586842 (CHEMBL1051337)",
+      "description_excerpt": "Binding constant for LCK kinase domain"
+    },
+    {
+      "assay_key": "4362_1",
+      "canonical_compounds": 37,
+      "name": "ENPP1 Enzyme Inhibition Assay",
+      "description_excerpt": "Table 2, Column 1: ENPP1 catalyses the hydrolysis of ATP into AMP+PPi. AMP production was monitored using Bellbrooks Transcreener AMP/GMP TR-FRET assay kit (Cat No. 3020-10K) according to the manufacturer&#39;s instructions. The assay was run with 50 mM Tris pH 7.5, 5 mM MgCl2, 150 mM NaCl, 0.005% T"
+    },
+    {
+      "assay_key": "50034019_453",
+      "canonical_compounds": 37,
+      "name": "ChEMBL_774293 (CHEMBL1908510)",
+      "description_excerpt": "Binding constant for MINK kinase domain"
+    },
+    {
+      "assay_key": "50034019_501",
+      "canonical_compounds": 21,
+      "name": "ChEMBL_774189 (CHEMBL1908406)",
+      "description_excerpt": "Binding constant for MYLK kinase domain"
+    },
+    {
+      "assay_key": "7909_1",
+      "canonical_compounds": 30,
+      "name": "SPR Competitive Binding Assay",
+      "description_excerpt": "SPR interaction analyses were performed with a Biacore 2000, using Biacore 2000 Control Software v3.2 and BIAevaluation v4.1 analysis software (Biacore) as described in Mol Cancer Ther 7:2621 (2008). For the competitive binding assays and the Ki determination, PtdIns(3,4,5)phosphate-biotin labeled l"
+    },
+    {
+      "assay_key": "10467_1",
+      "canonical_compounds": 79,
+      "name": "Surface Plasmon Resonance (SPR) Assay",
+      "description_excerpt": "Surface plasmon resonance data was collected on a Biacore T200 or 3000 system (GE Healthcare) at 25\u00b0 C. Streptavidin was immobilized on a CMS (GE Healthcare) or CMD500d sensor chip (XanTec Bioanalytics) using standard amine-coupling chemistry at 25\u00b0 C. with HBS-N (10 mM HEPES, 0.15 M NaCl, pH 7.4) a"
+    }
+  ],
+  "interpretation": "Kd is present in a numerical source column. No Kd word in a description is not proof an observation is invalid; flag for provenance review."
+}

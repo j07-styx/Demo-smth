@@ -1,0 +1,19 @@
+{
+  "source_sha256": "d6ded8ee98dcd114873cefe511c207a83d98e9a15075bc5f3ce23a0bd4dac9a1",
+  "pilot_split": "train",
+  "source_name": "PAK2",
+  "searched_gene": "PAK2",
+  "query_length": 524,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q13177",
+      "start0": 0,
+      "end0": 524,
+      "reference_length": 524,
+      "reference_sha256": "d6ded8ee98dcd114873cefe511c207a83d98e9a15075bc5f3ce23a0bd4dac9a1",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

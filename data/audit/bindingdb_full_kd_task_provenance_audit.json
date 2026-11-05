@@ -1,0 +1,67 @@
+{
+  "status": "PRELIMINARY task metadata QC, not authoritative assay compatibility",
+  "gt15": {
+    "counts": {
+      "tasks": 1146,
+      "original_records": 43629,
+      "without_article_doi": 366,
+      "patent_derived": 205,
+      "multiple_ph_values": 15,
+      "source_category_US Patent": 204,
+      "no_ph": 1082,
+      "no_temp": 1107,
+      "source_category_ChEMBL": 846,
+      "source_category_PubChem": 54,
+      "source_category_Curated from the literature by BindingDB": 29,
+      "source_category_D3R": 9,
+      "target_name_mixed": 2,
+      "source_category_CSAR": 3,
+      "source_category_WIPO": 1
+    },
+    "examples": [
+      {
+        "seqsha": "0d1190ba0075fe0f9b168b101951ae5c4f318a8d7c4600e84a60eaf61603764d",
+        "assay": "11501_2",
+        "sources": [
+          "US Patent"
+        ],
+        "target_names": [
+          "Dimer of Receptor-type tyrosine-protein kinase FLT3 [D835V]",
+          "Receptor-type tyrosine-protein kinase FLT3 [D835V]"
+        ],
+        "mismatch_ids": []
+      },
+      {
+        "seqsha": "68d60cea30219da8cef67dbcc1b81dcdebc8456663f7f54b6fb8cc6666a7b416",
+        "assay": "3301_1",
+        "sources": [
+          "PubChem"
+        ],
+        "target_names": [
+          "Receptor-type tyrosine-protein kinase FLT3",
+          "Receptor-type tyrosine-protein kinase FLT3 [K633Q]"
+        ],
+        "mismatch_ids": []
+      }
+    ]
+  },
+  "gt30": {
+    "counts": {
+      "tasks": 377,
+      "original_records": 28004,
+      "no_ph": 354,
+      "no_temp": 368,
+      "source_category_ChEMBL": 230,
+      "without_article_doi": 161,
+      "patent_derived": 136,
+      "source_category_US Patent": 135,
+      "multiple_ph_values": 6,
+      "source_category_D3R": 3,
+      "source_category_Curated from the literature by BindingDB": 8,
+      "source_category_WIPO": 1
+    },
+    "examples": []
+  },
+  "unique_source_vs_candidate_hash_mismatches": 10,
+  "meaning": "Unspecified pH or temperature does not prove noncompatibility; same assay ID alone also does not prove comparability."
+}

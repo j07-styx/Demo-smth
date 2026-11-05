@@ -1,0 +1,11 @@
+{
+  "observations": 126741,
+  "compounds": 2642,
+  "sequences": 462,
+  "invalid_rows": 0,
+  "fingerprint_shape": [
+    2642,
+    2048
+  ],
+  "status": "Staging only; no final v4 split, no exact-Kd eligibility claim, no ESM/structure preprocessing"
+}

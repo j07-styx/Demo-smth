@@ -1,0 +1,15 @@
+{
+  "source": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_All_202611_tsv.zip",
+  "bytes": 594284548,
+  "md5": "932346d34d4a3ab823b58ae6ff63b7e8",
+  "publisher_md5": null,
+  "sha256": "470a3c2e4aebe3c493de3e9e46e739592eb8e29b3adafb5189c875442268a0b2",
+  "members": [
+    {
+      "name": "BindingDB_All.tsv",
+      "uncompressed_bytes": 9004582822
+    }
+  ],
+  "status": "zip_crc_verified",
+  "note": "Publisher MD5 endpoint returned 404"
+}

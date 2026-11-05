@@ -1,0 +1,54 @@
+{
+  "scope": "PRELIMINARY BindingDB exact-looking Kd candidate episode chemical coverage",
+  "status": "DATA-ONLY ANALYSIS, no model predictions or affinity labels used",
+  "fingerprint_policy": "RDKit Morgan radius=2, 2048 bits, chirality enabled; kernel Tanimoto^4",
+  "results": {
+    "K5_all": {
+      "candidate_tasks": 1146,
+      "query_draw_pairs": 114600,
+      "unique_query_per_task": 10,
+      "draws_per_task": 10,
+      "median_nearest_support_tanimoto": 0.5645161271095276,
+      "mean_nearest_support_tanimoto": 0.5093393325805664,
+      "fraction_nearest_support_similarity_ge_0_3": 0.6837347294938918,
+      "fraction_nearest_support_similarity_ge_0_5": 0.5667539267015707,
+      "fraction_nearest_support_similarity_ge_0_7": 0.30060209424083767,
+      "fraction_same_nonempty_murcko_scaffold": 0.2977225130890052,
+      "median_kernel_weight_sum": 0.2153797298669815,
+      "fraction_kernel_weight_sum_lt_0_01": 0.3006806282722513,
+      "fraction_kernel_weight_sum_lt_0_001": 0.048961605584642236
+    },
+    "K5_ge30": {
+      "candidate_tasks": 377,
+      "query_draw_pairs": 37700,
+      "unique_query_per_task": 10,
+      "draws_per_task": 10,
+      "median_nearest_support_tanimoto": 0.607594907283783,
+      "mean_nearest_support_tanimoto": 0.5544700622558594,
+      "fraction_nearest_support_similarity_ge_0_3": 0.7854907161803714,
+      "fraction_nearest_support_similarity_ge_0_5": 0.6598143236074271,
+      "fraction_nearest_support_similarity_ge_0_7": 0.3210875331564987,
+      "fraction_same_nonempty_murcko_scaffold": 0.31031830238726793,
+      "median_kernel_weight_sum": 0.30576980113983154,
+      "fraction_kernel_weight_sum_lt_0_01": 0.20267904509283818,
+      "fraction_kernel_weight_sum_lt_0_001": 0.029946949602122016
+    },
+    "K20_ge30": {
+      "candidate_tasks": 377,
+      "query_draw_pairs": 37700,
+      "unique_query_per_task": 10,
+      "draws_per_task": 10,
+      "median_nearest_support_tanimoto": 0.7246376872062683,
+      "mean_nearest_support_tanimoto": 0.6502075791358948,
+      "fraction_nearest_support_similarity_ge_0_3": 0.8495490716180372,
+      "fraction_nearest_support_similarity_ge_0_5": 0.7658885941644562,
+      "fraction_nearest_support_similarity_ge_0_7": 0.5557824933687002,
+      "fraction_same_nonempty_murcko_scaffold": 0.466657824933687,
+      "median_kernel_weight_sum": 1.3825170993804932,
+      "fraction_kernel_weight_sum_lt_0_01": 0.06474801061007958,
+      "fraction_kernel_weight_sum_lt_0_001": 0.00023872679045092838
+    }
+  },
+  "distinct_compound_feature_cache_size": 17206,
+  "warning": "Coverage can change after assay/construct and chemical-standardization QC; high Tanimoto or scaffold identity does not guarantee similar affinity; low similarity does not prove model failure."
+}

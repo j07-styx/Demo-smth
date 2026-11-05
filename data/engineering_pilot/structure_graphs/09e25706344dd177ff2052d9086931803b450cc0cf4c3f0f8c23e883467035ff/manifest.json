@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "NEK2",
+  "pilot_split": "train",
+  "sequence_sha256": "09e25706344dd177ff2052d9086931803b450cc0cf4c3f0f8c23e883467035ff",
+  "uniprot_accession": "P51955",
+  "alphafold_model": "AF-P51955-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 445,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 445,
+  "reference_length": 445,
+  "complete_residue_count": 445,
+  "backbone_coverage": 1.0,
+  "graph_edges": 12889,
+  "pdb_sha256": "a46869a49bc6eecead15da6c45222d17b7fa09bdc80a910015edabb5fd937af6",
+  "pae_sha256": "59f03faab68d624e67f400c294d934a41bddc72e8824f30c47053099a7936e7c",
+  "graph_sha256": "8507805dbfc2d1fdec5112b7113daa1a4218f8a8c45382538593b915fbd1837e",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

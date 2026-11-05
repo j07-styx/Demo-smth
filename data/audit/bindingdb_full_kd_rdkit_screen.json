@@ -1,0 +1,162 @@
+{
+  "scope": "Full November 2026 BindingDB ZIP",
+  "status": "PRELIMINARY RDKit identity screening only; not a verified scientific cohort",
+  "records": {
+    "source_candidate_records": 80139,
+    "canonicalization_changed_string": 44459,
+    "rdkit_valid_records": 80042,
+    "invalid_rdkit_smiles": 93,
+    "pKd_outside_initial_plausibility_range": 2,
+    "unexpected_sequence_length": 2
+  },
+  "task_count": 15146,
+  "groups_ge15": 1146,
+  "groups_ge30": 377,
+  "sequence_hashes_ge15": 555,
+  "sequence_hashes_ge30": 215,
+  "within_task_duplicate_compound_groups": 1372,
+  "within_task_duplicate_compound_groups_disagreement_gt0_1_pKd": 565,
+  "top_20_tasks": [
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "12673_1",
+      "unique_canonical_compounds": 979,
+      "raw_records": 985,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 4
+    },
+    {
+      "sequence_sha256": "90075634f6e58f794e31bf42343ef834835c81871f3ddca6fb99a05750b8c507",
+      "assay_key": "10592_2",
+      "unique_canonical_compounds": 698,
+      "raw_records": 711,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 5
+    },
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "10014_1",
+      "unique_canonical_compounds": 481,
+      "raw_records": 505,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 10
+    },
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "8858_1",
+      "unique_canonical_compounds": 481,
+      "raw_records": 505,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 10
+    },
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "8989_1",
+      "unique_canonical_compounds": 480,
+      "raw_records": 505,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 10
+    },
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "10720_1",
+      "unique_canonical_compounds": 474,
+      "raw_records": 489,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 3
+    },
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "9108_1",
+      "unique_canonical_compounds": 474,
+      "raw_records": 489,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 4
+    },
+    {
+      "sequence_sha256": "8bc8432fcc649b965ed9bfaef63c595d023537a985c3b242768bac1f1bf32fb1",
+      "assay_key": "10766_1",
+      "unique_canonical_compounds": 423,
+      "raw_records": 424,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 1
+    },
+    {
+      "sequence_sha256": "262c7bcde1c365985448d0e69a77135df1680783066e7f72dfb907bead316982",
+      "assay_key": "9827_1",
+      "unique_canonical_compounds": 409,
+      "raw_records": 422,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 7
+    },
+    {
+      "sequence_sha256": "d0ba9f9f7c16120c11d2b27069e9f2975301cda3192eb31cabc0612873e44fb7",
+      "assay_key": "12575_2",
+      "unique_canonical_compounds": 366,
+      "raw_records": 385,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 15
+    },
+    {
+      "sequence_sha256": "f3dc4d33671931ee13dc20fdb332ac32302dc4385d5dfd464acf8f9f8a0add76",
+      "assay_key": "12575_2",
+      "unique_canonical_compounds": 366,
+      "raw_records": 385,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 14
+    },
+    {
+      "sequence_sha256": "9c418558debe0111e149ea23391b9add685b7a614ff1bcb195a5ebb38cde9d7e",
+      "assay_key": "10990_1",
+      "unique_canonical_compounds": 360,
+      "raw_records": 372,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 7
+    },
+    {
+      "sequence_sha256": "262c7bcde1c365985448d0e69a77135df1680783066e7f72dfb907bead316982",
+      "assay_key": "1760_1",
+      "unique_canonical_compounds": 358,
+      "raw_records": 380,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 12
+    },
+    {
+      "sequence_sha256": "bcb49e7e1db8d95c084172bca13d3b727991096f26dafdcb0033251b4542027a",
+      "assay_key": "11937_1",
+      "unique_canonical_compounds": 353,
+      "raw_records": 359,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 1
+    },
+    {
+      "sequence_sha256": "9c4089da85ef3c06dde2c14def7afc4a2e1452947ca9abf34025f90a101db770",
+      "assay_key": "11937_1",
+      "unique_canonical_compounds": 347,
+      "raw_records": 353,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 1
+    },
+    {
+      "sequence_sha256": "defa1995fbabefcd7f4bf6dab888d02769c2ab647bb8d52c3e2e827bd3630cfe",
+      "assay_key": "11937_1",
+      "unique_canonical_compounds": 346,
+      "raw_records": 351,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 0
+    },
+    {
+      "sequence_sha256": "c81b4e9e806e0ace9f779e65477e6c988dea6cad5eecfbcb35f2364c5fc884dd",
+      "assay_key": "11937_1",
+      "unique_canonical_compounds": 310,
+      "raw_records": 316,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 2
+    },
+    {
+      "sequence_sha256": "ef0ddbb0badae4eac53608fa57cf54c55cb837d4929048fa6a2339bb30ae8f03",
+      "assay_key": "11937_1",
+      "unique_canonical_compounds": 306,
+      "raw_records": 311,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 2
+    },
+    {
+      "sequence_sha256": "632908f5de50fb6f1a7024c9374f1584595fb92b7f80c35435714f5aa56e3a44",
+      "assay_key": "5819_3",
+      "unique_canonical_compounds": 261,
+      "raw_records": 262,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 1
+    },
+    {
+      "sequence_sha256": "fc502b7363283bca3ea0e276ed1d65d0ae8d5064519a226a06f9c77059235b6f",
+      "assay_key": "11514_2",
+      "unique_canonical_compounds": 223,
+      "raw_records": 226,
+      "within_group_duplicate_compounds_gt_0_1_pKd": 3
+    }
+  ],
+  "warning": "Assay ID only is insufficient to certify experimental comparability. Protein similarities and actual constructs still need validation; do not build test split from this screening alone."
+}

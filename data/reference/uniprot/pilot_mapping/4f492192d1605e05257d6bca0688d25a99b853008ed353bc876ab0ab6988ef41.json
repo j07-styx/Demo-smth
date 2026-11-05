@@ -1,0 +1,10 @@
+{
+  "source_sha256": "4f492192d1605e05257d6bca0688d25a99b853008ed353bc876ab0ab6988ef41",
+  "pilot_split": "train",
+  "source_name": "EPHA6",
+  "searched_gene": "EPHA6",
+  "query_length": 547,
+  "candidate_reference_count": 0,
+  "reference_matches": [],
+  "status": "NO_EXACT_CONTIGUOUS_UNIPROT_MATCH"
+}

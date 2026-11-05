@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "CSNK1G3",
+  "pilot_split": "train",
+  "sequence_sha256": "38c6292ebae67403a8860dcfb781ffcf08d903d9469d52aa8af6edcc2f00b103",
+  "uniprot_accession": "Q9Y6M4",
+  "alphafold_model": "AF-Q9Y6M4-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 447,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 447,
+  "reference_length": 447,
+  "complete_residue_count": 447,
+  "backbone_coverage": 1.0,
+  "graph_edges": 11712,
+  "pdb_sha256": "206bcef149c5dc749ac3f774a2176efa3aca34dd417c50eafce21445245d0d89",
+  "pae_sha256": "ffd68a4b125a0889dccd5166237a69962c6d5cc3b5502e3bf64103738d76e324",
+  "graph_sha256": "b76360bd1cdc1e097c7c3656b700f4f311b1b4879625162f06e337982f855919",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

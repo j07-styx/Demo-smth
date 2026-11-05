@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "ROCK2",
+  "pilot_split": "train",
+  "sequence_sha256": "023afb2666da72fc66723a1b63a46891880b8462bc17258a3b46e9b826d2b623",
+  "uniprot_accession": "O75116",
+  "alphafold_model": "AF-O75116-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 703,
+  "reference_start_1_based": 686,
+  "reference_end_1_based_inclusive": 1388,
+  "reference_length": 1388,
+  "complete_residue_count": 703,
+  "backbone_coverage": 1.0,
+  "graph_edges": 18086,
+  "pdb_sha256": "6ec5d339b72df3fb2e695b2a53991b846a98a562f79e368e092dd3e596ada3e6",
+  "pae_sha256": "e8dfd2eafb3f93018dd5288cf3c4bc3676360427ba32546985b5812e373229ff",
+  "graph_sha256": "9a48a176464f590d57d4e98d5efa9d93e5e2b9342b22b2d0ef489c61d9faf4b1",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

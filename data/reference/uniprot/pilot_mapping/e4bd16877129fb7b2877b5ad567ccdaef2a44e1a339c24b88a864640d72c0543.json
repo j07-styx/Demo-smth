@@ -1,0 +1,19 @@
+{
+  "source_sha256": "e4bd16877129fb7b2877b5ad567ccdaef2a44e1a339c24b88a864640d72c0543",
+  "pilot_split": "train",
+  "source_name": "MARK2",
+  "searched_gene": "MARK2",
+  "query_length": 788,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q7KZI7",
+      "start0": 0,
+      "end0": 788,
+      "reference_length": 788,
+      "reference_sha256": "e4bd16877129fb7b2877b5ad567ccdaef2a44e1a339c24b88a864640d72c0543",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

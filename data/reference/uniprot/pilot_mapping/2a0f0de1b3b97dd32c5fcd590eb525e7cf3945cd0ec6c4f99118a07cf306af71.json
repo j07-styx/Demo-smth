@@ -1,0 +1,19 @@
+{
+  "source_sha256": "2a0f0de1b3b97dd32c5fcd590eb525e7cf3945cd0ec6c4f99118a07cf306af71",
+  "pilot_split": "train",
+  "source_name": "RIOK2",
+  "searched_gene": "RIOK2",
+  "query_length": 552,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q9BVS4",
+      "start0": 0,
+      "end0": 552,
+      "reference_length": 552,
+      "reference_sha256": "2a0f0de1b3b97dd32c5fcd590eb525e7cf3945cd0ec6c4f99118a07cf306af71",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PRELIMINARY_SEQUENCE_CACHE_INPUT_ONLY",
+  "source_tasks_ge15": 1146,
+  "unique_protein_sequences": 555,
+  "already_in_legacy_esm_sequence_set": 225,
+  "total_amino_acids": 372351,
+  "min_sequence_length": 32,
+  "max_sequence_length": 7096,
+  "note": "Source candidates have not passed all assay, protein-construct and protein-cluster QC; caching sequence features is not final cohort selection or model training."
+}

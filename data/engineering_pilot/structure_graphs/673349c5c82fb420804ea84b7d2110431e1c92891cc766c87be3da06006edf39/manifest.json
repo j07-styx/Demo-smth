@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "MEK5",
+  "pilot_split": "val",
+  "sequence_sha256": "673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39",
+  "uniprot_accession": "Q13163",
+  "alphafold_model": "AF-Q13163-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 448,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 448,
+  "reference_length": 448,
+  "complete_residue_count": 448,
+  "backbone_coverage": 1.0,
+  "graph_edges": 13295,
+  "pdb_sha256": "361afc1cf8c9bb677396f6aa5d0a162ce9941d3fa8c72ab8ed6de1d345101071",
+  "pae_sha256": "625556d901ef7c81732824519b3b68ed89e2c0ff4e582be4ac84a02a5e13cbe5",
+  "graph_sha256": "e5cc7b9a13166803a4304965324853bf63cdcd046f70568bcfe35fc9788970d3",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

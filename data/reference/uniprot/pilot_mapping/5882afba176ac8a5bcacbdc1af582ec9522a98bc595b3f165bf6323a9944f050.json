@@ -1,0 +1,19 @@
+{
+  "source_sha256": "5882afba176ac8a5bcacbdc1af582ec9522a98bc595b3f165bf6323a9944f050",
+  "pilot_split": "train",
+  "source_name": "MRCKA",
+  "searched_gene": "CDC42BPA",
+  "query_length": 1732,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q5VT25",
+      "start0": 0,
+      "end0": 1732,
+      "reference_length": 1732,
+      "reference_sha256": "5882afba176ac8a5bcacbdc1af582ec9522a98bc595b3f165bf6323a9944f050",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

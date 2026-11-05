@@ -1,0 +1,19 @@
+{
+  "source_sha256": "49fe047bcbcb31e41253f9377715ec6f0c7987bb8362e25ebcd09b4ef0afaf83",
+  "pilot_split": "train",
+  "source_name": "RSK2(KinDom.1-N-terminal)",
+  "searched_gene": "RPS6KA3",
+  "query_length": 740,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P51812",
+      "start0": 0,
+      "end0": 740,
+      "reference_length": 740,
+      "reference_sha256": "49fe047bcbcb31e41253f9377715ec6f0c7987bb8362e25ebcd09b4ef0afaf83",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

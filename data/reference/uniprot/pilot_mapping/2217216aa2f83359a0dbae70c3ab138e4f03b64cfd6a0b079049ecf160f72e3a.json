@@ -1,0 +1,19 @@
+{
+  "source_sha256": "2217216aa2f83359a0dbae70c3ab138e4f03b64cfd6a0b079049ecf160f72e3a",
+  "pilot_split": "train",
+  "source_name": "MLK2",
+  "searched_gene": "MAP3K10",
+  "query_length": 954,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q02779",
+      "start0": 0,
+      "end0": 954,
+      "reference_length": 954,
+      "reference_sha256": "2217216aa2f83359a0dbae70c3ab138e4f03b64cfd6a0b079049ecf160f72e3a",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

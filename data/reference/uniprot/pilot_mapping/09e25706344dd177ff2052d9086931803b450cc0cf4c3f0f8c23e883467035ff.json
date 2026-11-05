@@ -1,0 +1,19 @@
+{
+  "source_sha256": "09e25706344dd177ff2052d9086931803b450cc0cf4c3f0f8c23e883467035ff",
+  "pilot_split": "train",
+  "source_name": "NEK2",
+  "searched_gene": "NEK2",
+  "query_length": 445,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P51955",
+      "start0": 0,
+      "end0": 445,
+      "reference_length": 445,
+      "reference_sha256": "09e25706344dd177ff2052d9086931803b450cc0cf4c3f0f8c23e883467035ff",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

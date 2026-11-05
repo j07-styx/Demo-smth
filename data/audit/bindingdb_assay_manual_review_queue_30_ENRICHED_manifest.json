@@ -1,0 +1,18 @@
+{
+  "status": "SOURCE_REFERENCES_JOINED_REVIEW_REQUIRED",
+  "review_tasks": 30,
+  "review_components": 30,
+  "no_affinity_values_exported": true,
+  "output": "C:\\Users\\J0124\\dynacpi_v4\\data\\audit\\bindingdb_assay_manual_review_queue_30_ENRICHED.csv",
+  "required_manual_decision_fields": [
+    "construct_verified",
+    "assay_semantics_verified",
+    "records_compatible",
+    "reviewer_identity",
+    "evidence_reference",
+    "review_date",
+    "curation_decision",
+    "curation_reason"
+  ],
+  "warning": "No tasks have been approved; paper/source verification is essential."
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_Assays_202611_tsv.zip",
+  "bytes": 10125644,
+  "md5": "b667b7a54d867eaaa9e5d42de5ef7994",
+  "sha256": "13607634845bc86df61c433382075130208b3e78713799ae9f1af57b40a85fe5",
+  "members": [
+    [
+      "BindingDB_Assays.tsv",
+      47498654
+    ]
+  ],
+  "header": "ENTRYID\tASSAYID\tASSAY_NAME\tDESCRIPTION"
+}

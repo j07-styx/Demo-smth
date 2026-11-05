@@ -1,0 +1,56 @@
+{
+  "raw_sha256": "fc465b60c8631d79cde35ae308b1d1789c670b990a4ecfb0463514eaf6290475",
+  "raw_rows": 30056,
+  "unique_pair_keys": 25772,
+  "raw_unique_sequences": 379,
+  "reference_target_ids": 442,
+  "reference_sequences": 379,
+  "exact_sequence_matches": 379,
+  "repeated_keys": 1224,
+  "repeated_keys_with_distinct_labels": 546,
+  "sequence_keys_with_multiple_reference_ids": 18,
+  "reference_url": "https://raw.githubusercontent.com/hkmztrk/DeepDTA/master/data/davis/proteins.txt",
+  "reference_sha256": "187cedeee10cd3b58af915a2861a5ed0c4ff42a2d728f4dea5e0b47e3d75b291",
+  "examples": [
+    [
+      "ABL1(E255K)",
+      "ABL1(F317I)",
+      "ABL1(F317I)p",
+      "ABL1(F317L)",
+      "ABL1(F317L)p",
+      "ABL1(H396P)",
+      "ABL1(H396P)p",
+      "ABL1(M351T)",
+      "ABL1(Q252H)",
+      "ABL1(Q252H)p",
+      "ABL1(T315I)",
+      "ABL1(T315I)p",
+      "ABL1(Y253F)",
+      "ABL1",
+      "ABL1p"
+    ],
+    [
+      "BRAF",
+      "BRAF(V600E)"
+    ],
+    [
+      "CDK4-cyclinD1",
+      "CDK4-cyclinD3"
+    ],
+    [
+      "EGFR",
+      "EGFR(E746A750del)",
+      "EGFR(G719C)",
+      "EGFR(G719S)",
+      "EGFR(L747E749del)",
+      "EGFR(L747S752del)",
+      "EGFR(L747T751del)",
+      "EGFR(L858R)",
+      "EGFR(L858RT790M)",
+      "EGFR(L861Q)",
+      "EGFR(S752I759del)",
+      "EGFR(T790M)"
+    ]
+  ],
+  "interpretation": "Reference aliases identify possible distinctions. Record-level target IDs cannot be recovered uniquely from a sequence-only join."
+}

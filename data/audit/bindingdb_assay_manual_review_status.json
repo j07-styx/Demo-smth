@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "UNREVIEWED": 30
+  },
+  "approved_tasks": 0,
+  "approved_protein_components": 0,
+  "approved": [],
+  "status": "REVIEW_INCOMPLETE_NOT_TRAINING_READY",
+  "source_file": "C:\\Users\\J0124\\dynacpi_v4\\data\\audit\\bindingdb_assay_manual_review_queue_30_ENRICHED.csv",
+  "source_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
+  "scientific_cohort_approved": false,
+  "reason": "Review declarations alone cannot certify construct/assay semantics, and a cohort-wide protein-group split is not frozen."
+}

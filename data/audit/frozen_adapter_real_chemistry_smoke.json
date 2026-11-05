@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ENGINEERING_ONLY",
+  "data": "Real pre-split BindingDB SMILES and task IDs, SYNTHETIC values for ALL support labels and frozen model predictions",
+  "counts": {
+    "tasks_tested": 12,
+    "queries_tested": 120,
+    "K0_checks": 12,
+    "K5_checks": 12,
+    "missing_geometry_checks": 12,
+    "permutation_checks": 12,
+    "synthetic_query_label_invariance": 12
+  },
+  "checks": [
+    "factorial A/B/C/D identity",
+    "Tanimoto^4 kernel bounds",
+    "permutation invariance",
+    "K0 exact fallback",
+    "missing 3D differential zero",
+    "separate query-label interface",
+    "invalid geometry/cache rejection"
+  ],
+  "warning": "No experimental BindingDB labels were used for adaptation; no model accuracy comparison."
+}

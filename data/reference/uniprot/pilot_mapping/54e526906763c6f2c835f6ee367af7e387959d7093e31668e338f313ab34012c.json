@@ -1,0 +1,19 @@
+{
+  "source_sha256": "54e526906763c6f2c835f6ee367af7e387959d7093e31668e338f313ab34012c",
+  "pilot_split": "train",
+  "source_name": "VRK2",
+  "searched_gene": "VRK2",
+  "query_length": 508,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q86Y07",
+      "start0": 0,
+      "end0": 508,
+      "reference_length": 508,
+      "reference_sha256": "54e526906763c6f2c835f6ee367af7e387959d7093e31668e338f313ab34012c",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

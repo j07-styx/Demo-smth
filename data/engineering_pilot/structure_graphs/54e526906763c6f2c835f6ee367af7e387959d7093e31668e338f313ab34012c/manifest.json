@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "VRK2",
+  "pilot_split": "train",
+  "sequence_sha256": "54e526906763c6f2c835f6ee367af7e387959d7093e31668e338f313ab34012c",
+  "uniprot_accession": "Q86Y07",
+  "alphafold_model": "AF-Q86Y07-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 508,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 508,
+  "reference_length": 508,
+  "complete_residue_count": 508,
+  "backbone_coverage": 1.0,
+  "graph_edges": 13400,
+  "pdb_sha256": "14ef54178324d1bf10c2d013bf95929a8cfa7b2f89285054ff8bc97d0a06fca9",
+  "pae_sha256": "2cb84d219cef134a240618a7875ad9ba4031986fbafdfed442b5885021b2f7ec",
+  "graph_sha256": "ec5aaf1d9c298f497852029d029598edd6a91f978c86487c951bbc1fbefefb31",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

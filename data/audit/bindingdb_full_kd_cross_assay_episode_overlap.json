@@ -1,0 +1,77 @@
+{
+  "status": "PRE_SPLIT_REVIEW_ONLY",
+  "counts": {
+    "sequences_with_multiple_eligible_assays": 185,
+    "sequences_with_cross_assay_compound_overlap": 114,
+    "cross_assay_query_in_support_unique_compounds": 1933,
+    "cross_assay_query_in_query_unique_compounds": 805,
+    "candidate_eligible_assay_tasks_on_multi_assay_targets": 776,
+    "total_eligible_tasks": 1146,
+    "total_eligible_sequence_targets": 555
+  },
+  "examples": [
+    {
+      "sequence_sha256": "01b6c32eee0d173b181b1bb3926e78b1014c3c8a350003ef462b97fcad650063",
+      "assay_task_count": 5,
+      "query_to_other_support_shared_compounds": 13,
+      "query_to_other_query_shared_compounds": 7
+    },
+    {
+      "sequence_sha256": "030ef1b424381b56f9f5794a5a8f5526cf73f1a02d7d305f1c0b51d8b3c2485c",
+      "assay_task_count": 2,
+      "query_to_other_support_shared_compounds": 3,
+      "query_to_other_query_shared_compounds": 1
+    },
+    {
+      "sequence_sha256": "0451c5f5ef052711dec57df65d688e28c0027e49dc4be546d73beb880c6181ed",
+      "assay_task_count": 4,
+      "query_to_other_support_shared_compounds": 18,
+      "query_to_other_query_shared_compounds": 0
+    },
+    {
+      "sequence_sha256": "096f2100de97479508db7470b30c46357044d802fdb6d6f17741afa9c9d4cafe",
+      "assay_task_count": 5,
+      "query_to_other_support_shared_compounds": 4,
+      "query_to_other_query_shared_compounds": 2
+    },
+    {
+      "sequence_sha256": "0a1a909cf5ee3fcb36c17135913ce49913db6fb6392fe43faf9c92df9994a1b2",
+      "assay_task_count": 5,
+      "query_to_other_support_shared_compounds": 6,
+      "query_to_other_query_shared_compounds": 7
+    },
+    {
+      "sequence_sha256": "0e1b606ba4a2733bcc0bfda24d9072606dc3876638804d08520b6d5c668ea019",
+      "assay_task_count": 3,
+      "query_to_other_support_shared_compounds": 8,
+      "query_to_other_query_shared_compounds": 1
+    },
+    {
+      "sequence_sha256": "0f99982b545e61cc6fa4ca70be1e2f0f503d3e26f44fdb3067dd3c6905bb2788",
+      "assay_task_count": 3,
+      "query_to_other_support_shared_compounds": 0,
+      "query_to_other_query_shared_compounds": 1
+    },
+    {
+      "sequence_sha256": "10ec8a9e8316e42cd33c02e147ccc5d057ce4ecac76498c455a230ec4485d6be",
+      "assay_task_count": 7,
+      "query_to_other_support_shared_compounds": 27,
+      "query_to_other_query_shared_compounds": 18
+    },
+    {
+      "sequence_sha256": "11ca046dbcb9b9e5510fbbc492714788969a2a17c1ea8fe3708430455a9e85d9",
+      "assay_task_count": 2,
+      "query_to_other_support_shared_compounds": 7,
+      "query_to_other_query_shared_compounds": 2
+    },
+    {
+      "sequence_sha256": "13f7554d9b19f2ba75cc851600252cf99ccd746317c5b94db51a8c830a534c45",
+      "assay_task_count": 2,
+      "query_to_other_support_shared_compounds": 1,
+      "query_to_other_query_shared_compounds": 0
+    }
+  ],
+  "meaning": "Same protein compound appearing across two assays is not necessarily duplicate labeling; cross-assay reuse can confound few-shot evaluation or create query-label leakage if episodes are pooled without strict task boundaries.",
+  "recommended_constraint": "When constructing final evaluation support episodes, preserve explicit task/assay boundaries; never make held-out query labels available through another episode or use test-target query labels for model fitting.",
+  "scope": "Compound identities only; no affinity values used; no scientific split allocated"
+}

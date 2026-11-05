@@ -1,0 +1,67 @@
+{
+  "source_sha256": "023afb2666da72fc66723a1b63a46891880b8462bc17258a3b46e9b826d2b623",
+  "pilot_split": "train",
+  "source_name": "ROCK2",
+  "searched_gene": "ROCK2",
+  "query_length": 703,
+  "candidate_reference_count": 7,
+  "reference_matches": [
+    {
+      "accession": "O75116",
+      "start0": 685,
+      "end0": 1388,
+      "reference_length": 1388,
+      "reference_sha256": "2674aa9015e37da743be74d67bce80b3cb35df6161e9182af9b87d25cb645d52",
+      "is_reviewed": true
+    },
+    {
+      "accession": "Q14DU5",
+      "start0": 0,
+      "end0": 703,
+      "reference_length": 703,
+      "reference_sha256": "023afb2666da72fc66723a1b63a46891880b8462bc17258a3b46e9b826d2b623",
+      "is_reviewed": false
+    },
+    {
+      "accession": "E9PF63",
+      "start0": 442,
+      "end0": 1145,
+      "reference_length": 1145,
+      "reference_sha256": "146904178a491c7a8d3f15dd3540b4d5896ecbd334fcba6236b15ea435755543",
+      "is_reviewed": false
+    },
+    {
+      "accession": "A0ACP2ERW0",
+      "start0": 624,
+      "end0": 1327,
+      "reference_length": 1327,
+      "reference_sha256": "60de530e07acd5c7c69c4877314cdeace23b42359aa2cc490e087a0f33ba5319",
+      "is_reviewed": false
+    },
+    {
+      "accession": "A0ACI8UB07",
+      "start0": 682,
+      "end0": 1385,
+      "reference_length": 1385,
+      "reference_sha256": "12f6282160b7631e9ac731728ef55062f2a15e9ee43e4b57b1b940199f545123",
+      "is_reviewed": false
+    },
+    {
+      "accession": "A0A2P9DU05",
+      "start0": 685,
+      "end0": 1388,
+      "reference_length": 1388,
+      "reference_sha256": "2674aa9015e37da743be74d67bce80b3cb35df6161e9182af9b87d25cb645d52",
+      "is_reviewed": false
+    },
+    {
+      "accession": "A0ACP2J0C8",
+      "start0": 796,
+      "end0": 1499,
+      "reference_length": 1499,
+      "reference_sha256": "6c3d6f2054d0bb5c6e6b9a5985881b5bdbfbcf92f6f55b2a228f8c735b3e1766",
+      "is_reviewed": false
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

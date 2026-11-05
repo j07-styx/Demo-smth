@@ -1,0 +1,11 @@
+{
+  "status": "Engineering-only legacy DAVIS labels including floor values; identifier-disjoint, not protein-cluster-disjoint; no final test",
+  "selection": "SHA256(pilot-20261105: + sequence hash), first 24 train and next 8 validation, excluding known reference aliases and legacy test",
+  "train": 1296,
+  "val": 432,
+  "row_sha256": "27834297ebf0e67c89cbe3b5e6e694b694b0e59af28706eeab67ab9b2a1d5bc6",
+  "epochs": 3,
+  "effective_batch": 64,
+  "seed": 1105,
+  "metrics": "per-target macro RMSE and pooled RMSE; final training epoch checkpoint, identical data/order/optimizer/steps"
+}

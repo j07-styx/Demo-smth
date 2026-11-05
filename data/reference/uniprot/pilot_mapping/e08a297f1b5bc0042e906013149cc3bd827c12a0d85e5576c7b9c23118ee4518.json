@@ -1,0 +1,10 @@
+{
+  "source_sha256": "e08a297f1b5bc0042e906013149cc3bd827c12a0d85e5576c7b9c23118ee4518",
+  "pilot_split": "train",
+  "source_name": "FAK",
+  "searched_gene": "PTK2",
+  "query_length": 1074,
+  "candidate_reference_count": 0,
+  "reference_matches": [],
+  "status": "NO_EXACT_CONTIGUOUS_UNIPROT_MATCH"
+}

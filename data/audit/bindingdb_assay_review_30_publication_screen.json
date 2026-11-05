@@ -1,0 +1,897 @@
+{
+  "status": "SOURCE_METADATA_TRIAGE_ONLY_ZERO_ASSAYS_APPROVED",
+  "retrieved_at_utc": "2026-11-05T05:41:28.031305+00:00",
+  "unique_pubmed_ids_requested": 20,
+  "unique_pubmed_ids_indexed": 20,
+  "counts": {
+    "SPR_MENTION": 3,
+    "INHIBITION_ASSAY_MENTION": 3,
+    "DISSOCIATION_MENTION": 18,
+    "PATENT_ONLY": 7,
+    "tasks": 30,
+    "ITC_MENTION": 1,
+    "COMPETITION_ASSAY_MENTION": 3,
+    "FLUORESCENCE_POLARIZATION_MENTION": 3,
+    "UNKNOWN_METHOD": 8
+  },
+  "tasks": [
+    {
+      "task_id": "30b31aa54624dbb196b14f1d6082b85b36220a17eb29705befd59fdb38790b25",
+      "assay_key": "13282_1",
+      "protein_component_id": "b13035f135fd81cf7050efeebd189db3b535ce19e7efee51566f4e9e2931d717",
+      "assay_name": "Affinity (KD) and the IC50 of CC10501, CC70601, and BTB13068 Fragments",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "SPR_MENTION",
+        "INHIBITION_ASSAY_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US12427135"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "234e1a5e57a6fb6d154d03f53eefbab72dce1cf5a40436a16416a4974661721b",
+      "assay_key": "11593_1",
+      "protein_component_id": "72c6c61e116b15fe16842142a7e76887366a8f33da9a9e3811a769ff2d7134d7",
+      "assay_name": "Isothermal Titration Calorimetry (ITC)",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "ITC_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US11802110"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "69f76b68cfe450d9847cbcf66f2aacfaf9059b740d9266ab6f68052affd644a8",
+      "assay_key": "50017739_13",
+      "protein_component_id": "8323c5642e8f0c512a3cb88fea06aa798f8c7b911033757067df511e0c5ead9d",
+      "assay_name": "ChEMBL_2248299 (CHEMBL5162509)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "SPR_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "35333039"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "35333039",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "A Series of Substituted Bis-Aminotriazines Are Activators of the Natriuretic Peptide Receptor C.",
+          "journal": "J Med Chem",
+          "year": "2022",
+          "doi": "10.1021/acs.jmedchem.1c01974",
+          "authorString": "Smith RJ, Perez-Ternero C, Conole D, Martin C, Myers SH, Hobbs AJ, Selwood DL.",
+          "pmcid": "PMC9014859",
+          "metadata_url": "https://europepmc.org/article/MED/35333039"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "2a0831c6f67e9a5339c9cbb1be47f65cb290dc9f085f84ad1779edc8b322f38f",
+      "assay_key": "50034979_5",
+      "protein_component_id": "08ab69187b319cff68eba5e95e6d06f77a7a8e75e4b1a83c000f7ed2c160d37f",
+      "assay_name": "ChEBML_142806",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "COMPETITION_ASSAY_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1016/s0960-894x(98)00062-6"
+      ],
+      "bindingdb_pmids": [
+        "9871604"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "9871604",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Synthesis of a potent wide-spectrum serotonin-, norepinephrine-, dopamine-reuptake inhibitor (SNDRI) and a species-selective dopamine-reuptake inhibitor based on the gamma-amino alcohol functional group.",
+          "journal": "Bioorg Med Chem Lett",
+          "year": "1998",
+          "doi": "10.1016/s0960-894x(98)00062-6",
+          "authorString": "Carlier PR, Lo MM, Lo PC, Richelson E, Tatsumi M, Reynolds IJ, Sharma TA.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/9871604"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "0f1b899d87edcfcbc2a3545f0ab5a49494ec84e51dbf50cc4a69679caecdbe70",
+      "assay_key": "50020330_8",
+      "protein_component_id": "b16f52f0d04b72927ee4e0cbe247b9d446ac4466ec87c4bf055470e04b94b895",
+      "assay_name": "ChEMBL_2357332",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "FLUORESCENCE_POLARIZATION_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1021/acs.jmedchem.3c00434"
+      ],
+      "bindingdb_pmids": [
+        "37708384"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "37708384",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Expanding the Structural Diversity at the Phenylene Core of Ligands for the von Hippel-Lindau E3 Ubiquitin Ligase: Development of Highly Potent Hypoxia-Inducible Factor-1α Stabilizers.",
+          "journal": "J Med Chem",
+          "year": "2023",
+          "doi": "10.1021/acs.jmedchem.3c00434",
+          "authorString": "Vu LP, Diehl CJ, Casement R, Bond AG, Steinebach C, Strašek N, Bricelj A, Perdih A, Schnakenburg G, Sosič I, Ciulli A, Gütschow M.",
+          "pmcid": "PMC10544018",
+          "metadata_url": "https://europepmc.org/article/MED/37708384"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "34a74f940a1a8c7b2d8407ad92f267b5925d7bdb9c7518ba5b5beeff5b43e6eb",
+      "assay_key": "50018971_9",
+      "protein_component_id": "4b992438444e5580e88eec14328d65dc56021c00706daab77dfc20892b6dcdb6",
+      "assay_name": "ChEMBL_2296501",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "26804741"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "26804741",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Novel Strategies for the Treatment of Pseudomonas aeruginosa Infections.",
+          "journal": "J Med Chem",
+          "year": "2016",
+          "doi": "10.1021/acs.jmedchem.5b01698",
+          "authorString": "Wagner S, Sommer R, Hinsberger S, Lu C, Hartmann RW, Empting M, Titz A.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/26804741"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "fdfd7be76feacddb3c848a21ead34c992a54da9c37ab3c6f79580c38e71be729",
+      "assay_key": "50001412_1",
+      "protein_component_id": "553ddef377b84167048c087d19725632b8355f16ce8d6c8e47cdea8591dbc6cf",
+      "assay_name": "ChEMBL_1720265 (CHEMBL4135265)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [
+        "10.1016/j.ejmech.2017.09.044"
+      ],
+      "bindingdb_pmids": [
+        "29031064"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "29031064",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Fragment-based approach to identify IDO1 inhibitor building blocks.",
+          "journal": "Eur J Med Chem",
+          "year": "2017",
+          "doi": "10.1016/j.ejmech.2017.09.044",
+          "authorString": "Coletti A, Camponeschi F, Albini E, Greco FA, Maione V, Custodi C, Ianni F, Grohmann U, Orabona C, Cantini F, Macchiarulo A.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/29031064"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "0bb31340234b0730228012f8257355420644535ae54f4d8383e8df9a94491f1f",
+      "assay_key": "50034019_161",
+      "protein_component_id": "2a0f0de1b3b97dd32c5fcd590eb525e7cf3945cd0ec6c4f99118a07cf306af71",
+      "assay_name": "ChEMBL_774591 (CHEMBL1908808)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1038/nbt.1990"
+      ],
+      "bindingdb_pmids": [
+        "22037378"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "22037378",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Comprehensive analysis of kinase inhibitor selectivity.",
+          "journal": "Nat Biotechnol",
+          "year": "2011",
+          "doi": "10.1038/nbt.1990",
+          "authorString": "Davis MI, Hunt JP, Herrgard S, Ciceri P, Wodicka LM, Pallares G, Hocker M, Treiber DK, Zarrinkar PP.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/22037378"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "4034139289e8fba36f759709c6136c1abb6c94d053d55a238dd9ac625e58592a",
+      "assay_key": "50034019_522",
+      "protein_component_id": "a0818bc319497dcbb5bf8500e21505f4bb6b530a458eecdf022cf9160bbfaa4c",
+      "assay_name": "ChEMBL_774546 (CHEMBL1908763)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1038/nbt.1990"
+      ],
+      "bindingdb_pmids": [
+        "22037378"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "22037378",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Comprehensive analysis of kinase inhibitor selectivity.",
+          "journal": "Nat Biotechnol",
+          "year": "2011",
+          "doi": "10.1038/nbt.1990",
+          "authorString": "Davis MI, Hunt JP, Herrgard S, Ciceri P, Wodicka LM, Pallares G, Hocker M, Treiber DK, Zarrinkar PP.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/22037378"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "da640b691b83f87dadd00163e267c3ce78614548cc545369baf54611dcc8e2f3",
+      "assay_key": "50018296_1",
+      "protein_component_id": "13f7554d9b19f2ba75cc851600252cf99ccd746317c5b94db51a8c830a534c45",
+      "assay_name": "ChEMBL_2269055",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "SPR_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "34648286"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "34648286",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Structure-Activity Relationship of USP5 Inhibitors.",
+          "journal": "J Med Chem",
+          "year": "2021",
+          "doi": "10.1021/acs.jmedchem.1c00889",
+          "authorString": "Mann MK, Zepeda-Velázquez CA, González-Álvarez H, Dong A, Kiyota T, Aman AM, Loppnau P, Li Y, Wilson B, Arrowsmith CH, Al-Awar R, Harding RJ, Schapira M.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/34648286"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "604c4e560bcb7c5af661342ddd9394c5d72bb5b827c901486abfe3443f0f07be",
+      "assay_key": "4362_1",
+      "protein_component_id": "022c5e46aa4d58f82ea0b1dcb834398f4f1195826519611b0447b8b5e3536ef3",
+      "assay_name": "ENPP1 Enzyme Inhibition Assay",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "INHIBITION_ASSAY_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US20260001886"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "904e81d710d1d0742e6a18ae3031706c7288c97c075872302f8eab7527a565bd",
+      "assay_key": "50023141_1",
+      "protein_component_id": "14f75cca9ba701d4dc61aa5341c3241ed9bcd3f1292d6df33b41bdbb8a0350da",
+      "assay_name": "ChEMBL_2628275",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "40013713"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "40013713",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Discovery of a Novel 1,4-Benzodiazepine Derivative as a Highly Selective ANXA3 Degrader for the Treatment of Triple-Negative Breast Cancer.",
+          "journal": "J Med Chem",
+          "year": "2025",
+          "doi": "10.1021/acs.jmedchem.4c02403",
+          "authorString": "Liu K, Zhu C, Liang Y, Min D, Jin Z, Sun X.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/40013713"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "5424dcc1f75fce0341243e997a1119bcef1399a3b8c5b57b17dc6304d4bf3d5c",
+      "assay_key": "50008549_2",
+      "protein_component_id": "14dbf9627717fe4d45d5ceb37a1a4b43c26c0640762cc7dd1d277f076aa7d738",
+      "assay_name": "ChEMBL_1879639 (CHEMBL4381033)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1021/acs.jmedchem.9b01492"
+      ],
+      "bindingdb_pmids": [
+        "31922756"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "31922756",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Developing Inhibitors of the p47phox-p22phox Protein-Protein Interaction by Fragment-Based Drug Discovery.",
+          "journal": "J Med Chem",
+          "year": "2020",
+          "doi": "10.1021/acs.jmedchem.9b01492",
+          "authorString": "Solbak SMØ, Zang J, Narayanan D, Høj LJ, Bucciarelli S, Softley C, Meier S, Langkilde AE, Gotfredsen CH, Sattler M, Bach A.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/31922756"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "4488f29766cbe2653ea93739d332ffc50219fdf10a5a27284d66aca2e73306cd",
+      "assay_key": "50005563_3",
+      "protein_component_id": "454ee663ce3048464365fc4a533e1f189d56c62d467c28a5d53d4b7ce8560415",
+      "assay_name": "ChEMBL_54267 (CHEMBL669263)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1021/jm00050a017"
+      ],
+      "bindingdb_pmids": [
+        "7990119"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "7990119",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Structure-activity relationships and pH dependence of binding of 8-alkyl-N5-deazapterins to dihydrofolate reductase.",
+          "journal": "J Med Chem",
+          "year": "1994",
+          "doi": "10.1021/jm00050a017",
+          "authorString": "Ivery MT, Gready JE.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/7990119"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "26d975c716e25a79ea6f41e0153eb7f726f43710a435d2e7df7100755c05222e",
+      "assay_key": "50034019_51",
+      "protein_component_id": "41b7f83599f74232022b2849406c8b66303ad8162b0f8c14ec41b50f9eec6c85",
+      "assay_name": "ChEMBL_774558 (CHEMBL1908775)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1038/nbt.1990"
+      ],
+      "bindingdb_pmids": [
+        "22037378"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "22037378",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Comprehensive analysis of kinase inhibitor selectivity.",
+          "journal": "Nat Biotechnol",
+          "year": "2011",
+          "doi": "10.1038/nbt.1990",
+          "authorString": "Davis MI, Hunt JP, Herrgard S, Ciceri P, Wodicka LM, Pallares G, Hocker M, Treiber DK, Zarrinkar PP.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/22037378"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "1632cad148183614bd7292f625c774938a1b967c0a7fb97feda019b1bad090ff",
+      "assay_key": "50008121_1",
+      "protein_component_id": "c6c68b0fd0d91ac09b4d54081495e3a55d20808d2506fbd3cfa99ee0129dde5d",
+      "assay_name": "ChEMBL_1862780 (CHEMBL4363636)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [
+        "10.1016/j.ejmech.2019.111656"
+      ],
+      "bindingdb_pmids": [
+        "31494467"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "31494467",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Identification and characterization of benzo[d]oxazol-2(3H)-one derivatives as the first potent and selective small-molecule inhibitors of chromodomain protein CDYL.",
+          "journal": "Eur J Med Chem",
+          "year": "2019",
+          "doi": "10.1016/j.ejmech.2019.111656",
+          "authorString": "Yang L, Liu Y, Fan M, Zhu G, Jin H, Liang J, Liu Z, Huang Z, Zhang L.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/31494467"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "a7bc81eb9ee391d2cc5546d74638334d2a3b6e624bf6150b94d01f1119451765",
+      "assay_key": "50016305_1",
+      "protein_component_id": "c439463f0f8ad68eb087a547bccd2e0cf18e31b66268a57550f163b4777daa3a",
+      "assay_name": "ChEMBL_2210854 (CHEMBL5123803)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "FLUORESCENCE_POLARIZATION_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "35525212"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "35525212",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Novel non-covalent LSD1 inhibitors endowed with anticancer effects in leukemia and solid tumor cellular models.",
+          "journal": "Eur J Med Chem",
+          "year": "2022",
+          "doi": "10.1016/j.ejmech.2022.114410",
+          "authorString": "Menna M, Fiorentino F, Marrocco B, Lucidi A, Tomassi S, Cilli D, Romanenghi M, Cassandri M, Pomella S, Pezzella M, Del Bufalo D, Zeya Ansari MS, Tomašević N, Mladenović M, Viviano M, Sbardella G, Rota R, Trisciuoglio D, Minucci S, Mattevi A, Rotili D",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/35525212"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881",
+      "assay_key": "50029872_1",
+      "protein_component_id": "3501ff1a2c34e139907d0b8726e0ce2d830cfc7304472a862525f3428a6a534c",
+      "assay_name": "ChEBML_45054",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1016/0960-894X(96)00069-8"
+      ],
+      "bindingdb_pmids": [],
+      "patents": [],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "NO_INDEXED_PUBLICATION_CONFIRMED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "1450d9fd14bdec26e2c46a46a9a169aa737822560147f165cf6a8b1f406d89d4",
+      "assay_key": "50022853_5",
+      "protein_component_id": "0632d425ca63a49d9bb1a592942716de7601d7d9a11afb83949548c534b779dd",
+      "assay_name": "ChEMBL_2610084",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "39461037"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "39461037",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Rational fragment-based design of compounds targeting the PWWP domain of the HRP family.",
+          "journal": "Eur J Med Chem",
+          "year": "2024",
+          "doi": "10.1016/j.ejmech.2024.116960",
+          "authorString": "Vantieghem T, Aslam NA, Osipov EM, Akele M, Van Belle S, Beelen S, Drexler M, Paulovcakova T, Lux V, Fearon D, Douangamath A, von Delft F, Christ F, Veverka V, Verwilst P, Van Aerschot A, Debyser Z, Strelkov SV.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/39461037"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "ba8117e41bb7c3ce236b05f5442a53d7fb9eff6370207690bf9f1c3103eb1ecf",
+      "assay_key": "50036674_1",
+      "protein_component_id": "008c43d87e5cde788e293d3e1be752a6fe6a16d91f6f777a362580e60ab5fcb5",
+      "assay_name": "ChEMBL_155739 (CHEMBL759844)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1021/jm970839y"
+      ],
+      "bindingdb_pmids": [
+        "9804684"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "9804684",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Highly potent bisphosphonate ligands for phosphoglycerate kinase.",
+          "journal": "J Med Chem",
+          "year": "1998",
+          "doi": "10.1021/jm970839y",
+          "authorString": "Jakeman DL, Ivory AJ, Williamson MP, Blackburn GM.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/9804684"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "09d7963d31186c17d5ff3dd20ebf79900bf7c7bb70594aa4f15d768864e8f768",
+      "assay_key": "9684_1",
+      "protein_component_id": "43654b9ee9fc7ffd20d063e02e0f2715849c8a83afd11da12a1e44a2d76d66ec",
+      "assay_name": "Fluorescence Polarization Assay",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "FLUORESCENCE_POLARIZATION_MENTION",
+        "COMPETITION_ASSAY_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US10913710"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "0537e55fb0da51c1ed03d68b55628af3b152d8a46f5c9809a2f0d960ed6261ac",
+      "assay_key": "6526_1",
+      "protein_component_id": "26869a7fa856d719c193b67a32ea0b6e3508c17ae6b4a22b7ec5e3fcce984a5f",
+      "assay_name": "Inhibition Assay",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "INHIBITION_ASSAY_MENTION",
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US8853224"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "06203cadcc8c06b459027d196e58179c652e2db93643b684e0e4b1ef904a9f3b",
+      "assay_key": "50016943_1",
+      "protein_component_id": "0f79dd8c1ea278edbe797ca3ccb235de12e8d482492499a37a977a0692d3e49b",
+      "assay_name": "ChEMBL_2227272 (CHEMBL5140785)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "35759679"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "35759679",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Near-Infrared Fluorescent Probes as Imaging and Theranostic Modalities for Amyloid-Beta and Tau Aggregates in Alzheimer's Disease.",
+          "journal": "J Med Chem",
+          "year": "2022",
+          "doi": "10.1021/acs.jmedchem.1c01619",
+          "authorString": "Rai H, Gupta S, Kumar S, Yang J, Singh SK, Ran C, Modi G.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/35759679"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "83c3383d774c088ede95378857d532d6106b6543bd0116618c061fac063be820",
+      "assay_key": "11754_1",
+      "protein_component_id": "678d7b3f7557c6b0a761f45cc3319a80ea88d6c4860a8d040f55f282752ac541",
+      "assay_name": "Not found",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US20240010642"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "84d34377550c6af39d0fa8ea4f45971c52ef9369851597ba4146348af9f25bf0",
+      "assay_key": "50018866_3",
+      "protein_component_id": "29a0408ae03026a841f908c0f86f2f4f5528d41786557b6a2bdc737448cfeae1",
+      "assay_name": "ChEMBL_2292005",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "COMPETITION_ASSAY_MENTION"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [
+        "37312859"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "37312859",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Covalent <i>S</i>-Adenosylhomocysteine-Based DNA Methyltransferase 2 Inhibitors with a New Type of Aryl Warhead.",
+          "journal": "ACS Med Chem Lett",
+          "year": "2023",
+          "doi": "10.1021/acsmedchemlett.3c00062",
+          "authorString": "Schwickert M, Zimmermann RA, Habeck T, Hoba SN, Nidoieva Z, Fischer TR, Stark MM, Kersten C, Lermyte F, Helm M, Schirmeister T.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/37312859"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "assay_key": "50002067_1",
+      "protein_component_id": "1d2551ade453a33a915755fda9144bb4924af48001cae8fe701fa2663318092c",
+      "assay_name": "ChEMBL_1748923 (CHEMBL4183433)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [
+        "10.1021/acs.jmedchem.8b00210"
+      ],
+      "bindingdb_pmids": [
+        "29648813"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "29648813",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Small Molecule Neuropilin-1 Antagonists Combine Antiangiogenic and Antitumor Activity with Immune Modulation through Reduction of Transforming Growth Factor Beta (TGFβ) Production in Regulatory T-Cells.",
+          "journal": "J Med Chem",
+          "year": "2018",
+          "doi": "10.1021/acs.jmedchem.8b00210",
+          "authorString": "Powell J, Mota F, Steadman D, Soudy C, Miyauchi JT, Crosby S, Jarvis A, Reisinger T, Winfield N, Evans G, Finniear A, Yelland T, Chou YT, Chan AWE, O'Leary A, Cheng L, Liu D, Fotinou C, Milagre C, Martin JF, Jia H, Frankel P, Djordjevic S, Tsirka SE,",
+          "pmcid": "PMC5957473",
+          "metadata_url": "https://europepmc.org/article/MED/29648813"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "63fda6fc87ffcd3651590f46f8f47181be4ff92218792451050c9716675838bc",
+      "assay_key": "50042775_1",
+      "protein_component_id": "af1da04ff0aec04b89f2c4605eb222fc00ba4b5fdb08b537f284cac275b33a17",
+      "assay_name": "ChEMBL_943440 (CHEMBL2341884)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [
+        "10.1021/jm301665y"
+      ],
+      "bindingdb_pmids": [
+        "23509991"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "23509991",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Development of a plate-based optical biosensor fragment screening methodology to identify phosphodiesterase 10A inhibitors.",
+          "journal": "J Med Chem",
+          "year": "2013",
+          "doi": "10.1021/jm301665y",
+          "authorString": "Geschwindner S, Dekker N, Horsefield R, Tigerström A, Johansson P, Scott CW, Albert JS.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/23509991"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "da40c59768b57b10fa19165e2783e244b9a1ebe7f116999933408861e6e09993",
+      "assay_key": "11490_1",
+      "protein_component_id": "0570c5d169e261bd58cef982a478372a4db9a32bab2b2e079eafc07bf05f0433",
+      "assay_name": "The Alizarin Assay (ARS) (Glucose)",
+      "data_sources": "US Patent",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [],
+      "bindingdb_pmids": [],
+      "patents": [
+        "US11767332"
+      ],
+      "indexed_publications": [],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PATENT_PRIMARY_SOURCE_REQUIRED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "00711d68562f88f0479db57d7cb5c2f79a802c306a489b788c96c75d06c79c5b",
+      "assay_key": "50013470_1",
+      "protein_component_id": "18023b2580d92ef2eb7ab2703d1eca7b00059f0fd591583ec019b99360e56545",
+      "assay_name": "ChEBML_44471",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "DISSOCIATION_MENTION"
+      ],
+      "bindingdb_article_dois": [
+        "10.1016/s0960-894x(03)00482-7"
+      ],
+      "bindingdb_pmids": [
+        "12852954"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "12852954",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "3-(2-Benzyloxyphenyl)isoxazoles and isoxazolines: synthesis and evaluation as CFTR activators.",
+          "journal": "Bioorg Med Chem Lett",
+          "year": "2003",
+          "doi": "10.1016/s0960-894x(03)00482-7",
+          "authorString": "Sammelson RE, Ma T, Galietta LJ, Verkman AS, Kurth MJ.",
+          "pmcid": "",
+          "metadata_url": "https://europepmc.org/article/MED/12852954"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    },
+    {
+      "task_id": "86568e5c1b04fb4d58da6667b530e460de6394c98b3d259c33511e138682f397",
+      "assay_key": "50031617_1",
+      "protein_component_id": "157e57336ec87f9f746263022cafc4b988e9ebaf633e0d9724b5dc5e14d7c49b",
+      "assay_name": "ChEMBL_627826 (CHEMBL1117203)",
+      "data_sources": "ChEMBL",
+      "method_text_flags": [
+        "UNKNOWN_METHOD"
+      ],
+      "bindingdb_article_dois": [
+        "10.1016/j.ejmech.2009.11.054"
+      ],
+      "bindingdb_pmids": [
+        "20060622"
+      ],
+      "patents": [],
+      "indexed_publications": [
+        {
+          "source_pmid": "20060622",
+          "status": "PUBMED_INDEX_FOUND",
+          "title": "Design, synthesis and evaluation of analogs of initiation factor 4E (eIF4E) cap-binding antagonist Bn7-GMP.",
+          "journal": "Eur J Med Chem",
+          "year": "2010",
+          "doi": "10.1016/j.ejmech.2009.11.054",
+          "authorString": "Jia Y, Chiu TL, Amin EA, Polunovsky V, Bitterman PB, Wagner CR.",
+          "pmcid": "PMC2853597",
+          "metadata_url": "https://europepmc.org/article/MED/20060622"
+        }
+      ],
+      "doi_mismatch_review_flag": false,
+      "publication_identification_status": "PUBMED_INDEXED",
+      "scientific_assay_approved": false
+    }
+  ],
+  "limitations": [
+    "Publication metadata and method words cannot prove the measured value is exact Kd.",
+    "DOI mismatches require human evaluation and may reflect source aggregation.",
+    "Patent-only tasks require independent access to the original patent disclosures.",
+    "Study may use a construct/variant different from BindingDB's reference sequence.",
+    "No source has been adjudicated and no affinity values were used."
+  ]
+}

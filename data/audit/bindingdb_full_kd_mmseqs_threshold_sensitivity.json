@@ -1,0 +1,266 @@
+{
+  "scope": "Preliminary full dataset sequence similarity only, no final protein split",
+  "accepted_directed_edges_by_min_alignment_length": {
+    "0": 28814,
+    "40": 28734,
+    "80": 28039,
+    "100": 27333,
+    "150": 25572
+  },
+  "sensitivity": {
+    "0": {
+      "all_components": 2225,
+      "ge15": {
+        "components": 168,
+        "tasks": 1146,
+        "largest_task_counts": [
+          492,
+          139,
+          77,
+          30,
+          24
+        ],
+        "largest_seq_counts": [
+          252,
+          40,
+          12,
+          12,
+          10
+        ]
+      },
+      "ge30": {
+        "components": 81,
+        "tasks": 377,
+        "largest_task_counts": [
+          126,
+          61,
+          21,
+          15,
+          9
+        ],
+        "largest_seq_counts": [
+          71,
+          15,
+          12,
+          5,
+          5
+        ]
+      }
+    },
+    "40": {
+      "all_components": 2228,
+      "ge15": {
+        "components": 169,
+        "tasks": 1146,
+        "largest_task_counts": [
+          491,
+          139,
+          77,
+          30,
+          24
+        ],
+        "largest_seq_counts": [
+          251,
+          40,
+          12,
+          12,
+          10
+        ]
+      },
+      "ge30": {
+        "components": 81,
+        "tasks": 377,
+        "largest_task_counts": [
+          126,
+          61,
+          21,
+          15,
+          9
+        ],
+        "largest_seq_counts": [
+          71,
+          15,
+          12,
+          5,
+          5
+        ]
+      }
+    },
+    "80": {
+      "all_components": 2258,
+      "ge15": {
+        "components": 171,
+        "tasks": 1146,
+        "largest_task_counts": [
+          490,
+          139,
+          77,
+          30,
+          24
+        ],
+        "largest_seq_counts": [
+          250,
+          40,
+          12,
+          12,
+          8
+        ]
+      },
+      "ge30": {
+        "components": 82,
+        "tasks": 377,
+        "largest_task_counts": [
+          125,
+          61,
+          21,
+          15,
+          9
+        ],
+        "largest_seq_counts": [
+          70,
+          15,
+          12,
+          5,
+          5
+        ]
+      }
+    },
+    "100": {
+      "all_components": 2291,
+      "ge15": {
+        "components": 175,
+        "tasks": 1146,
+        "largest_task_counts": [
+          487,
+          139,
+          77,
+          30,
+          24
+        ],
+        "largest_seq_counts": [
+          247,
+          40,
+          12,
+          12,
+          7
+        ]
+      },
+      "ge30": {
+        "components": 83,
+        "tasks": 377,
+        "largest_task_counts": [
+          125,
+          61,
+          21,
+          15,
+          9
+        ],
+        "largest_seq_counts": [
+          70,
+          15,
+          12,
+          5,
+          5
+        ]
+      }
+    },
+    "150": {
+      "all_components": 2416,
+      "ge15": {
+        "components": 190,
+        "tasks": 1146,
+        "largest_task_counts": [
+          486,
+          139,
+          77,
+          30,
+          24
+        ],
+        "largest_seq_counts": [
+          246,
+          40,
+          12,
+          12,
+          7
+        ]
+      },
+      "ge30": {
+        "components": 92,
+        "tasks": 377,
+        "largest_task_counts": [
+          124,
+          61,
+          21,
+          15,
+          9
+        ],
+        "largest_seq_counts": [
+          69,
+          15,
+          12,
+          5,
+          5
+        ]
+      }
+    }
+  },
+  "short_hit_examples": [
+    {
+      "q_len": 533,
+      "t_len": 62,
+      "alignment_len": 62,
+      "identity": 0.983,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 123,
+      "t_len": 73,
+      "alignment_len": 73,
+      "identity": 0.986,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 123,
+      "t_len": 73,
+      "alignment_len": 73,
+      "identity": 0.876,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 123,
+      "t_len": 73,
+      "alignment_len": 73,
+      "identity": 0.863,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 123,
+      "t_len": 73,
+      "alignment_len": 73,
+      "identity": 0.52,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 123,
+      "t_len": 73,
+      "alignment_len": 73,
+      "identity": 0.465,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 123,
+      "t_len": 21,
+      "alignment_len": 21,
+      "identity": 0.761,
+      "coverage_shorter": 1.0
+    },
+    {
+      "q_len": 3046,
+      "t_len": 73,
+      "alignment_len": 68,
+      "identity": 0.441,
+      "coverage_shorter": 0.932
+    }
+  ],
+  "note": "Short local matches may spuriously merge unrelated full-length proteins; sensitivity only, threshold choice requires a documented biological criterion."
+}

@@ -1,0 +1,194 @@
+{
+  "davis": {
+    "splits": {
+      "train": {
+        "rows": 15552,
+        "unique_compounds": 54,
+        "unique_sequences": 303,
+        "unique_pairs": 13259,
+        "duplicate_pair_rows": 2293,
+        "invalid_rows": 0,
+        "label_min": 5.0,
+        "label_max": 10.795880017344077,
+        "labels_equal_5": 10950,
+        "max_sequence_length": 2549,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\davis_novel_pair_fold0\\train.csv",
+        "sha256": "d4956d259bd2922f3d252023860113414de10ecc85b3de2d9cfcadc675235fb1"
+      },
+      "val": {
+        "rows": 3888,
+        "unique_compounds": 54,
+        "unique_sequences": 303,
+        "unique_pairs": 3512,
+        "duplicate_pair_rows": 376,
+        "invalid_rows": 0,
+        "label_min": 5.0,
+        "label_max": 10.619788758288394,
+        "labels_equal_5": 2755,
+        "max_sequence_length": 2549,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\davis_novel_pair_fold0\\val.csv",
+        "sha256": "7f070179b7703fa98e8c9b4f305492e7a24058de1d2722a8c3b4ace2263e7abe"
+      },
+      "test": {
+        "rows": 1148,
+        "unique_compounds": 14,
+        "unique_sequences": 76,
+        "unique_pairs": 1064,
+        "duplicate_pair_rows": 84,
+        "invalid_rows": 0,
+        "label_min": 5.0,
+        "label_max": 10.1249387366083,
+        "labels_equal_5": 755,
+        "max_sequence_length": 2527,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\davis_novel_pair_fold0\\test.csv",
+        "sha256": "1f9310ad7ce60ff75c1d70b6a04cba22e06eb4ec6f18eb03a9029047210ca854"
+      }
+    },
+    "overlaps": {
+      "train_val": {
+        "compounds": 54,
+        "proteins": 303,
+        "pairs": 409
+      },
+      "train_test": {
+        "compounds": 0,
+        "proteins": 0,
+        "pairs": 0
+      },
+      "val_test": {
+        "compounds": 0,
+        "proteins": 0,
+        "pairs": 0
+      }
+    },
+    "status": "Legacy inventory only; not an approved v4 split; label provenance remains unverified"
+  },
+  "metz": {
+    "splits": {
+      "train": {
+        "rows": 18625,
+        "unique_compounds": 1123,
+        "unique_sequences": 136,
+        "unique_pairs": 18625,
+        "duplicate_pair_rows": 0,
+        "invalid_rows": 0,
+        "label_min": 4.0,
+        "label_max": 11.1,
+        "labels_equal_5": 114,
+        "max_sequence_length": 2356,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\metz_novel_pair_fold0\\train.csv",
+        "sha256": "7740d90ad82bffc0fd51edf9172542b10a7d35eed5b0acacb6f849a8cd9bb317"
+      },
+      "val": {
+        "rows": 4656,
+        "unique_compounds": 911,
+        "unique_sequences": 136,
+        "unique_pairs": 4656,
+        "duplicate_pair_rows": 0,
+        "invalid_rows": 0,
+        "label_min": 4.0,
+        "label_max": 10.0,
+        "labels_equal_5": 29,
+        "max_sequence_length": 2356,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\metz_novel_pair_fold0\\val.csv",
+        "sha256": "48cd0f4b8027251f21f8be6064ef6b491ea3a2ac08456a0b46043ccc93dcad04"
+      },
+      "test": {
+        "rows": 1290,
+        "unique_compounds": 236,
+        "unique_sequences": 33,
+        "unique_pairs": 1290,
+        "duplicate_pair_rows": 0,
+        "invalid_rows": 0,
+        "label_min": 4.0,
+        "label_max": 9.2,
+        "labels_equal_5": 10,
+        "max_sequence_length": 2527,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\metz_novel_pair_fold0\\test.csv",
+        "sha256": "9f1b319498931f44a1ae063c38d4b8bef0626b38659f9bf7490955d40f8944cd"
+      }
+    },
+    "overlaps": {
+      "train_val": {
+        "compounds": 900,
+        "proteins": 136,
+        "pairs": 0
+      },
+      "train_test": {
+        "compounds": 0,
+        "proteins": 0,
+        "pairs": 0
+      },
+      "val_test": {
+        "compounds": 0,
+        "proteins": 0,
+        "pairs": 0
+      }
+    },
+    "status": "Legacy inventory only; not an approved v4 split; label provenance remains unverified"
+  },
+  "kiba": {
+    "splits": {
+      "train": {
+        "rows": 61720,
+        "unique_compounds": 1654,
+        "unique_sequences": 183,
+        "unique_pairs": 61442,
+        "duplicate_pair_rows": 278,
+        "invalid_rows": 0,
+        "label_min": 0.0,
+        "label_max": 17.200179498,
+        "labels_equal_5": 0,
+        "max_sequence_length": 2549,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\kiba_novel_pair_fold0\\train.csv",
+        "sha256": "fd0bd4f41fc8591c9e4da126cd2c54082c3a28b8f02e3116af1ff19022a0a405"
+      },
+      "val": {
+        "rows": 15430,
+        "unique_compounds": 1573,
+        "unique_sequences": 182,
+        "unique_pairs": 15413,
+        "duplicate_pair_rows": 17,
+        "invalid_rows": 0,
+        "label_min": 1.299999999999999,
+        "label_max": 16.400162274,
+        "labels_equal_5": 0,
+        "max_sequence_length": 2549,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\kiba_novel_pair_fold0\\val.csv",
+        "sha256": "44c583f452c0daecb9afeac44663da55b88c48642768a432920c6b842889894a"
+      },
+      "test": {
+        "rows": 4432,
+        "unique_compounds": 411,
+        "unique_sequences": 46,
+        "unique_pairs": 4423,
+        "duplicate_pair_rows": 9,
+        "invalid_rows": 0,
+        "label_min": 9.401029995999998,
+        "label_max": 15.497940009,
+        "labels_equal_5": 0,
+        "max_sequence_length": 4128,
+        "source": "C:\\Users\\J0124\\OneDrive\\Desktop\\perceiver_cpi\\reproduction\\kiba_novel_pair_fold0\\test.csv",
+        "sha256": "fda8d62d2bd58de0e1bab6a743cf720a02a95fb4a996305b1f9ad94b46c0220f"
+      }
+    },
+    "overlaps": {
+      "train_val": {
+        "compounds": 1573,
+        "proteins": 182,
+        "pairs": 127
+      },
+      "train_test": {
+        "compounds": 0,
+        "proteins": 0,
+        "pairs": 0
+      },
+      "val_test": {
+        "compounds": 0,
+        "proteins": 0,
+        "pairs": 0
+      }
+    },
+    "status": "Legacy inventory only; not an approved v4 split; label provenance remains unverified"
+  }
+}

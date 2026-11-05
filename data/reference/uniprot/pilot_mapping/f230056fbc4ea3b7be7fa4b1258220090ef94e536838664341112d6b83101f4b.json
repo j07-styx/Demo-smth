@@ -1,0 +1,19 @@
+{
+  "source_sha256": "f230056fbc4ea3b7be7fa4b1258220090ef94e536838664341112d6b83101f4b",
+  "pilot_split": "val",
+  "source_name": "FER",
+  "searched_gene": "FER",
+  "query_length": 822,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P16591",
+      "start0": 0,
+      "end0": 822,
+      "reference_length": 822,
+      "reference_sha256": "f230056fbc4ea3b7be7fa4b1258220090ef94e536838664341112d6b83101f4b",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

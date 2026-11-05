@@ -1,0 +1,286 @@
+{
+  "status": "ASSAY_TEXT_CONSTRUCT_SCREEN_ONLY",
+  "scope": "30 blinded review tasks",
+  "counts": {
+    "tasks_with_textual_review_clues": 13,
+    "INHIBITION_OR_COMPETITION": 5,
+    "ENGINEERED_TAG": 2,
+    "COMPLEX_OR_COFAC": 2,
+    "CONSTRUCT_DOMAIN": 5
+  },
+  "tasks": [
+    {
+      "task_id": "30b31aa54624dbb196b14f1d6082b85b36220a17eb29705befd59fdb38790b25",
+      "assay_key": "13282_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "INHIBITION_OR_COMPETITION"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "234e1a5e57a6fb6d154d03f53eefbab72dce1cf5a40436a16416a4974661721b",
+      "assay_key": "11593_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "69f76b68cfe450d9847cbcf66f2aacfaf9059b740d9266ab6f68052affd644a8",
+      "assay_key": "50017739_13",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "2a0831c6f67e9a5339c9cbb1be47f65cb290dc9f085f84ad1779edc8b322f38f",
+      "assay_key": "50034979_5",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "INHIBITION_OR_COMPETITION"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "0f1b899d87edcfcbc2a3545f0ab5a49494ec84e51dbf50cc4a69679caecdbe70",
+      "assay_key": "50020330_8",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "ENGINEERED_TAG",
+        "COMPLEX_OR_COFAC"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "34a74f940a1a8c7b2d8407ad92f267b5925d7bdb9c7518ba5b5beeff5b43e6eb",
+      "assay_key": "50018971_9",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "fdfd7be76feacddb3c848a21ead34c992a54da9c37ab3c6f79580c38e71be729",
+      "assay_key": "50001412_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "0bb31340234b0730228012f8257355420644535ae54f4d8383e8df9a94491f1f",
+      "assay_key": "50034019_161",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "CONSTRUCT_DOMAIN"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "4034139289e8fba36f759709c6136c1abb6c94d053d55a238dd9ac625e58592a",
+      "assay_key": "50034019_522",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "CONSTRUCT_DOMAIN"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "da640b691b83f87dadd00163e267c3ce78614548cc545369baf54611dcc8e2f3",
+      "assay_key": "50018296_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "CONSTRUCT_DOMAIN"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "604c4e560bcb7c5af661342ddd9394c5d72bb5b827c901486abfe3443f0f07be",
+      "assay_key": "4362_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "INHIBITION_OR_COMPETITION"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "904e81d710d1d0742e6a18ae3031706c7288c97c075872302f8eab7527a565bd",
+      "assay_key": "50023141_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "5424dcc1f75fce0341243e997a1119bcef1399a3b8c5b57b17dc6304d4bf3d5c",
+      "assay_key": "50008549_2",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "4488f29766cbe2653ea93739d332ffc50219fdf10a5a27284d66aca2e73306cd",
+      "assay_key": "50005563_3",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "COMPLEX_OR_COFAC"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "26d975c716e25a79ea6f41e0153eb7f726f43710a435d2e7df7100755c05222e",
+      "assay_key": "50034019_51",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "CONSTRUCT_DOMAIN"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "1632cad148183614bd7292f625c774938a1b967c0a7fb97feda019b1bad090ff",
+      "assay_key": "50008121_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "a7bc81eb9ee391d2cc5546d74638334d2a3b6e624bf6150b94d01f1119451765",
+      "assay_key": "50016305_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881",
+      "assay_key": "50029872_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "1450d9fd14bdec26e2c46a46a9a169aa737822560147f165cf6a8b1f406d89d4",
+      "assay_key": "50022853_5",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "ba8117e41bb7c3ce236b05f5442a53d7fb9eff6370207690bf9f1c3103eb1ecf",
+      "assay_key": "50036674_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "09d7963d31186c17d5ff3dd20ebf79900bf7c7bb70594aa4f15d768864e8f768",
+      "assay_key": "9684_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "INHIBITION_OR_COMPETITION"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "0537e55fb0da51c1ed03d68b55628af3b152d8a46f5c9809a2f0d960ed6261ac",
+      "assay_key": "6526_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "INHIBITION_OR_COMPETITION"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "06203cadcc8c06b459027d196e58179c652e2db93643b684e0e4b1ef904a9f3b",
+      "assay_key": "50016943_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "83c3383d774c088ede95378857d532d6106b6543bd0116618c061fac063be820",
+      "assay_key": "11754_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "84d34377550c6af39d0fa8ea4f45971c52ef9369851597ba4146348af9f25bf0",
+      "assay_key": "50018866_3",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "assay_key": "50002067_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "ENGINEERED_TAG"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "63fda6fc87ffcd3651590f46f8f47181be4ff92218792451050c9716675838bc",
+      "assay_key": "50042775_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [
+        "CONSTRUCT_DOMAIN"
+      ],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "da40c59768b57b10fa19165e2783e244b9a1ebe7f116999933408861e6e09993",
+      "assay_key": "11490_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "00711d68562f88f0479db57d7cb5c2f79a802c306a489b788c96c75d06c79c5b",
+      "assay_key": "50013470_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    },
+    {
+      "task_id": "86568e5c1b04fb4d58da6667b530e460de6394c98b3d259c33511e138682f397",
+      "assay_key": "50031617_1",
+      "uniprot_reference_metadata_exact": true,
+      "review_clues": [],
+      "needs_experimental_construct_review": true,
+      "auto_assay_approval": false
+    }
+  ],
+  "note": "Exact metadata-to-UniProt identity is compatible with an experimentally truncated or modified construct; none is automatically approved.",
+  "limitations": [
+    "Regular-expression flags may miss synonyms or trigger on unrelated wording.",
+    "Full source/patent must be examined for actual construct and endpoint semantics.",
+    "No affinity values accessed."
+  ]
+}

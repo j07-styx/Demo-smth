@@ -1,0 +1,19 @@
+{
+  "source_sha256": "f3b618f7f525879ec1eb5098b27675243997eeea419eb453488cfefab098226f",
+  "pilot_split": "train",
+  "source_name": "CLK1",
+  "searched_gene": "CLK1",
+  "query_length": 484,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P49759",
+      "start0": 0,
+      "end0": 484,
+      "reference_length": 484,
+      "reference_sha256": "f3b618f7f525879ec1eb5098b27675243997eeea419eb453488cfefab098226f",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

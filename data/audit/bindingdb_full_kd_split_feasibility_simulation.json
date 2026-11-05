@@ -1,0 +1,132 @@
+{
+  "scope": "1000 hypothetical random allocations of protein components, NOT an actual split",
+  "source": "Full November 2026 BindingDB provisional exact-looking-Kd task pool",
+  "eligible_ge15": {
+    "tasks": 1146,
+    "components": 168
+  },
+  "eligible_ge30": {
+    "tasks": 377,
+    "components": 81
+  },
+  "cluster_quotas_60_10_10_10_10": {
+    "base_train": 101,
+    "base_val": 17,
+    "adapt_train": 17,
+    "adapt_val": 17,
+    "test": 16
+  },
+  "size_distributions": {
+    "base_train_tasks_ge15": {
+      "min": 214,
+      "median": 795.5,
+      "p05": 290.95,
+      "p95": 979.05,
+      "max": 1030
+    },
+    "base_train_tasks_ge30": {
+      "min": 75,
+      "median": 238.0,
+      "p05": 109.0,
+      "p95": 314.0,
+      "max": 340
+    },
+    "base_train_clusters_ge30": {
+      "min": 40,
+      "median": 49.0,
+      "p05": 44.0,
+      "p95": 54.0,
+      "max": 58
+    },
+    "base_validation_tasks_ge15": {
+      "min": 19,
+      "median": 53.0,
+      "p05": 27.0,
+      "p95": 535.0,
+      "max": 707
+    },
+    "base_validation_tasks_ge30": {
+      "min": 2,
+      "median": 20.0,
+      "p05": 8.950000000000003,
+      "p95": 143.04999999999995,
+      "max": 210
+    },
+    "base_validation_clusters_ge30": {
+      "min": 2,
+      "median": 8.0,
+      "p05": 5.0,
+      "p95": 11.0,
+      "max": 14
+    },
+    "adapt_train_tasks_ge15": {
+      "min": 19,
+      "median": 51.0,
+      "p05": 26.0,
+      "p95": 536.0,
+      "max": 771
+    },
+    "adapt_train_tasks_ge30": {
+      "min": 3,
+      "median": 20.0,
+      "p05": 8.0,
+      "p95": 144.0,
+      "max": 231
+    },
+    "adapt_train_clusters_ge30": {
+      "min": 2,
+      "median": 8.0,
+      "p05": 5.0,
+      "p95": 11.0,
+      "max": 14
+    },
+    "adapt_validation_tasks_ge15": {
+      "min": 21,
+      "median": 52.0,
+      "p05": 26.0,
+      "p95": 537.0,
+      "max": 690
+    },
+    "adapt_validation_tasks_ge30": {
+      "min": 3,
+      "median": 20.0,
+      "p05": 8.0,
+      "p95": 143.04999999999995,
+      "max": 215
+    },
+    "adapt_validation_clusters_ge30": {
+      "min": 2,
+      "median": 8.0,
+      "p05": 5.0,
+      "p95": 11.0,
+      "max": 14
+    },
+    "test_tasks_ge15": {
+      "min": 17,
+      "median": 48.0,
+      "p05": 24.0,
+      "p95": 531.05,
+      "max": 687
+    },
+    "test_tasks_ge30": {
+      "min": 3,
+      "median": 19.0,
+      "p05": 7.0,
+      "p95": 142.04999999999995,
+      "max": 211
+    },
+    "test_clusters_ge30": {
+      "min": 2,
+      "median": 8.0,
+      "p05": 5.0,
+      "p95": 11.0,
+      "max": 15
+    }
+  },
+  "warnings": [
+    "No labels were used; simulations do not establish comparable assay conditions or fair split composition.",
+    "No actual split was selected or frozen; simulations must not be used to choose a favorable test group.",
+    "The large connected component introduces extreme task imbalance even when group counts are balanced.",
+    "The K=20 eligible subset loses many tasks and independent clusters under filtering."
+  ]
+}

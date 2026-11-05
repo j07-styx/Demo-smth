@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "TGFBR1",
+  "pilot_split": "train",
+  "sequence_sha256": "639fec58970beb225b8efb16a3ad59713134601c6ee978bb08af353971c651ec",
+  "uniprot_accession": "P36897",
+  "alphafold_model": "AF-P36897-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 503,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 503,
+  "reference_length": 503,
+  "complete_residue_count": 503,
+  "backbone_coverage": 1.0,
+  "graph_edges": 14482,
+  "pdb_sha256": "c662f3971129998de58816b2af3bd13e263bdb77b4cca4cd13a5b527cdc634fc",
+  "pae_sha256": "77d3e914f44fe18759bdfddc1f4241daaa545a0a037e29c974e3a4df30574f27",
+  "graph_sha256": "dce6cab24a898bd268a32ebb567f8b599b1f6a01185df72fb2d329896bfce533",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

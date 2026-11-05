@@ -1,0 +1,13 @@
+{
+  "url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_rsid_eaids_202611_tsv.zip",
+  "bytes": 7553569,
+  "md5": "d851e14f28bd6fcc7abe08c4a0a7b76a",
+  "sha256": "1451f19a4762871b1f5c5f95a41688295caf0460b590ebc5bf1bac2f798013c3",
+  "members": [
+    [
+      "BindingDB_rsid_eaids.tsv",
+      55620419
+    ]
+  ],
+  "header": "REACTANT_SET_ID\tENTRYID_ASSAYID"
+}

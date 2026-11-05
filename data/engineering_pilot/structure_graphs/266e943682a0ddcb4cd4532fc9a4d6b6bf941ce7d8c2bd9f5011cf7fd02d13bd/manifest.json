@@ -1,0 +1,20 @@
+{
+  "status": "GRAPH_MAPPED_ENGINEERING_ONLY",
+  "source_name": "FRK",
+  "pilot_split": "val",
+  "sequence_sha256": "266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd",
+  "uniprot_accession": "P42685",
+  "alphafold_model": "AF-P42685-F1",
+  "alphafold_version": 6,
+  "source_sequence_length": 505,
+  "reference_start_1_based": 1,
+  "reference_end_1_based_inclusive": 505,
+  "reference_length": 505,
+  "complete_residue_count": 505,
+  "backbone_coverage": 1.0,
+  "graph_edges": 15082,
+  "pdb_sha256": "72da8bf7dba73b9e0692f33f9a058bcdb5da2fa23a96b4d369c92f1aa839a0b3",
+  "pae_sha256": "dae67ab6690657518000adda808bc296aa31fa6edf34bdf63ddd440129a88539",
+  "graph_sha256": "4bb52663921b308bbf0b1ff9c6cebdec12cdf80db020a8252823a91e483bcb98",
+  "warning": "AlphaFold alignment only; assayed construct not independently verified, engineering pilot only"
+}

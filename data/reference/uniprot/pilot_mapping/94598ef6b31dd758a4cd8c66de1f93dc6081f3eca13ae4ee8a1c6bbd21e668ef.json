@@ -1,0 +1,19 @@
+{
+  "source_sha256": "94598ef6b31dd758a4cd8c66de1f93dc6081f3eca13ae4ee8a1c6bbd21e668ef",
+  "pilot_split": "train",
+  "source_name": "CDK8",
+  "searched_gene": "CDK8",
+  "query_length": 464,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "P49336",
+      "start0": 0,
+      "end0": 464,
+      "reference_length": 464,
+      "reference_sha256": "94598ef6b31dd758a4cd8c66de1f93dc6081f3eca13ae4ee8a1c6bbd21e668ef",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

@@ -1,0 +1,19 @@
+{
+  "source_sha256": "38c6292ebae67403a8860dcfb781ffcf08d903d9469d52aa8af6edcc2f00b103",
+  "pilot_split": "train",
+  "source_name": "CSNK1G3",
+  "searched_gene": "CSNK1G3",
+  "query_length": 447,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q9Y6M4",
+      "start0": 0,
+      "end0": 447,
+      "reference_length": 447,
+      "reference_sha256": "38c6292ebae67403a8860dcfb781ffcf08d903d9469d52aa8af6edcc2f00b103",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

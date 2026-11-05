@@ -1,0 +1,559 @@
+{
+  "status": "COMPUTATIONAL_SEQUENCE_SCREEN_ONLY_NO_TASK_APPROVED",
+  "checked_at_utc": "2026-11-05T05:39:42.412220+00:00",
+  "references_requested": 30,
+  "references_fetched": 30,
+  "task_count": 30,
+  "counts": {
+    "EXACT_REFERENCE_SEQUENCE": 30
+  },
+  "tasks": [
+    {
+      "task_id": "30b31aa54624dbb196b14f1d6082b85b36220a17eb29705befd59fdb38790b25",
+      "assay_key": "13282_1",
+      "protein_sha256": "b13035f135fd81cf7050efeebd189db3b535ce19e7efee51566f4e9e2931d717",
+      "assayed_target_sequence_length": 576,
+      "sequence_reference_matches": [
+        {
+          "accession": "P02879",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 576,
+          "reference_sha256": "b13035f135fd81cf7050efeebd189db3b535ce19e7efee51566f4e9e2931d717",
+          "reference_primary_accession": "P02879",
+          "organism": "Ricinus communis",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P02879.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "234e1a5e57a6fb6d154d03f53eefbab72dce1cf5a40436a16416a4974661721b",
+      "assay_key": "11593_1",
+      "protein_sha256": "72c6c61e116b15fe16842142a7e76887366a8f33da9a9e3811a769ff2d7134d7",
+      "assayed_target_sequence_length": 860,
+      "sequence_reference_matches": [
+        {
+          "accession": "P07813",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 860,
+          "reference_sha256": "72c6c61e116b15fe16842142a7e76887366a8f33da9a9e3811a769ff2d7134d7",
+          "reference_primary_accession": "P07813",
+          "organism": "Escherichia coli (strain K12)",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P07813.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "69f76b68cfe450d9847cbcf66f2aacfaf9059b740d9266ab6f68052affd644a8",
+      "assay_key": "50017739_13",
+      "protein_sha256": "8323c5642e8f0c512a3cb88fea06aa798f8c7b911033757067df511e0c5ead9d",
+      "assayed_target_sequence_length": 541,
+      "sequence_reference_matches": [
+        {
+          "accession": "P17342",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 541,
+          "reference_sha256": "8323c5642e8f0c512a3cb88fea06aa798f8c7b911033757067df511e0c5ead9d",
+          "reference_primary_accession": "P17342",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P17342.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "2a0831c6f67e9a5339c9cbb1be47f65cb290dc9f085f84ad1779edc8b322f38f",
+      "assay_key": "50034979_5",
+      "protein_sha256": "7f69aba6b465001d13b7bd7589de4d14647de313773b2cdfa0446b095330ee08",
+      "assayed_target_sequence_length": 617,
+      "sequence_reference_matches": [
+        {
+          "accession": "P23975",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 617,
+          "reference_sha256": "7f69aba6b465001d13b7bd7589de4d14647de313773b2cdfa0446b095330ee08",
+          "reference_primary_accession": "P23975",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P23975.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "0f1b899d87edcfcbc2a3545f0ab5a49494ec84e51dbf50cc4a69679caecdbe70",
+      "assay_key": "50020330_8",
+      "protein_sha256": "b16f52f0d04b72927ee4e0cbe247b9d446ac4466ec87c4bf055470e04b94b895",
+      "assayed_target_sequence_length": 112,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q15369",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 112,
+          "reference_sha256": "b16f52f0d04b72927ee4e0cbe247b9d446ac4466ec87c4bf055470e04b94b895",
+          "reference_primary_accession": "Q15369",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q15369.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "34a74f940a1a8c7b2d8407ad92f267b5925d7bdb9c7518ba5b5beeff5b43e6eb",
+      "assay_key": "50018971_9",
+      "protein_sha256": "4b992438444e5580e88eec14328d65dc56021c00706daab77dfc20892b6dcdb6",
+      "assayed_target_sequence_length": 122,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q05097",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 122,
+          "reference_sha256": "4b992438444e5580e88eec14328d65dc56021c00706daab77dfc20892b6dcdb6",
+          "reference_primary_accession": "Q05097",
+          "organism": "Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q05097.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "fdfd7be76feacddb3c848a21ead34c992a54da9c37ab3c6f79580c38e71be729",
+      "assay_key": "50001412_1",
+      "protein_sha256": "553ddef377b84167048c087d19725632b8355f16ce8d6c8e47cdea8591dbc6cf",
+      "assayed_target_sequence_length": 403,
+      "sequence_reference_matches": [
+        {
+          "accession": "P14902",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 403,
+          "reference_sha256": "553ddef377b84167048c087d19725632b8355f16ce8d6c8e47cdea8591dbc6cf",
+          "reference_primary_accession": "P14902",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P14902.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "0bb31340234b0730228012f8257355420644535ae54f4d8383e8df9a94491f1f",
+      "assay_key": "50034019_161",
+      "protein_sha256": "2a0f0de1b3b97dd32c5fcd590eb525e7cf3945cd0ec6c4f99118a07cf306af71",
+      "assayed_target_sequence_length": 552,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q9BVS4",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 552,
+          "reference_sha256": "2a0f0de1b3b97dd32c5fcd590eb525e7cf3945cd0ec6c4f99118a07cf306af71",
+          "reference_primary_accession": "Q9BVS4",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q9BVS4.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "4034139289e8fba36f759709c6136c1abb6c94d053d55a238dd9ac625e58592a",
+      "assay_key": "50034019_522",
+      "protein_sha256": "a0818bc319497dcbb5bf8500e21505f4bb6b530a458eecdf022cf9160bbfaa4c",
+      "assayed_target_sequence_length": 596,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q9Y616",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 596,
+          "reference_sha256": "a0818bc319497dcbb5bf8500e21505f4bb6b530a458eecdf022cf9160bbfaa4c",
+          "reference_primary_accession": "Q9Y616",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q9Y616.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "da640b691b83f87dadd00163e267c3ce78614548cc545369baf54611dcc8e2f3",
+      "assay_key": "50018296_1",
+      "protein_sha256": "13f7554d9b19f2ba75cc851600252cf99ccd746317c5b94db51a8c830a534c45",
+      "assayed_target_sequence_length": 858,
+      "sequence_reference_matches": [
+        {
+          "accession": "P45974",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 858,
+          "reference_sha256": "13f7554d9b19f2ba75cc851600252cf99ccd746317c5b94db51a8c830a534c45",
+          "reference_primary_accession": "P45974",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P45974.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "604c4e560bcb7c5af661342ddd9394c5d72bb5b827c901486abfe3443f0f07be",
+      "assay_key": "4362_1",
+      "protein_sha256": "022c5e46aa4d58f82ea0b1dcb834398f4f1195826519611b0447b8b5e3536ef3",
+      "assayed_target_sequence_length": 925,
+      "sequence_reference_matches": [
+        {
+          "accession": "P22413",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 925,
+          "reference_sha256": "022c5e46aa4d58f82ea0b1dcb834398f4f1195826519611b0447b8b5e3536ef3",
+          "reference_primary_accession": "P22413",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P22413.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "904e81d710d1d0742e6a18ae3031706c7288c97c075872302f8eab7527a565bd",
+      "assay_key": "50023141_1",
+      "protein_sha256": "14f75cca9ba701d4dc61aa5341c3241ed9bcd3f1292d6df33b41bdbb8a0350da",
+      "assayed_target_sequence_length": 323,
+      "sequence_reference_matches": [
+        {
+          "accession": "P12429",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 323,
+          "reference_sha256": "14f75cca9ba701d4dc61aa5341c3241ed9bcd3f1292d6df33b41bdbb8a0350da",
+          "reference_primary_accession": "P12429",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P12429.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "5424dcc1f75fce0341243e997a1119bcef1399a3b8c5b57b17dc6304d4bf3d5c",
+      "assay_key": "50008549_2",
+      "protein_sha256": "14dbf9627717fe4d45d5ceb37a1a4b43c26c0640762cc7dd1d277f076aa7d738",
+      "assayed_target_sequence_length": 390,
+      "sequence_reference_matches": [
+        {
+          "accession": "P14598",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 390,
+          "reference_sha256": "14dbf9627717fe4d45d5ceb37a1a4b43c26c0640762cc7dd1d277f076aa7d738",
+          "reference_primary_accession": "P14598",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P14598.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "4488f29766cbe2653ea93739d332ffc50219fdf10a5a27284d66aca2e73306cd",
+      "assay_key": "50005563_3",
+      "protein_sha256": "f01679b357e85183133b6e765b5bbb10fb34aac343f1185d3cae27b684632907",
+      "assayed_target_sequence_length": 187,
+      "sequence_reference_matches": [
+        {
+          "accession": "P00374",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 187,
+          "reference_sha256": "f01679b357e85183133b6e765b5bbb10fb34aac343f1185d3cae27b684632907",
+          "reference_primary_accession": "P00374",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P00374.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "26d975c716e25a79ea6f41e0153eb7f726f43710a435d2e7df7100755c05222e",
+      "assay_key": "50034019_51",
+      "protein_sha256": "64d713cf952e40770c0c9f4f177daeac36be41e78269c3433054f81628ad92c3",
+      "assayed_target_sequence_length": 567,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q9UPE1",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 567,
+          "reference_sha256": "64d713cf952e40770c0c9f4f177daeac36be41e78269c3433054f81628ad92c3",
+          "reference_primary_accession": "Q9UPE1",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q9UPE1.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "1632cad148183614bd7292f625c774938a1b967c0a7fb97feda019b1bad090ff",
+      "assay_key": "50008121_1",
+      "protein_sha256": "c6c68b0fd0d91ac09b4d54081495e3a55d20808d2506fbd3cfa99ee0129dde5d",
+      "assayed_target_sequence_length": 251,
+      "sequence_reference_matches": [
+        {
+          "accession": "O95931",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 251,
+          "reference_sha256": "c6c68b0fd0d91ac09b4d54081495e3a55d20808d2506fbd3cfa99ee0129dde5d",
+          "reference_primary_accession": "O95931",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/O95931.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "a7bc81eb9ee391d2cc5546d74638334d2a3b6e624bf6150b94d01f1119451765",
+      "assay_key": "50016305_1",
+      "protein_sha256": "c439463f0f8ad68eb087a547bccd2e0cf18e31b66268a57550f163b4777daa3a",
+      "assayed_target_sequence_length": 485,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q9UKL0",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 485,
+          "reference_sha256": "c439463f0f8ad68eb087a547bccd2e0cf18e31b66268a57550f163b4777daa3a",
+          "reference_primary_accession": "Q9UKL0",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q9UKL0.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881",
+      "assay_key": "50029872_1",
+      "protein_sha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "assayed_target_sequence_length": 260,
+      "sequence_reference_matches": [
+        {
+          "accession": "P00918",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 260,
+          "reference_sha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+          "reference_primary_accession": "P00918",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P00918.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "1450d9fd14bdec26e2c46a46a9a169aa737822560147f165cf6a8b1f406d89d4",
+      "assay_key": "50022853_5",
+      "protein_sha256": "a0d8504fc2ce28870415fc343e3f9d05f8ab9b574fa9e28f0f89d5b6cbc2a563",
+      "assayed_target_sequence_length": 530,
+      "sequence_reference_matches": [
+        {
+          "accession": "O75475",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 530,
+          "reference_sha256": "a0d8504fc2ce28870415fc343e3f9d05f8ab9b574fa9e28f0f89d5b6cbc2a563",
+          "reference_primary_accession": "O75475",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/O75475.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "ba8117e41bb7c3ce236b05f5442a53d7fb9eff6370207690bf9f1c3103eb1ecf",
+      "assay_key": "50036674_1",
+      "protein_sha256": "008c43d87e5cde788e293d3e1be752a6fe6a16d91f6f777a362580e60ab5fcb5",
+      "assayed_target_sequence_length": 416,
+      "sequence_reference_matches": [
+        {
+          "accession": "P00560",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 416,
+          "reference_sha256": "008c43d87e5cde788e293d3e1be752a6fe6a16d91f6f777a362580e60ab5fcb5",
+          "reference_primary_accession": "P00560",
+          "organism": "Saccharomyces cerevisiae (strain ATCC 204508 / S288c)",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P00560.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "09d7963d31186c17d5ff3dd20ebf79900bf7c7bb70594aa4f15d768864e8f768",
+      "assay_key": "9684_1",
+      "protein_sha256": "43654b9ee9fc7ffd20d063e02e0f2715849c8a83afd11da12a1e44a2d76d66ec",
+      "assayed_target_sequence_length": 150,
+      "sequence_reference_matches": [
+        {
+          "accession": "O43924",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 150,
+          "reference_sha256": "43654b9ee9fc7ffd20d063e02e0f2715849c8a83afd11da12a1e44a2d76d66ec",
+          "reference_primary_accession": "O43924",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/O43924.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "0537e55fb0da51c1ed03d68b55628af3b152d8a46f5c9809a2f0d960ed6261ac",
+      "assay_key": "6526_1",
+      "protein_sha256": "26869a7fa856d719c193b67a32ea0b6e3508c17ae6b4a22b7ec5e3fcce984a5f",
+      "assayed_target_sequence_length": 289,
+      "sequence_reference_matches": [
+        {
+          "accession": "P00491",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 289,
+          "reference_sha256": "26869a7fa856d719c193b67a32ea0b6e3508c17ae6b4a22b7ec5e3fcce984a5f",
+          "reference_primary_accession": "P00491",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P00491.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "06203cadcc8c06b459027d196e58179c652e2db93643b684e0e4b1ef904a9f3b",
+      "assay_key": "50016943_1",
+      "protein_sha256": "0f79dd8c1ea278edbe797ca3ccb235de12e8d482492499a37a977a0692d3e49b",
+      "assayed_target_sequence_length": 770,
+      "sequence_reference_matches": [
+        {
+          "accession": "P05067",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 770,
+          "reference_sha256": "0f79dd8c1ea278edbe797ca3ccb235de12e8d482492499a37a977a0692d3e49b",
+          "reference_primary_accession": "P05067",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P05067.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "83c3383d774c088ede95378857d532d6106b6543bd0116618c061fac063be820",
+      "assay_key": "11754_1",
+      "protein_sha256": "b1b17c7fca3cbab15bc66b90bd4c07f73617cb5a03db105b0a38084fe7bca48b",
+      "assayed_target_sequence_length": 290,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q9NZQ7",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 290,
+          "reference_sha256": "b1b17c7fca3cbab15bc66b90bd4c07f73617cb5a03db105b0a38084fe7bca48b",
+          "reference_primary_accession": "Q9NZQ7",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q9NZQ7.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "84d34377550c6af39d0fa8ea4f45971c52ef9369851597ba4146348af9f25bf0",
+      "assay_key": "50018866_3",
+      "protein_sha256": "29a0408ae03026a841f908c0f86f2f4f5528d41786557b6a2bdc737448cfeae1",
+      "assayed_target_sequence_length": 391,
+      "sequence_reference_matches": [
+        {
+          "accession": "O14717",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 391,
+          "reference_sha256": "29a0408ae03026a841f908c0f86f2f4f5528d41786557b6a2bdc737448cfeae1",
+          "reference_primary_accession": "O14717",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/O14717.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "assay_key": "50002067_1",
+      "protein_sha256": "1d2551ade453a33a915755fda9144bb4924af48001cae8fe701fa2663318092c",
+      "assayed_target_sequence_length": 923,
+      "sequence_reference_matches": [
+        {
+          "accession": "O14786",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 923,
+          "reference_sha256": "1d2551ade453a33a915755fda9144bb4924af48001cae8fe701fa2663318092c",
+          "reference_primary_accession": "O14786",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/O14786.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "63fda6fc87ffcd3651590f46f8f47181be4ff92218792451050c9716675838bc",
+      "assay_key": "50042775_1",
+      "protein_sha256": "af1da04ff0aec04b89f2c4605eb222fc00ba4b5fdb08b537f284cac275b33a17",
+      "assayed_target_sequence_length": 1055,
+      "sequence_reference_matches": [
+        {
+          "accession": "Q9Y233",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 1055,
+          "reference_sha256": "af1da04ff0aec04b89f2c4605eb222fc00ba4b5fdb08b537f284cac275b33a17",
+          "reference_primary_accession": "Q9Y233",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/Q9Y233.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "da40c59768b57b10fa19165e2783e244b9a1ebe7f116999933408861e6e09993",
+      "assay_key": "11490_1",
+      "protein_sha256": "8cd3cf61857825c3e48d5f35a6a560478cfecd2c63da46ea537ac8eeb5342796",
+      "assayed_target_sequence_length": 463,
+      "sequence_reference_matches": [
+        {
+          "accession": "P43220",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 463,
+          "reference_sha256": "8cd3cf61857825c3e48d5f35a6a560478cfecd2c63da46ea537ac8eeb5342796",
+          "reference_primary_accession": "P43220",
+          "organism": "Homo sapiens",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P43220.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "00711d68562f88f0479db57d7cb5c2f79a802c306a489b788c96c75d06c79c5b",
+      "assay_key": "50013470_1",
+      "protein_sha256": "18023b2580d92ef2eb7ab2703d1eca7b00059f0fd591583ec019b99360e56545",
+      "assayed_target_sequence_length": 1476,
+      "sequence_reference_matches": [
+        {
+          "accession": "P34158",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 1476,
+          "reference_sha256": "18023b2580d92ef2eb7ab2703d1eca7b00059f0fd591583ec019b99360e56545",
+          "reference_primary_accession": "P34158",
+          "organism": "Rattus norvegicus",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P34158.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    },
+    {
+      "task_id": "86568e5c1b04fb4d58da6667b530e460de6394c98b3d259c33511e138682f397",
+      "assay_key": "50031617_1",
+      "protein_sha256": "bdf3e7736c135528e057dad2c05cc2337a7368ada01b150d2f5c263151dddda0",
+      "assayed_target_sequence_length": 217,
+      "sequence_reference_matches": [
+        {
+          "accession": "P63073",
+          "status": "EXACT_REFERENCE_SEQUENCE",
+          "reference_length": 217,
+          "reference_sha256": "bdf3e7736c135528e057dad2c05cc2337a7368ada01b150d2f5c263151dddda0",
+          "reference_primary_accession": "P63073",
+          "organism": "Mus musculus",
+          "reference_url": "https://rest.uniprot.org/uniprotkb/P63073.json"
+        }
+      ],
+      "screen_status": "EXACT_REFERENCE_SEQUENCE"
+    }
+  ],
+  "limitations": [
+    "Exact equality to UniProt does not prove the actual assayed construct has the sequence.",
+    "Subsequence or locally similar sequence may reflect expected domains, tags or mutations.",
+    "Source publication/patent and experimental construct require manual verification.",
+    "No affinity labels accessed; do not use statuses as automatic experimental approval.",
+    "UniProt sequences may change over time; response payloads cached locally."
+  ]
+}

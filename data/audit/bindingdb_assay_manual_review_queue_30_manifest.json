@@ -1,0 +1,10 @@
+{
+  "status": "MANUAL_REVIEW_QUEUE_NOT_APPROVED",
+  "review_rows": 30,
+  "unique_protein_components": 30,
+  "input_candidate_component_count": 158,
+  "affinity_values_accessed": false,
+  "policy": "SHA-selected distinct candidate components; within each choose task with largest chemistry panel, no affinity inspection.",
+  "output": "C:\\Users\\J0124\\dynacpi_v4\\data\\audit\\bindingdb_assay_manual_review_queue_30.csv",
+  "warning": "Review of experimental papers/construct identity and provenance required before declaring any row valid."
+}

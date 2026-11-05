@@ -1,0 +1,19 @@
+{
+  "source_sha256": "8668509c1c5a38917d30a46f023eded94584a129e7dac90b7e80fd4e56d943ac",
+  "pilot_split": "train",
+  "source_name": "DDR1",
+  "searched_gene": "DDR1",
+  "query_length": 913,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q08345",
+      "start0": 0,
+      "end0": 913,
+      "reference_length": 913,
+      "reference_sha256": "8668509c1c5a38917d30a46f023eded94584a129e7dac90b7e80fd4e56d943ac",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

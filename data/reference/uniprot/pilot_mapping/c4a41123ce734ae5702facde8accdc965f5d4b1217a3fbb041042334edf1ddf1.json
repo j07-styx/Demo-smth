@@ -1,0 +1,35 @@
+{
+  "source_sha256": "c4a41123ce734ae5702facde8accdc965f5d4b1217a3fbb041042334edf1ddf1",
+  "pilot_split": "train",
+  "source_name": "PIK3C2B",
+  "searched_gene": "PIK3C2B",
+  "query_length": 1634,
+  "candidate_reference_count": 3,
+  "reference_matches": [
+    {
+      "accession": "O00750",
+      "start0": 0,
+      "end0": 1634,
+      "reference_length": 1634,
+      "reference_sha256": "c4a41123ce734ae5702facde8accdc965f5d4b1217a3fbb041042334edf1ddf1",
+      "is_reviewed": true
+    },
+    {
+      "accession": "A2RUF7",
+      "start0": 0,
+      "end0": 1634,
+      "reference_length": 1634,
+      "reference_sha256": "c4a41123ce734ae5702facde8accdc965f5d4b1217a3fbb041042334edf1ddf1",
+      "is_reviewed": false
+    },
+    {
+      "accession": "Q4LE65",
+      "start0": 11,
+      "end0": 1645,
+      "reference_length": 1645,
+      "reference_sha256": "bb64e13f197a6b17249e961600782ee51c0031a733b4214ca714709268414f72",
+      "is_reviewed": false
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}

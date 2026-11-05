@@ -1,0 +1,19 @@
+{
+  "source_sha256": "00faf52e877f8ec4d0da6ca32313f09350fb35484546287f7d68e8d95efc02b9",
+  "pilot_split": "train",
+  "source_name": "MKNK2",
+  "searched_gene": "MKNK2",
+  "query_length": 465,
+  "candidate_reference_count": 1,
+  "reference_matches": [
+    {
+      "accession": "Q9HBH9",
+      "start0": 0,
+      "end0": 465,
+      "reference_length": 465,
+      "reference_sha256": "00faf52e877f8ec4d0da6ca32313f09350fb35484546287f7d68e8d95efc02b9",
+      "is_reviewed": true
+    }
+  ],
+  "status": "EXACT_CONTIGUOUS_SUBSEQUENCE"
+}
