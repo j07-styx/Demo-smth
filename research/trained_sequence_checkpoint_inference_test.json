@@ -1,0 +1,12 @@
+{
+  "status": "PASS_TRAINED_ENGINEERING_CHECKPOINT_ONLY",
+  "checkpoint_epoch": 3,
+  "checkpoint_sha256": "ef6df11110f8d80776a4f28530a5ea19cb085ad230a8c65594d986fecde49729",
+  "training_labels_mean": 5.342679941841826,
+  "training_labels_std": 0.7708920464832527,
+  "protein_length": 766,
+  "raw_pKd_reconstruction_abs_difference": 0.0,
+  "strict_checkpoint_keys_loaded": true,
+  "missing_3D_equals_sequence_exactly": true,
+  "scope": "Legacy DAVIS engineering split, final 3-epoch checkpoint; not approved BindingDB study or held-out protein family result."
+}

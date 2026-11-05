@@ -1,0 +1,27 @@
+{
+  "passed": [
+    "200 constrained optimizer comparisons",
+    "support permutation",
+    "common label-shift invariance of differential",
+    "total correction bound",
+    "empty support",
+    "single support",
+    "constant disagreement",
+    "missing geometry retains calibration",
+    "vanishing evidence",
+    "padded neighbor-average counterexample"
+  ],
+  "optimizer_trials": 200,
+  "max_objective_difference": 1.4210854715202004e-14,
+  "legacy_means": [
+    3.0,
+    1.5
+  ],
+  "masked_means": [
+    3.0,
+    3.0
+  ],
+  "scope": "NumPy/SciPy adapter algebra and isolated padding arithmetic only; no neural model trained or executed"
+}
+
+--- STDERR ---

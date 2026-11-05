@@ -1,0 +1,23 @@
+[
+  {
+    "epoch": 1,
+    "pooled_rmse": 0.8626926509704637,
+    "target_macro_rmse": 0.8072925632605737,
+    "elapsed_s": 6.48,
+    "peak_MiB": 123.0
+  },
+  {
+    "epoch": 2,
+    "pooled_rmse": 0.8842302406538158,
+    "target_macro_rmse": 0.8150030453819965,
+    "elapsed_s": 6.11,
+    "peak_MiB": 123.0
+  },
+  {
+    "epoch": 3,
+    "pooled_rmse": 0.8684580166761282,
+    "target_macro_rmse": 0.8092440149513996,
+    "elapsed_s": 5.82,
+    "peak_MiB": 123.0
+  }
+]

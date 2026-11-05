@@ -1,0 +1,12 @@
+{
+  "scope": "Actual pinned CAB classes on synthetic pooled features; no trained checkpoint or molecular benchmark",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "output_shape": [
+    4,
+    256
+  ],
+  "batch_single_max_abs_difference": 1.4901161193847656e-08,
+  "finite": true,
+  "passed": true
+}

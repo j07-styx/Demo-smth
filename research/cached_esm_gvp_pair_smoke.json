@@ -1,0 +1,13 @@
+{
+  "status": "passed_engineering_only",
+  "source": "P15056 canonical AlphaFold v6 + cached official ESM-2 650M + real RDKit molecule",
+  "protein_length": 766,
+  "complete_backbone_nodes": 766,
+  "directed_edges": 18789,
+  "max_zero_projection_difference": 0.0,
+  "max_missing_structure_difference": 0.0,
+  "nonzero_projection_changed_prediction": true,
+  "gvp_grad_norm": 0.006370040180627257,
+  "peak_cuda_mib": 462.95654296875,
+  "scope": "Random weights, synthetic regression target. Assay identity unverified. No training or model performance result."
+}

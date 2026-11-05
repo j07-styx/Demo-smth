@@ -1,0 +1,16 @@
+{
+  "status": "PASS_REAL_INPUTS_SYNTHETIC_LABELS_AND_UNTRAINED_WEIGHTS",
+  "experiment": "8 real staged RDKit compounds, one canonical BRAF AlphaFold structure and real ESM2 650M cache",
+  "structure_residues": 766,
+  "geometry_graph_nodes": 766,
+  "geometry_graph_edges": 18789,
+  "synthetic_support_count": 5,
+  "query_count": 3,
+  "geometry_prediction_changed": true,
+  "K0_exact_zero_shot": true,
+  "missing_geometry_exact_fallback": true,
+  "support_permutation_invariance": true,
+  "single_vs_bulk_inference_consistent": true,
+  "max_gpu_memory_mib": 125.84,
+  "scope": "NO experimental labels or approved assay; random neural weights; no binding-affinity accuracy or biology established"
+}

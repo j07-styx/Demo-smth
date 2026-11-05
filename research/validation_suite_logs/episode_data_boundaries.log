@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "Real pre-split BindingDB candidate identities, no scientific split or model training",
+  "counts": {
+    "task_count": 1146,
+    "episodes_checked": 4961,
+    "K20_tasks": 377,
+    "support_query_overlaps": 0,
+    "cross_assay_support": 0,
+    "query_labels_exposed_to_prediction_input": 0
+  },
+  "negative_controls": [
+    "reject cross-assay support",
+    "reject reused query compound",
+    "query-label perturbation cannot affect prediction inputs",
+    "query labels available only in evaluation reference"
+  ],
+  "warning": "A software boundary does not substitute for final provenance, splitting or scientific approval."
+}
+
+--- STDERR ---

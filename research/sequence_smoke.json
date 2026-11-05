@@ -1,0 +1,10 @@
+{
+  "scope": "Real RDKit molecules, synthetic residue embeddings and regression targets; interface/gradient verification only",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "parameters": 1649153,
+  "prediction_batch_difference": 3.725290298461914e-09,
+  "compound_batch_difference": 7.450580596923828e-09,
+  "finite_gradient_parameters": 28,
+  "sequence_projection_grad_norm": 0.1198538988828659,
+  "synthetic_loss": 0.062346234917640686
+}

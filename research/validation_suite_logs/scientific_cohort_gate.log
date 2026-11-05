@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "real_scientific_cohort": "BLOCKED_NOT_APPROVED",
+  "test_synthetic_only": true,
+  "unit_checks": [
+    "reject missing science-approved manifests",
+    "accept internally consistent fictional metadata for structural testing only",
+    "reject protein component reuse between roles",
+    "reject changed cohort checksum"
+  ],
+  "warning": "Mock artifact consistency is not source-level experimental verification."
+}
+
+--- STDERR ---

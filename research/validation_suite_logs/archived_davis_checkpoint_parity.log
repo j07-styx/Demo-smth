@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "All 1,148 archived first-fold DAVIS test compounds using pinned unmodified reference model and original inference batch boundaries; NOT DynaCPI",
+  "checkpoint_sha256": "8bae3f7c0a0351039ccdd5acd6a50f8a5d336277fcf405b25f707959a211ae37",
+  "test_sha256": "1f9310ad7ce60ff75c1d70b6a04cba22e06eb4ec6f18eb03a9029047210ca854",
+  "saved_predictions_sha256": "7072cbc46141847b9ec1ef20d8cb9065e99bbb0546cfe38a82991b4903096420",
+  "source_files_bit_identical": {
+    "chemprop/models/model.py": true,
+    "chemprop/models/mpn.py": true,
+    "chemprop/models/CAB.py": true,
+    "chemprop/data/data.py": true,
+    "chemprop/features/featurization.py": true,
+    "chemprop/train/predict.py": true
+  },
+  "model_loaded_strict": true,
+  "reference_batch_size": 50,
+  "rows_compared": 1148,
+  "max_abs_pKd_prediction_difference": 0.0,
+  "mean_abs_pKd_prediction_difference": 0.0,
+  "reference_mean_all": 5.226896336269711,
+  "regression_label_mean": 0.0,
+  "regression_label_std": 1.0,
+  "warning": "No PerceiverCPI publication-wide parity or trained DynaCPI improvement is established."
+}
+
+--- STDERR ---

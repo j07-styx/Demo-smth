@@ -1,0 +1,45 @@
+{
+  "status": "PASS_DRY_RUN_ONLY",
+  "dataset": "Full BindingDB preliminary >=15-compound candidate groups, unreviewed",
+  "tasks": 1146,
+  "component_count": 168,
+  "role_component_counts": {
+    "base_train": 100,
+    "base_validation": 17,
+    "adapter_train": 17,
+    "adapter_validation": 17,
+    "test": 17
+  },
+  "role_task_counts": {
+    "base_train": 735,
+    "base_validation": 110,
+    "adapter_train": 101,
+    "adapter_validation": 100,
+    "test": 100
+  },
+  "K20_role_task_counts": {
+    "base_train": 222,
+    "base_validation": 30,
+    "adapter_train": 52,
+    "adapter_validation": 36,
+    "test": 37
+  },
+  "K20_role_component_counts": {
+    "base_train": 35,
+    "base_validation": 7,
+    "adapter_train": 14,
+    "adapter_validation": 12,
+    "test": 13
+  },
+  "assignment_sha256_for_reproducibility": "7aaa9c5d9ce5958343dd8cb9b125bd12833e8692b042668e44e02c11abbe9e46",
+  "checks": [
+    "disjoint component roles",
+    "deterministic seed",
+    "all tasks included",
+    "no affinity labels accepted",
+    "no final split or assignment written"
+  ],
+  "warning": "Dry run is not a benchmark; no training or test split is frozen."
+}
+
+--- STDERR ---

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ENGINEERING_CHECKPOINT_REEVALUATION",
+  "geometry_best_epoch": 1,
+  "val_proteins": 4,
+  "val_pairs": 216,
+  "checkpoint_sha256": "a3725b8c0e6a3d7dea6d338a09160ddb4aac0ec206be0d424216f9de6628b85c",
+  "recomputed_sequence_target_macro_rmse": 0.9256851003655892,
+  "recomputed_geometry_target_macro_rmse": 0.9359206355726633,
+  "structure_improved_target_count": 2,
+  "structure_harmed_target_count": 2,
+  "prediction_rows_with_change_from_geometry": 216,
+  "max_metric_discrepancy_tolerance": 1e-05,
+  "warning": "Engineering-only original DAVIS subset; does not establish novelty, independent holdout or reliable biological benefit."
+}
+{"sequence_sha256": "266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd", "name": "FRK", "query_pairs": 54, "sequence_rmse": 1.2854349813000177, "geometry_rmse": 1.2832253334388415, "geometry_minus_sequence_rmse": -0.002209647861176167}
+{"sequence_sha256": "673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39", "name": "MEK5", "query_pairs": 54, "sequence_rmse": 1.3788731602518685, "geometry_rmse": 1.3766788331257223, "geometry_minus_sequence_rmse": -0.0021943271261462005}
+{"sequence_sha256": "75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e", "name": "ADCK4", "query_pairs": 54, "sequence_rmse": 0.6176706439312649, "geometry_rmse": 0.6625398674368047, "geometry_minus_sequence_rmse": 0.04486922350553979}
+{"sequence_sha256": "841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9", "name": "OSR1", "query_pairs": 54, "sequence_rmse": 0.42076161597920564, "geometry_rmse": 0.4212385082892842, "geometry_minus_sequence_rmse": 0.00047689231007858046}
+
+--- STDERR ---

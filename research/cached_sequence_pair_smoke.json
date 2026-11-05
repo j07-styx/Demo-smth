@@ -1,0 +1,13 @@
+{
+  "scope": "Two real staged DAVIS compounds and sequences with genuine cached frozen ESM-2 650M residue embeddings; random initialized extension head and synthetic loss targets",
+  "status": "engineering_smoke_only",
+  "pairs": 2,
+  "sequence_lengths": [
+    545,
+    588
+  ],
+  "max_batch_vs_single_difference": 0.0,
+  "sequence_projection_grad_norm": 0.04707025736570358,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "note": "Input legacy labels quarantined; no affinity learning, validated target semantics, trained checkpoint or scientific result"
+}

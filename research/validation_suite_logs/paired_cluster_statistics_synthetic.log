@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SYNTHETIC_STATS_ONLY",
+  "checks": [
+    "paired task and cluster macro RMSE",
+    "deterministic cluster bootstrap CI",
+    "reject duplicate rows",
+    "reject changing query labels between support draws",
+    "reject task spanning protein components",
+    "reject mismatched query sets",
+    "reject nonfinite predictions"
+  ],
+  "synthetic_n_components": 15,
+  "synthetic_n_prediction_rows": 3600,
+  "demonstration_absolute_reduction": 0.2,
+  "warning": "Synthetic values are not drug-target affinity measurements; no research effect was observed."
+}
+
+--- STDERR ---

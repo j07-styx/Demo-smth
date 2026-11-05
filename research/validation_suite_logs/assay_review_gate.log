@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "current_unreviewed": 30,
+  "current_approved": 0,
+  "controls_tested": [
+    "reject unsubstantiated approval",
+    "reject source metadata tampering",
+    "test gated approval schema without changing real review sheet"
+  ],
+  "scope": "Software validation only, not any assay verification"
+}
+
+--- STDERR ---

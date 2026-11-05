@@ -1,0 +1,11 @@
+{
+  "scope": "First 96 residues of canonical AF-P15056-F1 v6, real geometry and PAE; synthetic sequence tokens; no affinity measurements",
+  "nodes": 96,
+  "directed_edges": 2094,
+  "projection_grad": 161.5312042236328,
+  "gvp_input_grad": 14.368946850299835,
+  "max_rot_trans_token_difference": 2.384185791015625e-07,
+  "exact_init_and_missing_fallback": true,
+  "missing_node_excluded": true,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

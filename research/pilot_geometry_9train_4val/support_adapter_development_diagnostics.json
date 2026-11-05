@@ -1,0 +1,104 @@
+{
+  "status": "DEVELOPMENT_PILOT_ONLY_NOT_A_SCIENTIFIC_TEST",
+  "study": "Legacy DAVIS four-kinase geometry-selected validation targets with fixed support labels (K5)",
+  "cohort_targets": 4,
+  "total_unique_queries": 40,
+  "repeated_support_draws_per_target": 10,
+  "fixed_settings": {
+    "w0": 0.5,
+    "lambda_b": 5,
+    "lambda_theta": 0.1,
+    "caps": [
+      2,
+      1
+    ],
+    "Tanimoto_exponent": 4
+  },
+  "target_macro_mean_episode_rmse": {
+    "A": 0.8610174102950899,
+    "B": 0.8601385628311068,
+    "C": 0.8610174103471511,
+    "D": 0.8601385628831592
+  },
+  "D_minus_B_development_macro_rmse": 5.2052362420340614e-11,
+  "per_target": [
+    {
+      "name": "FRK",
+      "sequence_sha256": "266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd",
+      "query_count": 10,
+      "support_draws": 10,
+      "support_size": 5,
+      "mean_episode_rmse": {
+        "A": 1.7419024695022969,
+        "B": 1.7413262708184338,
+        "C": 1.7419024695038345,
+        "D": 1.7413262708199708
+      },
+      "D_minus_B_development_rmse": 1.5369927552910667e-12,
+      "mean_abs_differential_pKd": 2.6563466013841762e-12,
+      "mean_W": 0.0040034262969681845,
+      "mean_V": 5.800945976746372e-13,
+      "fraction_zero_differential": 1.0
+    },
+    {
+      "name": "MEK5",
+      "sequence_sha256": "673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39",
+      "query_count": 10,
+      "support_draws": 10,
+      "support_size": 5,
+      "mean_episode_rmse": {
+        "A": 0.613069219356245,
+        "B": 0.6105765773866935,
+        "C": 0.6130692193561904,
+        "D": 0.6105765773866407
+      },
+      "D_minus_B_development_rmse": -5.2735593669694936e-14,
+      "mean_abs_differential_pKd": 9.181095205505315e-14,
+      "mean_W": 0.00887865154962031,
+      "mean_V": 1.8286083608112568e-14,
+      "fraction_zero_differential": 1.0
+    },
+    {
+      "name": "ADCK4",
+      "sequence_sha256": "75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e",
+      "query_count": 10,
+      "support_draws": 10,
+      "support_size": 5,
+      "mean_episode_rmse": {
+        "A": 0.8044981576206076,
+        "B": 0.8041199992420383,
+        "C": 0.8044981578273693,
+        "D": 0.8041199994487639
+      },
+      "D_minus_B_development_rmse": 2.0672563660895094e-10,
+      "mean_abs_differential_pKd": 1.8266138985548605e-10,
+      "mean_W": 0.008884888865590856,
+      "mean_V": 4.546278384567868e-11,
+      "fraction_zero_differential": 1.0
+    },
+    {
+      "name": "OSR1",
+      "sequence_sha256": "841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9",
+      "query_count": 10,
+      "support_draws": 10,
+      "support_size": 5,
+      "mean_episode_rmse": {
+        "A": 0.28459979470121016,
+        "B": 0.2845314038772616,
+        "C": 0.2845997947012098,
+        "D": 0.2845314038772612
+      },
+      "D_minus_B_development_rmse": -3.885780586188048e-16,
+      "mean_abs_differential_pKd": 2.261725062846085e-15,
+      "mean_W": 0.0033584079840716166,
+      "mean_V": 1.0906356728073904e-15,
+      "fraction_zero_differential": 1.0
+    }
+  ],
+  "limitations": [
+    "The geometry checkpoint was selected on these targets: reused development data; statistics are not an unbiased test.",
+    "Numeric legacy DAVIS reporting-boundary values were treated as exact and were not source audited.",
+    "Four closely related targets and just one trained seed cannot substantiate a cold-target claim.",
+    "No hyperparameter selection, model update or final scientific benchmark is performed in this script."
+  ]
+}
