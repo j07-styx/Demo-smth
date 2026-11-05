@@ -1,6 +1,7 @@
 # Demo-smth — DynaCPI v4 Research Handoff
 
 **Snapshot date:** 5 November 2026  
+**Git commit labels:** Version 0.1–0.4 refer ONLY to the sequence of repository uploads; **the DynaCPI model remains v4.0 throughout**. See [CHANGELOG.md](CHANGELOG.md).  
 **State:** Working engineering prototype; scientific superiority NOT established.  
 **Repository:** https://github.com/j07-styx/Demo-smth (initially private)  
 **Original foundation:** [PerceiverCPI (dmis-lab)](https://github.com/dmis-lab/PerceiverCPI). Preserve upstream attribution and MIT license in [LICENSE.txt](LICENSE.txt) and [UPSTREAM_README.md](UPSTREAM_README.md).
