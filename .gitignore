@@ -1,0 +1,30 @@
+# Python and research local state
+.git/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log.tmp
+.gpu.lock
+*.partial
+*.tmp
+.env
+.env.*
+*.secret
+*credentials*
+*.pem
+*.key
+# Upstream heavyweight datasets and ESM-2 caches (regenerate from sources)
+data/bindingdb_202611/*.zip
+data/bindingdb_202611/*.tmp
+data/esm2_t33_650M_layer33_w1000_o128_fp16/*.pt
+data/audit/bindingdb_full_kd_source_provenance.jsonl
+data/audit/bindingdb_full_kd_candidates.jsonl
+data/audit/bindingdb_full_kd_mmseqs_hits.tsv
+# Local run output
+__editable__*
+.coverage
+.pytest_cache/
+.vscode/
+.ipynb_checkpoints/
