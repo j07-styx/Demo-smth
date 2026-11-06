@@ -1,12 +1,12 @@
 # DynaCPI v4 — local benchmark monitor
 
-Updated (UTC): 2026-11-06T12:00:32.488060+00:00
+Updated (UTC): 2026-11-06T12:23:28.374861+00:00
 
 **Status:** ENGINEERING ONLY. No scientifically approved BindingDB cohort or frozen protein-group split.
 
-**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 175, 8188, 16
+**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 149, 8188, 20
 
-**Last consolidated regression check:** 27/27; status PASS_ENGINEERING_ONLY
+**Last consolidated regression check:** 28/28; status PASS_ENGINEERING_ONLY
 
 **Scientific gate:** BLOCKED_UNAPPROVED_NOT_TRAINING_READY
 
@@ -61,4 +61,4 @@ This is a same-four-target development diagnostic and does not show independent 
 
 Same four checkpoint-selected DAVIS proteins; three seeds are not three independent benchmarks.
 
-Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/source_access_v4/record_level_provenance_30.json, research/source_access_v4/record_source_evidence_readiness_30.json, research/source_access_v4/six_task_publication_evidence.json
+Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/source_access_v4/protein_only_review30_pairwise_audit.json

@@ -253,6 +253,25 @@
                       "problemMatcher":  [
 
                                          ]
+                  },
+                  {
+                      "label":  "DynaCPI: Audit 30 source-review protein homologies (label-free)",
+                      "type":  "process",
+                      "command":  "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+                      "args":  [
+                                   "${workspaceFolder}\\scripts\\audit_30_protein_similarity_review_v4.py"
+                               ],
+                      "options":  {
+                                      "cwd":  "${workspaceFolder}"
+                                  },
+                      "presentation":  {
+                                           "reveal":  "always",
+                                           "panel":  "dedicated",
+                                           "clear":  true
+                                       },
+                      "problemMatcher":  [
+
+                                         ]
                   }
               ]
 }

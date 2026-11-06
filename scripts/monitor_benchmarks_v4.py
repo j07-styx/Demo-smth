@@ -61,6 +61,7 @@ def read_status():
     lineage=fetch("research/source_access_v4/record_level_provenance_30.json")
     evidence_readiness=fetch("research/source_access_v4/record_source_evidence_readiness_30.json")
     six_source_leads=fetch("research/source_access_v4/six_task_publication_evidence.json")
+    protein_homology=fetch("research/source_access_v4/protein_only_review30_pairwise_audit.json")
     triage=fetch("research/source_access_v4/assay_metadata_risk_triage_30.json")
     construct_risk=fetch("research/source_access_v4/construct_alignment_risk_screen.json")
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
@@ -126,6 +127,14 @@ def read_status():
                          "D_minus_B_RMSE":r["D_minus_B_RMSE"]}
                         for r in seed_comparison.get("table_selected_K",[]) if r["K"]==20]
      } if isinstance(seed_comparison,dict) else {"status":"NOT_RUN"},
+     "protein_only_review30_homology_challenge":{
+       "status":protein_homology.get("status"),
+       "protein_count":protein_homology.get("task_count"),
+       "independent_local_pair_checks":protein_homology.get("all_pair_alignments"),
+       "original_mmseqs_components":protein_homology.get("distinct_prior_mmseqs_components"),
+       "sensitivity":[{"policy":s["name"],"direct_pairs":s["number_of_direct_pairs"],"cross_mmseqs_components":s["cross_existing_components"]} for s in protein_homology.get("summary",[])],
+       "scientifically_approved_tasks":protein_homology.get("scientifically_approved_tasks")
+     } if isinstance(protein_homology,dict) else {"status":"NOT_RUN"},
      "six_publication_source_leads":{
        "status":six_source_leads.get("status"),
        "task_count":six_source_leads.get("target_task_count"),
@@ -197,6 +206,7 @@ def read_status():
              "research/source_access_v4/record_level_provenance_30.json",
              "research/source_access_v4/record_source_evidence_readiness_30.json",
              "research/source_access_v4/six_task_publication_evidence.json",
+             "research/source_access_v4/protein_only_review30_pairwise_audit.json",
              "research/source_access_v4/P0_SOURCE_CROSSWALK.md",
              "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md",
              "research/source_access_v4/worklist_manifest.json",

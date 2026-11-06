@@ -143,3 +143,18 @@ Four checkpoint-selected legacy DAVIS development proteins, ten fixed query comp
 | **Total inspected (unapproved)** | **147** |
 
 All six task identifiers/PMIDs/counts matched original review CSV; zero numeric source-value rows authenticated, zero task approvals. See research/source_access_v4/six_task_publication_evidence.json and SIX_TASK_PUBLICATION_EVIDENCE.md. No changes to model weights, no training, no new independent model performance result.
+
+## 6 November 2026 — 30-reference protein-only pairwise homology challenge (NOT model fitting)
+
+| Finding | Count |
+| --- | ---: |
+| Review candidate reference protein sequences | 30 |
+| Existing MMseqs source-review components | 30 |
+| Independent Smith-Waterman local protein pair alignments | 435 |
+| Weak >=30% local identity/80% shorter-coverage cross-component pairs | 2 |
+| Cross-component pairs with >=40% identity, >=70% shorter coverage | 0 |
+| Cross-component pairs with >=30% identity and >=50% longer coverage | 0 |
+| New scientifically source-approved task count | 0 |
+| New frozen scientifically independent protein-group test split | None |
+
+The two weak pairs were CFTR/ANXA3 and PDE6D/ENPP1 with only 18.2% and 14.5% coverage of the longer protein, respectively. Such low coverage is not verified biological homology. Record is a sequence-clustering policy sensitivity analysis only. Inputs were the unchanged protein-only FASTA and canonical 30-task source metadata, not compounds or affinity records. Evidence `research/source_access_v4/protein_only_review30_pairwise_audit.json`.

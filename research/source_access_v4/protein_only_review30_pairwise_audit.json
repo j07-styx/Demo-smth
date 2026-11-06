@@ -1,0 +1,318 @@
+{
+  "status": "UNAPPROVED_30_TARGET_PROTEIN_ONLY_ALIGNMENT_CHALLENGE",
+  "completed_utc": "2026-11-06T12:15:37.338572+00:00",
+  "method": "Biopython PairwiseAligner, Smith-Waterman local, BLOSUM62, gap open -10, extension -0.5; identical residues/aligned ungapped positions",
+  "scope": "Fixed 30 unreviewed human-assay candidate protein sequences only, no compounds or raw affinity labels",
+  "review_queue_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
+  "protein_fasta_sha256": "95c28ec053da28ba86ddef5efbbdb774c50be856e24ebdf269b20f2e358c62aa",
+  "task_count": 30,
+  "distinct_sequence_count": 30,
+  "distinct_prior_mmseqs_components": 30,
+  "all_pair_alignments": 435,
+  "thresholds": [
+    {
+      "name": "original_like_30pct_shorter80_min80",
+      "identity": 0.3,
+      "shorter_coverage": 0.8,
+      "min_aligned": 80
+    },
+    {
+      "name": "medium_40pct_shorter70_min80",
+      "identity": 0.4,
+      "shorter_coverage": 0.7,
+      "min_aligned": 80
+    },
+    {
+      "name": "strict_50pct_shorter80_min100",
+      "identity": 0.5,
+      "shorter_coverage": 0.8,
+      "min_aligned": 100
+    },
+    {
+      "name": "high_80pct_shorter90_min80",
+      "identity": 0.8,
+      "shorter_coverage": 0.9,
+      "min_aligned": 80
+    },
+    {
+      "name": "reciprocal_30pct_shorter80_longer50_min80",
+      "identity": 0.3,
+      "shorter_coverage": 0.8,
+      "longer_coverage": 0.5,
+      "min_aligned": 80
+    },
+    {
+      "name": "reciprocal_40pct_shorter70_longer50_min80",
+      "identity": 0.4,
+      "shorter_coverage": 0.7,
+      "longer_coverage": 0.5,
+      "min_aligned": 80
+    }
+  ],
+  "summary": [
+    {
+      "name": "original_like_30pct_shorter80_min80",
+      "number_of_direct_pairs": 2,
+      "cross_existing_components": 2,
+      "components_in_review_30": 28,
+      "clusters_over_one_target": [
+        [
+          "Annexin A3",
+          "Cystic fibrosis transmembrane conductance regulator"
+        ],
+        [
+          "Ectonucleotide pyrophosphatase/phosphodiesterase family member 1",
+          "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta"
+        ]
+      ]
+    },
+    {
+      "name": "medium_40pct_shorter70_min80",
+      "number_of_direct_pairs": 0,
+      "cross_existing_components": 0,
+      "components_in_review_30": 30,
+      "clusters_over_one_target": []
+    },
+    {
+      "name": "strict_50pct_shorter80_min100",
+      "number_of_direct_pairs": 0,
+      "cross_existing_components": 0,
+      "components_in_review_30": 30,
+      "clusters_over_one_target": []
+    },
+    {
+      "name": "high_80pct_shorter90_min80",
+      "number_of_direct_pairs": 0,
+      "cross_existing_components": 0,
+      "components_in_review_30": 30,
+      "clusters_over_one_target": []
+    },
+    {
+      "name": "reciprocal_30pct_shorter80_longer50_min80",
+      "number_of_direct_pairs": 0,
+      "cross_existing_components": 0,
+      "components_in_review_30": 30,
+      "clusters_over_one_target": []
+    },
+    {
+      "name": "reciprocal_40pct_shorter70_longer50_min80",
+      "number_of_direct_pairs": 0,
+      "cross_existing_components": 0,
+      "components_in_review_30": 30,
+      "clusters_over_one_target": []
+    }
+  ],
+  "notable_protein_only_local_alignments": [
+    {
+      "name_a": "Ricin",
+      "name_b": "PA-I galactophilic lectin",
+      "same_existing_mmseqs_component": false,
+      "len_a": 576,
+      "len_b": 122,
+      "aligned_residue_pairs": 90,
+      "matches": 35,
+      "identity": 0.3888888888888889,
+      "coverage_shorter": 0.7377049180327869,
+      "coverage_longer": 0.15625,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta",
+      "name_b": "Ectonucleotide pyrophosphatase/phosphodiesterase family member 1",
+      "same_existing_mmseqs_component": false,
+      "len_a": 150,
+      "len_b": 925,
+      "aligned_residue_pairs": 134,
+      "matches": 43,
+      "identity": 0.3208955223880597,
+      "coverage_shorter": 0.8933333333333333,
+      "coverage_longer": 0.14486486486486486,
+      "thresholds_passed": [
+        "original_like_30pct_shorter80_min80"
+      ]
+    },
+    {
+      "name_a": "Cystic fibrosis transmembrane conductance regulator",
+      "name_b": "Annexin A3",
+      "same_existing_mmseqs_component": false,
+      "len_a": 1476,
+      "len_b": 323,
+      "aligned_residue_pairs": 269,
+      "matches": 87,
+      "identity": 0.32342007434944237,
+      "coverage_shorter": 0.8328173374613003,
+      "coverage_longer": 0.18224932249322492,
+      "thresholds_passed": [
+        "original_like_30pct_shorter80_min80"
+      ]
+    },
+    {
+      "name_a": "Elongin-C",
+      "name_b": "Ubiquitin carboxyl-terminal hydrolase 5",
+      "same_existing_mmseqs_component": false,
+      "len_a": 112,
+      "len_b": 858,
+      "aligned_residue_pairs": 77,
+      "matches": 29,
+      "identity": 0.37662337662337664,
+      "coverage_shorter": 0.6875,
+      "coverage_longer": 0.08974358974358974,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Elongin-C",
+      "name_b": "Atrial natriuretic peptide receptor 3",
+      "same_existing_mmseqs_component": false,
+      "len_a": 112,
+      "len_b": 541,
+      "aligned_residue_pairs": 82,
+      "matches": 29,
+      "identity": 0.35365853658536583,
+      "coverage_shorter": 0.7321428571428571,
+      "coverage_longer": 0.15157116451016636,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Elongin-C",
+      "name_b": "Indoleamine 2,3-dioxygenase 1",
+      "same_existing_mmseqs_component": false,
+      "len_a": 112,
+      "len_b": 403,
+      "aligned_residue_pairs": 81,
+      "matches": 29,
+      "identity": 0.35802469135802467,
+      "coverage_shorter": 0.7232142857142857,
+      "coverage_longer": 0.20099255583126552,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Elongin-C",
+      "name_b": "Phosphoglycerate kinase",
+      "same_existing_mmseqs_component": false,
+      "len_a": 112,
+      "len_b": 416,
+      "aligned_residue_pairs": 101,
+      "matches": 28,
+      "identity": 0.27722772277227725,
+      "coverage_shorter": 0.9017857142857143,
+      "coverage_longer": 0.24278846153846154,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Elongin-C",
+      "name_b": "Programmed cell death 1 ligand 1",
+      "same_existing_mmseqs_component": false,
+      "len_a": 112,
+      "len_b": 290,
+      "aligned_residue_pairs": 77,
+      "matches": 28,
+      "identity": 0.36363636363636365,
+      "coverage_shorter": 0.6875,
+      "coverage_longer": 0.2655172413793103,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Chromobox protein homolog 7",
+      "name_b": "SRSF protein kinase 3",
+      "same_existing_mmseqs_component": false,
+      "len_a": 251,
+      "len_b": 567,
+      "aligned_residue_pairs": 170,
+      "matches": 61,
+      "identity": 0.3588235294117647,
+      "coverage_shorter": 0.6772908366533864,
+      "coverage_longer": 0.2998236331569665,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Ectonucleotide pyrophosphatase/phosphodiesterase family member 1",
+      "name_b": "Eukaryotic translation initiation factor 4E",
+      "same_existing_mmseqs_component": false,
+      "len_a": 925,
+      "len_b": 217,
+      "aligned_residue_pairs": 156,
+      "matches": 51,
+      "identity": 0.3269230769230769,
+      "coverage_shorter": 0.7188940092165899,
+      "coverage_longer": 0.16864864864864865,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta",
+      "name_b": "tRNA (cytosine(38)-C(5))-methyltransferase",
+      "same_existing_mmseqs_component": false,
+      "len_a": 150,
+      "len_b": 391,
+      "aligned_residue_pairs": 100,
+      "matches": 35,
+      "identity": 0.35,
+      "coverage_shorter": 0.6666666666666666,
+      "coverage_longer": 0.2557544757033248,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "PC4 and SFRS1-interacting protein",
+      "name_b": "Chromobox protein homolog 7",
+      "same_existing_mmseqs_component": false,
+      "len_a": 530,
+      "len_b": 251,
+      "aligned_residue_pairs": 211,
+      "matches": 58,
+      "identity": 0.27488151658767773,
+      "coverage_shorter": 0.8406374501992032,
+      "coverage_longer": 0.39811320754716983,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta",
+      "name_b": "Interleukin-1 receptor-associated kinase 3",
+      "same_existing_mmseqs_component": false,
+      "len_a": 150,
+      "len_b": 596,
+      "aligned_residue_pairs": 110,
+      "matches": 34,
+      "identity": 0.3090909090909091,
+      "coverage_shorter": 0.7333333333333333,
+      "coverage_longer": 0.18456375838926176,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Ricin",
+      "name_b": "Phosphoglycerate kinase",
+      "same_existing_mmseqs_component": false,
+      "len_a": 576,
+      "len_b": 416,
+      "aligned_residue_pairs": 298,
+      "matches": 94,
+      "identity": 0.31543624161073824,
+      "coverage_shorter": 0.7163461538461539,
+      "coverage_longer": 0.5173611111111112,
+      "thresholds_passed": []
+    },
+    {
+      "name_a": "Cystic fibrosis transmembrane conductance regulator",
+      "name_b": "Elongin-C",
+      "same_existing_mmseqs_component": false,
+      "len_a": 1476,
+      "len_b": 112,
+      "aligned_residue_pairs": 81,
+      "matches": 25,
+      "identity": 0.30864197530864196,
+      "coverage_shorter": 0.7232142857142857,
+      "coverage_longer": 0.054878048780487805,
+      "thresholds_passed": []
+    }
+  ],
+  "source_record_review_decisions_changed": false,
+  "scientifically_approved_tasks": 0,
+  "frozen_scientific_split_created": false,
+  "elapsed_seconds": 5.67,
+  "limits": [
+    "Only the 30 selected reference proteins are compared, not all 4157 input proteins.",
+    "Local sequence similarity is not proof of shared physical assay constructs or function.",
+    "The existing MMseqs connected components were built via full 4157-sequence transitive graph; 30-target direct edges are not equivalent.",
+    "Different thresholds are sensitivity analysis, not a validated choice for future independent splits.",
+    "Low identities over one small protein segment may be biologically unrelated; an apparent pair is only a lead for independent profile/domain review, not evidence of true family homology.",
+    "No main scientific training, test assignments, or BindingDB data review approvals are authorized."
+  ]
+}

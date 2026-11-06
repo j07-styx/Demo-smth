@@ -1,6 +1,6 @@
 {
   "scope": "Engineering and provenance checks only: NO DynaCPI training, approved data, OOD scientific evaluation, or research novelty result",
-  "started_utc": "2026-11-06T11:55:23.637610+00:00",
+  "started_utc": "2026-11-06T12:17:23.181600+00:00",
   "tests": [
     {
       "test": "adapter_optimization",
@@ -8,7 +8,7 @@
       "script_sha256": "837d9b4315fdcd27075b7e78bb1af14da4743cc51c57ffa5f9dcd1ab3206b673",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 2.61,
+      "elapsed_seconds": 0.98,
       "log": "research\\validation_suite_logs\\adapter_optimization.log",
       "output_tail": "{\n  \"passed\": [\n    \"200 constrained optimizer comparisons\",\n    \"support permutation\",\n    \"common label-shift invariance of differential\",\n    \"total correction bound\",\n    \"empty support\",\n    \"single support\",\n    \"constant disagreement\",\n    \"missing geometry retains calibration\",\n    \"vanishing evidence\",\n    \"padded neighbor-average counterexample\"\n  ],\n  \"optimizer_trials\": 200,\n  \"max_objective_difference\": 1.4210854715202004e-14,\n  \"legacy_means\": [\n    3.0,\n    1.5\n  ],\n  \"masked_means\": [\n    3.0,\n    3.0\n  ],\n  \"scope\": \"NumPy/SciPy adapter algebra and isolated padding arithmetic only; no neural model trained or executed\"\n}\n"
     },
@@ -18,7 +18,7 @@
       "script_sha256": "1635571ed8e3a776d0c2e450f9523ea638837a4feb7ced1745a3dd59c1e14119",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 2.86,
+      "elapsed_seconds": 1.48,
       "log": "research\\validation_suite_logs\\episode_data_boundaries.log",
       "output_tail": "{\n  \"status\": \"PASS\",\n  \"scope\": \"Real pre-split BindingDB candidate identities, no scientific split or model training\",\n  \"counts\": {\n    \"task_count\": 1146,\n    \"episodes_checked\": 4961,\n    \"K20_tasks\": 377,\n    \"support_query_overlaps\": 0,\n    \"cross_assay_support\": 0,\n    \"query_labels_exposed_to_prediction_input\": 0\n  },\n  \"negative_controls\": [\n    \"reject cross-assay support\",\n    \"reject reused query compound\",\n    \"query-label perturbation cannot affect prediction inputs\",\n    \"query labels available only in evaluation reference\"\n  ],\n  \"warning\": \"A software boundary does not substitute for final provenance, splitting or scientific approval.\"\n}\n"
     },
@@ -28,7 +28,7 @@
       "script_sha256": "df37b022d22758042febdead3ab265e6ecf3de17e48089d8f48e0e724e66b770",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.27,
+      "elapsed_seconds": 0.14,
       "log": "research\\validation_suite_logs\\assay_review_gate.log",
       "output_tail": "{\n  \"status\": \"PASS\",\n  \"current_unreviewed\": 30,\n  \"current_approved\": 0,\n  \"controls_tested\": [\n    \"reject unsubstantiated approval\",\n    \"reject source metadata tampering\",\n    \"test gated approval schema without changing real review sheet\"\n  ],\n  \"scope\": \"Software validation only, not any assay verification\"\n}\n"
     },
@@ -38,7 +38,7 @@
       "script_sha256": "fb646beda2116fd88bf8d50f8a8188a30a559d29c117242453c147c2ba285834",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.59,
+      "elapsed_seconds": 0.28,
       "log": "research\\validation_suite_logs\\source_access_index_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_ENGINEERING_SOURCE_INDEX_ONLY\",\n  \"review_queue_unchanged\": true,\n  \"unique_source_pmids\": 20,\n  \"open_access_xml_indexed\": 2,\n  \"scientifically_approved_tasks\": 0,\n  \"synthetic_xml_unsafe_entities_rejected\": true,\n  \"raw_article_text_not_exported\": true,\n  \"science_gate\": \"BLOCKED\"\n}\n"
     },
@@ -48,7 +48,7 @@
       "script_sha256": "5280e734d22b5751657bba5caa3c4a89a65945c9410a275974695bbf288810aa",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.33,
+      "elapsed_seconds": 0.14,
       "log": "research\\validation_suite_logs\\construct_alignment_risk_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_CONSTRUCT_RISK_ENGINEERING_ONLY\",\n  \"source_reviewed_task_count\": 0,\n  \"source_locators_documented\": 2,\n  \"canonical_review_queue_unchanged\": true,\n  \"cohort_training_gate\": \"BLOCKED\"\n}\n"
     },
@@ -58,7 +58,7 @@
       "script_sha256": "aa4927e37c5ab5ad6559b14d26fe3047fd6bdb0550e3ea1d6f5fdf0e0d22da79",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.31,
+      "elapsed_seconds": 0.16,
       "log": "research\\validation_suite_logs\\metadata_risk_triage_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_30_TASK_TRIAGE_METADATA_ONLY\",\n  \"task_count\": 30,\n  \"priority_counts\": {\n    \"P0_REVIEW_METADATA_SEMANTICS\": 4,\n    \"P1_REVIEW_CONSTRUCT_AND_ENDPOINT\": 12,\n    \"P2_STANDARD_PRIMARY_SOURCE_REVIEW\": 14\n  },\n  \"canonical_review_unchanged\": true,\n  \"scientifically_approved_tasks\": 0,\n  \"source_approval_gate\": \"BLOCKED\",\n  \"synthetic_region_parser_tests\": true,\n  \"warning\": \"Flags are nonbinding review leads, not scientific defect verdicts.\"\n}\n"
     },
@@ -68,7 +68,7 @@
       "script_sha256": "41db8421500c8cefbfa64b56be52193b7379d2024dd06ab656d82688d858d923",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.28,
+      "elapsed_seconds": 0.14,
       "log": "research\\validation_suite_logs\\p0_source_crosswalk_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_4_P0_SOURCE_LEADS_NOT_SCIENTIFIC_APPROVAL\",\n  \"p0_tasks\": 4,\n  \"corrected_doi_only_source_count\": 1,\n  \"source_review_queue_sha256_unchanged\": true,\n  \"no_numeric_affinity_values_accessed\": true,\n  \"source_approved_tasks\": 0,\n  \"scientific_gate\": \"BLOCKED\"\n}\n"
     },
@@ -78,7 +78,7 @@
       "script_sha256": "3573f6085691e3778549ba432236b4f996c7bac8153b5db6f3bdebd0ba2ae143",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.73,
+      "elapsed_seconds": 0.36,
       "log": "research\\validation_suite_logs\\record_lineage_synthetic.log",
       "output_tail": ""
     },
@@ -88,7 +88,7 @@
       "script_sha256": "10dcb985a5aa442d8c8cb5663c40a8b52b6bdb9ec7fbf7f9a9711fbe3858a602",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 5.73,
+      "elapsed_seconds": 2.67,
       "log": "research\\validation_suite_logs\\record_lineage_real_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_TECHNICAL_REACTANT_LINEAGE_NOT_SOURCE_APPROVED\",\n  \"tasks\": 30,\n  \"groups\": 919,\n  \"reactants\": 921,\n  \"missing_records\": 0,\n  \"critical_issues\": 0,\n  \"scientifically_approved\": 0,\n  \"cohort_gate\": \"BLOCKED\"\n}\n"
     },
@@ -98,7 +98,7 @@
       "script_sha256": "9ee171b12f2dc733d0b4dec0331fa096cd165ee3871d801695df6c0dd21bceca",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 1.12,
+      "elapsed_seconds": 0.55,
       "log": "research\\validation_suite_logs\\source_record_evidence_synthetic.log",
       "output_tail": ""
     },
@@ -108,7 +108,7 @@
       "script_sha256": "77dd29e2bb5d60357f4922cefb864ec02103b25bba82affcb7f377f61f55a561",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 4.3,
+      "elapsed_seconds": 2.08,
       "log": "research\\validation_suite_logs\\source_record_evidence_real_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_PRIVATE_RECORD_WORKLIST_UNREVIEWED_NO_TRAINING\",\n  \"source_record_count\": 921,\n  \"task_count\": 30,\n  \"canonical_review_queue_unchanged\": true,\n  \"individual_affinity_values_in_worklist\": false,\n  \"source_approved_tasks\": 0,\n  \"scientific_gate\": \"BLOCKED\"\n}\n"
     },
@@ -118,7 +118,7 @@
       "script_sha256": "d754fca0903e55c20520fd3dcc30ea9d19c3904ba0e12a7f0d77849bf063d772",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.31,
+      "elapsed_seconds": 0.14,
       "log": "research\\validation_suite_logs\\geometry_factorial_dev_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_FROZEN_THREE_SEED_DEV_GEOMETRY_FACTORIAL\",\n  \"n_seeds\": 3,\n  \"n_dev_proteins\": 4,\n  \"n_target_draw_K_trials\": 720,\n  \"old_K_sweep_parity_max_error\": 6.15065776088386e-10,\n  \"K5_geometry_main_effect_signs\": {\n    \"1105\": \"harms\",\n    \"1106\": \"improves\",\n    \"1107\": \"improves\"\n  },\n  \"geometry_differential_effect_negligible\": true,\n  \"scientific_cohort_gate\": \"BLOCKED\"\n}\n"
     },
@@ -128,9 +128,19 @@
       "script_sha256": "55fb4c9a8711330a44fdac40a28a615f2566f16ce90945669168e39944659aab",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.28,
+      "elapsed_seconds": 0.16,
       "log": "research\\validation_suite_logs\\six_publication_source_evidence_integrity.log",
       "output_tail": "{\"status\": \"PASS_PUBLICATION_EVIDENCE_LEADS_ONLY\", \"n_tasks\": 6, \"candidate_records\": 147, \"source_approved\": 0, \"science_gate\": \"BLOCKED\"}\n"
+    },
+    {
+      "test": "protein_homology_challenge_integrity",
+      "path": "tests_v4/protein_homology_challenge_integrity_test.py",
+      "script_sha256": "a74c940276897aba0e14f0199281552dcdb3e02844d4e8c531464a5488e32968",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.16,
+      "log": "research\\validation_suite_logs\\protein_homology_challenge_integrity.log",
+      "output_tail": "{\n  \"status\": \"PASS_PROTEIN_ONLY_REVIEW30_HOMOLOGY_CHALLENGE\",\n  \"pairs\": 435,\n  \"old_components\": 30,\n  \"permissive_cross_group_pairs\": 2,\n  \"stricter_reciprocal_pairs\": 0,\n  \"approved_assays\": 0,\n  \"scientific_cohort_gate\": \"BLOCKED\"\n}\n"
     },
     {
       "test": "scientific_cohort_gate",
@@ -138,7 +148,7 @@
       "script_sha256": "459bf5af9d7241ca90c0c72727495cddb119e040a34c79575c5968d16f578540",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.42,
+      "elapsed_seconds": 0.2,
       "log": "research\\validation_suite_logs\\scientific_cohort_gate.log",
       "output_tail": "{\n  \"status\": \"PASS\",\n  \"real_scientific_cohort\": \"BLOCKED_NOT_APPROVED\",\n  \"test_synthetic_only\": true,\n  \"unit_checks\": [\n    \"reject missing science-approved manifests\",\n    \"accept internally consistent fictional metadata for structural testing only\",\n    \"reject protein component reuse between roles\",\n    \"reject changed cohort checksum\"\n  ],\n  \"warning\": \"Mock artifact consistency is not source-level experimental verification.\"\n}\n"
     },
@@ -148,7 +158,7 @@
       "script_sha256": "d999d17e2bece9bbf50e97ddbfcd6d0b132262fedb468a2a3b6ce24077c8ce59",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.77,
+      "elapsed_seconds": 0.39,
       "log": "research\\validation_suite_logs\\paired_cluster_statistics_synthetic.log",
       "output_tail": "{\n  \"status\": \"PASS_SYNTHETIC_STATS_ONLY\",\n  \"checks\": [\n    \"paired task and cluster macro RMSE\",\n    \"deterministic cluster bootstrap CI\",\n    \"reject duplicate rows\",\n    \"reject changing query labels between support draws\",\n    \"reject task spanning protein components\",\n    \"reject mismatched query sets\",\n    \"reject nonfinite predictions\"\n  ],\n  \"synthetic_n_components\": 15,\n  \"synthetic_n_prediction_rows\": 3600,\n  \"demonstration_absolute_reduction\": 0.2,\n  \"warning\": \"Synthetic values are not drug-target affinity measurements; no research effect was observed.\"\n}\n"
     },
@@ -158,7 +168,7 @@
       "script_sha256": "c830a4354d7aeb7cd146ba8e50e7435aa6bbdbe71db5f49cf12e3cc431681648",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 5.58,
+      "elapsed_seconds": 1.69,
       "log": "research\\validation_suite_logs\\frozen_adapter_real_chemistry.log",
       "output_tail": "{\n  \"status\": \"PASS_ENGINEERING_ONLY\",\n  \"data\": \"Real pre-split BindingDB SMILES and task IDs, SYNTHETIC values for ALL support labels and frozen model predictions\",\n  \"counts\": {\n    \"tasks_tested\": 12,\n    \"queries_tested\": 120,\n    \"K0_checks\": 12,\n    \"K5_checks\": 12,\n    \"missing_geometry_checks\": 12,\n    \"permutation_checks\": 12,\n    \"synthetic_query_label_invariance\": 12\n  },\n  \"checks\": [\n    \"factorial A/B/C/D identity\",\n    \"Tanimoto^4 kernel bounds\",\n    \"permutation invariance\",\n    \"K0 exact fallback\",\n    \"missing 3D differential zero\",\n    \"separate query-label interface\",\n    \"invalid geometry/cache rejection\"\n  ],\n  \"warning\": \"No experimental BindingDB labels were used for adaptation; no model accuracy comparison.\"\n}\n"
     },
@@ -168,7 +178,7 @@
       "script_sha256": "5c44864e2b2af56a2bdee22decde7579811d0d2b097cd98ef460badcdcfded9e",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.28,
+      "elapsed_seconds": 0.08,
       "log": "research\\validation_suite_logs\\support_K_sweep_result_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_ENGINEERING_DEVELOPMENT_ONLY\",\n  \"K_values\": [\n    0,\n    1,\n    2,\n    5,\n    10,\n    20\n  ],\n  \"targets\": [\n    \"ADCK4\",\n    \"FRK\",\n    \"MEK5\",\n    \"OSR1\"\n  ],\n  \"K5_matches_prior_report\": true,\n  \"checkpoint_hashes_match\": true,\n  \"D_minus_B_max_abs_development_RMSE\": 2.4608126647507333e-10,\n  \"warning\": \"No scientifically independent held-out Kd evaluation. No trained model gain is asserted.\"\n}\n"
     },
@@ -178,7 +188,7 @@
       "script_sha256": "512d2b4206b4a5e25e8911d164dcf502bbc2d33770857af8005d26cb72448d2d",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.25,
+      "elapsed_seconds": 0.08,
       "log": "research\\validation_suite_logs\\geometry_seed_variability_integrity.log",
       "output_tail": "{\n  \"status\": \"PASS_ENGINEERING_DEV_ONLY\",\n  \"n_initialization_seeds\": 3,\n  \"n_existing_proteins\": 4,\n  \"n_adapter_seed_K_records\": 9,\n  \"maximum_abs_D_minus_B_RMSE\": 2.479905791830106e-08,\n  \"source_approved_cohort\": false,\n  \"warning\": \"No scientific model superiority established\"\n}\n"
     },
@@ -188,7 +198,7 @@
       "script_sha256": "d1e83530818f716d7785eb85b7cbebb667e821d49a35ff10a3aa7d262d995961",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 38.98,
+      "elapsed_seconds": 15.23,
       "log": "research\\validation_suite_logs\\trained_sequence_checkpoint_interface.log",
       "output_tail": "{\n  \"status\": \"PASS_TRAINED_ENGINEERING_CHECKPOINT_ONLY\",\n  \"checkpoint_epoch\": 3,\n  \"checkpoint_sha256\": \"ef6df11110f8d80776a4f28530a5ea19cb085ad230a8c65594d986fecde49729\",\n  \"training_labels_mean\": 5.342679941841826,\n  \"training_labels_std\": 0.7708920464832527,\n  \"protein_length\": 766,\n  \"raw_pKd_reconstruction_abs_difference\": 0.0,\n  \"strict_checkpoint_keys_loaded\": true,\n  \"missing_3D_equals_sequence_exactly\": true,\n  \"scope\": \"Legacy DAVIS engineering split, final 3-epoch checkpoint; not approved BindingDB study or held-out protein family result.\"\n}\n"
     },
@@ -198,9 +208,9 @@
       "script_sha256": "1a1072b979803a488508afb710c72fad7bb397fd46c34c195e76209886ec6550",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 32.19,
+      "elapsed_seconds": 22.0,
       "log": "research\\validation_suite_logs\\trained_geometry_checkpoint_parity.log",
-      "output_tail": "{\n  \"status\": \"PASS_ENGINEERING_CHECKPOINT_REEVALUATION\",\n  \"geometry_best_epoch\": 1,\n  \"val_proteins\": 4,\n  \"val_pairs\": 216,\n  \"checkpoint_sha256\": \"a3725b8c0e6a3d7dea6d338a09160ddb4aac0ec206be0d424216f9de6628b85c\",\n  \"recomputed_sequence_target_macro_rmse\": 0.9256851003655892,\n  \"recomputed_geometry_target_macro_rmse\": 0.9359206335610054,\n  \"structure_improved_target_count\": 2,\n  \"structure_harmed_target_count\": 2,\n  \"prediction_rows_with_change_from_geometry\": 216,\n  \"max_metric_discrepancy_tolerance\": 1e-05,\n  \"warning\": \"Engineering-only original DAVIS subset; does not establish novelty, independent holdout or reliable biological benefit.\"\n}\n{\"sequence_sha256\": \"266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd\", \"name\": \"FRK\", \"query_pairs\": 54, \"sequence_rmse\": 1.2854349813000177, \"geometry_rmse\": 1.2832253430082137, \"geometry_minus_sequence_rmse\": -0.0022096382918039836}\n{\"sequence_sha256\": \"673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39\", \"name\": \"MEK5\", \"query_pairs\": 54, \"sequence_rmse\": 1.3788731602518685, \"geometry_rmse\": 1.3766788348294987, \"geometry_minus_sequence_rmse\": -0.0021943254223697473}\n{\"sequence_sha256\": \"75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e\", \"name\": \"ADCK4\", \"query_pairs\": 54, \"sequence_rmse\": 0.6176706439312649, \"geometry_rmse\": 0.6625398532758264, \"geometry_minus_sequence_rmse\": 0.04486920934456151}\n{\"sequence_sha256\": \"841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9\", \"name\": \"OSR1\", \"query_pairs\": 54, \"sequence_rmse\": 0.42076161597920564, \"geometry_rmse\": 0.42123850313048233, \"geometry_minus_sequence_rmse\": 0.0004768871512766948}\n"
+      "output_tail": "{\n  \"status\": \"PASS_ENGINEERING_CHECKPOINT_REEVALUATION\",\n  \"geometry_best_epoch\": 1,\n  \"val_proteins\": 4,\n  \"val_pairs\": 216,\n  \"checkpoint_sha256\": \"a3725b8c0e6a3d7dea6d338a09160ddb4aac0ec206be0d424216f9de6628b85c\",\n  \"recomputed_sequence_target_macro_rmse\": 0.9256851003655892,\n  \"recomputed_geometry_target_macro_rmse\": 0.9359206348043274,\n  \"structure_improved_target_count\": 2,\n  \"structure_harmed_target_count\": 2,\n  \"prediction_rows_with_change_from_geometry\": 216,\n  \"max_metric_discrepancy_tolerance\": 1e-05,\n  \"warning\": \"Engineering-only original DAVIS subset; does not establish novelty, independent holdout or reliable biological benefit.\"\n}\n{\"sequence_sha256\": \"266e943682a0ddcb4cd4532fc9a4d6b6bf941ce7d8c2bd9f5011cf7fd02d13bd\", \"name\": \"FRK\", \"query_pairs\": 54, \"sequence_rmse\": 1.2854349813000177, \"geometry_rmse\": 1.2832253334388415, \"geometry_minus_sequence_rmse\": -0.002209647861176167}\n{\"sequence_sha256\": \"673349c5c82fb420804ea84b7d2110431e1c92891cc766c87be3da06006edf39\", \"name\": \"MEK5\", \"query_pairs\": 54, \"sequence_rmse\": 1.3788731602518685, \"geometry_rmse\": 1.3766788331257223, \"geometry_minus_sequence_rmse\": -0.0021943271261462005}\n{\"sequence_sha256\": \"75ba1d9bc769c0a4d533c1b99f81f7e741a102cc02c1e32eb22295c4500b380e\", \"name\": \"ADCK4\", \"query_pairs\": 54, \"sequence_rmse\": 0.6176706439312649, \"geometry_rmse\": 0.6625398745172938, \"geometry_minus_sequence_rmse\": 0.044869230586028874}\n{\"sequence_sha256\": \"841f0c04e7ea6ae1df20042bda5746a9eb8440cb3162f1186103bd6e15d6bbe9\", \"name\": \"OSR1\", \"query_pairs\": 54, \"sequence_rmse\": 0.42076161597920564, \"geometry_rmse\": 0.4212384981354519, \"geometry_minus_sequence_rmse\": 0.00047688215624624997}\n"
     },
     {
       "test": "full_real_structure_to_adapter",
@@ -208,7 +218,7 @@
       "script_sha256": "bfa4c1b58ec8c73d04a6907b8d33a7de96004ca8d07795a017021856872ca4c0",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 36.06,
+      "elapsed_seconds": 29.0,
       "log": "research\\validation_suite_logs\\full_real_structure_to_adapter.log",
       "output_tail": "{\n  \"status\": \"PASS_REAL_INPUTS_SYNTHETIC_LABELS_AND_UNTRAINED_WEIGHTS\",\n  \"experiment\": \"8 real staged RDKit compounds, one canonical BRAF AlphaFold structure and real ESM2 650M cache\",\n  \"structure_residues\": 766,\n  \"geometry_graph_nodes\": 766,\n  \"geometry_graph_edges\": 18789,\n  \"synthetic_support_count\": 5,\n  \"query_count\": 3,\n  \"geometry_prediction_changed\": true,\n  \"K0_exact_zero_shot\": true,\n  \"missing_geometry_exact_fallback\": true,\n  \"support_permutation_invariance\": true,\n  \"single_vs_bulk_inference_consistent\": true,\n  \"max_gpu_memory_mib\": 125.84,\n  \"scope\": \"NO experimental labels or approved assay; random neural weights; no binding-affinity accuracy or biology established\"\n}\n"
     },
@@ -218,7 +228,7 @@
       "script_sha256": "a57529d65af529625dc739f6e57fd39223a9baa689f99d04feb65c6009831ab1",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 0.56,
+      "elapsed_seconds": 0.3,
       "log": "research\\validation_suite_logs\\group_split_dryrun.log",
       "output_tail": "{\n  \"status\": \"PASS_DRY_RUN_ONLY\",\n  \"dataset\": \"Full BindingDB preliminary >=15-compound candidate groups, unreviewed\",\n  \"tasks\": 1146,\n  \"component_count\": 168,\n  \"role_component_counts\": {\n    \"base_train\": 100,\n    \"base_validation\": 17,\n    \"adapter_train\": 17,\n    \"adapter_validation\": 17,\n    \"test\": 17\n  },\n  \"role_task_counts\": {\n    \"base_train\": 735,\n    \"base_validation\": 110,\n    \"adapter_train\": 101,\n    \"adapter_validation\": 100,\n    \"test\": 100\n  },\n  \"K20_role_task_counts\": {\n    \"base_train\": 222,\n    \"base_validation\": 30,\n    \"adapter_train\": 52,\n    \"adapter_validation\": 36,\n    \"test\": 37\n  },\n  \"K20_role_component_counts\": {\n    \"base_train\": 35,\n    \"base_validation\": 7,\n    \"adapter_train\": 14,\n    \"adapter_validation\": 12,\n    \"test\": 13\n  },\n  \"assignment_sha256_for_reproducibility\": \"7aaa9c5d9ce5958343dd8cb9b125bd12833e8692b042668e44e02c11abbe9e46\",\n  \"checks\": [\n    \"disjoint component roles\",\n    \"deterministic seed\",\n    \"all tasks included\",\n    \"no affinity labels accepted\",\n    \"no final split or assignment written\"\n  ],\n  \"warning\": \"Dry run is not a benchmark; no training or test split is frozen.\"\n}\n"
     },
@@ -228,7 +238,7 @@
       "script_sha256": "02bd69e0633a0e7436142f235c42eb0be781c5091beb1d788b61b1e42c5550cc",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 18.25,
+      "elapsed_seconds": 14.2,
       "log": "research\\validation_suite_logs\\sequence_synthetic.log",
       "output_tail": "{\"scope\": \"Real RDKit molecules, synthetic residue embeddings and regression targets; interface/gradient verification only\", \"device\": \"NVIDIA GeForce RTX 4060 Laptop GPU\", \"parameters\": 1649153, \"prediction_batch_difference\": 3.725290298461914e-09, \"compound_batch_difference\": 7.450580596923828e-09, \"finite_gradient_parameters\": 28, \"sequence_projection_grad_norm\": 0.1198538988828659, \"synthetic_loss\": 0.062346234917640686}\n"
     },
@@ -238,9 +248,9 @@
       "script_sha256": "79956261509672811dd89578a3273a4a3bec4561cdce7333423b3be1c454a272",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 22.17,
+      "elapsed_seconds": 15.34,
       "log": "research\\validation_suite_logs\\geometry_real_structure_synthetic_labels.log",
-      "output_tail": "{\"scope\": \"First 96 residues of canonical AF-P15056-F1 v6, real geometry and PAE; synthetic sequence tokens; no affinity measurements\", \"nodes\": 96, \"directed_edges\": 2094, \"projection_grad\": 161.5312042236328, \"gvp_input_grad\": 14.368946850299835, \"max_rot_trans_token_difference\": 2.384185791015625e-07, \"exact_init_and_missing_fallback\": true, \"missing_node_excluded\": true, \"device\": \"NVIDIA GeForce RTX 4060 Laptop GPU\"}\n"
+      "output_tail": "{\"scope\": \"First 96 residues of canonical AF-P15056-F1 v6, real geometry and PAE; synthetic sequence tokens; no affinity measurements\", \"nodes\": 96, \"directed_edges\": 2094, \"projection_grad\": 161.5312042236328, \"gvp_input_grad\": 14.36894679069519, \"max_rot_trans_token_difference\": 2.384185791015625e-07, \"exact_init_and_missing_fallback\": true, \"missing_node_excluded\": true, \"device\": \"NVIDIA GeForce RTX 4060 Laptop GPU\"}\n"
     },
     {
       "test": "sequence_real_esm_synthetic_labels",
@@ -248,7 +258,7 @@
       "script_sha256": "5c14835095ff3f44253d7268daeec2c13613b881cefa60c91ca7356447c81df0",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 21.39,
+      "elapsed_seconds": 13.42,
       "log": "research\\validation_suite_logs\\sequence_real_esm_synthetic_labels.log",
       "output_tail": "{\n  \"scope\": \"Two real staged DAVIS compounds and sequences with genuine cached frozen ESM-2 650M residue embeddings; random initialized extension head and synthetic loss targets\",\n  \"status\": \"engineering_smoke_only\",\n  \"pairs\": 2,\n  \"sequence_lengths\": [\n    545,\n    588\n  ],\n  \"max_batch_vs_single_difference\": 0.0,\n  \"sequence_projection_grad_norm\": 0.04707025736570358,\n  \"device\": \"NVIDIA GeForce RTX 4060 Laptop GPU\",\n  \"note\": \"Input legacy labels quarantined; no affinity learning, validated target semantics, trained checkpoint or scientific result\"\n}\n"
     },
@@ -258,9 +268,9 @@
       "script_sha256": "132cc0ac31525ae7079f11880cce992d3a7ffe1f11681c4800b98285400f5174",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 35.47,
+      "elapsed_seconds": 28.52,
       "log": "research\\validation_suite_logs\\sequence_geometry_real_esm_synthetic_labels.log",
-      "output_tail": "{\n  \"status\": \"passed_engineering_only\",\n  \"source\": \"P15056 canonical AlphaFold v6 + cached official ESM-2 650M + real RDKit molecule\",\n  \"protein_length\": 766,\n  \"complete_backbone_nodes\": 766,\n  \"directed_edges\": 18789,\n  \"max_zero_projection_difference\": 0.0,\n  \"max_missing_structure_difference\": 0.0,\n  \"nonzero_projection_changed_prediction\": true,\n  \"gvp_grad_norm\": 0.006370040151523426,\n  \"peak_cuda_mib\": 462.95654296875,\n  \"scope\": \"Random weights, synthetic regression target. Assay identity unverified. No training or model performance result.\"\n}\n"
+      "output_tail": "{\n  \"status\": \"passed_engineering_only\",\n  \"source\": \"P15056 canonical AlphaFold v6 + cached official ESM-2 650M + real RDKit molecule\",\n  \"protein_length\": 766,\n  \"complete_backbone_nodes\": 766,\n  \"directed_edges\": 18789,\n  \"max_zero_projection_difference\": 0.0,\n  \"max_missing_structure_difference\": 0.0,\n  \"nonzero_projection_changed_prediction\": true,\n  \"gvp_grad_norm\": 0.006370040471665561,\n  \"peak_cuda_mib\": 462.95654296875,\n  \"scope\": \"Random weights, synthetic regression target. Assay identity unverified. No training or model performance result.\"\n}\n"
     },
     {
       "test": "archived_davis_checkpoint_parity",
@@ -268,13 +278,13 @@
       "script_sha256": "aec62bea2bce008e5d9028b682baa0a49f89e012a04334cd1ff01f2f82a1d475",
       "status": "PASS",
       "exit_code": 0,
-      "elapsed_seconds": 37.78,
+      "elapsed_seconds": 24.83,
       "log": "research\\validation_suite_logs\\archived_davis_checkpoint_parity.log",
       "output_tail": "{\n  \"status\": \"PASS\",\n  \"scope\": \"All 1,148 archived first-fold DAVIS test compounds using pinned unmodified reference model and original inference batch boundaries; NOT DynaCPI\",\n  \"checkpoint_sha256\": \"8bae3f7c0a0351039ccdd5acd6a50f8a5d336277fcf405b25f707959a211ae37\",\n  \"test_sha256\": \"1f9310ad7ce60ff75c1d70b6a04cba22e06eb4ec6f18eb03a9029047210ca854\",\n  \"saved_predictions_sha256\": \"7072cbc46141847b9ec1ef20d8cb9065e99bbb0546cfe38a82991b4903096420\",\n  \"source_files_bit_identical\": {\n    \"chemprop/models/model.py\": true,\n    \"chemprop/models/mpn.py\": true,\n    \"chemprop/models/CAB.py\": true,\n    \"chemprop/data/data.py\": true,\n    \"chemprop/features/featurization.py\": true,\n    \"chemprop/train/predict.py\": true\n  },\n  \"model_loaded_strict\": true,\n  \"reference_batch_size\": 50,\n  \"rows_compared\": 1148,\n  \"max_abs_pKd_prediction_difference\": 0.0,\n  \"mean_abs_pKd_prediction_difference\": 0.0,\n  \"reference_mean_all\": 5.226896336269711,\n  \"regression_label_mean\": 0.0,\n  \"regression_label_std\": 1.0,\n  \"warning\": \"No PerceiverCPI publication-wide parity or trained DynaCPI improvement is established.\"\n}\n"
     }
   ],
   "status": "PASS_ENGINEERING_ONLY",
-  "finished_utc": "2026-11-06T11:59:53.760374+00:00",
-  "passed": 27,
+  "finished_utc": "2026-11-06T12:20:18.052325+00:00",
+  "passed": 28,
   "failed": 0
 }

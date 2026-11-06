@@ -1,0 +1,11 @@
+{
+  "status": "PASS_PROTEIN_ONLY_REVIEW30_HOMOLOGY_CHALLENGE",
+  "pairs": 435,
+  "old_components": 30,
+  "permissive_cross_group_pairs": 2,
+  "stricter_reciprocal_pairs": 0,
+  "approved_assays": 0,
+  "scientific_cohort_gate": "BLOCKED"
+}
+
+--- STDERR ---

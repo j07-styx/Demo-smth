@@ -111,3 +111,10 @@ These Git commits represent recorded research operations, not new DynaCPI model 
 - Verify original task IDs, PMIDs, experimental source descriptions and aggregate counts against published paper/registry metadata without accessing chemical identities or source affinity labels.
 - Find coherent ANXA3 SPR source lead (48 records), three original kinase Kd-table domain studies (63 records), NMR/PGK publication (18), and a PA-I lectin review-citation provenance anomaly (18).
 - Add reproducible bibliography-only source crosswalk, primary publication URLs, unresolved experimental qualifiers and source-integrity test; keep all six scientific approval statuses false. Update manuscript Section 7.18 and AI handoff.
+
+## 2026-11-06 — Independent 435-pair protein-only cluster leakage challenge
+
+- Add label-free protein-sequence-only all-pairs Smith-Waterman/BLOSUM62 analysis for the 30 fixed source-review targets across six identity/coverage policies.
+- Find two weak original-MMseqs-cross-component matches under permissive shorter-protein coverage; neither passes >=40% identity or reciprocal >=50% longer-sequence coverage. Do NOT infer actual biochemical homology from weak local matches.
+- Preserve original protein FASTA/review CSV SHA256, original scientific gate blocked and all source review decisions unchanged.
+- Add integrity regression, protein-only analysis artifacts, the 14th VS Code task, and a 28/28 passing engineering suite; manuscript Section 7.19 and AI handoff now document split sensitivity and caveats. No model retraining, new frozen evaluation split or independent model performance result.

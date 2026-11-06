@@ -145,3 +145,15 @@ From the original Windows DynaCPI v4 project run:
     .\.venv\Scripts\python.exe tests_v4\six_publication_source_evidence_integrity_test.py
 
 Inputs: immutable fixed canonical human-review queue 30 ENRICHED CSV (only bibliographic/source IDs and counts). Outputs: research/source_access_v4/six_task_publication_evidence.json and SIX_TASK_PUBLICATION_EVIDENCE.md. The crosswalk was checked against exact original source identities and has six tasks/147 records, zero scientific approvals. It contains source metadata/provenance only; no compound structures, raw Reactant_set identifiers or numerical binding affinity values. These are research article citations and external method descriptions, not verified original source measurements.
+
+## 6 November 2026 — protein-only family-leakage challenge
+
+On the original Windows PC at C:\Users\J0124\dynacpi_v4, with Biopython installed in the original Python environment:
+    .\.venv\Scripts\python.exe scripts\audit_30_protein_similarity_review_v4.py
+
+Requires original read-only data/audit/bindingdb_full_kd_sequences.fasta (4,157 sequence hashes) and data/audit/bindingdb_assay_manual_review_queue_30_ENRICHED.csv (30 unreviewed source tasks). No compound identities, affinity measurements, trained weights or source review decisions are loaded. Scan is 435 Smith-Waterman local alignments, protein-only, six threshold policies. Artifacts: research/source_access_v4/protein_only_review30_pairwise_audit.json and PROTEIN_ONLY_HOMOLOGY_CHALLENGE.md.
+
+To verify source hashes, 30-task identity, 435 scans, two weak local cross-component pairs, zero strict matches and blocked science gate:
+    .\.venv\Scripts\python.exe tests_v4\protein_homology_challenge_integrity_test.py
+
+This is NOT a final family-cluster assignment or scientifically approved benchmark. Thresholds must not be tuned based on DAVIS development model performance. Native reference-sequence local similarity is distinct from the experimentally used protein construct/domain.
