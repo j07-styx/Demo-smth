@@ -121,3 +121,13 @@ Run scripts/audit_30_record_level_provenance_v4.py, then consult research/source
 | Scientific training permission | BLOCKED |
 
 Commit only aggregate counts and provenance hashes in `research/source_access_v4/record_source_evidence_readiness_30.json` and `RECORD_SOURCE_EVIDENCE_READINESS.md`, never the local-only worksheet or original reactant IDs. `scripts/build_record_source_evidence_worklist_v4.py` rejects altered source anchors, missing reviewers, unqualified or non-Kd endpoints, inconsistent review status and missing method/table/construct evidence on proposed approvals. Full suite now contains 25 engineering checks (verify completed outcome in the suite report). All original model weights and scientific claims are unchanged.
+
+## 6 November 2026 — Frozen geometry/sequence factorial with three real model seeds
+
+| Geometry seed | K | S_B (sequence calibrated) RMSE | G_B (geometry-mixture calibrated) RMSE | G_B-S_B | G_D-G_B |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 1105 | 5 | 0.857337 | 0.860139 | +0.002801 | +5.20e-11 |
+| 1106 | 5 | 0.857337 | 0.855587 | -0.001750 | +4.21e-11 |
+| 1107 | 5 | 0.857337 | 0.854164 | -0.003173 | +5.42e-9 |
+
+Four checkpoint-selected legacy DAVIS development proteins, ten fixed query compounds/protein, ten nested support draws, K=[0,1,2,5,10,20]. 720 correlated target-draw-K cells, NOT 720 independent proteins. Two proteins improve with geometry each seed, and ADCK4 sign flips. Near-zero D-G_B is explained by strongly regularized tiny centered sequence/geometry disagreement variance. Reproduced original three-seed geometry-mixture K sweeps within 6.16e-10 macro RMSE. No training or hyperparameter updates. Real frozen model evidence: research/geometry_factorial_dev/factorial.json and SUMMARY.md. Engineering suite now 26/26 PASS; scientifically approved BindingDB source tasks 0. Conclusions limited to development; no independent/perceiver paper superiority.

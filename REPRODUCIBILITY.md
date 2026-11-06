@@ -119,3 +119,21 @@ Run synthetic and real integrity cases:
     .\.venv\Scripts\python.exe tests_v4\record_source_evidence_real_integrity_test.py
 
 Aggregate outputs only (safe for Git): `research\source_access_v4\record_source_evidence_readiness_30.json` and `RECORD_SOURCE_EVIDENCE_READINESS.md`. Never copy the private worksheet or reviewer notes to the repository, and never use self-reported review declarations as final scientific approvals. All model training remains blocked until independent primary-source review, signed source evidence manifest and frozen protein-family split.
+
+## New frozen geometry factorial (6 November 2026)
+
+On authorized Windows C:\Users\J0124\dynacpi_v4 with existing local DAVIS engineering data, ESM embeddings, graph fixtures and three saved geometry checkpoints, run (PowerShell):
+
+    .\.venv\Scripts\python.exe scripts\benchmark_geometry_factorial_dev.py
+
+No model fitting, parameter selection, or source-unapproved BindingDB affinity data is used. Script checks exact sequence checkpoint and geometry graph hashes, identical fixed query/support sets and baseline parity. Outputs research\geometry_factorial_dev\factorial.json and SUMMARY.md with 720 correlated target-draw-K trials; four unique checkpoint-selected DAVIS DEV targets. Original G_A/G_B/G_D values must agree with preexisting K-sweep macro values within 1e-6.
+
+Check integrity without rerunning GPU inference:
+
+    .\.venv\Scripts\python.exe tests_v4\geometry_factorial_dev_integrity_test.py
+
+Full engineering suite:
+
+    .\.venv\Scripts\python.exe scripts\run_v4_validation_suite.py
+
+Verified as 26/26 PASS on 6 November 2026; not scientific model validation. K5 sequence-only calibrated baseline RMSE 0.857337 and geometry-mixture calibrated per seed 0.860139, 0.855587, 0.854164; differential gain approximately zero. The real primary exact-Kd project cannot proceed to blinded family-held-out training before source review and frozen split.

@@ -234,6 +234,25 @@
                       "problemMatcher":  [
 
                                          ]
+                  },
+                  {
+                      "label":  "DynaCPI: Geometry vs sequence factorial DEV benchmark (three seeds)",
+                      "type":  "process",
+                      "command":  "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+                      "args":  [
+                                   "${workspaceFolder}\\scripts\\benchmark_geometry_factorial_dev.py"
+                               ],
+                      "options":  {
+                                      "cwd":  "${workspaceFolder}"
+                                  },
+                      "presentation":  {
+                                           "reveal":  "always",
+                                           "panel":  "dedicated",
+                                           "clear":  true
+                                       },
+                      "problemMatcher":  [
+
+                                         ]
                   }
               ]
 }

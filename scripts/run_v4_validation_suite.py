@@ -25,6 +25,7 @@ checks=[
  ("record_lineage_real_integrity","tests_v4/record_lineage_real_integrity_test.py"),
  ("source_record_evidence_synthetic","tests_v4/record_source_evidence_synthetic_test.py"),
  ("source_record_evidence_real_integrity","tests_v4/record_source_evidence_real_integrity_test.py"),
+ ("geometry_factorial_dev_integrity","tests_v4/geometry_factorial_dev_integrity_test.py"),
  ("scientific_cohort_gate","tests_v4/scientific_cohort_gate_test.py"),
  ("paired_cluster_statistics_synthetic","tests_v4/paired_evaluation_test.py"),
  ("frozen_adapter_real_chemistry","tests_v4/frozen_adapter_real_chemistry_test.py"),

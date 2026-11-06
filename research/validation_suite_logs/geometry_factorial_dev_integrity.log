@@ -1,0 +1,16 @@
+{
+  "status": "PASS_FROZEN_THREE_SEED_DEV_GEOMETRY_FACTORIAL",
+  "n_seeds": 3,
+  "n_dev_proteins": 4,
+  "n_target_draw_K_trials": 720,
+  "old_K_sweep_parity_max_error": 6.15065776088386e-10,
+  "K5_geometry_main_effect_signs": {
+    "1105": "harms",
+    "1106": "improves",
+    "1107": "improves"
+  },
+  "geometry_differential_effect_negligible": true,
+  "scientific_cohort_gate": "BLOCKED"
+}
+
+--- STDERR ---

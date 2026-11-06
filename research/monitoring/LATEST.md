@@ -1,12 +1,12 @@
 # DynaCPI v4 — local benchmark monitor
 
-Updated (UTC): 2026-11-06T11:28:16.073008+00:00
+Updated (UTC): 2026-11-06T11:44:55.168002+00:00
 
 **Status:** ENGINEERING ONLY. No scientifically approved BindingDB cohort or frozen protein-group split.
 
-**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 500, 8188, 2
+**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 235, 8188, 15
 
-**Last consolidated regression check:** 25/25; status PASS_ENGINEERING_ONLY
+**Last consolidated regression check:** 26/26; status PASS_ENGINEERING_ONLY
 
 **Scientific gate:** BLOCKED_UNAPPROVED_NOT_TRAINING_READY
 
@@ -49,4 +49,14 @@ This is a same-four-target development diagnostic and does not show independent 
 | 1106 | 0.8529299 | 0.8529299 | 2e-10 |
 | 1107 | 0.8515473 | 0.8515473 | 2.48e-08 |
 
-Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/source_access_v4/record_level_provenance_30.json, research/source_access_v4/record_source_evidence_readiness_30.json
+## Geometry main effect vs differential adapter (K=5, DEV only)
+
+| Seed | Sequence calibrated | Geometry calibrated | Full geometry | Geometry minus sequence | Differential minus geometry |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 1105 | 0.857337 | 0.860139 | 0.860139 | +0.002801 | +5.2e-11 |
+| 1106 | 0.857337 | 0.855587 | 0.855587 | -0.001750 | +4.21e-11 |
+| 1107 | 0.857337 | 0.854164 | 0.854164 | -0.003173 | +5.42e-09 |
+
+Same four checkpoint-selected DAVIS proteins; three seeds are not three independent benchmarks.
+
+Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/geometry_factorial_dev/factorial.json, research/source_access_v4/record_level_provenance_30.json, research/source_access_v4/record_source_evidence_readiness_30.json

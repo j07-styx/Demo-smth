@@ -65,6 +65,7 @@ def read_status():
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
     seed_variability=fetch("research/pilot_geometry_seed_sweep_dev/seed_variability.json")
     seed_comparison=fetch("research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json")
+    geom_factorial=fetch("research/geometry_factorial_dev/factorial.json")
     source_gate=current_status(ROOT)
     report={
      "scope":"ENGINEERING_REPRODUCIBILITY_MONITOR; NO SCIENTIFIC BINDINGDB BENCHMARK",
@@ -104,6 +105,19 @@ def read_status():
                          "geometry_minus_sequence_rmse":r["geometry_minus_sequence_rmse"]}
                         for r in seed_variability.get("seeds",[])]
      } if isinstance(seed_variability,dict) else {"status":"NOT_RUN"},
+     "geometry_factorial_dev":{
+       "status":geom_factorial.get("status"),
+       "n_targets":geom_factorial.get("independent_dev_protein_count"),
+       "n_correlated_target_draw_K_trials":geom_factorial.get("total_target_draw_K_trials"),
+       "prior_benchmark_parity_max_rmse":geom_factorial.get("previous_K_sweep_agreement_max_abs_RMSE"),
+       "K5_by_seed":[{"seed":r["seed"],
+           "sequence_calibrated_RMSE":r["S_B_macro_RMSE"],
+           "geometry_calibrated_RMSE":r["G_B_macro_RMSE"],
+           "geometry_full_RMSE":r["G_D_macro_RMSE"],
+           "geometry_main_effect_RMSE":r["G_B_minus_S_B_RMSE_macro"],
+           "differential_effect_RMSE":r["G_D_minus_G_B_RMSE_macro"]}
+        for r in geom_factorial.get("macro_by_seed_K",[]) if r["K"]==5]
+     } if isinstance(geom_factorial,dict) else {"status":"NOT_RUN"},
      "geometry_adapter_seed_comparison_dev":{
          "status":seed_comparison.get("status"),
          "maximum_abs_D_minus_B":seed_comparison.get("D_minus_B_max_abs_selected"),
@@ -163,6 +177,7 @@ def read_status():
              "research/support_k_sweep_dev/results.json",
              "research/pilot_geometry_seed_sweep_dev/seed_variability.json",
              "research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json",
+             "research/geometry_factorial_dev/factorial.json",
              "research/support_k_sweep_seed_dev/seed_1106/results.json",
              "research/support_k_sweep_seed_dev/seed_1107/results.json",
              "data/audit/bindingdb_assay_manual_review_status.json",
@@ -242,6 +257,13 @@ def main():
             f.write("| Seed | B RMSE | D RMSE | D−B |\n| ---: | ---: | ---: | ---: |\n")
             for x in sc["K20_by_seed"]:
                 f.write(f"| {x['seed']} | {x['B_RMSE']:.7f} | {x['D_RMSE']:.7f} | {x['D_minus_B_RMSE']:.3g} |\n")
+        fac=report["geometry_factorial_dev"]
+        if fac.get("K5_by_seed"):
+            f.write("\n## Geometry main effect vs differential adapter (K=5, DEV only)\n\n")
+            f.write("| Seed | Sequence calibrated | Geometry calibrated | Full geometry | Geometry minus sequence | Differential minus geometry |\n| ---: | ---: | ---: | ---: | ---: | ---: |\n")
+            for x in fac["K5_by_seed"]:
+                f.write("| "+str(x["seed"])+" | "+f"{x['sequence_calibrated_RMSE']:.6f}"+" | "+f"{x['geometry_calibrated_RMSE']:.6f}"+" | "+f"{x['geometry_full_RMSE']:.6f}"+" | "+f"{x['geometry_main_effect_RMSE']:+.6f}"+" | "+f"{x['differential_effect_RMSE']:+.3g}"+" |\n")
+            f.write("\nSame four checkpoint-selected DAVIS proteins; three seeds are not three independent benchmarks.\n")
         f.write("\nChanged watched artifacts since prior run: "+(", ".join(changed) if changed else "none")+"\n")
     if changed:
         with EVENTS.open("a",encoding="utf-8") as f:

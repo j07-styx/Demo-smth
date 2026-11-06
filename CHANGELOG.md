@@ -98,3 +98,10 @@ These Git commits represent recorded research operations, not new DynaCPI model 
 - Add ten synthetic evidence validation cases and a real 921-row integrity check to the 25-check engineering suite.
 - Create privacy-safe aggregate readiness JSON/Markdown; explicitly ignore the private worksheet from GitHub, and extend VS Code to 12 tasks plus read-only monitoring of aggregate review progress.
 - Update scientific manuscript, curation protocol and AI handoff. No v4 architecture changes, original checkpoint changes, scientifically approved tasks or new model evaluation.
+
+## 2026-11-06 — DynaCPI v4 geometry main-effect versus differential support model experiment
+
+- Run a NEW real frozen neural model factorial comparing S0, S_B, G_A, G_B and G_D on actual DAVIS engineering targets; 3 saved geometry initialization seeds, 4 targets, 6 support sizes, 10 draws, 10 fixed query compounds/target.
+- Separate geometry main effect G_B-S_B from incremental centered differential G_D-G_B; geometry mixture seed-dependent, differential model effectively inactive. K5 sequence calibrated RMSE 0.857337; geometry calibrated RMSE 0.860139/0.855587/0.854164. No reliable independent superiority claim.
+- Reproduce previous same-seed G_A/G_B/G_D frozen benchmark values within 6.16e-10 macro RMSE; no re-training, model weight modification or hyperparameter selection.
+- Add integrity regression and 26/26 green engineering suite, VS Code task, read-only monitoring and manuscript Section 7.17/AI handoff. BindingDB science gate remains blocked; zero exact-Kd source approvals.
