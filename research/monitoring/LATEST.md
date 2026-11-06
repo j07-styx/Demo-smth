@@ -1,18 +1,20 @@
 # DynaCPI v4 — local benchmark monitor
 
-Updated (UTC): 2026-11-06T11:03:57.813105+00:00
+Updated (UTC): 2026-11-06T11:28:16.073008+00:00
 
 **Status:** ENGINEERING ONLY. No scientifically approved BindingDB cohort or frozen protein-group split.
 
-**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 418, 8188, 11
+**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 500, 8188, 2
 
-**Last consolidated regression check:** 23/23; status PASS_ENGINEERING_ONLY
+**Last consolidated regression check:** 25/25; status PASS_ENGINEERING_ONLY
 
 **Scientific gate:** BLOCKED_UNAPPROVED_NOT_TRAINING_READY
 
 **Scientific source review:** 30 tasks unreviewed; 0 approved; 30 access records indexed (metadata only).
 
 **Construct-to-reference alignment flags:** 2 source-located tasks needing physical construct verification; 0 approved by this check.
+
+**Local source-evidence review worksheet (private):** 921 source records; states {'UNREVIEWED': 921}; 0 scientifically approved. Worksheet is NOT committed.
 
 **Raw source lineage (technical only):** 921/921 source reactants and 921 preliminary candidate records reconciled; 0 critical issue types; zero assay source approvals.
 
@@ -47,4 +49,4 @@ This is a same-four-target development diagnostic and does not show independent 
 | 1106 | 0.8529299 | 0.8529299 | 2e-10 |
 | 1107 | 0.8515473 | 0.8515473 | 2.48e-08 |
 
-Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/source_access_v4/record_level_provenance_30.json
+Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/source_access_v4/record_level_provenance_30.json, research/source_access_v4/record_source_evidence_readiness_30.json

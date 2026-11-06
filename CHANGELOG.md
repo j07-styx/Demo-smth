@@ -90,3 +90,11 @@ These Git commits represent recorded research operations, not new DynaCPI model 
 - Add five synthetic unit tests, a real-data audit integration test and original source review gate protections; full DynaCPI v4 suite passes 23/23 checks.
 - Add an 11th VS Code task, extend read-only benchmark monitor and update project.md, Kd curation protocol, manuscript Section 7.15 and next-AI handoff.
 - **Not a scientific result:** 30 source candidates remain unreviewed, 0 approved, no family-independent split, no new trained checkpoints, no claim of superior DynaCPI model performance.
+
+## 2026-11-06 — private record-level experimental source-evidence governance
+
+- Generate a **local-only** experimental source-review worklist for 921 original BindingDB reactants across 30 still-unreviewed candidate tasks, with immutable IDs/source bibliographic anchors but no affinity values, pKd or chemical inputs.
+- Add a fail-closed validator for exact per-record source methods/table, physical target construct, Kd endpoint and qualifier, assay context, reviewer ID/date and substantive evidence; records stay UNREVIEWED until reviewed independently.
+- Add ten synthetic evidence validation cases and a real 921-row integrity check to the 25-check engineering suite.
+- Create privacy-safe aggregate readiness JSON/Markdown; explicitly ignore the private worksheet from GitHub, and extend VS Code to 12 tasks plus read-only monitoring of aggregate review progress.
+- Update scientific manuscript, curation protocol and AI handoff. No v4 architecture changes, original checkpoint changes, scientifically approved tasks or new model evaluation.

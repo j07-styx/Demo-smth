@@ -59,6 +59,7 @@ def read_status():
     source_index=fetch("research/source_access_v4/source_access_index.json")
     p0_evidence=fetch("research/source_access_v4/p0_source_crosswalk.json")
     lineage=fetch("research/source_access_v4/record_level_provenance_30.json")
+    evidence_readiness=fetch("research/source_access_v4/record_source_evidence_readiness_30.json")
     triage=fetch("research/source_access_v4/assay_metadata_risk_triage_30.json")
     construct_risk=fetch("research/source_access_v4/construct_alignment_risk_screen.json")
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
@@ -110,6 +111,14 @@ def read_status():
                          "D_minus_B_RMSE":r["D_minus_B_RMSE"]}
                         for r in seed_comparison.get("table_selected_K",[]) if r["K"]==20]
      } if isinstance(seed_comparison,dict) else {"status":"NOT_RUN"},
+     "source_record_evidence_readiness":{
+       "status":evidence_readiness.get("status"),
+       "total_reactant_records":evidence_readiness.get("source_record_count"),
+       "self_reported_review_states":evidence_readiness.get("self_reported_review_state_counts"),
+       "task_count":evidence_readiness.get("task_count"),
+       "scientifically_approved":evidence_readiness.get("source_scientifically_approved_task_count"),
+       "training_authorized":evidence_readiness.get("main_scientific_training_authorized")
+     } if isinstance(evidence_readiness,dict) else {"status":"NOT_RUN"},
      "raw_record_lineage_audit":{
         "status":lineage.get("status"),
         "task_count":lineage.get("tasks"),
@@ -162,6 +171,7 @@ def read_status():
              "research/source_access_v4/assay_metadata_risk_triage_30.json",
              "research/source_access_v4/p0_source_crosswalk.json",
              "research/source_access_v4/record_level_provenance_30.json",
+             "research/source_access_v4/record_source_evidence_readiness_30.json",
              "research/source_access_v4/P0_SOURCE_CROSSWALK.md",
              "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md",
              "research/source_access_v4/worklist_manifest.json",
@@ -201,6 +211,9 @@ def main():
         if cur.get("candidate_tasks") is not None:
             f.write("**Scientific source review:** "+str(cur.get("human_review_unreviewed"))+" tasks unreviewed; "+str(cur.get("human_review_approved"))+" approved; "+str(cur.get("candidate_tasks"))+" access records indexed (metadata only).\n\n")
             f.write("**Construct-to-reference alignment flags:** "+str(cur.get("construct_region_alignment_flags"))+" source-located tasks needing physical construct verification; "+str(cur.get("construct_risk_reviewed_approvals"))+" approved by this check.\n\n")
+            ev=report["source_record_evidence_readiness"]
+            if ev.get("total_reactant_records") is not None:
+                f.write("**Local source-evidence review worksheet (private):** "+str(ev.get("total_reactant_records"))+" source records; states "+str(ev.get("self_reported_review_states"))+"; "+str(ev.get("scientifically_approved"))+" scientifically approved. Worksheet is NOT committed.\n\n")
             lin=report["raw_record_lineage_audit"]
             if lin.get("reactant_count") is not None:
                 f.write("**Raw source lineage (technical only):** "+str(lin.get("source_records_found"))+"/"+str(lin.get("reactant_count"))+" source reactants and "+str(lin.get("candidate_records_found"))+" preliminary candidate records reconciled; "+str(len(lin.get("critical_lineage_flags") or {}))+" critical issue types; zero assay source approvals.\n\n")

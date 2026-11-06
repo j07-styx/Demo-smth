@@ -28,3 +28,7 @@ __editable__*
 .pytest_cache/
 .vscode/
 .ipynb_checkpoints/
+
+# Private local record-level source evidence worksheet and reviewer notes
+# Never commit individual Reactant_set_ids or human review declarations
+data/audit/*LOCAL_PRIVATE*.csv

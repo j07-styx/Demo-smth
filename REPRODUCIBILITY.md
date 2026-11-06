@@ -106,3 +106,16 @@ Outputs: research\source_access_v4\record_level_provenance_30.json and RECORD_LE
 Expected verified counts at original source versions: fixed 30 tasks, 919 compound groups, 921 distinct source reactant IDs, all 921 raw source and unaggregated candidate records found, no critical technical inconsistencies, five synthetic unit cases passed, and 23 total engineering checks passed. The audit hash-checks and records input files. If source files or human review decisions change, reconcile the inputs instead of forcing old expected counts.
 
 This audit cannot approve any source assay or create a scientific training cohort. It does not validate true experimental equilibrium Kd or physical protein construct identity; the scientific cohort gate remains blocked.
+
+## 6 November 2026 — reproducing private source-evidence readiness
+
+On the authorized original Windows PC, from C:\Users\J0124\dynacpi_v4, run:
+    .\.venv\Scripts\python.exe scripts\build_record_source_evidence_worklist_v4.py
+
+This command creates `data\audit\source_record_evidence_worklist_30_LOCAL_PRIVATE.csv` **only if it does not exist**, otherwise validates the existing reviewer worklist without overwriting it. Expected initial state: 921 source-reactant records across 30 fixed tasks, ALL UNREVIEWED and no scientifically approved task. Source data JSONL and human review CSV must be present and unchanged.
+
+Run synthetic and real integrity cases:
+    .\.venv\Scripts\python.exe tests_v4\record_source_evidence_synthetic_test.py
+    .\.venv\Scripts\python.exe tests_v4\record_source_evidence_real_integrity_test.py
+
+Aggregate outputs only (safe for Git): `research\source_access_v4\record_source_evidence_readiness_30.json` and `RECORD_SOURCE_EVIDENCE_READINESS.md`. Never copy the private worksheet or reviewer notes to the repository, and never use self-reported review declarations as final scientific approvals. All model training remains blocked until independent primary-source review, signed source evidence manifest and frozen protein-family split.

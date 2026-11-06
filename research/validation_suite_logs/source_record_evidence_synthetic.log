@@ -1,0 +1,17 @@
+
+--- STDERR ---
+test_approval_without_source_locators_is_rejected (__main__.EvidenceWorklistSynthetic) ... ok
+test_initial_private_scaffold_is_unreviewed (__main__.EvidenceWorklistSynthetic) ... ok
+test_missing_and_duplicate_reactants_are_rejected (__main__.EvidenceWorklistSynthetic) ... ok
+test_qualified_kd_is_rejected_as_exact (__main__.EvidenceWorklistSynthetic) ... ok
+test_rejection_requires_rationale (__main__.EvidenceWorklistSynthetic) ... ok
+test_reviewer_signed_unreviewed_row_is_rejected (__main__.EvidenceWorklistSynthetic) ... ok
+test_source_metadata_tampering_is_rejected (__main__.EvidenceWorklistSynthetic) ... ok
+test_synthetic_complete_declaration_never_certifies_science (__main__.EvidenceWorklistSynthetic) ... ok
+test_unreviewed_positive_declaration_is_rejected (__main__.EvidenceWorklistSynthetic) ... ok
+test_wrong_endpoint_is_rejected (__main__.EvidenceWorklistSynthetic) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.252s
+
+OK

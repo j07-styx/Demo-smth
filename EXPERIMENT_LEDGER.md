@@ -105,3 +105,19 @@ The deterministic crosswalk retains original task hashes, source evidence tiers,
 | Full engineering regression suite | 23 / 23 PASS |
 
 Run scripts/audit_30_record_level_provenance_v4.py, then consult research/source_access_v4/record_level_provenance_30.json. Synthetic tests: 5/5. Source audit reports may not be interpreted as proof that the reported Kd numeric field is a true direct protein-compound equilibrium measurement or that the physically assayed construct equals the canonical UniProt reference. No new trained model, approved cohort or frozen independent test.
+
+## 6 November 2026 — evidence-review readiness (source governance, NOT a trained model experiment)
+
+| Check | Observed result |
+| --- | ---: |
+| Original source-reactant evidence rows initialized privately | 921 |
+| Original preselected BindingDB tasks | 30 |
+| Private records still UNREVIEWED | 921 |
+| Individual source records independently scientifically approved | 0 |
+| Source-approved tasks | 0 |
+| Approved protein-family-independent split | None |
+| Synthetic evidence-validator cases | 10/10 PASS |
+| Real private-worklist identity checks | PASS |
+| Scientific training permission | BLOCKED |
+
+Commit only aggregate counts and provenance hashes in `research/source_access_v4/record_source_evidence_readiness_30.json` and `RECORD_SOURCE_EVIDENCE_READINESS.md`, never the local-only worksheet or original reactant IDs. `scripts/build_record_source_evidence_worklist_v4.py` rejects altered source anchors, missing reviewers, unqualified or non-Kd endpoints, inconsistent review status and missing method/table/construct evidence on proposed approvals. Full suite now contains 25 engineering checks (verify completed outcome in the suite report). All original model weights and scientific claims are unchanged.

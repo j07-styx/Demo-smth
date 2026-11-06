@@ -1,0 +1,10 @@
+{
+  "status": "PASS_PRIVATE_RECORD_WORKLIST_UNREVIEWED_NO_TRAINING",
+  "source_record_count": 921,
+  "task_count": 30,
+  "local_private_review_file_sha256": "cbe0550feea4c41ef4964f3a6521fd9b5d05059211318eda3a10da6ef2547295",
+  "canonical_review_queue_unchanged": true,
+  "individual_affinity_values_in_worklist": false,
+  "source_approved_tasks": 0,
+  "scientific_gate": "BLOCKED"
+}
