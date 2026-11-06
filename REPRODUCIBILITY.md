@@ -137,3 +137,11 @@ Full engineering suite:
     .\.venv\Scripts\python.exe scripts\run_v4_validation_suite.py
 
 Verified as 26/26 PASS on 6 November 2026; not scientific model validation. K5 sequence-only calibrated baseline RMSE 0.857337 and geometry-mixture calibrated per seed 0.860139, 0.855587, 0.854164; differential gain approximately zero. The real primary exact-Kd project cannot proceed to blinded family-held-out training before source review and frozen split.
+
+## Publication-level source-evidence crosswalk (6 November 2026)
+
+From the original Windows DynaCPI v4 project run:
+    .\.venv\Scripts\python.exe scripts\verify_six_primary_source_leads_v4.py
+    .\.venv\Scripts\python.exe tests_v4\six_publication_source_evidence_integrity_test.py
+
+Inputs: immutable fixed canonical human-review queue 30 ENRICHED CSV (only bibliographic/source IDs and counts). Outputs: research/source_access_v4/six_task_publication_evidence.json and SIX_TASK_PUBLICATION_EVIDENCE.md. The crosswalk was checked against exact original source identities and has six tasks/147 records, zero scientific approvals. It contains source metadata/provenance only; no compound structures, raw Reactant_set identifiers or numerical binding affinity values. These are research article citations and external method descriptions, not verified original source measurements.

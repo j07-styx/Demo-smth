@@ -131,3 +131,15 @@ Commit only aggregate counts and provenance hashes in `research/source_access_v4
 | 1107 | 5 | 0.857337 | 0.854164 | -0.003173 | +5.42e-9 |
 
 Four checkpoint-selected legacy DAVIS development proteins, ten fixed query compounds/protein, ten nested support draws, K=[0,1,2,5,10,20]. 720 correlated target-draw-K cells, NOT 720 independent proteins. Two proteins improve with geometry each seed, and ADCK4 sign flips. Near-zero D-G_B is explained by strongly regularized tiny centered sequence/geometry disagreement variance. Reproduced original three-seed geometry-mixture K sweeps within 6.16e-10 macro RMSE. No training or hyperparameter updates. Real frozen model evidence: research/geometry_factorial_dev/factorial.json and SUMMARY.md. Engineering suite now 26/26 PASS; scientifically approved BindingDB source tasks 0. Conclusions limited to development; no independent/perceiver paper superiority.
+
+## 6 November 2026 — six publication-source task evidence checks (research provenance, not model metrics)
+
+| Source-level category | Preliminary records |
+| --- | ---: |
+| Recombinant ANXA3 SPR publication + externally indexed assay | 48 |
+| Three kinases with published Kd supplementary table; domain identity pending | 63 |
+| Original PGK NMR-binding bibliography, method detail pending | 18 |
+| PA-I lectin original PMID points to review rather than experimental report | 18 |
+| **Total inspected (unapproved)** | **147** |
+
+All six task identifiers/PMIDs/counts matched original review CSV; zero numeric source-value rows authenticated, zero task approvals. See research/source_access_v4/six_task_publication_evidence.json and SIX_TASK_PUBLICATION_EVIDENCE.md. No changes to model weights, no training, no new independent model performance result.

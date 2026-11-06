@@ -1,10 +1,10 @@
 {
   "scope": "ENGINEERING_REPRODUCIBILITY_MONITOR; NO SCIENTIFIC BINDINGDB BENCHMARK",
-  "observed_utc": "2026-11-06T11:44:55.168002+00:00",
+  "observed_utc": "2026-11-06T12:00:32.488060+00:00",
   "project": "C:\\Users\\J0124\\dynacpi_v4",
   "gpu": {
     "status": "OK",
-    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 235, 8188, 15"
+    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 175, 8188, 16"
   },
   "cohort_gate": {
     "status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
@@ -12,9 +12,9 @@
   },
   "validation_suite": {
     "status": "PASS_ENGINEERING_ONLY",
-    "passed": 26,
+    "passed": 27,
     "failed": 0,
-    "finished_utc": "2026-11-06T11:42:50.767772+00:00"
+    "finished_utc": "2026-11-06T11:59:53.760374+00:00"
   },
   "sequence_engineering_pilot": {
     "epoch_count": 3,
@@ -162,6 +162,14 @@
       }
     ]
   },
+  "six_publication_source_leads": {
+    "status": "SIX_TASKS_EXTERNAL_PRIMARY_SOURCE_EVIDENCE_NO_APPROVAL",
+    "task_count": 6,
+    "candidate_record_count": 147,
+    "primary_spr_lead_count": 48,
+    "review_citation_not_original_count": 1,
+    "scientifically_approved": 0
+  },
   "source_record_evidence_readiness": {
     "status": "REVIEW_WORKLIST_UNREVIEWED_NOT_TRAINING_READY",
     "total_reactant_records": 921,
@@ -249,7 +257,7 @@
   "watch_artifacts": {
     "research/pilot_sequence/history.json": "b183c7842a834519707f49cc6cb8322bc6fe330e5b5cbb3834522ef0ae78bd1a",
     "research/pilot_geometry_9train_4val/history.json": "1f9d8a4a46dac95dde78427fc381f5437059b85103179c7ae90e8e213bd4d4e8",
-    "data/audit/v4_validation_suite.json": "4770c9622991fd2e9b9171c920a62665d360a7d8afea1c51ee8377e2d0340ef7",
+    "data/audit/v4_validation_suite.json": "59e26638544c3c314e566741538e6249263220ad83fd36dd5427b2e51de58169",
     "research/support_k_sweep_dev/results.json": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746",
     "research/pilot_geometry_seed_sweep_dev/seed_variability.json": "774d03f12c6ba049dd6ed4adfd9b6285a44bdc4056dd4efe7c9159467e2021a3",
     "research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json": "e2f46d605b63cd0eea8c5e943620aed724156253575242f46231cbf4b6c85188",
@@ -261,8 +269,9 @@
     "research/source_access_v4/construct_alignment_risk_screen.json": "97ffed739814286cac80fd91c1ad0a87a28f6b45c74b56222e764abff4b3a796",
     "research/source_access_v4/assay_metadata_risk_triage_30.json": "b33349c03fe2b449cace30f7530a8bdd0691019c8b3f1899f208cfde959acae0",
     "research/source_access_v4/p0_source_crosswalk.json": "fedc7afdcf3b239f49b50015d61bc864021a03a65204d2af95ada8e0612cae71",
-    "research/source_access_v4/record_level_provenance_30.json": "7a2b8ecc57d962e5ddc6bb5025404a2a0cd20d52baac826cf09b0a98126e3527",
-    "research/source_access_v4/record_source_evidence_readiness_30.json": "124503b40467d0b38de4388869973a9da4e0a7ebf855ceded1b06a8539ac0b4f",
+    "research/source_access_v4/record_level_provenance_30.json": "0e4585871b535d4b51f1448f992dccc2aca12c3365a550a21fca1f7bb5803181",
+    "research/source_access_v4/record_source_evidence_readiness_30.json": "d8d9fdb2e696a316beb559daafe85fa6871831439c7dfac662fd61ce7df2cd1e",
+    "research/source_access_v4/six_task_publication_evidence.json": "bb81e8edf5ff9af96e44e23ffac2fcd8aae600c3128d57969cf219af5980491f",
     "research/source_access_v4/P0_SOURCE_CROSSWALK.md": "22adcf83ef7ca073301e8577c89a283b36b0cb84905264955cc0f9ae28d16284",
     "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md": "61b93828a531fa27317eff607649bbf0cc70df493ec85f0a26fba26c520eb072",
     "research/source_access_v4/worklist_manifest.json": "b9634ceebc239146b1925a0789ddd7c4531a5d873d241ba311bf98fd07480eac",
@@ -276,8 +285,8 @@
   ],
   "change_since_previous_monitor": [
     "data/audit/v4_validation_suite.json",
-    "research/geometry_factorial_dev/factorial.json",
     "research/source_access_v4/record_level_provenance_30.json",
-    "research/source_access_v4/record_source_evidence_readiness_30.json"
+    "research/source_access_v4/record_source_evidence_readiness_30.json",
+    "research/source_access_v4/six_task_publication_evidence.json"
   ]
 }

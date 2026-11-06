@@ -105,3 +105,9 @@ These Git commits represent recorded research operations, not new DynaCPI model 
 - Separate geometry main effect G_B-S_B from incremental centered differential G_D-G_B; geometry mixture seed-dependent, differential model effectively inactive. K5 sequence calibrated RMSE 0.857337; geometry calibrated RMSE 0.860139/0.855587/0.854164. No reliable independent superiority claim.
 - Reproduce previous same-seed G_A/G_B/G_D frozen benchmark values within 6.16e-10 macro RMSE; no re-training, model weight modification or hyperparameter selection.
 - Add integrity regression and 26/26 green engineering suite, VS Code task, read-only monitoring and manuscript Section 7.17/AI handoff. BindingDB science gate remains blocked; zero exact-Kd source approvals.
+
+## 2026-11-06 — Publication-source checks of six real BindingDB tasks (147 candidate records)
+
+- Verify original task IDs, PMIDs, experimental source descriptions and aggregate counts against published paper/registry metadata without accessing chemical identities or source affinity labels.
+- Find coherent ANXA3 SPR source lead (48 records), three original kinase Kd-table domain studies (63 records), NMR/PGK publication (18), and a PA-I lectin review-citation provenance anomaly (18).
+- Add reproducible bibliography-only source crosswalk, primary publication URLs, unresolved experimental qualifiers and source-integrity test; keep all six scientific approval statuses false. Update manuscript Section 7.18 and AI handoff.
