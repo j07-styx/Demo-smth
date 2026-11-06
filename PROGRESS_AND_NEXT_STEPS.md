@@ -98,3 +98,9 @@ Four P0 candidate assays now have primary evidence **leads** at research/source_
 5. Review the new P0 crosswalk and run the 21-check suite from VS Code; no source-approved BindingDB training or independent gain claims exist.
 
 The updated hourly observer reports meaningful source changes and GPU/engineering test failures but does not train or approve a dataset.
+
+## 6 November 2026 — 921/921 raw source reactants technically reconciled
+
+Remote execution resumed on built-diff12. The new record-lineage audit reconciled all 921 original BindingDB reactant IDs to 919 compound-group observations and 921 unaggregated candidate rows. Five independent synthetic cases and the real-audit integration check passed; the expanded engineering suite is **23/23 PASS**, zero failures. Report: research/source_access_v4/RECORD_LEVEL_PROVENANCE_30.md, including original input SHA-256 and zero critical processing discrepancies. This confirms arithmetic/data construction, NOT scientific eligibility or model predictive gain.
+
+The scientific blocker is the same: all 30 fixed Kd candidate tasks still UNREVIEWED and not source-approved. The next work is original paper/patent method-to-measurement adjudication and experimental construct alignment, using the P0 source crosswalk and primary-source review worklist. Do not claim a solved assay mislabel from metadata alone. The project is already ready to run checks from 11 VS Code tasks and is watched by the existing hourly read-only benchmark observer. Do not enable training on these candidates until a scientifically approved cohort and independent family roles exist.

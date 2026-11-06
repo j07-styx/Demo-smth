@@ -1,0 +1,12 @@
+{
+  "status": "PASS_TECHNICAL_REACTANT_LINEAGE_NOT_SOURCE_APPROVED",
+  "tasks": 30,
+  "groups": 919,
+  "reactants": 921,
+  "missing_records": 0,
+  "critical_issues": 0,
+  "scientifically_approved": 0,
+  "cohort_gate": "BLOCKED"
+}
+
+--- STDERR ---

@@ -1,0 +1,844 @@
+{
+  "status": "TECHNICAL_SOURCE_LINEAGE_AUDIT_NOT_SCIENTIFIC_APPROVAL",
+  "generated_utc": "2026-11-06T10:59:45.662130+00:00",
+  "review_queue_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
+  "source_file_sha256": "571f58e9d8be29f7b4510f230f48fba0a36296f81163f4945aeeee70cce492c0",
+  "candidate_file_sha256": "c2955322af8ad9087755fa4a90d449906f06fb038d45eae2ac4c1a6e5d62dcae",
+  "median_file_sha256": "cfd65276bbc345d1c880a8a7c038212db62fd55c39b638ad9ad60a7fbb12a7a1",
+  "tasks": 30,
+  "compound_groups": 919,
+  "source_reactant_references": 921,
+  "original_reactant_ids_found": 921,
+  "unaggregated_reactant_ids_found": 921,
+  "duplicate_source_id_rows": 0,
+  "duplicate_unaggregated_id_rows": 0,
+  "summary_counts": {
+    "COMPOUND_GROUPS_WITH_REPLICATES": 2,
+    "RAW_KD_STRICT_POSITIVE_NUMERIC": 921,
+    "SOURCE_RECORD_FOUND": 921
+  },
+  "critical_lineage_flags": {},
+  "approved_tasks": 0,
+  "source_biological_review_completed": false,
+  "main_training_permitted": false,
+  "per_task": [
+    {
+      "task_id": "00711d68562f88f0479db57d7cb5c2f79a802c306a489b788c96c75d06c79c5b",
+      "assay_key": "50013470_1",
+      "target_name": "Cystic fibrosis transmembrane conductance regulator",
+      "compound_group_count": 19,
+      "referenced_source_records": 19,
+      "source_record_set_sha256": "28730e06a93dd678bc9fa8e05f3973a15b8199069b7cfa61e10b19d298d59618",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 19,
+        "SOURCE_RECORD_FOUND": 19
+      },
+      "organism_metadata_counts": {
+        "Rattus norvegicus": 19
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 19
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "0537e55fb0da51c1ed03d68b55628af3b152d8a46f5c9809a2f0d960ed6261ac",
+      "assay_key": "6526_1",
+      "target_name": "Purine nucleoside phosphorylase",
+      "compound_group_count": 31,
+      "referenced_source_records": 31,
+      "source_record_set_sha256": "02e5e007ba6f8ce82d3555a2f9e32c0ea00a467ea331a780f34dae11d8abd9b6",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 31,
+        "SOURCE_RECORD_FOUND": 31
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 31
+      },
+      "curation_metadata_counts": {
+        "US Patent": 31
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "06203cadcc8c06b459027d196e58179c652e2db93643b684e0e4b1ef904a9f3b",
+      "assay_key": "50016943_1",
+      "target_name": "Amyloid-beta precursor protein",
+      "compound_group_count": 16,
+      "referenced_source_records": 16,
+      "source_record_set_sha256": "3bf2a5cc0ebff3a95dd2ae1920e968fe270e0857c9464553ec101c5c7c7c9c5b",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 16,
+        "SOURCE_RECORD_FOUND": 16
+      },
+      "organism_metadata_counts": {
+        "Human": 11,
+        "Homo sapiens": 5
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 16
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "09d7963d31186c17d5ff3dd20ebf79900bf7c7bb70594aa4f15d768864e8f768",
+      "assay_key": "9684_1",
+      "target_name": "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta",
+      "compound_group_count": 87,
+      "referenced_source_records": 88,
+      "source_record_set_sha256": "72c13d046262dddc29456e8c1c290bf4fdbdd9f133b6a9aeb02d1a4b7511adc6",
+      "findings": {
+        "COMPOUND_GROUPS_WITH_REPLICATES": 1,
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 88,
+        "SOURCE_RECORD_FOUND": 88
+      },
+      "organism_metadata_counts": {
+        "Human": 86,
+        "Homo sapiens": 2
+      },
+      "curation_metadata_counts": {
+        "US Patent": 88
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "0bb31340234b0730228012f8257355420644535ae54f4d8383e8df9a94491f1f",
+      "assay_key": "50034019_161",
+      "target_name": "Serine/threonine-protein kinase RIO2",
+      "compound_group_count": 20,
+      "referenced_source_records": 20,
+      "source_record_set_sha256": "8cd58611be9262e54eb28ad4b9559940718d844abdba44f80e3995dc74050929",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 20,
+        "SOURCE_RECORD_FOUND": 20
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 20
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 20
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "0f1b899d87edcfcbc2a3545f0ab5a49494ec84e51dbf50cc4a69679caecdbe70",
+      "assay_key": "50020330_8",
+      "target_name": "Elongin-C",
+      "compound_group_count": 37,
+      "referenced_source_records": 37,
+      "source_record_set_sha256": "e9d200d5091f660ba6b3557d61cfda7a27026f937c9edf95ee1776b08ae41be5",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 37,
+        "SOURCE_RECORD_FOUND": 37
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 37
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 37
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "1450d9fd14bdec26e2c46a46a9a169aa737822560147f165cf6a8b1f406d89d4",
+      "assay_key": "50022853_5",
+      "target_name": "PC4 and SFRS1-interacting protein",
+      "compound_group_count": 19,
+      "referenced_source_records": 19,
+      "source_record_set_sha256": "3f577873fdd017fbb3051e4c799164e3de2f00d5b3c09670ebd2ffb8858026d4",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 19,
+        "SOURCE_RECORD_FOUND": 19
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 19
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 19
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "1632cad148183614bd7292f625c774938a1b967c0a7fb97feda019b1bad090ff",
+      "assay_key": "50008121_1",
+      "target_name": "Chromobox protein homolog 7",
+      "compound_group_count": 42,
+      "referenced_source_records": 42,
+      "source_record_set_sha256": "9d40b636a26cefcb4fd5514bde4363332cb3a24842d3b80b90a31467e11b3bc0",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 42,
+        "SOURCE_RECORD_FOUND": 42
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 42
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 42
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "234e1a5e57a6fb6d154d03f53eefbab72dce1cf5a40436a16416a4974661721b",
+      "assay_key": "11593_1",
+      "target_name": "Leucine--tRNA ligase",
+      "compound_group_count": 24,
+      "referenced_source_records": 24,
+      "source_record_set_sha256": "adcd25cdbc8e8ccde246b33424667d51a9d7a932784307e02ae4146d1f933f8e",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 24,
+        "SOURCE_RECORD_FOUND": 24
+      },
+      "organism_metadata_counts": {
+        "Escherichia coli (strain K12)": 24
+      },
+      "curation_metadata_counts": {
+        "US Patent": 24
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "26d975c716e25a79ea6f41e0153eb7f726f43710a435d2e7df7100755c05222e",
+      "assay_key": "50034019_51",
+      "target_name": "SRSF protein kinase 3",
+      "compound_group_count": 19,
+      "referenced_source_records": 19,
+      "source_record_set_sha256": "e00676bd6b8c1a838364ed8269a04432d481ca93ec7a08389bd40696405bdd3c",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 19,
+        "SOURCE_RECORD_FOUND": 19
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 19
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 19
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "2a0831c6f67e9a5339c9cbb1be47f65cb290dc9f085f84ad1779edc8b322f38f",
+      "assay_key": "50034979_5",
+      "target_name": "Sodium-dependent noradrenaline transporter",
+      "compound_group_count": 19,
+      "referenced_source_records": 19,
+      "source_record_set_sha256": "45af57a661ff16d90db4f4fb16451bd3b10489707bda2128f72b260e076fb0bb",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 19,
+        "SOURCE_RECORD_FOUND": 19
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 19
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 19
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "30b31aa54624dbb196b14f1d6082b85b36220a17eb29705befd59fdb38790b25",
+      "assay_key": "13282_1",
+      "target_name": "Ricin",
+      "compound_group_count": 42,
+      "referenced_source_records": 42,
+      "source_record_set_sha256": "270389aa762189436b9053f7605e615977a2f23fabfa300fa6ba5bb655f8634a",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 42,
+        "SOURCE_RECORD_FOUND": 42
+      },
+      "organism_metadata_counts": {
+        "Ricinus communis": 42
+      },
+      "curation_metadata_counts": {
+        "US Patent": 42
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "34a74f940a1a8c7b2d8407ad92f267b5925d7bdb9c7518ba5b5beeff5b43e6eb",
+      "assay_key": "50018971_9",
+      "target_name": "PA-I galactophilic lectin",
+      "compound_group_count": 18,
+      "referenced_source_records": 18,
+      "source_record_set_sha256": "f368c69164263aaaf9eee573fe59179e03591c350fec5f79569ab8328e8eae45",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 18,
+        "SOURCE_RECORD_FOUND": 18
+      },
+      "organism_metadata_counts": {
+        "Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)": 18
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 18
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881",
+      "assay_key": "50029872_1",
+      "target_name": "Carbonic anhydrase 2",
+      "compound_group_count": 88,
+      "referenced_source_records": 88,
+      "source_record_set_sha256": "6db0bb31adda1adfde4046ed9d14a86c4263cb68db9f9d54223f618afe014442",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 88,
+        "SOURCE_RECORD_FOUND": 88
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 88
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 88
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 0,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "4034139289e8fba36f759709c6136c1abb6c94d053d55a238dd9ac625e58592a",
+      "assay_key": "50034019_522",
+      "target_name": "Interleukin-1 receptor-associated kinase 3",
+      "compound_group_count": 24,
+      "referenced_source_records": 24,
+      "source_record_set_sha256": "264decd96c74831448a8aeaa4bc89311e2b5c2d7f9cb1efd403499231050ccf2",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 24,
+        "SOURCE_RECORD_FOUND": 24
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 24
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 24
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "4488f29766cbe2653ea93739d332ffc50219fdf10a5a27284d66aca2e73306cd",
+      "assay_key": "50005563_3",
+      "target_name": "Dihydrofolate reductase",
+      "compound_group_count": 16,
+      "referenced_source_records": 16,
+      "source_record_set_sha256": "396fc8cc24f790bbe179cf747cb82471f38ad4d9a325c2dc1ca41d9954b003fe",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 16,
+        "SOURCE_RECORD_FOUND": 16
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 16
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 16
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "5424dcc1f75fce0341243e997a1119bcef1399a3b8c5b57b17dc6304d4bf3d5c",
+      "assay_key": "50008549_2",
+      "target_name": "Neutrophil cytosol factor 1",
+      "compound_group_count": 35,
+      "referenced_source_records": 35,
+      "source_record_set_sha256": "8d1d6d68ecc1a044d9798eaf445707c35f539720d583405c4f5c782d2ecfc8db",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 35,
+        "SOURCE_RECORD_FOUND": 35
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 35
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 35
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "604c4e560bcb7c5af661342ddd9394c5d72bb5b827c901486abfe3443f0f07be",
+      "assay_key": "4362_1",
+      "target_name": "Ectonucleotide pyrophosphatase/phosphodiesterase family member 1",
+      "compound_group_count": 37,
+      "referenced_source_records": 38,
+      "source_record_set_sha256": "856d7630fd6d6b432912f6016f9664401da8dbe67b000dcb8bbc0b0b9e11a83f",
+      "findings": {
+        "COMPOUND_GROUPS_WITH_REPLICATES": 1,
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 38,
+        "SOURCE_RECORD_FOUND": 38
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 38
+      },
+      "curation_metadata_counts": {
+        "US Patent": 38
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "63fda6fc87ffcd3651590f46f8f47181be4ff92218792451050c9716675838bc",
+      "assay_key": "50042775_1",
+      "target_name": "cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A",
+      "compound_group_count": 18,
+      "referenced_source_records": 18,
+      "source_record_set_sha256": "4402f68fc8044a96984c6d32fc5563939067289475193b9760b44ab7622acefa",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 18,
+        "SOURCE_RECORD_FOUND": 18
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 18
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 18
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "69f76b68cfe450d9847cbcf66f2aacfaf9059b740d9266ab6f68052affd644a8",
+      "assay_key": "50017739_13",
+      "target_name": "Atrial natriuretic peptide receptor 3",
+      "compound_group_count": 22,
+      "referenced_source_records": 22,
+      "source_record_set_sha256": "23b60b7a6802582a0f0d49b2876170e87aa8230584dfa653507c25919f20cbdf",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 22,
+        "SOURCE_RECORD_FOUND": 22
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 22
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 22
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "assay_key": "50002067_1",
+      "target_name": "Neuropilin-1",
+      "compound_group_count": 26,
+      "referenced_source_records": 26,
+      "source_record_set_sha256": "90416c85fd8d3d536e44c54905851d9f7ee16e824cc30d084890bd718459283f",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 26,
+        "SOURCE_RECORD_FOUND": 26
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 26
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 26
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "83c3383d774c088ede95378857d532d6106b6543bd0116618c061fac063be820",
+      "assay_key": "11754_1",
+      "target_name": "Programmed cell death 1 ligand 1",
+      "compound_group_count": 18,
+      "referenced_source_records": 18,
+      "source_record_set_sha256": "efc8d27071d3914a58f9c889089bfc4e9370a2095af2ce4accfd226789bb24c7",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 18,
+        "SOURCE_RECORD_FOUND": 18
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 18
+      },
+      "curation_metadata_counts": {
+        "US Patent": 18
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "84d34377550c6af39d0fa8ea4f45971c52ef9369851597ba4146348af9f25bf0",
+      "assay_key": "50018866_3",
+      "target_name": "tRNA (cytosine(38)-C(5))-methyltransferase",
+      "compound_group_count": 15,
+      "referenced_source_records": 15,
+      "source_record_set_sha256": "05967866998f610de9f967c7e517b43a28cd2f8eab71f8d3cfee8d5107aa2875",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 15,
+        "SOURCE_RECORD_FOUND": 15
+      },
+      "organism_metadata_counts": {
+        "Human": 15
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 15
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "86568e5c1b04fb4d58da6667b530e460de6394c98b3d259c33511e138682f397",
+      "assay_key": "50031617_1",
+      "target_name": "Eukaryotic translation initiation factor 4E",
+      "compound_group_count": 19,
+      "referenced_source_records": 19,
+      "source_record_set_sha256": "29371c5010dc039626249950ee9ef975ece6dc3f16ab1dda4cb90d4699ea1f96",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 19,
+        "SOURCE_RECORD_FOUND": 19
+      },
+      "organism_metadata_counts": {
+        "Mus musculus": 19
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 19
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "904e81d710d1d0742e6a18ae3031706c7288c97c075872302f8eab7527a565bd",
+      "assay_key": "50023141_1",
+      "target_name": "Annexin A3",
+      "compound_group_count": 48,
+      "referenced_source_records": 48,
+      "source_record_set_sha256": "a9b0ede23ce7a244fb132b798340bde0a0326c6c803e2f66c350b2894cd6b014",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 48,
+        "SOURCE_RECORD_FOUND": 48
+      },
+      "organism_metadata_counts": {},
+      "curation_metadata_counts": {
+        "ChEMBL": 48
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "a7bc81eb9ee391d2cc5546d74638334d2a3b6e624bf6150b94d01f1119451765",
+      "assay_key": "50016305_1",
+      "target_name": "REST corepressor 1",
+      "compound_group_count": 31,
+      "referenced_source_records": 31,
+      "source_record_set_sha256": "e935d17c3fe424a9aa9b705abc176fe7805f7780368e834f5e61dcc41935c086",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 31,
+        "SOURCE_RECORD_FOUND": 31
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 31
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 31
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "ba8117e41bb7c3ce236b05f5442a53d7fb9eff6370207690bf9f1c3103eb1ecf",
+      "assay_key": "50036674_1",
+      "target_name": "Phosphoglycerate kinase",
+      "compound_group_count": 18,
+      "referenced_source_records": 18,
+      "source_record_set_sha256": "b252859deefe62025f93e7bcea39c6db3948f265180d3f2b732b69500f0cb683",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 18,
+        "SOURCE_RECORD_FOUND": 18
+      },
+      "organism_metadata_counts": {
+        "Saccharomyces cerevisiae (strain ATCC 204508 / S288c)": 18
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 18
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "da40c59768b57b10fa19165e2783e244b9a1ebe7f116999933408861e6e09993",
+      "assay_key": "11490_1",
+      "target_name": "Glucagon-like peptide 1 receptor",
+      "compound_group_count": 43,
+      "referenced_source_records": 43,
+      "source_record_set_sha256": "94382b12e2e804ed769360bd54ef7392c646c04708c5fb7d41753165d6fadfd4",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 43,
+        "SOURCE_RECORD_FOUND": 43
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 43
+      },
+      "curation_metadata_counts": {
+        "US Patent": 43
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 0,
+        "patent": 1
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "da640b691b83f87dadd00163e267c3ce78614548cc545369baf54611dcc8e2f3",
+      "assay_key": "50018296_1",
+      "target_name": "Ubiquitin carboxyl-terminal hydrolase 5",
+      "compound_group_count": 53,
+      "referenced_source_records": 53,
+      "source_record_set_sha256": "b4d7c6c7b4f5fee3c1da9f5c90bca0d57a1fe4512f20862d3b39e740a85001a7",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 53,
+        "SOURCE_RECORD_FOUND": 53
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 53
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 53
+      },
+      "source_identifier_unique_counts": {
+        "doi": 0,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    },
+    {
+      "task_id": "fdfd7be76feacddb3c848a21ead34c992a54da9c37ab3c6f79580c38e71be729",
+      "assay_key": "50001412_1",
+      "target_name": "Indoleamine 2,3-dioxygenase 1",
+      "compound_group_count": 15,
+      "referenced_source_records": 15,
+      "source_record_set_sha256": "860eacb42fabc88cfb947de9d5f0f44350d08956052a16303a25e55561364c2e",
+      "findings": {
+        "RAW_KD_STRICT_POSITIVE_NUMERIC": 15,
+        "SOURCE_RECORD_FOUND": 15
+      },
+      "organism_metadata_counts": {
+        "Homo sapiens": 15
+      },
+      "curation_metadata_counts": {
+        "ChEMBL": 15
+      },
+      "source_identifier_unique_counts": {
+        "doi": 1,
+        "pmid": 1,
+        "patent": 0
+      },
+      "review_state": "UNREVIEWED",
+      "physical_assayed_construct_verified": false,
+      "experimentally_exact_kd_verified": false,
+      "scientifically_approved": false
+    }
+  ],
+  "limitations": [
+    "Technical Kd/pKd conversion consistency is not source verification of a physical Kd experiment.",
+    "No original source assay/construct has been adjudicated; no task is approved.",
+    "No raw Kd or pKd, individual reactant IDs, SMILES or chemical inputs are exported.",
+    "Do not construct a scientific training cohort or frozen group split from this report."
+  ]
+}

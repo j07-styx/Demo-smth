@@ -1,0 +1,12 @@
+
+--- STDERR ---
+test_changed_review_decision_is_rejected (__main__.SourceLineageSyntheticTest) ... ok
+test_missing_source_record_is_flagged (__main__.SourceLineageSyntheticTest) ... ok
+test_qualified_kd_is_not_treated_as_numeric (__main__.SourceLineageSyntheticTest) ... ok
+test_valid_thirty_tasks_two_replicates (__main__.SourceLineageSyntheticTest) ... ok
+test_wrong_kd_conversion_is_flagged (__main__.SourceLineageSyntheticTest) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.146s
+
+OK

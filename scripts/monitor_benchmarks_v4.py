@@ -58,6 +58,7 @@ def read_status():
     geomcheck=fetch("research/pilot_geometry_9train_4val/checkpoint_parity.json")
     source_index=fetch("research/source_access_v4/source_access_index.json")
     p0_evidence=fetch("research/source_access_v4/p0_source_crosswalk.json")
+    lineage=fetch("research/source_access_v4/record_level_provenance_30.json")
     triage=fetch("research/source_access_v4/assay_metadata_risk_triage_30.json")
     construct_risk=fetch("research/source_access_v4/construct_alignment_risk_screen.json")
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
@@ -109,6 +110,17 @@ def read_status():
                          "D_minus_B_RMSE":r["D_minus_B_RMSE"]}
                         for r in seed_comparison.get("table_selected_K",[]) if r["K"]==20]
      } if isinstance(seed_comparison,dict) else {"status":"NOT_RUN"},
+     "raw_record_lineage_audit":{
+        "status":lineage.get("status"),
+        "task_count":lineage.get("tasks"),
+        "compound_group_count":lineage.get("compound_groups"),
+        "reactant_count":lineage.get("source_reactant_references"),
+        "source_records_found":lineage.get("original_reactant_ids_found"),
+        "candidate_records_found":lineage.get("unaggregated_reactant_ids_found"),
+        "critical_lineage_flags":lineage.get("critical_lineage_flags"),
+        "scientifically_approved_tasks":lineage.get("approved_tasks"),
+        "source_assay_methods_verified":lineage.get("source_biological_review_completed")
+     } if isinstance(lineage,dict) else {"status":"NOT_RUN"},
      "p0_source_review_evidence":{
         "status":p0_evidence.get("status"),
         "source_identified_tasks":p0_evidence.get("task_count"),
@@ -149,6 +161,7 @@ def read_status():
              "research/source_access_v4/construct_alignment_risk_screen.json",
              "research/source_access_v4/assay_metadata_risk_triage_30.json",
              "research/source_access_v4/p0_source_crosswalk.json",
+             "research/source_access_v4/record_level_provenance_30.json",
              "research/source_access_v4/P0_SOURCE_CROSSWALK.md",
              "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md",
              "research/source_access_v4/worklist_manifest.json",
@@ -188,6 +201,9 @@ def main():
         if cur.get("candidate_tasks") is not None:
             f.write("**Scientific source review:** "+str(cur.get("human_review_unreviewed"))+" tasks unreviewed; "+str(cur.get("human_review_approved"))+" approved; "+str(cur.get("candidate_tasks"))+" access records indexed (metadata only).\n\n")
             f.write("**Construct-to-reference alignment flags:** "+str(cur.get("construct_region_alignment_flags"))+" source-located tasks needing physical construct verification; "+str(cur.get("construct_risk_reviewed_approvals"))+" approved by this check.\n\n")
+            lin=report["raw_record_lineage_audit"]
+            if lin.get("reactant_count") is not None:
+                f.write("**Raw source lineage (technical only):** "+str(lin.get("source_records_found"))+"/"+str(lin.get("reactant_count"))+" source reactants and "+str(lin.get("candidate_records_found"))+" preliminary candidate records reconciled; "+str(len(lin.get("critical_lineage_flags") or {}))+" critical issue types; zero assay source approvals.\n\n")
             p0=report["p0_source_review_evidence"]
             if p0.get("source_identified_tasks") is not None:
                 f.write("**P0 external source leads:** "+str(p0.get("source_identified_tasks"))+" identified; "+str(p0.get("approved_count"))+" approved; "+str(p0.get("record_level_affinity_verified"))+" fully verified record-level Kd task(s).\n\n")

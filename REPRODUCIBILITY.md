@@ -84,3 +84,25 @@ Never compare geometry values from the four-target subset with sequence values a
 The repository is j07-styx/Demo-smth and was created private. The dates and version numbers on Git commits are **upload milestones** (0.1 code, 0.2 research, 0.3 data, 0.4 AI handoff), not four versions of the DynaCPI model. Preserve the research architecture identifier **v4.0**.
 
 Commit meaningful, isolated changes with experiment evidence and exact observations. Never add raw model pretraining files or large source data; record dataset URL, version, hashes and regeneration steps instead. Verify remote HEAD after pushing.
+
+## 6 November 2026: reproducing original BindingDB reactant lineage checks
+
+Authorized Windows workspace: C:\Users\J0124\dynacpi_v4. Uses its existing Python 3.9 virtual environment, does not require conda, and does not train models. The source JSONL assets already exist on the original PC but were excluded from the GitHub snapshot due to size. GitHub clone alone cannot execute the real integration test until all three original source files and the canonical human-review CSV are restored.
+
+PowerShell command on the original PC:
+    .\.venv\Scripts\python.exe scripts\audit_30_record_level_provenance_v4.py
+
+Five synthetic regression scenarios:
+    .\.venv\Scripts\python.exe tests_v4\record_lineage_synthetic_test.py
+
+Full engineering suite, including real integration and archived baseline parity:
+    .\.venv\Scripts\python.exe scripts\run_v4_validation_suite.py
+
+Read-only benchmark/source status:
+    .\.venv\Scripts\python.exe scripts\monitor_benchmarks_v4.py
+
+Outputs: research\source_access_v4\record_level_provenance_30.json and RECORD_LEVEL_PROVENANCE_30.md; consolidated suite data\audit\v4_validation_suite.json; latest monitor research\monitoring\latest.json and LATEST.md.
+
+Expected verified counts at original source versions: fixed 30 tasks, 919 compound groups, 921 distinct source reactant IDs, all 921 raw source and unaggregated candidate records found, no critical technical inconsistencies, five synthetic unit cases passed, and 23 total engineering checks passed. The audit hash-checks and records input files. If source files or human review decisions change, reconcile the inputs instead of forcing old expected counts.
+
+This audit cannot approve any source assay or create a scientific training cohort. It does not validate true experimental equilibrium Kd or physical protein construct identity; the scientific cohort gate remains blocked.

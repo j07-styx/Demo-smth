@@ -1,10 +1,10 @@
 {
   "scope": "ENGINEERING_REPRODUCIBILITY_MONITOR; NO SCIENTIFIC BINDINGDB BENCHMARK",
-  "observed_utc": "2026-11-06T09:18:26.849662+00:00",
+  "observed_utc": "2026-11-06T11:03:57.813105+00:00",
   "project": "C:\\Users\\J0124\\dynacpi_v4",
   "gpu": {
     "status": "OK",
-    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 162, 8188, 0"
+    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 418, 8188, 11"
   },
   "cohort_gate": {
     "status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
@@ -12,9 +12,9 @@
   },
   "validation_suite": {
     "status": "PASS_ENGINEERING_ONLY",
-    "passed": 21,
+    "passed": 23,
     "failed": 0,
-    "finished_utc": "2026-11-06T09:17:08.598290+00:00"
+    "finished_utc": "2026-11-06T11:02:04.292807+00:00"
   },
   "sequence_engineering_pilot": {
     "epoch_count": 3,
@@ -130,6 +130,17 @@
       }
     ]
   },
+  "raw_record_lineage_audit": {
+    "status": "TECHNICAL_SOURCE_LINEAGE_AUDIT_NOT_SCIENTIFIC_APPROVAL",
+    "task_count": 30,
+    "compound_group_count": 919,
+    "reactant_count": 921,
+    "source_records_found": 921,
+    "candidate_records_found": 921,
+    "critical_lineage_flags": {},
+    "scientifically_approved_tasks": 0,
+    "source_assay_methods_verified": false
+  },
   "p0_source_review_evidence": {
     "status": "P0_EXTERNAL_SOURCE_CORROBORATION_LEADS_NO_SCIENTIFIC_APPROVAL",
     "source_identified_tasks": 4,
@@ -196,7 +207,7 @@
   "watch_artifacts": {
     "research/pilot_sequence/history.json": "b183c7842a834519707f49cc6cb8322bc6fe330e5b5cbb3834522ef0ae78bd1a",
     "research/pilot_geometry_9train_4val/history.json": "1f9d8a4a46dac95dde78427fc381f5437059b85103179c7ae90e8e213bd4d4e8",
-    "data/audit/v4_validation_suite.json": "5bb377aa49a9cc9e72b76e71a05f7bb02d975cd18e63b56be57b5adce384f8f4",
+    "data/audit/v4_validation_suite.json": "4c098ea9e5f753ecda65509b9e63f99e40fb7b5988cc5781e8358a5248f2a655",
     "research/support_k_sweep_dev/results.json": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746",
     "research/pilot_geometry_seed_sweep_dev/seed_variability.json": "774d03f12c6ba049dd6ed4adfd9b6285a44bdc4056dd4efe7c9159467e2021a3",
     "research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json": "e2f46d605b63cd0eea8c5e943620aed724156253575242f46231cbf4b6c85188",
@@ -207,6 +218,7 @@
     "research/source_access_v4/construct_alignment_risk_screen.json": "97ffed739814286cac80fd91c1ad0a87a28f6b45c74b56222e764abff4b3a796",
     "research/source_access_v4/assay_metadata_risk_triage_30.json": "b33349c03fe2b449cace30f7530a8bdd0691019c8b3f1899f208cfde959acae0",
     "research/source_access_v4/p0_source_crosswalk.json": "fedc7afdcf3b239f49b50015d61bc864021a03a65204d2af95ada8e0612cae71",
+    "research/source_access_v4/record_level_provenance_30.json": "9f361d83daa533b060493a5d13c880b2ec89fc023234eef0e6705bcc13ac9cad",
     "research/source_access_v4/P0_SOURCE_CROSSWALK.md": "22adcf83ef7ca073301e8577c89a283b36b0cb84905264955cc0f9ae28d16284",
     "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md": "61b93828a531fa27317eff607649bbf0cc70df493ec85f0a26fba26c520eb072",
     "research/source_access_v4/worklist_manifest.json": "b9634ceebc239146b1925a0789ddd7c4531a5d873d241ba311bf98fd07480eac",
@@ -220,10 +232,6 @@
   ],
   "change_since_previous_monitor": [
     "data/audit/v4_validation_suite.json",
-    "research/source_access_v4/source_access_index.json",
-    "research/source_access_v4/assay_metadata_risk_triage_30.json",
-    "research/source_access_v4/p0_source_crosswalk.json",
-    "research/source_access_v4/P0_SOURCE_CROSSWALK.md",
-    "research/source_access_v4/worklist_manifest.json"
+    "research/source_access_v4/record_level_provenance_30.json"
   ]
 }

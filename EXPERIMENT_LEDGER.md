@@ -87,3 +87,21 @@ All outputs are metadata-only review leads, not source-reviewed exact-Kd assays 
 | Patent locator | PD-L1 source patent identified; original assay description missing and method-to-record correspondence unresolved | UNREVIEWED |
 
 The deterministic crosswalk retains original task hashes, source evidence tiers, zero recorded affinity values and explicit unresolved questions. The source-index category for the DOI-only task was corrected and all downstream source worklists/metadata triage regenerated. The engineering suite now passed **21/21**. Original 30 review records unchanged; zero scientific approvals and zero final independent test findings. Evidence: `research/source_access_v4/p0_source_crosswalk.json`, `P0_SOURCE_CROSSWALK.md` and `data/audit/v4_validation_suite.json`.
+
+## 6 November 2026 — real 30-task BindingDB raw-record technical lineage audit
+
+| Technical quantity | Observed result |
+| --- | ---: |
+| Fixed review tasks | 30 |
+| Preliminary compound-level groups | 919 |
+| Distinct raw BindingDB Reactant_set IDs | 921 |
+| Matched original raw source rows | 921 / 921 |
+| Matched unaggregated preliminary candidate rows | 921 / 921 |
+| Duplicate original/unaggregated raw IDs | 0 / 0 |
+| Strictly positive numeric Kd source strings | 921 |
+| Multi-source-record compound groups | 2 |
+| Technical critical source conversion/sequence/assay/median discrepancies | 0 |
+| Scientifically source-approved tasks | 0 |
+| Full engineering regression suite | 23 / 23 PASS |
+
+Run scripts/audit_30_record_level_provenance_v4.py, then consult research/source_access_v4/record_level_provenance_30.json. Synthetic tests: 5/5. Source audit reports may not be interpreted as proof that the reported Kd numeric field is a true direct protein-compound equilibrium measurement or that the physically assayed construct equals the canonical UniProt reference. No new trained model, approved cohort or frozen independent test.

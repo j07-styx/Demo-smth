@@ -81,3 +81,12 @@ These Git commits represent recorded research operations, not new DynaCPI model 
 - Regenerate source index, source worklist and all-30 metadata triage; P0/P1/P2 remain 4/12/14, zero approved.
 - Add immutable source/approval-state check; engineering regression suite **21/21 PASS**.
 - Extend local VS Code to ten tasks, benchmark monitor to P0 source-evidence counts, manuscript Section 7.14 and AI handoff. Model architecture, pilot checkpoints and negative development findings remain unchanged.
+
+## 2026-11-06 — Actual BindingDB source-reactant lineage and expanded engineering validation
+
+- Restore remote Windows session and audit the REAL existing fixed 30-task BindingDB subset, with 919 compound-group observations and 921 original reactant IDs.
+- Reconcile 921/921 raw BindingDB source rows and preliminary unaggregated candidate rows; verify source Kd numeric conversion, protein sequence hash, assay keys, reviewer count, and median/range of two multi-record compounds. Zero critical technical discrepancies.
+- Add scripts/audit_30_record_level_provenance_v4.py plus aggregate-only JSON/Markdown technical evidence, without source Kd values, compound identities or original reactant IDs in the reports.
+- Add five synthetic unit tests, a real-data audit integration test and original source review gate protections; full DynaCPI v4 suite passes 23/23 checks.
+- Add an 11th VS Code task, extend read-only benchmark monitor and update project.md, Kd curation protocol, manuscript Section 7.15 and next-AI handoff.
+- **Not a scientific result:** 30 source candidates remain unreviewed, 0 approved, no family-independent split, no new trained checkpoints, no claim of superior DynaCPI model performance.
