@@ -181,6 +181,47 @@ The unapproved broader BindingDB candidate screen has stronger K=5 chemical neig
 
 The latest `scripts/run_v4_validation_suite.py` checkpoint independently reran 15 engineering and statistical integrity checks, all passing. Artifacts: `data/engineering_pilot/uniprot_exact_subsequence_survey.json`, `limited_alpha_3d_graph_manifest.json`, `research/pilot_sequence/`, `research/pilot_geometry_9train_4val/`, `research/pilot_geometry_9train_4val/support_adapter_development_diagnostics.json`, and `data/audit/v4_validation_suite.json`. The source-adjudicated BindingDB cohort and frozen five-way independent protein-group split remain unavailable and no paper-level performance comparison has been completed.
 
+### 7.9 Support-size sensitivity, artifact monitoring and mechanism diagnosis (6 November 2026)
+
+To determine whether the inactive geometric differential observed at K=5 arose merely from the small size of the support panel, we performed a fixed-protocol **development-only** support-size sweep using the previously saved sequence-foundation checkpoint (epoch 3) and geometry checkpoint (best epoch 1), without further model fitting or hyperparameter selection. The same four DAVIS development targets—FRK, MEK5, ADCK4 and OSR1—were selected because correctly mapped AlphaFold structures and cached ESM embeddings were already available. They were also used in geometry checkpoint selection and are therefore **not an unbiased independent test**. For every target we retained the same ten deterministically selected query compounds, with ten label-independent nested support draws at K=0,1,2,5,10,20. All variants used the original frozen models and fixed engineering defaults: w0=.5, lambda_b=5, lambda_theta=.1, bounded correction, Morgan Tanimoto^4.
+
+| Support size K | B: calibration-only macro RMSE | D: calibration + geometry differential macro RMSE | D–B macro RMSE | Mean support weight sum W |
+|---:|---:|---:|---:|---:|
+| 0 | 0.86101741 | 0.86101741 | 0 | 0 |
+| 1 | 0.86079179 | 0.86079179 | 0 | 0.001240 |
+| 2 | 0.86061335 | 0.86061335 | +1.87e−11 | 0.002235 |
+| 5 | 0.86013856 | 0.86013856 | +5.21e−11 | 0.006281 |
+| 10 | 0.85936112 | 0.85936112 | +1.04e−10 | 0.012388 |
+| 20 | 0.8573889581 | 0.8573889583 | +2.46e−10 | 0.028842 |
+
+Although increasing support K produced a modest reduction in the development calibration error, the centered geometry differential remained numerically negligible. At K20 the mean weighted centered predictor-disagreement variance V was 6.50e−11, compared with lambda_theta=.1; the descriptive ratio V/(V+lambda_theta) was approximately 6.50e−10. The corresponding W/(W+lambda_b) was approximately .005735. These ratios illustrate the severe scale mismatch between evidence and fixed regularization; they are not an exact formula for the fitted theta or a guarantee that weaker penalties would help. Indeed the centered support disagreement covariance in the numerator was also tiny. The outcome at K5 independently reproduced the previously archived four-target development report at numerical tolerance.
+
+This diagnostic identifies a real **v4 identifiability failure in the narrow development experiment**, not a disproof of the broader research hypothesis. Protein geometry may require better complementary representations and independently compatible assays, and the unapproved BindingDB candidate pool has a different chemical neighborhood distribution. We did not retune parameters on these observed development labels, change the architecture or make any claims regarding a held-out family test. Source artifacts: `research/support_k_sweep_dev/results.json`, `aggregate.csv`, `SUMMARY.md`, `identifiability.json` and `IDENTIFIABILITY.md`. The K5 consistency/checkpoint hash test is `tests_v4/k_sweep_result_integrity_test.py`. We also implemented `scripts/monitor_benchmarks_v4.py` to track engineering test outcomes, checkpoint hashes, the scientific cohort approval gate and new benchmark artifacts without initiating fitting. The main source-verified exact-Kd BindingDB study remains blocked pending full assay and protein-construct adjudication and a frozen independent protein-group split.
+
+### 7.10 Geometry training seed variability and repeat of the support differential experiment (6 November 2026)
+
+We next tested whether the initial negative geometry result was robust to weight initialization. The first full engineering run used seed 1105. We ran **two additional predeclared initialization seeds (1106 and 1107)** on precisely the same nine training protein sequences (486 DAVIS pair observations), four development validation targets (216 observations), frozen saved sequence foundation and two GVP training epochs. Every run used the same optimizer configuration and isolated model-checkpoint outputs, retaining the original seed-1105 checkpoint unchanged. The minimum observed *development validation* target-macro RMSE from the two epochs was:
+
+| GVP initialization seed | Best development epoch | Frozen sequence macro RMSE | Geometry macro RMSE | Geometry−sequence |
+|---:|---:|---:|---:|---:|
+| 1105 | 1 | 0.925685 | 0.935921 | +0.010236 |
+| 1106 | 2 | 0.925685 | 0.920050 | −0.005635 |
+| 1107 | 1 | 0.925685 | 0.915971 | −0.009714 |
+
+The mean of the three best-epoch geometry-minus-sequence differences was −0.001705 RMSE (sample SD 0.010540), illustrating seed sensitivity and the uncertainty of interpreting the initial two-epoch pilot. **These are not independent estimates of generalization or evidence that geometry reliably improves prediction**: the same four targets were used for selecting the best epoch in every run, only three random seeds were examined, and all targets belong to the narrow legacy DAVIS development setting.
+
+For each alternate GVP checkpoint we repeated the **identical frozen support K=0,1,2,5,10,20 episode protocol**, holding query compounds, ten nested identity-based support draws, training-label conversion and adapter regularizers fixed. At K20:
+
+| GVP seed | Calibration-only B macro RMSE | Full D macro RMSE | D−B |
+|---:|---:|---:|---:|
+| 1105 | 0.8573889581 | 0.8573889583 | +2.46×10^−10 |
+| 1106 | 0.8529299312 | 0.8529299314 | +2.00×10^−10 |
+| 1107 | 0.85154725 | 0.85154728 | +2.48×10^−8 |
+
+All three runs retained negligible differential benefits even as the geometry prediction errors shifted across seeds. Thus the *local support-differential null effect* is less sensitive to initialization than the raw geometric predictor in this engineering cohort. It is plausible that the centered disagreement covariance and relative regularization suppress the correction, but this does not prove that modifying the model or tuning the penalty would help. No testing on independently held-out, source-approved BindingDB targets has yet been performed. The consolidated engineering suite was expanded to include sweep and seed-result integrity checks and achieved 17/17 passes.
+
+Artifacts: `research/pilot_geometry_seed_sweep_dev/seed_variability.json`, `SEED_VARIABILITY.md`, `adapter_seed_comparison.json`, `ADAPTER_SEED_COMPARISON.md`, `research/support_k_sweep_seed_dev/seed_1106/results.json`, `seed_1107/results.json`, `tests_v4/geometry_seed_variability_integrity_test.py`, and `data/audit/v4_validation_suite.json`. No final inference or drug-discovery improvement claim follows from these observations.
+
 ## 8 Discussion
 
 The observed train–validation intersections affect how confidently one can interpret validation-selected checkpoints. They are compatible with zero train–test intersections. The operational question is whether an identical model input carries a repeated observation, a different measurement or a construct distinction missing from the CSV. Resolving that question requires raw identifiers and assay provenance. Simply dropping every repeated pair could erase meaningful experimental variance.

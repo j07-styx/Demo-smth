@@ -193,3 +193,22 @@ Tell the owner clearly:
 - Upload commits 0.1–0.4 are Git history milestones only, NOT neural model versions.
 
 **Do not repeat prior architectural debates as if they were new decisions. Continue from verified artifacts, disclose risks, and work against acceptance criteria.**
+
+## 11. Continuation evidence, 6 November 2026 — read BEFORE running new experiments
+
+**This update supersedes only the numeric engineering-test count and the DAVIS development evidence in the original 5 November handoff; it does not authorize a new DynaCPI model architecture.** The project was resumed on built-diff12 under C:\Users\J0124\dynacpi_v4, in a separate VS Code window. The original training files, earlier saved best checkpoints, source-unapproved BindingDB data and upstream PerceiverCPI checkout were preserved. VS Code task commands are in .vscode/tasks.json.
+
+- **Engineering suite now 17/17 PASS**, with zero failed checks; source report data/audit/v4_validation_suite.json (6 November 2026). Two new regression checks validate K-sweep output/checkpoint hashes and three-seed support comparisons.
+- **K=0,1,2,5,10,20 fixed DEV sweep:** ten fixed queries for each of FRK, MEK5, ADCK4, OSR1, ten deterministically nested support draws per K. Original seed-1105 B RMSEs 0.86101741 / 0.86079179 / 0.86061335 / 0.86013856 / 0.85936112 / 0.85738896. D–B at K20 +2.46e-10, effectively zero. Same original frozen sequence/GVP checkpoints and default lambda, no model changes. research/support_k_sweep_dev/results.json, aggregate.csv, SUMMARY.md and IDENTIFIABILITY.md.
+- **Regularization evidence mismatch:** for seed 1105 at K20 average Tanimoto^4 kernel weight W=0.028842 and centered geometry/sequence disagreement V≈6.50e-11; with lambda_b=5 and lambda_theta=.1, the descriptive scale ratios are W/(W+lambda_b)=.005735 and V/(V+lambda_theta)≈6.50e-10. Do not interpret them as the exact ridge coefficients or proof that regularization tuning will help.
+- **Geometry random initialization stability:** two new supervised, development-only GVP runs at predeclared seeds 1106 and 1107 were added, using identical nine training and four validation proteins and two epochs; original seed 1105 remains intact. The best-epoch validation target-macro geometry RMSE was 0.93592060 (seed 1105/epoch1), 0.92004961 (seed 1106/epoch2) and 0.91597119 (seed 1107/epoch1), versus frozen sequence 0.92568508. These values were SELECTED ON THE SAME FOUR VALIDATION TARGETS and are not independent generalization.
+- **Support adaptation on all three geometry seeds:** same compounds, K list, draws, architecture and regularization. At K20 B versus D macro RMSE: seed 1105 0.8573889581 / 0.8573889583; seed 1106 0.8529299312 / 0.8529299314; seed 1107 0.85154725 / 0.85154728. All D−B differences are negligibly small. Seed-dependent geometry accuracy changes do not resolve v4 differential identifiability in this narrow DEV cohort. See research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json and research/support_k_sweep_seed_dev.
+- **Monitoring:** scripts/monitor_benchmarks_v4.py writes research/monitoring/latest.json, LATEST.md and events.jsonl, tracking checkpoint hash, tests, support-K results, seed effects, scientific approval gate and GPU snapshot. An hourly notification automation checks meaningful changed results or errors when built-diff12 is online. It never initiates fitting, and notifications are not proof of computer access when offline.
+- **Scientific gate still hard BLOCKED**: no source-approved exact-Kd BindingDB cohort and no frozen protein-family-independent test. Next true research step is primary-source construct/Kd assay adjudication, approved cohort selection, then locked base/adapter/test roles before any credible D-vs-B claim. Do not tune the current model on the same four checkpoint-selected development proteins and interpret any resulting gains as scientific generalization.
+
+**Useful commands on authorized original PC:**
+
+    C:\Users\J0124\dynacpi_v4\.venv\Scripts\python.exe C:\Users\J0124\dynacpi_v4\scripts\monitor_benchmarks_v4.py
+    C:\Users\J0124\dynacpi_v4\.venv\Scripts\python.exe C:\Users\J0124\dynacpi_v4\scripts\run_v4_validation_suite.py
+
+The next agent should read the newest 6 November project.md entry and manuscript Sections 7.9–7.10, not infer current conclusions from 5 November counts.

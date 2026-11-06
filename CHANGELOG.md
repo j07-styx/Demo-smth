@@ -33,3 +33,15 @@
 ## Next actual architecture change
 
 There is **no authorized next model version** in this changelog. Any future scientific architecture redesign must be separately proposed, justified against the existing v4.0 design, tested with matched baselines, and explicitly versioned as a model change rather than as a Git snapshot upload.
+
+## 2026-11-06 — Continued DynaCPI v4 engineering benchmarks and monitoring
+
+- Resume the same **DynaCPI v4.0** two-predictor architecture in VS Code; no change to original checkpoint or approved research status.
+- Add repeatable K0/K1/K2/K5/K10/K20 development benchmark with frozen sequence/GVP checkpoints and fixed ten support draws; record results, CSV and Markdown explanations. Differential D remains essentially identical to calibration-only B.
+- Add descriptive kernel-weight and centered disagreement-variance scale diagnostics; no post-hoc model tuning.
+- Add two isolated GVP initialization-seed trials and benchmark all three geometry checkpoints under identical support K episodes; record seed-sensitivity and near-zero D−B effects.
+- Add model-checkpoint/benchmark integrity tests, extending previous suite to **17/17 passes**.
+- Add read-only GPU/benchmark snapshot monitor, VS Code runnable tasks and change-event log; hourly notification automation reports meaningful changes when the connected computer is accessible.
+- Update project.md, research manuscript and AI handoff with exact results and scientific limitations. Original PerceiverCPI and pilot baseline checkpoints are preserved.
+
+**This Git commit date records ongoing work. It is not a new DynaCPI architecture version.**

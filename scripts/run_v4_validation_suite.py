@@ -20,6 +20,8 @@ checks=[
  ("scientific_cohort_gate","tests_v4/scientific_cohort_gate_test.py"),
  ("paired_cluster_statistics_synthetic","tests_v4/paired_evaluation_test.py"),
  ("frozen_adapter_real_chemistry","tests_v4/frozen_adapter_real_chemistry_test.py"),
+ ("support_K_sweep_result_integrity","tests_v4/k_sweep_result_integrity_test.py"),
+ ("geometry_seed_variability_integrity","tests_v4/geometry_seed_variability_integrity_test.py"),
  ("trained_sequence_checkpoint_interface","tests_v4/trained_sequence_checkpoint_inference_test.py"),
  ("trained_geometry_checkpoint_parity","tests_v4/trained_geometry_checkpoint_parity.py"),
  ("full_real_structure_to_adapter","tests_v4/full_inference_real_3d_synthetic_labels_test.py"),

@@ -1,0 +1,22 @@
+[
+  {
+    "epoch": 1,
+    "validation_sequence_pooled_rmse": 1.0139269481584992,
+    "validation_sequence_target_macro_rmse": 0.9256850780053539,
+    "validation_geometry_pooled_rmse": 1.0089043835549318,
+    "validation_geometry_target_macro_rmse": 0.9159711931865379,
+    "train_standardized_mse": 0.7684737015898826,
+    "elapsed_seconds": 4.94,
+    "peak_cuda_mib": 461.78
+  },
+  {
+    "epoch": 2,
+    "validation_sequence_pooled_rmse": 1.0139269481584992,
+    "validation_sequence_target_macro_rmse": 0.9256850780053539,
+    "validation_geometry_pooled_rmse": 1.0176039184568726,
+    "validation_geometry_target_macro_rmse": 0.9330011004924057,
+    "train_standardized_mse": 0.7696121854730594,
+    "elapsed_seconds": 4.3,
+    "peak_cuda_mib": 461.78
+  }
+]

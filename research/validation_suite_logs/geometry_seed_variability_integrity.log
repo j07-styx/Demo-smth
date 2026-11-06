@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ENGINEERING_DEV_ONLY",
+  "n_initialization_seeds": 3,
+  "n_existing_proteins": 4,
+  "n_adapter_seed_K_records": 9,
+  "maximum_abs_D_minus_B_RMSE": 2.479905791830106e-08,
+  "source_approved_cohort": false,
+  "warning": "No scientific model superiority established"
+}
+
+--- STDERR ---

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ENGINEERING_DEVELOPMENT_ONLY",
+  "K_values": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20
+  ],
+  "targets": [
+    "ADCK4",
+    "FRK",
+    "MEK5",
+    "OSR1"
+  ],
+  "K5_matches_prior_report": true,
+  "checkpoint_hashes_match": true,
+  "D_minus_B_max_abs_development_RMSE": 2.4608126647507333e-10,
+  "warning": "No scientifically independent held-out Kd evaluation. No trained model gain is asserted."
+}

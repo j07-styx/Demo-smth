@@ -30,3 +30,16 @@
 - A large number of processed rows, high GPU utilization, or 15 passed tests is not evidence of predictive benefit.
 
 The next person must append genuine new observations rather than rewrite this historical ledger. When correcting a prior measurement, add an explicit correction note and retain original evidence.
+
+## Additional engineering-only experiments — 6 November 2026
+
+| Stage | Actual observed outcome | Evidence | Interpretation |
+| --- | --- | --- | --- |
+| Original-seed support K sweep | B macro RMSE 0.861017 (K0), 0.860792 (K1), 0.860613 (K2), 0.860139 (K5), 0.859361 (K10), 0.857389 (K20); D essentially identical | research/support_k_sweep_dev/results.json | Same 4 development targets; no source-approved holdout |
+| K20 kernel/variance scale | Mean W=0.028842, mean V=6.50e-11, fixed lambda_b=5 and lambda_theta=.1 | research/support_k_sweep_dev/identifiability.json | Tiny data/regularizer scale; not a tuned estimator or proof a change helps |
+| Geometry seed comparison | Best geometry macro RMSE seed 1105=0.935921, 1106=0.920050, 1107=0.915971; frozen seq=0.925685 | research/pilot_geometry_seed_sweep_dev/seed_variability.json | Two seeds look better on reused development-val targets, one worse; generalization unknown |
+| Three seed D-versus-B at K20 | D−B +2.46e-10 (1105), +2.00e-10 (1106), +2.48e-8 (1107) | research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json | Essentially no support-dependent geometry correction across seeds |
+| Regression suite | 17/17 PASS on original machine | data/audit/v4_validation_suite.json | Engineering integrity only, not independent predictive utility |
+| Monitoring | Local status artifacts and hourly condition-watch notification enabled | research/monitoring/latest.json, LATEST.md | Observer only; no ongoing GPU training promised |
+
+**New constraints:** Do not hide the development-only geometry result or optimize hyperparameters on these same checkpoint-selected targets to claim scientific gains. The BindingDB main study remains blocked pending primary-source exact-Kd adjudication and family-disjoint split freeze.

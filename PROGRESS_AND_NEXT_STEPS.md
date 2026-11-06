@@ -51,3 +51,14 @@ If approved tasks, independent protein components, exact endpoint semantics or s
 ## Success criteria
 
 A scientifically meaningful DynaCPI v4 claim requires a source-verified exact-Kd cohort, locked independent protein groups, frozen s/g predictors, matched support episodes, and an observed D-vs-B gain with a predeclared effect size and paired protein-component uncertainty. A negative result may be a valid research outcome but must not be hidden.
+
+## Revised immediate work after 6 November 2026
+
+The 5 November list remains scientifically applicable. The current engineering extension has tested K up to 20 and three geometry seeds, with stable *null differential* D−B on the same four development kinases, despite geometry accuracy shifting with seed. The last full suite passed 17/17.
+
+1. **Highest priority is still independent source review**, not another lucky initialization: retrieve actual paper/patent evidence for the thirty sampled BindingDB Kd assays, verify physical construct and exact endpoint/qualifiers, record evidence and reviewer justification, reject unsupported candidates.
+2. After enough construct-verified, assay-compatible tasks spanning truly independent protein families exist, freeze five family-disjoint roles and query/support draws. Ensure source overlaps and domain-level similarity cannot leak between roles.
+3. On SOURCE-APPROVED development roles, investigate why s/g support disagreement covariance and weighted variance V are tiny. Include controlled structure quality and complementarity diagnostics before any model or regularizer revision.
+4. Reproduce matched sequence and geometry baselines across multiple seeds, report each fixed epoch and distributions; do not select a favorable seed using final test targets.
+5. Only after split and experimental design are locked, perform primary D versus calibration-only B paired cluster evaluation. Keep negative outcomes, task counts and uncertainty intervals.
+6. Check source project.md and manuscript Section 7.10 for all observed 6 November development metrics. Run the VS Code status task to inspect updated benchmark files; hourly monitoring only reports meaningful changes.

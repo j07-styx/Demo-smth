@@ -1,0 +1,154 @@
+{
+  "scope": "ENGINEERING_REPRODUCIBILITY_MONITOR; NO SCIENTIFIC BINDINGDB BENCHMARK",
+  "observed_utc": "2026-11-06T02:19:25.759977+00:00",
+  "project": "C:\\Users\\J0124\\dynacpi_v4",
+  "gpu": {
+    "status": "OK",
+    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 193, 8188, 0"
+  },
+  "cohort_gate": {
+    "status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+    "reason": "Blocked: independently reviewed approved cohort and frozen split are required."
+  },
+  "validation_suite": {
+    "status": "PASS_ENGINEERING_ONLY",
+    "passed": 17,
+    "failed": 0,
+    "finished_utc": "2026-11-06T02:17:32.884672+00:00"
+  },
+  "sequence_engineering_pilot": {
+    "epoch_count": 3,
+    "best_validation_target_macro_rmse": 0.8111848963564376,
+    "epoch_of_best": 1,
+    "saved_checkpoint_sha256": "ef6df11110f8d80776a4f28530a5ea19cb085ad230a8c65594d986fecde49729"
+  },
+  "geometry_engineering_pilot": {
+    "epoch_count": 2,
+    "best_geometry_validation_target_macro_rmse": 0.9359206039094026,
+    "frozen_sequence_validation_target_macro_rmse": 0.9256850780053539,
+    "saved_checkpoint_sha256": "a3725b8c0e6a3d7dea6d338a09160ddb4aac0ec206be0d424216f9de6628b85c",
+    "checkpoint_reload_status": "PASS_ENGINEERING_CHECKPOINT_REEVALUATION"
+  },
+  "support_K_development": {
+    "status": "COMPLETE_ENGINEERING_DEVELOPMENT_NOT_BLIND_SCIENTIFIC_RESULT",
+    "results": [
+      {
+        "K": 0,
+        "B_macro_RMSE": 0.861017409865483,
+        "D_macro_RMSE": 0.861017409865483,
+        "D_minus_B_macro_RMSE": 0.0,
+        "mean_W": 0.0,
+        "mean_V": 0.0
+      },
+      {
+        "K": 1,
+        "B_macro_RMSE": 0.86079178549572,
+        "D_macro_RMSE": 0.86079178549572,
+        "D_minus_B_macro_RMSE": 0.0,
+        "mean_W": 0.0012401132715140013,
+        "mean_V": 9.26961957852574e-40
+      },
+      {
+        "K": 2,
+        "B_macro_RMSE": 0.8606133528276187,
+        "D_macro_RMSE": 0.8606133528463138,
+        "D_minus_B_macro_RMSE": 1.869504551166301e-11,
+        "mean_W": 0.002234973577756507,
+        "mean_V": 3.4506788308058863e-12
+      },
+      {
+        "K": 5,
+        "B_macro_RMSE": 0.8601385624054105,
+        "D_macro_RMSE": 0.8601385624574611,
+        "D_minus_B_macro_RMSE": 5.2050586063501214e-11,
+        "mean_W": 0.006281343674062742,
+        "mean_V": 1.1514248680478362e-11
+      },
+      {
+        "K": 10,
+        "B_macro_RMSE": 0.8593611212950958,
+        "D_macro_RMSE": 0.8593611213986588,
+        "D_minus_B_macro_RMSE": 1.0356304702696661e-10,
+        "mean_W": 0.012388401473606205,
+        "mean_V": 2.5129095956991106e-11
+      },
+      {
+        "K": 20,
+        "B_macro_RMSE": 0.8573889580881286,
+        "D_macro_RMSE": 0.8573889583342099,
+        "D_minus_B_macro_RMSE": 2.4608126647507333e-10,
+        "mean_W": 0.028841820786402367,
+        "mean_V": 6.50445794268343e-11
+      }
+    ],
+    "artifact_sha256": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746"
+  },
+  "geometry_seed_variability_dev": {
+    "status": "COMPLETE_SMALL_DEVELOPMENT_SEED_VARIABILITY_ONLY",
+    "n_seeds": 3,
+    "n_better_than_sequence": 2,
+    "n_worse_than_sequence": 1,
+    "seed_results": [
+      {
+        "seed": 1105,
+        "best_epoch": 1,
+        "geometry_minus_sequence_rmse": 0.010235525904048637
+      },
+      {
+        "seed": 1106,
+        "best_epoch": 2,
+        "geometry_minus_sequence_rmse": -0.00563546414103544
+      },
+      {
+        "seed": 1107,
+        "best_epoch": 1,
+        "geometry_minus_sequence_rmse": -0.009713884818816076
+      }
+    ]
+  },
+  "geometry_adapter_seed_comparison_dev": {
+    "status": "COMPLETE_ENGINEERING_DEV_ONLY",
+    "maximum_abs_D_minus_B": 2.479905791830106e-08,
+    "K20_by_seed": [
+      {
+        "seed": 1105,
+        "B_RMSE": 0.8573889580881286,
+        "D_RMSE": 0.8573889583342099,
+        "D_minus_B_RMSE": 2.4608126647507333e-10
+      },
+      {
+        "seed": 1106,
+        "B_RMSE": 0.8529299311544043,
+        "D_RMSE": 0.8529299313541746,
+        "D_minus_B_RMSE": 1.9977031140427925e-10
+      },
+      {
+        "seed": 1107,
+        "B_RMSE": 0.851547252962203,
+        "D_RMSE": 0.8515472777612609,
+        "D_minus_B_RMSE": 2.479905791830106e-08
+      }
+    ]
+  },
+  "watch_artifacts": {
+    "research/pilot_sequence/history.json": "b183c7842a834519707f49cc6cb8322bc6fe330e5b5cbb3834522ef0ae78bd1a",
+    "research/pilot_geometry_9train_4val/history.json": "1f9d8a4a46dac95dde78427fc381f5437059b85103179c7ae90e8e213bd4d4e8",
+    "data/audit/v4_validation_suite.json": "cc08f3a7e9d3f5900bc9efa93d7a4240c69ef48cf488ca29afb38a0128458135",
+    "research/support_k_sweep_dev/results.json": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746",
+    "research/pilot_geometry_seed_sweep_dev/seed_variability.json": "774d03f12c6ba049dd6ed4adfd9b6285a44bdc4056dd4efe7c9159467e2021a3",
+    "research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json": "e2f46d605b63cd0eea8c5e943620aed724156253575242f46231cbf4b6c85188",
+    "research/support_k_sweep_seed_dev/seed_1106/results.json": "6fc9eaffea86833bddb1a3606a9fd255845ff9f635c403ebd1069533ff6dee2a",
+    "research/support_k_sweep_seed_dev/seed_1107/results.json": "9d8d01195a54b79bd6b34105e67c9b92a4c75179f2d3d6e5b6fb0ae7c50f6a9b",
+    "data/audit/bindingdb_assay_manual_review_status.json": "3deae411880e9c0ad3858e22a8d1ce8962601e4c8f2924225cdbe8d8cfac2c43",
+    "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json": "3ab0f40744da2f354147d3a8f3d3836f92fb0c56edea7a61507774326a10df2d"
+  },
+  "limitations": [
+    "Four-target DAVIS support sweep reuses checkpoint-selected development targets and reporting-boundary labels.",
+    "All true BindingDB exact-Kd research results remain blocked on approved constructs and frozen protein-group split.",
+    "This is a read-only local artifact monitor; a missing process output is not evidence of successful training.",
+    "GPU usage is a snapshot; it does not establish an active DynaCPI compute task."
+  ],
+  "change_since_previous_monitor": [
+    "data/audit/v4_validation_suite.json"
+  ]
+}

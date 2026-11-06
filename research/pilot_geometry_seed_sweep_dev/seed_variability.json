@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE_SMALL_DEVELOPMENT_SEED_VARIABILITY_ONLY",
+  "n_seeds": 3,
+  "n_validation_proteins": 4,
+  "n_validation_pairs": 216,
+  "same_approved_science_cohort": false,
+  "seeds": [
+    {
+      "seed": 1105,
+      "best_epoch": 1,
+      "sequence_rmse": 0.9256850780053539,
+      "geometry_rmse_best": 0.9359206039094026,
+      "geometry_minus_sequence_rmse": 0.010235525904048637,
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "geom_rmse": 0.9359206039094026,
+          "sequence_rmse": 0.9256850780053539
+        },
+        {
+          "epoch": 2,
+          "geom_rmse": 0.963520233678969,
+          "sequence_rmse": 0.9256850780053539
+        }
+      ],
+      "checkpoint_sha256": "a3725b8c0e6a3d7dea6d338a09160ddb4aac0ec206be0d424216f9de6628b85c"
+    },
+    {
+      "seed": 1106,
+      "best_epoch": 2,
+      "sequence_rmse": 0.9256850780053539,
+      "geometry_rmse_best": 0.9200496138643185,
+      "geometry_minus_sequence_rmse": -0.00563546414103544,
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "geom_rmse": 0.9589537206332367,
+          "sequence_rmse": 0.9256850780053539
+        },
+        {
+          "epoch": 2,
+          "geom_rmse": 0.9200496138643185,
+          "sequence_rmse": 0.9256850780053539
+        }
+      ],
+      "checkpoint_sha256": "67d63431d9e71700218dbc3ceefc757cbb4b454a3b3c67e238b8bcd747c7d743"
+    },
+    {
+      "seed": 1107,
+      "best_epoch": 1,
+      "sequence_rmse": 0.9256850780053539,
+      "geometry_rmse_best": 0.9159711931865379,
+      "geometry_minus_sequence_rmse": -0.009713884818816076,
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "geom_rmse": 0.9159711931865379,
+          "sequence_rmse": 0.9256850780053539
+        },
+        {
+          "epoch": 2,
+          "geom_rmse": 0.9330011004924057,
+          "sequence_rmse": 0.9256850780053539
+        }
+      ],
+      "checkpoint_sha256": "82dc037d0b96c62877e903b91ae51d93f92d0a2bdf6fe49a22b8416c195110ac"
+    }
+  ],
+  "mean_best_epoch_geometry_minus_sequence_rmse": -0.0017046076852676266,
+  "sample_sd_best_epoch_geometry_minus_sequence_rmse": 0.010539614385938227,
+  "n_better_than_sequence": 2,
+  "n_worse_than_sequence": 1,
+  "limitations": [
+    "All three seeds and epoch selection used the same four DAVIS development targets; not a blinded independent test.",
+    "Two supervised epochs per seed are too few to establish stable converged performance.",
+    "Comparing best epochs on the same validation cohort introduces optimism.",
+    "Sample of three seeds is insufficient for robust uncertainty on future protein families.",
+    "DAVIS reporting-floor labels and physical experimental constructs were not source approved."
+  ]
+}

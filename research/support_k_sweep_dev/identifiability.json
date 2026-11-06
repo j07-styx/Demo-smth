@@ -1,0 +1,78 @@
+{
+  "status": "DIAGNOSTIC_NO_HYPERPARAMETER_SELECTION",
+  "time_utc": "2026-11-06T02:05:59.900139+00:00",
+  "source_sha256": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746",
+  "K_values": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20
+  ],
+  "lambda_b": 5.0,
+  "lambda_theta": 0.1,
+  "table": [
+    {
+      "K": 0,
+      "mean_W": 0.0,
+      "mean_V": 0.0,
+      "calibration_weight_scale_W_over_W_plus_lambda_b": 0.0,
+      "disagreement_variance_scale_V_over_V_plus_lambda_theta": 0.0,
+      "mean_abs_differential": 0.0,
+      "D_minus_B_macro_RMSE": 0.0
+    },
+    {
+      "K": 1,
+      "mean_W": 0.0012401132715140013,
+      "mean_V": 9.26961957852574e-40,
+      "calibration_weight_scale_W_over_W_plus_lambda_b": 0.00024796115431914204,
+      "disagreement_variance_scale_V_over_V_plus_lambda_theta": 9.26961957852574e-39,
+      "mean_abs_differential": 8.173802236658515e-26,
+      "D_minus_B_macro_RMSE": 0.0
+    },
+    {
+      "K": 2,
+      "mean_W": 0.002234973577756507,
+      "mean_V": 3.4506788308058863e-12,
+      "calibration_weight_scale_W_over_W_plus_lambda_b": 0.0004467950005471221,
+      "disagreement_variance_scale_V_over_V_plus_lambda_theta": 3.450678830686814e-11,
+      "mean_abs_differential": 1.5532603822120158e-11,
+      "D_minus_B_macro_RMSE": 1.869504551166301e-11
+    },
+    {
+      "K": 5,
+      "mean_W": 0.006281343674062742,
+      "mean_V": 1.1514248680478362e-11,
+      "calibration_weight_scale_W_over_W_plus_lambda_b": 0.0012546925038481602,
+      "disagreement_variance_scale_V_over_V_plus_lambda_theta": 1.1514248679152582e-10,
+      "mean_abs_differential": 4.635039562950822e-11,
+      "D_minus_B_macro_RMSE": 5.2050586063501214e-11
+    },
+    {
+      "K": 10,
+      "mean_W": 0.012388401473606205,
+      "mean_V": 2.5129095956991106e-11,
+      "calibration_weight_scale_W_over_W_plus_lambda_b": 0.002471556567716122,
+      "disagreement_variance_scale_V_over_V_plus_lambda_theta": 2.512909595067639e-10,
+      "mean_abs_differential": 1.0285536415556015e-10,
+      "D_minus_B_macro_RMSE": 1.0356304702696661e-10
+    },
+    {
+      "K": 20,
+      "mean_W": 0.028841820786402367,
+      "mean_V": 6.50445794268343e-11,
+      "calibration_weight_scale_W_over_W_plus_lambda_b": 0.005735280968112083,
+      "disagreement_variance_scale_V_over_V_plus_lambda_theta": 6.504457938452632e-10,
+      "mean_abs_differential": 2.3106923749417776e-10,
+      "D_minus_B_macro_RMSE": 2.4608126647507333e-10
+    }
+  ],
+  "main_interpretation": "For every selected K, D and B are numerically indistinguishable at six-decimal RMSE. Support-weight mass W is small relative to the fixed calibration regularizer; centered sequence-geometry disagreement variance V is negligible relative to the fixed differential regularizer. The diagnostic does NOT imply changing regularizers would improve accuracy.",
+  "critical_limits": [
+    "All labels are from the same four geometry-checkpoint-selected DAVIS development proteins, not an unbiased or source-approved test.",
+    "Ratios of averaged W and V are descriptive regularization-scale indicators, not exact averages of optimizer coefficients.",
+    "Tuning regularizers or architecture on these four development targets then claiming gains on them would be biased.",
+    "The broader preliminary BindingDB cohort has distinct chemistry; do not extrapolate this pilot result."
+  ]
+}
