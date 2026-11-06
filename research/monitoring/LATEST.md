@@ -1,18 +1,20 @@
 # DynaCPI v4 — local benchmark monitor
 
-Updated (UTC): 2026-11-06T03:12:53.046989+00:00
+Updated (UTC): 2026-11-06T03:28:03.137112+00:00
 
 **Status:** ENGINEERING ONLY. No scientifically approved BindingDB cohort or frozen protein-group split.
 
-**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 377, 8188, 0
+**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 397, 8188, 0
 
-**Last consolidated regression check:** 19/19; status PASS_ENGINEERING_ONLY
+**Last consolidated regression check:** 20/20; status PASS_ENGINEERING_ONLY
 
 **Scientific gate:** BLOCKED_UNAPPROVED_NOT_TRAINING_READY
 
 **Scientific source review:** 30 tasks unreviewed; 0 approved; 30 access records indexed (metadata only).
 
 **Construct-to-reference alignment flags:** 2 source-located tasks needing physical construct verification; 0 approved by this check.
+
+**30-task metadata triage (not approval):** P0_REVIEW_METADATA_SEMANTICS=4, P1_REVIEW_CONSTRUCT_AND_ENDPOINT=12, P2_STANDARD_PRIMARY_SOURCE_REVIEW=14.
 
 | Support K | Calibration B RMSE | Full D RMSE | D−B RMSE | Mean kernel W | Mean disagreement V |
 | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -41,4 +43,4 @@ This is a same-four-target development diagnostic and does not show independent 
 | 1106 | 0.8529299 | 0.8529299 | 2e-10 |
 | 1107 | 0.8515473 | 0.8515473 | 2.48e-08 |
 
-Changed watched artifacts since prior run: data/audit/v4_validation_suite.json, research/source_access_v4/construct_alignment_risk_screen.json, research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md
+Changed watched artifacts since prior run: data/audit/v4_validation_suite.json

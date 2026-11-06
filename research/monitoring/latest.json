@@ -1,10 +1,10 @@
 {
   "scope": "ENGINEERING_REPRODUCIBILITY_MONITOR; NO SCIENTIFIC BINDINGDB BENCHMARK",
-  "observed_utc": "2026-11-06T03:12:53.046989+00:00",
+  "observed_utc": "2026-11-06T03:28:03.137112+00:00",
   "project": "C:\\Users\\J0124\\dynacpi_v4",
   "gpu": {
     "status": "OK",
-    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 377, 8188, 0"
+    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 397, 8188, 0"
   },
   "cohort_gate": {
     "status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
@@ -12,9 +12,9 @@
   },
   "validation_suite": {
     "status": "PASS_ENGINEERING_ONLY",
-    "passed": 19,
+    "passed": 20,
     "failed": 0,
-    "finished_utc": "2026-11-06T03:11:27.064297+00:00"
+    "finished_utc": "2026-11-06T03:26:56.454996+00:00"
   },
   "sequence_engineering_pilot": {
     "epoch_count": 3,
@@ -130,6 +130,37 @@
       }
     ]
   },
+  "metadata_review_triage": {
+    "status": "PRELIMINARY_METADATA_RISK_TRIAGE_NOT_SOURCE_ADJUDICATION",
+    "n_candidate_tasks": 30,
+    "n_scientifically_approved": 0,
+    "review_priority_counts": {
+      "P0_REVIEW_METADATA_SEMANTICS": 4,
+      "P1_REVIEW_CONSTRUCT_AND_ENDPOINT": 12,
+      "P2_STANDARD_PRIMARY_SOURCE_REVIEW": 14
+    },
+    "metadata_flag_counts": {
+      "COMPETITION_OR_DISPLACEMENT_PROTOCOL": 4,
+      "COMPLEX_COFAC_TOPOLOGY_LANGUAGE": 4,
+      "DESCRIPTION_MISSING": 1,
+      "DOMAIN_OR_FRAGMENT_LANGUAGE": 8,
+      "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES": 5,
+      "KD_FIELD_DESCRIBED_AS_HALF_EFFECTIVE_CONCENTRATION": 1,
+      "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE": 10,
+      "NUMERIC_REGION_END_EXCEEDS_TARGET_REFERENCE_CHECK_CHAIN_ASSOCIATION": 1,
+      "NUMERIC_REGION_IN_METADATA": 8,
+      "POTENTIAL_PROCESSED_PEPTIDE_VS_PRECURSOR_TARGET": 1,
+      "POTENTIAL_TARGET_DESCRIPTION_SEMANTIC_MISMATCH": 1,
+      "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING": 20,
+      "PRIMARY_PATENT_METHODS_NOT_REVIEWED": 7,
+      "PRIMARY_SOURCE_FRAGMENT_VS_REFERENCE_FLAG": 2,
+      "PRIMARY_SOURCE_IDENTIFIER_MISSING": 1,
+      "REGION_SHORTER_THAN_CANONICAL_REFERENCE": 6,
+      "SOURCE_SPECIES_NEEDS_REFERENCE_ALIGNMENT": 3,
+      "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE": 4,
+      "TAGGED_OR_LABELED_REAGENT_LANGUAGE": 8
+    }
+  },
   "source_curation_readiness": {
     "status": "AUTOMATED_SOURCE_INDEX_ONLY_NOT_BIOLOGICAL_VALIDATION",
     "candidate_tasks": 30,
@@ -153,7 +184,7 @@
   "watch_artifacts": {
     "research/pilot_sequence/history.json": "b183c7842a834519707f49cc6cb8322bc6fe330e5b5cbb3834522ef0ae78bd1a",
     "research/pilot_geometry_9train_4val/history.json": "1f9d8a4a46dac95dde78427fc381f5437059b85103179c7ae90e8e213bd4d4e8",
-    "data/audit/v4_validation_suite.json": "c64c676f8c500921989a8362f6172de350bf140a7e1b7d2d447b7e91ca714788",
+    "data/audit/v4_validation_suite.json": "197568a7e03d21be037a20bd5790782d64ce6de2235d79c1d641328129cc7d67",
     "research/support_k_sweep_dev/results.json": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746",
     "research/pilot_geometry_seed_sweep_dev/seed_variability.json": "774d03f12c6ba049dd6ed4adfd9b6285a44bdc4056dd4efe7c9159467e2021a3",
     "research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json": "e2f46d605b63cd0eea8c5e943620aed724156253575242f46231cbf4b6c85188",
@@ -162,6 +193,7 @@
     "data/audit/bindingdb_assay_manual_review_status.json": "3deae411880e9c0ad3858e22a8d1ce8962601e4c8f2924225cdbe8d8cfac2c43",
     "research/source_access_v4/source_access_index.json": "92eee67d455ddd45b6594053d466022f872a729ea40d5bbcbbc8cf09dae44207",
     "research/source_access_v4/construct_alignment_risk_screen.json": "97ffed739814286cac80fd91c1ad0a87a28f6b45c74b56222e764abff4b3a796",
+    "research/source_access_v4/assay_metadata_risk_triage_30.json": "1280a8b043ee13915ec9c9e9576515796fbdc1534bd1633cf33de699fd2884b0",
     "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md": "61b93828a531fa27317eff607649bbf0cc70df493ec85f0a26fba26c520eb072",
     "research/source_access_v4/worklist_manifest.json": "97fe56a0bf8e0ab4fa1a7b26e481701343407ba2adc247cab4cb2544d34e7c4f",
     "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json": "3ab0f40744da2f354147d3a8f3d3836f92fb0c56edea7a61507774326a10df2d"
@@ -173,8 +205,6 @@
     "GPU usage is a snapshot; it does not establish an active DynaCPI compute task."
   ],
   "change_since_previous_monitor": [
-    "data/audit/v4_validation_suite.json",
-    "research/source_access_v4/construct_alignment_risk_screen.json",
-    "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md"
+    "data/audit/v4_validation_suite.json"
   ]
 }

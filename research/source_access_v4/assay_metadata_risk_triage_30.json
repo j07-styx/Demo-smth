@@ -1,0 +1,872 @@
+{
+  "status": "PRELIMINARY_METADATA_RISK_TRIAGE_NOT_SOURCE_ADJUDICATION",
+  "created_utc": "2026-11-06T03:23:18.559465+00:00",
+  "canonical_review_csv_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
+  "reference_screen_file_sha256": "5926927520718369928820138393ad1e5b1b5715e3285e1346790f58701deb75",
+  "source_access_index_sha256": "92eee67d455ddd45b6594053d466022f872a729ea40d5bbcbbc8cf09dae44207",
+  "two_source_fragment_evidence_sha256": "97ffed739814286cac80fd91c1ad0a87a28f6b45c74b56222e764abff4b3a796",
+  "task_count": 30,
+  "reviewed_tasks": 0,
+  "approved_tasks": 0,
+  "risk_flag_counts": {
+    "COMPETITION_OR_DISPLACEMENT_PROTOCOL": 4,
+    "COMPLEX_COFAC_TOPOLOGY_LANGUAGE": 4,
+    "DESCRIPTION_MISSING": 1,
+    "DOMAIN_OR_FRAGMENT_LANGUAGE": 8,
+    "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES": 5,
+    "KD_FIELD_DESCRIBED_AS_HALF_EFFECTIVE_CONCENTRATION": 1,
+    "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE": 10,
+    "NUMERIC_REGION_END_EXCEEDS_TARGET_REFERENCE_CHECK_CHAIN_ASSOCIATION": 1,
+    "NUMERIC_REGION_IN_METADATA": 8,
+    "POTENTIAL_PROCESSED_PEPTIDE_VS_PRECURSOR_TARGET": 1,
+    "POTENTIAL_TARGET_DESCRIPTION_SEMANTIC_MISMATCH": 1,
+    "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING": 20,
+    "PRIMARY_PATENT_METHODS_NOT_REVIEWED": 7,
+    "PRIMARY_SOURCE_FRAGMENT_VS_REFERENCE_FLAG": 2,
+    "PRIMARY_SOURCE_IDENTIFIER_MISSING": 1,
+    "REGION_SHORTER_THAN_CANONICAL_REFERENCE": 6,
+    "SOURCE_SPECIES_NEEDS_REFERENCE_ALIGNMENT": 3,
+    "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE": 4,
+    "TAGGED_OR_LABELED_REAGENT_LANGUAGE": 8
+  },
+  "priority_counts": {
+    "P0_REVIEW_METADATA_SEMANTICS": 4,
+    "P1_REVIEW_CONSTRUCT_AND_ENDPOINT": 12,
+    "P2_STANDARD_PRIMARY_SOURCE_REVIEW": 14
+  },
+  "metadata_read_only": true,
+  "raw_affinity_values_used": false,
+  "review_action": "HUMAN_SOURCE_METHODS_AND_RECORD_MATCHING_REQUIRED",
+  "entries": [
+    {
+      "task_id": "00711d68562f88f0479db57d7cb5c2f79a802c306a489b788c96c75d06c79c5b",
+      "assay_key": "50013470_1",
+      "target_name": "Cystic fibrosis transmembrane conductance regulator",
+      "candidate_protein_reference_length": 1476,
+      "canonical_uniprot_accessions": [
+        "P34158"
+      ],
+      "original_assay_description_hash": "2b1c7378af9840c0a3a600b3c7669faddd24a79e46df40867b97493374981fce",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P0_REVIEW_METADATA_SEMANTICS",
+      "metadata_risk_flags": [
+        "KD_FIELD_DESCRIBED_AS_HALF_EFFECTIVE_CONCENTRATION",
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "SOURCE_SPECIES_NEEDS_REFERENCE_ALIGNMENT",
+        "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "0537e55fb0da51c1ed03d68b55628af3b152d8a46f5c9809a2f0d960ed6261ac",
+      "assay_key": "6526_1",
+      "target_name": "Purine nucleoside phosphorylase",
+      "candidate_protein_reference_length": 289,
+      "canonical_uniprot_accessions": [
+        "P00491"
+      ],
+      "original_assay_description_hash": "dfef5034b7754eb14c9397d7d385e93b288f13fcc7a09044c17116b73b2e6c4a",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED",
+        "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "06203cadcc8c06b459027d196e58179c652e2db93643b684e0e4b1ef904a9f3b",
+      "assay_key": "50016943_1",
+      "target_name": "Amyloid-beta precursor protein",
+      "candidate_protein_reference_length": 770,
+      "canonical_uniprot_accessions": [
+        "P05067"
+      ],
+      "original_assay_description_hash": "ad98286772f6c4f8f37d4cef61b8b550b55bf8177fb994fece9cce93dfc216ed",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "COMPLEX_COFAC_TOPOLOGY_LANGUAGE",
+        "NUMERIC_REGION_IN_METADATA",
+        "POTENTIAL_PROCESSED_PEPTIDE_VS_PRECURSOR_TARGET",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "REGION_SHORTER_THAN_CANONICAL_REFERENCE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 1,
+          "end": 40,
+          "nominal_length": 40,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "09d7963d31186c17d5ff3dd20ebf79900bf7c7bb70594aa4f15d768864e8f768",
+      "assay_key": "9684_1",
+      "target_name": "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta",
+      "candidate_protein_reference_length": 150,
+      "canonical_uniprot_accessions": [
+        "O43924"
+      ],
+      "original_assay_description_hash": "8b54c57e490e72a5ab6b73b3c724656ca12ff746d4a0d0a88e04cd19b6e79d9b",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "COMPETITION_OR_DISPLACEMENT_PROTOCOL",
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "0bb31340234b0730228012f8257355420644535ae54f4d8383e8df9a94491f1f",
+      "assay_key": "50034019_161",
+      "target_name": "Serine/threonine-protein kinase RIO2",
+      "candidate_protein_reference_length": 552,
+      "canonical_uniprot_accessions": [
+        "Q9BVS4"
+      ],
+      "original_assay_description_hash": "c01279b9b43d2270185bb17c30549172f8cac09ba678bbd09e2206206c1b9b1b",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES",
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "0f1b899d87edcfcbc2a3545f0ab5a49494ec84e51dbf50cc4a69679caecdbe70",
+      "assay_key": "50020330_8",
+      "target_name": "Elongin-C",
+      "candidate_protein_reference_length": 112,
+      "canonical_uniprot_accessions": [
+        "Q15369"
+      ],
+      "original_assay_description_hash": "0e3e192e490b935febcc80b68c2d5850ee8c07c90a4c74efe4ecd40e55a697d2",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "COMPLEX_COFAC_TOPOLOGY_LANGUAGE",
+        "NUMERIC_REGION_END_EXCEEDS_TARGET_REFERENCE_CHECK_CHAIN_ASSOCIATION",
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 54,
+          "end": 213,
+          "nominal_length": 160,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "1450d9fd14bdec26e2c46a46a9a169aa737822560147f165cf6a8b1f406d89d4",
+      "assay_key": "50022853_5",
+      "target_name": "PC4 and SFRS1-interacting protein",
+      "candidate_protein_reference_length": 530,
+      "canonical_uniprot_accessions": [
+        "O75475"
+      ],
+      "original_assay_description_hash": "942850974eb7ccbb629d80a7667d11891bb1963f2918e6d754b27400cb1ab46f",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "REGION_SHORTER_THAN_CANONICAL_REFERENCE",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 1,
+          "end": 110,
+          "nominal_length": 110,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "1632cad148183614bd7292f625c774938a1b967c0a7fb97feda019b1bad090ff",
+      "assay_key": "50008121_1",
+      "target_name": "Chromobox protein homolog 7",
+      "candidate_protein_reference_length": 251,
+      "canonical_uniprot_accessions": [
+        "O95931"
+      ],
+      "original_assay_description_hash": "9f01ae50b297ded4f06613552b7e79a233bb6d1f1183fddfdfa9ec9941e384a4",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "REGION_SHORTER_THAN_CANONICAL_REFERENCE",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 1,
+          "end": 62,
+          "nominal_length": 62,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "234e1a5e57a6fb6d154d03f53eefbab72dce1cf5a40436a16416a4974661721b",
+      "assay_key": "11593_1",
+      "target_name": "Leucine--tRNA ligase",
+      "candidate_protein_reference_length": 860,
+      "canonical_uniprot_accessions": [
+        "P07813"
+      ],
+      "original_assay_description_hash": "fc0135d87f7ca1ad8170cf8c6496e49ba5eae633ef2b0f99adbdc79b93999951",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "26d975c716e25a79ea6f41e0153eb7f726f43710a435d2e7df7100755c05222e",
+      "assay_key": "50034019_51",
+      "target_name": "SRSF protein kinase 3",
+      "candidate_protein_reference_length": 567,
+      "canonical_uniprot_accessions": [
+        "Q9UPE1"
+      ],
+      "original_assay_description_hash": "12331acd525abb9e3890c15eefd6f18a5188c9953d2c6bf479dd12877e840cc4",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES",
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "2a0831c6f67e9a5339c9cbb1be47f65cb290dc9f085f84ad1779edc8b322f38f",
+      "assay_key": "50034979_5",
+      "target_name": "Sodium-dependent noradrenaline transporter",
+      "candidate_protein_reference_length": 617,
+      "canonical_uniprot_accessions": [
+        "P23975"
+      ],
+      "original_assay_description_hash": "c41f850addb9f3e52a496014b3a676aaad706a95510d8fa97f95a0f42c77eb7e",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "COMPETITION_OR_DISPLACEMENT_PROTOCOL",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "30b31aa54624dbb196b14f1d6082b85b36220a17eb29705befd59fdb38790b25",
+      "assay_key": "13282_1",
+      "target_name": "Ricin",
+      "candidate_protein_reference_length": 576,
+      "canonical_uniprot_accessions": [
+        "P02879"
+      ],
+      "original_assay_description_hash": "6fad664323b31412d751de4477a09d547c53e0085d3d0746d180b4bb5305238e",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "34a74f940a1a8c7b2d8407ad92f267b5925d7bdb9c7518ba5b5beeff5b43e6eb",
+      "assay_key": "50018971_9",
+      "target_name": "PA-I galactophilic lectin",
+      "candidate_protein_reference_length": 122,
+      "canonical_uniprot_accessions": [
+        "Q05097"
+      ],
+      "original_assay_description_hash": "7616aaccfe7fcbe7b410df834b1ce133da1c6847fb8aaff0c21c748b8569ff4e",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881",
+      "assay_key": "50029872_1",
+      "target_name": "Carbonic anhydrase 2",
+      "candidate_protein_reference_length": 260,
+      "canonical_uniprot_accessions": [
+        "P00918"
+      ],
+      "original_assay_description_hash": "1808e13b57ff8e5cbe9a4e4c92f20df8b039436927199cebb2697de6af785223",
+      "source_access_category": "MISSING_PRIMARY_SOURCE_IDENTIFIER",
+      "manual_review_priority": "P0_REVIEW_METADATA_SEMANTICS",
+      "metadata_risk_flags": [
+        "PRIMARY_SOURCE_IDENTIFIER_MISSING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "4034139289e8fba36f759709c6136c1abb6c94d053d55a238dd9ac625e58592a",
+      "assay_key": "50034019_522",
+      "target_name": "Interleukin-1 receptor-associated kinase 3",
+      "candidate_protein_reference_length": 596,
+      "canonical_uniprot_accessions": [
+        "Q9Y616"
+      ],
+      "original_assay_description_hash": "ac6f563630a0a27b9457af989d2ae8c550c6dc5befb3e55a8a8e25812806259a",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES",
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "4488f29766cbe2653ea93739d332ffc50219fdf10a5a27284d66aca2e73306cd",
+      "assay_key": "50005563_3",
+      "target_name": "Dihydrofolate reductase",
+      "candidate_protein_reference_length": 187,
+      "canonical_uniprot_accessions": [
+        "P00374"
+      ],
+      "original_assay_description_hash": "6735707cb4156e9b4501aefb826fb09dd3c4752f99ff17556e4ee4968c79b6cd",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "COMPLEX_COFAC_TOPOLOGY_LANGUAGE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "5424dcc1f75fce0341243e997a1119bcef1399a3b8c5b57b17dc6304d4bf3d5c",
+      "assay_key": "50008549_2",
+      "target_name": "Neutrophil cytosol factor 1",
+      "candidate_protein_reference_length": 390,
+      "canonical_uniprot_accessions": [
+        "P14598"
+      ],
+      "original_assay_description_hash": "d2dfa80a806a86aa4c8f5521fdeaa9fded4ced7d915ba3de144a259cada965d5",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "REGION_SHORTER_THAN_CANONICAL_REFERENCE",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 151,
+          "end": 285,
+          "nominal_length": 135,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "604c4e560bcb7c5af661342ddd9394c5d72bb5b827c901486abfe3443f0f07be",
+      "assay_key": "4362_1",
+      "target_name": "Ectonucleotide pyrophosphatase/phosphodiesterase family member 1",
+      "candidate_protein_reference_length": 925,
+      "canonical_uniprot_accessions": [
+        "P22413"
+      ],
+      "original_assay_description_hash": "e18a95f8cb57b0f3948ec2bcdc39966c29661e620c8d5ebae70c4c4531925cb9",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED",
+        "SOURCE_SPECIES_NEEDS_REFERENCE_ALIGNMENT",
+        "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "63fda6fc87ffcd3651590f46f8f47181be4ff92218792451050c9716675838bc",
+      "assay_key": "50042775_1",
+      "target_name": "cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A",
+      "candidate_protein_reference_length": 1055,
+      "canonical_uniprot_accessions": [
+        "Q9Y233"
+      ],
+      "original_assay_description_hash": "6cd6c585ff2c07bfaed68d15dd24a62a48107de5fe468dc4f4b81e50f31421be",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "COMPETITION_OR_DISPLACEMENT_PROTOCOL",
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "69f76b68cfe450d9847cbcf66f2aacfaf9059b740d9266ab6f68052affd644a8",
+      "assay_key": "50017739_13",
+      "target_name": "Atrial natriuretic peptide receptor 3",
+      "candidate_protein_reference_length": 541,
+      "canonical_uniprot_accessions": [
+        "P17342"
+      ],
+      "original_assay_description_hash": "d7fbdbe85ebc0fb0200d4c38e808d3e0176e348912b52636b62c46df659bdc99",
+      "source_access_category": "PUBLIC_OPEN_ACCESS_INDEXED",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_SOURCE_FRAGMENT_VS_REFERENCE_FLAG",
+        "REGION_SHORTER_THAN_CANONICAL_REFERENCE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 27,
+          "end": 541,
+          "nominal_length": 515,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": true,
+      "source_paper_region": [
+        27,
+        541
+      ],
+      "reviewer_leads": [
+        "Primary open-access paper method-section locator exists; individual Kd table/construct still UNVERIFIED"
+      ],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "assay_key": "50002067_1",
+      "target_name": "Neuropilin-1",
+      "candidate_protein_reference_length": 923,
+      "canonical_uniprot_accessions": [
+        "O14786"
+      ],
+      "original_assay_description_hash": "3e050fd6f25a74d1c2c25284fc3cb7e042f854f495d8d373fca938cafa928751",
+      "source_access_category": "PUBLIC_OPEN_ACCESS_INDEXED",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES",
+        "PRIMARY_SOURCE_FRAGMENT_VS_REFERENCE_FLAG",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": true,
+      "source_paper_region": [
+        273,
+        427
+      ],
+      "reviewer_leads": [
+        "Primary open-access paper method-section locator exists; individual Kd table/construct still UNVERIFIED"
+      ],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "83c3383d774c088ede95378857d532d6106b6543bd0116618c061fac063be820",
+      "assay_key": "11754_1",
+      "target_name": "Programmed cell death 1 ligand 1",
+      "candidate_protein_reference_length": 290,
+      "canonical_uniprot_accessions": [
+        "Q9NZQ7"
+      ],
+      "original_assay_description_hash": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P0_REVIEW_METADATA_SEMANTICS",
+      "metadata_risk_flags": [
+        "DESCRIPTION_MISSING",
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "84d34377550c6af39d0fa8ea4f45971c52ef9369851597ba4146348af9f25bf0",
+      "assay_key": "50018866_3",
+      "target_name": "tRNA (cytosine(38)-C(5))-methyltransferase",
+      "candidate_protein_reference_length": 391,
+      "canonical_uniprot_accessions": [
+        "O14717"
+      ],
+      "original_assay_description_hash": "19063005091b27d54b3567f258d91c4333a2e5546f97a07a2d2cf123549c9c34",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "86568e5c1b04fb4d58da6667b530e460de6394c98b3d259c33511e138682f397",
+      "assay_key": "50031617_1",
+      "target_name": "Eukaryotic translation initiation factor 4E",
+      "candidate_protein_reference_length": 217,
+      "canonical_uniprot_accessions": [
+        "P63073"
+      ],
+      "original_assay_description_hash": "a153222d8ea84098b574262849bafc45a2663ae5e6577b3e03c0d0e4049ef112",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "SOURCE_SPECIES_NEEDS_REFERENCE_ALIGNMENT"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "904e81d710d1d0742e6a18ae3031706c7288c97c075872302f8eab7527a565bd",
+      "assay_key": "50023141_1",
+      "target_name": "Annexin A3",
+      "candidate_protein_reference_length": 323,
+      "canonical_uniprot_accessions": [
+        "P12429"
+      ],
+      "original_assay_description_hash": "d00f7e9f46f1e1384f4e14aa444237b184fccb1e42d27cb4b7163d1d460eb594",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "a7bc81eb9ee391d2cc5546d74638334d2a3b6e624bf6150b94d01f1119451765",
+      "assay_key": "50016305_1",
+      "target_name": "REST corepressor 1",
+      "candidate_protein_reference_length": 485,
+      "canonical_uniprot_accessions": [
+        "Q9UKL0"
+      ],
+      "original_assay_description_hash": "1d743072c367fb1ef182807b48dc9b9600d1f3ca4f0d290040bb2b9e88d99496",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "COMPETITION_OR_DISPLACEMENT_PROTOCOL",
+        "COMPLEX_COFAC_TOPOLOGY_LANGUAGE",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "ba8117e41bb7c3ce236b05f5442a53d7fb9eff6370207690bf9f1c3103eb1ecf",
+      "assay_key": "50036674_1",
+      "target_name": "Phosphoglycerate kinase",
+      "candidate_protein_reference_length": 416,
+      "canonical_uniprot_accessions": [
+        "P00560"
+      ],
+      "original_assay_description_hash": "f97f62a2245c54f042599e4f8c30804d9ee16b0fc1e950ba0058f183ad0458d6",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "da40c59768b57b10fa19165e2783e244b9a1ebe7f116999933408861e6e09993",
+      "assay_key": "11490_1",
+      "target_name": "Glucagon-like peptide 1 receptor",
+      "candidate_protein_reference_length": 463,
+      "canonical_uniprot_accessions": [
+        "P43220"
+      ],
+      "original_assay_description_hash": "533ab89001163c0bd2880900a91188c46161623ddf2ffc3e3155360358d2a832",
+      "source_access_category": "PRIMARY_PATENT_NEEDED",
+      "manual_review_priority": "P0_REVIEW_METADATA_SEMANTICS",
+      "metadata_risk_flags": [
+        "NO_EXPLICIT_DIRECT_BINDING_METHOD_PHRASE",
+        "POTENTIAL_TARGET_DESCRIPTION_SEMANTIC_MISMATCH",
+        "PRIMARY_PATENT_METHODS_NOT_REVIEWED",
+        "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE"
+      ],
+      "description_numeric_regions": [],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "da640b691b83f87dadd00163e267c3ce78614548cc545369baf54611dcc8e2f3",
+      "assay_key": "50018296_1",
+      "target_name": "Ubiquitin carboxyl-terminal hydrolase 5",
+      "candidate_protein_reference_length": 858,
+      "canonical_uniprot_accessions": [
+        "P45974"
+      ],
+      "original_assay_description_hash": "9c4d8a30c91b5dadcaabb665e2a026b3352e7baa9876a5f41806b99368d3ded6",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P1_REVIEW_CONSTRUCT_AND_ENDPOINT",
+      "metadata_risk_flags": [
+        "DOMAIN_OR_FRAGMENT_LANGUAGE",
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "REGION_SHORTER_THAN_CANONICAL_REFERENCE",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 171,
+          "end": 290,
+          "nominal_length": 120,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    },
+    {
+      "task_id": "fdfd7be76feacddb3c848a21ead34c992a54da9c37ab3c6f79580c38e71be729",
+      "assay_key": "50001412_1",
+      "target_name": "Indoleamine 2,3-dioxygenase 1",
+      "candidate_protein_reference_length": 403,
+      "canonical_uniprot_accessions": [
+        "P14902"
+      ],
+      "original_assay_description_hash": "624052c4c45fd5229e043344e92abb5cbc827641fe6986838e6fe8c8806253e6",
+      "source_access_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "manual_review_priority": "P2_STANDARD_PRIMARY_SOURCE_REVIEW",
+      "metadata_risk_flags": [
+        "NUMERIC_REGION_IN_METADATA",
+        "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING",
+        "TAGGED_OR_LABELED_REAGENT_LANGUAGE"
+      ],
+      "description_numeric_regions": [
+        {
+          "start": 1,
+          "end": 403,
+          "nominal_length": 403,
+          "source": "ASSAY_DESCRIPTION_ONLY"
+        }
+      ],
+      "source_paper_fragment_lead": false,
+      "source_paper_region": null,
+      "reviewer_leads": [],
+      "all_assay_validity_attributes_unverified": true,
+      "source_construct_sequence_approved": false,
+      "experimental_kd_record_approved": false,
+      "curation_decision": "UNREVIEWED"
+    }
+  ],
+  "limitations": [
+    "Flags indicate language in source metadata, not defects proven in scientific source records.",
+    "The short-range detector only recognizes explicit numeric residue descriptions; missing flags do not imply a full-length construct.",
+    "In multiprotein assays, a residue range may describe a partner chain, not the named database target; never auto-assign it to the target reference.",
+    "Reference-sequence length equals UniProt reference, NOT a verified experimental chain.",
+    "Assay terms such as competition or fluorescence may coexist with correctly estimated equilibrium Kd; primary paper methods decide endpoint eligibility.",
+    "This priority routing is not a source authorization, not an exclusion decision and never a basis for blind model fitting.",
+    "Source articles and original individual compound measurement tables must be checked by a qualified reviewer."
+  ]
+}

@@ -57,6 +57,7 @@ def read_status():
     geom=fetch("research/pilot_geometry_9train_4val/history.json")
     geomcheck=fetch("research/pilot_geometry_9train_4val/checkpoint_parity.json")
     source_index=fetch("research/source_access_v4/source_access_index.json")
+    triage=fetch("research/source_access_v4/assay_metadata_risk_triage_30.json")
     construct_risk=fetch("research/source_access_v4/construct_alignment_risk_screen.json")
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
     seed_variability=fetch("research/pilot_geometry_seed_sweep_dev/seed_variability.json")
@@ -107,6 +108,13 @@ def read_status():
                          "D_minus_B_RMSE":r["D_minus_B_RMSE"]}
                         for r in seed_comparison.get("table_selected_K",[]) if r["K"]==20]
      } if isinstance(seed_comparison,dict) else {"status":"NOT_RUN"},
+     "metadata_review_triage":{
+       "status":triage.get("status"),
+       "n_candidate_tasks":triage.get("task_count"),
+       "n_scientifically_approved":triage.get("approved_tasks"),
+       "review_priority_counts":triage.get("priority_counts"),
+       "metadata_flag_counts":triage.get("risk_flag_counts")
+     } if isinstance(triage,dict) else {"status":"NOT_RUN"},
      "source_curation_readiness":{
        "status":source_index.get("status"),
        "candidate_tasks":source_index.get("task_count"),
@@ -131,6 +139,7 @@ def read_status():
              "data/audit/bindingdb_assay_manual_review_status.json",
              "research/source_access_v4/source_access_index.json",
              "research/source_access_v4/construct_alignment_risk_screen.json",
+             "research/source_access_v4/assay_metadata_risk_triage_30.json",
              "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md",
              "research/source_access_v4/worklist_manifest.json",
              "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json"
@@ -169,6 +178,9 @@ def main():
         if cur.get("candidate_tasks") is not None:
             f.write("**Scientific source review:** "+str(cur.get("human_review_unreviewed"))+" tasks unreviewed; "+str(cur.get("human_review_approved"))+" approved; "+str(cur.get("candidate_tasks"))+" access records indexed (metadata only).\n\n")
             f.write("**Construct-to-reference alignment flags:** "+str(cur.get("construct_region_alignment_flags"))+" source-located tasks needing physical construct verification; "+str(cur.get("construct_risk_reviewed_approvals"))+" approved by this check.\n\n")
+            tr=report["metadata_review_triage"]
+            if tr.get("review_priority_counts"):
+                f.write("**30-task metadata triage (not approval):** "+", ".join(str(k)+"="+str(v) for k,v in sorted(tr["review_priority_counts"].items()))+".\n\n")
         sk=report["support_K_development"].get("results",[])
         if sk:
             f.write("| Support K | Calibration B RMSE | Full D RMSE | D−B RMSE | Mean kernel W | Mean disagreement V |\n")

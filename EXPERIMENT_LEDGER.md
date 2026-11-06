@@ -64,3 +64,15 @@ Retain the source-review blocker and zero-approval status until an independently
 | O14786 | 923 aa | 273–427 | 155 aa | PMC5957473, sec4.2.1 and sec4.2.3 | UNREVIEWED |
 
 This screen demonstrates reference-input versus reported assay-region differences; it does **not** check per-compound labels, prove a database mistake, or establish exact physical mutant/tag sequence. The review queue SHA and source ID/length metadata were cross-checked by scripts/check_primary_construct_flags_v4.py and new risk integrity test. The 19/19 engineering checks pass. Zero source-approved tasks and no frozen family-disjoint test cohort.
+
+## 6 November 2026 — Fixed 30-assay metadata triage (NOT a binding-affinity experiment)
+
+| Evidence | Observed engineering result | Artifact |
+| --- | --- | --- |
+| Reviewer workload grouping | 4 P0, 12 P1, 14 P2; 30 distinct candidate tasks, zero human approvals | research/source_access_v4/assay_metadata_risk_triage_30.json |
+| Metadata language warnings | 6 numeric source regions smaller than canonical; 8 tagged/labeled; 4 possible activity endpoint; 4 competition/displacement | research/source_access_v4/ASSAY_METADATA_TRIAGE.md |
+| Specific ambiguity examples | CFTR half-effective concentration vs Kd field; GLP-1R target vs glucose assay; PD-L1 no description; CA2 source ID missing | research/source_access_v4/assay_metadata_risk_triage_30.csv |
+| Multiprotein assignment caveat | Elongin-C metadata's 54–213 range appears to belong to partner VHL; cannot assign to named Elongin-C automatically | research/source_access_v4/ASSAY_METADATA_TRIAGE.md |
+| Integrity regression | 20/20 PASS; original review source SHA unchanged; 0 scientific approvals | data/audit/v4_validation_suite.json |
+
+All outputs are metadata-only review leads, not source-reviewed exact-Kd assays or independent model performance.

@@ -63,3 +63,13 @@ No new DynaCPI architecture was introduced. The primary family-held-out BindingD
 - Add scripts/check_primary_construct_flags_v4.py, tests_v4/construct_alignment_risk_integrity_test.py, updated 19/19 engineering suite, read-only monitor fields and eighth VS Code task.
 - Update the research paper, project.md, source-curation protocol and AI handoff.
 - No changed predictor architecture, baseline checkpoint, scientific holdout or model performance claims.
+
+## 2026-11-06 — All-30 assay metadata risk triage, read-only benchmark tracking
+
+- Add script to deterministically triage the frozen 30 BindingDB source-review candidates without using compound affinity values, changing human decisions or releasing a scientific cohort.
+- Output JSON, CSV and reviewer Markdown with metadata priority 4/P0, 12/P1, 14/P2 and source/canonical construct, source endpoint and complex-chain language flags.
+- Add synthetic residue-parser controls and source-identity/provenance checks; full 20/20 engineering suite passes with zero failed checks.
+- Extend VS Code to nine tasks and source monitor to track new metadata risk summaries, maintaining existing hourly watch.
+- Update technical manuscript and project.md; original DynaCPI v4 weights, negative pilot findings and scientific blocking conditions unchanged.
+
+These Git commits represent recorded research operations, not new DynaCPI model versions.

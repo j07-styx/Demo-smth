@@ -1,0 +1,14 @@
+{
+  "status": "PASS_30_TASK_TRIAGE_METADATA_ONLY",
+  "task_count": 30,
+  "priority_counts": {
+    "P0_REVIEW_METADATA_SEMANTICS": 4,
+    "P1_REVIEW_CONSTRUCT_AND_ENDPOINT": 12,
+    "P2_STANDARD_PRIMARY_SOURCE_REVIEW": 14
+  },
+  "canonical_review_unchanged": true,
+  "scientifically_approved_tasks": 0,
+  "source_approval_gate": "BLOCKED",
+  "synthetic_region_parser_tests": true,
+  "warning": "Flags are nonbinding review leads, not scientific defect verdicts."
+}
