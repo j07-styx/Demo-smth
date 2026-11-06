@@ -1,0 +1,13 @@
+{
+  "status": "READ_ONLY_SOURCE_WORKLIST_CREATED_NOT_APPROVED",
+  "task_count": 30,
+  "group_counts": {
+    "PRIMARY_PATENT_NEEDED": 7,
+    "PUBLIC_OPEN_ACCESS_INDEXED": 2,
+    "SOURCE_ARTICLE_ACCESS_PENDING": 20,
+    "MISSING_PRIMARY_SOURCE_IDENTIFIER": 1
+  },
+  "scientific_approvals": 0,
+  "canonical_review_file_unchanged": true,
+  "worklist_path": "C:\\Users\\J0124\\dynacpi_v4\\research\\source_access_v4\\REVIEW_ACTIONS.md"
+}

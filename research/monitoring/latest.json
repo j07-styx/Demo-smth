@@ -1,10 +1,10 @@
 {
   "scope": "ENGINEERING_REPRODUCIBILITY_MONITOR; NO SCIENTIFIC BINDINGDB BENCHMARK",
-  "observed_utc": "2026-11-06T02:19:25.759977+00:00",
+  "observed_utc": "2026-11-06T02:42:51.202700+00:00",
   "project": "C:\\Users\\J0124\\dynacpi_v4",
   "gpu": {
     "status": "OK",
-    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 193, 8188, 0"
+    "snapshot": "NVIDIA GeForce RTX 4060 Laptop GPU, 114, 8188, 15"
   },
   "cohort_gate": {
     "status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
@@ -12,9 +12,9 @@
   },
   "validation_suite": {
     "status": "PASS_ENGINEERING_ONLY",
-    "passed": 17,
+    "passed": 18,
     "failed": 0,
-    "finished_utc": "2026-11-06T02:17:32.884672+00:00"
+    "finished_utc": "2026-11-06T02:42:34.259681+00:00"
   },
   "sequence_engineering_pilot": {
     "epoch_count": 3,
@@ -130,16 +130,36 @@
       }
     ]
   },
+  "source_curation_readiness": {
+    "status": "AUTOMATED_SOURCE_INDEX_ONLY_NOT_BIOLOGICAL_VALIDATION",
+    "candidate_tasks": 30,
+    "scientifically_approved_tasks": 0,
+    "source_status_counts": {
+      "PRIMARY_PATENT_NEEDED": 7,
+      "PUBLIC_OPEN_ACCESS_INDEXED": 2,
+      "SOURCE_ARTICLE_ACCESS_PENDING": 20,
+      "MISSING_PRIMARY_SOURCE_IDENTIFIER": 1
+    },
+    "publication_access_counts": {
+      "NOT_PUBLIC_OPEN_ACCESS": 17,
+      "OPEN_ACCESS_SECTION_INDEXED": 2,
+      "INDEX_FAILED": 1
+    },
+    "human_review_unreviewed": 30,
+    "human_review_approved": 0
+  },
   "watch_artifacts": {
     "research/pilot_sequence/history.json": "b183c7842a834519707f49cc6cb8322bc6fe330e5b5cbb3834522ef0ae78bd1a",
     "research/pilot_geometry_9train_4val/history.json": "1f9d8a4a46dac95dde78427fc381f5437059b85103179c7ae90e8e213bd4d4e8",
-    "data/audit/v4_validation_suite.json": "cc08f3a7e9d3f5900bc9efa93d7a4240c69ef48cf488ca29afb38a0128458135",
+    "data/audit/v4_validation_suite.json": "34be61e630b4f46b6bdcee3ba7222af9e986dc3cf8fdff3f36054fb4e94f17ca",
     "research/support_k_sweep_dev/results.json": "73fd5e241b282e6e89c97df77ccf74d78e9b5bf8e238e16825e1c65eab79f746",
     "research/pilot_geometry_seed_sweep_dev/seed_variability.json": "774d03f12c6ba049dd6ed4adfd9b6285a44bdc4056dd4efe7c9159467e2021a3",
     "research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json": "e2f46d605b63cd0eea8c5e943620aed724156253575242f46231cbf4b6c85188",
     "research/support_k_sweep_seed_dev/seed_1106/results.json": "6fc9eaffea86833bddb1a3606a9fd255845ff9f635c403ebd1069533ff6dee2a",
     "research/support_k_sweep_seed_dev/seed_1107/results.json": "9d8d01195a54b79bd6b34105e67c9b92a4c75179f2d3d6e5b6fb0ae7c50f6a9b",
     "data/audit/bindingdb_assay_manual_review_status.json": "3deae411880e9c0ad3858e22a8d1ce8962601e4c8f2924225cdbe8d8cfac2c43",
+    "research/source_access_v4/source_access_index.json": "92eee67d455ddd45b6594053d466022f872a729ea40d5bbcbbc8cf09dae44207",
+    "research/source_access_v4/worklist_manifest.json": "97fe56a0bf8e0ab4fa1a7b26e481701343407ba2adc247cab4cb2544d34e7c4f",
     "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json": "3ab0f40744da2f354147d3a8f3d3836f92fb0c56edea7a61507774326a10df2d"
   },
   "limitations": [

@@ -1,14 +1,16 @@
 # DynaCPI v4 — local benchmark monitor
 
-Updated (UTC): 2026-11-06T02:19:25.759977+00:00
+Updated (UTC): 2026-11-06T02:42:51.202700+00:00
 
 **Status:** ENGINEERING ONLY. No scientifically approved BindingDB cohort or frozen protein-group split.
 
-**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 193, 8188, 0
+**GPU:** NVIDIA GeForce RTX 4060 Laptop GPU, 114, 8188, 15
 
-**Last consolidated regression check:** 17/17; status PASS_ENGINEERING_ONLY
+**Last consolidated regression check:** 18/18; status PASS_ENGINEERING_ONLY
 
 **Scientific gate:** BLOCKED_UNAPPROVED_NOT_TRAINING_READY
+
+**Scientific source review:** 30 tasks unreviewed; 0 approved; 30 access records indexed (metadata only).
 
 | Support K | Calibration B RMSE | Full D RMSE | D−B RMSE | Mean kernel W | Mean disagreement V |
 | ---: | ---: | ---: | ---: | ---: | ---: |

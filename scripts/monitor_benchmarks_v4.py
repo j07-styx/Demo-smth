@@ -56,6 +56,8 @@ def read_status():
     seq=fetch("research/pilot_sequence/history.json")
     geom=fetch("research/pilot_geometry_9train_4val/history.json")
     geomcheck=fetch("research/pilot_geometry_9train_4val/checkpoint_parity.json")
+    source_index=fetch("research/source_access_v4/source_access_index.json")
+    manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
     seed_variability=fetch("research/pilot_geometry_seed_sweep_dev/seed_variability.json")
     seed_comparison=fetch("research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json")
     source_gate=current_status(ROOT)
@@ -104,6 +106,15 @@ def read_status():
                          "D_minus_B_RMSE":r["D_minus_B_RMSE"]}
                         for r in seed_comparison.get("table_selected_K",[]) if r["K"]==20]
      } if isinstance(seed_comparison,dict) else {"status":"NOT_RUN"},
+     "source_curation_readiness":{
+       "status":source_index.get("status"),
+       "candidate_tasks":source_index.get("task_count"),
+       "scientifically_approved_tasks":source_index.get("scientifically_approved_tasks"),
+       "source_status_counts":source_index.get("source_status_counts"),
+       "publication_access_counts":source_index.get("publication_access_counts"),
+       "human_review_unreviewed":manual_review.get("counts",{}).get("UNREVIEWED") if isinstance(manual_review,dict) else None,
+       "human_review_approved":manual_review.get("approved_tasks") if isinstance(manual_review,dict) else None
+     } if isinstance(source_index,dict) else {"status":"NOT_RUN"},
      "watch_artifacts":{
          str(rel):sha(ROOT/rel) for rel in [
              "research/pilot_sequence/history.json",
@@ -115,6 +126,8 @@ def read_status():
              "research/support_k_sweep_seed_dev/seed_1106/results.json",
              "research/support_k_sweep_seed_dev/seed_1107/results.json",
              "data/audit/bindingdb_assay_manual_review_status.json",
+             "research/source_access_v4/source_access_index.json",
+             "research/source_access_v4/worklist_manifest.json",
              "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json"
          ]},
      "limitations":[
@@ -147,6 +160,9 @@ def main():
         vs=report["validation_suite"]
         f.write("**Last consolidated regression check:** "+str(vs.get("passed"))+"/"+str((vs.get("passed") or 0)+(vs.get("failed") or 0))+"; status "+str(vs.get("status"))+"\n\n")
         f.write("**Scientific gate:** "+str(report["cohort_gate"].get("status"))+"\n\n")
+        cur=report["source_curation_readiness"]
+        if cur.get("candidate_tasks") is not None:
+            f.write("**Scientific source review:** "+str(cur.get("human_review_unreviewed"))+" tasks unreviewed; "+str(cur.get("human_review_approved"))+" approved; "+str(cur.get("candidate_tasks"))+" access records indexed (metadata only).\n\n")
         sk=report["support_K_development"].get("results",[])
         if sk:
             f.write("| Support K | Calibration B RMSE | Full D RMSE | D−B RMSE | Mean kernel W | Mean disagreement V |\n")

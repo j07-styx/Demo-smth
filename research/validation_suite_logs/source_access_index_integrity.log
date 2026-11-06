@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ENGINEERING_SOURCE_INDEX_ONLY",
+  "review_queue_unchanged": true,
+  "unique_source_pmids": 20,
+  "open_access_xml_indexed": 2,
+  "scientifically_approved_tasks": 0,
+  "synthetic_xml_unsafe_entities_rejected": true,
+  "raw_article_text_not_exported": true,
+  "science_gate": "BLOCKED"
+}
+
+--- STDERR ---

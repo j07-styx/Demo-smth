@@ -62,3 +62,15 @@ The 5 November list remains scientifically applicable. The current engineering e
 4. Reproduce matched sequence and geometry baselines across multiple seeds, report each fixed epoch and distributions; do not select a favorable seed using final test targets.
 5. Only after split and experimental design are locked, perform primary D versus calibration-only B paired cluster evaluation. Keep negative outcomes, task counts and uncertainty intervals.
 6. Check source project.md and manuscript Section 7.10 for all observed 6 November development metrics. Run the VS Code status task to inspect updated benchmark files; hourly monitoring only reports meaningful changes.
+
+## Source evidence — immediate queue status at 6 November 2026
+
+A reproducible source-access index and read-only review-action checklist have been generated for the 30 sampled exact-Kd candidates. All 20 distinct public PubMed IDs were resolved, but only two papers had a usable public full-text section index; 17 remained metadata-only and one open-access XML was rejected for safety. At the task level the reviewer action counts are 2 OA-indexed, 20 needing source article access, 7 primary patent and 1 missing identifiers. All **30 are still unreviewed**; zero scientific approvals.
+
+1. An authorized qualified reviewer must inspect the original source methods and necessary supplements and record the actual physical construct and outcome evidence for each task; article keyword hits are insufficient.
+2. Resolve missing original publication information and any inaccessible XML using safe, permitted source-access routes; do not bypass publisher restrictions.
+3. Record supported source review decisions only in the canonical human reviewed file; leave unknown or uncertain tasks quarantined.
+4. Run scripts/validate_assay_reviews.py plus scripts/run_v4_validation_suite.py; the latest suite is 18/18 passed, but this is not a source approval.
+5. After enough independent assay targets are actually verified, produce the source-approved cohort with traceable evidence and freeze independent protein-group roles. Only then return to model training and paired D-versus-B evaluation.
+
+All original model checkpoints, DAVIS pilot conclusions and source metadata from the upstream PerceiverCPI clone were preserved.

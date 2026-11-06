@@ -212,3 +212,13 @@ Tell the owner clearly:
     C:\Users\J0124\dynacpi_v4\.venv\Scripts\python.exe C:\Users\J0124\dynacpi_v4\scripts\run_v4_validation_suite.py
 
 The next agent should read the newest 6 November project.md entry and manuscript Sections 7.9–7.10, not infer current conclusions from 5 November counts.
+
+## 12. Source-access audit and unresolved human review, 6 November 2026
+
+The original 30-task reviewer CSV was protected by SHA-256 and NOT modified. The authoritative canonical file remains data/audit/bindingdb_assay_manual_review_queue_30_ENRICHED.csv. Europe PMC metadata queries for 20 unique source PubMed IDs matched all 20. From 20 bibliographic records, two publicly accessible open-access XML articles were safely indexed for method section IDs/headings and keyword counts, 17 provided metadata but not public OA full text via this route, and one contained DTD/entities and was rejected for safe manual review instead. Source article bodies were neither copied nor committed. Task-level access dispositions: 2 OA-indexed, 20 needing original-article access, 7 primary patent review, 1 missing usable source identifier.
+
+**Zero source-reviewed experimental Kd tasks approved.** NO approved independent protein-group split exists. The project remains blocked for the primary scientific training and D-versus-B test. These are pointers to where a qualified source reviewer should look; matching a PMID or a keyword does not confirm the experimental physical target construct, Kd semantics, source unit and qualifier, or compatible assay conditions.
+
+New reproducible scripts: scripts/audit_primary_source_access_v4.py (API metadata + safe OA section index) and scripts/build_primary_source_review_worklist_v4.py (read-only worklist). Outputs: research/source_access_v4/source_access_index.json, SOURCE_ACCESS_SUMMARY.md, REVIEW_ACTIONS.md, worklist_manifest.json. Regression tests: tests_v4/source_access_index_integrity_test.py; data/audit/source_access_index_integrity.json. All existing DAVIS development benchmark results from 6 November remain unchanged. The suite now passed **18/18 checks**, and VS Code has seven task commands covering benchmark checks, source access, review preparation, and scientific gate inspection. Research manuscript Section 7.11 records limitations and actual source-access counts.
+
+**Next person MUST NOT auto-approve the two OA-indexed tasks.** They require primary-paper methods and supplementary evidence independently checked by an appropriately qualified reviewer, then explicit source-review and rationale entries in the canonical human review process. If a source cannot be accessed legally, keep the task unreviewed or exclude it rather than invent evidence. No scientific benchmark release can happen before this review.

@@ -63,3 +63,7 @@ For each task:
 Preserve upstream copyright/license in LICENSE.txt and UPSTREAM_README.md. Never commit API keys, browser credentials, tokens, .env files, local venv, full raw archive, huge ESM embeddings or user secrets. The existing pilot checkpoint .pt files are trusted only if their SHA-256 and provenance match the record; do not load arbitrary untrusted torch serialization. Preserve private visibility unless owner changes it.
 
 **Actual next scientific gate:** source-adjudicate exact-Kd measurements and protein constructs across enough independent target families; then freeze final study roles before matched training. No alternate shortcut provides legitimate research evidence.
+
+## Source-access audit gate — 6 November 2026
+
+Before any review or experimental work, inspect research/source_access_v4/source_access_index.json, REVIEW_ACTIONS.md, and the immutable canonical review CSV. Twenty PubMed IDs were identified and two OA article section indexes prepared, but the full original source/assay constructs have not been approved. Automated evidence keyword counts and DOI/PMID metadata do not constitute a valid source review. Zero of thirty tasks has approval. Never change a task to APPROVE, write approved BindingDB cohort artifacts, or freeze a scientific split based solely on this index or a manuscript title. The new integrity check is tests_v4/source_access_index_integrity_test.py; the engineering suite now has 18 checks. Review publication bodies only through permitted sources; never copy copyrighted paper text into the repository.

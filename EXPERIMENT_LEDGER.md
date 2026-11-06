@@ -43,3 +43,15 @@ The next person must append genuine new observations rather than rewrite this hi
 | Monitoring | Local status artifacts and hourly condition-watch notification enabled | research/monitoring/latest.json, LATEST.md | Observer only; no ongoing GPU training promised |
 
 **New constraints:** Do not hide the development-only geometry result or optimize hyperparameters on these same checkpoint-selected targets to claim scientific gains. The BindingDB main study remains blocked pending primary-source exact-Kd adjudication and family-disjoint split freeze.
+
+## 6 November 2026 — Bibliographic source-access audit (not a predictive experiment)
+
+| Audit | Verified engineering outcome | Evidence | Limits |
+| --- | --- | --- | --- |
+| Thirty-task review worklist | 30 tasks, all UNREVIEWED and 0 approved; original source CSV unchanged by SHA | research/source_access_v4/worklist_manifest.json | No experimental construct or Kd evidence independently reviewed |
+| Publication metadata access | All 20 unique PubMed identifiers matched public bibliographic records | research/source_access_v4/source_access_index.json | PMID equality is not Kd measurement verification |
+| Open-access method-section indexing | 2 public OA XML indexed; 17 metadata-only; 1 OA XML rejected due to DTD/entities | research/source_access_v4/SOURCE_ACCESS_SUMMARY.md | Does not copy article body or decide assay semantics |
+| Task-level review routing | 2 OA indexed, 20 additional source article access, 7 primary patents, 1 source identifier missing | research/source_access_v4/REVIEW_ACTIONS.md | Work routing only; does not imply source approval |
+| Integrity regressions | 18/18 PASS, 0 failed | data/audit/v4_validation_suite.json | Software and provenance gates, not biological validity |
+
+Retain the source-review blocker and zero-approval status until an independently documented human adjudication produces a real eligible cohort and immutable split.

@@ -45,3 +45,13 @@ There is **no authorized next model version** in this changelog. Any future scie
 - Update project.md, research manuscript and AI handoff with exact results and scientific limitations. Original PerceiverCPI and pilot baseline checkpoints are preserved.
 
 **This Git commit date records ongoing work. It is not a new DynaCPI architecture version.**
+
+## 2026-11-06 — Exact-Kd source-access and reviewer worklist implementation
+
+- Add read-only public publication-metadata and limited OA method-section index for fixed 30-task source-review queue; no experimental values, raw paper body or automatic approvals.
+- Generate immutable review-worklist routing and source-index output with SHA-256 verification of the canonical review CSV (30/30 remain unreviewed).
+- Add source-index regression tests, including unsafe XML DTD/entity rejection, no raw article text output and fail-closed cohort behavior.
+- Extend VS Code commands and benchmark monitor with source review readiness and scientific gate state.
+- Record verified access limits and unresolved scientific provenance in the manuscript and project.md; regression suite now **18/18 PASS**.
+
+No new DynaCPI architecture was introduced. The primary family-held-out BindingDB study remains blocked pending qualified primary-source review.

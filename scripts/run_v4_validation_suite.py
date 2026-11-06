@@ -17,6 +17,7 @@ checks=[
  ("adapter_optimization","tests_v4/check_adapter.py"),
  ("episode_data_boundaries","tests_v4/episode_data_real_manifest_test.py"),
  ("assay_review_gate","tests_v4/assay_review_gate_test.py"),
+ ("source_access_index_integrity","tests_v4/source_access_index_integrity_test.py"),
  ("scientific_cohort_gate","tests_v4/scientific_cohort_gate_test.py"),
  ("paired_cluster_statistics_synthetic","tests_v4/paired_evaluation_test.py"),
  ("frozen_adapter_real_chemistry","tests_v4/frozen_adapter_real_chemistry_test.py"),
