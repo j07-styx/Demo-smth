@@ -1,0 +1,117 @@
+{
+  "status": "P0_EXTERNAL_SOURCE_CORROBORATION_LEADS_NO_SCIENTIFIC_APPROVAL",
+  "created_utc": "2026-11-06T09:13:36.922034+00:00",
+  "current_original_review_csv_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
+  "triage_source_sha256": "b33349c03fe2b449cace30f7530a8bdd0691019c8b3f1899f208cfde959acae0",
+  "access_index_source_sha256": "cbe43ab9a5676b3023c20711e0a8c3fe3d40b4ab996de6e635feb0b89c04a737",
+  "task_count": 4,
+  "approved_count": 0,
+  "rejected_count": 0,
+  "compound_affinity_values_read": false,
+  "training_permission": false,
+  "sources_last_manually_checked_date": "2026-11-06",
+  "records": [
+    {
+      "task_id": "00711d68562f88f0479db57d7cb5c2f79a802c306a489b788c96c75d06c79c5b",
+      "assay_key": "50013470_1",
+      "candidate_source_category": "SOURCE_ARTICLE_ACCESS_PENDING",
+      "recorded_target_name": "Cystic fibrosis transmembrane conductance regulator",
+      "observation_source_tier": "PUBMED_PUBLICATION_ABSTRACT",
+      "source_ids": [
+        "PMID:12852954",
+        "DOI:10.1016/S0960-894X(03)00482-7"
+      ],
+      "source_locator": "pubmed.ncbi.nlm.nih.gov/12852954",
+      "source_observation_paraphrase": "The corresponding publication abstract describes a cell-based functional transport response and half-maximal stimulation, not a directly demonstrated equilibrium Kd for the selected records.",
+      "investigate_risk": "FUNCTIONAL_RESPONSE_COULD_BE_MISREPRESENTED_AS_KD",
+      "required_record_level_checks": [
+        "Verify which original published table matches the exact BindingDB reactant IDs.",
+        "Determine whether any independent biochemical binding Kd assay exists.",
+        "Reconcile recorded protein species and experimental construct with target sequence."
+      ],
+      "physical_assay_construct_verified": false,
+      "each_numeric_Kd_measurement_verified": false,
+      "human_review_approval": false,
+      "review_decision": "UNREVIEWED",
+      "record_exclusion_decision": null
+    },
+    {
+      "task_id": "3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881",
+      "assay_key": "50029872_1",
+      "candidate_source_category": "PRIMARY_DOI_ONLY_METHODS_PENDING",
+      "recorded_target_name": "Carbonic anhydrase 2",
+      "observation_source_tier": "CROSSREF_BIBLIOGRAPHIC_METADATA",
+      "source_ids": [
+        "DOI:10.1016/0960-894X(96)00069-8"
+      ],
+      "source_locator": "doi.org/10.1016/0960-894X(96)00069-8",
+      "source_observation_paraphrase": "The DOI in the original review queue resolves to a 1996 publication about carbonic-anhydrase binding-site probes. This is an existing DOI-only source locator, not a missing source identifier.",
+      "investigate_risk": "PRIMARY_METHODS_NOT_REVIEWED_AND_KD_SEMANTICS_UNVERIFIED",
+      "required_record_level_checks": [
+        "Obtain and inspect the publication methods and tables legally.",
+        "Verify how the individual values were determined and whether they are directly measured exact Kd.",
+        "Verify actual protein construct and comparable measurement conditions."
+      ],
+      "physical_assay_construct_verified": false,
+      "each_numeric_Kd_measurement_verified": false,
+      "human_review_approval": false,
+      "review_decision": "UNREVIEWED",
+      "record_exclusion_decision": null
+    },
+    {
+      "task_id": "83c3383d774c088ede95378857d532d6106b6543bd0116618c061fac063be820",
+      "assay_key": "11754_1",
+      "candidate_source_category": "PRIMARY_PATENT_NEEDED",
+      "recorded_target_name": "Programmed cell death 1 ligand 1",
+      "observation_source_tier": "PRIMARY_PATENT_METADATA",
+      "source_ids": [
+        "US20240010642"
+      ],
+      "source_locator": "patents.google.com/patent/US20240010642A1/en",
+      "source_observation_paraphrase": "The primary patent titled Modulators of programmed death-ligand-1 is located; the candidate assay description remains missing from the original review record.",
+      "investigate_risk": "MISSING_ASSAY_PROTOCOL_AND_RECORD_SOURCE_METHOD_MAPPING",
+      "required_record_level_checks": [
+        "Locate the specific patent example and measurement table for the candidate assay.",
+        "Verify primary experimental method, construct and Kd endpoint.",
+        "Resolve record-level provenance and qualifying inequalities."
+      ],
+      "physical_assay_construct_verified": false,
+      "each_numeric_Kd_measurement_verified": false,
+      "human_review_approval": false,
+      "review_decision": "UNREVIEWED",
+      "record_exclusion_decision": null
+    },
+    {
+      "task_id": "da40c59768b57b10fa19165e2783e244b9a1ebe7f116999933408861e6e09993",
+      "assay_key": "11490_1",
+      "candidate_source_category": "PRIMARY_PATENT_NEEDED",
+      "recorded_target_name": "Glucagon-like peptide 1 receptor",
+      "observation_source_tier": "PUBCHEM_BINDINGDB_ASSAY_REGISTRY",
+      "source_ids": [
+        "US11767332",
+        "PUBCHEM_AID:1919769",
+        "BINDINGDB_ASSAY:11490_1"
+      ],
+      "source_locator": "pubchem.ncbi.nlm.nih.gov/bioassay/1919769",
+      "source_observation_paraphrase": "The registry explicitly links to BindingDB assay 11490_1 but describes a colorimetric glucose-binding experiment involving boronate/carbohydrate, while the candidate target is recorded as GLP-1 receptor.",
+      "investigate_risk": "ASSAY_PARTICIPANT_OR_TARGET_ASSOCIATION_REQUIRES_SOURCE_RECONCILIATION",
+      "required_record_level_checks": [
+        "Verify whether GLP-1 receptor was physically present in the measured mixture.",
+        "Check the original patent method and per-record table for the exact binding participant.",
+        "Verify whether the Kd quantity represents carbohydrate interaction rather than GLP-1 receptor binding."
+      ],
+      "physical_assay_construct_verified": false,
+      "each_numeric_Kd_measurement_verified": false,
+      "human_review_approval": false,
+      "review_decision": "UNREVIEWED",
+      "record_exclusion_decision": null
+    }
+  ],
+  "interpretation": "The two source-method mismatch leads should be resolved at record level; DOI and patent discovery are only locators. None authorizes source-reviewed Kd training.",
+  "cautions": [
+    "The publication abstract may not describe every measurement reported elsewhere.",
+    "A registry target annotation and actual assay participant can differ.",
+    "DOI or patent matching is bibliographic identity only, not verified experimental Kd.",
+    "All thirty candidate assays remain UNREVIEWED; zero source-approved study tasks."
+  ]
+}

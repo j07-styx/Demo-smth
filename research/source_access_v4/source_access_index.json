@@ -1,7 +1,7 @@
 {
   "status": "AUTOMATED_SOURCE_INDEX_ONLY_NOT_BIOLOGICAL_VALIDATION",
   "review_file_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
-  "generated_utc": "2026-11-06T02:35:09.417277+00:00",
+  "generated_utc": "2026-11-06T09:11:55.160939+00:00",
   "task_count": 30,
   "unique_publications": 20,
   "scientifically_approved_tasks": 0,
@@ -10,7 +10,7 @@
     "PRIMARY_PATENT_NEEDED": 7,
     "PUBLIC_OPEN_ACCESS_INDEXED": 2,
     "SOURCE_ARTICLE_ACCESS_PENDING": 20,
-    "MISSING_PRIMARY_SOURCE_IDENTIFIER": 1
+    "PRIMARY_DOI_ONLY_METHODS_PENDING": 1
   },
   "publication_access_counts": {
     "NOT_PUBLIC_OPEN_ACCESS": 17,
@@ -26,6 +26,7 @@
       "patent_ids": [
         "US12427135"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -40,6 +41,7 @@
       "patent_ids": [
         "US11802110"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -54,6 +56,7 @@
         "35333039"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "PUBLIC_OPEN_ACCESS_INDEXED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -68,6 +71,9 @@
         "9871604"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1016/s0960-894x(98)00062-6"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -82,6 +88,9 @@
         "37708384"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1021/acs.jmedchem.3c00434"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -96,6 +105,7 @@
         "26804741"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -110,6 +120,9 @@
         "29031064"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1016/j.ejmech.2017.09.044"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -124,6 +137,9 @@
         "22037378"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1038/nbt.1990"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -138,6 +154,9 @@
         "22037378"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1038/nbt.1990"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -152,6 +171,7 @@
         "34648286"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -166,6 +186,7 @@
       "patent_ids": [
         "US20260001886"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -180,6 +201,7 @@
         "40013713"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -194,6 +216,9 @@
         "31922756"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1021/acs.jmedchem.9b01492"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -208,6 +233,9 @@
         "7990119"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1021/jm00050a017"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -222,6 +250,9 @@
         "22037378"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1038/nbt.1990"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -236,6 +267,9 @@
         "31494467"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1016/j.ejmech.2019.111656"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -250,6 +284,7 @@
         "35525212"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -262,7 +297,10 @@
       "protein_component_id": "3501ff1a2c34e139907d0b8726e0ce2d830cfc7304472a862525f3428a6a534c",
       "pmids": [],
       "patent_ids": [],
-      "evidence_access_status": "MISSING_PRIMARY_SOURCE_IDENTIFIER",
+      "doi_identifiers": [
+        "10.1016/0960-894X(96)00069-8"
+      ],
+      "evidence_access_status": "PRIMARY_DOI_ONLY_METHODS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
       "verified_kd_semantics": false,
@@ -276,6 +314,7 @@
         "39461037"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -290,6 +329,9 @@
         "9804684"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1021/jm970839y"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -304,6 +346,7 @@
       "patent_ids": [
         "US10913710"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -318,6 +361,7 @@
       "patent_ids": [
         "US8853224"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -332,6 +376,7 @@
         "35759679"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -346,6 +391,7 @@
       "patent_ids": [
         "US20240010642"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -360,6 +406,7 @@
         "37312859"
       ],
       "patent_ids": [],
+      "doi_identifiers": [],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -374,6 +421,9 @@
         "29648813"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1021/acs.jmedchem.8b00210"
+      ],
       "evidence_access_status": "PUBLIC_OPEN_ACCESS_INDEXED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -388,6 +438,9 @@
         "23509991"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1021/jm301665y"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -402,6 +455,7 @@
       "patent_ids": [
         "US11767332"
       ],
+      "doi_identifiers": [],
       "evidence_access_status": "PRIMARY_PATENT_NEEDED",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -416,6 +470,9 @@
         "12852954"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1016/s0960-894x(03)00482-7"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,
@@ -430,6 +487,9 @@
         "20060622"
       ],
       "patent_ids": [],
+      "doi_identifiers": [
+        "10.1016/j.ejmech.2009.11.054"
+      ],
       "evidence_access_status": "SOURCE_ARTICLE_ACCESS_PENDING",
       "current_review_status": "UNREVIEWED",
       "verified_construct": false,

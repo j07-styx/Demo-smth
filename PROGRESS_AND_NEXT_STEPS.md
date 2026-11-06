@@ -86,3 +86,15 @@ The additional check brought the engineering suite to **19/19 PASS** with zero a
 The fixed 30 unapproved candidate assays are now grouped by **metadata ambiguity, not scientific validity**: P0 four, P1 twelve, P2 fourteen. Start source inspection with P0 (CFTR half-effective-concentration wording, GLP1R versus glucose assay wording, absent PD-L1 description, missing CA2 primary identifier). Then prioritize fragment/complex/endpoint interpretation, including the VHL/Elongin partner-chain numeric range; afterward review remaining primary papers and patents. Every task still requires a qualified original-source method and per-record exact-Kd check, regardless of priority or lack of metadata flags.
 
 The triage script and results are in `scripts/triage_30_assay_metadata_v4.py` and `research/source_access_v4/ASSAY_METADATA_TRIAGE.md`. The nine-task VS Code workflow and hourly benchmark observer expose current review status. The **20/20 engineering checks** are green; the primary scientific gate is BLOCKED because zero tasks have source approval and there is no frozen protein-cluster test split. Do not present the metadata rankings as new model or benchmark performance.
+
+## Next source-review actions after 6 November 2026 P0 evidence crosswalk
+
+Four P0 candidate assays now have primary evidence **leads** at research/source_access_v4/P0_SOURCE_CROSSWALK.md. Their metadata source tiers are publication abstract, assay registry, DOI-only bibliographic metadata and original patent locator. None of the four has verified all source-table binding measurements or approved experimental constructs; all 30 candidate tasks remain UNREVIEWED.
+
+1. Ask a qualified reviewer to reconcile the source assay's measured participant and endpoint with the exact candidate task record, especially the two apparent source-method/target-label disagreements; do not auto-reject records from an abstract or registry summary.
+2. Source index correction: the carbonic-anhydrase task has DOI-only bibliographic provenance, **not** an absent source identifier; independently inspect its methods and original data.
+3. For the patent-only review task, locate the original assay table and physical protein construct. A patent title alone is insufficient.
+4. After actual physical constructs, exact-Kd source qualifiers, units, source-table identifiers and assay compatibility have been independently adjudicated across enough unrelated families, freeze the approved cohort/split and perform matched D-vs-B scientific evaluation. Until then the original fail-closed gate stays BLOCKED.
+5. Review the new P0 crosswalk and run the 21-check suite from VS Code; no source-approved BindingDB training or independent gain claims exist.
+
+The updated hourly observer reports meaningful source changes and GPU/engineering test failures but does not train or approve a dataset.

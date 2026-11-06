@@ -44,7 +44,7 @@ assert "KD_FIELD_DESCRIBED_AS_HALF_EFFECTIVE_CONCENTRATION" in byname[
 assert "POTENTIAL_TARGET_DESCRIPTION_SEMANTIC_MISMATCH" in byname[
    "Glucagon-like peptide 1 receptor"]["metadata_risk_flags"]
 assert "DESCRIPTION_MISSING" in byname["Programmed cell death 1 ligand 1"]["metadata_risk_flags"]
-assert "PRIMARY_SOURCE_IDENTIFIER_MISSING" in byname["Carbonic anhydrase 2"]["metadata_risk_flags"]
+assert "DOI_ONLY_SOURCE_METHODS_PENDING" in byname["Carbonic anhydrase 2"]["metadata_risk_flags"]
 elongin=byname["Elongin-C"]
 assert "NUMERIC_REGION_END_EXCEEDS_TARGET_REFERENCE_CHECK_CHAIN_ASSOCIATION" in elongin["metadata_risk_flags"]
 assert elongin["description_numeric_regions"][0]["end"]==213

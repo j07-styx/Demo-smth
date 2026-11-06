@@ -6,7 +6,7 @@ This file contains only metadata and, where openly available, section-level indi
 
 | Evidence access category | Tasks |
 | --- | ---: |
-| MISSING_PRIMARY_SOURCE_IDENTIFIER | 1 |
+| PRIMARY_DOI_ONLY_METHODS_PENDING | 1 |
 | PRIMARY_PATENT_NEEDED | 7 |
 | PUBLIC_OPEN_ACCESS_INDEXED | 2 |
 | SOURCE_ARTICLE_ACCESS_PENDING | 20 |

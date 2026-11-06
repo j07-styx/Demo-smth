@@ -40,6 +40,7 @@ def build():
   ("PUBLIC_OPEN_ACCESS_INDEXED","Open-access methods section available for manual inspection"),
   ("SOURCE_ARTICLE_ACCESS_PENDING","Locate the original article or licensed supplementary methods"),
   ("PRIMARY_PATENT_NEEDED","Primary patent protocol requires manual review"),
+  ("PRIMARY_DOI_ONLY_METHODS_PENDING","DOI located; original paper methods still need review"),
   ("MISSING_PRIMARY_SOURCE_IDENTIFIER","Source identifier must be resolved before any Kd approval")
  ]
  lines=[
@@ -65,6 +66,7 @@ def build():
    lines.append("- BindingDB internal assay key: "+r["assay_key"])
    lines.append("- Source access category: "+status)
    lines.append("- Source identifiers (for matching only): "+(", ".join(r["pmids"]) if r["pmids"] else "no PubMed identifier"))
+   lines.append("- Recorded source DOI(s): "+(", ".join(r.get("doi_identifiers",[])) or "none recorded"))
    lines.append("- Patent metadata source: "+("listed in original source queue" if r["patent_ids"] else "none recorded"))
    flags=row.get("quality_flags","").strip()
    lines.append("- Original metadata quality flags: "+(flags or "none"))

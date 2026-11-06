@@ -177,6 +177,25 @@
                       "problemMatcher":  [
 
                                          ]
+                  },
+                  {
+                      "label":  "DynaCPI: Rebuild P0 source evidence crosswalk (no approvals)",
+                      "type":  "process",
+                      "command":  "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+                      "args":  [
+                                   "${workspaceFolder}\\scripts\\build_p0_source_crosswalk_v4.py"
+                               ],
+                      "options":  {
+                                      "cwd":  "${workspaceFolder}"
+                                  },
+                      "presentation":  {
+                                           "reveal":  "always",
+                                           "panel":  "dedicated",
+                                           "clear":  true
+                                       },
+                      "problemMatcher":  [
+
+                                         ]
                   }
               ]
 }

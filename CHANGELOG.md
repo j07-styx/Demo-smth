@@ -73,3 +73,11 @@ No new DynaCPI architecture was introduced. The primary family-held-out BindingD
 - Update technical manuscript and project.md; original DynaCPI v4 weights, negative pilot findings and scientific blocking conditions unchanged.
 
 These Git commits represent recorded research operations, not new DynaCPI model versions.
+
+## 2026-11-06 — Four P0 external-source review leads, DOI-only index correction and 21 checks
+
+- Correct DOI-only primary-source access classification for carbonic-anhydrase II; the original review row had an identifiable DOI although no PMID/patent number. Preserve original review decisions and source IDs.
+- Add reproducible four-task external source-evidence crosswalk, identifying the evidence type and remaining record-level checks without any measured affinities, full article bodies or scientific dataset approvals.
+- Regenerate source index, source worklist and all-30 metadata triage; P0/P1/P2 remain 4/12/14, zero approved.
+- Add immutable source/approval-state check; engineering regression suite **21/21 PASS**.
+- Extend local VS Code to ten tasks, benchmark monitor to P0 source-evidence counts, manuscript Section 7.14 and AI handoff. Model architecture, pilot checkpoints and negative development findings remain unchanged.

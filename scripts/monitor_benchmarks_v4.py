@@ -57,6 +57,7 @@ def read_status():
     geom=fetch("research/pilot_geometry_9train_4val/history.json")
     geomcheck=fetch("research/pilot_geometry_9train_4val/checkpoint_parity.json")
     source_index=fetch("research/source_access_v4/source_access_index.json")
+    p0_evidence=fetch("research/source_access_v4/p0_source_crosswalk.json")
     triage=fetch("research/source_access_v4/assay_metadata_risk_triage_30.json")
     construct_risk=fetch("research/source_access_v4/construct_alignment_risk_screen.json")
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
@@ -108,6 +109,13 @@ def read_status():
                          "D_minus_B_RMSE":r["D_minus_B_RMSE"]}
                         for r in seed_comparison.get("table_selected_K",[]) if r["K"]==20]
      } if isinstance(seed_comparison,dict) else {"status":"NOT_RUN"},
+     "p0_source_review_evidence":{
+        "status":p0_evidence.get("status"),
+        "source_identified_tasks":p0_evidence.get("task_count"),
+        "approved_count":p0_evidence.get("approved_count"),
+        "record_level_affinity_verified":sum(int(bool(x.get("each_numeric_Kd_measurement_verified"))) for x in p0_evidence.get("records",[])),
+        "source_tiers":[x.get("observation_source_tier") for x in p0_evidence.get("records",[])]
+     } if isinstance(p0_evidence,dict) else {"status":"NOT_RUN"},
      "metadata_review_triage":{
        "status":triage.get("status"),
        "n_candidate_tasks":triage.get("task_count"),
@@ -140,6 +148,8 @@ def read_status():
              "research/source_access_v4/source_access_index.json",
              "research/source_access_v4/construct_alignment_risk_screen.json",
              "research/source_access_v4/assay_metadata_risk_triage_30.json",
+             "research/source_access_v4/p0_source_crosswalk.json",
+             "research/source_access_v4/P0_SOURCE_CROSSWALK.md",
              "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md",
              "research/source_access_v4/worklist_manifest.json",
              "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json"
@@ -178,6 +188,9 @@ def main():
         if cur.get("candidate_tasks") is not None:
             f.write("**Scientific source review:** "+str(cur.get("human_review_unreviewed"))+" tasks unreviewed; "+str(cur.get("human_review_approved"))+" approved; "+str(cur.get("candidate_tasks"))+" access records indexed (metadata only).\n\n")
             f.write("**Construct-to-reference alignment flags:** "+str(cur.get("construct_region_alignment_flags"))+" source-located tasks needing physical construct verification; "+str(cur.get("construct_risk_reviewed_approvals"))+" approved by this check.\n\n")
+            p0=report["p0_source_review_evidence"]
+            if p0.get("source_identified_tasks") is not None:
+                f.write("**P0 external source leads:** "+str(p0.get("source_identified_tasks"))+" identified; "+str(p0.get("approved_count"))+" approved; "+str(p0.get("record_level_affinity_verified"))+" fully verified record-level Kd task(s).\n\n")
             tr=report["metadata_review_triage"]
             if tr.get("review_priority_counts"):
                 f.write("**30-task metadata triage (not approval):** "+", ".join(str(k)+"="+str(v) for k,v in sorted(tr["review_priority_counts"].items()))+".\n\n")

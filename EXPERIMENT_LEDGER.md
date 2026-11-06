@@ -76,3 +76,14 @@ This screen demonstrates reference-input versus reported assay-region difference
 | Integrity regression | 20/20 PASS; original review source SHA unchanged; 0 scientific approvals | data/audit/v4_validation_suite.json |
 
 All outputs are metadata-only review leads, not source-reviewed exact-Kd assays or independent model performance.
+
+## 6 November 2026 — four P0 source metadata leads and DOI correction (not science benchmark)
+
+| Source evidence tier | Review finding | Scientific status |
+| --- | --- | --- |
+| Publication abstract | CFTR candidate linked to a cellular functional transport assay; direct Kd relationship not yet verified for record | UNREVIEWED |
+| Registered assay | GLP-1 receptor candidate indexed with a glucose/colorimetric assay; target vs measured participant unresolved | UNREVIEWED |
+| DOI bibliography | Carbonic-anhydrase II has a source DOI (contrary to original missing-ID classification), but its individual binding experiment remains unreviewed | UNREVIEWED |
+| Patent locator | PD-L1 source patent identified; original assay description missing and method-to-record correspondence unresolved | UNREVIEWED |
+
+The deterministic crosswalk retains original task hashes, source evidence tiers, zero recorded affinity values and explicit unresolved questions. The source-index category for the DOI-only task was corrected and all downstream source worklists/metadata triage regenerated. The engineering suite now passed **21/21**. Original 30 review records unchanged; zero scientific approvals and zero final independent test findings. Evidence: `research/source_access_v4/p0_source_crosswalk.json`, `P0_SOURCE_CROSSWALK.md` and `data/audit/v4_validation_suite.json`.

@@ -16,6 +16,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50017739_13
 - Source access category: PUBLIC_OPEN_ACCESS_INDEXED
 - Source identifiers (for matching only): 35333039
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 35333039; metadata: EXACT_PMID_MATCH; OA section indexing: OPEN_ACCESS_SECTION_INDEXED
@@ -36,6 +37,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50002067_1
 - Source access category: PUBLIC_OPEN_ACCESS_INDEXED
 - Source identifiers (for matching only): 29648813
+- Recorded source DOI(s): 10.1021/acs.jmedchem.8b00210
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 29648813; metadata: EXACT_PMID_MATCH; OA section indexing: OPEN_ACCESS_SECTION_INDEXED
@@ -58,6 +60,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50013470_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 12852954
+- Recorded source DOI(s): 10.1016/s0960-894x(03)00482-7
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 12852954; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -72,6 +75,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50016943_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 35759679
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 35759679; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -86,6 +90,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50034019_161
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 22037378
+- Recorded source DOI(s): 10.1038/nbt.1990
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 22037378; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -100,6 +105,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50020330_8
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 37708384
+- Recorded source DOI(s): 10.1021/acs.jmedchem.3c00434
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 37708384; metadata: EXACT_PMID_MATCH; OA section indexing: INDEX_FAILED
@@ -115,6 +121,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50022853_5
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 39461037
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 39461037; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -129,6 +136,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50008121_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 31494467
+- Recorded source DOI(s): 10.1016/j.ejmech.2019.111656
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 31494467; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -143,6 +151,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50034019_51
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 22037378
+- Recorded source DOI(s): 10.1038/nbt.1990
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 22037378; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -157,6 +166,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50034979_5
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 9871604
+- Recorded source DOI(s): 10.1016/s0960-894x(98)00062-6
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 9871604; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -171,6 +181,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50018971_9
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 26804741
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 26804741; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -185,6 +196,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50034019_522
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 22037378
+- Recorded source DOI(s): 10.1038/nbt.1990
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 22037378; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -199,6 +211,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50005563_3
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 7990119
+- Recorded source DOI(s): 10.1021/jm00050a017
 - Patent metadata source: none recorded
 - Original metadata quality flags: temperature_not_reported
 - Publication PMID 7990119; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -213,6 +226,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50008549_2
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 31922756
+- Recorded source DOI(s): 10.1021/acs.jmedchem.9b01492
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 31922756; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -227,6 +241,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50042775_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 23509991
+- Recorded source DOI(s): 10.1021/jm301665y
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 23509991; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -241,6 +256,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50018866_3
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 37312859
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 37312859; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -255,6 +271,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50031617_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 20060622
+- Recorded source DOI(s): 10.1016/j.ejmech.2009.11.054
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 20060622; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -270,6 +287,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50023141_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 40013713
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 40013713; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -284,6 +302,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50016305_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 35525212
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 35525212; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -298,6 +317,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50036674_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 9804684
+- Recorded source DOI(s): 10.1021/jm970839y
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 9804684; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -312,6 +332,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50018296_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 34648286
+- Recorded source DOI(s): none recorded
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 34648286; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -326,6 +347,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 50001412_1
 - Source access category: SOURCE_ARTICLE_ACCESS_PENDING
 - Source identifiers (for matching only): 29031064
+- Recorded source DOI(s): 10.1016/j.ejmech.2017.09.044
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Publication PMID 29031064; metadata: EXACT_PMID_MATCH; OA section indexing: NOT_PUBLIC_OPEN_ACCESS
@@ -342,6 +364,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 6526_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -355,6 +378,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 9684_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -368,6 +392,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 11593_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -381,6 +406,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 13282_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -394,6 +420,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 4362_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -407,6 +434,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 11754_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -420,6 +448,7 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - BindingDB internal assay key: 11490_1
 - Source access category: PRIMARY_PATENT_NEEDED
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): none recorded
 - Patent metadata source: listed in original source queue
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
@@ -427,20 +456,23 @@ For each task, a qualified reviewer must inspect source methods and supplements,
 - Measurement comparability/assay conditions: **UNVERIFIED**
 - Reviewer reference and reasoning: **NOT PROVIDED**
 
-## Source identifier must be resolved before any Kd approval (1)
+## DOI located; original paper methods still need review (1)
 
 ### 1. Task 3a9e7fe2a5658843
 
 - Full task ID: 3a9e7fe2a56588436c4f0cbde17aea8b8099b57fc56ddac4d72e338132162881
 - BindingDB internal assay key: 50029872_1
-- Source access category: MISSING_PRIMARY_SOURCE_IDENTIFIER
+- Source access category: PRIMARY_DOI_ONLY_METHODS_PENDING
 - Source identifiers (for matching only): no PubMed identifier
+- Recorded source DOI(s): 10.1016/0960-894X(96)00069-8
 - Patent metadata source: none recorded
 - Original metadata quality flags: ph_not_reported;temperature_not_reported
 - Construct identity from original source: **UNVERIFIED**
 - Exact Kd and qualifier semantics from original source: **UNVERIFIED**
 - Measurement comparability/assay conditions: **UNVERIFIED**
 - Reviewer reference and reasoning: **NOT PROVIDED**
+
+## Source identifier must be resolved before any Kd approval (0)
 
 ## Explicit approval restrictions
 

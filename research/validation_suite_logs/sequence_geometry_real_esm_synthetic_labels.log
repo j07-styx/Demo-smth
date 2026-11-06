@@ -7,7 +7,7 @@
   "max_zero_projection_difference": 0.0,
   "max_missing_structure_difference": 0.0,
   "nonzero_projection_changed_prediction": true,
-  "gvp_grad_norm": 0.006370040180627257,
+  "gvp_grad_norm": 0.006370040558977053,
   "peak_cuda_mib": 462.95654296875,
   "scope": "Random weights, synthetic regression target. Assay identity unverified. No training or model performance result."
 }

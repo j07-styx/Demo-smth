@@ -1,9 +1,9 @@
 {
   "status": "PRELIMINARY_METADATA_RISK_TRIAGE_NOT_SOURCE_ADJUDICATION",
-  "created_utc": "2026-11-06T03:23:18.559465+00:00",
+  "created_utc": "2026-11-06T09:11:55.372379+00:00",
   "canonical_review_csv_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
   "reference_screen_file_sha256": "5926927520718369928820138393ad1e5b1b5715e3285e1346790f58701deb75",
-  "source_access_index_sha256": "92eee67d455ddd45b6594053d466022f872a729ea40d5bbcbbc8cf09dae44207",
+  "source_access_index_sha256": "cbe43ab9a5676b3023c20711e0a8c3fe3d40b4ab996de6e635feb0b89c04a737",
   "two_source_fragment_evidence_sha256": "97ffed739814286cac80fd91c1ad0a87a28f6b45c74b56222e764abff4b3a796",
   "task_count": 30,
   "reviewed_tasks": 0,
@@ -12,6 +12,7 @@
     "COMPETITION_OR_DISPLACEMENT_PROTOCOL": 4,
     "COMPLEX_COFAC_TOPOLOGY_LANGUAGE": 4,
     "DESCRIPTION_MISSING": 1,
+    "DOI_ONLY_SOURCE_METHODS_PENDING": 1,
     "DOMAIN_OR_FRAGMENT_LANGUAGE": 8,
     "DOMAIN_OR_FRAGMENT_WITHOUT_NUMERIC_BOUNDARIES": 5,
     "KD_FIELD_DESCRIBED_AS_HALF_EFFECTIVE_CONCENTRATION": 1,
@@ -23,7 +24,6 @@
     "PRIMARY_ARTICLE_METHODS_ACCESS_PENDING": 20,
     "PRIMARY_PATENT_METHODS_NOT_REVIEWED": 7,
     "PRIMARY_SOURCE_FRAGMENT_VS_REFERENCE_FLAG": 2,
-    "PRIMARY_SOURCE_IDENTIFIER_MISSING": 1,
     "REGION_SHORTER_THAN_CANONICAL_REFERENCE": 6,
     "SOURCE_SPECIES_NEEDS_REFERENCE_ALIGNMENT": 3,
     "SURROGATE_ACTIVITY_OR_ENDPOINT_LANGUAGE": 4,
@@ -405,10 +405,10 @@
         "P00918"
       ],
       "original_assay_description_hash": "1808e13b57ff8e5cbe9a4e4c92f20df8b039436927199cebb2697de6af785223",
-      "source_access_category": "MISSING_PRIMARY_SOURCE_IDENTIFIER",
+      "source_access_category": "PRIMARY_DOI_ONLY_METHODS_PENDING",
       "manual_review_priority": "P0_REVIEW_METADATA_SEMANTICS",
       "metadata_risk_flags": [
-        "PRIMARY_SOURCE_IDENTIFIER_MISSING"
+        "DOI_ONLY_SOURCE_METHODS_PENDING"
       ],
       "description_numeric_regions": [],
       "source_paper_fragment_lead": false,

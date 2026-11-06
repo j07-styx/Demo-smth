@@ -125,14 +125,17 @@ def make_report(rows,pub_map,queue_sha):
   ids=pmids(row)
   linked=[pub_map[p] for p in ids]
   haspatent=bool(row.get("patent_numbers","").strip())
+  hasdoi=bool(row.get("article_dois","").strip())
   if not ids and haspatent:status="PRIMARY_PATENT_NEEDED"
   elif any(p.get("fulltext_access")=="OPEN_ACCESS_SECTION_INDEXED" for p in linked):
    status="PUBLIC_OPEN_ACCESS_INDEXED"
   elif ids:status="SOURCE_ARTICLE_ACCESS_PENDING"
+  elif hasdoi:status="PRIMARY_DOI_ONLY_METHODS_PENDING"
   else:status="MISSING_PRIMARY_SOURCE_IDENTIFIER"
   d={"task_id":row["task_id"],"assay_key":row["assay_key"],
      "protein_component_id":row["protein_component_id"],
      "pmids":ids,"patent_ids":row.get("patent_numbers","").split(";") if haspatent else [],
+     "doi_identifiers":[z.strip() for z in re.split(r"[;,|]",row.get("article_dois","")) if z.strip()],
      "evidence_access_status":status,
      "current_review_status":"UNREVIEWED","verified_construct":False,
      "verified_kd_semantics":False,"verified_assay_compatibility":False}

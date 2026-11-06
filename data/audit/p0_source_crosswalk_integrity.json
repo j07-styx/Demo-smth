@@ -1,0 +1,9 @@
+{
+  "status": "PASS_4_P0_SOURCE_LEADS_NOT_SCIENTIFIC_APPROVAL",
+  "p0_tasks": 4,
+  "corrected_doi_only_source_count": 1,
+  "source_review_queue_sha256_unchanged": true,
+  "no_numeric_affinity_values_accessed": true,
+  "source_approved_tasks": 0,
+  "scientific_gate": "BLOCKED"
+}
