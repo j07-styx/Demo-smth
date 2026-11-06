@@ -55,3 +55,12 @@ The next person must append genuine new observations rather than rewrite this hi
 | Integrity regressions | 18/18 PASS, 0 failed | data/audit/v4_validation_suite.json | Software and provenance gates, not biological validity |
 
 Retain the source-review blocker and zero-approval status until an independently documented human adjudication produces a real eligible cohort and immutable split.
+
+## 6 November 2026 — source-method construct discrepancy screen (review support, NOT predictive data)
+
+| Candidate accession | Canonical reference length | Original paper-reported segment | Nominal region length | Primary source location | Approval |
+| --- | ---: | --- | ---: | --- | --- |
+| P17342 | 541 aa | 27–541 | 515 aa | PMC9014859, sec4.4 | UNREVIEWED |
+| O14786 | 923 aa | 273–427 | 155 aa | PMC5957473, sec4.2.1 and sec4.2.3 | UNREVIEWED |
+
+This screen demonstrates reference-input versus reported assay-region differences; it does **not** check per-compound labels, prove a database mistake, or establish exact physical mutant/tag sequence. The review queue SHA and source ID/length metadata were cross-checked by scripts/check_primary_construct_flags_v4.py and new risk integrity test. The 19/19 engineering checks pass. Zero source-approved tasks and no frozen family-disjoint test cohort.

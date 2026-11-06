@@ -74,3 +74,9 @@ A reproducible source-access index and read-only review-action checklist have be
 5. After enough independent assay targets are actually verified, produce the source-approved cohort with traceable evidence and freeze independent protein-group roles. Only then return to model training and paired D-versus-B evaluation.
 
 All original model checkpoints, DAVIS pilot conclusions and source metadata from the upstream PerceiverCPI clone were preserved.
+
+## Two source methods reveal concrete construct-input alignment risks (6 November 2026)
+
+The primary paper for candidate P17342 reports receptor residues 27–541, while the candidate BindingDB sequence is the 541-residue canonical reference. Another paper reports NRP1-b1 residues 273–427 while its candidate record stores the 923-residue O14786 reference. These are primary-source **region evidence**, not full chemical/assay validation. Both records require explicit physical construct sequence mapping, tags/variant verification, original Kd table-to-record review and source assay comparability before inclusion.
+
+The additional check brought the engineering suite to **19/19 PASS** with zero approvals; construct risk evidence and hashes are in research/source_access_v4 and data/audit. Next researcher should resolve these two documented examples, then expand systematic source review across enough independent protein families before freezing any scientific split. Never treat a reference match as evidence that the assay used the full canonical sequence.

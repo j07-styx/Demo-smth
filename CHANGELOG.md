@@ -55,3 +55,11 @@ There is **no authorized next model version** in this changelog. Any future scie
 - Record verified access limits and unresolved scientific provenance in the manuscript and project.md; regression suite now **18/18 PASS**.
 
 No new DynaCPI architecture was introduced. The primary family-held-out BindingDB study remains blocked pending qualified primary-source review.
+
+## 2026-11-06 — Primary source region/sequence-alignment risk screen
+
+- Read actual experimental-method sections for two published source records and identify canonical-reference versus reported region differences (NPR-C and NRP1-b1), without extracting or claiming verified individual Kd measurements.
+- Preserve the original thirty-task review CSV and record immutable source-locator/nominal-length flags; neither task is approved for scientific training.
+- Add scripts/check_primary_construct_flags_v4.py, tests_v4/construct_alignment_risk_integrity_test.py, updated 19/19 engineering suite, read-only monitor fields and eighth VS Code task.
+- Update the research paper, project.md, source-curation protocol and AI handoff.
+- No changed predictor architecture, baseline checkpoint, scientific holdout or model performance claims.

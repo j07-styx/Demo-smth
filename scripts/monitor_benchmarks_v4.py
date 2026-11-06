@@ -57,6 +57,7 @@ def read_status():
     geom=fetch("research/pilot_geometry_9train_4val/history.json")
     geomcheck=fetch("research/pilot_geometry_9train_4val/checkpoint_parity.json")
     source_index=fetch("research/source_access_v4/source_access_index.json")
+    construct_risk=fetch("research/source_access_v4/construct_alignment_risk_screen.json")
     manual_review=fetch("data/audit/bindingdb_assay_manual_review_status.json")
     seed_variability=fetch("research/pilot_geometry_seed_sweep_dev/seed_variability.json")
     seed_comparison=fetch("research/pilot_geometry_seed_sweep_dev/adapter_seed_comparison.json")
@@ -113,7 +114,9 @@ def read_status():
        "source_status_counts":source_index.get("source_status_counts"),
        "publication_access_counts":source_index.get("publication_access_counts"),
        "human_review_unreviewed":manual_review.get("counts",{}).get("UNREVIEWED") if isinstance(manual_review,dict) else None,
-       "human_review_approved":manual_review.get("approved_tasks") if isinstance(manual_review,dict) else None
+       "human_review_approved":manual_review.get("approved_tasks") if isinstance(manual_review,dict) else None,
+       "construct_region_alignment_flags":construct_risk.get("reconciled_task_count") if isinstance(construct_risk,dict) else None,
+       "construct_risk_reviewed_approvals":construct_risk.get("scientifically_approved_task_count") if isinstance(construct_risk,dict) else None
      } if isinstance(source_index,dict) else {"status":"NOT_RUN"},
      "watch_artifacts":{
          str(rel):sha(ROOT/rel) for rel in [
@@ -127,6 +130,8 @@ def read_status():
              "research/support_k_sweep_seed_dev/seed_1107/results.json",
              "data/audit/bindingdb_assay_manual_review_status.json",
              "research/source_access_v4/source_access_index.json",
+             "research/source_access_v4/construct_alignment_risk_screen.json",
+             "research/source_access_v4/PRELIMINARY_CONSTRUCT_ALIGNMENT_REVIEW.md",
              "research/source_access_v4/worklist_manifest.json",
              "data/audit/bindingdb_full_kd_candidate_episode_manifest_validation.json"
          ]},
@@ -163,6 +168,7 @@ def main():
         cur=report["source_curation_readiness"]
         if cur.get("candidate_tasks") is not None:
             f.write("**Scientific source review:** "+str(cur.get("human_review_unreviewed"))+" tasks unreviewed; "+str(cur.get("human_review_approved"))+" approved; "+str(cur.get("candidate_tasks"))+" access records indexed (metadata only).\n\n")
+            f.write("**Construct-to-reference alignment flags:** "+str(cur.get("construct_region_alignment_flags"))+" source-located tasks needing physical construct verification; "+str(cur.get("construct_risk_reviewed_approvals"))+" approved by this check.\n\n")
         sk=report["support_K_development"].get("results",[])
         if sk:
             f.write("| Support K | Calibration B RMSE | Full D RMSE | D−B RMSE | Mean kernel W | Mean disagreement V |\n")

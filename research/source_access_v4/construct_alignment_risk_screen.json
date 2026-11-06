@@ -1,0 +1,49 @@
+{
+  "status": "PASS_SOURCE_LOCATOR_CONSTRUCT_RISK_ONLY_NOT_APPROVED",
+  "canonical_review_sha256": "73bbe2336a7b30164843fe7df7a5b035b67378b88ffc356dbe911d2c414abe3e",
+  "reconciled_task_count": 2,
+  "full_30_task_review_queue_unchanged": true,
+  "scientifically_approved_task_count": 0,
+  "cohort_training_gate": "BLOCKED",
+  "source_section_locator_checks_not_full_text_authentication": true,
+  "records": [
+    {
+      "task_id": "69f76b68cfe450d9847cbcf66f2aacfaf9059b740d9266ab6f68052affd644a8",
+      "protein_accession": "P17342",
+      "pmid": "35333039",
+      "pmcid": "PMC9014859",
+      "source_methods_section": "sec4.4",
+      "candidate_full_reference_length": 541,
+      "paper_reported_construct_region": [
+        27,
+        541
+      ],
+      "nominal_fragment_length": 515,
+      "reference_vs_reported_region_differs": true,
+      "verified_physical_construct_sequence": false,
+      "individual_affinity_values_reviewed": false,
+      "source_assay_compatibility_verified": false,
+      "human_review_status": "UNREVIEWED",
+      "scientific_approval": false
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "protein_accession": "O14786",
+      "pmid": "29648813",
+      "pmcid": "PMC5957473",
+      "source_methods_section": "sec4.2.1",
+      "candidate_full_reference_length": 923,
+      "paper_reported_construct_region": [
+        273,
+        427
+      ],
+      "nominal_fragment_length": 155,
+      "reference_vs_reported_region_differs": true,
+      "verified_physical_construct_sequence": false,
+      "individual_affinity_values_reviewed": false,
+      "source_assay_compatibility_verified": false,
+      "human_review_status": "UNREVIEWED",
+      "scientific_approval": false
+    }
+  ]
+}

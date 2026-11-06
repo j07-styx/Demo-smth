@@ -1,0 +1,7 @@
+{
+  "status": "PASS_CONSTRUCT_RISK_ENGINEERING_ONLY",
+  "source_reviewed_task_count": 0,
+  "source_locators_documented": 2,
+  "canonical_review_queue_unchanged": true,
+  "cohort_training_gate": "BLOCKED"
+}
