@@ -1,0 +1,81 @@
+{
+  "status": "DEEPDTA_PROTEIN_SHUFFLE_NEGATIVE_CONTROL_DEV",
+  "dataset": "BindingDB preliminary exact-looking Kd; assay and construct QC incomplete",
+  "train_pairs": 37441,
+  "validation_pairs": 4764,
+  "protein_cluster_disjoint": true,
+  "protein_inputs_shuffled": true,
+  "shuffle_seed": 991103,
+  "seed": 2103,
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.001,
+  "max_smiles_len": 100,
+  "max_protein_len": 1000,
+  "source_paper_batch_size": 256,
+  "source_paper_epochs": 100,
+  "note": "Short training feasibility experiment, not faithful full paper training or independent test; all epoch validation metrics exploratory",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 4.043979725333204,
+      "val_rmse": 1.5667122969866991,
+      "seconds": 7.82
+    },
+    {
+      "epoch": 2,
+      "train_mse": 1.7162653439687787,
+      "val_rmse": 1.6539370254124612,
+      "seconds": 7.41
+    },
+    {
+      "epoch": 3,
+      "train_mse": 1.601039182814315,
+      "val_rmse": 1.5713316851425232,
+      "seconds": 7.41
+    },
+    {
+      "epoch": 4,
+      "train_mse": 1.5091531223811387,
+      "val_rmse": 1.5641878081977953,
+      "seconds": 7.44
+    },
+    {
+      "epoch": 5,
+      "train_mse": 1.4739858894624809,
+      "val_rmse": 1.6309284129826722,
+      "seconds": 7.46
+    },
+    {
+      "epoch": 6,
+      "train_mse": 1.430408071535846,
+      "val_rmse": 1.6426195793249816,
+      "seconds": 7.44
+    },
+    {
+      "epoch": 7,
+      "train_mse": 1.4133038258389807,
+      "val_rmse": 1.5778522638387984,
+      "seconds": 7.42
+    },
+    {
+      "epoch": 8,
+      "train_mse": 1.393568359137395,
+      "val_rmse": 1.5865375651356053,
+      "seconds": 7.45
+    },
+    {
+      "epoch": 9,
+      "train_mse": 1.3992298485476002,
+      "val_rmse": 1.6239450335791175,
+      "seconds": 7.44
+    },
+    {
+      "epoch": 10,
+      "train_mse": 1.3286847700031137,
+      "val_rmse": 1.706158310621308,
+      "seconds": 7.5
+    }
+  ],
+  "train_only_mean_baseline_rmse": 1.6830994684812233
+}

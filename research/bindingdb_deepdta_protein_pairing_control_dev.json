@@ -1,0 +1,67 @@
+{
+  "status": "PROVISIONAL_SINGLE_SEED_NEGATIVE_CONTROL_NOT_INDEPENDENT_TEST",
+  "seed": 2103,
+  "train_pairs": 37441,
+  "validation_pairs": 4764,
+  "correct_protein_epoch10_rmse": 1.6218786923853254,
+  "shuffled_protein_epoch10_rmse": 1.706158310621308,
+  "shuffled_minus_correct_rmse": 0.08427961823598262,
+  "per_epoch_comparison": [
+    {
+      "epoch": 1,
+      "correct_rmse": 1.5876348911666698,
+      "shuffled_rmse": 1.5667122969866991
+    },
+    {
+      "epoch": 2,
+      "correct_rmse": 1.6952806479298954,
+      "shuffled_rmse": 1.6539370254124612
+    },
+    {
+      "epoch": 3,
+      "correct_rmse": 1.7318977490404752,
+      "shuffled_rmse": 1.5713316851425232
+    },
+    {
+      "epoch": 4,
+      "correct_rmse": 1.5525089869180058,
+      "shuffled_rmse": 1.5641878081977953
+    },
+    {
+      "epoch": 5,
+      "correct_rmse": 1.908682407159009,
+      "shuffled_rmse": 1.6309284129826722
+    },
+    {
+      "epoch": 6,
+      "correct_rmse": 1.6699475366544323,
+      "shuffled_rmse": 1.6426195793249816
+    },
+    {
+      "epoch": 7,
+      "correct_rmse": 1.638056767665549,
+      "shuffled_rmse": 1.5778522638387984
+    },
+    {
+      "epoch": 8,
+      "correct_rmse": 1.7001335759848162,
+      "shuffled_rmse": 1.5865375651356053
+    },
+    {
+      "epoch": 9,
+      "correct_rmse": 1.7822195623449961,
+      "shuffled_rmse": 1.6239450335791175
+    },
+    {
+      "epoch": 10,
+      "correct_rmse": 1.6218786923853254,
+      "shuffled_rmse": 1.706158310621308
+    }
+  ],
+  "limitations": [
+    "One seed and one already-inspected development split; not a robust independent generalization estimate.",
+    "Shuffling protein inputs independently in train and validation is a negative control, not a matched architecture ablation.",
+    "BindingDB candidate assays and constructs have not completed independent verification.",
+    "No PerceiverCPI model was trained on this split."
+  ]
+}
