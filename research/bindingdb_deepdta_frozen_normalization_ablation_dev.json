@@ -1,0 +1,15 @@
+{
+  "status": "INNER_DEV_ABLATION_NO_TEST",
+  "original_epoch10_rmse": 2.8926884862747655,
+  "normalized_epoch10_rmse": 2.387794245175862,
+  "normalized_best_epoch": 6,
+  "normalized_best_dev_rmse": 2.2242414568639948,
+  "train_mean_baseline_rmse": 1.803901684183753,
+  "changes": [
+    "Adam -> AdamW, learning rate 0.001 -> 0.0003, weight decay 0.0001",
+    "Train-only target mean/std normalization",
+    "Train-only token vocabulary with OOV mapped to padding token",
+    "Gradient clipping at norm 1"
+  ],
+  "interpretation": "Combined ablation; cannot attribute difference to a single change. No test evaluation. Best development epoch is exploratory; no saved checkpoint."
+}
