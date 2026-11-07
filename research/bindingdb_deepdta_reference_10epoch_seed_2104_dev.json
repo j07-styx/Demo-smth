@@ -1,0 +1,79 @@
+{
+  "status": "DEEPDTA_INSPIRED_DEV_NOT_PAPER_BENCHMARK",
+  "dataset": "BindingDB preliminary exact-looking Kd; assay and construct QC incomplete",
+  "train_pairs": 37441,
+  "validation_pairs": 4764,
+  "protein_cluster_disjoint": true,
+  "seed": 2104,
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.001,
+  "max_smiles_len": 100,
+  "max_protein_len": 1000,
+  "source_paper_batch_size": 256,
+  "source_paper_epochs": 100,
+  "note": "Short training feasibility experiment, not faithful full paper training or independent test; all epoch validation metrics exploratory",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 2.3859550112750343,
+      "val_rmse": 1.535157812445376,
+      "seconds": 7.91
+    },
+    {
+      "epoch": 2,
+      "train_mse": 1.4264073656687557,
+      "val_rmse": 1.5308537462794782,
+      "seconds": 7.42
+    },
+    {
+      "epoch": 3,
+      "train_mse": 1.3028828452878438,
+      "val_rmse": 1.661277506708168,
+      "seconds": 7.46
+    },
+    {
+      "epoch": 4,
+      "train_mse": 1.2815827017351222,
+      "val_rmse": 1.5876323176851384,
+      "seconds": 7.43
+    },
+    {
+      "epoch": 5,
+      "train_mse": 1.2020432977546198,
+      "val_rmse": 1.6181217903933496,
+      "seconds": 7.44
+    },
+    {
+      "epoch": 6,
+      "train_mse": 1.1399107062775935,
+      "val_rmse": 1.7054487230968642,
+      "seconds": 7.44
+    },
+    {
+      "epoch": 7,
+      "train_mse": 1.1159390410465593,
+      "val_rmse": 1.5543013485215658,
+      "seconds": 7.44
+    },
+    {
+      "epoch": 8,
+      "train_mse": 1.0680908442764152,
+      "val_rmse": 1.670806307561622,
+      "seconds": 7.47
+    },
+    {
+      "epoch": 9,
+      "train_mse": 1.0644546077926818,
+      "val_rmse": 1.5576471969298367,
+      "seconds": 7.47
+    },
+    {
+      "epoch": 10,
+      "train_mse": 1.0279397771220158,
+      "val_rmse": 1.664280996533577,
+      "seconds": 7.46
+    }
+  ],
+  "train_only_mean_baseline_rmse": 1.6830994684812233
+}

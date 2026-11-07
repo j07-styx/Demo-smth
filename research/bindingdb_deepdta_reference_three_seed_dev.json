@@ -1,0 +1,19 @@
+{
+  "status": "THREE_SEED_DEVELOPMENT_SPLIT_NOT_INDEPENDENT_TEST",
+  "seeds": [
+    2103,
+    2104,
+    2105
+  ],
+  "fixed_epoch": 10,
+  "validation_rmse_by_seed": {
+    "2103": 1.6218786923853254,
+    "2104": 1.664280996533577,
+    "2105": 1.7497854019992765
+  },
+  "mean_rmse": 1.678648363639393,
+  "sample_std_rmse": 0.06515249434389953,
+  "train_only_mean_rmse": 1.6830994684812233,
+  "seeds_better_than_mean_baseline": 2,
+  "note": "Repeatedly inspected provisional split; training and evaluation is not a paper reproduction. No test-set or PerceiverCPI comparison."
+}
