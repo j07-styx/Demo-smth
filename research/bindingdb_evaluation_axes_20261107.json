@@ -1,0 +1,131 @@
+{
+  "status": "UNAPPROVED_METADATA_FEASIBILITY_ONLY",
+  "seed": 1105,
+  "tasks": 1041,
+  "protein_components": 158,
+  "compounds": 12784,
+  "scaffolds": 5392,
+  "pairs": 30038,
+  "acyclic_compounds": 59,
+  "axes": {
+    "protein": {
+      "roles": {
+        "base_train": {
+          "pairs": 19531,
+          "tasks": 703,
+          "tasks_with_15_compounds": 703,
+          "components_with_eligible_tasks": 94
+        },
+        "base_validation": {
+          "pairs": 947,
+          "tasks": 28,
+          "tasks_with_15_compounds": 28,
+          "components_with_eligible_tasks": 15
+        },
+        "adapter_train": {
+          "pairs": 644,
+          "tasks": 24,
+          "tasks_with_15_compounds": 24,
+          "components_with_eligible_tasks": 15
+        },
+        "adapter_validation": {
+          "pairs": 5565,
+          "tasks": 161,
+          "tasks_with_15_compounds": 161,
+          "components_with_eligible_tasks": 15
+        },
+        "test": {
+          "pairs": 3351,
+          "tasks": 125,
+          "tasks_with_15_compounds": 125,
+          "components_with_eligible_tasks": 19
+        }
+      },
+      "excluded_cross_axis_pairs": 0,
+      "assignment_sha256": "65f9484f735e57be1deff7f30d428145d3a990947fbe5aed50556f3eec4f1393",
+      "disjointness_verified": true
+    },
+    "scaffold": {
+      "roles": {
+        "base_train": {
+          "pairs": 17046,
+          "tasks": 1031,
+          "tasks_with_15_compounds": 419,
+          "components_with_eligible_tasks": 89
+        },
+        "base_validation": {
+          "pairs": 3956,
+          "tasks": 820,
+          "tasks_with_15_compounds": 71,
+          "components_with_eligible_tasks": 19
+        },
+        "adapter_train": {
+          "pairs": 3416,
+          "tasks": 824,
+          "tasks_with_15_compounds": 18,
+          "components_with_eligible_tasks": 8
+        },
+        "adapter_validation": {
+          "pairs": 2971,
+          "tasks": 803,
+          "tasks_with_15_compounds": 22,
+          "components_with_eligible_tasks": 13
+        },
+        "test": {
+          "pairs": 2649,
+          "tasks": 796,
+          "tasks_with_15_compounds": 25,
+          "components_with_eligible_tasks": 20
+        }
+      },
+      "excluded_cross_axis_pairs": 0,
+      "assignment_sha256": "7fdee60a8b196d2659c48169b72bc4cc3dcfb8b886957faa2ee84f37a8260f65",
+      "disjointness_verified": true
+    },
+    "dual": {
+      "roles": {
+        "base_train": {
+          "pairs": 10958,
+          "tasks": 697,
+          "tasks_with_15_compounds": 272,
+          "components_with_eligible_tasks": 58
+        },
+        "base_validation": {
+          "pairs": 137,
+          "tasks": 23,
+          "tasks_with_15_compounds": 3,
+          "components_with_eligible_tasks": 3
+        },
+        "adapter_train": {
+          "pairs": 68,
+          "tasks": 15,
+          "tasks_with_15_compounds": 1,
+          "components_with_eligible_tasks": 1
+        },
+        "adapter_validation": {
+          "pairs": 342,
+          "tasks": 123,
+          "tasks_with_15_compounds": 4,
+          "components_with_eligible_tasks": 4
+        },
+        "test": {
+          "pairs": 333,
+          "tasks": 80,
+          "tasks_with_15_compounds": 3,
+          "components_with_eligible_tasks": 3
+        }
+      },
+      "excluded_cross_axis_pairs": 18200,
+      "assignment_sha256": "41ea3d8a986c8d297e8837628e4aa94cf427f7c2461623604e5005da7d1fd3a9",
+      "disjointness_verified": true
+    }
+  },
+  "limits": [
+    "No source approval or test membership is written.",
+    "Protein components are preliminary; homology thresholds and domains remain subject to review.",
+    "Scaffold-disjoint does not bound all chemical similarity; acyclic compounds kept together.",
+    "The 15-compound threshold is 5 support plus 10 query; counts are viability, not assay approval.",
+    "No seed search; single predeclared seed 1105.",
+    "Candidate JSON includes affinity fields, but values are neither used for assignments nor reported."
+  ]
+}
