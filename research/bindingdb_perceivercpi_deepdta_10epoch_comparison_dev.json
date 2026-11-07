@@ -1,0 +1,32 @@
+{
+  "status": "PROVISIONAL_DEVELOPMENT_SPLIT_NOT_INDEPENDENT_TEST",
+  "training_pairs": 37441,
+  "validation_pairs": 4764,
+  "validation_components": 33,
+  "fixed_epoch": 10,
+  "perceivercpi_seed_2103_epoch10_rmse": 1.786654491372501,
+  "deepdta_three_seed_epoch10_mean_rmse": 1.678648363639393,
+  "deepdta_three_seed_epoch10_sample_std": 0.06515249434389953,
+  "train_mean_pooled_rmse": 1.6830994684812233,
+  "perceivercpi_minus_deepdta_mean_rmse": 0.10800612773310814,
+  "perceivercpi_minus_mean_baseline_rmse": 0.10355502289127783,
+  "perceivercpi_epoch_rmse": [
+    1.850791392991053,
+    1.8755382357827932,
+    1.7923193699408477,
+    1.7614794137844232,
+    1.864845865578831,
+    1.7901308308063661,
+    1.8321404020819922,
+    1.7943810989547206,
+    1.8206530335933961,
+    1.786654491372501
+  ],
+  "warnings": [
+    "Different learning rates, batch sizes, protein input lengths, and seed counts; same epoch count is not an equal compute budget.",
+    "PerceiverCPI results are one seed, DeepDTA results are three seeds.",
+    "Macro component RMSE is unavailable without per-pair predictions.",
+    "Validation set has been inspected repeatedly; no independent test.",
+    "Assay and protein construct provenance not fully verified."
+  ]
+}
