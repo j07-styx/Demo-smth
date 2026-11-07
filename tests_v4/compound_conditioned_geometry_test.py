@@ -49,4 +49,15 @@ for width,hidden in ((0,16),(32,0)):
  try:CompoundConditionedGeometry(Dummy(),width=width,hidden=hidden)
  except ValueError:pass
  else:raise AssertionError("accepted invalid module dimensions")
-print("PASS compound conditioned geometry: per-compound behavior, exact missing identity, masked residues, gradients, invalid graph, configurable width and input validation")
+class InvalidEnhancement(nn.Module):
+ def __init__(self, mode):
+  super().__init__()
+  self.mode=mode
+ def enhance(self,tokens,graph):
+  if self.mode=='shape':return tokens[:-1]
+  return torch.full_like(tokens,float('nan'))
+for mode in ('shape','nonfinite'):
+ try:CompoundConditionedGeometry(InvalidEnhancement(mode))(t,g,c)
+ except ValueError:pass
+ else:raise AssertionError(f'Accepted invalid GVP enhancement: {mode}')
+print("PASS compound conditioned geometry: gates, identity, gradients, shape/dtype validation, invalid and nonfinite enhancements")

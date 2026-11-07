@@ -35,8 +35,10 @@ class CompoundConditionedGeometry(nn.Module):
         idx=torch.as_tensor(graph["indices"],device=tokens.device,dtype=torch.long)
         if idx.ndim!=1 or idx.numel()==0 or idx.min()<0 or idx.max()>=length or idx.unique().numel()!=idx.numel():
             raise ValueError("Invalid or duplicate structure residue indices")
-        delta=self.geometry.enhance(tokens,graph)-tokens
-        if delta.shape!=tokens.shape:raise ValueError("GVP alignment mismatch")
+        enhanced=self.geometry.enhance(tokens,graph)
+        if enhanced.shape!=tokens.shape:raise ValueError("GVP alignment mismatch")
+        if not torch.isfinite(enhanced).all():raise ValueError("Nonfinite GVP enhancement")
+        delta=enhanced-tokens
         coverage=tokens.new_full((batch,length,1),idx.numel()/length)
         x=torch.cat((
             original,delta.unsqueeze(0).expand(batch,-1,-1),
