@@ -1,0 +1,33 @@
+{
+  "status": "MECHANICAL_EVIDENCE_ONLY_NOT_SOURCE_APPROVAL",
+  "records": 63,
+  "tasks": 3,
+  "counts": {
+    "UNRESOLVED_CHEMICAL_MAPPING": 40,
+    "EXACT_NUMERIC_MATCH": 23
+  },
+  "by_target": {
+    "RIOK2": {
+      "EXACT_NUMERIC_MATCH": 9,
+      "UNRESOLVED_CHEMICAL_MAPPING": 11
+    },
+    "IRAK3": {
+      "UNRESOLVED_CHEMICAL_MAPPING": 15,
+      "EXACT_NUMERIC_MATCH": 9
+    },
+    "SRPK3": {
+      "UNRESOLVED_CHEMICAL_MAPPING": 14,
+      "EXACT_NUMERIC_MATCH": 5
+    }
+  },
+  "source_doi": "10.1038/nbt.1990",
+  "workbook_sha256": "e47821b2e959ff22aa6d1613b236a63fb530f0da19cfa8d45408598cf27498d7",
+  "synonyms_sha256": "236c9685282c89abd8144ea55b5bd3b29a16ae487fa83feb6aa3fbd39c3c3f6a",
+  "review_files_unchanged": true,
+  "limits": [
+    "Chemical identity uses cached synonyms and legacy reference structures, not original compound certificates.",
+    "Physical constructs, assay conditions and source method remain unapproved.",
+    "Unmatched structures are not inferred from matching affinity values.",
+    "Blank primary cells never become exact numeric labels."
+  ]
+}
