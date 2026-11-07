@@ -1,0 +1,49 @@
+{
+  "status": "EXPLORATORY_REPEATEDLY_INSPECTED_DEV_NOT_INDEPENDENT_TEST",
+  "source_sha256": "81cde4d6b5907cba8b67f7f653198db3dec1e4f1f6d5dbf5981db61915b9b4a4",
+  "validation_numeric_pairs": 71,
+  "validation_targets": 4,
+  "seeds": [
+    {
+      "seed": 2103,
+      "mixed_target_macro_rmse": 1.39821779192235,
+      "numeric_target_macro_rmse": 0.9007600167754573,
+      "numeric_minus_mixed_macro_rmse": -0.4974577751468927,
+      "bootstrap_95pct_ci_numeric_minus_mixed": [
+        -0.5761568766559171,
+        -0.3703878211660683
+      ],
+      "target_count": 4
+    },
+    {
+      "seed": 2104,
+      "mixed_target_macro_rmse": 1.4643801235360172,
+      "numeric_target_macro_rmse": 0.9303607108968944,
+      "numeric_minus_mixed_macro_rmse": -0.5340194126391228,
+      "bootstrap_95pct_ci_numeric_minus_mixed": [
+        -0.6241831656454672,
+        -0.37822296198835403
+      ],
+      "target_count": 4
+    },
+    {
+      "seed": 2105,
+      "mixed_target_macro_rmse": 1.4509056370240154,
+      "numeric_target_macro_rmse": 0.8977167202425207,
+      "numeric_minus_mixed_macro_rmse": -0.5531889167814947,
+      "bootstrap_95pct_ci_numeric_minus_mixed": [
+        -0.6534543382273941,
+        -0.436839495972836
+      ],
+      "target_count": 4
+    }
+  ],
+  "bootstrap_draws": 20000,
+  "bootstrap_unit": "protein target",
+  "notes": [
+    "Paired predictions on identical numeric-Kd validation pairs; no screening blanks treated as quantitative Kd.",
+    "Four targets only; intervals are unstable and do not capture training-set or assay-construct uncertainty.",
+    "This is a post-hoc development comparison, not a statistical confirmation or independent holdout.",
+    "The mixed-label and numeric-only models are compared at fixed epoch 4."
+  ]
+}
