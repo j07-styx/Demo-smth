@@ -1,0 +1,17 @@
+{
+  "status": "PRELIMINARY_BINDINGDB_CANDIDATE_DEV_NOT_ASSAY_VERIFIED",
+  "train_pairs": 37441,
+  "val_pairs": 4764,
+  "train_components": 135,
+  "val_components": 33,
+  "train_only_mean_rmse": 1.6830994684812233,
+  "candidate_filter": "task >=15 unique compounds; replicate pKd range <=0.1",
+  "split": "sha256 component hash; 20 percent components for dev validation; not a final test",
+  "compound_protein_kmer_ridge_alpha_0.1_rmse": 1.7936786573178265,
+  "compound_protein_kmer_ridge_alpha_1.0_rmse": 1.6707552847421274,
+  "compound_protein_kmer_ridge_alpha_10.0_rmse": 1.673873512518998,
+  "protein_sequence_source": "BindingDB full candidate records; SHA256 verified against task sequence keys",
+  "reference_method_note": "DeepDTA-inspired paired molecular/protein sequence input, linear k-mer ablation; NOT a DeepDTA reproduction or superiority claim",
+  "morgan_ridge_alpha_10_rmse": 1.961218095365074,
+  "morgan_ridge_alpha_100_rmse": 1.7851007340568539
+}
