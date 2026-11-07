@@ -1,0 +1,214 @@
+{
+  "status": "PROVISIONAL_COMPONENT_WEIGHTING_AUDIT",
+  "train_only_label_mean": 7.00095902641633,
+  "validation_pairs": 4764,
+  "validation_components": 33,
+  "pooled_mean_baseline_rmse": 1.6830994684812233,
+  "component_macro_mean_baseline_rmse": 1.7889966558910297,
+  "largest_component_fraction": 0.20004198152812763,
+  "top_five_component_fraction": 0.6815701091519731,
+  "component_size_min": 15,
+  "component_size_median": 40,
+  "component_size_max": 953,
+  "components": [
+    {
+      "component_id": "0f0b192c63b4ae2a480bf67568656cf4b915ef5b7874174f06567f8ef9be886a",
+      "n": 953,
+      "mean_label": 7.454404360977019,
+      "mean_baseline_rmse": 1.5002623770299937
+    },
+    {
+      "component_id": "d0ba9f9f7c16120c11d2b27069e9f2975301cda3192eb31cabc0612873e44fb7",
+      "n": 703,
+      "mean_label": 7.620556415564672,
+      "mean_baseline_rmse": 1.2650184718569097
+    },
+    {
+      "component_id": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+      "n": 627,
+      "mean_label": 6.2655237921743465,
+      "mean_baseline_rmse": 1.5143735398753257
+    },
+    {
+      "component_id": "11ab955957f0c834f2f2074b528046aa776f8a449a79b5eac27f043dd7cb8e21",
+      "n": 599,
+      "mean_label": 6.6420042068558365,
+      "mean_baseline_rmse": 1.6648406632608368
+    },
+    {
+      "component_id": "21bcf3ae01c329f2a9caf8b6af601f7c6dc5355fb67930b4481acf2bb0b80b70",
+      "n": 365,
+      "mean_label": 6.421461746306667,
+      "mean_baseline_rmse": 0.8382560547003891
+    },
+    {
+      "component_id": "11ca046dbcb9b9e5510fbbc492714788969a2a17c1ea8fe3708430455a9e85d9",
+      "n": 234,
+      "mean_label": 6.944228419611192,
+      "mean_baseline_rmse": 1.0115362617829808
+    },
+    {
+      "component_id": "272729ea12e07654f922db22308673539882764491f0b55e31767ec1f714c328",
+      "n": 220,
+      "mean_label": 10.247719814132626,
+      "mean_baseline_rmse": 3.2788346113281346
+    },
+    {
+      "component_id": "24e3b138fc0a2cccb5ec43815284c4275c9272df3f603652af49b1a8c2d7e8a3",
+      "n": 157,
+      "mean_label": 5.2457620574464645,
+      "mean_baseline_rmse": 2.501741524653645
+    },
+    {
+      "component_id": "d8766228613d90eec8b5d683e0b08d0ac0a267d8b20d557e73af40590e9ea5bb",
+      "n": 97,
+      "mean_label": 5.576283410841231,
+      "mean_baseline_rmse": 1.7185258237002203
+    },
+    {
+      "component_id": "568d600386ab5ce56921f3ffd2bb61cd3858ebd51062c6861216dc086abbcd5e",
+      "n": 95,
+      "mean_label": 4.8273328034800915,
+      "mean_baseline_rmse": 2.2190963397720433
+    },
+    {
+      "component_id": "2d1ea9acc8df2965da341a854df3a334d067a0d45c7814661502b19c1ce3196a",
+      "n": 73,
+      "mean_label": 6.772944667971517,
+      "mean_baseline_rmse": 0.6199203925046458
+    },
+    {
+      "component_id": "0174be852ebbe77589d702249afd0f20c7efd239b7c6881fe55f28b76d1e9d97",
+      "n": 66,
+      "mean_label": 7.617541865962745,
+      "mean_baseline_rmse": 1.5860916834564847
+    },
+    {
+      "component_id": "199b54314c927d12922cfad459f823fe2dac4f14f15831b6a5d1b6136c4c8eb6",
+      "n": 47,
+      "mean_label": 8.287398106693567,
+      "mean_baseline_rmse": 1.5638520364476527
+    },
+    {
+      "component_id": "076f8c05db72feba130275ee7c2fa5fe6bc2a88f8bd25e3022966d0eece3ef8c",
+      "n": 45,
+      "mean_label": 9.124423119220477,
+      "mean_baseline_rmse": 2.1504645188756846
+    },
+    {
+      "component_id": "95d418e293225bfd6e882a972d6a593a5c0dbe96e87443c51c8ac3caa25ec555",
+      "n": 45,
+      "mean_label": 7.9970020507286765,
+      "mean_baseline_rmse": 1.153576083175027
+    },
+    {
+      "component_id": "741d5b5368b84456777eb2a6f9ef1b9fb372902b432b77def324e12b9e41be66",
+      "n": 43,
+      "mean_label": 5.322914266947657,
+      "mean_baseline_rmse": 1.7730293479512347
+    },
+    {
+      "component_id": "335308f096756a3df0215872048688705e4c202b3fb4ac426b1d7a2c0ae16340",
+      "n": 40,
+      "mean_label": 4.295368385978096,
+      "mean_baseline_rmse": 2.7481420108400565
+    },
+    {
+      "component_id": "157e57336ec87f9f746263022cafc4b988e9ebaf633e0d9724b5dc5e14d7c49b",
+      "n": 35,
+      "mean_label": 5.734436008289691,
+      "mean_baseline_rmse": 1.562662049914656
+    },
+    {
+      "component_id": "8b157d74d30d5eae406928c97b8fee276351559011a460ddf7b8ef5d273129e0",
+      "n": 31,
+      "mean_label": 5.866164764424315,
+      "mean_baseline_rmse": 1.3437395367050338
+    },
+    {
+      "component_id": "165a90112ea102f6a9948e10093b98c7bc5019196698bdd04ed4289c207a6007",
+      "n": 26,
+      "mean_label": 2.7274781592662722,
+      "mean_baseline_rmse": 4.3009425549833065
+    },
+    {
+      "component_id": "23d8ef29b75dc248cf4f6b5a130886882f8419a9cc1cb5d7c5b89ad14488fc81",
+      "n": 26,
+      "mean_label": 5.661191923083932,
+      "mean_baseline_rmse": 1.3745832954330948
+    },
+    {
+      "component_id": "72c6c61e116b15fe16842142a7e76887366a8f33da9a9e3811a769ff2d7134d7",
+      "n": 24,
+      "mean_label": 7.837201250804713,
+      "mean_baseline_rmse": 1.2445251099179855
+    },
+    {
+      "component_id": "a0818bc319497dcbb5bf8500e21505f4bb6b530a458eecdf022cf9160bbfaa4c",
+      "n": 24,
+      "mean_label": 6.284945214158069,
+      "mean_baseline_rmse": 1.0861496795839105
+    },
+    {
+      "component_id": "7537635d5a2dfd6b215796dbfdfb18cdd78fe52913a90a3b426ef989f7505019",
+      "n": 23,
+      "mean_label": 7.259178009593375,
+      "mean_baseline_rmse": 0.5532807805762814
+    },
+    {
+      "component_id": "aeeb5ff23a5977202374bae310314ca4aaae09190c582e8393589327b48254ca",
+      "n": 22,
+      "mean_label": 6.4912978847105425,
+      "mean_baseline_rmse": 0.9858549722481295
+    },
+    {
+      "component_id": "5a85ff49095e74867e71119eeb994a5c9a53f925f67bf4778daea26503a01844",
+      "n": 20,
+      "mean_label": 4.453695235270234,
+      "mean_baseline_rmse": 2.6563338348615386
+    },
+    {
+      "component_id": "fcf2e5d457e3de6b63f93f9a479f02c75c4e736e0c7afce9c76b1c340d8aa069",
+      "n": 20,
+      "mean_label": 6.595795404209513,
+      "mean_baseline_rmse": 1.0721456303815304
+    },
+    {
+      "component_id": "18023b2580d92ef2eb7ab2703d1eca7b00059f0fd591583ec019b99360e56545",
+      "n": 19,
+      "mean_label": 4.065426189757809,
+      "mean_baseline_rmse": 2.948072653283881
+    },
+    {
+      "component_id": "aa80020bd60c00ce71e815c56707b16b56f82ba9c1118bb6950541bcf5059e03",
+      "n": 18,
+      "mean_label": 4.715287959205696,
+      "mean_baseline_rmse": 2.3143167265494635
+    },
+    {
+      "component_id": "d58a362e7e6061c3e3ca1455272f008832e88b0d850609843887587047a6f27b",
+      "n": 18,
+      "mean_label": 5.974974346075431,
+      "mean_baseline_rmse": 1.1783758842659346
+    },
+    {
+      "component_id": "4b0f30eef05bbfcd04a4fbab58f8766daf460e03d95e0b4e07c33892fd52dcc8",
+      "n": 17,
+      "mean_label": 4.197869817204154,
+      "mean_baseline_rmse": 2.8337776696773194
+    },
+    {
+      "component_id": "3fd33166364d6754808cd13825181f72272f9ff1bff05499874ea5560a03462c",
+      "n": 17,
+      "mean_label": 5.34699732678659,
+      "mean_baseline_rmse": 1.7904716330666948
+    },
+    {
+      "component_id": "0af54a6c12c3a3902cb46e90a282a610a9d210851ec73653bc7a9e2373972647",
+      "n": 15,
+      "mean_label": 4.9304317783801235,
+      "mean_baseline_rmse": 2.6840958917439597
+    }
+  ],
+  "warning": "Pooled RMSE can be dominated by large components; model evaluation should include component macro RMSE and per-component metrics."
+}
