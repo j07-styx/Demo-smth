@@ -1,0 +1,27 @@
+{
+  "status": "EXPLORATORY_INTERNAL_TARGET_HOLDOUT_NOT_EXTERNAL_TEST",
+  "train_numeric_pairs": 68,
+  "heldout_numeric_pairs": 38,
+  "heldout_targets": [
+    "CLK1",
+    "ROCK2"
+  ],
+  "train_only_mean_baseline": {
+    "pooled_rmse": 0.9489519773714601,
+    "target_macro_rmse": 0.9671943896858579
+  },
+  "train_only_compound_mean_baseline": {
+    "pooled_rmse": 1.1212409980288616,
+    "target_macro_rmse": 1.1263071021831972
+  },
+  "fresh_sequence_epoch4": {
+    "pooled_rmse": 0.965140612051059,
+    "target_macro_rmse": 0.9824469498695025
+  },
+  "notes": [
+    "Holdout targets are disjoint from fresh training targets; source dataset and target selection remain development-stage.",
+    "Compound means computed only from the 68 training pairs; no heldout labels used in baseline.",
+    "Model trained for fixed four epochs; epoch 4 predictions are reported without selecting a best holdout epoch.",
+    "No independent external test or assay construct validation."
+  ]
+}
