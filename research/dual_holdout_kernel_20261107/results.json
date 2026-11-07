@@ -1,0 +1,319 @@
+{
+  "summary_common_targets": {
+    "protein_only": {
+      "targets": 9,
+      "kernel_macro_rmse": 0.8539709893379291,
+      "global_mean_macro_rmse": 0.86291009093772
+    },
+    "protein_and_compound": {
+      "targets": 9,
+      "kernel_macro_rmse": 0.8820874629278017,
+      "global_mean_macro_rmse": 0.8990696734414948
+    },
+    "protein_and_scaffold": {
+      "targets": 9,
+      "kernel_macro_rmse": 0.8820874629278017,
+      "global_mean_macro_rmse": 0.8990696734414948
+    }
+  },
+  "folds": [
+    {
+      "target": "MKNK2",
+      "mode": "protein_only",
+      "train_rows": 88,
+      "train_compounds": 36,
+      "query_rows": 18,
+      "status": "SCORED",
+      "kernel_rmse": 0.8520789223214872,
+      "global_mean_rmse": 1.0270251243848285,
+      "query_mean_nearest_tanimoto": 0.9390948230599601
+    },
+    {
+      "target": "MKNK2",
+      "mode": "protein_and_compound",
+      "train_rows": 33,
+      "train_compounds": 20,
+      "query_rows": 18,
+      "status": "SCORED",
+      "kernel_rmse": 1.1407448123808175,
+      "global_mean_rmse": 1.1458498002744002,
+      "query_mean_nearest_tanimoto": 0.26735307713344725
+    },
+    {
+      "target": "MKNK2",
+      "mode": "protein_and_scaffold",
+      "train_rows": 33,
+      "train_compounds": 20,
+      "query_rows": 18,
+      "status": "SCORED",
+      "kernel_rmse": 1.1407448123808175,
+      "global_mean_rmse": 1.1458498002744002,
+      "query_mean_nearest_tanimoto": 0.26735307713344725
+    },
+    {
+      "target": "ROCK2",
+      "mode": "protein_only",
+      "train_rows": 92,
+      "train_compounds": 37,
+      "query_rows": 14,
+      "status": "SCORED",
+      "kernel_rmse": 0.9456788893139694,
+      "global_mean_rmse": 1.043037750408661,
+      "query_mean_nearest_tanimoto": 0.9412550066755675
+    },
+    {
+      "target": "ROCK2",
+      "mode": "protein_and_compound",
+      "train_rows": 42,
+      "train_compounds": 24,
+      "query_rows": 14,
+      "status": "SCORED",
+      "kernel_rmse": 1.1352712629687491,
+      "global_mean_rmse": 1.1390401203552187,
+      "query_mean_nearest_tanimoto": 0.268231542394933
+    },
+    {
+      "target": "ROCK2",
+      "mode": "protein_and_scaffold",
+      "train_rows": 42,
+      "train_compounds": 24,
+      "query_rows": 14,
+      "status": "SCORED",
+      "kernel_rmse": 1.1352712629687491,
+      "global_mean_rmse": 1.1390401203552187,
+      "query_mean_nearest_tanimoto": 0.268231542394933
+    },
+    {
+      "target": "NEK2",
+      "mode": "protein_only",
+      "train_rows": 94,
+      "train_compounds": 38,
+      "query_rows": 12,
+      "status": "SCORED",
+      "kernel_rmse": 0.7663196390241506,
+      "global_mean_rmse": 0.5485213678958364,
+      "query_mean_nearest_tanimoto": 1.0
+    },
+    {
+      "target": "NEK2",
+      "mode": "protein_and_compound",
+      "train_rows": 53,
+      "train_compounds": 26,
+      "query_rows": 12,
+      "status": "SCORED",
+      "kernel_rmse": 0.4998013117397708,
+      "global_mean_rmse": 0.5249392011895964,
+      "query_mean_nearest_tanimoto": 0.26310105994335403
+    },
+    {
+      "target": "NEK2",
+      "mode": "protein_and_scaffold",
+      "train_rows": 53,
+      "train_compounds": 26,
+      "query_rows": 12,
+      "status": "SCORED",
+      "kernel_rmse": 0.4998013117397708,
+      "global_mean_rmse": 0.5249392011895964,
+      "query_mean_nearest_tanimoto": 0.26310105994335403
+    },
+    {
+      "target": "CSNK1G3",
+      "mode": "protein_only",
+      "train_rows": 100,
+      "train_compounds": 38,
+      "query_rows": 6,
+      "status": "SCORED",
+      "kernel_rmse": 0.7658467399850313,
+      "global_mean_rmse": 0.7510922374988169,
+      "query_mean_nearest_tanimoto": 1.0
+    },
+    {
+      "target": "CSNK1G3",
+      "mode": "protein_and_compound",
+      "train_rows": 79,
+      "train_compounds": 32,
+      "query_rows": 6,
+      "status": "SCORED",
+      "kernel_rmse": 0.6775342526621095,
+      "global_mean_rmse": 0.7259967639260461,
+      "query_mean_nearest_tanimoto": 0.3008433517035278
+    },
+    {
+      "target": "CSNK1G3",
+      "mode": "protein_and_scaffold",
+      "train_rows": 79,
+      "train_compounds": 32,
+      "query_rows": 6,
+      "status": "SCORED",
+      "kernel_rmse": 0.6775342526621095,
+      "global_mean_rmse": 0.7259967639260461,
+      "query_mean_nearest_tanimoto": 0.3008433517035278
+    },
+    {
+      "target": "VRK2",
+      "mode": "protein_only",
+      "train_rows": 102,
+      "train_compounds": 38,
+      "query_rows": 4,
+      "status": "SCORED",
+      "kernel_rmse": 0.792967516199003,
+      "global_mean_rmse": 0.7363368460733698,
+      "query_mean_nearest_tanimoto": 1.0
+    },
+    {
+      "target": "VRK2",
+      "mode": "protein_and_compound",
+      "train_rows": 88,
+      "train_compounds": 34,
+      "query_rows": 4,
+      "status": "SCORED",
+      "kernel_rmse": 0.6776105341559373,
+      "global_mean_rmse": 0.739103912333799,
+      "query_mean_nearest_tanimoto": 0.2678769836151847
+    },
+    {
+      "target": "VRK2",
+      "mode": "protein_and_scaffold",
+      "train_rows": 88,
+      "train_compounds": 34,
+      "query_rows": 4,
+      "status": "SCORED",
+      "kernel_rmse": 0.6776105341559373,
+      "global_mean_rmse": 0.739103912333799,
+      "query_mean_nearest_tanimoto": 0.2678769836151847
+    },
+    {
+      "target": "TGFBR1",
+      "mode": "protein_only",
+      "train_rows": 97,
+      "train_compounds": 35,
+      "query_rows": 9,
+      "status": "SCORED",
+      "kernel_rmse": 0.8778643318456067,
+      "global_mean_rmse": 0.7506251954410927,
+      "query_mean_nearest_tanimoto": 0.7514091453533432
+    },
+    {
+      "target": "TGFBR1",
+      "mode": "protein_and_compound",
+      "train_rows": 75,
+      "train_compounds": 29,
+      "query_rows": 9,
+      "status": "SCORED",
+      "kernel_rmse": 0.6755785648033888,
+      "global_mean_rmse": 0.6867502124081003,
+      "query_mean_nearest_tanimoto": 0.2514512526598053
+    },
+    {
+      "target": "TGFBR1",
+      "mode": "protein_and_scaffold",
+      "train_rows": 75,
+      "train_compounds": 29,
+      "query_rows": 9,
+      "status": "SCORED",
+      "kernel_rmse": 0.6755785648033888,
+      "global_mean_rmse": 0.6867502124081003,
+      "query_mean_nearest_tanimoto": 0.2514512526598053
+    },
+    {
+      "target": "CDK8",
+      "mode": "protein_only",
+      "train_rows": 97,
+      "train_compounds": 37,
+      "query_rows": 9,
+      "status": "SCORED",
+      "kernel_rmse": 0.9735685944319635,
+      "global_mean_rmse": 1.0819628611432688,
+      "query_mean_nearest_tanimoto": 0.9089692101740295
+    },
+    {
+      "target": "CDK8",
+      "mode": "protein_and_compound",
+      "train_rows": 70,
+      "train_compounds": 29,
+      "query_rows": 9,
+      "status": "SCORED",
+      "kernel_rmse": 1.2322042521556864,
+      "global_mean_rmse": 1.1817072888718518,
+      "query_mean_nearest_tanimoto": 0.23912412554217427
+    },
+    {
+      "target": "CDK8",
+      "mode": "protein_and_scaffold",
+      "train_rows": 70,
+      "train_compounds": 29,
+      "query_rows": 9,
+      "status": "SCORED",
+      "kernel_rmse": 1.2322042521556864,
+      "global_mean_rmse": 1.1817072888718518,
+      "query_mean_nearest_tanimoto": 0.23912412554217427
+    },
+    {
+      "target": "MEK6",
+      "mode": "protein_only",
+      "train_rows": 96,
+      "train_compounds": 38,
+      "query_rows": 10,
+      "status": "SCORED",
+      "kernel_rmse": 0.7509324768380158,
+      "global_mean_rmse": 0.9466095743741714,
+      "query_mean_nearest_tanimoto": 1.0
+    },
+    {
+      "target": "MEK6",
+      "mode": "protein_and_compound",
+      "train_rows": 60,
+      "train_compounds": 28,
+      "query_rows": 10,
+      "status": "SCORED",
+      "kernel_rmse": 0.8817390265922986,
+      "global_mean_rmse": 0.92437958196177,
+      "query_mean_nearest_tanimoto": 0.290801876062039
+    },
+    {
+      "target": "MEK6",
+      "mode": "protein_and_scaffold",
+      "train_rows": 60,
+      "train_compounds": 28,
+      "query_rows": 10,
+      "status": "SCORED",
+      "kernel_rmse": 0.8817390265922986,
+      "global_mean_rmse": 0.92437958196177,
+      "query_mean_nearest_tanimoto": 0.290801876062039
+    },
+    {
+      "target": "CLK1",
+      "mode": "protein_only",
+      "train_rows": 82,
+      "train_compounds": 30,
+      "query_rows": 24,
+      "status": "SCORED",
+      "kernel_rmse": 0.9604817940821352,
+      "global_mean_rmse": 0.8809798612194335,
+      "query_mean_nearest_tanimoto": 0.7588509286742653
+    },
+    {
+      "target": "CLK1",
+      "mode": "protein_and_compound",
+      "train_rows": 24,
+      "train_compounds": 14,
+      "query_rows": 24,
+      "status": "SCORED",
+      "kernel_rmse": 1.0183031488914578,
+      "global_mean_rmse": 1.0238601796526698,
+      "query_mean_nearest_tanimoto": 0.22357102731245768
+    },
+    {
+      "target": "CLK1",
+      "mode": "protein_and_scaffold",
+      "train_rows": 24,
+      "train_compounds": 14,
+      "query_rows": 24,
+      "status": "SCORED",
+      "kernel_rmse": 1.0183031488914578,
+      "global_mean_rmse": 1.0238601796526698,
+      "query_mean_nearest_tanimoto": 0.22357102731245768
+    }
+  ],
+  "all_disjointness_assertions_passed": true
+}

@@ -1,0 +1,97 @@
+{
+  "controls": [
+    {
+      "target": "MKNK2",
+      "n_train": 33,
+      "dual_rmse": 1.1407448123808175,
+      "size_matched_mean_rmse": 0.9372551416605845,
+      "dual_global_mean_rmse": 1.1458498002744002,
+      "draws": 100
+    },
+    {
+      "target": "ROCK2",
+      "n_train": 42,
+      "dual_rmse": 1.1352712629687491,
+      "size_matched_mean_rmse": 0.9818488539041162,
+      "dual_global_mean_rmse": 1.1390401203552187,
+      "draws": 100
+    },
+    {
+      "target": "NEK2",
+      "n_train": 53,
+      "dual_rmse": 0.4998013117397708,
+      "size_matched_mean_rmse": 0.7260994217122442,
+      "dual_global_mean_rmse": 0.5249392011895964,
+      "draws": 100
+    },
+    {
+      "target": "CSNK1G3",
+      "n_train": 79,
+      "dual_rmse": 0.6775342526621095,
+      "size_matched_mean_rmse": 0.773767431366428,
+      "dual_global_mean_rmse": 0.7259967639260461,
+      "draws": 100
+    },
+    {
+      "target": "VRK2",
+      "n_train": 88,
+      "dual_rmse": 0.6776105341559373,
+      "size_matched_mean_rmse": 0.7706816442107981,
+      "dual_global_mean_rmse": 0.739103912333799,
+      "draws": 100
+    },
+    {
+      "target": "TGFBR1",
+      "n_train": 75,
+      "dual_rmse": 0.6755785648033888,
+      "size_matched_mean_rmse": 0.8724628483696024,
+      "dual_global_mean_rmse": 0.6867502124081003,
+      "draws": 100
+    },
+    {
+      "target": "CDK8",
+      "n_train": 70,
+      "dual_rmse": 1.2322042521556864,
+      "size_matched_mean_rmse": 1.0035011729427101,
+      "dual_global_mean_rmse": 1.1817072888718518,
+      "draws": 100
+    },
+    {
+      "target": "MEK6",
+      "n_train": 60,
+      "dual_rmse": 0.8817390265922986,
+      "size_matched_mean_rmse": 0.7921869715226124,
+      "dual_global_mean_rmse": 0.92437958196177,
+      "draws": 100
+    },
+    {
+      "target": "CLK1",
+      "n_train": 24,
+      "dual_rmse": 1.0183031488914578,
+      "size_matched_mean_rmse": 0.9443972434816941,
+      "dual_global_mean_rmse": 1.0238601796526698,
+      "draws": 100
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "dual_kernel minus size_matched_mean_rmse",
+      "delta": 0.015176270797713986,
+      "target_bootstrap_95_interval": [
+        -0.09063704946268447,
+        0.11578198124335212
+      ]
+    },
+    {
+      "comparison": "dual_kernel minus dual_global_mean_rmse",
+      "delta": -0.016982210513692926,
+      "target_bootstrap_95_interval": [
+        -0.03641873534932221,
+        0.003916726129162598
+      ]
+    }
+  ],
+  "seed": 71114,
+  "scope": "Post-experiment diagnostic; row-count matching does not match chemical or protein composition",
+  "random_reduction_fits": 900
+}

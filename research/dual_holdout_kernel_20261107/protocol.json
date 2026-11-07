@@ -1,0 +1,20 @@
+{
+  "scope": "Training-only challenge, not independent benchmark",
+  "rows_sha256": "81cde4d6b5907cba8b67f7f653198db3dec1e4f1f6d5dbf5981db61915b9b4a4",
+  "model": "Fixed Tanimoto ridge alpha=1",
+  "regimes": [
+    "protein_only",
+    "protein_and_compound",
+    "protein_and_scaffold"
+  ],
+  "selection": "Each of nine training targets held out in turn; remove every query compound or scaffold from other-target training rows",
+  "minimum_training_rows": 2,
+  "same_query_rows_across_regimes": true,
+  "no_hyperparameter_search": true,
+  "limits": [
+    "Training size changes across regimes",
+    "Identifier separation is not homology separation",
+    "Numeric-only ascertainment",
+    "Repeated development use"
+  ]
+}
