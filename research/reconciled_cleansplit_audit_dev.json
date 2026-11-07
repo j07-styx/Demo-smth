@@ -1,0 +1,209 @@
+{
+  "status": "DEVELOPMENT_AUDIT_ONLY_NOT_INDEPENDENT_TEST",
+  "rows": 650,
+  "strata": {
+    "train": {
+      "numeric_Kd": 106,
+      "screen_negative_or_weak_binding": 344
+    },
+    "val": {
+      "screen_negative_or_weak_binding": 129,
+      "numeric_Kd": 71
+    }
+  },
+  "overlap": {
+    "compound": {
+      "train": 50,
+      "val": 50,
+      "shared": 50,
+      "shared_values": [
+        "04b2c127ef16245cf512e9acc7a3fd66d4fad8be0842f2dd73f3f36e579a00fc",
+        "058237bc029ac03eba31bf559fafe14411cd429740778919412af696a05871c9",
+        "0ce58e2ed33eed0f400bd7365e128577c746f01fa62cf5cbccd77a064dcb2fde",
+        "133e5664b8caeabe6884ea1abf9470a413a8d6aa797a07bc1da587f01cccf0b5",
+        "24a125eecf029bff23d9cd2d86bc4c63297e16cabba8e360ad67f999efd3e275",
+        "2fd10ed7d65e66bfe21b3b46ec7b33f09fc61af42c2c47d50a4997224d3e15e8",
+        "39a2d9f0b845c9544cc866011679de14f64bf3afd0650dfc301e1e4eaaf89672",
+        "3d8e04ad95f9430f5310b505f085698123af87cee559391f4deef18375f0dde4",
+        "3dfce9d8e81d3506b5195458458646846d3f2267c6cb4317755368a9f0771eee",
+        "45d50009d6d35720ec218be630fe85cecf36ed8e6372407f35cc3cef6ce702ec",
+        "46b7b9196fe0aec67522eace3f2d27050405b06f5bc581b0765cd205af9ffe5e",
+        "4a34c6d2a82fd64e5519197e3af1e17a4ee20c873074b9acd16ca6ff41e130b3",
+        "56592d5971c60df4bb2a64b3ce6fb01bc1cfbd67f18aebf93c286696fed02784",
+        "57834cbc78bae66c32b7d36a68a1bd3c5d811054ee35de2cab2607d63386b205",
+        "61c37476a73055e1658c94fafc2ff1cba82e5d86fc67475ae3fe261cf7c2c0c1",
+        "6770910a5753c8e637da05b92945c0312ecfca78ecd2f28c06dccc297034fa9d",
+        "6faf05ec86db44848a324d5e277335d017ac2a720ec4ad336a29223ae634ea11",
+        "714d8abb0e50edc4e2143ae9129a6ca280d6fda7c69c211a2e5a593246288ae0",
+        "727d8450fae262ee8f2c5db0f5302e1678f2754ebe244c0d63e62112f85e4b87",
+        "76003f2212a5de6157ea8a8a92024a61a7b3b368a2b855bc88f6a631cdec4bba",
+        "7938ccd3b1a1dba34ddceeacd785f4ecc6086f57b2e372c5cdda461e885e84ef",
+        "7a501ca1bd2a3b0f3d26625c42e15a37d944d9120971d4009233780786da147a",
+        "865b067b994c1efde41c4ded5ff1ecdac55dbcc40a8dc9effc42e72f900d0072",
+        "89520f20b3edf8936a94516b2fd2cf7834b356b4f9614726a650f2193041836c",
+        "8e978908c92939806475f4291717a390f3ace0b536f2bce0bfb52f134e50e8e7",
+        "8f41fad6dfdbce0a89b541c4f9d679190d0dd309ea3866356fe757065afec238",
+        "91ebfd820740c2dc8c9cd5a94ba0f48b262f8cf97faea52f389fcaa9291cf988",
+        "921e8c8807fd807f1b1dd5ebc7126467787a4b4a562570559f839a94e8f0c6ab",
+        "93b825345a716bebb0f35d1502d875ec0874201b71557db16137dc4e1c85cea7",
+        "9b7ce0493b796b7f1fb7f6161f0d630372b0a0122576b463c78468a6a27a4c56",
+        "a0c0bbc74b7e1c19cb73a2dfa336b4cf75180c5e34418c3fdf01becdb56e168d",
+        "a98a87e836dad929e86d285d5a7edd5b37bed6fdf9839a7262863c5cd08be120",
+        "aeda1bbeff6cc937d905f06bfbfc685034fa705951f292e66795a43e3e5782e4",
+        "b00b6dcc21c3bf4d9320aacc80832dcff54f2ebe6c71df7ce57edf0f05215b76",
+        "b09b707c370c956ecb4811d0447c2870011be64fa2dd24c128ac0e25c04b32e2",
+        "b82f416a4940940b437913a3396ad9d9588b35a465f78c7e87d7e4a0d2e82fed",
+        "bab8ca1932208002289cf5f7a6514cf5ef2481c2d081c39eb2ef3620fd85c75f",
+        "c2bb1f9021ac6bda87e4c85d62cf561d2e2fc2cff4a088b115dbdcd48bad4a47",
+        "caa227bf8d0a8a8629b86970db1d664cbbe0a9e9ce16dd41e4a9668bdea15ec8",
+        "ce9903a2c6f6dd942e55b97d016af4fecd98da244947c78801ab3de0a40f9bde",
+        "d3cd41e66be72a4a6e3340d7dcc959252701159bc80fd2fada43adc2f29d9930",
+        "d62786d59ecebb14fadb852e3464d751f38e8bac031eb4f21f567469544c6122",
+        "d64135968c7df098de7012d17d837d525d45917a9eaf1103721ba861e164de23",
+        "dcac9a0357262aca89ad14ee1d2c310cd8cddb6b61266d37979aafcfe3de813f",
+        "e3a60af5332b098c16636bf11c80e33857d1c032afbc88074743ea5aa7dcaeba",
+        "e975f950bcbd825dd43442e2f4af4f51ecffd8666bba19ff642adabeb1b2c5a5",
+        "ed05b765bcc85ba8758fddfe80d5f88cfdd0c97ef5bcf2357c8f449c5d98ab4f",
+        "eed2d1a6ddfe4a5d0c09b1dcda03892202db23d0a5719e7f7778227f4c687cd1",
+        "fc97d4677cd8c3d3e8afc33f61834573776a73a1e46aa9d5afe88a88e82f4d48",
+        "fd8926639e328dcdf2fde5a7a33e3c07328d2e1c63001101e1fe099e7e636dab"
+      ]
+    },
+    "sequence": {
+      "train": 9,
+      "val": 4,
+      "shared": 0,
+      "shared_values": []
+    },
+    "primary_compound": {
+      "train": 50,
+      "val": 50,
+      "shared": 50,
+      "shared_values": [
+        "A-674563",
+        "AB-1010",
+        "ABT-869",
+        "AG-013736",
+        "AST-487",
+        "AT-7519",
+        "AZD-2171",
+        "AZD-6244/ARRY-886",
+        "BIBW-2992",
+        "BIRB-796",
+        "BMS-345541",
+        "BMS-540215",
+        "CHIR-265/RAF-265",
+        "CI-1040",
+        "Dasatinib",
+        "EXEL-2880/GSK-1363089",
+        "Flavopiridol",
+        "GDC-0879",
+        "GDC-0941",
+        "GSK-690693",
+        "GW-2580",
+        "Gefitinib",
+        "HKI-272",
+        "Imatinib",
+        "KW-2449",
+        "LY-317615",
+        "LY-333531",
+        "Lapatinib",
+        "MLN-120B",
+        "MLN-518",
+        "MLN-8054",
+        "Nilotinib",
+        "PD-173955",
+        "PHA-665752",
+        "PI-103",
+        "PTK-787",
+        "Pazopanib",
+        "R406",
+        "SB-203580",
+        "SGX-523",
+        "SKI-606",
+        "SU-14813",
+        "Sorafenib",
+        "Staurosporine",
+        "TAE-684",
+        "TG-100-115",
+        "TG-101348",
+        "VX-680/MK-0457",
+        "VX-745",
+        "Vandetanib"
+      ]
+    },
+    "primary_protein": {
+      "train": 9,
+      "val": 4,
+      "shared": 0,
+      "shared_values": []
+    }
+  },
+  "pair_overlap_count": 0,
+  "same_compound_seen_in_both_splits": true,
+  "same_sequence_seen_in_both_splits": false,
+  "numeric_target_strata": {
+    "ADCK4": {
+      "val:screen_negative_or_weak_binding": 43,
+      "val:numeric_Kd": 7
+    },
+    "CDK8": {
+      "train:numeric_Kd": 9,
+      "train:screen_negative_or_weak_binding": 41
+    },
+    "CLK1": {
+      "train:numeric_Kd": 24,
+      "train:screen_negative_or_weak_binding": 26
+    },
+    "CSNK1G3": {
+      "train:numeric_Kd": 6,
+      "train:screen_negative_or_weak_binding": 44
+    },
+    "FRK": {
+      "val:screen_negative_or_weak_binding": 23,
+      "val:numeric_Kd": 27
+    },
+    "MEK5": {
+      "val:screen_negative_or_weak_binding": 19,
+      "val:numeric_Kd": 31
+    },
+    "MEK6": {
+      "train:screen_negative_or_weak_binding": 40,
+      "train:numeric_Kd": 10
+    },
+    "MKNK2": {
+      "train:numeric_Kd": 18,
+      "train:screen_negative_or_weak_binding": 32
+    },
+    "NEK2": {
+      "train:screen_negative_or_weak_binding": 38,
+      "train:numeric_Kd": 12
+    },
+    "OSR1": {
+      "val:screen_negative_or_weak_binding": 44,
+      "val:numeric_Kd": 6
+    },
+    "ROCK2": {
+      "train:screen_negative_or_weak_binding": 36,
+      "train:numeric_Kd": 14
+    },
+    "TGFBR1": {
+      "train:screen_negative_or_weak_binding": 41,
+      "train:numeric_Kd": 9
+    },
+    "VRK2": {
+      "train:numeric_Kd": 4,
+      "train:screen_negative_or_weak_binding": 46
+    }
+  },
+  "protocol_warnings": [
+    "Existing development validation has been repeatedly inspected.",
+    "Shared compounds prevent cold-compound claims.",
+    "No experimentally verified protein construct identity.",
+    "Kinase group STE is present in both splits; not family-disjoint.",
+    "Publisher blank/weak-binding cells are not quantitative Kd or validated censoring bounds.",
+    "No independently frozen holdout/test set exists.",
+    "This audit cannot detect structural or chemical similarity leakage without additional source verification."
+  ],
+  "recommendation": "Freeze a source-verified, label-blind, protein-component-disjoint external evaluation before comparing against published PerceiverCPI metrics."
+}
