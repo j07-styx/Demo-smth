@@ -103,7 +103,6 @@ def run():
         mask=torch.ones((batch,len(tokens)),device=dev,dtype=torch.bool)
         c_struct=c
         structured_tokens=geom(tokens,input_cache[p]["graph"])
-        q=tokens.unsqueeze(0).expand(batch,-1,-1)
         if train:
             output=base.predict_tokens(c_struct,structured_tokens.unsqueeze(0).expand(batch,-1,-1),mask)
             with torch.no_grad():
@@ -184,7 +183,7 @@ def run():
               "manifest_sha256":hashfile(root/"data/engineering_pilot/limited_alpha_3d_graph_manifest.json"),
               "row_sha256":hashfile(rootpilot/"rows.json"),
               "label_mean":mean,"label_std":std,
-              "status":"ENGINEERING_STRUCTURAL_CROSS_ATTENTION_DAVIS_NOT_SCIENCE_BENCHMARK"
+              "status":"RECONCILED_NUMERIC_RESIDUE_FUSION_DEV_NOT_INDEPENDENT_TEST"
             },tmp)
             os.replace(tmp,directory/"best_checkpoint.pt")
         else:
@@ -192,7 +191,7 @@ def run():
         if stale>=999:
             print("EARLY_STOP: four epochs without macro RMSE improvement",flush=True)
             break
-    report={"status":"COMPLETE_ENGINEERING_PILOT_NOT_SCIENTIFIC_RESULT",
+    report={"status":"COMPLETE_RECONCILED_NUMERIC_RESIDUE_DEV_NOT_INDEPENDENT_TEST",
         "train_protein_count":len(train_ids),"validation_protein_count":len(val_ids),
         "train_pair_count":sum(map(len,groups["train"].values())),
         "val_pair_count":sum(sum(r["primary_label_kind"]=="numeric_Kd" for r in g) for g in groups["val"].values()),
@@ -201,10 +200,10 @@ def run():
         "geometry_best_checkpoint_sha256":hashfile(directory/"best_checkpoint.pt"),
         "history":history,
         "limitations":[
-          "DAVIS engineering labels include reporting-floor values treated numerically, and the pilot is not family-disjoint.",
-          "AlphaFold geometry was selected by exact sequence-substring mapping, not verified experimental construct identity.",
+          "Only publisher-verified numeric-Kd cells are used in fitting and validation; blank screening-negative cells are excluded. The cohort is not family-disjoint.",
+          "AlphaFold geometry is name-mapped and is not verified against experimental assay constructs.",
           "The geometry-eligible cohort is a selected subset; comparisons outside that common cohort are invalid.",
-          "Single-seed small-cohort development pilot; insufficient to infer benefit of geometry or publish any result."
+          "Single-seed repeatedly inspected development validation; insufficient to infer structural benefit or publish an independent test result."
         ]}
     (directory/"manifest.json").write_text(json.dumps(report,indent=2),encoding="utf-8")
     print(json.dumps({"status":report["status"],"best_epoch":report["best_epoch"],
