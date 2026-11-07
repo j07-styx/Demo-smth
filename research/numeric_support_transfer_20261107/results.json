@@ -1,0 +1,284 @@
+[
+  {
+    "k": 1,
+    "targets": 7,
+    "episodes": 700,
+    "macro_mean_episode_rmse": {
+      "compound_mean": 0.9300378499617868,
+      "pooled_chemical_kernel": 0.8714307719591611,
+      "support_mean": 1.1651343029728565,
+      "support_offset": 0.9611421153546306,
+      "support_residual_kernel": 0.871425628480466,
+      "shuffled_support_kernel": 0.871425628480466
+    },
+    "per_target": [
+      {
+        "target": "CDK8",
+        "mean_rmse": {
+          "compound_mean": 0.98379457471481,
+          "pooled_chemical_kernel": 0.9710862762180392,
+          "support_mean": 1.313719598722643,
+          "support_offset": 1.0742067929624373,
+          "support_residual_kernel": 0.9588893581275906,
+          "shuffled_support_kernel": 0.9588893581275906
+        }
+      },
+      {
+        "target": "CLK1",
+        "mean_rmse": {
+          "compound_mean": 1.0251710441946957,
+          "pooled_chemical_kernel": 0.9593052653351524,
+          "support_mean": 1.196969528866181,
+          "support_offset": 1.0731261189307997,
+          "support_residual_kernel": 0.9633512852789249,
+          "shuffled_support_kernel": 0.9633512852789249
+        }
+      },
+      {
+        "target": "MEK6",
+        "mean_rmse": {
+          "compound_mean": 0.7612528117025006,
+          "pooled_chemical_kernel": 0.7485399967113645,
+          "support_mean": 1.2373502245569494,
+          "support_offset": 0.804737834122936,
+          "support_residual_kernel": 0.7472374698529245,
+          "shuffled_support_kernel": 0.7472374698529245
+        }
+      },
+      {
+        "target": "MKNK2",
+        "mean_rmse": {
+          "compound_mean": 0.8474246676170307,
+          "pooled_chemical_kernel": 0.8522824660542913,
+          "support_mean": 1.3937664720973106,
+          "support_offset": 0.9376224395841759,
+          "support_residual_kernel": 0.8524174423278549,
+          "shuffled_support_kernel": 0.8524174423278549
+        }
+      },
+      {
+        "target": "NEK2",
+        "mean_rmse": {
+          "compound_mean": 0.9331187360883285,
+          "pooled_chemical_kernel": 0.7637403518130735,
+          "support_mean": 0.7223040554878808,
+          "support_offset": 0.8834582357922625,
+          "support_residual_kernel": 0.7726696694647633,
+          "shuffled_support_kernel": 0.7726696694647633
+        }
+      },
+      {
+        "target": "ROCK2",
+        "mean_rmse": {
+          "compound_mean": 0.9695002231211259,
+          "pooled_chemical_kernel": 0.9218456074371052,
+          "support_mean": 1.5051573572732098,
+          "support_offset": 1.1126050858528636,
+          "support_residual_kernel": 0.932161438147505,
+          "shuffled_support_kernel": 0.932161438147505
+        }
+      },
+      {
+        "target": "TGFBR1",
+        "mean_rmse": {
+          "compound_mean": 0.9900028922940158,
+          "pooled_chemical_kernel": 0.8832154401451018,
+          "support_mean": 0.7866728838058219,
+          "support_offset": 0.8422383002369394,
+          "support_residual_kernel": 0.873252736163699,
+          "shuffled_support_kernel": 0.873252736163699
+        }
+      }
+    ],
+    "residual_beats_pooled_targets": 3,
+    "residual_beats_shuffled_targets": 0
+  },
+  {
+    "k": 3,
+    "targets": 7,
+    "episodes": 700,
+    "macro_mean_episode_rmse": {
+      "compound_mean": 0.9262113762387324,
+      "pooled_chemical_kernel": 0.8668591460659903,
+      "support_mean": 0.9893425983799877,
+      "support_offset": 0.9368538417478158,
+      "support_residual_kernel": 0.8669330399787988,
+      "shuffled_support_kernel": 0.8690178528651332
+    },
+    "per_target": [
+      {
+        "target": "CDK8",
+        "mean_rmse": {
+          "compound_mean": 0.9697956029162791,
+          "pooled_chemical_kernel": 0.955617885910111,
+          "support_mean": 1.1163273179650932,
+          "support_offset": 1.0237579711862816,
+          "support_residual_kernel": 0.9283518132175999,
+          "shuffled_support_kernel": 0.9462402730793119
+        }
+      },
+      {
+        "target": "CLK1",
+        "mean_rmse": {
+          "compound_mean": 1.0070549666958786,
+          "pooled_chemical_kernel": 0.9405161901031839,
+          "support_mean": 1.0459614364228587,
+          "support_offset": 1.078598032345346,
+          "support_residual_kernel": 0.9532227077895504,
+          "shuffled_support_kernel": 0.9538100969626767
+        }
+      },
+      {
+        "target": "MEK6",
+        "mean_rmse": {
+          "compound_mean": 0.7620897790076588,
+          "pooled_chemical_kernel": 0.7491821390131587,
+          "support_mean": 1.1007358676283545,
+          "support_offset": 0.8022309087414286,
+          "support_residual_kernel": 0.7467507848512017,
+          "shuffled_support_kernel": 0.747614940270206
+        }
+      },
+      {
+        "target": "MKNK2",
+        "mean_rmse": {
+          "compound_mean": 0.8475463403963481,
+          "pooled_chemical_kernel": 0.8531025760647161,
+          "support_mean": 1.1686125805513645,
+          "support_offset": 0.9133809686840654,
+          "support_residual_kernel": 0.8520615994001222,
+          "shuffled_support_kernel": 0.8525523403183619
+        }
+      },
+      {
+        "target": "NEK2",
+        "mean_rmse": {
+          "compound_mean": 0.919616233912363,
+          "pooled_chemical_kernel": 0.7533743992639477,
+          "support_mean": 0.5902046871089387,
+          "support_offset": 0.82868837215798,
+          "support_residual_kernel": 0.7705659708403553,
+          "shuffled_support_kernel": 0.7670664916003074
+        }
+      },
+      {
+        "target": "ROCK2",
+        "mean_rmse": {
+          "compound_mean": 0.9643858329173542,
+          "pooled_chemical_kernel": 0.9118263043150587,
+          "support_mean": 1.2540514883632972,
+          "support_offset": 1.0523924550594197,
+          "support_residual_kernel": 0.9297590975754498,
+          "shuffled_support_kernel": 0.9325570172222793
+        }
+      },
+      {
+        "target": "TGFBR1",
+        "mean_rmse": {
+          "compound_mean": 1.0129908778252454,
+          "pooled_chemical_kernel": 0.9043945277917561,
+          "support_mean": 0.6495048106200066,
+          "support_offset": 0.8589281840601894,
+          "support_residual_kernel": 0.8878193061773122,
+          "shuffled_support_kernel": 0.8832838106027893
+        }
+      }
+    ],
+    "residual_beats_pooled_targets": 4,
+    "residual_beats_shuffled_targets": 5
+  },
+  {
+    "k": 5,
+    "targets": 7,
+    "episodes": 700,
+    "macro_mean_episode_rmse": {
+      "compound_mean": 0.9142365638680371,
+      "pooled_chemical_kernel": 0.851378697597948,
+      "support_mean": 0.90335216234736,
+      "support_offset": 0.9004231960842247,
+      "support_residual_kernel": 0.850486870201214,
+      "shuffled_support_kernel": 0.8560740776440049
+    },
+    "per_target": [
+      {
+        "target": "CDK8",
+        "mean_rmse": {
+          "compound_mean": 0.9557529878364046,
+          "pooled_chemical_kernel": 0.9273956355043969,
+          "support_mean": 1.0449009205125197,
+          "support_offset": 1.0131861895658039,
+          "support_residual_kernel": 0.8973959782421865,
+          "shuffled_support_kernel": 0.9279905833920078
+        }
+      },
+      {
+        "target": "CLK1",
+        "mean_rmse": {
+          "compound_mean": 1.0014361508669385,
+          "pooled_chemical_kernel": 0.934100859313399,
+          "support_mean": 0.974206830681388,
+          "support_offset": 1.0307675073300637,
+          "support_residual_kernel": 0.9470646783334716,
+          "shuffled_support_kernel": 0.9500838975690767
+        }
+      },
+      {
+        "target": "MEK6",
+        "mean_rmse": {
+          "compound_mean": 0.7419251781898463,
+          "pooled_chemical_kernel": 0.7225880015387657,
+          "support_mean": 0.9125368160357269,
+          "support_offset": 0.7219149852852766,
+          "support_residual_kernel": 0.7113129761939244,
+          "shuffled_support_kernel": 0.7131299692521449
+        }
+      },
+      {
+        "target": "MKNK2",
+        "mean_rmse": {
+          "compound_mean": 0.8311329919970434,
+          "pooled_chemical_kernel": 0.8339282267770449,
+          "support_mean": 1.0732932745761417,
+          "support_offset": 0.8742326605725041,
+          "support_residual_kernel": 0.8296280518486517,
+          "shuffled_support_kernel": 0.8332850219683584
+        }
+      },
+      {
+        "target": "NEK2",
+        "mean_rmse": {
+          "compound_mean": 0.9220809024390988,
+          "pooled_chemical_kernel": 0.7546587408240254,
+          "support_mean": 0.5640385745553707,
+          "support_offset": 0.8266603166983287,
+          "support_residual_kernel": 0.781867419471234,
+          "shuffled_support_kernel": 0.7763394564573092
+        }
+      },
+      {
+        "target": "ROCK2",
+        "mean_rmse": {
+          "compound_mean": 0.9538384091420413,
+          "pooled_chemical_kernel": 0.9004619576101365,
+          "support_mean": 1.1332759368491845,
+          "support_offset": 1.0170473664698425,
+          "support_residual_kernel": 0.925545469095948,
+          "shuffled_support_kernel": 0.936704381488934
+        }
+      },
+      {
+        "target": "TGFBR1",
+        "mean_rmse": {
+          "compound_mean": 0.9934893266048865,
+          "pooled_chemical_kernel": 0.8865174616178692,
+          "support_mean": 0.6212127832211894,
+          "support_offset": 0.8191533466677541,
+          "support_residual_kernel": 0.8605935182230823,
+          "shuffled_support_kernel": 0.854985233380204
+        }
+      }
+    ],
+    "residual_beats_pooled_targets": 4,
+    "residual_beats_shuffled_targets": 5
+  }
+]

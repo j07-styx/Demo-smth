@@ -1,0 +1,25 @@
+{
+  "scope": "Training-only numeric-label LOPO engineering experiment, not independent benchmark",
+  "training_rows": 106,
+  "training_targets": 9,
+  "support_sizes": [
+    1,
+    3,
+    5
+  ],
+  "draws": 100,
+  "seed": 71107,
+  "kernel": "chiral Morgan radius 2, 2048-bit Tanimoto",
+  "ridge_alpha": 1.0,
+  "offset_shrinkage": 1.0,
+  "selection": "All held-out targets with >=8 numeric records",
+  "rows_sha256": "81cde4d6b5907cba8b67f7f653198db3dec1e4f1f6d5dbf5981db61915b9b4a4",
+  "validation_scored": false,
+  "hyperparameter_search": false,
+  "limits": [
+    "Small reused development training pool",
+    "Numeric-only ascertainment bias",
+    "Targets are identifier-disjoint, not homology-disjoint",
+    "Not evidence of superiority over neural baseline"
+  ]
+}

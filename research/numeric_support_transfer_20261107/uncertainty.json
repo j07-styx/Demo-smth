@@ -1,0 +1,95 @@
+{
+  "scope": "Descriptive uncertainty across seven target identifiers, not independent protein families; no multiplicity correction",
+  "comparisons": [
+    {
+      "k": 1,
+      "comparison": "pooled_chemical_kernel minus compound_mean",
+      "mean_delta_rmse": -0.05860707800262564,
+      "target_bootstrap_95_percentile_interval": [
+        -0.10481450352238764,
+        -0.02018480855808496
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 1,
+      "comparison": "support_residual_kernel minus pooled_chemical_kernel",
+      "mean_delta_rmse": -5.1434786951005355e-06,
+      "target_bootstrap_95_percentile_interval": [
+        -0.006147775737728559,
+        0.005778214588380078
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 1,
+      "comparison": "support_residual_kernel minus shuffled_support_kernel",
+      "mean_delta_rmse": 0.0,
+      "target_bootstrap_95_percentile_interval": [
+        0.0,
+        0.0
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 3,
+      "comparison": "pooled_chemical_kernel minus compound_mean",
+      "mean_delta_rmse": -0.059352230172742174,
+      "target_bootstrap_95_percentile_interval": [
+        -0.10350566933571784,
+        -0.021139832979060396
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 3,
+      "comparison": "support_residual_kernel minus pooled_chemical_kernel",
+      "mean_delta_rmse": 7.389391280847908e-05,
+      "target_bootstrap_95_percentile_interval": [
+        -0.01253555361925694,
+        0.011405053256663291
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 3,
+      "comparison": "support_residual_kernel minus shuffled_support_kernel",
+      "mean_delta_rmse": -0.0020848128863344417,
+      "target_bootstrap_95_percentile_interval": [
+        -0.007773623512006912,
+        0.002018237731253044
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 5,
+      "comparison": "pooled_chemical_kernel minus compound_mean",
+      "mean_delta_rmse": -0.06285786627008884,
+      "target_bootstrap_95_percentile_interval": [
+        -0.106061769485117,
+        -0.02606619915309018
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 5,
+      "comparison": "support_residual_kernel minus pooled_chemical_kernel",
+      "mean_delta_rmse": -0.0008918273967341335,
+      "target_bootstrap_95_percentile_interval": [
+        -0.016712544021623272,
+        0.01494154441661098
+      ],
+      "independent_blocks": 7
+    },
+    {
+      "k": 5,
+      "comparison": "support_residual_kernel minus shuffled_support_kernel",
+      "mean_delta_rmse": -0.005587207442790921,
+      "target_bootstrap_95_percentile_interval": [
+        -0.01492834903942654,
+        0.0018773660594245995
+      ],
+      "independent_blocks": 7
+    }
+  ]
+}
