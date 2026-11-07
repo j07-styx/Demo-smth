@@ -28,4 +28,16 @@ for idx in ([1,1],[7],[-1],[]):
     try:m.enhance(t,{'indices':torch.tensor(idx)},)
     except ValueError:pass
     else:raise AssertionError(idx)
-print('PASS centered geometry: mean-zero structural correction, exact uncovered identity, gradients and invalid indices')
+class InvalidGeometry(nn.Module):
+    def __init__(self, mode):
+        super().__init__()
+        self.mode=mode
+    def enhance(self,t,g):
+        if self.mode=='shape':
+            return t[:-1]
+        return torch.full_like(t,float('nan'))
+for mode in ('shape','nonfinite'):
+    try:CenteredGeometry(InvalidGeometry(mode)).enhance(t,g)
+    except ValueError:pass
+    else:raise AssertionError(f'Accepted invalid geometry output: {mode}')
+print('PASS centered geometry: mean-zero structural correction, exact uncovered identity, gradients, invalid indices and invalid enhancements')

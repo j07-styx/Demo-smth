@@ -13,7 +13,12 @@ class CenteredGeometry(nn.Module):
         idx=torch.as_tensor(graph['indices'],device=tokens.device,dtype=torch.long)
         if idx.ndim!=1 or idx.numel()==0 or idx.min()<0 or idx.max()>=len(tokens) or idx.unique().numel()!=idx.numel():
             raise ValueError('Invalid structure indices')
-        delta=self.geometry.enhance(tokens,graph)-tokens
+        enhanced=self.geometry.enhance(tokens,graph)
+        if enhanced.shape != tokens.shape:
+            raise ValueError('Geometry enhancement must preserve token alignment')
+        if not torch.isfinite(enhanced).all():
+            raise ValueError('Nonfinite geometry enhancement')
+        delta=enhanced-tokens
         centered=delta.index_select(0,idx)-delta.index_select(0,idx).mean(dim=0,keepdim=True)
         result=tokens.clone()
         result.index_add_(0,idx,centered)
