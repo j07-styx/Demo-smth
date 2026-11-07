@@ -1,0 +1,12 @@
+{
+  "status": "PRELIMINARY_BINDINGDB_CANDIDATE_DEV_NOT_ASSAY_VERIFIED",
+  "train_pairs": 37441,
+  "val_pairs": 4764,
+  "train_components": 135,
+  "val_components": 33,
+  "train_only_mean_rmse": 1.6830994684812233,
+  "candidate_filter": "task >=15 unique compounds; replicate pKd range <=0.1",
+  "split": "sha256 component hash; 20 percent components for dev validation; not a final test",
+  "morgan_ridge_alpha_10_rmse": 1.961218095365074,
+  "morgan_ridge_alpha_100_rmse": 1.7851007340568539
+}
