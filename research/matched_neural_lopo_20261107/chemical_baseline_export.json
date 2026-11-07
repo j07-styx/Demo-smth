@@ -1,0 +1,11 @@
+{
+  "scope": "Development baseline only; ignores protein identity",
+  "training_rows": 106,
+  "rows_sha256": "81cde4d6b5907cba8b67f7f653198db3dec1e4f1f6d5dbf5981db61915b9b4a4",
+  "features": "Morgan radius2 2048bit includeChirality=True",
+  "label": "numeric pKd",
+  "source_approved": false,
+  "model_sha256": "4d2e8f2b45fb2c2072eec8bd0d068e0878437e3abbeb331aba36040134edfbd0",
+  "fold_parity_max_absolute_error": 4.440892098500626e-16,
+  "save_load_prediction_parity": true
+}

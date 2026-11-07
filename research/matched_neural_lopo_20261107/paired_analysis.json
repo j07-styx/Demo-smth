@@ -1,0 +1,123 @@
+{
+  "target_mean_rmse": {
+    "CDK8": {
+      "chemical_only_zero_protein": 0.9744880398114523,
+      "real_protein": 1.0169109106063843,
+      "deranged_protein": 1.2920675079027812,
+      "chemical_kernel": 0.9735685944319634
+    },
+    "CLK1": {
+      "chemical_only_zero_protein": 1.0091792345046997,
+      "real_protein": 1.0326800147692363,
+      "deranged_protein": 0.9594615499178568,
+      "chemical_kernel": 0.9604817940821352
+    },
+    "CSNK1G3": {
+      "chemical_only_zero_protein": 0.9204107721646627,
+      "real_protein": 1.0624070167541504,
+      "deranged_protein": 1.074695388476054,
+      "chemical_kernel": 0.7658467399850308
+    },
+    "MEK6": {
+      "chemical_only_zero_protein": 0.7627361416816711,
+      "real_protein": 0.9597554802894592,
+      "deranged_protein": 1.3007901310920715,
+      "chemical_kernel": 0.7509324768380158
+    },
+    "MKNK2": {
+      "chemical_only_zero_protein": 0.8424867788950602,
+      "real_protein": 1.1830697456995647,
+      "deranged_protein": 1.0191700458526611,
+      "chemical_kernel": 0.8520789223214873
+    },
+    "NEK2": {
+      "chemical_only_zero_protein": 0.9353789885838827,
+      "real_protein": 0.9064053495724996,
+      "deranged_protein": 1.0257074634234111,
+      "chemical_kernel": 0.7663196390241506
+    },
+    "ROCK2": {
+      "chemical_only_zero_protein": 0.9879419604937235,
+      "real_protein": 1.153771201769511,
+      "deranged_protein": 1.0360147953033447,
+      "chemical_kernel": 0.9456788893139693
+    },
+    "TGFBR1": {
+      "chemical_only_zero_protein": 0.9296296040217081,
+      "real_protein": 1.116193175315857,
+      "deranged_protein": 1.0291727582613628,
+      "chemical_kernel": 0.8778643318456066
+    },
+    "VRK2": {
+      "chemical_only_zero_protein": 0.8263656497001648,
+      "real_protein": 0.7706401149431864,
+      "deranged_protein": 0.8169170816739401,
+      "chemical_kernel": 0.7929675161990033
+    }
+  },
+  "comparisons": [
+    {
+      "comparison": "real_protein minus chemical_only_zero_protein",
+      "delta_rmse": 0.11257953776253594,
+      "target_bootstrap_95_interval": [
+        0.03609925729257092,
+        0.19300692169754596
+      ],
+      "targets_improved": 2
+    },
+    {
+      "comparison": "real_protein minus deranged_protein",
+      "delta_rmse": -0.03912930135373717,
+      "target_bootstrap_95_interval": [
+        -0.15232152204822613,
+        0.062299542956882115
+      ],
+      "targets_improved": 5
+    },
+    {
+      "comparison": "real_protein minus chemical_kernel",
+      "delta_rmse": 0.16845490063094296,
+      "target_bootstrap_95_interval": [
+        0.09457299777725382,
+        0.2402794193672627
+      ],
+      "targets_improved": 1
+    },
+    {
+      "comparison": "chemical_only_zero_protein minus chemical_kernel",
+      "delta_rmse": 0.05587536286840698,
+      "target_bootstrap_95_interval": [
+        0.019986084618336213,
+        0.09680935904201153
+      ],
+      "targets_improved": 1
+    }
+  ],
+  "per_seed_macro": {
+    "71110": {
+      "chemical_only_zero_protein": 0.9109324216842651,
+      "real_protein": 0.9927023185624017,
+      "deranged_protein": 1.1808093984921773
+    },
+    "71111": {
+      "chemical_only_zero_protein": 0.9083950254652235,
+      "real_protein": 0.9801139831542969,
+      "deranged_protein": 0.9689761400222778
+    },
+    "71112": {
+      "chemical_only_zero_protein": 0.9102116094695197,
+      "real_protein": 1.0944613681899176,
+      "deranged_protein": 1.0348800354533725
+    }
+  },
+  "mean_final_train_standardized_mse": {
+    "chemical_only_zero_protein": 0.5870250198576186,
+    "real_protein": 0.0003587403400835245,
+    "deranged_protein": 9.366755904539327e-05
+  },
+  "limits": [
+    "Bootstrap over target identifiers, not homology clusters",
+    "Seeds and repeated targets are not independent biological replicates",
+    "No model selected or deployed"
+  ]
+}

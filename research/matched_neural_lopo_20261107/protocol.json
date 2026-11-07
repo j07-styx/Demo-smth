@@ -1,0 +1,29 @@
+{
+  "scope": "Training-development LOPO, not independent benchmark",
+  "rows": 106,
+  "targets": 9,
+  "seeds": [
+    71110,
+    71111,
+    71112
+  ],
+  "epochs": 300,
+  "optimizer": "AdamW lr .001 weight_decay .01",
+  "device": "CPU two threads",
+  "architecture": "Morgan 2048->32; mean ESM 1280->32; concatenate->32->1, ReLU",
+  "modes": [
+    "chemical_only_zero_protein",
+    "real_protein",
+    "deranged_protein"
+  ],
+  "matching": "Same initialization, parameters, optimizer and full-batch steps for all modes",
+  "normalization": "Protein centering/scaling and label standardization use fold training rows only",
+  "selection": "Fixed final epoch; no early stopping, hyperparameter search or validation scoring",
+  "rows_sha256": "81cde4d6b5907cba8b67f7f653198db3dec1e4f1f6d5dbf5981db61915b9b4a4",
+  "limits": [
+    "Compact diagnostic head, not existing SequenceFoundation",
+    "Repeatedly inspected training-development pool",
+    "Identifier-disjoint, not homology-disjoint",
+    "Numeric-only ascertainment bias"
+  ]
+}

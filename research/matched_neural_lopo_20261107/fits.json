@@ -1,0 +1,731 @@
+[
+  {
+    "target": "MKNK2",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 18,
+    "rmse": 0.841987669467926,
+    "initial_standardized_mse": 1.0368698835372925,
+    "final_standardized_mse": 0.637462317943573
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 18,
+    "rmse": 1.2523622512817383,
+    "initial_standardized_mse": 1.0371944904327393,
+    "final_standardized_mse": 4.217532477923669e-06
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 18,
+    "rmse": 1.1864380836486816,
+    "initial_standardized_mse": 1.0507140159606934,
+    "final_standardized_mse": 1.9645210613816744e-06
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 18,
+    "rmse": 0.8422085046768188,
+    "initial_standardized_mse": 1.003722906112671,
+    "final_standardized_mse": 0.637462317943573
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 18,
+    "rmse": 1.0326931476593018,
+    "initial_standardized_mse": 1.004945158958435,
+    "final_standardized_mse": 0.00010753238893812522
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 18,
+    "rmse": 0.926567792892456,
+    "initial_standardized_mse": 1.0038714408874512,
+    "final_standardized_mse": 1.2650517646761728e-06
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 18,
+    "rmse": 0.8432641625404358,
+    "initial_standardized_mse": 1.0319634675979614,
+    "final_standardized_mse": 0.6374623775482178
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 18,
+    "rmse": 1.2641538381576538,
+    "initial_standardized_mse": 1.0320175886154175,
+    "final_standardized_mse": 7.519041673731408e-07
+  },
+  {
+    "target": "MKNK2",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 18,
+    "rmse": 0.9445042610168457,
+    "initial_standardized_mse": 1.0210161209106445,
+    "final_standardized_mse": 7.295102841453627e-05
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 14,
+    "rmse": 0.9894173741340637,
+    "initial_standardized_mse": 1.0366077423095703,
+    "final_standardized_mse": 0.5856494307518005
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 14,
+    "rmse": 1.1129543781280518,
+    "initial_standardized_mse": 1.0410125255584717,
+    "final_standardized_mse": 2.260692099298467e-06
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 14,
+    "rmse": 1.0935144424438477,
+    "initial_standardized_mse": 1.0494273900985718,
+    "final_standardized_mse": 0.0007007105741649866
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 14,
+    "rmse": 0.988057017326355,
+    "initial_standardized_mse": 1.0036996603012085,
+    "final_standardized_mse": 0.5856560468673706
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 14,
+    "rmse": 1.2141603231430054,
+    "initial_standardized_mse": 1.0048305988311768,
+    "final_standardized_mse": 3.782309795496985e-05
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 14,
+    "rmse": 0.9326263666152954,
+    "initial_standardized_mse": 1.0048396587371826,
+    "final_standardized_mse": 2.584812682471238e-05
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 14,
+    "rmse": 0.986351490020752,
+    "initial_standardized_mse": 1.030449628829956,
+    "final_standardized_mse": 0.5856494307518005
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 14,
+    "rmse": 1.1341989040374756,
+    "initial_standardized_mse": 1.0307705402374268,
+    "final_standardized_mse": 0.0005092529463581741
+  },
+  {
+    "target": "ROCK2",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 14,
+    "rmse": 1.0819035768508911,
+    "initial_standardized_mse": 1.0186883211135864,
+    "final_standardized_mse": 5.5527034419355914e-05
+  },
+  {
+    "target": "NEK2",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 12,
+    "rmse": 0.9353800415992737,
+    "initial_standardized_mse": 1.037441611289978,
+    "final_standardized_mse": 0.5443271994590759
+  },
+  {
+    "target": "NEK2",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 12,
+    "rmse": 1.0068594217300415,
+    "initial_standardized_mse": 1.0432562828063965,
+    "final_standardized_mse": 0.0014955217484384775
+  },
+  {
+    "target": "NEK2",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 12,
+    "rmse": 1.1421377658843994,
+    "initial_standardized_mse": 1.047401785850525,
+    "final_standardized_mse": 1.5562940234303824e-06
+  },
+  {
+    "target": "NEK2",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 12,
+    "rmse": 0.9353773593902588,
+    "initial_standardized_mse": 1.0037102699279785,
+    "final_standardized_mse": 0.5443271398544312
+  },
+  {
+    "target": "NEK2",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 12,
+    "rmse": 0.8150023818016052,
+    "initial_standardized_mse": 1.0019071102142334,
+    "final_standardized_mse": 8.530889317626134e-05
+  },
+  {
+    "target": "NEK2",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 12,
+    "rmse": 0.9305346608161926,
+    "initial_standardized_mse": 1.0050498247146606,
+    "final_standardized_mse": 0.0002970784262288362
+  },
+  {
+    "target": "NEK2",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 12,
+    "rmse": 0.9353795647621155,
+    "initial_standardized_mse": 1.0318889617919922,
+    "final_standardized_mse": 0.5443271994590759
+  },
+  {
+    "target": "NEK2",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 12,
+    "rmse": 0.897354245185852,
+    "initial_standardized_mse": 1.030535101890564,
+    "final_standardized_mse": 1.5192219962045783e-06
+  },
+  {
+    "target": "NEK2",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 12,
+    "rmse": 1.0044499635696411,
+    "initial_standardized_mse": 1.0193473100662231,
+    "final_standardized_mse": 1.5323457773774862e-06
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 6,
+    "rmse": 0.9204095005989075,
+    "initial_standardized_mse": 1.0366460084915161,
+    "final_standardized_mse": 0.5955904126167297
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 6,
+    "rmse": 0.9946466684341431,
+    "initial_standardized_mse": 1.0415512323379517,
+    "final_standardized_mse": 0.0005042245029471815
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 6,
+    "rmse": 1.1574243307113647,
+    "initial_standardized_mse": 1.047585368156433,
+    "final_standardized_mse": 1.1599652793847781e-07
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 6,
+    "rmse": 0.9204105734825134,
+    "initial_standardized_mse": 1.003269076347351,
+    "final_standardized_mse": 0.595590353012085
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 6,
+    "rmse": 1.066828966140747,
+    "initial_standardized_mse": 1.0023603439331055,
+    "final_standardized_mse": 1.802892074920237e-05
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 6,
+    "rmse": 1.018952488899231,
+    "initial_standardized_mse": 1.002026915550232,
+    "final_standardized_mse": 3.531905804265989e-06
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 6,
+    "rmse": 0.9204122424125671,
+    "initial_standardized_mse": 1.0320533514022827,
+    "final_standardized_mse": 0.595590353012085
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 6,
+    "rmse": 1.125745415687561,
+    "initial_standardized_mse": 1.0314440727233887,
+    "final_standardized_mse": 0.00012307656288612634
+  },
+  {
+    "target": "CSNK1G3",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 6,
+    "rmse": 1.047709345817566,
+    "initial_standardized_mse": 1.019952654838562,
+    "final_standardized_mse": 1.0580365028545202e-07
+  },
+  {
+    "target": "VRK2",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 4,
+    "rmse": 0.8263634443283081,
+    "initial_standardized_mse": 1.0371618270874023,
+    "final_standardized_mse": 0.5987816452980042
+  },
+  {
+    "target": "VRK2",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 4,
+    "rmse": 0.7982436418533325,
+    "initial_standardized_mse": 1.042110562324524,
+    "final_standardized_mse": 7.313913101825165e-06
+  },
+  {
+    "target": "VRK2",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 4,
+    "rmse": 0.7913093566894531,
+    "initial_standardized_mse": 1.0491007566452026,
+    "final_standardized_mse": 4.60286253556319e-09
+  },
+  {
+    "target": "VRK2",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 4,
+    "rmse": 0.8263694047927856,
+    "initial_standardized_mse": 1.0037091970443726,
+    "final_standardized_mse": 0.5987817645072937
+  },
+  {
+    "target": "VRK2",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 4,
+    "rmse": 0.621400773525238,
+    "initial_standardized_mse": 1.0025999546051025,
+    "final_standardized_mse": 0.00501392874866724
+  },
+  {
+    "target": "VRK2",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 4,
+    "rmse": 0.6436914801597595,
+    "initial_standardized_mse": 1.0039488077163696,
+    "final_standardized_mse": 3.6297141292607193e-08
+  },
+  {
+    "target": "VRK2",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 4,
+    "rmse": 0.8263640999794006,
+    "initial_standardized_mse": 1.0316969156265259,
+    "final_standardized_mse": 0.5987817049026489
+  },
+  {
+    "target": "VRK2",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 4,
+    "rmse": 0.8922759294509888,
+    "initial_standardized_mse": 1.0323044061660767,
+    "final_standardized_mse": 0.00015051286027301103
+  },
+  {
+    "target": "VRK2",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 4,
+    "rmse": 1.0157504081726074,
+    "initial_standardized_mse": 1.0205479860305786,
+    "final_standardized_mse": 0.0002761276555247605
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 9,
+    "rmse": 0.9362366199493408,
+    "initial_standardized_mse": 1.0369793176651,
+    "final_standardized_mse": 0.5833236575126648
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 9,
+    "rmse": 1.1209778785705566,
+    "initial_standardized_mse": 1.0451369285583496,
+    "final_standardized_mse": 5.99520362243311e-08
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 9,
+    "rmse": 0.9541934728622437,
+    "initial_standardized_mse": 1.0499293804168701,
+    "final_standardized_mse": 0.0006648386479355395
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 9,
+    "rmse": 0.9192286729812622,
+    "initial_standardized_mse": 1.0033388137817383,
+    "final_standardized_mse": 0.5833236575126648
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 9,
+    "rmse": 1.080291986465454,
+    "initial_standardized_mse": 1.0035228729248047,
+    "final_standardized_mse": 0.0015137828886508942
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 9,
+    "rmse": 0.971513569355011,
+    "initial_standardized_mse": 1.000785231590271,
+    "final_standardized_mse": 0.0001080544461729005
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 9,
+    "rmse": 0.9334235191345215,
+    "initial_standardized_mse": 1.031748652458191,
+    "final_standardized_mse": 0.5833236575126648
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 9,
+    "rmse": 1.14730966091156,
+    "initial_standardized_mse": 1.0322778224945068,
+    "final_standardized_mse": 1.131487792349617e-08
+  },
+  {
+    "target": "TGFBR1",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 9,
+    "rmse": 1.1618112325668335,
+    "initial_standardized_mse": 1.0214691162109375,
+    "final_standardized_mse": 3.705726339831017e-05
+  },
+  {
+    "target": "CDK8",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 9,
+    "rmse": 0.9753532409667969,
+    "initial_standardized_mse": 1.0362534523010254,
+    "final_standardized_mse": 0.6103079915046692
+  },
+  {
+    "target": "CDK8",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 9,
+    "rmse": 0.704089879989624,
+    "initial_standardized_mse": 1.044486403465271,
+    "final_standardized_mse": 1.2992019264856935e-06
+  },
+  {
+    "target": "CDK8",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 9,
+    "rmse": 1.3947670459747314,
+    "initial_standardized_mse": 1.0480326414108276,
+    "final_standardized_mse": 0.00011574534437386319
+  },
+  {
+    "target": "CDK8",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 9,
+    "rmse": 0.9718762040138245,
+    "initial_standardized_mse": 1.003446102142334,
+    "final_standardized_mse": 0.6103079319000244
+  },
+  {
+    "target": "CDK8",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 9,
+    "rmse": 0.9396960735321045,
+    "initial_standardized_mse": 1.0004791021347046,
+    "final_standardized_mse": 3.592915891204029e-05
+  },
+  {
+    "target": "CDK8",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 9,
+    "rmse": 1.5157392024993896,
+    "initial_standardized_mse": 1.0033254623413086,
+    "final_standardized_mse": 1.96080218302086e-05
+  },
+  {
+    "target": "CDK8",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 9,
+    "rmse": 0.9762346744537354,
+    "initial_standardized_mse": 1.0326138734817505,
+    "final_standardized_mse": 0.6103079915046692
+  },
+  {
+    "target": "CDK8",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 9,
+    "rmse": 1.4069467782974243,
+    "initial_standardized_mse": 1.032313346862793,
+    "final_standardized_mse": 5.118809198734198e-08
+  },
+  {
+    "target": "CDK8",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 9,
+    "rmse": 0.9656962752342224,
+    "initial_standardized_mse": 1.0225781202316284,
+    "final_standardized_mse": 5.095666347187944e-05
+  },
+  {
+    "target": "MEK6",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 10,
+    "rmse": 0.7627352476119995,
+    "initial_standardized_mse": 1.0365190505981445,
+    "final_standardized_mse": 0.6218396425247192
+  },
+  {
+    "target": "MEK6",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 10,
+    "rmse": 0.987158477306366,
+    "initial_standardized_mse": 1.042427897453308,
+    "final_standardized_mse": 4.488583726924844e-05
+  },
+  {
+    "target": "MEK6",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 10,
+    "rmse": 1.9694913625717163,
+    "initial_standardized_mse": 1.0443658828735352,
+    "final_standardized_mse": 2.412019057373982e-05
+  },
+  {
+    "target": "MEK6",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 10,
+    "rmse": 0.7627373933792114,
+    "initial_standardized_mse": 1.003260850906372,
+    "final_standardized_mse": 0.6218396425247192
+  },
+  {
+    "target": "MEK6",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 10,
+    "rmse": 0.9094078540802002,
+    "initial_standardized_mse": 1.0032060146331787,
+    "final_standardized_mse": 4.045361947646597e-06
+  },
+  {
+    "target": "MEK6",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 10,
+    "rmse": 0.7035190463066101,
+    "initial_standardized_mse": 1.0033657550811768,
+    "final_standardized_mse": 4.8827697440856355e-08
+  },
+  {
+    "target": "MEK6",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 10,
+    "rmse": 0.7627357840538025,
+    "initial_standardized_mse": 1.0318846702575684,
+    "final_standardized_mse": 0.6218396425247192
+  },
+  {
+    "target": "MEK6",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 10,
+    "rmse": 0.9827001094818115,
+    "initial_standardized_mse": 1.0306901931762695,
+    "final_standardized_mse": 2.5900098421516304e-07
+  },
+  {
+    "target": "MEK6",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 10,
+    "rmse": 1.2293599843978882,
+    "initial_standardized_mse": 1.0207675695419312,
+    "final_standardized_mse": 2.3000468445388833e-06
+  },
+  {
+    "target": "CLK1",
+    "seed": 71110,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 24,
+    "rmse": 1.01050865650177,
+    "initial_standardized_mse": 1.0381526947021484,
+    "final_standardized_mse": 0.5059406757354736
+  },
+  {
+    "target": "CLK1",
+    "seed": 71110,
+    "mode": "real_protein",
+    "n_query": 24,
+    "rmse": 0.9570282697677612,
+    "initial_standardized_mse": 1.0423164367675781,
+    "final_standardized_mse": 1.608351794857299e-06
+  },
+  {
+    "target": "CLK1",
+    "seed": 71110,
+    "mode": "deranged_protein",
+    "n_query": 24,
+    "rmse": 0.938008725643158,
+    "initial_standardized_mse": 1.0505863428115845,
+    "final_standardized_mse": 6.793627835577354e-05
+  },
+  {
+    "target": "CLK1",
+    "seed": 71111,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 24,
+    "rmse": 1.009290099143982,
+    "initial_standardized_mse": 1.0030485391616821,
+    "final_standardized_mse": 0.5059406757354736
+  },
+  {
+    "target": "CLK1",
+    "seed": 71111,
+    "mode": "real_protein",
+    "n_query": 24,
+    "rmse": 1.1415443420410156,
+    "initial_standardized_mse": 1.0032864809036255,
+    "final_standardized_mse": 2.2781407096772455e-05
+  },
+  {
+    "target": "CLK1",
+    "seed": 71111,
+    "mode": "deranged_protein",
+    "n_query": 24,
+    "rmse": 1.0776406526565552,
+    "initial_standardized_mse": 1.0047980546951294,
+    "final_standardized_mse": 1.3626678674327763e-09
+  },
+  {
+    "target": "CLK1",
+    "seed": 71112,
+    "mode": "chemical_only_zero_protein",
+    "n_query": 24,
+    "rmse": 1.0077389478683472,
+    "initial_standardized_mse": 1.0325731039047241,
+    "final_standardized_mse": 0.5059406757354736
+  },
+  {
+    "target": "CLK1",
+    "seed": 71112,
+    "mode": "real_protein",
+    "n_query": 24,
+    "rmse": 0.9994674324989319,
+    "initial_standardized_mse": 1.031863808631897,
+    "final_standardized_mse": 1.5844354717131637e-09
+  },
+  {
+    "target": "CLK1",
+    "seed": 71112,
+    "mode": "deranged_protein",
+    "n_query": 24,
+    "rmse": 0.8627352714538574,
+    "initial_standardized_mse": 1.0199429988861084,
+    "final_standardized_mse": 1.336713184585392e-09
+  }
+]

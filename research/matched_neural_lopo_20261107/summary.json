@@ -1,0 +1,9 @@
+{
+  "mean_seed_target_rmse": {
+    "chemical_only_zero_protein": 0.9098463522063361,
+    "real_protein": 1.022425889968872,
+    "deranged_protein": 1.0615551913226093
+  },
+  "fits": 81,
+  "elapsed_seconds": 124.17921447753906
+}
