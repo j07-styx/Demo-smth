@@ -1,0 +1,19 @@
+{
+  "status": "EXPLORATORY_TARGET_HOLDOUT_20_EPOCH_STRESS_TEST",
+  "training_numeric_pairs": 68,
+  "heldout_numeric_pairs": 38,
+  "heldout_proteins": [
+    "CLK1",
+    "ROCK2"
+  ],
+  "epoch4_pooled_rmse": 0.965140612051059,
+  "epoch20_pooled_rmse": 1.0003492829627079,
+  "epoch20_target_macro_rmse": 1.0189322010919717,
+  "train_only_mean_baseline_pooled_rmse": 0.9489519773714601,
+  "notes": [
+    "Fixed 20 epoch horizon compared with fixed 4 epoch horizon on the same target-disjoint internal development cohort.",
+    "Epoch history is diagnostic only; choosing a best epoch by heldout target error would contaminate the holdout.",
+    "Neither training horizon beats the training-only global mean on these two heldout targets.",
+    "The target pair and source cohort were chosen in development; this is not an independent external test."
+  ]
+}
