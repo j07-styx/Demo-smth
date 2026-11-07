@@ -1,0 +1,15 @@
+{
+  "status": "CHEMICAL_OVERLAP_AUDIT_DEV_NOT_COLD_COMPOUND_BENCHMARK",
+  "train_unique_compounds": 50,
+  "validation_unique_compounds": 50,
+  "exact_compounds_shared": 50,
+  "validation_compounds_with_scaffold_in_train": 50,
+  "validation_compounds_with_nearest_train_tanimoto_at_least_0_8": 50,
+  "validation_compounds_with_nearest_train_tanimoto_at_least_0_9": 50,
+  "nearest_train_tanimoto_summary": {
+    "min": 1.0,
+    "median": 1.0,
+    "max": 1.0
+  },
+  "note": "All calculations use split membership and canonical structures only, never affinities. No independent test set created."
+}

@@ -1,0 +1,9 @@
+﻿# Development chemistry leakage audit and scientific evaluation gate
+
+The source-reconciled DAVIS engineering split has 50 unique training compounds and 50 unique validation compounds. The chemical-overlap audit verifies canonical stereo-SMILES hash identity and computes RDKit Morgan radius-2 / 2048-bit Tanimoto and Bemis-Murcko scaffolds **without reading affinity labels**.
+
+Results: **50/50 validation compounds are identical to compounds in training**. All 50/50 have a training scaffold match, and all 50/50 have nearest-training Tanimoto = 1.0. Thus this split is **not cold-compound**. The prior exact-pair audit found no duplicate compound–protein pairs and no exact protein-sequence overlap, but STE kinase family spans train/validation, and experimental constructs are not independently verified. The development validation has been inspected repeatedly. These limitations prevent fair direct comparison with independently held-out cold-drug or cold-protein literature benchmarks.
+
+The scientific training gate remains **BLOCKED_UNAPPROVED_NOT_TRAINING_READY**: no independently reviewed BindingDB cohort and no frozen protein-component split. The 30-task manual review status is 30 UNREVIEWED, 0 approved. The larger BindingDB candidate inventory is useful for triage but does not constitute an approved assay cohort. Do not create an approval declaration or claim test readiness from automated checks.
+
+Next step: source-level human adjudication of measurement semantics, protein constructs, assay identity and qualifiers; then freeze a label-blind, protein-component-disjoint cohort with independent test roles before architectural model selection. A separate cold-compound/scaffold evaluation should use compounds absent from training. No additional model tuning against the existing repeatedly inspected DAVIS DEV split is scientifically justified.
