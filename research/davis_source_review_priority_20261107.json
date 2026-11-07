@@ -1,0 +1,59 @@
+{
+  "status": "EVIDENCE_TRIAGE_ONLY_ZERO_APPROVED",
+  "primary_source_doi": "10.1038/nbt.1990",
+  "source_records": 63,
+  "exact_structure_numeric_matches": 23,
+  "conditional_registry_links_not_stereo_verified": 19,
+  "unresolved_without_unique_registry_link": 21,
+  "tasks": [
+    {
+      "target": "IRAK3",
+      "records": 24,
+      "exact_structure_numeric_matches": 9,
+      "registry_links_not_stereo_verified": 7,
+      "no_unique_registry_link": 8,
+      "potential_evidence_count_not_approved": 16,
+      "additional_records_to_reach_15_exact_matches": 6,
+      "conditional_15_possible_if_all_registry_links_verified": true,
+      "still_missing_after_conditional_registry_links": 0,
+      "source_review_status": "UNREVIEWED"
+    },
+    {
+      "target": "RIOK2",
+      "records": 20,
+      "exact_structure_numeric_matches": 9,
+      "registry_links_not_stereo_verified": 4,
+      "no_unique_registry_link": 7,
+      "potential_evidence_count_not_approved": 13,
+      "additional_records_to_reach_15_exact_matches": 6,
+      "conditional_15_possible_if_all_registry_links_verified": false,
+      "still_missing_after_conditional_registry_links": 2,
+      "source_review_status": "UNREVIEWED"
+    },
+    {
+      "target": "SRPK3",
+      "records": 19,
+      "exact_structure_numeric_matches": 5,
+      "registry_links_not_stereo_verified": 8,
+      "no_unique_registry_link": 6,
+      "potential_evidence_count_not_approved": 13,
+      "additional_records_to_reach_15_exact_matches": 10,
+      "conditional_15_possible_if_all_registry_links_verified": false,
+      "still_missing_after_conditional_registry_links": 2,
+      "source_review_status": "UNREVIEWED"
+    }
+  ],
+  "review_order": [
+    "IRAK3",
+    "RIOK2",
+    "SRPK3"
+  ],
+  "approval": false,
+  "limitations": [
+    "Registry matches do not prove stereochemical equivalence or compound identity.",
+    "Numeric agreement does not verify original assay method or experimental protein construct.",
+    "None of the 30 BindingDB source-review tasks is approved.",
+    "The 15-compound minimum is only a task eligibility threshold, not scientific approval.",
+    "Do not use this triage as training data or a frozen test split."
+  ]
+}
