@@ -1,0 +1,33 @@
+{
+  "status": "UNIQUE_MONOMER_COUNT_AUDIT_NOT_CHEMICAL_APPROVAL",
+  "source_records": 63,
+  "targets": {
+    "IRAK3": {
+      "exact_unique_bindingdb_monomer_ids": 9,
+      "conditional_unique_bindingdb_monomer_ids": 16,
+      "duplicate_exact_record_count": 0,
+      "conditional_reaches_15_distinct_monomers": true,
+      "still_needed_after_conditional": 0
+    },
+    "RIOK2": {
+      "exact_unique_bindingdb_monomer_ids": 9,
+      "conditional_unique_bindingdb_monomer_ids": 13,
+      "duplicate_exact_record_count": 0,
+      "conditional_reaches_15_distinct_monomers": false,
+      "still_needed_after_conditional": 2
+    },
+    "SRPK3": {
+      "exact_unique_bindingdb_monomer_ids": 5,
+      "conditional_unique_bindingdb_monomer_ids": 13,
+      "duplicate_exact_record_count": 0,
+      "conditional_reaches_15_distinct_monomers": false,
+      "still_needed_after_conditional": 2
+    }
+  },
+  "notes": [
+    "BindingDB MonomerID is a registry grouping, not proof of stereo identity or independent chemistry.",
+    "No source records, labels, compounds or identifiers are exported.",
+    "Conditional registry evidence remains unverified.",
+    "No assay approval or split created."
+  ]
+}
