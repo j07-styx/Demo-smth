@@ -1,0 +1,14 @@
+{
+  "dynacpi/bounded_structural_fusion.py": "8cb2559390d9a8b07efa94e95e65b17a0e2cb6adaa4e3c9dc352fc5609c42d2e",
+  "scripts/run_bounded_fusion_study_dev.py": "73b24db184fe330f1fc5425ea4ee242a8f76add3ed864d56bdafe8a8e5d5fcb4",
+  "scripts/audit_roadmap_foundations_dev.py": "37d87d6da41f8f563f33d7f9d729cc912c75666768a59dc9ebb55945dafade49",
+  "scripts/analyze_bounded_fusion_study_dev.py": "5b1ac54085df388bd781d1ba3ea8a0eb713f98654515bd4f6e2c8d86793c5ba6",
+  "scripts/verify_bounded_checkpoints_dev.py": "7fee875aff346cbfa44a1a48e61cced92c753971413f7e62299c8e7a9dd26c84",
+  "scripts/diagnose_gvp_gradient_path_dev.py": "1a82e61c0cfb2572e3618cef04da9c61066640499fc054c7f7354038c208e533",
+  "tests_v4/bounded_structural_fusion_test.py": "611fb8e5b2d87c8f025746182c19414dddf6e14ffbef5c701ccfeec28247168f",
+  "data\\engineering_pilot\\rows.json": "27834297ebf0e67c89cbe3b5e6e694b694b0e59af28706eeab67ab9b2a1d5bc6",
+  "data\\engineering_pilot\\limited_alpha_3d_graph_manifest.json": "19bffda0ef1de99b78628a7055452c7ddfcc224d2b6d130812f817691e7311d3",
+  "data\\staging\\sequences.json": "9cab64b87e8c0188fe29347edfb98b65612ec92a81493b80896759922e38ac8f",
+  "data\\staging\\compounds.json": "563e7260cf8d07c60fe36f49b14bbce87b788f73afd231d98c214c6b6d42740d",
+  "research/pilot_sequence/checkpoint.pt": "ef6df11110f8d80776a4f28530a5ea19cb085ad230a8c65594d986fecde49729"
+}

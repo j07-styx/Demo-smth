@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "real": {
+      "mean": 0.9210454066297918,
+      "sd": 0.0017176764093440736,
+      "mean_paired_delta": -0.004639676193979721,
+      "relative_reduction": 0.005012154003634306
+    },
+    "shuffled": {
+      "mean": 0.9216629380605007,
+      "sd": 0.0030745756231734226,
+      "mean_paired_delta": -0.0040221447632709335,
+      "relative_reduction": 0.0043450465367784845
+    },
+    "sequence": {
+      "mean": 0.9206115441856463,
+      "sd": 0.001777817299065886,
+      "mean_paired_delta": -0.005073538638125356,
+      "relative_reduction": 0.005480847355397254
+    },
+    "no_confidence": {
+      "mean": 0.9217717647962759,
+      "sd": 0.0029276428852425406,
+      "mean_paired_delta": -0.003913318027495764,
+      "relative_reduction": 0.004227483082646549
+    },
+    "head_only": {
+      "mean": 0.9256850828237716,
+      "sd": 0.0,
+      "mean_paired_delta": 0.0,
+      "relative_reduction": -0.0
+    },
+    "real_head": {
+      "mean": 0.9256850828237716,
+      "sd": 0.0,
+      "mean_paired_delta": 0.0,
+      "relative_reduction": -0.0
+    }
+  },
+  "real_minus_sequence": {
+    "paired_seed_differences": [
+      0.0004033687428910415,
+      0.0006257858814824324,
+      0.00027243270806343034
+    ],
+    "mean": 0.00043386244414563474,
+    "sd": 0.00017863934519996743,
+    "standardized_paired_effect": 2.428705969896904
+  },
+  "baseline_rmse": 0.9256850828237716,
+  "compound_mean_rmse": 0.8398733996192302,
+  "replay_max_error": 4.76837158203125e-07,
+  "gvp_probe": {
+    "scope": "Single training batch, deterministic eval-mode diagnostic; no checkpoints replaced",
+    "measurements": [
+      {
+        "optimizer_steps_before": 0,
+        "mean_absolute_prediction_change": 0.0,
+        "gradient_l2_by_group": {
+          "gvp": 0.0,
+          "other": 0.0,
+          "projection": 9.824419322654481e-08,
+          "attention": 2.9777241084615517e-05
+        }
+      },
+      {
+        "optimizer_steps_before": 1,
+        "mean_absolute_prediction_change": 4.6566128730773926e-08,
+        "gradient_l2_by_group": {
+          "gvp": 1.477921885191683e-10,
+          "other": 2.0534596409515806e-06,
+          "projection": 9.824381681171957e-08,
+          "attention": 2.9777225856994118e-05
+        }
+      },
+      {
+        "optimizer_steps_before": 2,
+        "mean_absolute_prediction_change": 1.2293457984924316e-07,
+        "gradient_l2_by_group": {
+          "gvp": 3.614349097609831e-10,
+          "other": 4.107023875952162e-06,
+          "projection": 1.2065393746314967e-07,
+          "attention": 3.493679720995074e-05
+        }
+      }
+    ],
+    "note": "Zero-initialized GVP final projection initially blocks gradients to earlier GVP layers; later nonzero gradients distinguish temporary initialization from a permanently dead path."
+  }
+}

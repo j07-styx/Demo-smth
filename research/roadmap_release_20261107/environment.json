@@ -1,0 +1,14 @@
+{
+  "python": "3.9.13",
+  "packages": {
+    "torch": "2.5.1+cu124",
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "rdkit": "2025.9.2",
+    "biopython": "1.85",
+    "torch-geometric": "2.6.1",
+    "torch-scatter": "2.1.2+pt25cu124",
+    "torch-cluster": "1.6.3+pt25cu124",
+    "fair-esm": "2.0.0"
+  }
+}

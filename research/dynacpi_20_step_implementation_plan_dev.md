@@ -1,30 +1,28 @@
-﻿# DynaCPI 20-step implementation roadmap (development)
+# DynaCPI 20-step roadmap
 
-Objective: reproducible, scientifically defensible improvement on an independent, approved evaluation cohort. No promise of a win; report negative findings.
+Updated 7 November 2026. Development execution is not scientific completion.
 
-| Step | Task | Evidence required | State |
-|---|---|---|---|
-| 1 | Reproducible experiment registry | Unique run IDs, metrics, incomplete-run visibility, tests | COMPLETE |
-| 2 | Leakage audit | Exact sequence/compound overlaps and documented family-leakage limits | PENDING |
-| 3 | Protein-to-structure provenance | Graph integrity plus independent construct verification status | PENDING |
-| 4 | Protein-family-disjoint split | Approved immutable split and disjointness proof | BLOCKED: approval/provenance |
-| 5 | Affinity-label audit | Reporting floor and censoring policy | PENDING |
-| 6 | Reproduce sequence baseline | Matching metrics on approved common cohort | PENDING |
-| 7 | Gradient diagnostics | Per-component gradient norm and dead-path checks | PENDING |
-| 8 | Structural sensitivity | Prediction shifts and readout sensitivity | PENDING |
-| 9 | Matched-seed controls | Genuine, shuffled and disabled structure with same seed | PENDING |
-| 10 | Train/validation divergence | Learning curves and early-stop analysis | PENDING |
-| 11 | Normalized structural residual | Unit-tested bounded residual | PENDING |
-| 12 | Compound-conditioned residue selection | Differentiable, tested selection module | PENDING |
-| 13 | Cross-attention fusion | Tested compound/sequence/geometry integration | PENDING |
-| 14 | Confidence-aware regularization | Ablation with geometry confidence and control | PENDING |
-| 15 | Constrained backbone adaptation | Frozen vs selective tuning comparison | PENDING |
-| 16 | Architecture ablations | Component contribution matrix | PENDING |
-| 17 | Multi-seed reproducibility | Means, variability and effect sizes | PENDING |
-| 18 | Independent evaluation | One-time evaluation on untouched approved holdout | BLOCKED: step 4 |
-| 19 | Matched PerceiverCPI comparison | Identical data, metrics, splits and source references | BLOCKED: step 18 |
-| 20 | Research release | Reproduction guide, results, limitations and paper draft | PENDING |
+| Step | Status | Evidence / limitation |
+|---|---|---|
+| 1 | COMPLETE | Existing registry; new study has an isolated protocol and 18 run records. |
+| 2 | COMPLETE (development audit) | Exact sequence/pair/canonical compound/scaffold overlap plus 192 global alignments. Domain-family leakage remains unresolved. |
+| 3 | BLOCKED (experimental verification) | 13 graph hashes verified during loading; mapping manifest reviewed; assayed constructs remain unverified. |
+| 4 | BLOCKED | No source-reviewed independent cohort or frozen family-disjoint split. Existing validation has been repeatedly used. |
+| 5 | IN PROGRESS | Floor counts audited; original units/censoring and record-level experimental meanings not independently verified. |
+| 6 | COMPLETE (development checkpoint parity only) | Recomputed sequence baseline 0.9256850828. Full matched scientific baseline remains blocked by step 4. |
+| 7 | COMPLETE (development diagnostics) | Old GVP path gradient probe plus per-layer gradients for all new trainable variants. |
+| 8 | COMPLETE (development sensitivity) | Prediction changes, shuffled features, disabled geometry, rotation and permutation tests. |
+| 9 | COMPLETE (development controls) | Three matched seeds for real, shuffled and sequence-only residuals, plus disabled geometry via head-only ablation. |
+| 10 | COMPLETE (development analysis) | Train/validation trajectories and per-target harms recorded; two of four targets harmed by real fusion. |
+| 11 | COMPLETE (development implementation) | Layer-normalized residue fusion with scalar correction bounded to 0.25 standardized label units; opt-in. |
+| 12 | COMPLETE (development implementation) | Differentiable compound-query softmax residue weights; not a verified binding-site predictor. |
+| 13 | COMPLETE (development implementation) | 64-dimensional compound/sequence/local-structure attention with direct output residual. |
+| 14 | COMPLETE (limited development ablation) | Dropout, weight decay, anchoring and confidence value weighting tested. no_confidence removes weighting, not confidence input features. |
+| 15 | COMPLETE (negative development experiment) | Last prediction-layer tuning tested with and without fusion; epoch-zero model wins all six runs. |
+| 16 | COMPLETE (development ablations) | Six variants times three seeds; no claim of exhaustive architecture or parameter-matched capacity comparison. |
+| 17 | COMPLETE (development multi-seed study) | Means, sample SD, paired seed effect and descriptive target bootstrap. Four targets, not independent families. |
+| 18 | BLOCKED | No untouched verified holdout; no test-set evaluation performed. |
+| 19 | IN PROGRESS | Archived local Perceiver predictions scored on same 216 pairs; full matched paper-baseline reproduction and independent comparison blocked. |
+| 20 | IN PROGRESS | Development source/report/manuscript/reproduction package prepared; final scientific release blocked by steps 3-5,18-19. |
 
-Step 1 result: `scripts/build_experiment_registry_dev.py` enumerates existing `pilot_*_dev/seed_*` run histories without touching datasets or checkpoints. At implementation time, 18 runs were indexed and 1 lacked a manifest. Local generated registry: `research/experiment_registry_dev.json` (not committed). Run `python scripts/build_experiment_registry_dev.py --output <new-path>` to regenerate without overwriting existing records; run `python tests_v4/experiment_registry_test.py` for verification.
-
-All existing DAVIS geometry pilots are engineering-only; experimental construct identity and family-disjoint independent evaluation remain unresolved.
+Evidence: research/roadmap_release_20261107/REPORT.md. New development study: research/bounded_fusion_study_20261107 (local).
