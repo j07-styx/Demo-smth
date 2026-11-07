@@ -1,0 +1,18 @@
+{
+  "scope": "Training-only LOPO diagnostic; no validation scoring or architecture selection",
+  "rows": 106,
+  "targets": 9,
+  "alpha": 1.0,
+  "protein_kernel": "RBF of mean ESM embeddings; bandwidth median squared distance among training target identifiers",
+  "chemical_kernel": "Morgan radius2 2048bit chiral Tanimoto",
+  "models": [
+    "chemical",
+    "protein",
+    "product",
+    "half_chemical_half_product"
+  ],
+  "negative_control": "20 deterministic derangements of protein embedding assignments, same mapping within each run",
+  "seed": 71109,
+  "rows_sha256": "81cde4d6b5907cba8b67f7f653198db3dec1e4f1f6d5dbf5981db61915b9b4a4",
+  "hyperparameter_search": false
+}
