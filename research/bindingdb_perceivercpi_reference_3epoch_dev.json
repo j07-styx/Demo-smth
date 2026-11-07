@@ -1,0 +1,34 @@
+{
+  "status": "PERCEIVERCPI_UPSTREAM_DEV_NOT_PAPER_BENCHMARK",
+  "dataset": "BindingDB preliminary exact-looking Kd; assay and construct QC incomplete",
+  "train_pairs": 37441,
+  "validation_pairs": 4764,
+  "protein_cluster_disjoint": true,
+  "seed": 2103,
+  "epochs": 3,
+  "batch_size": 32,
+  "lr": 0.0003,
+  "protein_length": 500,
+  "note": "Upstream InteractionModel, short matched-split feasibility run, different training schedule from DeepDTA; not a fair full-paper superiority comparison",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_normalized": 0.5856223642590664,
+      "val_rmse": 1.850791392991053,
+      "seconds": 131.8
+    },
+    {
+      "epoch": 2,
+      "train_mse_normalized": 0.41731934472091375,
+      "val_rmse": 1.895232217850649,
+      "seconds": 131.41
+    },
+    {
+      "epoch": 3,
+      "train_mse_normalized": 0.3749492492027307,
+      "val_rmse": 1.8042979677994389,
+      "seconds": 132.83
+    }
+  ],
+  "train_only_mean_baseline_rmse": 1.6830994684812233
+}

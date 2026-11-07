@@ -1,0 +1,32 @@
+{
+  "status": "PRELIMINARY_UNEQUAL_TRAINING_SCHEDULE_NO_SUPERIORITY_CLAIM",
+  "split": "same protein component disjoint dev",
+  "deepdta_10epoch_three_seed_mean_rmse": 1.678648363639393,
+  "perceivercpi_3epoch_seed_2103_rmse": 1.8042979677994389,
+  "perceivercpi_3epoch_history": [
+    {
+      "epoch": 1,
+      "train_mse_normalized": 0.5856223642590664,
+      "val_rmse": 1.850791392991053,
+      "seconds": 131.8
+    },
+    {
+      "epoch": 2,
+      "train_mse_normalized": 0.41731934472091375,
+      "val_rmse": 1.895232217850649,
+      "seconds": 131.41
+    },
+    {
+      "epoch": 3,
+      "train_mse_normalized": 0.3749492492027307,
+      "val_rmse": 1.8042979677994389,
+      "seconds": 132.83
+    }
+  ],
+  "limitations": [
+    "Different epoch budgets and learning rates",
+    "Different seeds and number of repeats",
+    "BindingDB assay and construct identities not independently verified",
+    "Development split repeatedly inspected; no frozen independent test"
+  ]
+}
