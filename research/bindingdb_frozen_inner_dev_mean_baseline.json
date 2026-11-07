@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_INNER_DEV_BASELINE_NO_TEST_ACCESS",
+  "train_pairs": 27118,
+  "inner_dev_pairs": 7387,
+  "train_label_mean": 7.054023643032478,
+  "train_label_std": 1.6030239785342695,
+  "inner_dev_label_mean": 7.263587693054027,
+  "inner_dev_label_std": 1.7916875272043244,
+  "train_mean_pooled_rmse": 1.803901684183753,
+  "train_mean_component_macro_rmse": 1.6982886555248158,
+  "inner_dev_components": 20,
+  "note": "No reserved-test records or labels were used."
+}

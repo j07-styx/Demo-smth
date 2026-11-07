@@ -1,0 +1,80 @@
+{
+  "status": "FROZEN_INNER_DEV_ONLY_NO_TEST_EVALUATION",
+  "dataset": "BindingDB preliminary exact-looking Kd; assay and construct QC incomplete",
+  "train_pairs": 27118,
+  "reserved_test_pairs": 2936,
+  "validation_pairs": 7387,
+  "protein_cluster_disjoint": true,
+  "seed": 2103,
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.001,
+  "max_smiles_len": 100,
+  "max_protein_len": 1000,
+  "source_paper_batch_size": 256,
+  "source_paper_epochs": 100,
+  "note": "Short training feasibility experiment, not faithful full paper training or independent test; all epoch validation metrics exploratory",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 4.122475668225649,
+      "val_rmse": 2.4367929813171054,
+      "seconds": 8.54
+    },
+    {
+      "epoch": 2,
+      "train_mse": 1.2742622795532335,
+      "val_rmse": 2.476372462292836,
+      "seconds": 8.14
+    },
+    {
+      "epoch": 3,
+      "train_mse": 1.1600614291317057,
+      "val_rmse": 2.8058938346427587,
+      "seconds": 7.77
+    },
+    {
+      "epoch": 4,
+      "train_mse": 1.1290591789304085,
+      "val_rmse": 2.9257089280350934,
+      "seconds": 7.79
+    },
+    {
+      "epoch": 5,
+      "train_mse": 1.0744828764560088,
+      "val_rmse": 2.9374171652424885,
+      "seconds": 7.88
+    },
+    {
+      "epoch": 6,
+      "train_mse": 1.0421119405413575,
+      "val_rmse": 2.670037285363209,
+      "seconds": 7.97
+    },
+    {
+      "epoch": 7,
+      "train_mse": 1.0514751951087196,
+      "val_rmse": 2.7572031345497203,
+      "seconds": 8.13
+    },
+    {
+      "epoch": 8,
+      "train_mse": 1.027127078962776,
+      "val_rmse": 2.4475690760070132,
+      "seconds": 7.86
+    },
+    {
+      "epoch": 9,
+      "train_mse": 1.013421911394821,
+      "val_rmse": 2.7692276600516266,
+      "seconds": 7.88
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.9430678447462478,
+      "val_rmse": 2.8926884862747655,
+      "seconds": 7.87
+    }
+  ],
+  "train_only_mean_baseline_rmse": 1.803901684183753
+}
