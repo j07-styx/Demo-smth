@@ -1,13 +1,10 @@
-﻿# DERIVED from original train_geometry_engineering_pilot.py on 2026-11-06. DEV only.
-# Only difference: predeclared initialization seeds and isolated checkpoint path.
-"""Train v4 GVP geometry branch on a small DAVIS engineering-only subset.
+"""Development-only real residue-level GVP structure training on reconciled DAVIS numeric Kd.
 
-9/24 pilot train proteins and 4/8 validation proteins have independently
-sequence-exact mapped AlphaFold v6 graphs. Their experimental constructs are
-NOT verified. No independent protein-cluster holdout or approved BindingDB
-cohort is used. This is NOT a scientific claim of geometry superiority.
-The pretrained sequence foundation is loaded and frozen, then the geometric
-projection is optimized on true legacy DAVIS pilot labels for two epochs.
+Uses 106 numeric-Kd training pairs and 71 numeric-Kd validation pairs,
+seed 2103 and a frozen numeric-only sequence foundation. AlphaFold graph
+identity is name mapped, not assay-construct verified. The development
+validation subset has been repeatedly inspected and is not an independent
+test; this script cannot establish structural superiority.
 """
 from collections import defaultdict
 from pathlib import Path
@@ -39,7 +36,7 @@ def hashfile(p):
 
 def run():
     seed=int(os.environ.get("DYNACPI_ENGINEERING_SEED","2103"))
-    if seed not in (2103,): raise ValueError("Only centered geometry DEV seed 1127 allowed")
+    if seed not in (2103,): raise ValueError("Only reconciled residue fusion DEV seed 2103 allowed")
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
