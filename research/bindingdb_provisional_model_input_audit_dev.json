@@ -1,0 +1,21 @@
+{
+  "status": "PROVISIONAL_DATA_AUDIT",
+  "train_pairs": 37441,
+  "validation_pairs": 4764,
+  "protein_component_overlap": 0,
+  "protein_sequence_overlap": 0,
+  "compound_overlap": 167,
+  "validation_compound_overlap_fraction": 0.07892527287993283,
+  "smiles_over_100_pairs": 2327,
+  "smiles_over_100_fraction": 0.05513564743513802,
+  "protein_over_500_pairs": 19428,
+  "protein_over_500_fraction": 0.4603246060893259,
+  "protein_over_1000_pairs": 6179,
+  "protein_over_1000_fraction": 0.14640445444852507,
+  "unique_protein_sequences": 555,
+  "notes": [
+    "Split excludes protein component overlap, not compound overlap.",
+    "DeepDTA truncates compounds to 100 and proteins to 1000 characters; PerceiverCPI truncates proteins to 500 tokens.",
+    "Assay/construct verification is incomplete."
+  ]
+}
