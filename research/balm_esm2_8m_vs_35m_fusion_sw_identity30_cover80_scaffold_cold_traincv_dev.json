@@ -1,0 +1,446 @@
+{
+  "status": "EXPLORATORY_FROZEN_TRAIN_ONLY_ESM2_35M_VS_8M_AND_FUSION_SW_SCAFFOLD_COLD",
+  "protein_alignment_rule": "identity30_cover80",
+  "training_rows": 15538,
+  "alignment_groups": 271,
+  "strict_scaffold_exclusion": "RDKit Bemis Murcko including common acyclic group",
+  "encoder_8m": "ESM2 t6 8M layer6 pooled 320-d frozen",
+  "encoder_35m": "ESM2 t12 35M layer12 pooled 480-d frozen",
+  "encoder_8m_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "encoder_35m_sha256": "a4de168bab8ef6a7cb77b94d5e66a5272819d94afdabee26bf5463c0103f51ba",
+  "fusion_rule": "L2 normalize each embedding, concatenate divided by sqrt(2), retain fixed existing Ridge protein feature coefficient 0.25",
+  "architecture": "75pct Morgan and protein k-mer plus ESM Ridge, 25pct unchanged joint chemical and AA composition booster, inherited training-nested beta",
+  "models": [
+    "train_mean",
+    "ridge_8m",
+    "ridge_35m",
+    "ridge_8m_35m_fusion",
+    "nested_8m",
+    "nested_35m",
+    "nested_8m_35m_fusion"
+  ],
+  "outer_folds": [
+    {
+      "fold": 1,
+      "fit_unique_pairs": 5676,
+      "heldout_rows": 3885,
+      "heldout_alignment_components": 61,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.1543913701059498,
+          "component_macro_rmse": 1.40133856464408
+        },
+        "ridge_8m": {
+          "pooled_rmse": 1.5350098724823757,
+          "component_macro_rmse": 1.4069218498988216
+        },
+        "nested_8m": {
+          "pooled_rmse": 1.3938966839026539,
+          "component_macro_rmse": 1.3493085946480117
+        },
+        "ridge_35m": {
+          "pooled_rmse": 1.5356332752452415,
+          "component_macro_rmse": 1.3983887099721357
+        },
+        "nested_35m": {
+          "pooled_rmse": 1.3939358791199916,
+          "component_macro_rmse": 1.3427200836921158
+        },
+        "ridge_8m_35m_fusion": {
+          "pooled_rmse": 1.5350053196342641,
+          "component_macro_rmse": 1.4028545199457854
+        },
+        "nested_8m_35m_fusion": {
+          "pooled_rmse": 1.3937139673328498,
+          "component_macro_rmse": 1.3462912777695741
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "fit_unique_pairs": 3904,
+      "heldout_rows": 3885,
+      "heldout_alignment_components": 66,
+      "scaffold_overlap": 0,
+      "inherited_beta": 0.75,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.5954902745710502,
+          "component_macro_rmse": 1.3900208731710328
+        },
+        "ridge_8m": {
+          "pooled_rmse": 1.5051649948388754,
+          "component_macro_rmse": 1.4062927043830236
+        },
+        "nested_8m": {
+          "pooled_rmse": 1.4411480873603681,
+          "component_macro_rmse": 1.342305874247129
+        },
+        "ridge_35m": {
+          "pooled_rmse": 1.5258801536350712,
+          "component_macro_rmse": 1.4027135011801783
+        },
+        "nested_35m": {
+          "pooled_rmse": 1.4563762855808082,
+          "component_macro_rmse": 1.340644007206641
+        },
+        "ridge_8m_35m_fusion": {
+          "pooled_rmse": 1.5128225271858144,
+          "component_macro_rmse": 1.4043321294632094
+        },
+        "nested_8m_35m_fusion": {
+          "pooled_rmse": 1.4471602185322985,
+          "component_macro_rmse": 1.3414234625855281
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "fit_unique_pairs": 4869,
+      "heldout_rows": 3884,
+      "heldout_alignment_components": 72,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.6804527538671503,
+          "component_macro_rmse": 1.6316645993280003
+        },
+        "ridge_8m": {
+          "pooled_rmse": 1.6222819084981694,
+          "component_macro_rmse": 1.494351761201938
+        },
+        "nested_8m": {
+          "pooled_rmse": 1.6304216703414165,
+          "component_macro_rmse": 1.4746774413920432
+        },
+        "ridge_35m": {
+          "pooled_rmse": 1.6135935424593921,
+          "component_macro_rmse": 1.5020688509496685
+        },
+        "nested_35m": {
+          "pooled_rmse": 1.6223305124730554,
+          "component_macro_rmse": 1.4799015591371176
+        },
+        "ridge_8m_35m_fusion": {
+          "pooled_rmse": 1.6179105660336512,
+          "component_macro_rmse": 1.4970762937732942
+        },
+        "nested_8m_35m_fusion": {
+          "pooled_rmse": 1.6265815430896973,
+          "component_macro_rmse": 1.4765180106046547
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "fit_unique_pairs": 5063,
+      "heldout_rows": 3884,
+      "heldout_alignment_components": 72,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.354834452727313,
+          "component_macro_rmse": 1.4143386596567942
+        },
+        "ridge_8m": {
+          "pooled_rmse": 1.4252742559051674,
+          "component_macro_rmse": 1.4067529177231821
+        },
+        "nested_8m": {
+          "pooled_rmse": 1.362212798021461,
+          "component_macro_rmse": 1.342200647308473
+        },
+        "ridge_35m": {
+          "pooled_rmse": 1.4180789698168874,
+          "component_macro_rmse": 1.4056538806073593
+        },
+        "nested_35m": {
+          "pooled_rmse": 1.3554474960277245,
+          "component_macro_rmse": 1.3401962718813663
+        },
+        "ridge_8m_35m_fusion": {
+          "pooled_rmse": 1.4219033166994532,
+          "component_macro_rmse": 1.4056990686524982
+        },
+        "nested_8m_35m_fusion": {
+          "pooled_rmse": 1.359193605691497,
+          "component_macro_rmse": 1.34127534595668
+        }
+      }
+    }
+  ],
+  "out_of_fold": {
+    "pooled_rmse": {
+      "train_mean": 1.4609590975570728,
+      "ridge_8m": 1.5235630059974647,
+      "ridge_35m": 1.524886973860825,
+      "ridge_8m_35m_fusion": 1.523508916176907,
+      "nested_8m": 1.460624071566603,
+      "nested_35m": 1.4605847444346978,
+      "nested_8m_35m_fusion": 1.4602934071999838
+    },
+    "component_macro_rmse": {
+      "train_mean": 1.4632297591124805,
+      "ridge_8m": 1.4299523550395434,
+      "ridge_35m": 1.428918225307373,
+      "ridge_8m_35m_fusion": 1.4290032190255415,
+      "nested_8m": 1.3790230050194698,
+      "nested_35m": 1.3779906768051224,
+      "nested_8m_35m_fusion": 1.3783720964834132
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "ridge_8m_minus_train_mean": {
+          "pooled_delta": 0.06260390844039199,
+          "pooled_CI95": [
+            -0.08271060174800268,
+            0.21315957631536397
+          ],
+          "macro_delta": -0.03327740407293711,
+          "macro_CI95": [
+            -0.10456261591593449,
+            0.03573731022927654
+          ],
+          "protein_groups_won": 127
+        },
+        "ridge_35m_minus_train_mean": {
+          "pooled_delta": 0.0639278763037523,
+          "pooled_CI95": [
+            -0.07541822477588127,
+            0.21089339025921686
+          ],
+          "macro_delta": -0.03431153380510765,
+          "macro_CI95": [
+            -0.10464810363039821,
+            0.03411797258548432
+          ],
+          "protein_groups_won": 129
+        },
+        "ridge_8m_35m_fusion_minus_train_mean": {
+          "pooled_delta": 0.06254981861983433,
+          "pooled_CI95": [
+            -0.08115618898165283,
+            0.21169258627001902
+          ],
+          "macro_delta": -0.03422654008693904,
+          "macro_CI95": [
+            -0.10488903421797229,
+            0.034767024254175896
+          ],
+          "protein_groups_won": 128
+        },
+        "nested_8m_minus_train_mean": {
+          "pooled_delta": -0.00033502599046975057,
+          "pooled_CI95": [
+            -0.13210002381530475,
+            0.1305489161117085
+          ],
+          "macro_delta": -0.0842067540930107,
+          "macro_CI95": [
+            -0.15014517648050751,
+            -0.018733212712616045
+          ],
+          "protein_groups_won": 135
+        },
+        "nested_35m_minus_train_mean": {
+          "pooled_delta": -0.00037435312237499296,
+          "pooled_CI95": [
+            -0.1262816101110144,
+            0.12428384973441904
+          ],
+          "macro_delta": -0.0852390823073581,
+          "macro_CI95": [
+            -0.15049127915044586,
+            -0.020493269698758018
+          ],
+          "protein_groups_won": 131
+        },
+        "nested_8m_35m_fusion_minus_train_mean": {
+          "pooled_delta": -0.0006656903570889661,
+          "pooled_CI95": [
+            -0.1304264510589297,
+            0.1271805629487356
+          ],
+          "macro_delta": -0.08485766262906735,
+          "macro_CI95": [
+            -0.15084403985893155,
+            -0.019740411997809376
+          ],
+          "protein_groups_won": 137
+        },
+        "train_mean_minus_nested_8m": {
+          "pooled_delta": 0.00033502599046975057,
+          "pooled_CI95": [
+            -0.13054891611170857,
+            0.13210002381530472
+          ],
+          "macro_delta": 0.0842067540930107,
+          "macro_CI95": [
+            0.018733212712616028,
+            0.15014517648050751
+          ],
+          "protein_groups_won": 136
+        },
+        "ridge_8m_minus_nested_8m": {
+          "pooled_delta": 0.06293893443086174,
+          "pooled_CI95": [
+            0.019986176929749074,
+            0.09838113186625365
+          ],
+          "macro_delta": 0.050929350020073594,
+          "macro_CI95": [
+            0.030531993219004634,
+            0.07100758460338458
+          ],
+          "protein_groups_won": 91
+        },
+        "ridge_35m_minus_nested_8m": {
+          "pooled_delta": 0.06426290229422205,
+          "pooled_CI95": [
+            0.010042489473104039,
+            0.10034393684074551
+          ],
+          "macro_delta": 0.04989522028790305,
+          "macro_CI95": [
+            0.02903478434947589,
+            0.07117283125041071
+          ],
+          "protein_groups_won": 95
+        },
+        "ridge_8m_35m_fusion_minus_nested_8m": {
+          "pooled_delta": 0.06288484461030408,
+          "pooled_CI95": [
+            0.015755170200523052,
+            0.0986634434740355
+          ],
+          "macro_delta": 0.049980214006071666,
+          "macro_CI95": [
+            0.029764760554326364,
+            0.07052464322092826
+          ],
+          "protein_groups_won": 95
+        },
+        "nested_35m_minus_nested_8m": {
+          "pooled_delta": -3.9327131905242396e-05,
+          "pooled_CI95": [
+            -0.011321711678435042,
+            0.008526570668671808
+          ],
+          "macro_delta": -0.0010323282143474,
+          "macro_CI95": [
+            -0.0054170722755318475,
+            0.003515846318338766
+          ],
+          "protein_groups_won": 136
+        },
+        "nested_8m_35m_fusion_minus_nested_8m": {
+          "pooled_delta": -0.0003306643666192155,
+          "pooled_CI95": [
+            -0.004964471936087944,
+            0.00320694151610551
+          ],
+          "macro_delta": -0.0006509085360566491,
+          "macro_CI95": [
+            -0.0024821602309576473,
+            0.001283715471409406
+          ],
+          "protein_groups_won": 132
+        },
+        "train_mean_minus_nested_35m": {
+          "pooled_delta": 0.00037435312237499296,
+          "pooled_CI95": [
+            -0.12428384973441918,
+            0.12628161011101435
+          ],
+          "macro_delta": 0.0852390823073581,
+          "macro_CI95": [
+            0.020493269698758015,
+            0.15049127915044583
+          ],
+          "protein_groups_won": 140
+        },
+        "ridge_8m_minus_nested_35m": {
+          "pooled_delta": 0.06297826156276698,
+          "pooled_CI95": [
+            0.027312210902934904,
+            0.09927470026157234
+          ],
+          "macro_delta": 0.051961678234420994,
+          "macro_CI95": [
+            0.030829973657031308,
+            0.07292660857890652
+          ],
+          "protein_groups_won": 93
+        },
+        "ridge_35m_minus_nested_35m": {
+          "pooled_delta": 0.06430222942612729,
+          "pooled_CI95": [
+            0.019885592862613256,
+            0.09934855075684222
+          ],
+          "macro_delta": 0.05092754850225045,
+          "macro_CI95": [
+            0.030778701033699125,
+            0.0712603092053596
+          ],
+          "protein_groups_won": 92
+        },
+        "ridge_8m_35m_fusion_minus_nested_35m": {
+          "pooled_delta": 0.06292417174220932,
+          "pooled_CI95": [
+            0.024167687737068573,
+            0.09863850657710854
+          ],
+          "macro_delta": 0.051012542220419066,
+          "macro_CI95": [
+            0.03038899979339757,
+            0.0714411974100422
+          ],
+          "protein_groups_won": 94
+        },
+        "nested_8m_minus_nested_35m": {
+          "pooled_delta": 3.9327131905242396e-05,
+          "pooled_CI95": [
+            -0.008526570668671813,
+            0.011321711678435022
+          ],
+          "macro_delta": 0.0010323282143474,
+          "macro_CI95": [
+            -0.003515846318338767,
+            0.005417072275531845
+          ],
+          "protein_groups_won": 135
+        },
+        "nested_8m_35m_fusion_minus_nested_35m": {
+          "pooled_delta": -0.0002913372347139731,
+          "pooled_CI95": [
+            -0.005318373429977141,
+            0.006318320239982664
+          ],
+          "macro_delta": 0.00038141967829075085,
+          "macro_CI95": [
+            -0.0022675264903253664,
+            0.0029320435494375376
+          ],
+          "protein_groups_won": 138
+        }
+      }
+    }
+  },
+  "seconds": 74.56,
+  "caveats": [
+    "Original frozen TRAIN only; no original development/test labels or sequences used.",
+    "All architecture variants motivated by repeated exploratory analysis, not independent confirmation.",
+    "Protein groups are alignment identity/coverage proxies, not independently certified homology.",
+    "Murcko scaffold exclusion does not remove all structural analogs.",
+    "BALM source lacks experimental assay DOI/method/construct; conflicting repeated labels.",
+    "Both encoders truncate 85 long TRAIN sequences to first 1022 amino acids.",
+    "All 5000 group bootstrap confidence intervals are descriptive, not test-set significance."
+  ]
+}

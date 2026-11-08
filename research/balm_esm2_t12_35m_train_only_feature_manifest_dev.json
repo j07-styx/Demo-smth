@@ -1,0 +1,25 @@
+{
+  "status": "BALM_TRAIN_ONLY_PRETRAINED_ESM2_FROZEN_PROTEIN_FEATURE_CACHE",
+  "upstream_pretrained": "esm2_t12_35M_UR50D",
+  "model_parameter_count": 33501394,
+  "source_weight_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+  "source_weight_local_file": "esm2_t12_35M_UR50D.pt",
+  "max_nterm_aa_tokens": 1022,
+  "representation_layer": 12,
+  "pooling": "mean of non-special residue tokens 1..min(length,1022), no target labels",
+  "protein_embeddings": 639,
+  "embedding_dimensions": 480,
+  "proteins_truncated_to_window": 85,
+  "minimum_full_length": 92,
+  "maximum_full_length": 3046,
+  "device": "cuda",
+  "cache_location_str": "data/reference/balm_esm2_35m_train_20261108/esm2_t12_35m_mean_layer12_w1022.npz",
+  "cache_sha256": "a4de168bab8ef6a7cb77b94d5e66a5272819d94afdabee26bf5463c0103f51ba",
+  "minutes": 1.97,
+  "caveats": [
+    "Only 639 proteins from the frozen original TRAIN partition; not complete BALM.",
+    "Frozen ESM2 35M encoder, no fine-tuning; 85 long proteins truncated to first 1022 residues.",
+    "No frozen development or reserved test labels or protein sequences encoded.",
+    "Protein similarity graph and assay provenance remain unverified."
+  ]
+}
