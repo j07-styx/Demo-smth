@@ -1,0 +1,216 @@
+{
+  "status": "EXPLORATORY_TRAIN_ONLY_CV_SELECTED_FROZEN_INNER_DEV_NO_TEST",
+  "sample_counts": {
+    "train": 27118,
+    "inner_dev": 7387
+  },
+  "components": {
+    "train": 82,
+    "inner_dev": 20
+  },
+  "model": "two HistGradientBoostingRegressor fits (chemical 21 and joint 42 features); mean-centered ensemble",
+  "fixed_model_params": {
+    "max_iter": 160,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 80,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "train_only_cv": {
+    "folds": 3,
+    "splitter": "GroupShuffleSplit grouped by protein component",
+    "seed": 20261108,
+    "scale_grid": [
+      0.0,
+      0.15,
+      0.3,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "protein_weight_grid": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "candidates": [
+      {
+        "shrink": 0.0,
+        "protein_weight": 0.0,
+        "mean_fold_pooled_rmse": 1.6880239785012652,
+        "mean_fold_macro_rmse": 1.8217622454386075,
+        "balanced_score": 1.7548931119699365
+      },
+      {
+        "shrink": 0.0,
+        "protein_weight": 0.5,
+        "mean_fold_pooled_rmse": 1.6880239785012652,
+        "mean_fold_macro_rmse": 1.8217622454386075,
+        "balanced_score": 1.7548931119699365
+      },
+      {
+        "shrink": 0.0,
+        "protein_weight": 1.0,
+        "mean_fold_pooled_rmse": 1.6880239785012652,
+        "mean_fold_macro_rmse": 1.8217622454386075,
+        "balanced_score": 1.7548931119699365
+      },
+      {
+        "shrink": 0.15,
+        "protein_weight": 0.0,
+        "mean_fold_pooled_rmse": 1.6518968206828095,
+        "mean_fold_macro_rmse": 1.7342797979431444,
+        "balanced_score": 1.693088309312977
+      },
+      {
+        "shrink": 0.15,
+        "protein_weight": 0.5,
+        "mean_fold_pooled_rmse": 1.6571219948351958,
+        "mean_fold_macro_rmse": 1.7285949685454245,
+        "balanced_score": 1.69285848169031
+      },
+      {
+        "shrink": 0.15,
+        "protein_weight": 1.0,
+        "mean_fold_pooled_rmse": 1.6635115561484453,
+        "mean_fold_macro_rmse": 1.7239058214116436,
+        "balanced_score": 1.6937086887800445
+      },
+      {
+        "shrink": 0.3,
+        "protein_weight": 0.0,
+        "mean_fold_pooled_rmse": 1.6221892137557743,
+        "mean_fold_macro_rmse": 1.6551485940863273,
+        "balanced_score": 1.638668903921051
+      },
+      {
+        "shrink": 0.3,
+        "protein_weight": 0.5,
+        "mean_fold_pooled_rmse": 1.631890251585311,
+        "mean_fold_macro_rmse": 1.6423311025299394,
+        "balanced_score": 1.6371106770576254
+      },
+      {
+        "shrink": 0.3,
+        "protein_weight": 1.0,
+        "mean_fold_pooled_rmse": 1.6462793300832352,
+        "mean_fold_macro_rmse": 1.6337025458916299,
+        "balanced_score": 1.6399909379874327
+      },
+      {
+        "shrink": 0.5,
+        "protein_weight": 0.0,
+        "mean_fold_pooled_rmse": 1.5929130756779282,
+        "mean_fold_macro_rmse": 1.5642954429129636,
+        "balanced_score": 1.578604259295446
+      },
+      {
+        "shrink": 0.5,
+        "protein_weight": 0.5,
+        "mean_fold_pooled_rmse": 1.607336803599355,
+        "mean_fold_macro_rmse": 1.539207631471213,
+        "balanced_score": 1.573272217535284
+      },
+      {
+        "shrink": 0.5,
+        "protein_weight": 1.0,
+        "mean_fold_pooled_rmse": 1.6348315985854427,
+        "mean_fold_macro_rmse": 1.526673539501506,
+        "balanced_score": 1.5807525690434745
+      },
+      {
+        "shrink": 0.75,
+        "protein_weight": 0.0,
+        "mean_fold_pooled_rmse": 1.5734044116852424,
+        "mean_fold_macro_rmse": 1.479252976074908,
+        "balanced_score": 1.526328693880075
+      },
+      {
+        "shrink": 0.75,
+        "protein_weight": 0.5,
+        "mean_fold_pooled_rmse": 1.5916088020106767,
+        "mean_fold_macro_rmse": 1.4318771002200419,
+        "balanced_score": 1.5117429511153593
+      },
+      {
+        "shrink": 0.75,
+        "protein_weight": 1.0,
+        "mean_fold_pooled_rmse": 1.6391462684439364,
+        "mean_fold_macro_rmse": 1.4172213217311225,
+        "balanced_score": 1.5281837950875294
+      },
+      {
+        "shrink": 1.0,
+        "protein_weight": 0.0,
+        "mean_fold_pooled_rmse": 1.5732766934985751,
+        "mean_fold_macro_rmse": 1.4344795492419207,
+        "balanced_score": 1.503878121370248
+      },
+      {
+        "shrink": 1.0,
+        "protein_weight": 0.5,
+        "mean_fold_pooled_rmse": 1.5927614854285543,
+        "mean_fold_macro_rmse": 1.3569403755134604,
+        "balanced_score": 1.4748509304710073
+      },
+      {
+        "shrink": 1.0,
+        "protein_weight": 1.0,
+        "mean_fold_pooled_rmse": 1.6638858257854892,
+        "mean_fold_macro_rmse": 1.3461073593248265,
+        "balanced_score": 1.5049965925551578
+      }
+    ],
+    "selected_balanced": {
+      "shrink": 1.0,
+      "protein_weight": 0.5,
+      "mean_fold_pooled_rmse": 1.5927614854285543,
+      "mean_fold_macro_rmse": 1.3569403755134604,
+      "balanced_score": 1.4748509304710073
+    },
+    "selected_pooled": {
+      "shrink": 1.0,
+      "protein_weight": 0.0,
+      "mean_fold_pooled_rmse": 1.5732766934985751,
+      "mean_fold_macro_rmse": 1.4344795492419207,
+      "balanced_score": 1.503878121370248
+    },
+    "selected_macro": {
+      "shrink": 1.0,
+      "protein_weight": 1.0,
+      "mean_fold_pooled_rmse": 1.6638858257854892,
+      "mean_fold_macro_rmse": 1.3461073593248265,
+      "balanced_score": 1.5049965925551578
+    }
+  },
+  "frozen_inner_dev": {
+    "selected_balanced": {
+      "pooled_rmse": 2.2525621006726126,
+      "component_macro_rmse": 1.4633512747735125
+    },
+    "controls": {
+      "train_mean": {
+        "pooled_rmse": 1.803901684183753,
+        "component_macro_rmse": 1.698288655524816
+      },
+      "unshrunk_chemistry": {
+        "pooled_rmse": 2.327238685683782,
+        "component_macro_rmse": 1.5161560593157435
+      },
+      "unshrunk_joint": {
+        "pooled_rmse": 2.244203590380022,
+        "component_macro_rmse": 1.4599136182465418
+      }
+    }
+  },
+  "elapsed_seconds": 18.82,
+  "limitations": [
+    "Training-only CV selection, but the external inner-dev split has been inspected repeatedly in prior experiments",
+    "Overlapping group shuffle folds have widely different pair counts and component size imbalance",
+    "Assay and construct QC not independently approved; no prospective test metric computed",
+    "Model may not exceed train-only mean on pooled RMSE"
+  ]
+}

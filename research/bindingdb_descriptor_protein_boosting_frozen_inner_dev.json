@@ -1,0 +1,44 @@
+{
+  "status": "EXPLORATORY_PROVISIONAL_FROZEN_INNER_DEV_ONLY_NO_TEST",
+  "train_pairs": 27118,
+  "inner_dev_pairs": 7387,
+  "train_components": 82,
+  "inner_dev_components": 20,
+  "model": "sklearn HistGradientBoostingRegressor, train-only fitted",
+  "fixed_parameters": {
+    "max_iter": 160,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 80,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "chemical_feature_count": 21,
+  "protein_feature_count": 21,
+  "unique_compounds_featurized": 14455,
+  "baseline_train_mean": {
+    "pooled_rmse": 1.8039016890182926,
+    "macro_component_rmse": 1.6982886389537737,
+    "components_better_than_mean": 0
+  },
+  "models": {
+    "chemical_descriptors_only": {
+      "pooled_rmse": 2.327238690516796,
+      "macro_component_rmse": 1.5161560549622748,
+      "components_better_than_mean": 14
+    },
+    "chemical_plus_protein_composition": {
+      "pooled_rmse": 2.2433301449644603,
+      "macro_component_rmse": 1.4588541930483212,
+      "components_better_than_mean": 15
+    }
+  },
+  "seconds": 14.23,
+  "warnings": [
+    "Exploratory repeatedly inspected development cohort; no reserved test evaluated",
+    "Assay and construct QC incomplete; no claim of benchmark superiority",
+    "No validation-based hyperparameter optimization or checkpoint selection"
+  ]
+}
