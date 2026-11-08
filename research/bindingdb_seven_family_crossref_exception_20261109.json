@@ -1,0 +1,21 @@
+{
+  "status": "CROSSREF_ONE_PUBMED_UNINDEXED_DOI_BIBLIOGRAPHY_ONLY",
+  "pubmed_unindexed_doi_checked": 1,
+  "exact_crossref_DOI_identifiers_verified": 1,
+  "crossref_source_type_counts": {
+    "journal-article": 1
+  },
+  "additional_bibliographic_DOI_identifiers_resolved": 1,
+  "original_DOI_total": 74,
+  "original_pubmed_DOI_identifiers_resolved": 73,
+  "original_pubmed_PMID_identifiers_resolved": 90,
+  "reciprocal_pubmed_DOI_PMID_alias_pairs_verified": 72,
+  "original_unattributed_technical_tasks": 62,
+  "patent_identifiers_unresolved": 56,
+  "bindingdb_assay_rows_verified": 0,
+  "physical_constructs_verified": 0,
+  "families_scientifically_approved": 0,
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "interpretation": "Exactly one original DOI not indexed in the Europe PMC MED search was separately resolved as an exact Crossref bibliographic record. This does not assign any PMID or verify a direct affinity assay.",
+  "privacy": "DOI, source-family identity and article title remain solely in private reviewer report."
+}

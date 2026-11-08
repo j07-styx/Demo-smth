@@ -1,0 +1,36 @@
+{
+  "status": "SEVEN_FAMILY_BIBLIOGRAPHIC_RECONCILIATION_ONLY_NO_ASSAY_APPROVAL",
+  "original_conflicted_source_families": 7,
+  "original_eligible_tasks_in_seven_families": 708,
+  "original_unattributed_technical_tasks": 62,
+  "original_source_identifier_strings": 220,
+  "original_source_identifier_counts_by_kind": {
+    "doi": 74,
+    "pmid": 90,
+    "patent": 56
+  },
+  "doi_identifiers_with_exact_MED_metadata": 73,
+  "pmid_identifiers_with_exact_MED_metadata": 90,
+  "reciprocal_DOI_PMID_aliases_confirmed_as_same_publication": 72,
+  "one_way_only_DOI_PMID_alias_leads_not_promoted": 0,
+  "cross_preliminary_family_bibliography_link_leads_require_review": 0,
+  "unresolved_DOI_identifiers_in_MED": 1,
+  "unresolved_PMID_identifiers_in_MED": 0,
+  "original_patent_strings_unverified_by_pubmed": 56,
+  "original_assay_record_crosswalks_verified": 0,
+  "assayed_physical_constructs_verified": 0,
+  "families_scientifically_approved": 0,
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "warnings": [
+    "A reciprocal DOI\u2013PMID lookup verifies only bibliographic identity in Europe PMC/MED; it does NOT match BindingDB source assay rows or physical protein constructs.",
+    "Neither a DOI nor a PMID guarantees a primary original experiment; some publications may be reviews, screening panels or indirect assays.",
+    "Patent IDs are deliberately left as distinct unresolved sources; do not merge them with DOI/PMID without original evidence.",
+    "All individual source IDs, family IDs and detailed crosswalks are confined to the private reviewer artifact, never public.",
+    "No affinity values, model outcomes, reserved-test metrics, split-role assignments or compound identities were read or changed.",
+    "No scientific training/cohort approval or new split freeze is authorized by these results."
+  ],
+  "europe_pmc_exact_metadata_batches_total": 22,
+  "europe_pmc_metadata_batches_unresolved_by_network": 0,
+  "metadata_fetch_errors_by_type": {},
+  "original_private_bibliographic_inventory_sha256": "b7f2239209246bd01c87b2fb07ec41541218bb027043f886184a8ff3825c31dd"
+}
