@@ -1,0 +1,444 @@
+{
+  "status": "ESM8M_AUGMENTED_JOINT_ENSEMBLE_FROZEN_TRAIN_ONLY_SCAFFOLD_COLD_NO_DEV_OR_TEST",
+  "feature_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "source_prior_nested_report": "balm_bindingdb_nested_scaffold_cold_mean_shrinkage_traincv_dev.json",
+  "scaffold_policy": "all Murcko scaffolds withheld including one shared acyclic group",
+  "inherited_betas": [
+    1.0,
+    1.0,
+    1.0,
+    0.75
+  ],
+  "models": [
+    "train_mean",
+    "ridge_kmer",
+    "ridge_kmer_esm8m",
+    "joint_standard",
+    "joint_esm8m",
+    "nested_standard",
+    "nested_esm8m_with_inherited_beta"
+  ],
+  "protocol": "Keep the ordinary joint shallow descriptor booster and its fixed 25% ensemble coefficient; replace only classical Morgan+protein-kmer Ridge with frozen ESM2-8M-augmented Ridge. Reuse each beta selected strictly inside original TRAIN folds.",
+  "folds": [
+    {
+      "fold": 1,
+      "outer_train_unique": 4078,
+      "holdout_original_pairs": 3885,
+      "heldout_components": 129,
+      "murcko_overlap_count": 0,
+      "inherited_nested_beta_from_train_cv": 1.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.492595265226907,
+          "component_macro_rmse": 1.380291210265331
+        },
+        "ridge_kmer": {
+          "pooled_rmse": 1.4582293483218387,
+          "component_macro_rmse": 1.3709041533508028
+        },
+        "ridge_kmer_esm8m": {
+          "pooled_rmse": 1.4238736733071689,
+          "component_macro_rmse": 1.3425162119839615
+        },
+        "joint_standard": {
+          "pooled_rmse": 1.3902497515686,
+          "component_macro_rmse": 1.3029673071588053
+        },
+        "joint_esm8m": {
+          "pooled_rmse": 1.370962693123721,
+          "component_macro_rmse": 1.28516611732646
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.3902497515686,
+          "component_macro_rmse": 1.3029673071588053
+        },
+        "nested_esm8m_with_inherited_beta": {
+          "pooled_rmse": 1.370962693123721,
+          "component_macro_rmse": 1.28516611732646
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "outer_train_unique": 4305,
+      "holdout_original_pairs": 3885,
+      "heldout_components": 130,
+      "murcko_overlap_count": 0,
+      "inherited_nested_beta_from_train_cv": 1.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4375843779300046,
+          "component_macro_rmse": 1.3605499520721527
+        },
+        "ridge_kmer": {
+          "pooled_rmse": 1.4824649587306336,
+          "component_macro_rmse": 1.413570098912913
+        },
+        "ridge_kmer_esm8m": {
+          "pooled_rmse": 1.4805157442996604,
+          "component_macro_rmse": 1.381806634737775
+        },
+        "joint_standard": {
+          "pooled_rmse": 1.4444968548700927,
+          "component_macro_rmse": 1.346547500196209
+        },
+        "joint_esm8m": {
+          "pooled_rmse": 1.4516443415423697,
+          "component_macro_rmse": 1.3254181296185295
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.4444968548700927,
+          "component_macro_rmse": 1.346547500196209
+        },
+        "nested_esm8m_with_inherited_beta": {
+          "pooled_rmse": 1.4516443415423697,
+          "component_macro_rmse": 1.3254181296185295
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "outer_train_unique": 3856,
+      "holdout_original_pairs": 3884,
+      "heldout_components": 130,
+      "murcko_overlap_count": 0,
+      "inherited_nested_beta_from_train_cv": 1.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4061002305343717,
+          "component_macro_rmse": 1.3546698501019652
+        },
+        "ridge_kmer": {
+          "pooled_rmse": 1.4895739239850467,
+          "component_macro_rmse": 1.4061659087415257
+        },
+        "ridge_kmer_esm8m": {
+          "pooled_rmse": 1.495891889390269,
+          "component_macro_rmse": 1.4028947961433564
+        },
+        "joint_standard": {
+          "pooled_rmse": 1.4216378153217506,
+          "component_macro_rmse": 1.3327457019464857
+        },
+        "joint_esm8m": {
+          "pooled_rmse": 1.4294014927938128,
+          "component_macro_rmse": 1.3343313259182612
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.4216378153217506,
+          "component_macro_rmse": 1.3327457019464857
+        },
+        "nested_esm8m_with_inherited_beta": {
+          "pooled_rmse": 1.4294014927938128,
+          "component_macro_rmse": 1.3343313259182612
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "outer_train_unique": 4475,
+      "holdout_original_pairs": 3884,
+      "heldout_components": 130,
+      "murcko_overlap_count": 0,
+      "inherited_nested_beta_from_train_cv": 0.75,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4294488686842326,
+          "component_macro_rmse": 1.354012296467588
+        },
+        "ridge_kmer": {
+          "pooled_rmse": 1.5192594411951692,
+          "component_macro_rmse": 1.3855930189378525
+        },
+        "ridge_kmer_esm8m": {
+          "pooled_rmse": 1.5008817770243306,
+          "component_macro_rmse": 1.3569426941431249
+        },
+        "joint_standard": {
+          "pooled_rmse": 1.4361780498360395,
+          "component_macro_rmse": 1.3272097047685258
+        },
+        "joint_esm8m": {
+          "pooled_rmse": 1.4237691697531913,
+          "component_macro_rmse": 1.306951170690769
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.3940624020718722,
+          "component_macro_rmse": 1.295331114167034
+        },
+        "nested_esm8m_with_inherited_beta": {
+          "pooled_rmse": 1.3828694790559761,
+          "component_macro_rmse": 1.2769935822473817
+        }
+      }
+    }
+  ],
+  "out_of_fold": {
+    "pooled_rmse": {
+      "train_mean": 1.441784195921108,
+      "ridge_kmer": 1.4875389743944287,
+      "ridge_kmer_esm8m": 1.4756055433577702,
+      "joint_standard": 1.4232900906253951,
+      "joint_esm8m": 1.4192521383739851,
+      "nested_standard": 1.412784189201056,
+      "nested_esm8m_with_inherited_beta": 1.409107044545831
+    },
+    "component_macro_rmse": {
+      "train_mean": 1.3623463178182071,
+      "ridge_kmer": 1.3941029079754363,
+      "ridge_kmer_esm8m": 1.371095043543515,
+      "joint_standard": 1.327414567479662,
+      "joint_esm8m": 1.3130202515312064,
+      "nested_standard": 1.3194295640534692,
+      "nested_esm8m_with_inherited_beta": 1.3055164239827663
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "ridge_kmer_minus_train_mean": {
+          "pooled_delta": 0.04575477847332077,
+          "pooled_CI95": [
+            -0.013631990906165898,
+            0.10311741667317208
+          ],
+          "macro_delta": 0.0317565901572292,
+          "macro_CI95": [
+            -0.015587125870527907,
+            0.07673146172202708
+          ],
+          "protein_groups_won": 200
+        },
+        "ridge_kmer_esm8m_minus_train_mean": {
+          "pooled_delta": 0.03382134743666221,
+          "pooled_CI95": [
+            -0.028295367296080398,
+            0.09323731690254809
+          ],
+          "macro_delta": 0.008748725725307827,
+          "macro_CI95": [
+            -0.041086001954019284,
+            0.05685040786212353
+          ],
+          "protein_groups_won": 209
+        },
+        "joint_standard_minus_train_mean": {
+          "pooled_delta": -0.018494105295712826,
+          "pooled_CI95": [
+            -0.07414144280042147,
+            0.03608371799873803
+          ],
+          "macro_delta": -0.03493175033854512,
+          "macro_CI95": [
+            -0.07914798795297441,
+            0.007923937246659456
+          ],
+          "protein_groups_won": 213
+        },
+        "joint_esm8m_minus_train_mean": {
+          "pooled_delta": -0.02253205754712284,
+          "pooled_CI95": [
+            -0.08485447399777932,
+            0.037794817599561645
+          ],
+          "macro_delta": -0.04932606628700076,
+          "macro_CI95": [
+            -0.0966639757543362,
+            -0.0032512647318406083
+          ],
+          "protein_groups_won": 218
+        },
+        "nested_standard_minus_train_mean": {
+          "pooled_delta": -0.029000006720051985,
+          "pooled_CI95": [
+            -0.0797943746843972,
+            0.021776282693383022
+          ],
+          "macro_delta": -0.042916753764737914,
+          "macro_CI95": [
+            -0.08489952372430713,
+            -0.0029991841314653774
+          ],
+          "protein_groups_won": 224
+        },
+        "nested_esm8m_with_inherited_beta_minus_train_mean": {
+          "pooled_delta": -0.03267715137527705,
+          "pooled_CI95": [
+            -0.09071043596971727,
+            0.025283066135238317
+          ],
+          "macro_delta": -0.05682989383544079,
+          "macro_CI95": [
+            -0.10117275057105651,
+            -0.01392749810642403
+          ],
+          "protein_groups_won": 227
+        },
+        "train_mean_minus_ridge_kmer": {
+          "pooled_delta": -0.04575477847332077,
+          "pooled_CI95": [
+            -0.10311741667317208,
+            0.013631990906165889
+          ],
+          "macro_delta": -0.0317565901572292,
+          "macro_CI95": [
+            -0.07673146172202709,
+            0.015587125870527881
+          ],
+          "protein_groups_won": 319
+        },
+        "ridge_kmer_esm8m_minus_ridge_kmer": {
+          "pooled_delta": -0.01193343103665856,
+          "pooled_CI95": [
+            -0.030145701718177355,
+            0.006335386249684439
+          ],
+          "macro_delta": -0.023007864431921377,
+          "macro_CI95": [
+            -0.033767384549992764,
+            -0.01207316888706616
+          ],
+          "protein_groups_won": 331
+        },
+        "joint_standard_minus_ridge_kmer": {
+          "pooled_delta": -0.0642488837690336,
+          "pooled_CI95": [
+            -0.08534314296597226,
+            -0.04322827761466381
+          ],
+          "macro_delta": -0.06668834049577432,
+          "macro_CI95": [
+            -0.0776235098903283,
+            -0.05526099304257942
+          ],
+          "protein_groups_won": 397
+        },
+        "joint_esm8m_minus_ridge_kmer": {
+          "pooled_delta": -0.06828683602044361,
+          "pooled_CI95": [
+            -0.1008941198811575,
+            -0.03473780339159252
+          ],
+          "macro_delta": -0.08108265644422996,
+          "macro_CI95": [
+            -0.09587159864458643,
+            -0.06551152682301284
+          ],
+          "protein_groups_won": 390
+        },
+        "nested_standard_minus_ridge_kmer": {
+          "pooled_delta": -0.07475478519337275,
+          "pooled_CI95": [
+            -0.09935071176052024,
+            -0.050791690498288286
+          ],
+          "macro_delta": -0.07467334392196712,
+          "macro_CI95": [
+            -0.08836886888919578,
+            -0.06092239868884384
+          ],
+          "protein_groups_won": 397
+        },
+        "nested_esm8m_with_inherited_beta_minus_ridge_kmer": {
+          "pooled_delta": -0.07843192984859781,
+          "pooled_CI95": [
+            -0.11318399973517257,
+            -0.04307174318866904
+          ],
+          "macro_delta": -0.08858648399267,
+          "macro_CI95": [
+            -0.10472634648133843,
+            -0.0722325623912802
+          ],
+          "protein_groups_won": 393
+        },
+        "train_mean_minus_nested_standard": {
+          "pooled_delta": 0.029000006720051985,
+          "pooled_CI95": [
+            -0.021776282693383026,
+            0.0797943746843972
+          ],
+          "macro_delta": 0.042916753764737914,
+          "macro_CI95": [
+            0.0029991841314653766,
+            0.08489952372430713
+          ],
+          "protein_groups_won": 295
+        },
+        "ridge_kmer_minus_nested_standard": {
+          "pooled_delta": 0.07475478519337275,
+          "pooled_CI95": [
+            0.05079169049828827,
+            0.0993507117605202
+          ],
+          "macro_delta": 0.07467334392196712,
+          "macro_CI95": [
+            0.06092239868884384,
+            0.08836886888919578
+          ],
+          "protein_groups_won": 122
+        },
+        "ridge_kmer_esm8m_minus_nested_standard": {
+          "pooled_delta": 0.0628213541567142,
+          "pooled_CI95": [
+            0.04384374772938431,
+            0.08330660851219918
+          ],
+          "macro_delta": 0.05166547949004574,
+          "macro_CI95": [
+            0.035250725850069525,
+            0.06762088631621091
+          ],
+          "protein_groups_won": 163
+        },
+        "joint_standard_minus_nested_standard": {
+          "pooled_delta": 0.010505901424339159,
+          "pooled_CI95": [
+            0.0017309760827508072,
+            0.01926136433392819
+          ],
+          "macro_delta": 0.007985003426192794,
+          "macro_CI95": [
+            0.0014830364360505278,
+            0.01424058689187616
+          ],
+          "protein_groups_won": 40
+        },
+        "joint_esm8m_minus_nested_standard": {
+          "pooled_delta": 0.006467949172929144,
+          "pooled_CI95": [
+            -0.009955113596949571,
+            0.02309817173009739
+          ],
+          "macro_delta": -0.006409312522262844,
+          "macro_CI95": [
+            -0.017656814622678024,
+            0.00474582053446553
+          ],
+          "protein_groups_won": 279
+        },
+        "nested_esm8m_with_inherited_beta_minus_nested_standard": {
+          "pooled_delta": -0.003677144655225062,
+          "pooled_CI95": [
+            -0.018014493622738114,
+            0.01093006739181906
+          ],
+          "macro_delta": -0.013913140070702879,
+          "macro_CI95": [
+            -0.021844714931522523,
+            -0.006113358212665651
+          ],
+          "protein_groups_won": 319
+        }
+      }
+    }
+  },
+  "seconds": 50.17,
+  "caveats": [
+    "No original frozen dev or prospective test outcomes used.",
+    "Model choice motivated by previously inspected experiments, so these are exploratory.",
+    "Frozen ESM8M only mean-pools N-terminal first 1022 residues; 85 proteins truncated.",
+    "Approximate protein trigram graph, not true homology identity; source assay provenance missing.",
+    "Four outer folds reuse the exact same original TRAIN records; no external dataset confirmation."
+  ]
+}
