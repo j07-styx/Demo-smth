@@ -1,0 +1,200 @@
+{
+  "status": "EXPLORATORY_BALM_COLD_PROTEIN_INPUT_ABLATION_NO_TEST_LABEL_ACCESS",
+  "train_unique_pairs": 12315,
+  "dev_original_rows": 3891,
+  "train_only_alpha": 10.0,
+  "feature_design": "Morgan chiral2048 L2, protein 3-4mer TFIDF4096 trained on train only, targets standardized using train labels",
+  "train_mean": {
+    "pooled_rmse": 1.589844112086348,
+    "component_macro_rmse": 1.4640933905703184
+  },
+  "actual_models": {
+    "chemical": {
+      "pooled_rmse": 1.4229865990210067,
+      "component_macro_rmse": 1.3253833063114226
+    },
+    "protein": {
+      "pooled_rmse": 1.5393565562351086,
+      "component_macro_rmse": 1.408174353751615
+    },
+    "combined": {
+      "pooled_rmse": 1.4363250631425506,
+      "component_macro_rmse": 1.3096945964057585
+    }
+  },
+  "paired_comparisons": {
+    "combined_minus_chemical_pooled_rmse": 0.013338464121543936,
+    "combined_minus_chemical_macro_rmse": -0.015688709905664178,
+    "combined_minus_protein_pooled_rmse": -0.10303149309255799
+  },
+  "paired_component_bootstrap_combined_vs_chemical": {
+    "number_components": 173,
+    "n_resamples": 10000,
+    "pooled_improvement_bootstrap_q025_q975": [
+      -0.07447102436431915,
+      0.04215721452484848
+    ],
+    "macro_improvement_bootstrap_q025_q975": [
+      -0.017985373023470978,
+      0.0488681389475033
+    ],
+    "fraction_pooled_improvement": 0.3342,
+    "fraction_macro_improvement": 0.8174
+  },
+  "paired_component_bootstrap_combined_vs_train_mean": {
+    "number_components": 173,
+    "n_resamples": 10000,
+    "pooled_improvement_bootstrap_q025_q975": [
+      0.053689987071455024,
+      0.2556790924144811
+    ],
+    "macro_improvement_bootstrap_q025_q975": [
+      0.09991378238024841,
+      0.20984596824712082
+    ],
+    "fraction_pooled_improvement": 0.9991,
+    "fraction_macro_improvement": 1.0
+  },
+  "permuted_feature_nulls": {
+    "protein_identity_permuted_training": {
+      "n_permutations": 12,
+      "pooled_mean": 1.4588754182346566,
+      "pooled_q025_q975": [
+        1.4229292688739525,
+        1.489266263556869
+      ],
+      "macro_mean": 1.3507944844708526,
+      "macro_q025_q975": [
+        1.33313459736457,
+        1.3673016656337222
+      ],
+      "actual_better_than_all_shuffled_pooled": false,
+      "actual_better_than_all_shuffled_macro": true
+    },
+    "chemical_identity_permuted_training": {
+      "n_permutations": 12,
+      "pooled_mean": 1.5538236252460786,
+      "pooled_q025_q975": [
+        1.5324444083971251,
+        1.574854035551927
+      ],
+      "macro_mean": 1.4198834702618817,
+      "macro_q025_q975": [
+        1.4036862789898097,
+        1.4391110148320156
+      ],
+      "actual_better_than_all_shuffled_pooled": true,
+      "actual_better_than_all_shuffled_macro": true
+    }
+  },
+  "permuted_run_metrics": {
+    "protein_identity_permuted_training": [
+      {
+        "pooled_rmse": 1.4373735843555122,
+        "component_macro_rmse": 1.357178779231567
+      },
+      {
+        "pooled_rmse": 1.494082002550349,
+        "component_macro_rmse": 1.3691635900519787
+      },
+      {
+        "pooled_rmse": 1.4577207117031548,
+        "component_macro_rmse": 1.3431976690881648
+      },
+      {
+        "pooled_rmse": 1.4635378233040568,
+        "component_macro_rmse": 1.3552806646467712
+      },
+      {
+        "pooled_rmse": 1.4592513572721817,
+        "component_macro_rmse": 1.3476287242579799
+      },
+      {
+        "pooled_rmse": 1.4673650802063332,
+        "component_macro_rmse": 1.3618836067967817
+      },
+      {
+        "pooled_rmse": 1.4645693117232728,
+        "component_macro_rmse": 1.3589472945121215
+      },
+      {
+        "pooled_rmse": 1.4410189451080146,
+        "component_macro_rmse": 1.3411275021813094
+      },
+      {
+        "pooled_rmse": 1.4174503905878437,
+        "component_macro_rmse": 1.3309747667604517
+      },
+      {
+        "pooled_rmse": 1.4765702243922398,
+        "component_macro_rmse": 1.3623929558037733
+      },
+      {
+        "pooled_rmse": 1.4748101134383322,
+        "component_macro_rmse": 1.342929564089356
+      },
+      {
+        "pooled_rmse": 1.4527554741745856,
+        "component_macro_rmse": 1.338828696229973
+      }
+    ],
+    "chemical_identity_permuted_training": [
+      {
+        "pooled_rmse": 1.5462653723456947,
+        "component_macro_rmse": 1.424878650296735
+      },
+      {
+        "pooled_rmse": 1.5579465322363986,
+        "component_macro_rmse": 1.4161986733764849
+      },
+      {
+        "pooled_rmse": 1.573854733700571,
+        "component_macro_rmse": 1.4354959969191372
+      },
+      {
+        "pooled_rmse": 1.5509755237868983,
+        "component_macro_rmse": 1.4169207783981956
+      },
+      {
+        "pooled_rmse": 1.5301953269379474,
+        "component_macro_rmse": 1.4026061264513157
+      },
+      {
+        "pooled_rmse": 1.5522912883426574,
+        "component_macro_rmse": 1.4273428040179155
+      },
+      {
+        "pooled_rmse": 1.5383738049713214,
+        "component_macro_rmse": 1.406533953864021
+      },
+      {
+        "pooled_rmse": 1.5520021364190364,
+        "component_macro_rmse": 1.4100886200592995
+      },
+      {
+        "pooled_rmse": 1.5621525404207541,
+        "component_macro_rmse": 1.4404822285231076
+      },
+      {
+        "pooled_rmse": 1.5540485373591137,
+        "component_macro_rmse": 1.4124238530278626
+      },
+      {
+        "pooled_rmse": 1.5752330810817516,
+        "component_macro_rmse": 1.4287447659824446
+      },
+      {
+        "pooled_rmse": 1.5525446253508026,
+        "component_macro_rmse": 1.4168851922260624
+      }
+    ]
+  },
+  "seconds": 19.2,
+  "warnings": [
+    "Exploratory internal-development results; repeated looks, no independent test claims.",
+    "Twelve randomized identities are a diagnostic, not a calibrated randomization significance test.",
+    "Protein 3mer-graph split is approximate and not validated alignment homology.",
+    "No assay/source provenance in public Arrow cohort; same-input discordance persists.",
+    "Prospective test labels not accessed."
+  ]
+}
