@@ -1,0 +1,83 @@
+{
+  "status": "FROZEN_INNER_DEV_ONLY_NO_TEST_EVALUATION",
+  "dataset": "BindingDB preliminary exact-looking Kd; assay and construct QC incomplete",
+  "train_pairs": 27118,
+  "reserved_test_pairs": 2936,
+  "validation_pairs": 7387,
+  "protein_cluster_disjoint": true,
+  "seed": 2103,
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.0001,
+  "optimizer": "AdamW",
+  "target_normalization": "train_only_mean_std",
+  "gradient_clip_norm": 1.0,
+  "max_smiles_len": 100,
+  "max_protein_len": 1000,
+  "source_paper_batch_size": 256,
+  "source_paper_epochs": 100,
+  "note": "Train-only vocabulary and label normalization; short training feasibility experiment, not faithful full paper training or independent test; all epoch validation metrics exploratory",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.6073942849377416,
+      "val_rmse": 2.323640591946252,
+      "seconds": 9.37
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.44797983554736626,
+      "val_rmse": 2.4120102428686168,
+      "seconds": 8.45
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.4170597194219535,
+      "val_rmse": 2.343981718661066,
+      "seconds": 8.93
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.3988158621315686,
+      "val_rmse": 2.485770686432293,
+      "seconds": 8.34
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.3783199227643463,
+      "val_rmse": 2.386136676412785,
+      "seconds": 11.59
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.36911996011182946,
+      "val_rmse": 2.512482109392097,
+      "seconds": 9.17
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.3476181745810329,
+      "val_rmse": 2.3844892884826603,
+      "seconds": 9.22
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.32867722107835534,
+      "val_rmse": 2.4649412007437315,
+      "seconds": 10.27
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.3162611430546023,
+      "val_rmse": 2.4128517059082535,
+      "seconds": 9.7
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.3085802991013482,
+      "val_rmse": 2.3448364994881405,
+      "seconds": 12.21
+    }
+  ],
+  "train_only_mean_baseline_rmse": 1.803901684183753
+}

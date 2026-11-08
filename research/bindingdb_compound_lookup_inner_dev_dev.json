@@ -1,0 +1,29 @@
+{
+  "status": "PROVISIONAL_INNER_DEV_ONLY_NOT_TEST",
+  "train_pairs": 27118,
+  "inner_dev_pairs": 7387,
+  "unique_train_compounds": 12134,
+  "train_only_compound_mean_shrinkage": {
+    "0": {
+      "rmse": 1.8165768749484448,
+      "validation_pairs_with_unseen_compound": 7227
+    },
+    "1": {
+      "rmse": 1.8078139450150288,
+      "validation_pairs_with_unseen_compound": 7227
+    },
+    "5": {
+      "rmse": 1.803613696494551,
+      "validation_pairs_with_unseen_compound": 7227
+    },
+    "20": {
+      "rmse": 1.80257071901788,
+      "validation_pairs_with_unseen_compound": 7227
+    },
+    "100": {
+      "rmse": 1.802755253810902,
+      "validation_pairs_with_unseen_compound": 7227
+    }
+  },
+  "warning": "Development hyperparameter comparison only; chemical IDs may not be independently verified; no prospective test evaluated."
+}
