@@ -1,0 +1,288 @@
+{
+  "status": "BALM_INNER_DEV_MATCHED_MULTI_SEED_DEEPDTA_PERCEIVER_CPI_NO_TEST",
+  "epochs": 10,
+  "seeds": [
+    2103,
+    2601,
+    2602,
+    2603,
+    2604,
+    2605
+  ],
+  "dev_rows": 3891,
+  "dev_original_protein_groups": 173,
+  "dev_row_sha256": "61895efb20aa386c3b59ddf81bff98da9fd2d708c9dda0a7ac60d44c91fcc2b1",
+  "seed_family_metrics": {
+    "deepdta": {
+      "per_seed_pooled_rmse": [
+        1.4470548792557798,
+        1.4327809192699335,
+        1.4679170521622995,
+        1.4042374730376228,
+        1.4880654954118493,
+        1.395191949890705
+      ],
+      "per_seed_macro_rmse": [
+        1.2832691470116475,
+        1.3108947104436643,
+        1.387722658370438,
+        1.3547045258707007,
+        1.3459441382080697,
+        1.3352283408599346
+      ],
+      "mean_of_seed_pooled_rmse": 1.439207961504698,
+      "mean_of_seed_macro_rmse": 1.3362939201274093
+    },
+    "perceivercpi": {
+      "per_seed_pooled_rmse": [
+        1.449942141141989,
+        1.555695045019239,
+        1.6272433693296766,
+        1.4362555574579243,
+        1.4535712950640118,
+        1.5506868501370723
+      ],
+      "per_seed_macro_rmse": [
+        1.2928712805489013,
+        1.4132684939351559,
+        1.4656094218696356,
+        1.3249844008106888,
+        1.3232101839311632,
+        1.4161377634114145
+      ],
+      "mean_of_seed_pooled_rmse": 1.5122323763583188,
+      "mean_of_seed_macro_rmse": 1.3726802574178265
+    }
+  },
+  "individual_seed_metrics": [
+    {
+      "seed": 2103,
+      "deepdta_final_pooled": 1.4470548726585426,
+      "deepdta_final_macro": 1.2832692292340984,
+      "deepdta_best_dev_epoch": 9,
+      "deepdta_best_dev_pooled": 1.3805959314961675,
+      "perceiver_final_pooled": 1.4499421183284091,
+      "perceiver_final_macro": 1.2928713271163021
+    },
+    {
+      "seed": 2601,
+      "deepdta_final_pooled": 1.4327809188732201,
+      "deepdta_final_macro": 1.3108944776840736,
+      "deepdta_best_dev_epoch": 5,
+      "deepdta_best_dev_pooled": 1.4139771408476398,
+      "perceiver_final_pooled": 1.5556953358423289,
+      "perceiver_final_macro": 1.4132687352928062
+    },
+    {
+      "seed": 2602,
+      "deepdta_final_pooled": 1.4679170130211365,
+      "deepdta_final_macro": 1.3877225822822206,
+      "deepdta_best_dev_epoch": 4,
+      "deepdta_best_dev_pooled": 1.4215762843455864,
+      "perceiver_final_pooled": 1.6272434367462878,
+      "perceiver_final_macro": 1.4656095271010927
+    },
+    {
+      "seed": 2603,
+      "deepdta_final_pooled": 1.4042374633165982,
+      "deepdta_final_macro": 1.3547044432082889,
+      "deepdta_best_dev_epoch": 5,
+      "deepdta_best_dev_pooled": 1.3771254476477441,
+      "perceiver_final_pooled": 1.4362556308789236,
+      "perceiver_final_macro": 1.3249845553611044
+    },
+    {
+      "seed": 2604,
+      "deepdta_final_pooled": 1.4880654698592195,
+      "deepdta_final_macro": 1.3459442301095537,
+      "deepdta_best_dev_epoch": 4,
+      "deepdta_best_dev_pooled": 1.3694168334922379,
+      "perceiver_final_pooled": 1.4535712835861492,
+      "perceiver_final_macro": 1.3232102885839394
+    },
+    {
+      "seed": 2605,
+      "deepdta_final_pooled": 1.3951918967790193,
+      "deepdta_final_macro": 1.335228160601523,
+      "deepdta_best_dev_epoch": 10,
+      "deepdta_best_dev_pooled": 1.3951918967790193,
+      "perceiver_final_pooled": 1.5506868791420805,
+      "perceiver_final_macro": 1.4161378730994967
+    }
+  ],
+  "comparisons": {
+    "train_mean_minus_deepdta_seedmean_FINAL": {
+      "ensemble": {
+        "pooled": 1.5898441120863482,
+        "macro": 1.4640933905703184
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.439207961504698,
+        "macro": 1.3362939201274093
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": 0.15063615058165025,
+        "macro": 0.12779947044290907
+      },
+      "ci95_pooled": [
+        0.05402590178942257,
+        0.2516619519742242
+      ],
+      "ci95_macro": [
+        0.06993461363502784,
+        0.18505296591541442
+      ],
+      "frac_draws_ensemble_better_pooled": 0.0008,
+      "frac_draws_ensemble_better_macro": 0.0
+    },
+    "locked_ridge_interactions_minus_deepdta_seedmean_FINAL": {
+      "ensemble": {
+        "pooled": 1.3837429832833161,
+        "macro": 1.2470975457981046
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.439207961504698,
+        "macro": 1.3362939201274093
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.055464978221381855,
+        "macro": -0.08919637432930472
+      },
+      "ci95_pooled": [
+        -0.11582603894635404,
+        0.004103739431826198
+      ],
+      "ci95_macro": [
+        -0.13508893281158388,
+        -0.04161200142188594
+      ],
+      "frac_draws_ensemble_better_pooled": 0.9652,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "esm_memory_joint8_k64_minus_deepdta_seedmean_FINAL": {
+      "ensemble": {
+        "pooled": 1.3827328852166658,
+        "macro": 1.2399771283274594
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.439207961504698,
+        "macro": 1.3362939201274093
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.05647507628803217,
+        "macro": -0.0963167917999499
+      },
+      "ci95_pooled": [
+        -0.11029317809188272,
+        -0.0004049467424118763
+      ],
+      "ci95_macro": [
+        -0.13722830318475024,
+        -0.053812755695426304
+      ],
+      "frac_draws_ensemble_better_pooled": 0.9756,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "esm_memory_chemical_only_k64_minus_deepdta_seedmean_FINAL": {
+      "ensemble": {
+        "pooled": 1.3805835502746833,
+        "macro": 1.2406761040433731
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.439207961504698,
+        "macro": 1.3362939201274093
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.05862441123001472,
+        "macro": -0.09561781608403619
+      },
+      "ci95_pooled": [
+        -0.11170540080016453,
+        -0.003754631568611035
+      ],
+      "ci95_macro": [
+        -0.13751264872259902,
+        -0.05222608314610414
+      ],
+      "frac_draws_ensemble_better_pooled": 0.983,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "locked_ridge_interactions_minus_deepdta_AVERAGED_PREDICTIONS": {
+      "ensemble": {
+        "pooled": 1.3837429832833161,
+        "macro": 1.2470975457981046
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.362134007366042,
+        "macro": 1.2671667873742105
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": 0.021608975917274176,
+        "macro": -0.0200692415761059
+      },
+      "ci95_pooled": [
+        -0.036072575452925,
+        0.07997348821332403
+      ],
+      "ci95_macro": [
+        -0.06768031855185923,
+        0.02935966599534743
+      ],
+      "frac_draws_ensemble_better_pooled": 0.2322,
+      "frac_draws_ensemble_better_macro": 0.791
+    },
+    "deepdta_seedmean_minus_perceiver_seedmean_FINAL": {
+      "delta_a_minus_b_pooled": -0.07302441485362077,
+      "delta_a_minus_b_macro": -0.03638633729041718,
+      "ci95_pooled": [
+        -0.1406696868061156,
+        -0.011665254774218165
+      ],
+      "ci95_macro": [
+        -0.09900416373647887,
+        0.025375239309329188
+      ],
+      "bootstrap_draws": 5000
+    },
+    "locked_ridge_interactions_minus_deepdta_BEST_DEV_EPOCH_OPTIMISTIC": {
+      "ensemble": {
+        "pooled": 1.3837429832833161,
+        "macro": 1.2470975457981046
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.3929805805306525,
+        "macro": 1.3071183756512437
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.009237597247336415,
+        "macro": -0.06002082985313906
+      },
+      "ci95_pooled": [
+        -0.07789742256276336,
+        0.05206243455687306
+      ],
+      "ci95_macro": [
+        -0.10200513308888713,
+        -0.016456628720186328
+      ],
+      "frac_draws_ensemble_better_pooled": 0.593,
+      "frac_draws_ensemble_better_macro": 0.996
+    }
+  },
+  "source_models": {
+    "locked": "research\\balm_ensemble_dev_predictions_20261108.json",
+    "memory": "research\\balm_memory_vs_perceiver_matched_innerdev_20261108.json",
+    "deepdta": "research\\balm_deepdta_multiseed_dev_20261108",
+    "perceiver": "research\\balm_perceiver_multiseed_dev_20261108"
+  },
+  "warnings": [
+    "Frozen BALM inner-development repeatedly examined; not prospective test.",
+    "DeepDTA-inspired CNN differs from the original paper training protocol.",
+    "Final epoch is the primary comparison; best DEV epoch is optimistic, selected using validation labels.",
+    "Each model has different parameter count/input lengths and unequal training compute; not paper-equivalent.",
+    "173 protein groups use original approximate 3-mer grouping and no Murcko scaffold exclusion.",
+    "BindingDB assay/construct provenance unavailable, repeated identical pair affinity disagreements.",
+    "Bootstrap of development protein groups does not account for adaptive model selection.",
+    "Scientific cohort gate remains blocked; no test evaluated."
+  ]
+}
