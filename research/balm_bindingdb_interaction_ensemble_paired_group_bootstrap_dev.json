@@ -1,0 +1,50 @@
+{
+  "status": "BALM_INNER_DEV_PAIRED_GROUP_BOOTSTRAP_NO_RESERVED_TEST",
+  "locked_train_cv_selected_ensemble": "75pct ridge + 25pct interaction boosted descriptors",
+  "dev_rows": 3891,
+  "dev_protein_graph_components": 173,
+  "group_count_min": 1,
+  "group_count_max": 194,
+  "group_macro_wins_vs_ridge": 93,
+  "group_macro_losses_vs_ridge": 80,
+  "point_estimates": {
+    "ridge": {
+      "pooled_rmse": 1.4050918440691935,
+      "macro_component_rmse": 1.2692162612256408
+    },
+    "ridge_interaction_blend_0.25": {
+      "pooled_rmse": 1.3837429403518775,
+      "macro_component_rmse": 1.2470974571775486
+    },
+    "boost_explicit_interaction": {
+      "pooled_rmse": 1.4657383491342115,
+      "macro_component_rmse": 1.2977500305154615
+    }
+  },
+  "paired_delta_ensemble_minus_ridge": {
+    "pooled_rmse": -0.021348903717316015,
+    "macro_component_rmse": -0.02211880404809219
+  },
+  "bootstrap": {
+    "method": "nonparametric resample of held-out protein graph components with replacement",
+    "seed": 20261108,
+    "replicates": 5000,
+    "pooled_rmse_delta_95pct_percentile_CI": [
+      -0.0465804911774005,
+      0.005726130698517745
+    ],
+    "macro_rmse_delta_95pct_percentile_CI": [
+      -0.04441494125266625,
+      -0.0008066738584390492
+    ],
+    "bootstrap_probability_pooled_delta_below_zero": 0.9378,
+    "bootstrap_probability_macro_delta_below_zero": 0.9794
+  },
+  "seconds": 21.17,
+  "caveats": [
+    "Development data have been inspected repeatedly and are not a fresh holdout.",
+    "Bootstrap groups are approximate protein trigram graph components, not verified homology groups.",
+    "Assay context is missing in source, and same-input label conflicts remain.",
+    "No independent prospective test evaluation."
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "status": "BALM_FROZEN_INNER_DEV_EXPLORATORY_TRAIN_ONLY_MODEL_SELECTION",
+  "training_raw_rows": 15538,
+  "training_unique_pairs": 12315,
+  "inner_dev_rows": 3891,
+  "train_groups": 519,
+  "dev_groups": 173,
+  "model": "Morgan2048 plus train-fitted protein tri/tetra-gram Ridge and explicit biochemical cross-feature gradient boosting",
+  "explicit_interactions": "8 chemical RDKit descriptors x 8 protein residue composition summaries = 64 cross-product terms",
+  "interaction_features": 106,
+  "ridge_alpha": 1.0,
+  "ridge_protein_scale": 0.25,
+  "boost_hyperparameters": {
+    "max_iter": 160,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 50,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "blend_weights_predeclared": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "cv_folds": [
+    {
+      "fold": 1,
+      "train_unique_pairs": 9841,
+      "holdout_pairs": 2759,
+      "holdout_components": 104,
+      "results": {
+        "train_mean": {
+          "pooled_rmse": 1.391102564145054,
+          "component_macro_rmse": 1.2868731297992564
+        },
+        "ridge": {
+          "pooled_rmse": 1.1428179158836593,
+          "component_macro_rmse": 1.1119528244498946
+        },
+        "boost_joint": {
+          "pooled_rmse": 1.2795347988997414,
+          "component_macro_rmse": 1.2353449167104835
+        },
+        "boost_explicit_interaction": {
+          "pooled_rmse": 1.2686122924846734,
+          "component_macro_rmse": 1.231096843770993
+        },
+        "ridge_interaction_blend_0.0": {
+          "pooled_rmse": 1.1428179158836593,
+          "component_macro_rmse": 1.1119528244498946
+        },
+        "ridge_interaction_blend_0.25": {
+          "pooled_rmse": 1.1433586961290225,
+          "component_macro_rmse": 1.1163616661291547
+        },
+        "ridge_interaction_blend_0.5": {
+          "pooled_rmse": 1.1654349416350616,
+          "component_macro_rmse": 1.1409688643059044
+        },
+        "ridge_interaction_blend_0.75": {
+          "pooled_rmse": 1.2078664183265724,
+          "component_macro_rmse": 1.1793867896026442
+        },
+        "ridge_interaction_blend_1.0": {
+          "pooled_rmse": 1.2686122924846734,
+          "component_macro_rmse": 1.231096843770993
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_unique_pairs": 9468,
+      "holdout_pairs": 3820,
+      "holdout_components": 104,
+      "results": {
+        "train_mean": {
+          "pooled_rmse": 1.5234755514327498,
+          "component_macro_rmse": 1.346942385331757
+        },
+        "ridge": {
+          "pooled_rmse": 1.3303406759647292,
+          "component_macro_rmse": 1.205547045640061
+        },
+        "boost_joint": {
+          "pooled_rmse": 1.3828056415033994,
+          "component_macro_rmse": 1.2060186082697606
+        },
+        "boost_explicit_interaction": {
+          "pooled_rmse": 1.389764489622574,
+          "component_macro_rmse": 1.2367069441400962
+        },
+        "ridge_interaction_blend_0.0": {
+          "pooled_rmse": 1.3303406759647292,
+          "component_macro_rmse": 1.205547045640061
+        },
+        "ridge_interaction_blend_0.25": {
+          "pooled_rmse": 1.318521008256355,
+          "component_macro_rmse": 1.1914526287110254
+        },
+        "ridge_interaction_blend_0.5": {
+          "pooled_rmse": 1.3247646043543375,
+          "component_macro_rmse": 1.1946127841720455
+        },
+        "ridge_interaction_blend_0.75": {
+          "pooled_rmse": 1.348820653266309,
+          "component_macro_rmse": 1.2096303014470864
+        },
+        "ridge_interaction_blend_1.0": {
+          "pooled_rmse": 1.389764489622574,
+          "component_macro_rmse": 1.2367069441400962
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_unique_pairs": 9879,
+      "holdout_pairs": 3260,
+      "holdout_components": 104,
+      "results": {
+        "train_mean": {
+          "pooled_rmse": 1.3943445996421933,
+          "component_macro_rmse": 1.3499002674285108
+        },
+        "ridge": {
+          "pooled_rmse": 1.4907966357980509,
+          "component_macro_rmse": 1.2838110850635966
+        },
+        "boost_joint": {
+          "pooled_rmse": 1.4330475773989289,
+          "component_macro_rmse": 1.2795626421994868
+        },
+        "boost_explicit_interaction": {
+          "pooled_rmse": 1.4241849957984114,
+          "component_macro_rmse": 1.3083378897682434
+        },
+        "ridge_interaction_blend_0.0": {
+          "pooled_rmse": 1.4907966357980509,
+          "component_macro_rmse": 1.2838110850635966
+        },
+        "ridge_interaction_blend_0.25": {
+          "pooled_rmse": 1.4485227932080214,
+          "component_macro_rmse": 1.262703060824701
+        },
+        "ridge_interaction_blend_0.5": {
+          "pooled_rmse": 1.4228273172204233,
+          "component_macro_rmse": 1.2553611186443376
+        },
+        "ridge_interaction_blend_0.75": {
+          "pooled_rmse": 1.414613884830291,
+          "component_macro_rmse": 1.2693719321269088
+        },
+        "ridge_interaction_blend_1.0": {
+          "pooled_rmse": 1.4241849957984114,
+          "component_macro_rmse": 1.3083378897682434
+        }
+      }
+    }
+  ],
+  "cv_mean": {
+    "train_mean": {
+      "pooled_rmse": 1.436307571739999,
+      "component_macro_rmse": 1.3279052608531747
+    },
+    "ridge": {
+      "pooled_rmse": 1.32131840921548,
+      "component_macro_rmse": 1.200436985051184
+    },
+    "boost_joint": {
+      "pooled_rmse": 1.3651293392673567,
+      "component_macro_rmse": 1.2403087223932436
+    },
+    "boost_explicit_interaction": {
+      "pooled_rmse": 1.360853925968553,
+      "component_macro_rmse": 1.2587138925597776
+    },
+    "ridge_interaction_blend_0.0": {
+      "pooled_rmse": 1.32131840921548,
+      "component_macro_rmse": 1.200436985051184
+    },
+    "ridge_interaction_blend_0.25": {
+      "pooled_rmse": 1.3034674991977997,
+      "component_macro_rmse": 1.1901724518882937
+    },
+    "ridge_interaction_blend_0.5": {
+      "pooled_rmse": 1.3043422877366073,
+      "component_macro_rmse": 1.196980922374096
+    },
+    "ridge_interaction_blend_0.75": {
+      "pooled_rmse": 1.3237669854743908,
+      "component_macro_rmse": 1.2194630077255464
+    },
+    "ridge_interaction_blend_1.0": {
+      "pooled_rmse": 1.360853925968553,
+      "component_macro_rmse": 1.2587138925597776
+    }
+  },
+  "cv_ranked": [
+    {
+      "name": "ridge_interaction_blend_0.25",
+      "mean_pooled_cv": 1.3034674991977997,
+      "mean_macro_cv": 1.1901724518882937,
+      "relative_joint": 0.9889697065430663
+    },
+    {
+      "name": "ridge_interaction_blend_0.5",
+      "mean_pooled_cv": 1.3043422877366073,
+      "mean_macro_cv": 1.196980922374096,
+      "relative_joint": 0.9921365652313175
+    },
+    {
+      "name": "ridge",
+      "mean_pooled_cv": 1.32131840921548,
+      "mean_macro_cv": 1.200436985051184,
+      "relative_joint": 1.0
+    },
+    {
+      "name": "ridge_interaction_blend_0.0",
+      "mean_pooled_cv": 1.32131840921548,
+      "mean_macro_cv": 1.200436985051184,
+      "relative_joint": 1.0
+    },
+    {
+      "name": "ridge_interaction_blend_0.75",
+      "mean_pooled_cv": 1.3237669854743908,
+      "mean_macro_cv": 1.2194630077255464,
+      "relative_joint": 1.008851189220833
+    },
+    {
+      "name": "boost_joint",
+      "mean_pooled_cv": 1.3651293392673567,
+      "mean_macro_cv": 1.2403087223932436,
+      "relative_joint": 1.0331856670700859
+    },
+    {
+      "name": "boost_explicit_interaction",
+      "mean_pooled_cv": 1.360853925968553,
+      "mean_macro_cv": 1.2587138925597776,
+      "relative_joint": 1.039233837530659
+    },
+    {
+      "name": "ridge_interaction_blend_1.0",
+      "mean_pooled_cv": 1.360853925968553,
+      "mean_macro_cv": 1.2587138925597776,
+      "relative_joint": 1.039233837530659
+    }
+  ],
+  "selected_by_train_cv": "ridge_interaction_blend_0.25",
+  "inner_dev_selected": {
+    "pooled_rmse": 1.3837429403518777,
+    "component_macro_rmse": 1.2470974571775486
+  },
+  "inner_dev_candidate_metrics": {
+    "train_mean": {
+      "pooled_rmse": 1.589844112086348,
+      "component_macro_rmse": 1.4640933905703184
+    },
+    "ridge": {
+      "pooled_rmse": 1.4050918440691933,
+      "component_macro_rmse": 1.2692162612256408
+    },
+    "boost_joint": {
+      "pooled_rmse": 1.445373422058383,
+      "component_macro_rmse": 1.2938257668993343
+    },
+    "boost_explicit_interaction": {
+      "pooled_rmse": 1.4657383491342113,
+      "component_macro_rmse": 1.2977500305154615
+    },
+    "ridge_interaction_blend_0.0": {
+      "pooled_rmse": 1.4050918440691933,
+      "component_macro_rmse": 1.2692162612256408
+    },
+    "ridge_interaction_blend_0.25": {
+      "pooled_rmse": 1.3837429403518777,
+      "component_macro_rmse": 1.2470974571775486
+    },
+    "ridge_interaction_blend_0.5": {
+      "pooled_rmse": 1.387052981942045,
+      "component_macro_rmse": 1.2450268589788613
+    },
+    "ridge_interaction_blend_0.75": {
+      "pooled_rmse": 1.4148489089998355,
+      "component_macro_rmse": 1.2605887259950277
+    },
+    "ridge_interaction_blend_1.0": {
+      "pooled_rmse": 1.4657383491342113,
+      "component_macro_rmse": 1.2977500305154615
+    }
+  },
+  "seconds": 47.78,
+  "caveats": [
+    "BALM source lacks assay DOI/method per record, label conflicts remain.",
+    "Approximate protein trigram graph, not verified homology.",
+    "Only three overlapping protein-heldout CV folds.",
+    "Development set already repeatedly inspected; results exploratory, not test.",
+    "No reserved prospective test loaded, fitted, predicted or evaluated."
+  ]
+}
