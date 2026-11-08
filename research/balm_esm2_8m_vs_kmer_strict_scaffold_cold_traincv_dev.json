@@ -1,0 +1,361 @@
+{
+  "status": "BALM_TRAIN_ONLY_FROZEN_ESM2_8M_PROTEIN_FEATURE_STRICT_SCAFFOLD_COLD_CV_NO_DEV_OR_TEST",
+  "train_original_rows": 15538,
+  "protein_graph_components": 519,
+  "holdout_scaffold_rule": "All matching RDKit Bemis Murcko scaffolds withheld, including common acyclic group",
+  "pretrained_protein_encoder": "ESM2_t6_8M, frozen, layer6 first1022 AA mean pool",
+  "feature_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "training_only_splits": "GroupKFold(4), protein graph groups and Murcko scaffolds disjoint",
+  "ridge_regularization_alpha": 1.0,
+  "kmer_and_esm_low_scale": 0.25,
+  "modes": [
+    "train_mean",
+    "chemical_only",
+    "chemical_plus_kmer",
+    "chemical_plus_esm8m",
+    "chemical_kmer_esm8m",
+    "chemical_esm8m_scale1",
+    "chemical_kmer_esm8m_scale1"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "fit_unique_pairs": 4078,
+      "holdout_original_pairs": 3885,
+      "heldout_protein_graph_components": 129,
+      "train_holdout_scaffold_overlap": 0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.492595265226907,
+          "component_macro_rmse": 1.380291210265331
+        },
+        "chemical_only": {
+          "pooled_rmse": 1.4819778514259998,
+          "component_macro_rmse": 1.4092706192540272
+        },
+        "chemical_plus_kmer": {
+          "pooled_rmse": 1.4582293483218387,
+          "component_macro_rmse": 1.3709041533508028
+        },
+        "chemical_plus_esm8m": {
+          "pooled_rmse": 1.4323267292177848,
+          "component_macro_rmse": 1.352881531264586
+        },
+        "chemical_kmer_esm8m": {
+          "pooled_rmse": 1.4238736733071689,
+          "component_macro_rmse": 1.3425162119839615
+        },
+        "chemical_esm8m_scale1": {
+          "pooled_rmse": 1.4317509035851266,
+          "component_macro_rmse": 1.3466330628200343
+        },
+        "chemical_kmer_esm8m_scale1": {
+          "pooled_rmse": 1.4214418220015157,
+          "component_macro_rmse": 1.3359335216651964
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "fit_unique_pairs": 4305,
+      "holdout_original_pairs": 3885,
+      "heldout_protein_graph_components": 130,
+      "train_holdout_scaffold_overlap": 0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4375843779300046,
+          "component_macro_rmse": 1.3605499520721527
+        },
+        "chemical_only": {
+          "pooled_rmse": 1.5310620425027808,
+          "component_macro_rmse": 1.4493658874124264
+        },
+        "chemical_plus_kmer": {
+          "pooled_rmse": 1.4824649587306336,
+          "component_macro_rmse": 1.413570098912913
+        },
+        "chemical_plus_esm8m": {
+          "pooled_rmse": 1.513688817960291,
+          "component_macro_rmse": 1.3953788421927467
+        },
+        "chemical_kmer_esm8m": {
+          "pooled_rmse": 1.4805157442996604,
+          "component_macro_rmse": 1.381806634737775
+        },
+        "chemical_esm8m_scale1": {
+          "pooled_rmse": 1.531509288056463,
+          "component_macro_rmse": 1.4329382899875835
+        },
+        "chemical_kmer_esm8m_scale1": {
+          "pooled_rmse": 1.5031368326278014,
+          "component_macro_rmse": 1.406215586051861
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "fit_unique_pairs": 3856,
+      "holdout_original_pairs": 3884,
+      "heldout_protein_graph_components": 130,
+      "train_holdout_scaffold_overlap": 0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4061002305343717,
+          "component_macro_rmse": 1.3546698501019652
+        },
+        "chemical_only": {
+          "pooled_rmse": 1.5551274816842173,
+          "component_macro_rmse": 1.4515806291954207
+        },
+        "chemical_plus_kmer": {
+          "pooled_rmse": 1.4895739239850467,
+          "component_macro_rmse": 1.4061659087415257
+        },
+        "chemical_plus_esm8m": {
+          "pooled_rmse": 1.5359401572349431,
+          "component_macro_rmse": 1.4311702881143522
+        },
+        "chemical_kmer_esm8m": {
+          "pooled_rmse": 1.495891889390269,
+          "component_macro_rmse": 1.4028947961433564
+        },
+        "chemical_esm8m_scale1": {
+          "pooled_rmse": 1.5463029385916054,
+          "component_macro_rmse": 1.4570385950334983
+        },
+        "chemical_kmer_esm8m_scale1": {
+          "pooled_rmse": 1.5113555947422401,
+          "component_macro_rmse": 1.428492707309164
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "fit_unique_pairs": 4475,
+      "holdout_original_pairs": 3884,
+      "heldout_protein_graph_components": 130,
+      "train_holdout_scaffold_overlap": 0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4294488686842326,
+          "component_macro_rmse": 1.354012296467588
+        },
+        "chemical_only": {
+          "pooled_rmse": 1.5705782053609607,
+          "component_macro_rmse": 1.4403493293182046
+        },
+        "chemical_plus_kmer": {
+          "pooled_rmse": 1.5192594411951692,
+          "component_macro_rmse": 1.3855930189378525
+        },
+        "chemical_plus_esm8m": {
+          "pooled_rmse": 1.5251467430751198,
+          "component_macro_rmse": 1.3742534231983055
+        },
+        "chemical_kmer_esm8m": {
+          "pooled_rmse": 1.5008817770243306,
+          "component_macro_rmse": 1.3569426941431249
+        },
+        "chemical_esm8m_scale1": {
+          "pooled_rmse": 1.5025749822307353,
+          "component_macro_rmse": 1.373978756568223
+        },
+        "chemical_kmer_esm8m_scale1": {
+          "pooled_rmse": 1.486360300482291,
+          "component_macro_rmse": 1.3468482417743468
+        }
+      }
+    }
+  ],
+  "out_of_fold": {
+    "pooled_rmse": {
+      "train_mean": 1.441784195921108,
+      "chemical_only": 1.5350490498106906,
+      "chemical_plus_kmer": 1.4875389743944287,
+      "chemical_plus_esm8m": 1.5023277257724457,
+      "chemical_kmer_esm8m": 1.4756055433577702,
+      "chemical_esm8m_scale1": 1.5036774166756401,
+      "chemical_kmer_esm8m_scale1": 1.4809922670862221
+    },
+    "component_macro_rmse": {
+      "train_mean": 1.3623463178182071,
+      "chemical_only": 1.4376962810292027,
+      "chemical_plus_kmer": 1.3941029079754363,
+      "chemical_plus_esm8m": 1.3884894980517037,
+      "chemical_kmer_esm8m": 1.371095043543515,
+      "chemical_esm8m_scale1": 1.4027551031028789,
+      "chemical_kmer_esm8m_scale1": 1.3794562116809417
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "chemical_only_minus_train_mean": {
+          "pooled_delta": 0.09326485388958261,
+          "pooled_CI95": [
+            0.029643234093532412,
+            0.15547595065394612
+          ],
+          "macro_delta": 0.07534996321099552,
+          "macro_CI95": [
+            0.026028666178535553,
+            0.1221269023698299
+          ],
+          "protein_groups_won": 184
+        },
+        "chemical_plus_kmer_minus_train_mean": {
+          "pooled_delta": 0.04575477847332077,
+          "pooled_CI95": [
+            -0.013631990906165898,
+            0.10311741667317208
+          ],
+          "macro_delta": 0.0317565901572292,
+          "macro_CI95": [
+            -0.015587125870527907,
+            0.07673146172202708
+          ],
+          "protein_groups_won": 200
+        },
+        "chemical_plus_esm8m_minus_train_mean": {
+          "pooled_delta": 0.06054352985133771,
+          "pooled_CI95": [
+            -0.004368924132826693,
+            0.12513350168618226
+          ],
+          "macro_delta": 0.0261431802334966,
+          "macro_CI95": [
+            -0.025444004419566048,
+            0.07652891866970118
+          ],
+          "protein_groups_won": 199
+        },
+        "chemical_kmer_esm8m_minus_train_mean": {
+          "pooled_delta": 0.03382134743666221,
+          "pooled_CI95": [
+            -0.028295367296080398,
+            0.09323731690254809
+          ],
+          "macro_delta": 0.008748725725307827,
+          "macro_CI95": [
+            -0.041086001954019284,
+            0.05685040786212353
+          ],
+          "protein_groups_won": 209
+        },
+        "chemical_esm8m_scale1_minus_train_mean": {
+          "pooled_delta": 0.061893220754532186,
+          "pooled_CI95": [
+            -0.0029721621097603397,
+            0.12630336531450542
+          ],
+          "macro_delta": 0.04040878528467173,
+          "macro_CI95": [
+            -0.015408390152725264,
+            0.09511747789379747
+          ],
+          "protein_groups_won": 197
+        },
+        "chemical_kmer_esm8m_scale1_minus_train_mean": {
+          "pooled_delta": 0.039208071165114156,
+          "pooled_CI95": [
+            -0.024610930041254548,
+            0.10164323583844108
+          ],
+          "macro_delta": 0.017109893862734538,
+          "macro_CI95": [
+            -0.03686903438905636,
+            0.07002358658024728
+          ],
+          "protein_groups_won": 208
+        },
+        "train_mean_minus_chemical_plus_kmer": {
+          "pooled_delta": -0.04575477847332077,
+          "pooled_CI95": [
+            -0.10311741667317208,
+            0.013631990906165889
+          ],
+          "macro_delta": -0.0317565901572292,
+          "macro_CI95": [
+            -0.07673146172202709,
+            0.015587125870527881
+          ],
+          "protein_groups_won": 319
+        },
+        "chemical_only_minus_chemical_plus_kmer": {
+          "pooled_delta": 0.04751007541626184,
+          "pooled_CI95": [
+            0.03305423251973471,
+            0.06411720411283071
+          ],
+          "macro_delta": 0.043593373053766316,
+          "macro_CI95": [
+            0.03238985735742085,
+            0.05524874539433767
+          ],
+          "protein_groups_won": 150
+        },
+        "chemical_plus_esm8m_minus_chemical_plus_kmer": {
+          "pooled_delta": 0.01478875137801694,
+          "pooled_CI95": [
+            -0.0056304962924017266,
+            0.036947616699092245
+          ],
+          "macro_delta": -0.005613409923732604,
+          "macro_CI95": [
+            -0.020263458000875572,
+            0.009395173299785578
+          ],
+          "protein_groups_won": 255
+        },
+        "chemical_kmer_esm8m_minus_chemical_plus_kmer": {
+          "pooled_delta": -0.01193343103665856,
+          "pooled_CI95": [
+            -0.030145701718177355,
+            0.006335386249684439
+          ],
+          "macro_delta": -0.023007864431921377,
+          "macro_CI95": [
+            -0.033767384549992764,
+            -0.01207316888706616
+          ],
+          "protein_groups_won": 331
+        },
+        "chemical_esm8m_scale1_minus_chemical_plus_kmer": {
+          "pooled_delta": 0.016138442281211418,
+          "pooled_CI95": [
+            -0.01611637908471595,
+            0.04863100527270818
+          ],
+          "macro_delta": 0.00865219512744253,
+          "macro_CI95": [
+            -0.01736540132864865,
+            0.035180591370046074
+          ],
+          "protein_groups_won": 262
+        },
+        "chemical_kmer_esm8m_scale1_minus_chemical_plus_kmer": {
+          "pooled_delta": -0.006546707308206612,
+          "pooled_CI95": [
+            -0.038043587666542866,
+            0.024000190561625723
+          ],
+          "macro_delta": -0.014646696294494665,
+          "macro_CI95": [
+            -0.037564206527540556,
+            0.008240174377958182
+          ],
+          "protein_groups_won": 302
+        }
+      }
+    }
+  },
+  "seconds": 25.54,
+  "caveats": [
+    "Frozen ESM model is pretrained on public protein corpora; no BALM labels used for its weights.",
+    "This is a within-TRAIN stress test; the original frozen development and reserved test were not scored.",
+    "Source assay provenance incomplete and exact pair labels sometimes inconsistent.",
+    "Protein 3-mer graph is an approximate homology proxy; not MMseqs validation.",
+    "85 of 639 protein sequences truncated to N-terminal 1022 residue window.",
+    "Protein representation choices follow previous exploratory dev analysis; not independent proof."
+  ]
+}
