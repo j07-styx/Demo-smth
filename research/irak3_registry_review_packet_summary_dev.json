@@ -1,0 +1,18 @@
+{
+  "status": "PRIVATE_REVIEW_PACKET_PREPARED_ZERO_APPROVAL",
+  "target": "IRAK3",
+  "review_leads": 7,
+  "unique_bindingdb_monomer_ids": 7,
+  "primary_source_numeric_matches": 7,
+  "compound_identity_approved": 0,
+  "stereochemistry_approved": 0,
+  "protein_construct_approved": 0,
+  "assay_method_approved": 0,
+  "local_packet_relative_path": "data/audit/davis_primary_20261107/irak3_registry_review_packet_LOCAL_PRIVATE.csv",
+  "source_table_sha256": "7d484e65ca44e0883ff713e80d1462d5ce6af5d860ddfa86941f78351801e274",
+  "limits": [
+    "Private packet has identifiers and source Kd cells; it must not be committed.",
+    "Numerical equality and PubChem synonyms are not chemical identity or assay approval.",
+    "Human reviewer must verify structures, stereo, protein constructs and assay methods."
+  ]
+}
