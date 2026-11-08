@@ -1,0 +1,212 @@
+{
+  "status": "BALM_TRAIN_ONLY_GROUPK_FOLD_CHEMICAL_SIMILARITY_GATING_EXPLORATORY_DEV_NO_TEST",
+  "architecture": "Ridge(Chemical Morgan+protein TFIDF) + molecule-similarity gated ordinary joint chemical/protein descriptor booster",
+  "gating_formula": {
+    "fixed25": "w=0.25",
+    "low_similarity_higher_boost": "w=0.40-0.30*nearest_morgan_cosine",
+    "high_similarity_higher_boost": "w=0.10+0.30*nearest_morgan_cosine",
+    "prediction": "(1-w)*ridge + w*joint_booster"
+  },
+  "fold_count": 4,
+  "cv_type": "GroupKFold(4), disjoint protein graph components, no overlap of heldout protein groups",
+  "cv_folds": [
+    {
+      "fold": 1,
+      "train_unique": 9320,
+      "holdout_rows": 3885,
+      "heldout_components": 129,
+      "chemical_similarity": {
+        "count": 3885,
+        "mean": 0.8349000585662198,
+        "fraction_exact_or_near_exact": 0.6378378378378379,
+        "fraction_cosine_below_0p5": 0.15752895752895754
+      },
+      "metrics": {
+        "ridge": {
+          "pooled_rmse": 1.426393218127117,
+          "component_macro_rmse": 1.2283475711175815
+        },
+        "fixed25": {
+          "pooled_rmse": 1.3681049793278617,
+          "component_macro_rmse": 1.1968974433232065
+        },
+        "low_similarity_higher_boost": {
+          "pooled_rmse": 1.3769513171167083,
+          "component_macro_rmse": 1.195128886497458
+        },
+        "high_similarity_higher_boost": {
+          "pooled_rmse": 1.3638196988026514,
+          "component_macro_rmse": 1.201835200114635
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_unique": 9296,
+      "holdout_rows": 3885,
+      "heldout_components": 130,
+      "chemical_similarity": {
+        "count": 3885,
+        "mean": 0.8319438235103087,
+        "fraction_exact_or_near_exact": 0.6404118404118404,
+        "fraction_cosine_below_0p5": 0.17606177606177606
+      },
+      "metrics": {
+        "ridge": {
+          "pooled_rmse": 1.3974752797415348,
+          "component_macro_rmse": 1.2293761759963266
+        },
+        "fixed25": {
+          "pooled_rmse": 1.3656542228497486,
+          "component_macro_rmse": 1.200878137382016
+        },
+        "low_similarity_higher_boost": {
+          "pooled_rmse": 1.3682011876524731,
+          "component_macro_rmse": 1.201454991358878
+        },
+        "high_similarity_higher_boost": {
+          "pooled_rmse": 1.3657436391636089,
+          "component_macro_rmse": 1.2025076659184082
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_unique": 8894,
+      "holdout_rows": 3884,
+      "heldout_components": 130,
+      "chemical_similarity": {
+        "count": 3884,
+        "mean": 0.7764527499215365,
+        "fraction_exact_or_near_exact": 0.5211122554067971,
+        "fraction_cosine_below_0p5": 0.23918640576725025
+      },
+      "metrics": {
+        "ridge": {
+          "pooled_rmse": 1.3236889241369105,
+          "component_macro_rmse": 1.235485331774287
+        },
+        "fixed25": {
+          "pooled_rmse": 1.292388242776239,
+          "component_macro_rmse": 1.203652461958535
+        },
+        "low_similarity_higher_boost": {
+          "pooled_rmse": 1.2928453989886408,
+          "component_macro_rmse": 1.2069385070556253
+        },
+        "high_similarity_higher_boost": {
+          "pooled_rmse": 1.2956775870139003,
+          "component_macro_rmse": 1.203021961119658
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_unique": 9435,
+      "holdout_rows": 3884,
+      "heldout_components": 130,
+      "chemical_similarity": {
+        "count": 3884,
+        "mean": 0.8650608464661146,
+        "fraction_exact_or_near_exact": 0.7033985581874357,
+        "fraction_cosine_below_0p5": 0.14160659114315138
+      },
+      "metrics": {
+        "ridge": {
+          "pooled_rmse": 1.2263896421870062,
+          "component_macro_rmse": 1.171544742172813
+        },
+        "fixed25": {
+          "pooled_rmse": 1.226309960779499,
+          "component_macro_rmse": 1.1722420077956572
+        },
+        "low_similarity_higher_boost": {
+          "pooled_rmse": 1.2177635058915448,
+          "component_macro_rmse": 1.1655668242111283
+        },
+        "high_similarity_higher_boost": {
+          "pooled_rmse": 1.2383638161727313,
+          "component_macro_rmse": 1.181152547929743
+        }
+      }
+    }
+  ],
+  "cv_mean": {
+    "ridge": {
+      "pooled_rmse": 1.3434867660481422,
+      "component_macro_rmse": 1.216188455265252
+    },
+    "fixed25": {
+      "pooled_rmse": 1.3131143514333372,
+      "component_macro_rmse": 1.1934175126148538
+    },
+    "low_similarity_higher_boost": {
+      "pooled_rmse": 1.3139403524123416,
+      "component_macro_rmse": 1.1922723022807724
+    },
+    "high_similarity_higher_boost": {
+      "pooled_rmse": 1.3159011852882228,
+      "component_macro_rmse": 1.197129343770611
+    }
+  },
+  "cv_ranked": [
+    {
+      "mode": "low_similarity_higher_boost",
+      "pooled_cv_mean": 1.3139403524123416,
+      "macro_cv_mean": 1.1922723022807724,
+      "relative_joint": 0.9998347169337991
+    },
+    {
+      "mode": "fixed25",
+      "pooled_cv_mean": 1.3131143514333372,
+      "macro_cv_mean": 1.1934175126148538,
+      "relative_joint": 1.0
+    },
+    {
+      "mode": "high_similarity_higher_boost",
+      "pooled_cv_mean": 1.3159011852882228,
+      "macro_cv_mean": 1.197129343770611,
+      "relative_joint": 1.002616281107233
+    }
+  ],
+  "selected_on_train_cv": "fixed25",
+  "dev_metrics_transparent_predeclared": {
+    "ridge": {
+      "pooled_rmse": 1.4050918440691933,
+      "component_macro_rmse": 1.2692162612256408
+    },
+    "fixed25": {
+      "pooled_rmse": 1.3822357267902712,
+      "component_macro_rmse": 1.2456488401840358
+    },
+    "low_similarity_higher_boost": {
+      "pooled_rmse": 1.3802267912894677,
+      "component_macro_rmse": 1.2444019370823347
+    },
+    "high_similarity_higher_boost": {
+      "pooled_rmse": 1.3880324121993741,
+      "component_macro_rmse": 1.2493591794009824
+    }
+  },
+  "dev_locked_selected": {
+    "pooled_rmse": 1.3822357267902712,
+    "component_macro_rmse": 1.2456488401840358
+  },
+  "dev_similarity_summary": {
+    "count": 3891,
+    "mean": 0.8306885626989476,
+    "fraction_exact_or_near_exact": 0.5926497044461578,
+    "fraction_cosine_below_0p5": 0.13801079414032383
+  },
+  "train_original_rows": 15538,
+  "train_unique_protein_compound": 12315,
+  "dev_rows": 3891,
+  "seconds": 60.86,
+  "caveats": [
+    "BALM target groups are approximation from sequence 3-mer similarity rather than verified homology.",
+    "Original source lacks assay provenance and has inconsistent identical-input affinity labels.",
+    "Development partition previously inspected many times; exploratory and not independent.",
+    "Gate candidates examined on train-CV only; prospective test labels not accessed or predicted.",
+    "Each similarity uses train-only chemical fingerprints, never heldout labels or test molecules."
+  ]
+}
