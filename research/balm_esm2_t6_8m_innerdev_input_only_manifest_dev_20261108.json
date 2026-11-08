@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_ESM2_INNER_DEV_PROTEIN_INPUT_ONLY_FEATURES_NO_TEST",
+  "source": "BALM pre-existing inner_dev input protein sequences only, all 209 unique proteins",
+  "inner_dev_rows": 3891,
+  "unique_dev_proteins": 209,
+  "training_proteins_encoded_here": 0,
+  "dev_target_labels_used_for_embedding": false,
+  "reserved_prospective_test_sequences_or_labels_accessed": false,
+  "model": "esm2_t6_8M_UR50D",
+  "model_weight_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+  "training_reference_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "layer": 6,
+  "max_residue_window": 1022,
+  "pooling": "mean of 1..min(length,1022) non-special residue tokens then l2 normalization",
+  "shape": [
+    209,
+    320
+  ],
+  "max_full_sequence_length": 3969,
+  "truncated_protein_count": 30,
+  "local_cache": "data/reference/balm_esm2_8m_innerdev_20261108/esm2_t6_8m_innerdev_mean_layer6_w1022.npz",
+  "cache_sha256": "d1d928ee41350a0fb6911993c712d901950823ae1679ed096ed719dfb3a1a273",
+  "seconds": 24.5,
+  "limitations": [
+    "Frozen inner development repeatedly inspected by research process; no independent confirmation.",
+    "Per-residue features for long proteins are truncated; not full-length embeddings.",
+    "No reserved prospective TEST protein input or label was accessed."
+  ]
+}
