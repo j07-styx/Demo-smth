@@ -1,0 +1,36 @@
+{
+  "status": "DEVELOPMENT_PERMUTATION_NEGATIVE_CONTROL_NOT_INDEPENDENT_TEST",
+  "seed": 20261108,
+  "number_of_permutations": 1000,
+  "permutation_unit": "training-protein-component sequence-prototype assignment, fixed train label means",
+  "train_protein_components": 82,
+  "dev_protein_components": 20,
+  "train_pairs": 27118,
+  "development_pairs": 7387,
+  "observed": {
+    "pooled_rmse": 1.8011944574482104,
+    "component_macro_rmse": 1.6715205771414747
+  },
+  "permuted_pooled_rmse": {
+    "mean": 1.8011913224970817,
+    "median": 1.800194863258171,
+    "q025": 1.7982034128556463,
+    "q975": 1.8082703696872209
+  },
+  "permuted_component_macro_rmse": {
+    "mean": 1.6367315822429638,
+    "median": 1.6313461068121575,
+    "q025": 1.5464277925646022,
+    "q975": 1.742500194476364
+  },
+  "empirical_p_lower_rmse_better": {
+    "pooled": 0.6683316683316683,
+    "macro": 0.7522477522477522
+  },
+  "warnings": [
+    "An exploratory negative control on a repeatedly inspected development set, NOT confirmatory significance.",
+    "Permuting centroids breaks potential correlations between training component size, protein sequence, and label profile.",
+    "A low empirical rank against randomized identities does not demonstrate biological causality or paper-level performance.",
+    "No prospective test labels or predictions accessed; provisional assay and construct provenance."
+  ]
+}

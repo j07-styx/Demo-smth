@@ -1,0 +1,2619 @@
+{
+  "status": "PROVISIONAL_DATA_QUALITY_AUDIT_FROZEN_TRAIN_AND_INNER_DEV_ONLY",
+  "train": {
+    "pairs": 27118,
+    "components": 82,
+    "unique_assay_keys": 711,
+    "unique_protein_sequences": 410,
+    "unique_compounds": 12134,
+    "largest_component_pair_share": 0.656906851537724,
+    "top_3_component_pair_share": 0.804225975366915,
+    "components_with_more_than_one_assay": 37,
+    "sequence_compound_pairs_measured_multiple_assays": 2986,
+    "records_in_multiple_assay_pair_groups": 8837,
+    "fraction_records_in_multiple_assay_pair_groups": 0.32587211446271847,
+    "cross_assay_pKd_range_q50_q90_q99": [
+      0.0,
+      5.522878745280337,
+      6.0
+    ],
+    "cross_assay_pairs_spread_gt_0_5": 746,
+    "cross_assay_pairs_spread_gt_1_0": 575,
+    "cross_assay_pairs_spread_gt_2_0": 406,
+    "component_summary": [
+      {
+        "component_id": "00faf52e877f8ec4d0da6ca32313f09350fb35484546287f7d68e8d95efc02b9",
+        "pairs": 17814,
+        "protein_sequences": 252,
+        "assay_keys": 459,
+        "dominant_assay_share": 0.09296059279218592,
+        "top_assay_counts": [
+          [
+            "11937_1",
+            1656
+          ],
+          [
+            "12673_1",
+            975
+          ],
+          [
+            "10014_1",
+            471
+          ],
+          [
+            "10720_1",
+            471
+          ],
+          [
+            "8858_1",
+            471
+          ]
+        ],
+        "compounds": 5169,
+        "label_mean": 7.2165458373635705,
+        "label_sd": 1.5417526866030107,
+        "label_q05_q50_q95": [
+          5.050609993355087,
+          7.173925197299173,
+          9.522878745280337
+        ]
+      },
+      {
+        "component_id": "011b29df0ce28bf5ed25ab922e3b490924ed2bb990c8e2c6cfbbb7ae893b21db",
+        "pairs": 2014,
+        "protein_sequences": 40,
+        "assay_keys": 72,
+        "dominant_assay_share": 0.06107249255213505,
+        "top_assay_counts": [
+          [
+            "5943_2",
+            123
+          ],
+          [
+            "6326_2",
+            91
+          ],
+          [
+            "2880_1",
+            73
+          ],
+          [
+            "6326_1",
+            59
+          ],
+          [
+            "50042274_1",
+            55
+          ]
+        ],
+        "compounds": 1115,
+        "label_mean": 6.941862205154863,
+        "label_sd": 1.4592969895911871,
+        "label_q05_q50_q95": [
+          4.540004743952609,
+          6.978810700930062,
+          9.275724130399212
+        ]
+      },
+      {
+        "component_id": "003874630d9aaf2f3d1436094dff35e78ef4180105b41b80833eb8aef43ecffb",
+        "pairs": 1981,
+        "protein_sequences": 12,
+        "assay_keys": 30,
+        "dominant_assay_share": 0.20292781423523473,
+        "top_assay_counts": [
+          [
+            "9827_1",
+            402
+          ],
+          [
+            "1760_1",
+            346
+          ],
+          [
+            "9819_1",
+            204
+          ],
+          [
+            "10630_1",
+            120
+          ],
+          [
+            "657_1",
+            83
+          ]
+        ],
+        "compounds": 1749,
+        "label_mean": 7.77594042198603,
+        "label_sd": 1.310420535412959,
+        "label_q05_q50_q95": [
+          5.318758762624412,
+          7.958607314841775,
+          9.657577319177793
+        ]
+      },
+      {
+        "component_id": "03530bcba0a65441225b5278da2e0c5005109c1a77a1123a9535dc0b0e70edd3",
+        "pairs": 468,
+        "protein_sequences": 4,
+        "assay_keys": 9,
+        "dominant_assay_share": 0.6709401709401709,
+        "top_assay_counts": [
+          [
+            "680_1",
+            314
+          ],
+          [
+            "50028553_1",
+            29
+          ],
+          [
+            "50001904_1",
+            23
+          ],
+          [
+            "11592_1",
+            19
+          ],
+          [
+            "50023334_2",
+            19
+          ]
+        ],
+        "compounds": 241,
+        "label_mean": 7.879826850986581,
+        "label_sd": 1.8040740897067495,
+        "label_q05_q50_q95": [
+          3.9790498660283653,
+          8.795880017344075,
+          9.397940008672037
+        ]
+      },
+      {
+        "component_id": "0e49f0ac9715d44bd35fcd3dc22655f5e34eda3c2eb9152deafa6028275b968c",
+        "pairs": 290,
+        "protein_sequences": 2,
+        "assay_keys": 5,
+        "dominant_assay_share": 0.4103448275862069,
+        "top_assay_counts": [
+          [
+            "10284_2",
+            119
+          ],
+          [
+            "11603_2",
+            70
+          ],
+          [
+            "12269_2",
+            53
+          ],
+          [
+            "50010880_1",
+            30
+          ],
+          [
+            "50002506_5",
+            18
+          ]
+        ],
+        "compounds": 290,
+        "label_mean": 7.068987654599075,
+        "label_sd": 1.0215244418363598,
+        "label_q05_q50_q95": [
+          4.610833915635467,
+          7.2182594573027945,
+          8.20479178032559
+        ]
+      },
+      {
+        "component_id": "17751c0357a6eda7ce33fd14293e75dfdbe8fe0beba8a87b4345e4ac9f7aa28b",
+        "pairs": 262,
+        "protein_sequences": 3,
+        "assay_keys": 8,
+        "dominant_assay_share": 0.16793893129770993,
+        "top_assay_counts": [
+          [
+            "50021809_1",
+            44
+          ],
+          [
+            "13434_1",
+            40
+          ],
+          [
+            "50014401_4",
+            34
+          ],
+          [
+            "50014401_3",
+            34
+          ],
+          [
+            "50014401_1",
+            34
+          ]
+        ],
+        "compounds": 169,
+        "label_mean": 6.66544495177841,
+        "label_sd": 1.5777542712059893,
+        "label_q05_q50_q95": [
+          3.2599933072513285,
+          7.011138197355576,
+          9.187086643357144
+        ]
+      },
+      {
+        "component_id": "17900ebcc9c13067fdc7cbf549e096a623aa4053e53f16aafc3928b2aa5281be",
+        "pairs": 233,
+        "protein_sequences": 6,
+        "assay_keys": 4,
+        "dominant_assay_share": 0.33476394849785407,
+        "top_assay_counts": [
+          [
+            "11191_1",
+            78
+          ],
+          [
+            "13250_1",
+            74
+          ],
+          [
+            "9818_1",
+            68
+          ],
+          [
+            "13161_1",
+            13
+          ]
+        ],
+        "compounds": 148,
+        "label_mean": 5.8657953272253796,
+        "label_sd": 1.6347273595933138,
+        "label_q05_q50_q95": [
+          3.6989700043360187,
+          5.606424796730412,
+          8.774737069487472
+        ]
+      },
+      {
+        "component_id": "1745754698cfda0da91a4ab57a3167699fd9968011b4a7887a53c1da2876fbe1",
+        "pairs": 216,
+        "protein_sequences": 3,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.7870370370370371,
+        "top_assay_counts": [
+          [
+            "13376_1",
+            170
+          ],
+          [
+            "50039359_1",
+            31
+          ],
+          [
+            "50009965_12",
+            15
+          ]
+        ],
+        "compounds": 216,
+        "label_mean": 6.487565153080082,
+        "label_sd": 1.0070343941002384,
+        "label_q05_q50_q95": [
+          4.772825334568663,
+          6.694653952333149,
+          7.78982930103305
+        ]
+      },
+      {
+        "component_id": "43654b9ee9fc7ffd20d063e02e0f2715849c8a83afd11da12a1e44a2d76d66ec",
+        "pairs": 211,
+        "protein_sequences": 1,
+        "assay_keys": 6,
+        "dominant_assay_share": 0.41232227488151657,
+        "top_assay_counts": [
+          [
+            "9684_1",
+            87
+          ],
+          [
+            "50044523_1",
+            44
+          ],
+          [
+            "50000629_1",
+            29
+          ],
+          [
+            "50021942_1",
+            19
+          ],
+          [
+            "50000422_1",
+            17
+          ]
+        ],
+        "compounds": 206,
+        "label_mean": 7.39912678791197,
+        "label_sd": 0.8603231896384749,
+        "label_q05_q50_q95": [
+          6.259637310505756,
+          7.42021640338319,
+          8.85498269431874
+        ]
+      },
+      {
+        "component_id": "0451c5f5ef052711dec57df65d688e28c0027e49dc4be546d73beb880c6181ed",
+        "pairs": 201,
+        "protein_sequences": 1,
+        "assay_keys": 4,
+        "dominant_assay_share": 0.39303482587064675,
+        "top_assay_counts": [
+          [
+            "10467_1",
+            79
+          ],
+          [
+            "11177_1",
+            78
+          ],
+          [
+            "13348_1",
+            22
+          ],
+          [
+            "50015095_1",
+            22
+          ]
+        ],
+        "compounds": 131,
+        "label_mean": 6.074517899643912,
+        "label_sd": 1.0538652296438396,
+        "label_q05_q50_q95": [
+          4.958607314841775,
+          5.958607314841775,
+          8.602059991327963
+        ]
+      },
+      {
+        "component_id": "5de81f208e7148a6c5163dc26042423d3e3fdd21b2eb3c95625b3a80f58583fb",
+        "pairs": 173,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.861271676300578,
+        "top_assay_counts": [
+          [
+            "50026193_2",
+            149
+          ],
+          [
+            "50026193_1",
+            24
+          ]
+        ],
+        "compounds": 149,
+        "label_mean": 5.50961268456902,
+        "label_sd": 1.011815337210118,
+        "label_q05_q50_q95": [
+          3.638272163982407,
+          5.568636235841012,
+          7.091608241361469
+        ]
+      },
+      {
+        "component_id": "871a28c2e8d6dec8d65e518a63d8a50ed4424180c5952cfc507b45a02059e6fc",
+        "pairs": 158,
+        "protein_sequences": 2,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "729_1",
+            158
+          ]
+        ],
+        "compounds": 87,
+        "label_mean": 7.037575066395947,
+        "label_sd": 1.6311845430338336,
+        "label_q05_q50_q95": [
+          4.680706617615385,
+          7.58310781267176,
+          9.164943978430335
+        ]
+      },
+      {
+        "component_id": "4defde59a1d7277cd859067b22fac5ce59d32d0832d20e381ed616842f122d39",
+        "pairs": 148,
+        "protein_sequences": 3,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.40540540540540543,
+        "top_assay_counts": [
+          [
+            "50008121_2",
+            60
+          ],
+          [
+            "50008121_4",
+            44
+          ],
+          [
+            "50008121_3",
+            44
+          ]
+        ],
+        "compounds": 61,
+        "label_mean": 4.800600272813907,
+        "label_sd": 0.5505252918834354,
+        "label_q05_q50_q95": [
+          4.015045829980058,
+          4.744004874459604,
+          5.752644440770632
+        ]
+      },
+      {
+        "component_id": "154e31448ba30d1fa44ef9c4976a4317aec634b51bbca4f049ba6b7edc94294b",
+        "pairs": 116,
+        "protein_sequences": 2,
+        "assay_keys": 5,
+        "dominant_assay_share": 0.33620689655172414,
+        "top_assay_counts": [
+          [
+            "50006301_1",
+            39
+          ],
+          [
+            "50008373_1",
+            23
+          ],
+          [
+            "50008154_3",
+            22
+          ],
+          [
+            "50040981_1",
+            16
+          ],
+          [
+            "50040981_2",
+            16
+          ]
+        ],
+        "compounds": 94,
+        "label_mean": 7.598968360546494,
+        "label_sd": 1.15798931304762,
+        "label_q05_q50_q95": [
+          5.350000198819774,
+          7.710651749512202,
+          9.35649218306807
+        ]
+      },
+      {
+        "component_id": "7c1523d7d6bd86df82bb78f6bc72691ee4cfa9ad4bb95aabc4dc3e64d1bf831b",
+        "pairs": 114,
+        "protein_sequences": 2,
+        "assay_keys": 5,
+        "dominant_assay_share": 0.35964912280701755,
+        "top_assay_counts": [
+          [
+            "1414_1",
+            41
+          ],
+          [
+            "50019988_4",
+            22
+          ],
+          [
+            "12264_1",
+            19
+          ],
+          [
+            "50034019_184",
+            16
+          ],
+          [
+            "50034019_320",
+            16
+          ]
+        ],
+        "compounds": 110,
+        "label_mean": 6.314346535731514,
+        "label_sd": 0.7409252875558039,
+        "label_q05_q50_q95": [
+          5.481486060122112,
+          6.1249387366083,
+          7.492699404657899
+        ]
+      },
+      {
+        "component_id": "80be356aef4f71329822694d1d7129d6dd6bdaaee64fe2d62b1d68fc82d1ccdb",
+        "pairs": 113,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "11868_1",
+            113
+          ]
+        ],
+        "compounds": 113,
+        "label_mean": 4.221848749616356,
+        "label_sd": 0.0,
+        "label_q05_q50_q95": [
+          4.221848749616356,
+          4.221848749616356,
+          4.221848749616356
+        ]
+      },
+      {
+        "component_id": "c901a8a384fea6feea46dc8e67570910a8a9bb96be3b2861c6299ec4999ef687",
+        "pairs": 110,
+        "protein_sequences": 1,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.37272727272727274,
+        "top_assay_counts": [
+          [
+            "50044156_1",
+            41
+          ],
+          [
+            "50043196_1",
+            35
+          ],
+          [
+            "50045776_1",
+            34
+          ]
+        ],
+        "compounds": 110,
+        "label_mean": 5.594771075532481,
+        "label_sd": 1.622172468529742,
+        "label_q05_q50_q95": [
+          3.7562811976217114,
+          4.939713034397075,
+          8.63259452164537
+        ]
+      },
+      {
+        "component_id": "75c34e924155e3529903bd10daf1da3d8929c12d17075ff191d84ec07703843f",
+        "pairs": 108,
+        "protein_sequences": 2,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.7037037037037037,
+        "top_assay_counts": [
+          [
+            "13054_1",
+            76
+          ],
+          [
+            "50021073_1",
+            16
+          ],
+          [
+            "50021073_9",
+            16
+          ]
+        ],
+        "compounds": 108,
+        "label_mean": 8.377930479504128,
+        "label_sd": 1.168331353100053,
+        "label_q05_q50_q95": [
+          5.577081535792318,
+          8.765752487746465,
+          9.740551474764144
+        ]
+      },
+      {
+        "component_id": "3e63d306265781bbc1e001372f1a6e7c77338903be925c3d5e83a4f8c29dcee5",
+        "pairs": 90,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50042282_1",
+            90
+          ]
+        ],
+        "compounds": 90,
+        "label_mean": 7.662639686821078,
+        "label_sd": 1.3299114677435095,
+        "label_q05_q50_q95": [
+          5.63245038399993,
+          8.144180730883825,
+          9.35277418872788
+        ]
+      },
+      {
+        "component_id": "0570c5d169e261bd58cef982a478372a4db9a32bab2b2e079eafc07bf05f0433",
+        "pairs": 79,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5443037974683544,
+        "top_assay_counts": [
+          [
+            "11490_1",
+            43
+          ],
+          [
+            "11490_2",
+            36
+          ]
+        ],
+        "compounds": 43,
+        "label_mean": 2.2833455332847987,
+        "label_sd": 0.7488498643624037,
+        "label_q05_q50_q95": [
+          0.997061622231479,
+          2.431798275933005,
+          3.4104338823328666
+        ]
+      },
+      {
+        "component_id": "1a91ab23afa3aaddededca49a9a2f3b0b8253e9f1cc6afc7d6690a4adb8e1def",
+        "pairs": 72,
+        "protein_sequences": 1,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.4166666666666667,
+        "top_assay_counts": [
+          [
+            "50022171_2",
+            30
+          ],
+          [
+            "50023714_1",
+            27
+          ],
+          [
+            "50021280_1",
+            15
+          ]
+        ],
+        "compounds": 69,
+        "label_mean": 5.894192075358514,
+        "label_sd": 0.5443022829849852,
+        "label_q05_q50_q95": [
+          5.005100615192748,
+          5.810111635031205,
+          6.868355071838892
+        ]
+      },
+      {
+        "component_id": "50bd91bb24b0aa5b7cf6ff8e83dc526c6a56ca6bbcc8ab48acfbfac4cb8961cf",
+        "pairs": 72,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "12630_1",
+            72
+          ]
+        ],
+        "compounds": 72,
+        "label_mean": 7.047736820546234,
+        "label_sd": 0.7933671873161765,
+        "label_q05_q50_q95": [
+          5.811892035802467,
+          6.958607314841775,
+          8.355672312412747
+        ]
+      },
+      {
+        "component_id": "0a05f736b29dbbed80036947282a91d148f76466e220161f4eb923fd44c16765",
+        "pairs": 70,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5571428571428572,
+        "top_assay_counts": [
+          [
+            "50000111_2",
+            39
+          ],
+          [
+            "50000111_1",
+            31
+          ]
+        ],
+        "compounds": 41,
+        "label_mean": 4.773677953906052,
+        "label_sd": 0.3021477949571085,
+        "label_q05_q50_q95": [
+          4.237732843107553,
+          4.775987123563277,
+          5.272702204282385
+        ]
+      },
+      {
+        "component_id": "454ee663ce3048464365fc4a533e1f189d56c62d467c28a5d53d4b7ce8560415",
+        "pairs": 64,
+        "protein_sequences": 1,
+        "assay_keys": 4,
+        "dominant_assay_share": 0.25,
+        "top_assay_counts": [
+          [
+            "50005563_10",
+            16
+          ],
+          [
+            "50005563_14",
+            16
+          ],
+          [
+            "50005563_3",
+            16
+          ],
+          [
+            "50005563_9",
+            16
+          ]
+        ],
+        "compounds": 16,
+        "label_mean": 5.098205563406971,
+        "label_sd": 0.6759682321665789,
+        "label_q05_q50_q95": [
+          3.9912050498764464,
+          5.06246936830415,
+          6.154901959985743
+        ]
+      },
+      {
+        "component_id": "3e723e9b939c852d117a2a4862213f89c492ff4b6056a25176e677a8fd066a27",
+        "pairs": 63,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.746031746031746,
+        "top_assay_counts": [
+          [
+            "50020590_2",
+            47
+          ],
+          [
+            "50043864_2",
+            16
+          ]
+        ],
+        "compounds": 63,
+        "label_mean": 5.726033723136706,
+        "label_sd": 1.2523854666090297,
+        "label_q05_q50_q95": [
+          3.7522727934929594,
+          5.653647025549361,
+          7.834242499807365
+        ]
+      },
+      {
+        "component_id": "850aba8ba2a5e1681e7e3dbc08958a52248c816c95be57b749d282e591253998",
+        "pairs": 63,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5079365079365079,
+        "top_assay_counts": [
+          [
+            "50006108_1",
+            32
+          ],
+          [
+            "50015271_2",
+            31
+          ]
+        ],
+        "compounds": 63,
+        "label_mean": 4.643747968218858,
+        "label_sd": 0.5154052258764081,
+        "label_q05_q50_q95": [
+          3.6171953868643687,
+          4.6777807052660805,
+          5.443697499232712
+        ]
+      },
+      {
+        "component_id": "01e988a935055b3c57d7a073517b26d9bed04f57214bf0e7f9b60e40711d4458",
+        "pairs": 60,
+        "protein_sequences": 2,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.4166666666666667,
+        "top_assay_counts": [
+          [
+            "50034019_343",
+            25
+          ],
+          [
+            "50034019_434",
+            18
+          ],
+          [
+            "1017_3",
+            17
+          ]
+        ],
+        "compounds": 42,
+        "label_mean": 5.971771322896999,
+        "label_sd": 0.770824605433786,
+        "label_q05_q50_q95": [
+          4.756961951313706,
+          5.920818753952375,
+          7.435640277444641
+        ]
+      },
+      {
+        "component_id": "5687fb39646015f51572f69c6b829bb2b0f188170649c9dcef508412c5c8d217",
+        "pairs": 59,
+        "protein_sequences": 2,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.3728813559322034,
+        "top_assay_counts": [
+          [
+            "50014369_2",
+            22
+          ],
+          [
+            "50015229_1",
+            21
+          ],
+          [
+            "50046290_2",
+            16
+          ]
+        ],
+        "compounds": 59,
+        "label_mean": 5.38214153087267,
+        "label_sd": 1.0125448689388232,
+        "label_q05_q50_q95": [
+          3.9500361035211164,
+          5.3979400086720375,
+          6.808086166758126
+        ]
+      },
+      {
+        "component_id": "b16f52f0d04b72927ee4e0cbe247b9d446ac4466ec87c4bf055470e04b94b895",
+        "pairs": 58,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.6379310344827587,
+        "top_assay_counts": [
+          [
+            "50020330_8",
+            37
+          ],
+          [
+            "50002550_1",
+            21
+          ]
+        ],
+        "compounds": 57,
+        "label_mean": 6.4045627000725105,
+        "label_sd": 0.5942447951681774,
+        "label_q05_q50_q95": [
+          5.251414025477529,
+          6.525061147981562,
+          7.146274486479575
+        ]
+      },
+      {
+        "component_id": "14c12f3038e6dde2d28b78c0961e52dae3040876f6c8e2ce7208899bca679c80",
+        "pairs": 57,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "729_1",
+            57
+          ]
+        ],
+        "compounds": 57,
+        "label_mean": 5.3256896389689095,
+        "label_sd": 0.651649969987689,
+        "label_q05_q50_q95": [
+          4.630005338391572,
+          5.100015437450609,
+          6.7343056441638875
+        ]
+      },
+      {
+        "component_id": "0964b8ab750f4f675886036ee344acb048e251156e11a6c965cc39525773b4e8",
+        "pairs": 56,
+        "protein_sequences": 2,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.35714285714285715,
+        "top_assay_counts": [
+          [
+            "5628_1",
+            20
+          ],
+          [
+            "7957_1",
+            20
+          ],
+          [
+            "50008590_1",
+            16
+          ]
+        ],
+        "compounds": 36,
+        "label_mean": 6.9759662761574095,
+        "label_sd": 2.058992210648675,
+        "label_q05_q50_q95": [
+          4.1944991418416,
+          6.84391132178011,
+          10.046771660839287
+        ]
+      },
+      {
+        "component_id": "0bd14a0b35b82c168f51810b87908d90b82fe7f018796dcbc2bbf1b91a891aa7",
+        "pairs": 51,
+        "protein_sequences": 2,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.6470588235294118,
+        "top_assay_counts": [
+          [
+            "50003008_3",
+            33
+          ],
+          [
+            "1671_1",
+            18
+          ]
+        ],
+        "compounds": 51,
+        "label_mean": 5.991553720757719,
+        "label_sd": 0.8525736992677827,
+        "label_q05_q50_q95": [
+          4.629818655252878,
+          6.1432711096171175,
+          7.0785082649388915
+        ]
+      },
+      {
+        "component_id": "736c22dbc7797c1c0ef6c927d6c936514d64b19f0ce9677705904865f96b289b",
+        "pairs": 51,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5294117647058824,
+        "top_assay_counts": [
+          [
+            "50003631_1",
+            27
+          ],
+          [
+            "50003631_2",
+            24
+          ]
+        ],
+        "compounds": 27,
+        "label_mean": 6.855522369610999,
+        "label_sd": 0.9250542203232586,
+        "label_q05_q50_q95": [
+          5.265019045061496,
+          6.910094888560602,
+          8.090689136812056
+        ]
+      },
+      {
+        "component_id": "da59a8073c4defb628fc38c685c62b59618c7131fffb9eb49a47bf7f5bc8ca3e",
+        "pairs": 51,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5882352941176471,
+        "top_assay_counts": [
+          [
+            "50002219_1",
+            30
+          ],
+          [
+            "50047816_1",
+            21
+          ]
+        ],
+        "compounds": 51,
+        "label_mean": 4.968341289534385,
+        "label_sd": 0.3707674749677666,
+        "label_q05_q50_q95": [
+          4.351667404869234,
+          5.0,
+          5.5598791120522595
+        ]
+      },
+      {
+        "component_id": "5e9c457073a540c05733e2d071b9b46725f890ad40ecd6f27a571d667bc8e711",
+        "pairs": 50,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50021648_1",
+            50
+          ]
+        ],
+        "compounds": 50,
+        "label_mean": 7.2867490488641184,
+        "label_sd": 0.7229281151718849,
+        "label_q05_q50_q95": [
+          6.105190984092763,
+          7.219449308175472,
+          8.522878745280337
+        ]
+      },
+      {
+        "component_id": "14f75cca9ba701d4dc61aa5341c3241ed9bcd3f1292d6df33b41bdbb8a0350da",
+        "pairs": 48,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50023141_1",
+            48
+          ]
+        ],
+        "compounds": 48,
+        "label_mean": 6.433081722614996,
+        "label_sd": 0.6631532808747855,
+        "label_q05_q50_q95": [
+          5.456573171200505,
+          6.328000465471419,
+          7.479150187467432
+        ]
+      },
+      {
+        "component_id": "287332153da38b59cc1be9554cc3a29f14d3b9e2a33150b4d54137773b22d1f7",
+        "pairs": 45,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50046122_3",
+            45
+          ]
+        ],
+        "compounds": 45,
+        "label_mean": 6.989973573125119,
+        "label_sd": 1.114291353948408,
+        "label_q05_q50_q95": [
+          5.189946412463728,
+          7.0,
+          8.880904282971333
+        ]
+      },
+      {
+        "component_id": "65cfc2c0cf82af83e1e122bea9f09a3fb6ba8fa60f7bd6f942cd3be3d0be8daf",
+        "pairs": 45,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5555555555555556,
+        "top_assay_counts": [
+          [
+            "50013828_1",
+            25
+          ],
+          [
+            "50020898_1",
+            20
+          ]
+        ],
+        "compounds": 44,
+        "label_mean": 6.225079622413306,
+        "label_sd": 1.2871202704271865,
+        "label_q05_q50_q95": [
+          3.939813192288126,
+          6.756961951313706,
+          7.431798275933005
+        ]
+      },
+      {
+        "component_id": "7aefc129cd06ec747b67e4b97d78466ee5553c4f7f1bce7b24e2a1872eafb0f5",
+        "pairs": 45,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "13362_1",
+            45
+          ]
+        ],
+        "compounds": 45,
+        "label_mean": 5.081859532727978,
+        "label_sd": 0.9015761233378132,
+        "label_q05_q50_q95": [
+          4.259637310505756,
+          4.259637310505756,
+          6.259637310505756
+        ]
+      },
+      {
+        "component_id": "01a94f11705e76d6747b6e29529607e32c7dac0df85b78165c8fbc95731e31e5",
+        "pairs": 43,
+        "protein_sequences": 2,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5116279069767442,
+        "top_assay_counts": [
+          [
+            "5399_2",
+            22
+          ],
+          [
+            "50042962_1",
+            21
+          ]
+        ],
+        "compounds": 43,
+        "label_mean": 4.412300584062141,
+        "label_sd": 1.5358735128894416,
+        "label_q05_q50_q95": [
+          2.9195451220569892,
+          3.6777807052660805,
+          7.215778965580995
+        ]
+      },
+      {
+        "component_id": "4c7b302c97ebbbf6f2c1647b7e2c33a0df922e898bb99d4b949a7204ba26ab70",
+        "pairs": 43,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "4131_1",
+            43
+          ]
+        ],
+        "compounds": 43,
+        "label_mean": 6.143358240738313,
+        "label_sd": 0.6890945297687932,
+        "label_q05_q50_q95": [
+          5.259637310505756,
+          6.259637310505756,
+          7.259637310505756
+        ]
+      },
+      {
+        "component_id": "0b39241871a6a7ad8ba649cebe62dcd2834dfdb6aaa43b109b60895f53d88987",
+        "pairs": 42,
+        "protein_sequences": 2,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5,
+        "top_assay_counts": [
+          [
+            "50038668_1",
+            21
+          ],
+          [
+            "50038668_13",
+            21
+          ]
+        ],
+        "compounds": 21,
+        "label_mean": 8.057866479996036,
+        "label_sd": 0.921637306573134,
+        "label_q05_q50_q95": [
+          6.698970004336019,
+          8.301029995663981,
+          9.28597849588078
+        ]
+      },
+      {
+        "component_id": "b13035f135fd81cf7050efeebd189db3b535ce19e7efee51566f4e9e2931d717",
+        "pairs": 42,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "13282_1",
+            42
+          ]
+        ],
+        "compounds": 42,
+        "label_mean": 3.926385739493907,
+        "label_sd": 0.3785918179862898,
+        "label_q05_q50_q95": [
+          3.098549886790107,
+          4.029194598923183,
+          4.376239751343015
+        ]
+      },
+      {
+        "component_id": "78af5bc199ef50bfdc8d7b710a95b0a88c756b404fdc02edae85c4d4efa76894",
+        "pairs": 41,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50042303_1",
+            41
+          ]
+        ],
+        "compounds": 41,
+        "label_mean": 6.027547032756044,
+        "label_sd": 0.9219172408359091,
+        "label_q05_q50_q95": [
+          4.579994715040948,
+          6.0,
+          7.481486060122112
+        ]
+      },
+      {
+        "component_id": "030ef1b424381b56f9f5794a5a8f5526cf73f1a02d7d305f1c0b51d8b3c2485c",
+        "pairs": 39,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.6153846153846154,
+        "top_assay_counts": [
+          [
+            "50020671_1",
+            24
+          ],
+          [
+            "50023013_2",
+            15
+          ]
+        ],
+        "compounds": 33,
+        "label_mean": 5.241131611678062,
+        "label_sd": 0.7791010894201315,
+        "label_q05_q50_q95": [
+          4.451378543648423,
+          4.920818753952375,
+          6.799654078188125
+        ]
+      },
+      {
+        "component_id": "13f7773edf55938a8fd07f165007b380dec6ca038472181aac060857640addd3",
+        "pairs": 38,
+        "protein_sequences": 2,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5263157894736842,
+        "top_assay_counts": [
+          [
+            "50010464_1",
+            20
+          ],
+          [
+            "50047702_1",
+            18
+          ]
+        ],
+        "compounds": 38,
+        "label_mean": 5.5964374790601825,
+        "label_sd": 0.7061211809899912,
+        "label_q05_q50_q95": [
+          4.03268496420284,
+          5.770303756120384,
+          6.522878745280337
+        ]
+      },
+      {
+        "component_id": "022c5e46aa4d58f82ea0b1dcb834398f4f1195826519611b0447b8b5e3536ef3",
+        "pairs": 37,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "4362_1",
+            37
+          ]
+        ],
+        "compounds": 37,
+        "label_mean": 8.68401447982501,
+        "label_sd": 0.57168821116417,
+        "label_q05_q50_q95": [
+          7.9200652557037925,
+          8.801342913045577,
+          9.400116927926312
+        ]
+      },
+      {
+        "component_id": "42b11727c231adc6ab7fb1bb11be61ed141c16e84339b7637253b011ddbb564b",
+        "pairs": 37,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50000023_2",
+            37
+          ]
+        ],
+        "compounds": 37,
+        "label_mean": 6.017589489082477,
+        "label_sd": 0.7264731679319969,
+        "label_q05_q50_q95": [
+          4.873627066343394,
+          6.075720713938118,
+          6.961642750483559
+        ]
+      },
+      {
+        "component_id": "41b7f83599f74232022b2849406c8b66303ad8162b0f8c14ec41b50f9eec6c85",
+        "pairs": 35,
+        "protein_sequences": 2,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5428571428571428,
+        "top_assay_counts": [
+          [
+            "50034019_51",
+            19
+          ],
+          [
+            "50034019_128",
+            16
+          ]
+        ],
+        "compounds": 19,
+        "label_mean": 6.031849080463572,
+        "label_sd": 0.6962471744416746,
+        "label_q05_q50_q95": [
+          5.084606875618576,
+          5.795880017344075,
+          7.238294785002226
+        ]
+      },
+      {
+        "component_id": "cc6f2ed182a2e8bb36e3ae081926e30444525e2e03659e1a553ea168b9404ead",
+        "pairs": 34,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5,
+        "top_assay_counts": [
+          [
+            "8627_1",
+            17
+          ],
+          [
+            "9485_1",
+            17
+          ]
+        ],
+        "compounds": 17,
+        "label_mean": 5.1591760363369685,
+        "label_sd": 0.6751742824824599,
+        "label_q05_q50_q95": [
+          3.7609646038359004,
+          5.301813136231747,
+          5.958607314841775
+        ]
+      },
+      {
+        "component_id": "0b63beb01de62ea4910251f17ee36750f150e89785b412f48844567ec3390baa",
+        "pairs": 33,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5151515151515151,
+        "top_assay_counts": [
+          [
+            "50042638_3",
+            17
+          ],
+          [
+            "50019097_1",
+            16
+          ]
+        ],
+        "compounds": 33,
+        "label_mean": 5.841587877048278,
+        "label_sd": 0.7979256152602789,
+        "label_q05_q50_q95": [
+          4.634179467123393,
+          5.838631997765026,
+          6.952491252371424
+        ]
+      },
+      {
+        "component_id": "26869a7fa856d719c193b67a32ea0b6e3508c17ae6b4a22b7ec5e3fcce984a5f",
+        "pairs": 31,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "6526_1",
+            31
+          ]
+        ],
+        "compounds": 31,
+        "label_mean": 7.879339693999197,
+        "label_sd": 1.123128939040009,
+        "label_q05_q50_q95": [
+          6.312900871035459,
+          7.823908740944319,
+          9.503303931275498
+        ]
+      },
+      {
+        "component_id": "2d487f30a2af772e578140ddecf3625eeb792afae14a2d808aca6e480aee821a",
+        "pairs": 30,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50019873_1",
+            30
+          ]
+        ],
+        "compounds": 30,
+        "label_mean": 5.348241236491534,
+        "label_sd": 1.0793299810804948,
+        "label_q05_q50_q95": [
+          3.337793533775844,
+          5.53423801197054,
+          6.705509915823188
+        ]
+      },
+      {
+        "component_id": "1d357222746a8c0506b6f912e649e731e960fa33432c5c5a33f81a9c0beebcb8",
+        "pairs": 29,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50019963_2",
+            29
+          ]
+        ],
+        "compounds": 29,
+        "label_mean": 6.129809503693744,
+        "label_sd": 0.8947393923385649,
+        "label_q05_q50_q95": [
+          4.47496324196498,
+          6.275724130399211,
+          7.27999475742119
+        ]
+      },
+      {
+        "component_id": "8d5931178af016b7914566577f5b490174948917324c7a6db74dca9e3dcaf94c",
+        "pairs": 29,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "12763_1",
+            29
+          ]
+        ],
+        "compounds": 29,
+        "label_mean": 6.651166097707965,
+        "label_sd": 0.532649377082659,
+        "label_q05_q50_q95": [
+          5.993997023844849,
+          6.669586226650809,
+          7.377873273887121
+        ]
+      },
+      {
+        "component_id": "683c3ad865014d7a8dcfb86834de0ddb0c072ffda44aa063d6a8d3e0dee9868e",
+        "pairs": 28,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "12156_1",
+            28
+          ]
+        ],
+        "compounds": 28,
+        "label_mean": 5.112715888111178,
+        "label_sd": 0.40585238909579147,
+        "label_q05_q50_q95": [
+          4.719115464493378,
+          4.979303657420887,
+          5.894639501517606
+        ]
+      },
+      {
+        "component_id": "a5ae49bcb2a382f186994f88e53ecf0e3e4f5475b709bd38238868f984ccc81e",
+        "pairs": 28,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "9255_1",
+            28
+          ]
+        ],
+        "compounds": 28,
+        "label_mean": 6.859684886864277,
+        "label_sd": 1.762327654107675,
+        "label_q05_q50_q95": [
+          5.0,
+          7.009000142935061,
+          9.154276812023362
+        ]
+      },
+      {
+        "component_id": "1d2551ade453a33a915755fda9144bb4924af48001cae8fe701fa2663318092c",
+        "pairs": 26,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50002067_1",
+            26
+          ]
+        ],
+        "compounds": 26,
+        "label_mean": 5.740192413612849,
+        "label_sd": 0.27885263603562943,
+        "label_q05_q50_q95": [
+          5.364849212659548,
+          5.741256894710138,
+          6.1445484939548525
+        ]
+      },
+      {
+        "component_id": "04770a360e7954ab34f507b43e99f4bf5e82130f35800ddd1a5c8b5cbeeadc80",
+        "pairs": 24,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50034019_159",
+            24
+          ]
+        ],
+        "compounds": 24,
+        "label_mean": 6.449921267450983,
+        "label_sd": 0.8960109166690484,
+        "label_q05_q50_q95": [
+          5.15970771603124,
+          6.3472168432423475,
+          7.950364887292517
+        ]
+      },
+      {
+        "component_id": "082ef6cfa8a9d5c17782cc036623a4c0ece915fc6a420e54678ff55dab70b98e",
+        "pairs": 24,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "3211_1",
+            24
+          ]
+        ],
+        "compounds": 24,
+        "label_mean": 4.289661522497377,
+        "label_sd": 0.9635153033765392,
+        "label_q05_q50_q95": [
+          3.1057577828943694,
+          4.328295703098071,
+          5.913452815492176
+        ]
+      },
+      {
+        "component_id": "87630d0ccd9e8de7f77cb47c03fd56d745d66fbdceb8a2149b3518b04d71e1ea",
+        "pairs": 24,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50019882_4",
+            24
+          ]
+        ],
+        "compounds": 24,
+        "label_mean": 8.42713024976287,
+        "label_sd": 1.2536502779533791,
+        "label_q05_q50_q95": [
+          6.252593411597632,
+          8.585348113584487,
+          10.264084075799602
+        ]
+      },
+      {
+        "component_id": "965a796bdc7b10fc12f86d5221123e411b8363e16b2279ca1261cb92230b8867",
+        "pairs": 24,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50045215_1",
+            24
+          ]
+        ],
+        "compounds": 24,
+        "label_mean": 6.790207023853834,
+        "label_sd": 0.5541226266948753,
+        "label_q05_q50_q95": [
+          6.176821165337479,
+          6.849485002168009,
+          7.672556315477666
+        ]
+      },
+      {
+        "component_id": "045de6b23d69dba05552c9aae2f5507478a5c7eddd1a1641df8082b145478595",
+        "pairs": 24,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "6802_1",
+            24
+          ]
+        ],
+        "compounds": 24,
+        "label_mean": 4.617357408457491,
+        "label_sd": 0.6163114476059138,
+        "label_q05_q50_q95": [
+          3.7907257429349834,
+          4.612202056831066,
+          5.538539296605738
+        ]
+      },
+      {
+        "component_id": "066cd148df084ff5c1ce05c5a4e442ef4252675027d5fd3a4ead472795ba52bb",
+        "pairs": 23,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50014068_1",
+            23
+          ]
+        ],
+        "compounds": 23,
+        "label_mean": 3.371703231298327,
+        "label_sd": 0.4342110288900036,
+        "label_q05_q50_q95": [
+          2.749204896537741,
+          3.449771646944906,
+          3.8692210632941766
+        ]
+      },
+      {
+        "component_id": "3bb208c70fae5e918193c5890270882dd259665df276ae2365dcc3d887a67944",
+        "pairs": 22,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50041859_3",
+            22
+          ]
+        ],
+        "compounds": 22,
+        "label_mean": 5.752650534805107,
+        "label_sd": 1.2198861320052392,
+        "label_q05_q50_q95": [
+          3.84499955746714,
+          6.159809577749046,
+          7.590375172946277
+        ]
+      },
+      {
+        "component_id": "8d2a0cc5fc5e2361171564cd46928b35b7dbee5f2cb5c84ba6a1eff6c2dc1f3d",
+        "pairs": 22,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50002795_1",
+            22
+          ]
+        ],
+        "compounds": 22,
+        "label_mean": 5.025772000170313,
+        "label_sd": 0.4385450596980399,
+        "label_q05_q50_q95": [
+          4.308859438465026,
+          5.097045772462901,
+          5.533518499778478
+        ]
+      },
+      {
+        "component_id": "06b7f4983e753e53de07a550df563041bf3403ccca7b4eb6f0e6876405314007",
+        "pairs": 21,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50009461_3",
+            21
+          ]
+        ],
+        "compounds": 21,
+        "label_mean": 7.659135326464454,
+        "label_sd": 1.0092569367538264,
+        "label_q05_q50_q95": [
+          6.13608262304214,
+          7.958607314841775,
+          8.920818753952375
+        ]
+      },
+      {
+        "component_id": "28788d540965503ac4ba2957cf738ab146ac26405f42f0d7b99d0d273a39a065",
+        "pairs": 21,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50039040_1",
+            21
+          ]
+        ],
+        "compounds": 21,
+        "label_mean": 5.140371090184986,
+        "label_sd": 0.536959359179598,
+        "label_q05_q50_q95": [
+          4.4698003017969175,
+          5.214670164989233,
+          5.853871964321762
+        ]
+      },
+      {
+        "component_id": "a2ad3f52daa5740755ca14f0a5a1c060d28a58645d39ca59b2f1779ad7b3ff92",
+        "pairs": 21,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50000150_2",
+            21
+          ]
+        ],
+        "compounds": 21,
+        "label_mean": 6.510373924888003,
+        "label_sd": 1.2754430107364312,
+        "label_q05_q50_q95": [
+          4.657577319177793,
+          6.6777807052660805,
+          8.698970004336019
+        ]
+      },
+      {
+        "component_id": "5f82b0395c4c6abf61ba8684beacf04e89e591b23d1a79671ffbd32e4a003172",
+        "pairs": 21,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50045429_2",
+            21
+          ]
+        ],
+        "compounds": 21,
+        "label_mean": 5.206745223826287,
+        "label_sd": 0.27989856928136636,
+        "label_q05_q50_q95": [
+          4.826813731587726,
+          5.236572006437063,
+          5.568636235841012
+        ]
+      },
+      {
+        "component_id": "3c7a72220ae8d882f9e2a526fe105dfc0580327442313c900ac6079bf98248d5",
+        "pairs": 19,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50034019_191",
+            19
+          ]
+        ],
+        "compounds": 19,
+        "label_mean": 6.073724543552227,
+        "label_sd": 0.6655398802723409,
+        "label_q05_q50_q95": [
+          5.200775219884122,
+          6.09151498112135,
+          7.3407051234228256
+        ]
+      },
+      {
+        "component_id": "e3ca60f18e3b6e98986ad6749215ee3b7a3abc09c191675213d1f243c035c9a3",
+        "pairs": 19,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50001828_2",
+            19
+          ]
+        ],
+        "compounds": 19,
+        "label_mean": 4.252038925416079,
+        "label_sd": 0.49404065944236364,
+        "label_q05_q50_q95": [
+          3.476757054096569,
+          4.221848749616356,
+          4.908278768756788
+        ]
+      },
+      {
+        "component_id": "008c43d87e5cde788e293d3e1be752a6fe6a16d91f6f777a362580e60ab5fcb5",
+        "pairs": 18,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50036674_1",
+            18
+          ]
+        ],
+        "compounds": 18,
+        "label_mean": 4.257850805512557,
+        "label_sd": 1.113705593748084,
+        "label_q05_q50_q95": [
+          2.6160318364266697,
+          4.13092695564397,
+          5.698970004336019
+        ]
+      },
+      {
+        "component_id": "4b992438444e5580e88eec14328d65dc56021c00706daab77dfc20892b6dcdb6",
+        "pairs": 18,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50018971_9",
+            18
+          ]
+        ],
+        "compounds": 18,
+        "label_mean": 5.642841834733281,
+        "label_sd": 0.970685099268251,
+        "label_q05_q50_q95": [
+          4.135129195635439,
+          5.429118384862106,
+          7.012927922142443
+        ]
+      },
+      {
+        "component_id": "af1da04ff0aec04b89f2c4605eb222fc00ba4b5fdb08b537f284cac275b33a17",
+        "pairs": 18,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50042775_1",
+            18
+          ]
+        ],
+        "compounds": 18,
+        "label_mean": 4.8244096666347955,
+        "label_sd": 1.0731121471790017,
+        "label_q05_q50_q95": [
+          3.361245315178378,
+          4.661653195187567,
+          6.935482170974303
+        ]
+      },
+      {
+        "component_id": "db57d2798afde791e21bbea9f3f553970ba4ecbdfe9851e5801fc3daef97070d",
+        "pairs": 17,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50034019_121",
+            17
+          ]
+        ],
+        "compounds": 17,
+        "label_mean": 5.821649799463564,
+        "label_sd": 0.37983183950730826,
+        "label_q05_q50_q95": [
+          5.2533509811459655,
+          5.886056647693163,
+          6.418739233634079
+        ]
+      },
+      {
+        "component_id": "e84fa2a1619e555ab427a7c8e68c8310c7f2f4003ef0a55b38dc2b231f757bb2",
+        "pairs": 17,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50004372_1",
+            17
+          ]
+        ],
+        "compounds": 17,
+        "label_mean": 5.784233596331692,
+        "label_sd": 0.6783123866484783,
+        "label_q05_q50_q95": [
+          5.006082473085343,
+          5.73754891026957,
+          6.755056020812889
+        ]
+      },
+      {
+        "component_id": "0f79dd8c1ea278edbe797ca3ccb235de12e8d482492499a37a977a0692d3e49b",
+        "pairs": 16,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50016943_1",
+            16
+          ]
+        ],
+        "compounds": 16,
+        "label_mean": 4.957362785779502,
+        "label_sd": 1.1031664291066243,
+        "label_q05_q50_q95": [
+          3.2424075993097645,
+          4.981563840280062,
+          6.375871636827924
+        ]
+      },
+      {
+        "component_id": "c449769cb7617413952972a36312cd54cd78bb91731aaedb08a978fb7b8e6912",
+        "pairs": 16,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50022161_1",
+            16
+          ]
+        ],
+        "compounds": 16,
+        "label_mean": 5.536894853039772,
+        "label_sd": 0.6035397204661487,
+        "label_q05_q50_q95": [
+          4.7510866196405015,
+          5.356895306966996,
+          6.35401396743321
+        ]
+      },
+      {
+        "component_id": "0caed4ff234c64efd5f01371efafe0b9c14cc59dbeaf60e2fa25f299f8104146",
+        "pairs": 15,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "12855_3",
+            15
+          ]
+        ],
+        "compounds": 15,
+        "label_mean": 10.447602325938368,
+        "label_sd": 0.5349760902698286,
+        "label_q05_q50_q95": [
+          9.68327130089121,
+          10.508638306165727,
+          11.245603123430644
+        ]
+      },
+      {
+        "component_id": "553ddef377b84167048c087d19725632b8355f16ce8d6c8e47cdea8591dbc6cf",
+        "pairs": 15,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50001412_1",
+            15
+          ]
+        ],
+        "compounds": 15,
+        "label_mean": 3.968345276406505,
+        "label_sd": 0.6184570235212098,
+        "label_q05_q50_q95": [
+          3.085804440493798,
+          4.013228265733755,
+          4.969151816420407
+        ]
+      },
+      {
+        "component_id": "1584f3e4bad2ba2f584b31a1e423f5830f273f124a946c021d543afac7dab7fa",
+        "pairs": 15,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "6984_1",
+            15
+          ]
+        ],
+        "compounds": 15,
+        "label_mean": 4.610224035960487,
+        "label_sd": 0.3870395055359868,
+        "label_q05_q50_q95": [
+          4.098320767422143,
+          4.619788758288394,
+          5.122339242091666
+        ]
+      }
+    ]
+  },
+  "inner_dev": {
+    "pairs": 7387,
+    "components": 20,
+    "unique_assay_keys": 185,
+    "unique_protein_sequences": 41,
+    "unique_compounds": 2436,
+    "largest_component_pair_share": 0.680519832137539,
+    "top_3_component_pair_share": 0.8493299038852037,
+    "components_with_more_than_one_assay": 9,
+    "sequence_compound_pairs_measured_multiple_assays": 1913,
+    "records_in_multiple_assay_pair_groups": 4434,
+    "fraction_records_in_multiple_assay_pair_groups": 0.6002436713144713,
+    "cross_assay_pKd_range_q50_q90_q99": [
+      2.3679767852945943,
+      3.7447274948966935,
+      4.342370591524689
+    ],
+    "cross_assay_pairs_spread_gt_0_5": 1750,
+    "cross_assay_pairs_spread_gt_1_0": 1716,
+    "cross_assay_pairs_spread_gt_2_0": 1314,
+    "component_summary": [
+      {
+        "component_id": "3501ff1a2c34e139907d0b8726e0ce2d830cfc7304472a862525f3428a6a534c",
+        "pairs": 5027,
+        "protein_sequences": 12,
+        "assay_keys": 134,
+        "dominant_assay_share": 0.04276904714541476,
+        "top_assay_counts": [
+          [
+            "8407_1",
+            215
+          ],
+          [
+            "50029872_1",
+            88
+          ],
+          [
+            "50006944_13",
+            81
+          ],
+          [
+            "50006944_2",
+            81
+          ],
+          [
+            "50006944_24",
+            81
+          ]
+        ],
+        "compounds": 453,
+        "label_mean": 7.526616077650911,
+        "label_sd": 1.7783646696461624,
+        "label_q05_q50_q95": [
+          4.698970004336019,
+          7.443697499232712,
+          10.522878745280337
+        ]
+      },
+      {
+        "component_id": "0fb9c278b1ae511c34c9c7808619afe5fe75fa69340fbf90bcc27b05d4715686",
+        "pairs": 937,
+        "protein_sequences": 1,
+        "assay_keys": 6,
+        "dominant_assay_share": 0.7395944503735326,
+        "top_assay_counts": [
+          [
+            "10592_2",
+            693
+          ],
+          [
+            "10297_1",
+            106
+          ],
+          [
+            "50009676_1",
+            71
+          ],
+          [
+            "50010389_1",
+            30
+          ],
+          [
+            "50042590_1",
+            19
+          ]
+        ],
+        "compounds": 935,
+        "label_mean": 8.090905848790046,
+        "label_sd": 1.1122515005820204,
+        "label_q05_q50_q95": [
+          5.758508616476303,
+          8.364516253185087,
+          9.363516757953045
+        ]
+      },
+      {
+        "component_id": "1273bce74b2d5d679d060dccfd35a78dc314e0099a9548bcf797f35a15d07dd9",
+        "pairs": 310,
+        "protein_sequences": 6,
+        "assay_keys": 10,
+        "dominant_assay_share": 0.2903225806451613,
+        "top_assay_counts": [
+          [
+            "8708_1",
+            90
+          ],
+          [
+            "9710_1",
+            46
+          ],
+          [
+            "50018296_2",
+            34
+          ],
+          [
+            "50020205_2",
+            24
+          ],
+          [
+            "50034365_1",
+            22
+          ]
+        ],
+        "compounds": 175,
+        "label_mean": 5.584905869046521,
+        "label_sd": 1.1857713778499945,
+        "label_q05_q50_q95": [
+          3.795880017344075,
+          5.560667306169737,
+          7.6020599913279625
+        ]
+      },
+      {
+        "component_id": "37034eceadf17b5a65e3a6d258049b1b65c77419835a1a8eceb0e808a2aa2be4",
+        "pairs": 256,
+        "protein_sequences": 3,
+        "assay_keys": 4,
+        "dominant_assay_share": 0.3203125,
+        "top_assay_counts": [
+          [
+            "9878_2",
+            82
+          ],
+          [
+            "12069_1",
+            80
+          ],
+          [
+            "12069_2",
+            79
+          ],
+          [
+            "12152_2",
+            15
+          ]
+        ],
+        "compounds": 128,
+        "label_mean": 5.265906103429654,
+        "label_sd": 0.9600026266619158,
+        "label_q05_q50_q95": [
+          3.595091777858918,
+          5.468521082957745,
+          6.695862349556641
+        ]
+      },
+      {
+        "component_id": "0a1a909cf5ee3fcb36c17135913ce49913db6fb6392fe43faf9c92df9994a1b2",
+        "pairs": 232,
+        "protein_sequences": 2,
+        "assay_keys": 6,
+        "dominant_assay_share": 0.2801724137931034,
+        "top_assay_counts": [
+          [
+            "11145_1",
+            65
+          ],
+          [
+            "10724_1",
+            63
+          ],
+          [
+            "4294_1",
+            49
+          ],
+          [
+            "50022730_2",
+            25
+          ],
+          [
+            "13315_1",
+            15
+          ]
+        ],
+        "compounds": 217,
+        "label_mean": 6.403933524923352,
+        "label_sd": 1.6737319603007752,
+        "label_q05_q50_q95": [
+          4.1249387366083,
+          6.987347067367615,
+          8.522878745280337
+        ]
+      },
+      {
+        "component_id": "0ca26b54f0c45d0135ce37c885e5d97403dfe1e0e8b7752d3773a6b8966fa1a9",
+        "pairs": 155,
+        "protein_sequences": 3,
+        "assay_keys": 7,
+        "dominant_assay_share": 0.23225806451612904,
+        "top_assay_counts": [
+          [
+            "50046414_72",
+            36
+          ],
+          [
+            "50046414_70",
+            32
+          ],
+          [
+            "6546_1",
+            22
+          ],
+          [
+            "6372_1",
+            19
+          ],
+          [
+            "7027_1",
+            16
+          ]
+        ],
+        "compounds": 120,
+        "label_mean": 6.616267661946182,
+        "label_sd": 0.9865516176876699,
+        "label_q05_q50_q95": [
+          4.752244114269778,
+          6.886056647693163,
+          7.863527369333181
+        ]
+      },
+      {
+        "component_id": "3fa18eb54ec40d14ffe757d4ea5610d82f444e748a118bb4bb5410eecc967a9c",
+        "pairs": 104,
+        "protein_sequences": 1,
+        "assay_keys": 3,
+        "dominant_assay_share": 0.41346153846153844,
+        "top_assay_counts": [
+          [
+            "13496_1",
+            43
+          ],
+          [
+            "12754_1",
+            42
+          ],
+          [
+            "50009379_2",
+            19
+          ]
+        ],
+        "compounds": 67,
+        "label_mean": 5.199920761345481,
+        "label_sd": 0.8413696505176743,
+        "label_q05_q50_q95": [
+          4.809668301829708,
+          4.809668301829708,
+          7.138293769257549
+        ]
+      },
+      {
+        "component_id": "05e48104919442dd817734f3c0ba08847b06cd02c76a8f88d96aa712545ce773",
+        "pairs": 55,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.6,
+        "top_assay_counts": [
+          [
+            "8729_2",
+            33
+          ],
+          [
+            "9937_2",
+            22
+          ]
+        ],
+        "compounds": 55,
+        "label_mean": 7.354507374736497,
+        "label_sd": 0.7202794712394079,
+        "label_q05_q50_q95": [
+          6.285657492452141,
+          7.292429823902063,
+          8.562497373669201
+        ]
+      },
+      {
+        "component_id": "71c75d29add3938542716c997db4ce5b657f2759a4642773975ae9b7d12ea876",
+        "pairs": 39,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "13204_2",
+            39
+          ]
+        ],
+        "compounds": 39,
+        "label_mean": 6.243708092661928,
+        "label_sd": 0.5887533356021489,
+        "label_q05_q50_q95": [
+          5.209592695338818,
+          6.346787486224656,
+          7.017482831470905
+        ]
+      },
+      {
+        "component_id": "2a0f0de1b3b97dd32c5fcd590eb525e7cf3945cd0ec6c4f99118a07cf306af71",
+        "pairs": 37,
+        "protein_sequences": 1,
+        "assay_keys": 2,
+        "dominant_assay_share": 0.5405405405405406,
+        "top_assay_counts": [
+          [
+            "50034019_161",
+            20
+          ],
+          [
+            "50017895_3",
+            17
+          ]
+        ],
+        "compounds": 37,
+        "label_mean": 6.467396020273981,
+        "label_sd": 0.8015867658541049,
+        "label_q05_q50_q95": [
+          5.2959688226110275,
+          6.259637310505756,
+          8.087911999126403
+        ]
+      },
+      {
+        "component_id": "4cf30524790eb285d88a82368b6439e2c35c59a5891a1627d974fc81cf21a7ec",
+        "pairs": 36,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50031378_1",
+            36
+          ]
+        ],
+        "compounds": 36,
+        "label_mean": 4.325434331204926,
+        "label_sd": 0.33341669489853787,
+        "label_q05_q50_q95": [
+          3.740638793804733,
+          4.438074179516457,
+          4.73332256894081
+        ]
+      },
+      {
+        "component_id": "14dbf9627717fe4d45d5ceb37a1a4b43c26c0640762cc7dd1d277f076aa7d738",
+        "pairs": 35,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50008549_2",
+            35
+          ]
+        ],
+        "compounds": 35,
+        "label_mean": 3.4329463788978365,
+        "label_sd": 0.3075587962025172,
+        "label_q05_q50_q95": [
+          3.062035157530507,
+          3.3325470471100465,
+          4.041631405206484
+        ]
+      },
+      {
+        "component_id": "f400da208a3f5e988d1166d521230ca8db80a04de4798e3d1947845c3b0809df",
+        "pairs": 33,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50034019_438",
+            33
+          ]
+        ],
+        "compounds": 33,
+        "label_mean": 6.282735589837513,
+        "label_sd": 0.9402939878443898,
+        "label_q05_q50_q95": [
+          5.28250039041205,
+          6.013228265733755,
+          8.437955659832944
+        ]
+      },
+      {
+        "component_id": "d6b21b1330cf2c6cdfa443792139942a4a4253776681dcbc840ada1d244193b2",
+        "pairs": 23,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50034019_448",
+            23
+          ]
+        ],
+        "compounds": 23,
+        "label_mean": 6.581818674135503,
+        "label_sd": 0.9301178936077829,
+        "label_q05_q50_q95": [
+          5.359614205490457,
+          6.568636235841012,
+          8.328082530686645
+        ]
+      },
+      {
+        "component_id": "e667127c8e1b5595f8cdcba9c81b3a15ee9c5eb1a5db018c3e84839b66318365",
+        "pairs": 22,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50014369_1",
+            22
+          ]
+        ],
+        "compounds": 22,
+        "label_mean": 6.230181214698854,
+        "label_sd": 0.28490555521595956,
+        "label_q05_q50_q95": [
+          5.8254069021131905,
+          6.211484007186984,
+          6.6020599913279625
+        ]
+      },
+      {
+        "component_id": "da3b17f4cd227b0ca94d4dcdc252f3ec7e7969b638b367ebf09dd8d7577263ea",
+        "pairs": 20,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "10648_1",
+            20
+          ]
+        ],
+        "compounds": 20,
+        "label_mean": 3.8511095401697686,
+        "label_sd": 0.950172366721117,
+        "label_q05_q50_q95": [
+          2.4170243931305424,
+          3.922331981267469,
+          4.9014448166093105
+        ]
+      },
+      {
+        "component_id": "77ed25650e717b3f610e42ef8e5c1c88d50e7485725032f8535448a0ca8b61b1",
+        "pairs": 19,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50000810_1",
+            19
+          ]
+        ],
+        "compounds": 19,
+        "label_mean": 5.435179538956111,
+        "label_sd": 0.3700371844591123,
+        "label_q05_q50_q95": [
+          4.989292177421006,
+          5.3872161432802645,
+          5.817371270548996
+        ]
+      },
+      {
+        "component_id": "45553a5ee7870094a40c8560c5acdde38f6bb756b96f7b800522be303694334e",
+        "pairs": 17,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50039049_1",
+            17
+          ]
+        ],
+        "compounds": 17,
+        "label_mean": 6.47261975535804,
+        "label_sd": 0.10735806457843755,
+        "label_q05_q50_q95": [
+          6.238234148459854,
+          6.481486060122112,
+          6.578866740330488
+        ]
+      },
+      {
+        "component_id": "29a0408ae03026a841f908c0f86f2f4f5528d41786557b6a2bdc737448cfeae1",
+        "pairs": 15,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50018866_3",
+            15
+          ]
+        ],
+        "compounds": 15,
+        "label_mean": 4.905546411335199,
+        "label_sd": 0.43372201623829965,
+        "label_q05_q50_q95": [
+          4.318086161004154,
+          4.747146969020107,
+          5.6129236431242955
+        ]
+      },
+      {
+        "component_id": "a051a32ed82db21b0aad6e52e37075c9ba3c8cb32a783a2db2772ebf43709116",
+        "pairs": 15,
+        "protein_sequences": 1,
+        "assay_keys": 1,
+        "dominant_assay_share": 1.0,
+        "top_assay_counts": [
+          [
+            "50015432_1",
+            15
+          ]
+        ],
+        "compounds": 15,
+        "label_mean": 5.625101437960125,
+        "label_sd": 0.9260768365897676,
+        "label_q05_q50_q95": [
+          3.489632728289351,
+          5.692503962086787,
+          6.637040242085478
+        ]
+      }
+    ]
+  },
+  "global_label_mean_train": 7.054023643032478,
+  "global_label_mean_dev": 7.263587693054027,
+  "warnings": [
+    "The source assay_key is not a standardized assay-condition identifier.",
+    "The same target/compound across distinct assay keys need not be experimentally comparable.",
+    "All metrics are on already-inspected dev or training; no prospective-test statistics.",
+    "No full-text assay/construct verification performed."
+  ]
+}

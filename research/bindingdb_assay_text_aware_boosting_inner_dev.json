@@ -1,0 +1,142 @@
+{
+  "status": "EXPLORATORY_TRAIN_GROUP_CV_AND_FROZEN_INNER_DEV_ONLY_NO_TEST",
+  "architecture": "chemical RDKit21 plus protein-composition21 HistGB, optionally with assay description flags and train-fitted character TFIDF SVD",
+  "train_pairs": 27118,
+  "development_pairs": 7387,
+  "train_components": 82,
+  "development_components": 20,
+  "train_assay_descriptions_missing_fraction": 0.0,
+  "dev_assay_descriptions_missing_fraction": 0.0,
+  "train_assay_unique": 758,
+  "dev_assay_unique": 192,
+  "feature_flag_terms": [
+    "intrinsic",
+    "apparent",
+    "thermal",
+    "fluorescen",
+    "dsf",
+    "surface plasmon",
+    "spr",
+    "itc",
+    "isothermal",
+    "enzyme",
+    "radioligand",
+    "kinetic",
+    "inhibition",
+    "binding affinity",
+    "cell",
+    "recombinant",
+    "dissociation",
+    "temperature",
+    "buffer",
+    "ph",
+    "calorimetric",
+    "hsa",
+    "plasma",
+    "serum"
+  ],
+  "model_hyperparameters_fixed": {
+    "max_iter": 160,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 80,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "train_group_cv_baselines": [
+    {
+      "pooled_rmse": 1.5893827316944862,
+      "component_macro_rmse": 1.9503175650769928
+    },
+    {
+      "pooled_rmse": 1.524989934432793,
+      "component_macro_rmse": 1.7942061600429668
+    },
+    {
+      "pooled_rmse": 1.9496993345231581,
+      "component_macro_rmse": 1.7207628342343049
+    }
+  ],
+  "train_group_cv_models": {
+    "none": [
+      {
+        "pooled_rmse": 1.646844182845318,
+        "component_macro_rmse": 1.3589730784829583
+      },
+      {
+        "pooled_rmse": 1.7297182549040655,
+        "component_macro_rmse": 1.3915230619826446
+      },
+      {
+        "pooled_rmse": 1.6144675169473857,
+        "component_macro_rmse": 1.2875634232732127
+      }
+    ],
+    "flags": [
+      {
+        "pooled_rmse": 1.7116021122202405,
+        "component_macro_rmse": 1.387878541222359
+      },
+      {
+        "pooled_rmse": 1.3218275729802456,
+        "component_macro_rmse": 1.3795388811533567
+      },
+      {
+        "pooled_rmse": 1.5826305694485332,
+        "component_macro_rmse": 1.2771155565552987
+      }
+    ],
+    "text_svd": [
+      {
+        "pooled_rmse": 1.6271463060283293,
+        "component_macro_rmse": 1.3182169047735426
+      },
+      {
+        "pooled_rmse": 1.3359135621394769,
+        "component_macro_rmse": 1.4696380243430427
+      },
+      {
+        "pooled_rmse": 1.6719473973598304,
+        "component_macro_rmse": 1.3663661617986598
+      }
+    ]
+  },
+  "train_group_cv_ranking": [
+    {
+      "model": "flags",
+      "cv_pooled_rmse": 1.5386867515496732,
+      "cv_component_macro_rmse": 1.3481776596436716,
+      "cv_relative_joint": 0.8257858735659593
+    },
+    {
+      "model": "text_svd",
+      "cv_pooled_rmse": 1.5450024218425458,
+      "cv_component_macro_rmse": 1.384740363638415,
+      "cv_relative_joint": 0.837691585071263
+    },
+    {
+      "model": "none",
+      "cv_pooled_rmse": 1.6636766515655896,
+      "cv_component_macro_rmse": 1.3460198545796052,
+      "cv_relative_joint": 0.8622161916520708
+    }
+  ],
+  "train_only_cv_selected": "flags",
+  "frozen_dev_train_mean": {
+    "pooled_rmse": 1.8039016740072347,
+    "component_macro_rmse": 1.6982887175843342
+  },
+  "frozen_dev_cv_selected": {
+    "pooled_rmse": 2.108862279846571,
+    "component_macro_rmse": 1.4538633203828022
+  },
+  "seconds": 90.6,
+  "limitations": [
+    "A descriptive exploratory assay-conditioning comparison; current train/dev contains severe cross-assay label conflicts.",
+    "Assay text may distinguish distinct endpoints, not only technique; it is not yet a verified transferable variable.",
+    "Train-only protein-group CV used for model selection; development repeatedly inspected.",
+    "Prospective test set never scored; no research-paper superiority claim."
+  ]
+}

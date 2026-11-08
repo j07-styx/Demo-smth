@@ -1,0 +1,243 @@
+{
+  "status": "IN_SAMPLE_DETERMINISTIC_INPUT_CONFLICT_FLOOR_NOT_VALIDATION_PERFORMANCE",
+  "train": {
+    "candidate_pairs_with_assay_repeats": 27118,
+    "unique_sequence_compound_inputs": 21267,
+    "identical_input_groups_with_multiple_labels": 2986,
+    "identical_input_records_in_multi_label_groups": 8837,
+    "fraction_records_in_multi_label_groups": 0.32587211446271847,
+    "identical_input_groups_with_cross_assay_spread_over_1_pKd": 575,
+    "unavoidable_in_sample_pooled_rmse_floor_under_sequence_plus_compound_only": 0.4997322360287831,
+    "duplicate_group_only_rmse_floor": 0.8754145606744914,
+    "top_conflict_examples": [
+      {
+        "pair_sha256_prefix": "8bc8432fcc64-00658e91d79f",
+        "observed_count": 2,
+        "pKd_range": 6.0,
+        "assays": [
+          {
+            "key": "10720_1",
+            "pKd": 3.5228787452803374,
+            "reactant_ids": [
+              "1186890"
+            ]
+          },
+          {
+            "key": "9108_1",
+            "pKd": 9.522878745280337,
+            "reactant_ids": [
+              "901183"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "8bc8432fcc64-013e27438a07",
+        "observed_count": 2,
+        "pKd_range": 6.0,
+        "assays": [
+          {
+            "key": "10720_1",
+            "pKd": 3.5228787452803374,
+            "reactant_ids": [
+              "1186641"
+            ]
+          },
+          {
+            "key": "9108_1",
+            "pKd": 9.522878745280337,
+            "reactant_ids": [
+              "900934"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "8bc8432fcc64-038eda4894e8",
+        "observed_count": 2,
+        "pKd_range": 6.0,
+        "assays": [
+          {
+            "key": "10720_1",
+            "pKd": 3.5228787452803374,
+            "reactant_ids": [
+              "1186631"
+            ]
+          },
+          {
+            "key": "9108_1",
+            "pKd": 9.522878745280337,
+            "reactant_ids": [
+              "900924"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "8bc8432fcc64-04009d940d35",
+        "observed_count": 2,
+        "pKd_range": 6.0,
+        "assays": [
+          {
+            "key": "10720_1",
+            "pKd": 3.5228787452803374,
+            "reactant_ids": [
+              "1186761"
+            ]
+          },
+          {
+            "key": "9108_1",
+            "pKd": 9.522878745280337,
+            "reactant_ids": [
+              "901054"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "8bc8432fcc64-05cfd8116dff",
+        "observed_count": 2,
+        "pKd_range": 6.0,
+        "assays": [
+          {
+            "key": "10720_1",
+            "pKd": 3.5228787452803374,
+            "reactant_ids": [
+              "1186573"
+            ]
+          },
+          {
+            "key": "9108_1",
+            "pKd": 9.522878745280337,
+            "reactant_ids": [
+              "900866"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "inner_dev": {
+    "candidate_pairs_with_assay_repeats": 7387,
+    "unique_sequence_compound_inputs": 4866,
+    "identical_input_groups_with_multiple_labels": 1913,
+    "identical_input_records_in_multi_label_groups": 4434,
+    "fraction_records_in_multi_label_groups": 0.6002436713144713,
+    "identical_input_groups_with_cross_assay_spread_over_1_pKd": 1716,
+    "unavoidable_in_sample_pooled_rmse_floor_under_sequence_plus_compound_only": 0.9732692407645899,
+    "duplicate_group_only_rmse_floor": 1.2562301234750697,
+    "top_conflict_examples": [
+      {
+        "pair_sha256_prefix": "f6a56ef8a577-d87cce9c5734",
+        "observed_count": 2,
+        "pKd_range": 4.853871964321762,
+        "assays": [
+          {
+            "key": "50006842_21",
+            "pKd": 5.0,
+            "reactant_ids": [
+              "51227324"
+            ]
+          },
+          {
+            "key": "50006842_9",
+            "pKd": 9.853871964321762,
+            "reactant_ids": [
+              "51226845"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "f6a56ef8a577-e1d9bae6453e",
+        "observed_count": 2,
+        "pKd_range": 4.839896846328449,
+        "assays": [
+          {
+            "key": "50006842_21",
+            "pKd": 4.080921907623926,
+            "reactant_ids": [
+              "51227273"
+            ]
+          },
+          {
+            "key": "50006842_9",
+            "pKd": 8.920818753952375,
+            "reactant_ids": [
+              "51226790"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "f6a56ef8a577-ab46f835c3e6",
+        "observed_count": 2,
+        "pKd_range": 4.834374174622484,
+        "assays": [
+          {
+            "key": "50006842_21",
+            "pKd": 4.552841968657781,
+            "reactant_ids": [
+              "51227234"
+            ]
+          },
+          {
+            "key": "50006842_9",
+            "pKd": 9.387216143280265,
+            "reactant_ids": [
+              "51226841"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "f6a56ef8a577-7a0b7add9422",
+        "observed_count": 2,
+        "pKd_range": 4.833668578233475,
+        "assays": [
+          {
+            "key": "50006842_21",
+            "pKd": 4.346787486224656,
+            "reactant_ids": [
+              "51227275"
+            ]
+          },
+          {
+            "key": "50006842_9",
+            "pKd": 9.18045606445813,
+            "reactant_ids": [
+              "51227407"
+            ]
+          }
+        ]
+      },
+      {
+        "pair_sha256_prefix": "f6a56ef8a577-ec40752aaee3",
+        "observed_count": 2,
+        "pKd_range": 4.8297382846050425,
+        "assays": [
+          {
+            "key": "50006842_21",
+            "pKd": 4.6020599913279625,
+            "reactant_ids": [
+              "51227177"
+            ]
+          },
+          {
+            "key": "50006842_9",
+            "pKd": 9.431798275933005,
+            "reactant_ids": [
+              "51227035"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "Any predictor that sees only protein sequence + canonical compound has the same predicted value for duplicate inputs. Squared-error optimal fitted value for those records is their within-input mean; the remaining SSE is unavoidable even with an oracle that sees split labels.",
+  "caveats": [
+    "An optimistic IN-SAMPLE lower bound; not a true generalization limit and not model performance.",
+    "Assay identity and source conditions are not in the input, so cross-assay conflicts imply target ambiguity.",
+    "Prospective test is not included; assay provenance remains provisional."
+  ]
+}

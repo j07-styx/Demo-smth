@@ -1,0 +1,350 @@
+{
+  "status": "EXPLORATORY_TRAIN_CV_AND_INNER_DEV_ONLY_NO_PROSPECTIVE_TEST",
+  "model": "top3 protein similarity priors plus bounded chemical nearest-analog residual within training component",
+  "train_pairs": 27118,
+  "inner_dev_pairs": 7387,
+  "train_components": 82,
+  "validation_components": 20,
+  "train_only_cv_mean_baseline": {
+    "pooled": 1.6880239785012652,
+    "macro": 1.8217622454386075
+  },
+  "train_only_cv_conservative_protein_prior": {
+    "pooled": 1.6848406515426353,
+    "macro": 1.8019760095996913
+  },
+  "train_only_cv_top_hybrids": [
+    {
+      "scale": 0.5,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.6442045862293144,
+      "cv_macro_rmse": 1.769270074876715,
+      "cv_joint_relative_error": 0.9726135303886752
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.652186875747157,
+      "cv_macro_rmse": 1.7698592287380046,
+      "cv_joint_relative_error": 0.9751396179411786
+    },
+    {
+      "scale": 0.5,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.6569257424769361,
+      "cv_macro_rmse": 1.775721882527419,
+      "cv_joint_relative_error": 0.9781523519258597
+    },
+    {
+      "scale": 0.25,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.6566095640977594,
+      "cv_macro_rmse": 1.7789222474309003,
+      "cv_joint_relative_error": 0.9789370691533403
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.25,
+      "cv_pooled_rmse": 1.6620609661813914,
+      "cv_macro_rmse": 1.7732917639747825,
+      "cv_joint_relative_error": 0.9790064582045004
+    },
+    {
+      "scale": 0.25,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.6680542980672481,
+      "cv_macro_rmse": 1.7862734430389196,
+      "cv_joint_relative_error": 0.9843446544848726
+    },
+    {
+      "scale": 0.5,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.25,
+      "cv_pooled_rmse": 1.6698628158709863,
+      "cv_macro_rmse": 1.7843999690366712,
+      "cv_joint_relative_error": 0.9843661524926244
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.6683970815917508,
+      "cv_macro_rmse": 1.7891601428176898,
+      "cv_joint_relative_error": 0.9852384706959659
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 2,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.673378727448828,
+      "cv_macro_rmse": 1.7880986151185638,
+      "cv_joint_relative_error": 0.986422709347438
+    },
+    {
+      "scale": 0.1,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.6717080173488126,
+      "cv_macro_rmse": 1.7911388288141072,
+      "cv_joint_relative_error": 0.9867622533989621
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 0,
+      "protein_power": 2,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.673268604538274,
+      "cv_macro_rmse": 1.7917584715835533,
+      "cv_joint_relative_error": 0.9873945729311072
+    },
+    {
+      "scale": 0.25,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.25,
+      "cv_pooled_rmse": 1.6764662712485228,
+      "cv_macro_rmse": 1.7923769539079677,
+      "cv_joint_relative_error": 0.9885114839994456
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 2,
+      "protein_power": 0,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.6781903639229026,
+      "cv_macro_rmse": 1.7930570032479058,
+      "cv_joint_relative_error": 0.989208813721707
+    },
+    {
+      "scale": 0.1,
+      "chem_power": 0,
+      "protein_power": 0,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.6774594033334147,
+      "cv_macro_rmse": 1.7950748462298272,
+      "cv_joint_relative_error": 0.9895461162607919
+    },
+    {
+      "scale": 0.5,
+      "chem_power": 2,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.6785111953421665,
+      "cv_macro_rmse": 1.7943346019352384,
+      "cv_joint_relative_error": 0.9896544945035759
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 0,
+      "protein_power": 2,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.6783682496266799,
+      "cv_macro_rmse": 1.7959097260592778,
+      "cv_joint_relative_error": 0.9900444611831019
+    },
+    {
+      "scale": 0.5,
+      "chem_power": 0,
+      "protein_power": 2,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.678847008666659,
+      "cv_macro_rmse": 1.7966380416075631,
+      "cv_joint_relative_error": 0.9903861648197013
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 2,
+      "protein_power": 0,
+      "residual_cap": 0.25,
+      "cv_pooled_rmse": 1.6814460732323415,
+      "cv_macro_rmse": 1.7968892948283848,
+      "cv_joint_relative_error": 0.9912249778197487
+    },
+    {
+      "scale": 0.5,
+      "chem_power": 2,
+      "protein_power": 0,
+      "residual_cap": 0.5,
+      "cv_pooled_rmse": 1.6812481005705064,
+      "cv_macro_rmse": 1.7971451211721414,
+      "cv_joint_relative_error": 0.9912365514381625
+    },
+    {
+      "scale": 1.0,
+      "chem_power": 4,
+      "protein_power": 0,
+      "residual_cap": 1.0,
+      "cv_pooled_rmse": 1.6828406650768528,
+      "cv_macro_rmse": 1.7955125868050057,
+      "cv_joint_relative_error": 0.9912602113233643
+    }
+  ],
+  "cv_selected_hybrid_or_prior": {
+    "scale": 0.5,
+    "chem_power": 0,
+    "protein_power": 0,
+    "residual_cap": 1.0,
+    "cv_pooled_rmse": 1.6442045862293144,
+    "cv_macro_rmse": 1.769270074876715,
+    "cv_joint_relative_error": 0.9726135303886752
+  },
+  "inner_dev_train_mean": {
+    "pooled_rmse": 1.803901684183753,
+    "component_macro_rmse": 1.698288655524816
+  },
+  "inner_dev_conservative_prior": {
+    "pooled_rmse": 1.8011944574419494,
+    "component_macro_rmse": 1.6715205771598665
+  },
+  "inner_dev_cv_selected_model": {
+    "pooled_rmse": 1.8422874840943744,
+    "component_macro_rmse": 1.6086127186304857
+  },
+  "components_better_than_prior": 11,
+  "components_better_than_mean": 14,
+  "component_scores_anonymous": [
+    {
+      "pair_count": 5027,
+      "mean_rmse": 1.8400881792741024,
+      "prior_rmse": 1.844963380828307,
+      "selected_rmse": 1.9148923083555964
+    },
+    {
+      "pair_count": 937,
+      "mean_rmse": 1.520601232790384,
+      "prior_rmse": 1.5314151210542681,
+      "selected_rmse": 1.388071620875533
+    },
+    {
+      "pair_count": 310,
+      "mean_rmse": 1.8879514809363416,
+      "prior_rmse": 1.848777086375254,
+      "selected_rmse": 1.872719494278304
+    },
+    {
+      "pair_count": 256,
+      "mean_rmse": 2.0295244217877833,
+      "prior_rmse": 1.9427719364451554,
+      "selected_rmse": 2.0216054432722146
+    },
+    {
+      "pair_count": 232,
+      "mean_rmse": 1.7955488956292482,
+      "prior_rmse": 1.7938430598021444,
+      "selected_rmse": 1.8288495925804917
+    },
+    {
+      "pair_count": 155,
+      "mean_rmse": 1.079311999997676,
+      "prior_rmse": 1.0602669757051593,
+      "selected_rmse": 1.1614395600350371
+    },
+    {
+      "pair_count": 104,
+      "mean_rmse": 2.0360747492889986,
+      "prior_rmse": 2.001195099678645,
+      "selected_rmse": 2.227534844278227
+    },
+    {
+      "pair_count": 55,
+      "mean_rmse": 0.7804440977467212,
+      "prior_rmse": 0.7883557324076207,
+      "selected_rmse": 0.8066666319264969
+    },
+    {
+      "pair_count": 39,
+      "mean_rmse": 1.0016195791591647,
+      "prior_rmse": 0.9708050242940649,
+      "selected_rmse": 0.7679521288992751
+    },
+    {
+      "pair_count": 37,
+      "mean_rmse": 0.9933143062373208,
+      "prior_rmse": 0.9761319389209985,
+      "selected_rmse": 0.8947484330428085
+    },
+    {
+      "pair_count": 36,
+      "mean_rmse": 2.7488845601546497,
+      "prior_rmse": 2.7156856301603667,
+      "selected_rmse": 2.735153127256863
+    },
+    {
+      "pair_count": 35,
+      "mean_rmse": 3.6341151558466565,
+      "prior_rmse": 3.6084993385105855,
+      "selected_rmse": 3.4588442465690385
+    },
+    {
+      "pair_count": 33,
+      "mean_rmse": 1.2161570805523376,
+      "prior_rmse": 1.1904284002663041,
+      "selected_rmse": 1.058643314684169
+    },
+    {
+      "pair_count": 23,
+      "mean_rmse": 1.043118798920033,
+      "prior_rmse": 1.0068497036285393,
+      "selected_rmse": 0.9799515056829701
+    },
+    {
+      "pair_count": 22,
+      "mean_rmse": 0.8717152758301044,
+      "prior_rmse": 0.8642222901855703,
+      "selected_rmse": 0.6333680875434247
+    },
+    {
+      "pair_count": 20,
+      "mean_rmse": 3.340881062952891,
+      "prior_rmse": 3.249995690778703,
+      "selected_rmse": 3.4896417437229057
+    },
+    {
+      "pair_count": 19,
+      "mean_rmse": 1.660597407918381,
+      "prior_rmse": 1.6323740277923282,
+      "selected_rmse": 1.3882397503166433
+    },
+    {
+      "pair_count": 17,
+      "mean_rmse": 0.5912328091648658,
+      "prior_rmse": 0.5628391201275185,
+      "selected_rmse": 0.514563721320734
+    },
+    {
+      "pair_count": 15,
+      "mean_rmse": 2.1918186974499996,
+      "prior_rmse": 2.1693501691440145,
+      "selected_rmse": 1.6824177699490246
+    },
+    {
+      "pair_count": 15,
+      "mean_rmse": 1.702773318858663,
+      "prior_rmse": 1.671641817091777,
+      "selected_rmse": 1.3469510480199605
+    }
+  ],
+  "elapsed_s": 22.3,
+  "limitations": [
+    "Training-only CV chooses correction; development set already repeatedly inspected.",
+    "No reserved test labels or predictions used.",
+    "Assay and construct provenance incomplete.",
+    "Protein 3-4mer TF-IDF similarity is not guaranteed homologous construct identity."
+  ]
+}
