@@ -1,0 +1,717 @@
+{
+  "status": "TRAIN_ONLY_NESTED_PROTEIN_AND_STRICT_MURCKO_SCAFFOLD_COLD_CV_NO_DEV_OR_TEST",
+  "architecture": "75pct Ridge +25pct joint molecular/protein gradient boosting, then train-only nested selected shrinkage to fold train mean",
+  "scaffold_policy": "RDKit Bemis-Murcko scaffold; one shared ACYCLIC_SINGLE_GROUP for empty cores; strict exclusion in inner and outer folds",
+  "predeclared_betas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "selection": "GroupKFold(3) within each outer fit, both macro and pooled <= inner mean, min balanced relative pooled/macro",
+  "original_train_rows": 15538,
+  "outer_fold_count": 4,
+  "murcko_scaffold_group_count_in_train": 2969,
+  "outer_folds": [
+    {
+      "outer_fold": 1,
+      "outer_fit_unique_pairs": 4078,
+      "heldout_rows": 3885,
+      "heldout_components": 129,
+      "heldout_murcko_scaffold_overlap_count": 0,
+      "inner_dual_cold_folds": [
+        {
+          "fold": 1,
+          "fit_rows": 2479,
+          "holdout_rows": 1360,
+          "holdout_components": 96,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.620801881235452,
+              "component_macro_rmse": 1.4804406464657056
+            },
+            "0.25": {
+              "pooled_rmse": 1.5608089836965,
+              "component_macro_rmse": 1.4324510685331375
+            },
+            "0.5": {
+              "pooled_rmse": 1.5144762504300173,
+              "component_macro_rmse": 1.395553749316839
+            },
+            "0.75": {
+              "pooled_rmse": 1.4830844975263444,
+              "component_macro_rmse": 1.3689951720329752
+            },
+            "1.0": {
+              "pooled_rmse": 1.4675927993305626,
+              "component_macro_rmse": 1.3546869391381753
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fit_rows": 2329,
+          "holdout_rows": 1359,
+          "holdout_components": 97,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.7287917947395475,
+              "component_macro_rmse": 1.4629958427032892
+            },
+            "0.25": {
+              "pooled_rmse": 1.6771355866838464,
+              "component_macro_rmse": 1.4191885642983098
+            },
+            "0.5": {
+              "pooled_rmse": 1.6376367704351964,
+              "component_macro_rmse": 1.38372641865185
+            },
+            "0.75": {
+              "pooled_rmse": 1.6111897209326211,
+              "component_macro_rmse": 1.3590264043662923
+            },
+            "1.0": {
+              "pooled_rmse": 1.5984424140374662,
+              "component_macro_rmse": 1.3470330935872823
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fit_rows": 2336,
+          "holdout_rows": 1359,
+          "holdout_components": 97,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.5259170612398163,
+              "component_macro_rmse": 1.4355028489115196
+            },
+            "0.25": {
+              "pooled_rmse": 1.5030401017362451,
+              "component_macro_rmse": 1.3879966179758527
+            },
+            "0.5": {
+              "pooled_rmse": 1.5004544924521908,
+              "component_macro_rmse": 1.354818256235107
+            },
+            "0.75": {
+              "pooled_rmse": 1.5182639056701355,
+              "component_macro_rmse": 1.3473057234236223
+            },
+            "1.0": {
+              "pooled_rmse": 1.555768092438465,
+              "component_macro_rmse": 1.3643878045759363
+            }
+          }
+        }
+      ],
+      "inner_mean_metrics": {
+        "0.0": {
+          "pooled_rmse": 1.625170245738272,
+          "component_macro_rmse": 1.4596464460268381
+        },
+        "0.25": {
+          "pooled_rmse": 1.5803282240388636,
+          "component_macro_rmse": 1.4132120836024333
+        },
+        "0.5": {
+          "pooled_rmse": 1.550855837772468,
+          "component_macro_rmse": 1.378032808067932
+        },
+        "0.75": {
+          "pooled_rmse": 1.5375127080430335,
+          "component_macro_rmse": 1.3584424332742966
+        },
+        "1.0": {
+          "pooled_rmse": 1.540601101935498,
+          "component_macro_rmse": 1.3553692791004648
+        }
+      },
+      "inner_selected_beta": 1.0,
+      "outer_metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.492595265226907,
+          "component_macro_rmse": 1.380291210265331
+        },
+        "ridge": {
+          "pooled_rmse": 1.4582293483218387,
+          "component_macro_rmse": 1.3709041533508028
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.3902497515686,
+          "component_macro_rmse": 1.3029673071588053
+        },
+        "nested_selected_shrinkage": {
+          "pooled_rmse": 1.3902497515686,
+          "component_macro_rmse": 1.3029673071588053
+        }
+      }
+    },
+    {
+      "outer_fold": 2,
+      "outer_fit_unique_pairs": 4305,
+      "heldout_rows": 3885,
+      "heldout_components": 130,
+      "heldout_murcko_scaffold_overlap_count": 0,
+      "inner_dual_cold_folds": [
+        {
+          "fold": 1,
+          "fit_rows": 2491,
+          "holdout_rows": 1435,
+          "holdout_components": 90,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.6979124338517666,
+              "component_macro_rmse": 1.5409845795297286
+            },
+            "0.25": {
+              "pooled_rmse": 1.6118912603730011,
+              "component_macro_rmse": 1.5007965199312945
+            },
+            "0.5": {
+              "pooled_rmse": 1.5415941039495564,
+              "component_macro_rmse": 1.4698561931621672
+            },
+            "0.75": {
+              "pooled_rmse": 1.48924929787593,
+              "component_macro_rmse": 1.4470492076332029
+            },
+            "1.0": {
+              "pooled_rmse": 1.4567932952010059,
+              "component_macro_rmse": 1.4334019789858676
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fit_rows": 2608,
+          "holdout_rows": 1435,
+          "holdout_components": 92,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.674024966774463,
+              "component_macro_rmse": 1.5609458348655465
+            },
+            "0.25": {
+              "pooled_rmse": 1.6366735395137124,
+              "component_macro_rmse": 1.5079015583913122
+            },
+            "0.5": {
+              "pooled_rmse": 1.617156531119561,
+              "component_macro_rmse": 1.4661453206377653
+            },
+            "0.75": {
+              "pooled_rmse": 1.6161202006593347,
+              "component_macro_rmse": 1.442324633449993
+            },
+            "1.0": {
+              "pooled_rmse": 1.6335997200825827,
+              "component_macro_rmse": 1.4403490175419085
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fit_rows": 2540,
+          "holdout_rows": 1435,
+          "holdout_components": 93,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.7724986700657444,
+              "component_macro_rmse": 1.4772838711348923
+            },
+            "0.25": {
+              "pooled_rmse": 1.7075758530868366,
+              "component_macro_rmse": 1.4406486465482944
+            },
+            "0.5": {
+              "pooled_rmse": 1.6597178453523522,
+              "component_macro_rmse": 1.4174570225034504
+            },
+            "0.75": {
+              "pooled_rmse": 1.6304280517067546,
+              "component_macro_rmse": 1.4118445192135658
+            },
+            "1.0": {
+              "pooled_rmse": 1.6207134882140417,
+              "component_macro_rmse": 1.4205485738921837
+            }
+          }
+        }
+      ],
+      "inner_mean_metrics": {
+        "0.0": {
+          "pooled_rmse": 1.7148120235639912,
+          "component_macro_rmse": 1.526404761843389
+        },
+        "0.25": {
+          "pooled_rmse": 1.6520468843245169,
+          "component_macro_rmse": 1.483115574956967
+        },
+        "0.5": {
+          "pooled_rmse": 1.60615616014049,
+          "component_macro_rmse": 1.4511528454344609
+        },
+        "0.75": {
+          "pooled_rmse": 1.5785991834140063,
+          "component_macro_rmse": 1.4337394534322538
+        },
+        "1.0": {
+          "pooled_rmse": 1.5703688344992102,
+          "component_macro_rmse": 1.4314331901399866
+        }
+      },
+      "inner_selected_beta": 1.0,
+      "outer_metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4375843779300046,
+          "component_macro_rmse": 1.3605499520721527
+        },
+        "ridge": {
+          "pooled_rmse": 1.4824649587306336,
+          "component_macro_rmse": 1.413570098912913
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4444968548700927,
+          "component_macro_rmse": 1.346547500196209
+        },
+        "nested_selected_shrinkage": {
+          "pooled_rmse": 1.4444968548700927,
+          "component_macro_rmse": 1.346547500196209
+        }
+      }
+    },
+    {
+      "outer_fold": 3,
+      "outer_fit_unique_pairs": 3856,
+      "heldout_rows": 3884,
+      "heldout_components": 130,
+      "heldout_murcko_scaffold_overlap_count": 0,
+      "inner_dual_cold_folds": [
+        {
+          "fold": 1,
+          "fit_rows": 2210,
+          "holdout_rows": 1286,
+          "holdout_components": 89,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.684020489386285,
+              "component_macro_rmse": 1.4791709557093935
+            },
+            "0.25": {
+              "pooled_rmse": 1.6197189344541025,
+              "component_macro_rmse": 1.4116206825125373
+            },
+            "0.5": {
+              "pooled_rmse": 1.5681258957080384,
+              "component_macro_rmse": 1.352484717187059
+            },
+            "0.75": {
+              "pooled_rmse": 1.5305270997783207,
+              "component_macro_rmse": 1.3042245185147558
+            },
+            "1.0": {
+              "pooled_rmse": 1.5079696819652013,
+              "component_macro_rmse": 1.2684346727170903
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fit_rows": 2263,
+          "holdout_rows": 1285,
+          "holdout_components": 89,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.7015873889827777,
+              "component_macro_rmse": 1.479261773592361
+            },
+            "0.25": {
+              "pooled_rmse": 1.639990182802449,
+              "component_macro_rmse": 1.4474348988207613
+            },
+            "0.5": {
+              "pooled_rmse": 1.6027848979349146,
+              "component_macro_rmse": 1.4387864738894798
+            },
+            "0.75": {
+              "pooled_rmse": 1.5916829239596364,
+              "component_macro_rmse": 1.4470134048207774
+            },
+            "1.0": {
+              "pooled_rmse": 1.6072252809789298,
+              "component_macro_rmse": 1.4692798896239436
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fit_rows": 2247,
+          "holdout_rows": 1285,
+          "holdout_components": 89,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.7508373263042825,
+              "component_macro_rmse": 1.4296523151078915
+            },
+            "0.25": {
+              "pooled_rmse": 1.6864538101472442,
+              "component_macro_rmse": 1.353965508741145
+            },
+            "0.5": {
+              "pooled_rmse": 1.6453590338933322,
+              "component_macro_rmse": 1.2986506022133522
+            },
+            "0.75": {
+              "pooled_rmse": 1.6293161243733691,
+              "component_macro_rmse": 1.2806229629779013
+            },
+            "1.0": {
+              "pooled_rmse": 1.6390608597444232,
+              "component_macro_rmse": 1.2848985015999992
+            }
+          }
+        }
+      ],
+      "inner_mean_metrics": {
+        "0.0": {
+          "pooled_rmse": 1.7121484015577817,
+          "component_macro_rmse": 1.4626950148032154
+        },
+        "0.25": {
+          "pooled_rmse": 1.6487209758012653,
+          "component_macro_rmse": 1.4043403633581477
+        },
+        "0.5": {
+          "pooled_rmse": 1.6054232758454283,
+          "component_macro_rmse": 1.3633072644299637
+        },
+        "0.75": {
+          "pooled_rmse": 1.583842049370442,
+          "component_macro_rmse": 1.3439536287711447
+        },
+        "1.0": {
+          "pooled_rmse": 1.5847519408961848,
+          "component_macro_rmse": 1.3408710213136776
+        }
+      },
+      "inner_selected_beta": 1.0,
+      "outer_metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4061002305343717,
+          "component_macro_rmse": 1.3546698501019652
+        },
+        "ridge": {
+          "pooled_rmse": 1.4895739239850467,
+          "component_macro_rmse": 1.4061659087415257
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4216378153217506,
+          "component_macro_rmse": 1.3327457019464857
+        },
+        "nested_selected_shrinkage": {
+          "pooled_rmse": 1.4216378153217506,
+          "component_macro_rmse": 1.3327457019464857
+        }
+      }
+    },
+    {
+      "outer_fold": 4,
+      "outer_fit_unique_pairs": 4475,
+      "heldout_rows": 3884,
+      "heldout_components": 130,
+      "heldout_murcko_scaffold_overlap_count": 0,
+      "inner_dual_cold_folds": [
+        {
+          "fold": 1,
+          "fit_rows": 2545,
+          "holdout_rows": 1492,
+          "holdout_components": 85,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.541937466016807,
+              "component_macro_rmse": 1.429034966565395
+            },
+            "0.25": {
+              "pooled_rmse": 1.505616461141726,
+              "component_macro_rmse": 1.3707898004787686
+            },
+            "0.5": {
+              "pooled_rmse": 1.4890901451336114,
+              "component_macro_rmse": 1.3254351935804354
+            },
+            "0.75": {
+              "pooled_rmse": 1.4930159898425892,
+              "component_macro_rmse": 1.2967147092676379
+            },
+            "1.0": {
+              "pooled_rmse": 1.5172352437363679,
+              "component_macro_rmse": 1.2882723381136376
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fit_rows": 2477,
+          "holdout_rows": 1492,
+          "holdout_components": 87,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.758171854321609,
+              "component_macro_rmse": 1.6565748127046576
+            },
+            "0.25": {
+              "pooled_rmse": 1.704331765274097,
+              "component_macro_rmse": 1.575116801434449
+            },
+            "0.5": {
+              "pooled_rmse": 1.6663008782348514,
+              "component_macro_rmse": 1.5072232226198714
+            },
+            "0.75": {
+              "pooled_rmse": 1.6451759241432011,
+              "component_macro_rmse": 1.4605430603641611
+            },
+            "1.0": {
+              "pooled_rmse": 1.6416096916882885,
+              "component_macro_rmse": 1.4415945281985
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fit_rows": 2675,
+          "holdout_rows": 1491,
+          "holdout_components": 86,
+          "scores": {
+            "0.0": {
+              "pooled_rmse": 1.6555344791418982,
+              "component_macro_rmse": 1.4024695233107736
+            },
+            "0.25": {
+              "pooled_rmse": 1.6105804117879705,
+              "component_macro_rmse": 1.3472508514682673
+            },
+            "0.5": {
+              "pooled_rmse": 1.5885632536878362,
+              "component_macro_rmse": 1.312531885327944
+            },
+            "0.75": {
+              "pooled_rmse": 1.590435869824422,
+              "component_macro_rmse": 1.298524039144722
+            },
+            "1.0": {
+              "pooled_rmse": 1.6161152180478195,
+              "component_macro_rmse": 1.3064817768290622
+            }
+          }
+        }
+      ],
+      "inner_mean_metrics": {
+        "0.0": {
+          "pooled_rmse": 1.6518812664934381,
+          "component_macro_rmse": 1.4960264341936087
+        },
+        "0.25": {
+          "pooled_rmse": 1.6068428794012644,
+          "component_macro_rmse": 1.431052484460495
+        },
+        "0.5": {
+          "pooled_rmse": 1.5813180923520995,
+          "component_macro_rmse": 1.381730100509417
+        },
+        "0.75": {
+          "pooled_rmse": 1.5762092612700709,
+          "component_macro_rmse": 1.3519272695921736
+        },
+        "1.0": {
+          "pooled_rmse": 1.5916533844908252,
+          "component_macro_rmse": 1.3454495477137334
+        }
+      },
+      "inner_selected_beta": 0.75,
+      "outer_metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4294488686842326,
+          "component_macro_rmse": 1.354012296467588
+        },
+        "ridge": {
+          "pooled_rmse": 1.5192594411951692,
+          "component_macro_rmse": 1.3855930189378525
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4361780498360395,
+          "component_macro_rmse": 1.3272097047685258
+        },
+        "nested_selected_shrinkage": {
+          "pooled_rmse": 1.3940624020718722,
+          "component_macro_rmse": 1.295331114167034
+        }
+      }
+    }
+  ],
+  "mean_outer_fold_metrics": {
+    "train_mean": {
+      "pooled_rmse": 1.441432185593879,
+      "component_macro_rmse": 1.3623808272267592
+    },
+    "ridge": {
+      "pooled_rmse": 1.487381918058172,
+      "component_macro_rmse": 1.3940582949857734
+    },
+    "ridge_plus_joint_boost": {
+      "pooled_rmse": 1.4231406178991208,
+      "component_macro_rmse": 1.3273675535175065
+    },
+    "nested_selected_shrinkage": {
+      "pooled_rmse": 1.4126117059580792,
+      "component_macro_rmse": 1.3193979058671335
+    }
+  },
+  "outer_oof": {
+    "macro_component_rmse": {
+      "train_mean": 1.3623463178182071,
+      "ridge": 1.3941029079754363,
+      "ridge_plus_joint_boost": 1.327414567479662,
+      "nested_selected_shrinkage": 1.3194295640534692
+    },
+    "pooled_rmse": {
+      "train_mean": 1.441784195921108,
+      "ridge": 1.4875389743944287,
+      "ridge_plus_joint_boost": 1.4232900906253951,
+      "nested_selected_shrinkage": 1.412784189201056
+    },
+    "paired_bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "controls": {
+        "train_mean_minus_ridge": {
+          "pooled_delta": -0.04575477847332077,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.10311741667317208,
+            0.013631990906165889
+          ],
+          "macro_delta": -0.0317565901572292,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.07673146172202709,
+            0.015587125870527881
+          ],
+          "heldout_component_wins": 319
+        },
+        "ridge_plus_joint_boost_minus_ridge": {
+          "pooled_delta": -0.0642488837690336,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.08534314296597226,
+            -0.04322827761466381
+          ],
+          "macro_delta": -0.06668834049577432,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.0776235098903283,
+            -0.05526099304257942
+          ],
+          "heldout_component_wins": 397
+        },
+        "nested_selected_shrinkage_minus_ridge": {
+          "pooled_delta": -0.07475478519337275,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.09935071176052024,
+            -0.050791690498288286
+          ],
+          "macro_delta": -0.07467334392196712,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.08836886888919578,
+            -0.06092239868884384
+          ],
+          "heldout_component_wins": 397
+        },
+        "ridge_minus_train_mean": {
+          "pooled_delta": 0.04575477847332077,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.013631990906165898,
+            0.10311741667317208
+          ],
+          "macro_delta": 0.0317565901572292,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.015587125870527907,
+            0.07673146172202708
+          ],
+          "heldout_component_wins": 200
+        },
+        "ridge_plus_joint_boost_minus_train_mean": {
+          "pooled_delta": -0.018494105295712826,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.07414144280042147,
+            0.03608371799873803
+          ],
+          "macro_delta": -0.03493175033854512,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.07914798795297441,
+            0.007923937246659456
+          ],
+          "heldout_component_wins": 213
+        },
+        "nested_selected_shrinkage_minus_train_mean": {
+          "pooled_delta": -0.029000006720051985,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.0797943746843972,
+            0.021776282693383022
+          ],
+          "macro_delta": -0.042916753764737914,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.08489952372430713,
+            -0.0029991841314653774
+          ],
+          "heldout_component_wins": 224
+        },
+        "train_mean_minus_ridge_plus_joint_boost": {
+          "pooled_delta": 0.018494105295712826,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.036083717998738066,
+            0.07414144280042137
+          ],
+          "macro_delta": 0.03493175033854512,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.007923937246659463,
+            0.07914798795297438
+          ],
+          "heldout_component_wins": 306
+        },
+        "ridge_minus_ridge_plus_joint_boost": {
+          "pooled_delta": 0.0642488837690336,
+          "pooled_95pct_group_bootstrap_CI": [
+            0.04322827761466381,
+            0.08534314296597226
+          ],
+          "macro_delta": 0.06668834049577432,
+          "macro_95pct_group_bootstrap_CI": [
+            0.05526099304257941,
+            0.07762350989032829
+          ],
+          "heldout_component_wins": 122
+        },
+        "nested_selected_shrinkage_minus_ridge_plus_joint_boost": {
+          "pooled_delta": -0.010505901424339159,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.0192613643339282,
+            -0.0017309760827508161
+          ],
+          "macro_delta": -0.007985003426192794,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.014240586891876161,
+            -0.0014830364360505297
+          ],
+          "heldout_component_wins": 90
+        }
+      }
+    }
+  },
+  "seconds": 74.46,
+  "caveats": [
+    "Inner/outer group splits block approximate protein trigram graph components, not verified homology.",
+    "All training rows sharing heldout Bemis-Murcko scaffold are removed, including a common acyclic group; other analogs may remain.",
+    "Train cohorts contain incomplete assay provenance and conflicting same-input labels.",
+    "Both architecture and choice of candidate betas follow previous development analysis; exploratory.",
+    "Neither frozen inner-development nor prospective test labels or predictions accessed."
+  ]
+}
