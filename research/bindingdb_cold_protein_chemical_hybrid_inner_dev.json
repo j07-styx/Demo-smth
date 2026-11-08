@@ -1,0 +1,268 @@
+{
+  "status": "EXPLORATORY_TRAIN_ONLY_GROUP_CV_AND_FROZEN_INNER_DEV_NO_TEST",
+  "training_pairs": 27118,
+  "dev_pairs": 7387,
+  "training_components": 82,
+  "development_components": 20,
+  "fingerprint": "Morgan chirality radius 2 size 2048, Ridge alpha 100 lsqr",
+  "protein_prior": "Top3 nearest training component protein 3-4mer TF-IDF, power4 gate2",
+  "cv_mean_baseline": {
+    "pooled_rmse": 1.6880239785012652,
+    "component_macro_rmse": 1.8217622454386075
+  },
+  "cv_top_candidates": [
+    {
+      "protein_prior_weight": 1.0,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.6009762450568756,
+      "cv_macro_mean": 1.4677076690849002,
+      "cv_normalized_joint": 0.8770424342900316
+    },
+    {
+      "protein_prior_weight": 0.5,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.5985039885423278,
+      "cv_macro_mean": 1.474368911859215,
+      "cv_normalized_joint": 0.8781383827482574
+    },
+    {
+      "protein_prior_weight": 0.0,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.5962424853386696,
+      "cv_macro_mean": 1.481216044778489,
+      "cv_normalized_joint": 0.8793477765691172
+    },
+    {
+      "protein_prior_weight": 1.0,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 0.5,
+      "cv_pooled_mean": 1.6162828787654735,
+      "cv_macro_mean": 1.5950198051452864,
+      "cv_normalized_joint": 0.9165183537189858
+    },
+    {
+      "protein_prior_weight": 1.0,
+      "clipped_chem_weight": 0.5,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.6080683778197793,
+      "cv_macro_mean": 1.6065040435473572,
+      "cv_normalized_joint": 0.9172371416397915
+    },
+    {
+      "protein_prior_weight": 0.5,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 0.5,
+      "cv_pooled_mean": 1.6154747458260017,
+      "cv_macro_mean": 1.6034307298329604,
+      "cv_normalized_joint": 0.9185874396407094
+    },
+    {
+      "protein_prior_weight": 0.5,
+      "clipped_chem_weight": 0.5,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.607614524561504,
+      "cv_macro_mean": 1.615104358277587,
+      "cv_normalized_joint": 0.9194631466357499
+    },
+    {
+      "protein_prior_weight": 0.0,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 0.5,
+      "cv_pooled_mean": 1.614874130200987,
+      "cv_macro_mean": 1.6119808719120912,
+      "cv_normalized_joint": 0.9207562026271914
+    },
+    {
+      "protein_prior_weight": 0.0,
+      "clipped_chem_weight": 0.5,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.6073691830512267,
+      "cv_macro_mean": 1.6238420291811628,
+      "cv_normalized_joint": 0.9217886124229424
+    },
+    {
+      "protein_prior_weight": 1.0,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 0.25,
+      "cv_pooled_mean": 1.6385257901734958,
+      "cv_macro_mean": 1.68762973038878,
+      "cv_normalized_joint": 0.9485244763021721
+    },
+    {
+      "protein_prior_weight": 1.0,
+      "clipped_chem_weight": 0.5,
+      "chemical_correction_cap": 0.5,
+      "cv_pooled_mean": 1.637647753590757,
+      "cv_macro_mean": 1.688884953088026,
+      "cv_normalized_joint": 0.9486089058959157
+    },
+    {
+      "protein_prior_weight": 0.5,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 0.25,
+      "cv_pooled_mean": 1.6388501892530358,
+      "cv_macro_mean": 1.6968412465551372,
+      "cv_normalized_joint": 0.9511487530607425
+    },
+    {
+      "protein_prior_weight": 1.0,
+      "clipped_chem_weight": 0.25,
+      "chemical_correction_cap": 1.0,
+      "cv_pooled_mean": 1.6380935631801965,
+      "cv_macro_mean": 1.6976928593066152,
+      "cv_normalized_joint": 0.9511583703779647
+    },
+    {
+      "protein_prior_weight": 0.5,
+      "clipped_chem_weight": 0.5,
+      "chemical_correction_cap": 0.5,
+      "cv_pooled_mean": 1.638004732336644,
+      "cv_macro_mean": 1.698107171055735,
+      "cv_normalized_joint": 0.9512457701038173
+    },
+    {
+      "protein_prior_weight": 0.0,
+      "clipped_chem_weight": 1.0,
+      "chemical_correction_cap": 0.25,
+      "cv_pooled_mean": 1.6393792320851208,
+      "cv_macro_mean": 1.7061734517734324,
+      "cv_normalized_joint": 0.9538667704433523
+    }
+  ],
+  "cv_selection": "joint macro and pooled error, train-only CV; requires both noninferior",
+  "selected": {
+    "protein_prior_weight": 1.0,
+    "clipped_chem_weight": 1.0,
+    "chemical_correction_cap": 1.0,
+    "cv_pooled_mean": 1.6009762450568756,
+    "cv_macro_mean": 1.4677076690849002,
+    "cv_normalized_joint": 0.8770424342900316
+  },
+  "development_train_mean": {
+    "pooled_rmse": 1.803901684183753,
+    "component_macro_rmse": 1.698288655524816
+  },
+  "development_selected_hybrid": {
+    "pooled_rmse": 2.1352780781944594,
+    "component_macro_rmse": 1.5227261859365708
+  },
+  "development_unblended_chemistry": {
+    "pooled_rmse": 2.565715092571509,
+    "component_macro_rmse": 1.5986456247110374
+  },
+  "development_unblended_protein": {
+    "pooled_rmse": 1.8011944574419494,
+    "component_macro_rmse": 1.6715205771598665
+  },
+  "development_component_improvement_count": 14,
+  "development_component_sizes": [
+    {
+      "pairs": 5027,
+      "hybrid_rmse": 2.301073619257797,
+      "mean_rmse": 1.8400881792741024
+    },
+    {
+      "pairs": 937,
+      "hybrid_rmse": 1.916638103623762,
+      "mean_rmse": 1.520601232790384
+    },
+    {
+      "pairs": 310,
+      "hybrid_rmse": 1.3299647487049144,
+      "mean_rmse": 1.8879514809363416
+    },
+    {
+      "pairs": 256,
+      "hybrid_rmse": 1.8064029993580075,
+      "mean_rmse": 2.0295244217877833
+    },
+    {
+      "pairs": 232,
+      "hybrid_rmse": 1.7129304754986359,
+      "mean_rmse": 1.7955488956292482
+    },
+    {
+      "pairs": 155,
+      "hybrid_rmse": 1.0942469245075812,
+      "mean_rmse": 1.079311999997676
+    },
+    {
+      "pairs": 104,
+      "hybrid_rmse": 1.5278531845053702,
+      "mean_rmse": 2.0360747492889986
+    },
+    {
+      "pairs": 55,
+      "hybrid_rmse": 1.341101867790194,
+      "mean_rmse": 0.7804440977467212
+    },
+    {
+      "pairs": 39,
+      "hybrid_rmse": 0.6043403167826127,
+      "mean_rmse": 1.0016195791591647
+    },
+    {
+      "pairs": 37,
+      "hybrid_rmse": 0.6791217530293291,
+      "mean_rmse": 0.9933143062373208
+    },
+    {
+      "pairs": 36,
+      "hybrid_rmse": 3.467506352238752,
+      "mean_rmse": 2.7488845601546497
+    },
+    {
+      "pairs": 35,
+      "hybrid_rmse": 2.636392200650803,
+      "mean_rmse": 3.6341151558466565
+    },
+    {
+      "pairs": 33,
+      "hybrid_rmse": 0.8290875700479372,
+      "mean_rmse": 1.2161570805523376
+    },
+    {
+      "pairs": 23,
+      "hybrid_rmse": 0.897663923118935,
+      "mean_rmse": 1.043118798920033
+    },
+    {
+      "pairs": 22,
+      "hybrid_rmse": 0.40229849070754375,
+      "mean_rmse": 0.8717152758301044
+    },
+    {
+      "pairs": 20,
+      "hybrid_rmse": 2.6062741790038793,
+      "mean_rmse": 3.340881062952891
+    },
+    {
+      "pairs": 19,
+      "hybrid_rmse": 2.0424923550313028,
+      "mean_rmse": 1.660597407918381
+    },
+    {
+      "pairs": 17,
+      "hybrid_rmse": 0.5172429405855034,
+      "mean_rmse": 0.5912328091648658
+    },
+    {
+      "pairs": 15,
+      "hybrid_rmse": 1.5244058179092084,
+      "mean_rmse": 2.1918186974499996
+    },
+    {
+      "pairs": 15,
+      "hybrid_rmse": 1.2174858963793487,
+      "mean_rmse": 1.702773318858663
+    }
+  ],
+  "warnings": [
+    "Inner-development has already been inspected by prior experiments; exploratory only.",
+    "No prospective-test labels or predictions were read.",
+    "Provisional assay and protein-construct quality controls incomplete."
+  ]
+}
