@@ -1,0 +1,243 @@
+{
+  "status": "BALM_FROZEN_INNER_DEV_PAIRED_COMPARISON_NO_TEST",
+  "seeds": [
+    2103,
+    2601,
+    2602,
+    2603,
+    2604,
+    2605
+  ],
+  "perceiver_epochs": 10,
+  "dev_rows": 3891,
+  "dev_groups": 173,
+  "bootstrap_draws": 5000,
+  "ensemble_locked_choice": "ridge_interaction_blend_0.25",
+  "per_seed": [
+    {
+      "seed": 2103,
+      "final_epoch": {
+        "epoch": 10,
+        "train_mse_normalized": 0.27133121072471916,
+        "pooled_dev_rmse": 1.4499421183284091,
+        "macro_protein_group_dev_rmse": 1.2928713271163021,
+        "seconds": 49.74
+      },
+      "best_epoch_by_dev": 7,
+      "best_epoch_pooled": 1.4317521517927545
+    },
+    {
+      "seed": 2601,
+      "final_epoch": {
+        "epoch": 10,
+        "train_mse_normalized": 0.6008957735129765,
+        "pooled_dev_rmse": 1.5556953358423289,
+        "macro_protein_group_dev_rmse": 1.4132687352928062,
+        "seconds": 56.02
+      },
+      "best_epoch_by_dev": 6,
+      "best_epoch_pooled": 1.5499665444021067
+    },
+    {
+      "seed": 2602,
+      "final_epoch": {
+        "epoch": 10,
+        "train_mse_normalized": 0.5992527290598139,
+        "pooled_dev_rmse": 1.6272434367462878,
+        "macro_protein_group_dev_rmse": 1.4656095271010927,
+        "seconds": 52.05
+      },
+      "best_epoch_by_dev": 5,
+      "best_epoch_pooled": 1.5904547857934248
+    },
+    {
+      "seed": 2603,
+      "final_epoch": {
+        "epoch": 10,
+        "train_mse_normalized": 0.2768986618364012,
+        "pooled_dev_rmse": 1.4362556308789236,
+        "macro_protein_group_dev_rmse": 1.3249845553611044,
+        "seconds": 50.96
+      },
+      "best_epoch_by_dev": 7,
+      "best_epoch_pooled": 1.4132543114480907
+    },
+    {
+      "seed": 2604,
+      "final_epoch": {
+        "epoch": 10,
+        "train_mse_normalized": 0.3598494506114489,
+        "pooled_dev_rmse": 1.4535712835861492,
+        "macro_protein_group_dev_rmse": 1.3232102885839394,
+        "seconds": 51.88
+      },
+      "best_epoch_by_dev": 10,
+      "best_epoch_pooled": 1.4535712835861492
+    },
+    {
+      "seed": 2605,
+      "final_epoch": {
+        "epoch": 10,
+        "train_mse_normalized": 0.5593790434784703,
+        "pooled_dev_rmse": 1.5506868791420805,
+        "macro_protein_group_dev_rmse": 1.4161378730994967,
+        "seconds": 52.39
+      },
+      "best_epoch_by_dev": 10,
+      "best_epoch_pooled": 1.5506868791420805
+    }
+  ],
+  "comparisons": {
+    "ridge_vs_perceiver_FINAL_EPOCH_PRIMARY": {
+      "ensemble": {
+        "pooled": 1.4050919228339773,
+        "macro": 1.2692163480036962
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.5122323763583188,
+        "macro": 1.3726802574178265
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.10714045352434143,
+        "macro": -0.1034639094141303
+      },
+      "ci95_pooled": [
+        -0.20200814907160247,
+        -0.024683734852866557
+      ],
+      "ci95_macro": [
+        -0.15344427373987934,
+        -0.05160747985433395
+      ],
+      "frac_draws_ensemble_better_pooled": 0.9958,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "ridge_vs_perceiver_BEST_DEV_EPOCH_OPTIMISTIC": {
+      "ensemble": {
+        "pooled": 1.4050919228339773,
+        "macro": 1.2692163480036962
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.4982809684590712,
+        "macro": 1.3693918027975014
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.09318904562509389,
+        "macro": -0.10017545479380519
+      },
+      "ci95_pooled": [
+        -0.19512299184646636,
+        -0.004223653519791323
+      ],
+      "ci95_macro": [
+        -0.15426976071064805,
+        -0.04506142571653945
+      ],
+      "frac_draws_ensemble_better_pooled": 0.98,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "ridge_vs_perceiver_SEED_AVERAGED_PREDICTIONS_FINAL": {
+      "ensemble": {
+        "pooled": 1.4050919228339773,
+        "macro": 1.2692163480036962
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.4527417254370687,
+        "macro": 1.3075071533971925
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.047649802603091373,
+        "macro": -0.038290805393496274
+      },
+      "ci95_pooled": [
+        -0.13899494263481815,
+        0.030049069566621785
+      ],
+      "ci95_macro": [
+        -0.09127964980070223,
+        0.016437363830702753
+      ],
+      "frac_draws_ensemble_better_pooled": 0.878,
+      "frac_draws_ensemble_better_macro": 0.9132
+    },
+    "ridge_interaction_blend_0.25_vs_perceiver_FINAL_EPOCH_PRIMARY": {
+      "ensemble": {
+        "pooled": 1.3837429832833161,
+        "macro": 1.2470975457981046
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.5122323763583188,
+        "macro": 1.3726802574178265
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.12848939307500262,
+        "macro": -0.1255827116197219
+      },
+      "ci95_pooled": [
+        -0.20867499666111006,
+        -0.06107618411384173
+      ],
+      "ci95_macro": [
+        -0.16553249713500262,
+        -0.08423730166590858
+      ],
+      "frac_draws_ensemble_better_pooled": 1.0,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "ridge_interaction_blend_0.25_vs_perceiver_BEST_DEV_EPOCH_OPTIMISTIC": {
+      "ensemble": {
+        "pooled": 1.3837429832833161,
+        "macro": 1.2470975457981046
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.4982809684590712,
+        "macro": 1.3693918027975014
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.11453798517575509,
+        "macro": -0.12229425699939678
+      },
+      "ci95_pooled": [
+        -0.2026457483624,
+        -0.04185670488277975
+      ],
+      "ci95_macro": [
+        -0.16622925942958486,
+        -0.07767331491253514
+      ],
+      "frac_draws_ensemble_better_pooled": 0.9994,
+      "frac_draws_ensemble_better_macro": 1.0
+    },
+    "ridge_interaction_blend_0.25_vs_perceiver_SEED_AVERAGED_PREDICTIONS_FINAL": {
+      "ensemble": {
+        "pooled": 1.3837429832833161,
+        "macro": 1.2470975457981046
+      },
+      "perceiver_mean_over_seeds": {
+        "pooled": 1.4527417254370687,
+        "macro": 1.3075071533971925
+      },
+      "delta_ens_minus_perceiver": {
+        "pooled": -0.06899874215375257,
+        "macro": -0.06040960759908787
+      },
+      "ci95_pooled": [
+        -0.14617051631569594,
+        -0.00619159886950352
+      ],
+      "ci95_macro": [
+        -0.1033812236085106,
+        -0.016194297707867823
+      ],
+      "frac_draws_ensemble_better_pooled": 0.9846,
+      "frac_draws_ensemble_better_macro": 0.9974
+    }
+  },
+  "interpretation_rules": [
+    "Negative delta favours the ensemble.",
+    "PRIMARY uses the final epoch of each seed; no dev-based epoch selection.",
+    "BEST_DEV_EPOCH is optimistic for PerceiverCPI.",
+    "Dev split was inspected repeatedly; this is NOT a test-set result.",
+    "Different model families/compute: compare as benchmark systems, not as a mechanism claim."
+  ]
+}
