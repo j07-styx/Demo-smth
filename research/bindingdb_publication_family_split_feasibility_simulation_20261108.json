@@ -1,0 +1,215 @@
+{
+  "status": "PRE_SPLIT_SOURCE_LINKED_TASK_COUNT_IMBALANCE_SIMULATION_NOT_APPROVED_NOT_FROZEN",
+  "simulations": {
+    "provisional_protein_MMseqs_groups_only": {
+      "families": 168,
+      "total_technical_tasks": 1146,
+      "largest_family_tasks": 492,
+      "largest_family_task_fraction": 0.4293193717277487,
+      "family_count_quota_by_role": {
+        "base_train": 100,
+        "base_validation": 17,
+        "adapter_train": 17,
+        "adapter_validation": 17,
+        "test": 17
+      },
+      "monte_carlo_draws": 1000,
+      "random_seed": 20261108,
+      "role_task_count_distributions": {
+        "base_train": {
+          "family_quota": 100,
+          "expected_task_share": 0.6,
+          "task_count_min": 217,
+          "task_count_p05": 290.9,
+          "task_count_median": 781.5,
+          "task_count_p95": 979.0,
+          "task_count_max": 1018,
+          "task_share_p05": 0.25383944153577664,
+          "task_share_median": 0.6819371727748691,
+          "task_share_p95": 0.8542757417102966,
+          "fraction_of_draws_above_double_desired_task_share": 0.0,
+          "fraction_of_draws_below_half_desired_task_share": 0.118,
+          "draws_with_largest_family": 593
+        },
+        "base_validation": {
+          "family_quota": 17,
+          "expected_task_share": 0.1,
+          "task_count_min": 19,
+          "task_count_p05": 26.0,
+          "task_count_median": 50.0,
+          "task_count_p95": 538.0,
+          "task_count_max": 699,
+          "task_share_p05": 0.02268760907504363,
+          "task_share_median": 0.04363001745200698,
+          "task_share_p95": 0.4694589877835951,
+          "fraction_of_draws_above_double_desired_task_share": 0.128,
+          "fraction_of_draws_below_half_desired_task_share": 0.591,
+          "draws_with_largest_family": 121
+        },
+        "adapter_train": {
+          "family_quota": 17,
+          "expected_task_share": 0.1,
+          "task_count_min": 20,
+          "task_count_p05": 27.0,
+          "task_count_median": 52.0,
+          "task_count_p95": 529.0999999999999,
+          "task_count_max": 742,
+          "task_share_p05": 0.02356020942408377,
+          "task_share_median": 0.04537521815008726,
+          "task_share_p95": 0.4616928446771378,
+          "fraction_of_draws_above_double_desired_task_share": 0.109,
+          "fraction_of_draws_below_half_desired_task_share": 0.566,
+          "draws_with_largest_family": 96
+        },
+        "adapter_validation": {
+          "family_quota": 17,
+          "expected_task_share": 0.1,
+          "task_count_min": 18,
+          "task_count_p05": 26.0,
+          "task_count_median": 53.0,
+          "task_count_p95": 537.05,
+          "task_count_max": 718,
+          "task_share_p05": 0.02268760907504363,
+          "task_share_median": 0.0462478184991274,
+          "task_share_p95": 0.46863001745200694,
+          "fraction_of_draws_above_double_desired_task_share": 0.105,
+          "fraction_of_draws_below_half_desired_task_share": 0.576,
+          "draws_with_largest_family": 98
+        },
+        "test": {
+          "family_quota": 17,
+          "expected_task_share": 0.1,
+          "task_count_min": 18,
+          "task_count_p05": 26.0,
+          "task_count_median": 53.0,
+          "task_count_p95": 535.05,
+          "task_count_max": 721,
+          "task_share_p05": 0.02268760907504363,
+          "task_share_median": 0.0462478184991274,
+          "task_share_p95": 0.4668848167539266,
+          "fraction_of_draws_above_double_desired_task_share": 0.104,
+          "fraction_of_draws_below_half_desired_task_share": 0.553,
+          "draws_with_largest_family": 92
+        }
+      },
+      "no_actual_split_or_task_assignment_written": true
+    },
+    "publication_PMid_DOI_patent_connected_groups": {
+      "families": 142,
+      "total_technical_tasks": 1146,
+      "largest_family_tasks": 530,
+      "largest_family_task_fraction": 0.462478184991274,
+      "family_count_quota_by_role": {
+        "base_train": 86,
+        "base_validation": 14,
+        "adapter_train": 14,
+        "adapter_validation": 14,
+        "test": 14
+      },
+      "monte_carlo_draws": 1000,
+      "random_seed": 20261108,
+      "role_task_count_distributions": {
+        "base_train": {
+          "family_quota": 86,
+          "expected_task_share": 0.6,
+          "task_count_min": 183,
+          "task_count_p05": 262.95,
+          "task_count_median": 806.5,
+          "task_count_p95": 1005.05,
+          "task_count_max": 1050,
+          "task_share_p05": 0.22945026178010472,
+          "task_share_median": 0.7037521815008726,
+          "task_share_p95": 0.8770069808027923,
+          "fraction_of_draws_above_double_desired_task_share": 0.0,
+          "fraction_of_draws_below_half_desired_task_share": 0.136,
+          "draws_with_largest_family": 609
+        },
+        "base_validation": {
+          "family_quota": 14,
+          "expected_task_share": 0.1,
+          "task_count_min": 15,
+          "task_count_p05": 22.0,
+          "task_count_median": 48.0,
+          "task_count_p95": 568.0,
+          "task_count_max": 779,
+          "task_share_p05": 0.019197207678883072,
+          "task_share_median": 0.041884816753926704,
+          "task_share_p95": 0.4956369982547993,
+          "fraction_of_draws_above_double_desired_task_share": 0.113,
+          "fraction_of_draws_below_half_desired_task_share": 0.607,
+          "draws_with_largest_family": 101
+        },
+        "adapter_train": {
+          "family_quota": 14,
+          "expected_task_share": 0.1,
+          "task_count_min": 15,
+          "task_count_p05": 21.0,
+          "task_count_median": 44.0,
+          "task_count_p95": 564.0,
+          "task_count_max": 775,
+          "task_share_p05": 0.01832460732984293,
+          "task_share_median": 0.038394415357766144,
+          "task_share_p95": 0.49214659685863876,
+          "fraction_of_draws_above_double_desired_task_share": 0.102,
+          "fraction_of_draws_below_half_desired_task_share": 0.651,
+          "draws_with_largest_family": 93
+        },
+        "adapter_validation": {
+          "family_quota": 14,
+          "expected_task_share": 0.1,
+          "task_count_min": 15,
+          "task_count_p05": 21.0,
+          "task_count_median": 45.0,
+          "task_count_p95": 568.0,
+          "task_count_max": 742,
+          "task_share_p05": 0.01832460732984293,
+          "task_share_median": 0.03926701570680628,
+          "task_share_p95": 0.4956369982547993,
+          "fraction_of_draws_above_double_desired_task_share": 0.109,
+          "fraction_of_draws_below_half_desired_task_share": 0.637,
+          "draws_with_largest_family": 100
+        },
+        "test": {
+          "family_quota": 14,
+          "expected_task_share": 0.1,
+          "task_count_min": 15,
+          "task_count_p05": 21.950000000000003,
+          "task_count_median": 47.0,
+          "task_count_p95": 568.05,
+          "task_count_max": 735,
+          "task_share_p05": 0.019153577661431068,
+          "task_share_median": 0.04101221640488656,
+          "task_share_p95": 0.49568062827225123,
+          "fraction_of_draws_above_double_desired_task_share": 0.114,
+          "fraction_of_draws_below_half_desired_task_share": 0.621,
+          "draws_with_largest_family": 97
+        }
+      },
+      "no_actual_split_or_task_assignment_written": true
+    }
+  },
+  "comparison_axes": [
+    "Task count distribution under fixed group-count quotas",
+    "Probability largest source group lands in each role",
+    "Unbalanced task share under random group-only allocations"
+  ],
+  "input_source_preflight_sha256": "76032b21215ce8d86e6b6f3014b143fdca495837342723bc9569fe3299daefdf",
+  "source_task_manifest_sha256": "723056acef9bb9ec4e76d5df26e73738dc0042ab4664dccaa9f5d74d3c3d059a",
+  "role_fractions": {
+    "base_train": 0.6,
+    "base_validation": 0.1,
+    "adapter_train": 0.1,
+    "adapter_validation": 0.1,
+    "test": 0.1
+  },
+  "no_actual_split_or_task_assignment_written": true,
+  "scientific_gate_status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "warnings": [
+    "These are hypothetical role allocations only; none is selected, published, or frozen.",
+    "A fixed NUMBER of study groups per role does not ensure balanced task or chemical coverage.",
+    "The large source family could cause extreme task distribution imbalance.",
+    "One publication may cover distinct assays; missing DOI/PMID/patent links may undermerge source groups.",
+    "No affinity labels or model predictions used for this analysis.",
+    "The prospective test, reviewed assay cohort and frozen split remain untouched."
+  ]
+}
