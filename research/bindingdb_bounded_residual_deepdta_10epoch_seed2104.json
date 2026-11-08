@@ -1,0 +1,85 @@
+{
+  "status": "FROZEN_INNER_DEV_ONLY_NO_TEST_EVALUATION",
+  "dataset": "BindingDB preliminary exact-looking Kd; assay and construct QC incomplete",
+  "train_pairs": 27118,
+  "reserved_test_pairs": 2936,
+  "validation_pairs": 7387,
+  "protein_cluster_disjoint": true,
+  "seed": 2104,
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.0003,
+  "optimizer": "AdamW",
+  "architecture": "bounded residual dual CNN compact head tanh amplitude 0.5 normalized targets",
+  "train_sampling": "inverse_sqrt_protein_component_frequency_replacement",
+  "target_normalization": "train_only_mean_std",
+  "gradient_clip_norm": 1.0,
+  "max_smiles_len": 100,
+  "max_protein_len": 1000,
+  "source_paper_batch_size": 256,
+  "source_paper_epochs": 100,
+  "note": "Train-only vocabulary and label normalization; short training feasibility experiment, not faithful full paper training or independent test; all epoch validation metrics exploratory",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.8932505264034811,
+      "val_rmse": 1.989604279275378,
+      "seconds": 6.05
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.7270746104559809,
+      "val_rmse": 1.9255727014197865,
+      "seconds": 5.51
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.6999354023697242,
+      "val_rmse": 1.9924662149263246,
+      "seconds": 5.54
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.6936012727190863,
+      "val_rmse": 1.9841976351642794,
+      "seconds": 5.5
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.6903363140124195,
+      "val_rmse": 1.9708294727160403,
+      "seconds": 5.54
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.6829762221226152,
+      "val_rmse": 2.0356385521176814,
+      "seconds": 5.54
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.6638223406560017,
+      "val_rmse": 2.0226175227062297,
+      "seconds": 5.53
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.6616856534526033,
+      "val_rmse": 1.9933700982192697,
+      "seconds": 5.53
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.6666279113236463,
+      "val_rmse": 1.999647562080396,
+      "seconds": 5.49
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.6597137507402672,
+      "val_rmse": 1.986140959118239,
+      "seconds": 5.51
+    }
+  ],
+  "train_only_mean_baseline_rmse": 1.803901684183753
+}

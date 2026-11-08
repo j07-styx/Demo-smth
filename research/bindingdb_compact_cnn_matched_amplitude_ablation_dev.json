@@ -1,0 +1,48 @@
+{
+  "status": "EXPLORATORY_INNER_DEV_NO_TEST",
+  "matched_seed_results": [
+    {
+      "seed": 2103,
+      "residual_amplitude": 0.5,
+      "best_epoch": 3,
+      "best_inner_dev_rmse": 1.9886322885840593,
+      "final_epoch_rmse": 2.048621316856272
+    },
+    {
+      "seed": 2103,
+      "residual_amplitude": 1.5,
+      "best_epoch": 1,
+      "best_inner_dev_rmse": 2.2537128876466914,
+      "final_epoch_rmse": 2.6537765738111854
+    },
+    {
+      "seed": 2104,
+      "residual_amplitude": 0.5,
+      "best_epoch": 2,
+      "best_inner_dev_rmse": 1.9255727014197865,
+      "final_epoch_rmse": 1.986140959118239
+    },
+    {
+      "seed": 2104,
+      "residual_amplitude": 1.5,
+      "best_epoch": 5,
+      "best_inner_dev_rmse": 2.0067323284107723,
+      "final_epoch_rmse": 2.400141769576311
+    }
+  ],
+  "mean_by_amplitude": {
+    "0.5": {
+      "best_rmse": 1.957102495001923,
+      "final_rmse": 2.0173811379872557
+    },
+    "1.5": {
+      "best_rmse": 2.130222608028732,
+      "final_rmse": 2.5269591716937483
+    }
+  },
+  "warnings": [
+    "Two seeds and repeatedly inspected development split; not an unbiased result",
+    "Neither configuration beats train-only mean RMSE 1.803902",
+    "No approved assay/construct QC or independent test evaluation"
+  ]
+}
