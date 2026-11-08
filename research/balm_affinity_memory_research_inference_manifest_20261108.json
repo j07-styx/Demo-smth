@@ -1,0 +1,64 @@
+{
+  "status": "RESEARCH_ONLY_PROTOTYPE_NOT_APPROVED_TRAINING_OR_DEPLOYMENT",
+  "model_family": "Ridge chemical Morgan + protein k-mer/ESM2-8M; joint RDKit/AA HistGradientBoosting; protein/chemical similarity memory",
+  "source_dataset": "BALM BindingDB_filtered frozen TRAIN only",
+  "source_protein_embedding_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "train_original_pairs": 15538,
+  "train_unique_protein_smiles_pairs": 12315,
+  "protein_count_with_frozen_esm": 639,
+  "train_mean": 6.387779614880836,
+  "train_label_std": 1.438338724001911,
+  "ridge_share_of_base": 0.75,
+  "booster_share_of_base": 0.25,
+  "memory_mix": 0.25,
+  "memory_shrinkage_to_train_mean": 0.5,
+  "memory_spec": {
+    "name": "joint_esm8_k64",
+    "ligand_exponent": 2,
+    "protein_exponent": 8,
+    "neighbor_count": 64
+  },
+  "fixed_beta_for_exploratory_inference": 1.0,
+  "smoke_predictions_train_only": [
+    {
+      "smiles_sha256": "1eb9883898449b7215f776a54acfb66940c77bb7d1ac6089c4e44b4d82871073",
+      "protein_sha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "estimated_source_p_affinity": 7.590950906589396,
+      "training_row_label_for_smoke_only": 9.2518119729938,
+      "protein_length": 260,
+      "note": "TRAIN-row functionality smoke, not unseen-set validation"
+    },
+    {
+      "smiles_sha256": "3df3bcd747d56752677c0eccd97fff56dcdca0cc4fc1d985ad96d25dbae3341f",
+      "protein_sha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "estimated_source_p_affinity": 7.70575154665093,
+      "training_row_label_for_smoke_only": 9.229147988357855,
+      "protein_length": 260,
+      "note": "TRAIN-row functionality smoke, not unseen-set validation"
+    },
+    {
+      "smiles_sha256": "e57433d29ff70fb75f92530136d1aea868ed48a0c3c627694daeb4c3956b711a",
+      "protein_sha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "estimated_source_p_affinity": 7.913549801480096,
+      "training_row_label_for_smoke_only": 9.031517051446064,
+      "protein_length": 260,
+      "note": "TRAIN-row functionality smoke, not unseen-set validation"
+    }
+  ],
+  "local_checkpoint_path": "data/models/balm_affinity_memory_prototype_exploratory_20261108.joblib",
+  "checkpoint_size_bytes": 8131756,
+  "checkpoint_sha256": "2a3a0bb3fe905f95f61d228d16c6746484bd72dc7fc03f680586660db4c5fdb3",
+  "train_only_end_to_end_seconds": 17.92,
+  "scientific_gate_status": {
+    "status": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+    "reason": "Blocked: independently reviewed approved cohort and frozen split are required."
+  },
+  "warnings": [
+    "Research-only local predictor. Scientific gate remains blocked; not fit for scientific or clinical use.",
+    "SMOKE only uses training rows and is NOT a validation accuracy estimate.",
+    "No original inner-development or reserved test labels/samples used.",
+    "Underlying BALM labels have incomplete assay DOI/method and construct provenance.",
+    "Unseen protein sequences require frozen ESM2 8M inference and may be truncated to 1022 residues.",
+    "Checkpoint contains model and TRAIN labels/representations; intentionally not pushed to Git."
+  ]
+}
