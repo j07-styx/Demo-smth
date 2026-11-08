@@ -1,0 +1,407 @@
+{
+  "status": "EXPLORATORY_BALM_TRAIN_ONLY_SCAFFOLD_COLD_FROZEN_ESM_PROTEIN_DERANGEMENT_NEGATIVE_CONTROLS",
+  "control_definition": "Random global one-to-one reassignment of ESM2 protein vectors across all 639 TRAIN sequence hashes; true chemical and protein k-mer features and joint booster unmodified",
+  "derangement_seeds": [
+    2103,
+    2104,
+    2105
+  ],
+  "derangement_mapping_sha256": {
+    "2103": "a56dd8d1d69c168905194a10a2eac2e5084ff4c6abe5ce763ca0532731ebd6c1",
+    "2104": "e52b809d70f023c81ebe1c240140e1727e9e5fa80e3e0e77b5609e5e37bacaba",
+    "2105": "8d2a178a3f45bf3a7be12c301ee50692bb872bd7ab821cd9bd9457c74b7fe4bf"
+  },
+  "source_esm_feature_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "original_esm_ensemble_report": "balm_esm8m_augmented_joint_ensemble_scaffold_cold_traincv_dev.json",
+  "folds": [
+    {
+      "fold": 1,
+      "outer_train_unique": 4078,
+      "holdout_rows": 3885,
+      "heldout_components": 129,
+      "scaffold_overlap_count": 0,
+      "inherited_nested_beta": 1.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.492595265226907,
+          "component_macro_rmse": 1.380291210265331
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.3902497515686,
+          "component_macro_rmse": 1.3029673071588053
+        },
+        "real_esm": {
+          "pooled_rmse": 1.370962693123721,
+          "component_macro_rmse": 1.28516611732646
+        },
+        "deranged_esm_2103": {
+          "pooled_rmse": 1.387601267921138,
+          "component_macro_rmse": 1.309287201939545
+        },
+        "deranged_esm_2104": {
+          "pooled_rmse": 1.3900007083935537,
+          "component_macro_rmse": 1.3023786569031626
+        },
+        "deranged_esm_2105": {
+          "pooled_rmse": 1.3876751632457722,
+          "component_macro_rmse": 1.3020627945555525
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "outer_train_unique": 4305,
+      "holdout_rows": 3885,
+      "heldout_components": 130,
+      "scaffold_overlap_count": 0,
+      "inherited_nested_beta": 1.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4375843779300046,
+          "component_macro_rmse": 1.3605499520721527
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.4444968548700927,
+          "component_macro_rmse": 1.346547500196209
+        },
+        "real_esm": {
+          "pooled_rmse": 1.4516443415423697,
+          "component_macro_rmse": 1.3254181296185295
+        },
+        "deranged_esm_2103": {
+          "pooled_rmse": 1.4442072384876008,
+          "component_macro_rmse": 1.3451760933044261
+        },
+        "deranged_esm_2104": {
+          "pooled_rmse": 1.4448958371989125,
+          "component_macro_rmse": 1.3546359721810666
+        },
+        "deranged_esm_2105": {
+          "pooled_rmse": 1.4389963095360783,
+          "component_macro_rmse": 1.3490547483885824
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "outer_train_unique": 3856,
+      "holdout_rows": 3884,
+      "heldout_components": 130,
+      "scaffold_overlap_count": 0,
+      "inherited_nested_beta": 1.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4061002305343717,
+          "component_macro_rmse": 1.3546698501019652
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.4216378153217506,
+          "component_macro_rmse": 1.3327457019464857
+        },
+        "real_esm": {
+          "pooled_rmse": 1.4294014927938128,
+          "component_macro_rmse": 1.3343313259182612
+        },
+        "deranged_esm_2103": {
+          "pooled_rmse": 1.4262135918079595,
+          "component_macro_rmse": 1.3314215573621275
+        },
+        "deranged_esm_2104": {
+          "pooled_rmse": 1.4263982496920415,
+          "component_macro_rmse": 1.3357755637758832
+        },
+        "deranged_esm_2105": {
+          "pooled_rmse": 1.4230426063515889,
+          "component_macro_rmse": 1.330481705173188
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "outer_train_unique": 4475,
+      "holdout_rows": 3884,
+      "heldout_components": 130,
+      "scaffold_overlap_count": 0,
+      "inherited_nested_beta": 0.75,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4294488686842326,
+          "component_macro_rmse": 1.354012296467588
+        },
+        "nested_standard": {
+          "pooled_rmse": 1.3940624020718722,
+          "component_macro_rmse": 1.295331114167034
+        },
+        "real_esm": {
+          "pooled_rmse": 1.3828694790559761,
+          "component_macro_rmse": 1.2769935822473817
+        },
+        "deranged_esm_2103": {
+          "pooled_rmse": 1.3886621382782787,
+          "component_macro_rmse": 1.2997464257208273
+        },
+        "deranged_esm_2104": {
+          "pooled_rmse": 1.3949968032569608,
+          "component_macro_rmse": 1.2970867029407398
+        },
+        "deranged_esm_2105": {
+          "pooled_rmse": 1.3925253710091168,
+          "component_macro_rmse": 1.2924678902788675
+        }
+      }
+    }
+  ],
+  "fold_mean": {
+    "train_mean": {
+      "pooled_rmse": 1.441432185593879,
+      "component_macro_rmse": 1.3623808272267592
+    },
+    "nested_standard": {
+      "pooled_rmse": 1.4126117059580792,
+      "component_macro_rmse": 1.3193979058671335
+    },
+    "real_esm": {
+      "pooled_rmse": 1.40871950162897,
+      "component_macro_rmse": 1.305477288777658
+    },
+    "deranged_esm_2103": {
+      "pooled_rmse": 1.4116710591237442,
+      "component_macro_rmse": 1.3214078195817316
+    },
+    "deranged_esm_2104": {
+      "pooled_rmse": 1.414072899635367,
+      "component_macro_rmse": 1.3224692239502132
+    },
+    "deranged_esm_2105": {
+      "pooled_rmse": 1.410559862535639,
+      "component_macro_rmse": 1.3185167845990478
+    }
+  },
+  "out_of_fold": {
+    "pooled_rmse": {
+      "train_mean": 1.441784195921108,
+      "nested_standard": 1.412784189201056,
+      "real_esm": 1.409107044545831,
+      "deranged_esm_2103": 1.4118822400620235,
+      "deranged_esm_2104": 1.4142541358376284,
+      "deranged_esm_2105": 1.4107209192002277
+    },
+    "component_macro_rmse": {
+      "train_mean": 1.3623463178182071,
+      "nested_standard": 1.3194295640534692,
+      "real_esm": 1.3055164239827663,
+      "deranged_esm_2103": 1.3214311733729494,
+      "deranged_esm_2104": 1.3225079340986658,
+      "deranged_esm_2105": 1.3185484878553937
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "nested_standard_minus_train_mean": {
+          "pooled_delta": -0.029000006720051985,
+          "pooled_CI95": [
+            -0.0797943746843972,
+            0.021776282693383022
+          ],
+          "macro_delta": -0.042916753764737914,
+          "macro_CI95": [
+            -0.08489952372430713,
+            -0.0029991841314653774
+          ],
+          "protein_groups_won": 224
+        },
+        "real_esm_minus_train_mean": {
+          "pooled_delta": -0.03267715137527705,
+          "pooled_CI95": [
+            -0.09071043596971727,
+            0.025283066135238317
+          ],
+          "macro_delta": -0.05682989383544079,
+          "macro_CI95": [
+            -0.10117275057105651,
+            -0.01392749810642403
+          ],
+          "protein_groups_won": 227
+        },
+        "deranged_esm_2103_minus_train_mean": {
+          "pooled_delta": -0.029901955859084506,
+          "pooled_CI95": [
+            -0.08107118878482103,
+            0.021337037927658464
+          ],
+          "macro_delta": -0.04091514444525779,
+          "macro_CI95": [
+            -0.08251054846941733,
+            -0.0013653426321494943
+          ],
+          "protein_groups_won": 221
+        },
+        "deranged_esm_2104_minus_train_mean": {
+          "pooled_delta": -0.02753006008347958,
+          "pooled_CI95": [
+            -0.07792398734103036,
+            0.022629152557084174
+          ],
+          "macro_delta": -0.03983838371954129,
+          "macro_CI95": [
+            -0.08167274124230996,
+            8.432086859859751e-05
+          ],
+          "protein_groups_won": 221
+        },
+        "deranged_esm_2105_minus_train_mean": {
+          "pooled_delta": -0.031063276720880273,
+          "pooled_CI95": [
+            -0.08183139081680765,
+            0.01934675490314247
+          ],
+          "macro_delta": -0.04379782996281345,
+          "macro_CI95": [
+            -0.0858082252153476,
+            -0.0035250973697921956
+          ],
+          "protein_groups_won": 222
+        },
+        "train_mean_minus_nested_standard": {
+          "pooled_delta": 0.029000006720051985,
+          "pooled_CI95": [
+            -0.021776282693383026,
+            0.0797943746843972
+          ],
+          "macro_delta": 0.042916753764737914,
+          "macro_CI95": [
+            0.0029991841314653766,
+            0.08489952372430713
+          ],
+          "protein_groups_won": 295
+        },
+        "real_esm_minus_nested_standard": {
+          "pooled_delta": -0.003677144655225062,
+          "pooled_CI95": [
+            -0.018014493622738114,
+            0.01093006739181906
+          ],
+          "macro_delta": -0.013913140070702879,
+          "macro_CI95": [
+            -0.021844714931522523,
+            -0.006113358212665651
+          ],
+          "protein_groups_won": 319
+        },
+        "deranged_esm_2103_minus_nested_standard": {
+          "pooled_delta": -0.0009019491390325207,
+          "pooled_CI95": [
+            -0.005124469257393793,
+            0.003527460729164627
+          ],
+          "macro_delta": 0.0020016093194801243,
+          "macro_CI95": [
+            -0.0018717707308279262,
+            0.005789708116677326
+          ],
+          "protein_groups_won": 247
+        },
+        "deranged_esm_2104_minus_nested_standard": {
+          "pooled_delta": 0.0014699466365724057,
+          "pooled_CI95": [
+            -0.005531836441471921,
+            0.008769920657644745
+          ],
+          "macro_delta": 0.003078370045196621,
+          "macro_CI95": [
+            -0.0009667278110312982,
+            0.007311024837564394
+          ],
+          "protein_groups_won": 256
+        },
+        "deranged_esm_2105_minus_nested_standard": {
+          "pooled_delta": -0.002063270000828288,
+          "pooled_CI95": [
+            -0.007052853770513029,
+            0.0028103863956468926
+          ],
+          "macro_delta": -0.0008810761980755366,
+          "macro_CI95": [
+            -0.0047589845761885855,
+            0.0030215045837551817
+          ],
+          "protein_groups_won": 262
+        },
+        "train_mean_minus_real_esm": {
+          "pooled_delta": 0.03267715137527705,
+          "pooled_CI95": [
+            -0.02528306613523836,
+            0.09071043596971727
+          ],
+          "macro_delta": 0.05682989383544079,
+          "macro_CI95": [
+            0.013927498106424008,
+            0.10117275057105651
+          ],
+          "protein_groups_won": 292
+        },
+        "nested_standard_minus_real_esm": {
+          "pooled_delta": 0.003677144655225062,
+          "pooled_CI95": [
+            -0.010930067391819075,
+            0.018014493622738114
+          ],
+          "macro_delta": 0.013913140070702879,
+          "macro_CI95": [
+            0.006113358212665643,
+            0.02184471493152252
+          ],
+          "protein_groups_won": 200
+        },
+        "deranged_esm_2103_minus_real_esm": {
+          "pooled_delta": 0.0027751955161925412,
+          "pooled_CI95": [
+            -0.012558353052069083,
+            0.018744095445756042
+          ],
+          "macro_delta": 0.015914749390183003,
+          "macro_CI95": [
+            0.00713222739304632,
+            0.02451532351921909
+          ],
+          "protein_groups_won": 197
+        },
+        "deranged_esm_2104_minus_real_esm": {
+          "pooled_delta": 0.005147091291797468,
+          "pooled_CI95": [
+            -0.013097053784069595,
+            0.02078968667558499
+          ],
+          "macro_delta": 0.0169915101158995,
+          "macro_CI95": [
+            0.00833860107035529,
+            0.02607196749084985
+          ],
+          "protein_groups_won": 212
+        },
+        "deranged_esm_2105_minus_real_esm": {
+          "pooled_delta": 0.0016138746543967741,
+          "pooled_CI95": [
+            -0.01361515354974781,
+            0.016441414555511683
+          ],
+          "macro_delta": 0.013032063872627342,
+          "macro_CI95": [
+            0.004697586324315445,
+            0.021372211559240576
+          ],
+          "protein_groups_won": 205
+        }
+      }
+    }
+  },
+  "seconds": 100.09,
+  "caveats": [
+    "Three negative-control permutations do not approximate the full permutation null distribution.",
+    "Same repeated TRAIN-only experimental folds and previously explored architecture.",
+    "Protein 3-mer group proxy not validated homology; source assay provenance absent.",
+    "No frozen development or prospective reserved test outcomes used or evaluated.",
+    "ESM2 8M N-terminal window 1022 truncates 85 of 639 training proteins."
+  ]
+}
