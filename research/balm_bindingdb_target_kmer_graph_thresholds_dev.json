@@ -1,0 +1,63 @@
+{
+  "status": "METADATA_ONLY_TARGET_SIMILARITY_GRAPH_NO_LABELS",
+  "corpus_rows": 24700,
+  "unique_sequences": 1069,
+  "method": "binary protein trigram occurrence cosine; transitive connected components, NOT sequence identity or validated homology",
+  "threshold_sensitivity": [
+    {
+      "kmer_cosine_threshold": 0.3,
+      "edges_above": 905,
+      "components": 656,
+      "single_sequence_components": 477,
+      "largest_proteins": 112,
+      "largest_pair_count": 3647,
+      "largest_pair_fraction": 0.14765182186234818
+    },
+    {
+      "kmer_cosine_threshold": 0.5,
+      "edges_above": 290,
+      "components": 865,
+      "single_sequence_components": 723,
+      "largest_proteins": 6,
+      "largest_pair_count": 721,
+      "largest_pair_fraction": 0.029190283400809716
+    },
+    {
+      "kmer_cosine_threshold": 0.65,
+      "edges_above": 154,
+      "components": 947,
+      "single_sequence_components": 852,
+      "largest_proteins": 5,
+      "largest_pair_count": 721,
+      "largest_pair_fraction": 0.029190283400809716
+    },
+    {
+      "kmer_cosine_threshold": 0.7,
+      "edges_above": 129,
+      "components": 963,
+      "single_sequence_components": 877,
+      "largest_proteins": 5,
+      "largest_pair_count": 721,
+      "largest_pair_fraction": 0.029190283400809716
+    },
+    {
+      "kmer_cosine_threshold": 0.8,
+      "edges_above": 86,
+      "components": 997,
+      "single_sequence_components": 938,
+      "largest_proteins": 5,
+      "largest_pair_count": 721,
+      "largest_pair_fraction": 0.029190283400809716
+    },
+    {
+      "kmer_cosine_threshold": 0.9,
+      "edges_above": 27,
+      "components": 1042,
+      "single_sequence_components": 1017,
+      "largest_proteins": 3,
+      "largest_pair_count": 721,
+      "largest_pair_fraction": 0.029190283400809716
+    }
+  ],
+  "warning": "A kmer-cosine similarity cutoff is not equivalent to MMseqs2 30% identity; should not be called homology-disjoint."
+}

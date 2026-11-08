@@ -1,0 +1,14 @@
+{
+  "status": "METADATA_ONLY_UNREVIEWED_SOURCE_EVIDENCE_WORKLIST_NO_TEST",
+  "assays_to_review": 49,
+  "assays_by_split": {
+    "train": 34,
+    "inner_dev": 15
+  },
+  "first_pass_priority_count": 2,
+  "assays_missing_explicit_endpoint_description": 44,
+  "assays_with_nonempty_source_doi": 49,
+  "csv_sha256": "53709c0f1ff007e4e5a482de5a3cb86e1ecbe8b33b887ad7cec6c89c477e53ce",
+  "note": "This is NOT confirmation of comparable or exact assays. Explicit external publication+construct verification is required.",
+  "reserved_test_used": false
+}

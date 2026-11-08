@@ -1,0 +1,87 @@
+{
+  "status": "PROVISIONAL_SPR_ITC_KD_METADATA_SCREEN_NO_TEST",
+  "selection_rule": {
+    "methods": "explicit SPR or ITC in assay name/description",
+    "require": "article DOI count >= 1 and literal Kd or dissociation constant in assay text",
+    "exclude": "cell/cellular, thermal shift and DSF, IC50 and Ki mentions",
+    "deduplicate": "one assay per identical sequence+canonical compound, lexicographically lowest assay key; no labels used",
+    "warning": "Keyword screen does not verify biophysical assay conditions or source paper correctness"
+  },
+  "partitions": {
+    "train": {
+      "original_rows": 27118,
+      "raw_modalities": {
+        "OTHER": 15391,
+        "SPR": 3076,
+        "ITC": 261,
+        "CELL": 7564,
+        "DSF": 826
+      },
+      "raw_qualifying_rows": 85,
+      "unique_input_qualifying_rows": 66,
+      "qualifying_protein_components": 3,
+      "qualifying_assay_keys": 3,
+      "unique_input_method_counts": {
+        "SPR": 66
+      },
+      "rejected_counts": {
+        "non_SPR_ITC": 23781,
+        "no_explicit_kd": 1004,
+        "no_article_doi": 2200,
+        "mixed_or_excluded_measurement": 48
+      },
+      "retained_task_keys": [
+        [
+          "333835f403a04d992e92c0e4d969ebd9d7836efbeea46535bc6e28637a7f594c",
+          "50009965_12"
+        ],
+        [
+          "850aba8ba2a5e1681e7e3dbc08958a52248c816c95be57b749d282e591253998",
+          "50015271_2"
+        ],
+        [
+          "cc24e8701a5717fd1fa418174adb3b6cbaeae8a76f78b33a995f44c5bb394056",
+          "50019869_1"
+        ]
+      ],
+      "selected_input_row_digest": "df6abce7862337bc10dd580dc98e846e606daab19462b527f160187f5a1c853c"
+    },
+    "inner_dev": {
+      "original_rows": 7387,
+      "raw_modalities": {
+        "OTHER": 1123,
+        "SPR": 1340,
+        "CELL": 128,
+        "DSF": 4638,
+        "ITC": 158
+      },
+      "raw_qualifying_rows": 82,
+      "unique_input_qualifying_rows": 82,
+      "qualifying_protein_components": 1,
+      "qualifying_assay_keys": 1,
+      "unique_input_method_counts": {
+        "SPR": 82
+      },
+      "rejected_counts": {
+        "non_SPR_ITC": 5889,
+        "no_article_doi": 1135,
+        "no_explicit_kd": 246,
+        "mixed_or_excluded_measurement": 35
+      },
+      "retained_task_keys": [
+        [
+          "edbd5d8a5deb16bfd31ff3029c7897b816b752cb26cd0dcf23d089dcdd841586",
+          "9878_2"
+        ]
+      ],
+      "selected_input_row_digest": "e88689b23ca2abed9d01ee0a04eadb05837976de429184d03919ac92daa1a1f1"
+    }
+  },
+  "limitations": [
+    "Metadata-only heuristic; not a publication-verified source-quality gate.",
+    "The original input cohort was previously assembled using within-assay replicate-spread QC.",
+    "Selection uses no dev outcome labels beyond that historical cohort definition.",
+    "Reserved prospective test neither materialized nor measured; full test protocol must be locked separately.",
+    "Some publication DOI assignments might be incomplete or misinterpreted."
+  ]
+}

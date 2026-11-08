@@ -1,0 +1,137 @@
+{
+  "status": "SMALL_DOI_LINKED_SPR_ITC_COHORT_EXPLORATORY_NO_PROSPECTIVE_TEST",
+  "metadata_filter": "SPR/ITC text, article DOI, no cellular/DSF/IC50/Ki mixed tokens; no Kd phrase requirement beyond original BindingDB numeric Kd field",
+  "deduplication": "deterministic assay_key sort per canonical protein/compound, no labels used",
+  "training_pairs": 902,
+  "inner_dev_pairs": 294,
+  "training_components": 20,
+  "dev_components": 5,
+  "train_assay_contexts_not_independently_verified": true,
+  "model_candidates": [
+    "global_mean",
+    "component_balanced_mean",
+    "chemical_ridge",
+    "chemical_boost",
+    "chemical_protein_boost"
+  ],
+  "cv_folds": {
+    "global_mean": [
+      {
+        "pooled_rmse": 2.054202947483585,
+        "component_macro_rmse": 1.9613738659391777
+      },
+      {
+        "pooled_rmse": 1.011665150740767,
+        "component_macro_rmse": 1.0442724985974765
+      },
+      {
+        "pooled_rmse": 1.3399888738805075,
+        "component_macro_rmse": 1.4129197273478362
+      }
+    ],
+    "component_balanced_mean": [
+      {
+        "pooled_rmse": 2.065734861559917,
+        "component_macro_rmse": 1.9742054134653386
+      },
+      {
+        "pooled_rmse": 1.012934717662073,
+        "component_macro_rmse": 1.0500884806156392
+      },
+      {
+        "pooled_rmse": 1.3851407709549746,
+        "component_macro_rmse": 1.457043209884943
+      }
+    ],
+    "chemical_ridge": [
+      {
+        "pooled_rmse": 2.1643664301470835,
+        "component_macro_rmse": 2.0767459536787025
+      },
+      {
+        "pooled_rmse": 1.4659454715863915,
+        "component_macro_rmse": 1.388449810874877
+      },
+      {
+        "pooled_rmse": 1.232113216217806,
+        "component_macro_rmse": 1.258889000708453
+      }
+    ],
+    "chemical_boost": [
+      {
+        "pooled_rmse": 2.1096004132513704,
+        "component_macro_rmse": 1.9993386495054994
+      },
+      {
+        "pooled_rmse": 1.2217611086353013,
+        "component_macro_rmse": 1.4262084887126043
+      },
+      {
+        "pooled_rmse": 1.157819780569924,
+        "component_macro_rmse": 1.1289353017337482
+      }
+    ],
+    "chemical_protein_boost": [
+      {
+        "pooled_rmse": 1.9861073392406614,
+        "component_macro_rmse": 1.8715449834758509
+      },
+      {
+        "pooled_rmse": 1.4717759564751631,
+        "component_macro_rmse": 1.58205191127701
+      },
+      {
+        "pooled_rmse": 1.3477843042579398,
+        "component_macro_rmse": 1.3593930791174331
+      }
+    ]
+  },
+  "cv_ranking": [
+    {
+      "name": "global_mean",
+      "cv_pooled": 1.4686189907016198,
+      "cv_macro": 1.4728553639614967,
+      "cv_joint": 1.0
+    },
+    {
+      "name": "component_balanced_mean",
+      "cv_pooled": 1.4879367833923214,
+      "cv_macro": 1.493779034655307,
+      "cv_joint": 1.0136799540567552
+    },
+    {
+      "name": "chemical_boost",
+      "cv_pooled": 1.496393767485532,
+      "cv_macro": 1.518160813317284,
+      "cv_joint": 1.0248362286463573
+    },
+    {
+      "name": "chemical_ridge",
+      "cv_pooled": 1.620808372650427,
+      "cv_macro": 1.574694921754011,
+      "cv_joint": 1.0863859245559437
+    },
+    {
+      "name": "chemical_protein_boost",
+      "cv_pooled": 1.6018891999912548,
+      "cv_macro": 1.604329991290098,
+      "cv_joint": 1.0900051946342488
+    }
+  ],
+  "cv_selected": "global_mean",
+  "dev_train_mean": {
+    "pooled_rmse": 2.4973124004668263,
+    "component_macro_rmse": 1.8241315966810443
+  },
+  "dev_selected": {
+    "pooled_rmse": 2.4973124004668263,
+    "component_macro_rmse": 1.8241315966810443
+  },
+  "seconds": 4.1,
+  "limitations": [
+    "Only a small minority of Kd records meet metadata filters; experiment not paper benchmark.",
+    "Assay and construct still unverified, Kd phrase not always stated in SPR/ITC description.",
+    "No assay key leakage into features; split remains protein-component disjoint.",
+    "Development has been inspected; no prospective test accessed."
+  ]
+}

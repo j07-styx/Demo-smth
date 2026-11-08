@@ -1,0 +1,61 @@
+{
+  "status": "TRAIN_AND_INNER_DEV_QC_NO_TEST_EVALUATION",
+  "dataset": "BALM public BindingDB_filtered, CC-BY-4.0",
+  "train": {
+    "rows": 15538,
+    "unique_protein_sequences": 639,
+    "unique_target_ids": 640,
+    "unique_protein_components": 519,
+    "largest_component_pair_share": 0.046402368387179815,
+    "unique_raw_smiles": 5971,
+    "unique_canonical_compounds": 5971,
+    "invalid_smiles": 0,
+    "unique_sequence_compound_inputs": 12315,
+    "repeated_identical_input_groups": 1305,
+    "repeated_identical_input_rows": 4528,
+    "identical_input_groups_spread_gt_0_5": 774,
+    "identical_input_groups_spread_gt_1_0": 461,
+    "optimistic_within_input_oracle_rmse_floor": 0.3357787593646471,
+    "label_mean": 6.4894094412199514,
+    "label_std": 1.4365958310897045,
+    "label_min": 1.999999995657055,
+    "label_max": 10.0,
+    "label_q05_median_q95": [
+      4.137778601901026,
+      6.443576878628715,
+      8.886056647693163
+    ]
+  },
+  "inner_dev": {
+    "rows": 3891,
+    "unique_protein_sequences": 209,
+    "unique_target_ids": 209,
+    "unique_protein_components": 173,
+    "largest_component_pair_share": 0.04985864816242611,
+    "unique_raw_smiles": 2005,
+    "unique_canonical_compounds": 2005,
+    "invalid_smiles": 0,
+    "unique_sequence_compound_inputs": 3454,
+    "repeated_identical_input_groups": 333,
+    "repeated_identical_input_rows": 770,
+    "identical_input_groups_spread_gt_0_5": 176,
+    "identical_input_groups_spread_gt_1_0": 74,
+    "optimistic_within_input_oracle_rmse_floor": 0.20158462842938993,
+    "label_mean": 6.371765507003058,
+    "label_std": 1.589763456959716,
+    "label_min": 1.999999995657055,
+    "label_max": 9.99891561870778,
+    "label_q05_median_q95": [
+      3.545221832948494,
+      6.376647318462008,
+      8.886056647693163
+    ]
+  },
+  "integrity": {
+    "train_dev_exact_protein_sequences_shared": 0,
+    "train_dev_exact_canonical_compounds_shared": 737,
+    "train_mean_inner_dev_pooled_rmse": 1.594110392771635,
+    "train_mean_inner_dev_macro_group_rmse": 1.4727877228638329,
+    "note": "Source has no source-DOI or assay protocol columns, so assay harmonization is not verified. Frozen reserved test labels never accessed."
+  }
+}

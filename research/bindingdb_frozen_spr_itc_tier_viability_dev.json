@@ -1,0 +1,174 @@
+{
+  "status": "METADATA_ONLY_SPR_ITC_TIER_VIABILITY_TRAIN_AND_DEV",
+  "rules": [
+    "method_only",
+    "method_plus_article",
+    "method_plus_endpoint",
+    "method_plus_article_and_endpoint",
+    "method_article_endpoint_no_mixed",
+    "method_article_no_mixed"
+  ],
+  "partitions": {
+    "train": {
+      "method_only": {
+        "qualifying_rows": 3337,
+        "unique_sequence_compound_pairs": 3146,
+        "protein_clusters": 42,
+        "protein_sequences": 74,
+        "compounds": 2664,
+        "assay_keys": 89,
+        "modalities": {
+          "SPR": 2885,
+          "ITC": 261
+        },
+        "largest_cluster_pair_fraction": 0.14653528289891926
+      },
+      "method_plus_article": {
+        "qualifying_rows": 1137,
+        "unique_sequence_compound_pairs": 1049,
+        "protein_clusters": 25,
+        "protein_sequences": 35,
+        "compounds": 962,
+        "assay_keys": 38,
+        "modalities": {
+          "SPR": 864,
+          "ITC": 185
+        },
+        "largest_cluster_pair_fraction": 0.16873212583412775
+      },
+      "method_plus_endpoint": {
+        "qualifying_rows": 1159,
+        "unique_sequence_compound_pairs": 1108,
+        "protein_clusters": 16,
+        "protein_sequences": 29,
+        "compounds": 798,
+        "assay_keys": 33,
+        "modalities": {
+          "SPR": 1077,
+          "ITC": 31
+        },
+        "largest_cluster_pair_fraction": 0.32942238267148016
+      },
+      "method_plus_article_and_endpoint": {
+        "qualifying_rows": 133,
+        "unique_sequence_compound_pairs": 114,
+        "protein_clusters": 5,
+        "protein_sequences": 5,
+        "compounds": 114,
+        "assay_keys": 5,
+        "modalities": {
+          "SPR": 114
+        },
+        "largest_cluster_pair_fraction": 0.2719298245614035
+      },
+      "method_article_endpoint_no_mixed": {
+        "qualifying_rows": 85,
+        "unique_sequence_compound_pairs": 66,
+        "protein_clusters": 3,
+        "protein_sequences": 3,
+        "compounds": 66,
+        "assay_keys": 3,
+        "modalities": {
+          "SPR": 66
+        },
+        "largest_cluster_pair_fraction": 0.4696969696969697
+      },
+      "method_article_no_mixed": {
+        "qualifying_rows": 990,
+        "unique_sequence_compound_pairs": 902,
+        "protein_clusters": 20,
+        "protein_sequences": 29,
+        "compounds": 815,
+        "assay_keys": 32,
+        "modalities": {
+          "SPR": 769,
+          "ITC": 133
+        },
+        "largest_cluster_pair_fraction": 0.16518847006651885
+      }
+    },
+    "inner_dev": {
+      "method_only": {
+        "qualifying_rows": 1498,
+        "unique_sequence_compound_pairs": 1447,
+        "protein_clusters": 9,
+        "protein_sequences": 17,
+        "compounds": 1240,
+        "assay_keys": 26,
+        "modalities": {
+          "SPR": 1298,
+          "ITC": 149
+        },
+        "largest_cluster_pair_fraction": 0.5507947477539737
+      },
+      "method_plus_article": {
+        "qualifying_rows": 363,
+        "unique_sequence_compound_pairs": 329,
+        "protein_clusters": 6,
+        "protein_sequences": 11,
+        "compounds": 204,
+        "assay_keys": 16,
+        "modalities": {
+          "SPR": 235,
+          "ITC": 94
+        },
+        "largest_cluster_pair_fraction": 0.5075987841945289
+      },
+      "method_plus_endpoint": {
+        "qualifying_rows": 1118,
+        "unique_sequence_compound_pairs": 1116,
+        "protein_clusters": 5,
+        "protein_sequences": 7,
+        "compounds": 1034,
+        "assay_keys": 7,
+        "modalities": {
+          "SPR": 1116
+        },
+        "largest_cluster_pair_fraction": 0.71415770609319
+      },
+      "method_plus_article_and_endpoint": {
+        "qualifying_rows": 117,
+        "unique_sequence_compound_pairs": 117,
+        "protein_clusters": 2,
+        "protein_sequences": 2,
+        "compounds": 117,
+        "assay_keys": 2,
+        "modalities": {
+          "SPR": 117
+        },
+        "largest_cluster_pair_fraction": 0.7008547008547008
+      },
+      "method_article_endpoint_no_mixed": {
+        "qualifying_rows": 82,
+        "unique_sequence_compound_pairs": 82,
+        "protein_clusters": 1,
+        "protein_sequences": 1,
+        "compounds": 82,
+        "assay_keys": 1,
+        "modalities": {
+          "SPR": 82
+        },
+        "largest_cluster_pair_fraction": 1.0
+      },
+      "method_article_no_mixed": {
+        "qualifying_rows": 328,
+        "unique_sequence_compound_pairs": 294,
+        "protein_clusters": 5,
+        "protein_sequences": 10,
+        "compounds": 169,
+        "assay_keys": 15,
+        "modalities": {
+          "SPR": 200,
+          "ITC": 94
+        },
+        "largest_cluster_pair_fraction": 0.5680272108843537
+      }
+    }
+  },
+  "warnings": [
+    "These are keyword-screened metadata tiers, not validated comparable Kd assays.",
+    "Even the source Kd (nM) field may contain mixed assay mechanisms.",
+    "Existing cohort's within-assay replicate QC used outcome labels historically.",
+    "No outcome labels were examined by this viability screen; no prospective test was accessed."
+  ]
+}

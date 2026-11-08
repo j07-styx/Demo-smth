@@ -1,0 +1,24 @@
+{
+  "status": "PUBLIC_BENCHMARK_SOURCE_STAGED_UNSPLIT_NO_MODEL_RESULTS",
+  "dataset": "BALM/BALM-benchmark BindingDB_filtered",
+  "source_url": "https://huggingface.co/datasets/BALM/BALM-benchmark/resolve/main/BindingDB_filtered/train/data-00000-of-00001.arrow",
+  "upstream_license": "CC-BY-4.0 per publisher dataset card; preserve attribution",
+  "source_bytes": 19581136,
+  "source_sha256": "13fbb1ae1c0731a5f3f7345e64a4d027b725dccfbf935a95b5253bd3633967dc",
+  "record_rows": 24700,
+  "columns": {
+    "Index": "int64",
+    "Drug_ID": "double",
+    "Drug": "string",
+    "Target_ID": "string",
+    "Target": "string",
+    "Y": "double"
+  },
+  "source_path_relative": "data/reference/balm_bindingdb_202611/data-00000-of-00001.arrow",
+  "seconds": 5.4,
+  "warnings": [
+    "Upstream dataset card labels source split 'train' only; it is an UNSPLIT corpus, not a model train partition.",
+    "Construct and assay provenance not verified by this staging action.",
+    "No prospectively held out records have been evaluated."
+  ]
+}

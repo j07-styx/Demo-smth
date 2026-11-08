@@ -1,0 +1,249 @@
+{
+  "status": "BALM_BINDINGDB_COLD_PROTEIN_GRAPH_GROUPCV_AND_INNER_DEV_ONLY",
+  "train_original_rows": 15538,
+  "train_unique_protein_compound": 12315,
+  "inner_dev_rows": 3891,
+  "training_components": 519,
+  "inner_dev_components": 173,
+  "feature_design": "Train-fold fitted protein TFIDF char3-4mer up to 4096, Morgan radius2 chiral 2048 L2, Ridge alpha grid",
+  "target_handling": "Collapse duplicate protein+SMILES training rows by mean within each train fold; do not aggregate development labels",
+  "train_only_cv_folds": [
+    {
+      "fold": 1,
+      "train_unique_rows": 9841,
+      "heldout_rows": 2759,
+      "baseline": {
+        "global_mean": {
+          "pooled_rmse": 1.391102564145054,
+          "component_macro_rmse": 1.2868731297992564
+        },
+        "component_balanced_mean": {
+          "pooled_rmse": 1.384447632634125,
+          "component_macro_rmse": 1.2726885322006938
+        }
+      },
+      "models": {
+        "chemical_alpha_0.1": {
+          "pooled_rmse": 1.2856845727381736,
+          "component_macro_rmse": 1.260802917902198
+        },
+        "chemical_alpha_1.0": {
+          "pooled_rmse": 1.1839449558702977,
+          "component_macro_rmse": 1.1420300545275537
+        },
+        "chemical_alpha_10.0": {
+          "pooled_rmse": 1.2027201538071548,
+          "component_macro_rmse": 1.169894308694821
+        },
+        "protein_alpha_0.1": {
+          "pooled_rmse": 1.398979675954439,
+          "component_macro_rmse": 1.2652547256816395
+        },
+        "protein_alpha_1.0": {
+          "pooled_rmse": 1.3540615111753487,
+          "component_macro_rmse": 1.2294394813298009
+        },
+        "protein_alpha_10.0": {
+          "pooled_rmse": 1.3316112771215456,
+          "component_macro_rmse": 1.2272275087404614
+        },
+        "combined_alpha_0.1": {
+          "pooled_rmse": 1.3416883936654047,
+          "component_macro_rmse": 1.257240427321874
+        },
+        "combined_alpha_1.0": {
+          "pooled_rmse": 1.2062477988219178,
+          "component_macro_rmse": 1.1275916017506904
+        },
+        "combined_alpha_10.0": {
+          "pooled_rmse": 1.2000968756612165,
+          "component_macro_rmse": 1.1344440443486437
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_unique_rows": 9468,
+      "heldout_rows": 3820,
+      "baseline": {
+        "global_mean": {
+          "pooled_rmse": 1.5234755514327498,
+          "component_macro_rmse": 1.346942385331757
+        },
+        "component_balanced_mean": {
+          "pooled_rmse": 1.5260291791296983,
+          "component_macro_rmse": 1.3355600242290122
+        }
+      },
+      "models": {
+        "chemical_alpha_0.1": {
+          "pooled_rmse": 1.4082142503547936,
+          "component_macro_rmse": 1.2680188155661694
+        },
+        "chemical_alpha_1.0": {
+          "pooled_rmse": 1.385744937735139,
+          "component_macro_rmse": 1.2432285510513628
+        },
+        "chemical_alpha_10.0": {
+          "pooled_rmse": 1.4186286809109736,
+          "component_macro_rmse": 1.2640874230851553
+        },
+        "protein_alpha_0.1": {
+          "pooled_rmse": 1.4430437559417222,
+          "component_macro_rmse": 1.3025479709585308
+        },
+        "protein_alpha_1.0": {
+          "pooled_rmse": 1.4231184749736605,
+          "component_macro_rmse": 1.2779152004662344
+        },
+        "protein_alpha_10.0": {
+          "pooled_rmse": 1.4332035718803067,
+          "component_macro_rmse": 1.2732571711011929
+        },
+        "combined_alpha_0.1": {
+          "pooled_rmse": 1.4550133529601743,
+          "component_macro_rmse": 1.311494973104446
+        },
+        "combined_alpha_1.0": {
+          "pooled_rmse": 1.3666798740294104,
+          "component_macro_rmse": 1.2255225311993143
+        },
+        "combined_alpha_10.0": {
+          "pooled_rmse": 1.3714956860925627,
+          "component_macro_rmse": 1.2185393450771427
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_unique_rows": 9879,
+      "heldout_rows": 3260,
+      "baseline": {
+        "global_mean": {
+          "pooled_rmse": 1.3943445996421933,
+          "component_macro_rmse": 1.3499002674285108
+        },
+        "component_balanced_mean": {
+          "pooled_rmse": 1.4168475001842624,
+          "component_macro_rmse": 1.3608477014029423
+        }
+      },
+      "models": {
+        "chemical_alpha_0.1": {
+          "pooled_rmse": 1.5866147242015116,
+          "component_macro_rmse": 1.4088212325657112
+        },
+        "chemical_alpha_1.0": {
+          "pooled_rmse": 1.4928942214568044,
+          "component_macro_rmse": 1.3068518596171932
+        },
+        "chemical_alpha_10.0": {
+          "pooled_rmse": 1.429691990771958,
+          "component_macro_rmse": 1.3019722053898044
+        },
+        "protein_alpha_0.1": {
+          "pooled_rmse": 1.4151570657846357,
+          "component_macro_rmse": 1.374441296215629
+        },
+        "protein_alpha_1.0": {
+          "pooled_rmse": 1.3915624165291112,
+          "component_macro_rmse": 1.3392250989912695
+        },
+        "protein_alpha_10.0": {
+          "pooled_rmse": 1.3696391232569396,
+          "component_macro_rmse": 1.3294018683362032
+        },
+        "combined_alpha_0.1": {
+          "pooled_rmse": 1.6605272367573225,
+          "component_macro_rmse": 1.4443763205113167
+        },
+        "combined_alpha_1.0": {
+          "pooled_rmse": 1.5077838552118101,
+          "component_macro_rmse": 1.2989795688697234
+        },
+        "combined_alpha_10.0": {
+          "pooled_rmse": 1.4148558759941805,
+          "component_macro_rmse": 1.2768095184909742
+        }
+      }
+    }
+  ],
+  "train_only_cv_ranking": [
+    {
+      "model": "combined_alpha_10.0",
+      "cv_pooled_mean": 1.3288161459159866,
+      "cv_macro_mean": 1.2099309693055869,
+      "cv_joint": 0.9181594375884441
+    },
+    {
+      "model": "combined_alpha_1.0",
+      "cv_pooled_mean": 1.3602371760210463,
+      "cv_macro_mean": 1.2173645672732427,
+      "cv_joint": 0.9318965589770825
+    },
+    {
+      "model": "chemical_alpha_1.0",
+      "cv_pooled_mean": 1.354194705020747,
+      "cv_macro_mean": 1.2307034883987031,
+      "cv_joint": 0.9348156275351376
+    },
+    {
+      "model": "chemical_alpha_10.0",
+      "cv_pooled_mean": 1.350346941830029,
+      "cv_macro_mean": 1.2453179790565936,
+      "cv_joint": 0.9389790003580707
+    },
+    {
+      "model": "protein_alpha_10.0",
+      "cv_pooled_mean": 1.3781513240862637,
+      "cv_macro_mean": 1.2766288493926192,
+      "cv_joint": 0.9604476911814548
+    },
+    {
+      "model": "protein_alpha_1.0",
+      "cv_pooled_mean": 1.3895808008927066,
+      "cv_macro_mean": 1.2821932602624349,
+      "cv_joint": 0.9665216455090182
+    },
+    {
+      "model": "protein_alpha_0.1",
+      "cv_pooled_mean": 1.419060165893599,
+      "cv_macro_mean": 1.314081330951933,
+      "cv_joint": 0.988790757620075
+    },
+    {
+      "model": "chemical_alpha_0.1",
+      "cv_pooled_mean": 1.4268378490981597,
+      "cv_macro_mean": 1.3125476553446929,
+      "cv_joint": 0.9909208053675016
+    },
+    {
+      "model": "combined_alpha_0.1",
+      "cv_pooled_mean": 1.485742994460967,
+      "cv_macro_mean": 1.3377039069792123,
+      "cv_joint": 1.020898717444297
+    }
+  ],
+  "train_only_cv_selected": "combined_alpha_10.0",
+  "final_dev_baselines": {
+    "global_mean": {
+      "pooled_rmse": 1.589844112086348,
+      "component_macro_rmse": 1.4640933905703184
+    },
+    "component_balanced_mean": {
+      "pooled_rmse": 1.5910951001610807,
+      "component_macro_rmse": 1.4609207437398855
+    }
+  },
+  "final_dev_selected": {
+    "pooled_rmse": 1.4363250631425506,
+    "component_macro_rmse": 1.3096945964057585
+  },
+  "seconds": 41.8,
+  "caveats": [
+    "Public BALM source may contain assay-context ambiguity and no source DOI fields.",
+    "Trigram graph threshold0.5 is a similarity proxy, not proven homology clustering.",
+    "Training-only grouped CV selects model and regularization; inner-dev is exploratory only.",
+    "Reserved test partition not evaluated or accessed as Y values."
+  ]
+}
