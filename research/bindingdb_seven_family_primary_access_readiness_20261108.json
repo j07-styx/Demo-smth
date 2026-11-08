@@ -1,0 +1,17 @@
+{
+  "status": "SOURCE_ACCESS_TRIAGE_ONLY_NOT_SCIENTIFIC_APPROVAL",
+  "families_in_previously_identified_split_conflict": 7,
+  "families_with_one_source_access_evidence_anchor": 7,
+  "evidence_access_tier_counts": {
+    "ARTICLE_ABSTRACT_ONLY": 4,
+    "PRIMARY_PATENT_TABLE_METHOD": 1,
+    "PUBLISHER_SUPPLEMENT_INDEX": 1,
+    "SECONDARY_ASSAY_ANNOTATION": 1
+  },
+  "families_with_independently_verified_original_records": 0,
+  "families_with_independently_verified_protein_constructs": 0,
+  "families_scientifically_approved": 0,
+  "note": "A source method table, article abstract, publisher SI index or assay annotation is not an original BindingDB record crosswalk. Source-family examples do not guarantee complete source lineage. Full assay and construct review remains outstanding. No reserved-test labels or model outcomes accessed.",
+  "source_selection": "Existing private seven-family metadata queue only, with separately annotated public source-access tiers",
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY"
+}
