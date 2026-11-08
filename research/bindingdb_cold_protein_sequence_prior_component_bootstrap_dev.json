@@ -1,0 +1,43 @@
+{
+  "status": "EXPLORATORY_COMPONENT_BOOTSTRAP_NO_INDEPENDENT_TEST",
+  "samples": 10000,
+  "resampling_unit": "protein component, sampled with replacement",
+  "seed": 20261108,
+  "component_count": 20,
+  "estimates": {
+    "cv_selected_macro_prior": {
+      "pooled_rmse_improvement_observed": -0.09827271950861594,
+      "pooled_improvement_bootstrap_95_interval": [
+        -0.15964576848539921,
+        0.3227490617408873
+      ],
+      "pooled_bootstrap_fraction_improvement": 0.2415,
+      "component_macro_improvement_observed": 0.2444676398226393,
+      "macro_improvement_bootstrap_95_interval": [
+        0.13472048324933528,
+        0.34368439485250785
+      ],
+      "macro_bootstrap_fraction_improvement": 1.0
+    },
+    "cv_selected_conservative_prior": {
+      "pooled_rmse_improvement_observed": 0.00270722674180357,
+      "pooled_improvement_bootstrap_95_interval": [
+        -0.003909184873079785,
+        0.04556280004371688
+      ],
+      "pooled_bootstrap_fraction_improvement": 0.7004,
+      "component_macro_improvement_observed": 0.026768078364949544,
+      "macro_improvement_bootstrap_95_interval": [
+        0.016466674025886287,
+        0.03864881147289289
+      ],
+      "macro_bootstrap_fraction_improvement": 1.0
+    }
+  },
+  "caveats": [
+    "Exploratory internal development has been inspected repeatedly; these bootstrap intervals are descriptive, not confirmatory.",
+    "Only 20 independent components, heavily imbalanced pair counts.",
+    "Assays and constructs are not yet fully verified.",
+    "No reserved-test labels or predictions were used."
+  ]
+}
