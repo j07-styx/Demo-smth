@@ -1,0 +1,13 @@
+{
+  "status": "PRELIMINARY_BINDINGDB_CANDIDATE_DEV_NOT_ASSAY_VERIFIED",
+  "train_pairs": 27118,
+  "val_pairs": 7387,
+  "train_components": 82,
+  "val_components": 20,
+  "train_only_mean_rmse": 1.803901684183753,
+  "candidate_filter": "task >=15 unique compounds; replicate pKd range <=0.1",
+  "split": "frozen train and inner-dev protein components; prospective test quarantined",
+  "compound_protein_kmer_ridge_alpha_1.0_rmse": 2.4026589269974683,
+  "protein_sequence_source": "BindingDB full candidate records; SHA256 verified against task sequence keys",
+  "reference_method_note": "DeepDTA-inspired paired molecular/protein sequence input, linear k-mer ablation; NOT a DeepDTA reproduction or superiority claim"
+}
