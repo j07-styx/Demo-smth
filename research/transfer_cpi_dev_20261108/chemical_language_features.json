@@ -1,0 +1,20 @@
+{
+  "model": "DeepChem/ChemBERTa-77M-MTR",
+  "revision": "66b895cab8adebea0cb59a8effa66b2020f204ca",
+  "hidden_size": 384,
+  "split_sha256": "4f66961f2854123346f598b8816344118e7ff764a1389c8f36d505cc66fe4412",
+  "pooling": "mean non-special token states; full nonoverlapping 510-token windows",
+  "long_molecules_windowed": 0,
+  "molecules": 14455,
+  "missing_encoder_keys": [],
+  "unused_checkpoint_keys": [
+    "norm_mean",
+    "norm_std",
+    "regression.dense.bias",
+    "regression.dense.weight",
+    "regression.out_proj.bias",
+    "regression.out_proj.weight"
+  ],
+  "device": "cpu",
+  "label_use": false
+}
