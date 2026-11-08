@@ -1,0 +1,379 @@
+{
+  "status": "EXPLORATORY_TRAIN_ONLY_ESM2_CONDITIONED_HISTBOOSTER_ALIGNMENT_AND_SCAFFOLD_COLD_NO_DEV_OR_TEST",
+  "group_rule": "identity40_cover80",
+  "train_rows": 15538,
+  "alignment_component_count": 396,
+  "experiment": "Control nonlinear booster trained on 21 molecule descriptors and 21 amino acid features versus same booster augmented with 16/32 train-fold-fitted PCA of frozen ESM2 protein vectors; 32-component variant excluding amino-acid composition.",
+  "protein_pca_policy": "fit PCA exclusively on the unique proteins in each OUTER training fold; apply frozen projection to heldout proteins",
+  "ridge": "Morgan2048+protein char kmer+frozen ESM2 320 dims, Ridge alpha1, ESM scale0.25",
+  "ensemble": "fixed 75pct Ridge +25pct booster, beta selected from earlier train-only inner-cold folds",
+  "hist_booster_hyperparameters": {
+    "max_iter": 160,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 50,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "esm_source_hash": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "models": [
+    "train_mean",
+    "ridge_esm_kmer",
+    "nested_reference_joint",
+    "nested_esm_pca16_joint",
+    "nested_esm_pca32_joint",
+    "nested_esm_pca32_no_aa"
+  ],
+  "outer_folds": [
+    {
+      "fold": 1,
+      "fit_unique_pairs": 5082,
+      "heldout_original_pairs": 3885,
+      "heldout_alignment_components": 98,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "pca_fit": {
+        "16": {
+          "training_unique_proteins": 361,
+          "pca_dimensions": 16,
+          "training_variance_explained": 0.8314168974757195
+        },
+        "32": {
+          "training_unique_proteins": 361,
+          "pca_dimensions": 32,
+          "training_variance_explained": 0.9121040136087686
+        }
+      },
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.3188876084957677,
+          "component_macro_rmse": 1.2860380834168499
+        },
+        "ridge_esm_kmer": {
+          "pooled_rmse": 1.3565204177765569,
+          "component_macro_rmse": 1.3257519659438608
+        },
+        "nested_reference_joint": {
+          "pooled_rmse": 1.3003253215014958,
+          "component_macro_rmse": 1.266188151074739
+        },
+        "nested_esm_pca16_joint": {
+          "pooled_rmse": 1.3038664439112562,
+          "component_macro_rmse": 1.2786409853281415
+        },
+        "nested_esm_pca32_joint": {
+          "pooled_rmse": 1.2959771843395627,
+          "component_macro_rmse": 1.276869876621541
+        },
+        "nested_esm_pca32_no_aa": {
+          "pooled_rmse": 1.3040643510361123,
+          "component_macro_rmse": 1.2814026723132592
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "fit_unique_pairs": 4278,
+      "heldout_original_pairs": 3885,
+      "heldout_alignment_components": 100,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "pca_fit": {
+        "16": {
+          "training_unique_proteins": 324,
+          "pca_dimensions": 16,
+          "training_variance_explained": 0.816745868884027
+        },
+        "32": {
+          "training_unique_proteins": 324,
+          "pca_dimensions": 32,
+          "training_variance_explained": 0.9014688823372126
+        }
+      },
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4714968057639244,
+          "component_macro_rmse": 1.4362652343489555
+        },
+        "ridge_esm_kmer": {
+          "pooled_rmse": 1.508101650076985,
+          "component_macro_rmse": 1.3824306599929372
+        },
+        "nested_reference_joint": {
+          "pooled_rmse": 1.451551979654631,
+          "component_macro_rmse": 1.3274546638346016
+        },
+        "nested_esm_pca16_joint": {
+          "pooled_rmse": 1.4491493373347533,
+          "component_macro_rmse": 1.32883660156948
+        },
+        "nested_esm_pca32_joint": {
+          "pooled_rmse": 1.4476842270130534,
+          "component_macro_rmse": 1.3390594722676916
+        },
+        "nested_esm_pca32_no_aa": {
+          "pooled_rmse": 1.4414342299556462,
+          "component_macro_rmse": 1.3355511098806583
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "fit_unique_pairs": 4148,
+      "heldout_original_pairs": 3884,
+      "heldout_alignment_components": 99,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "pca_fit": {
+        "16": {
+          "training_unique_proteins": 346,
+          "pca_dimensions": 16,
+          "training_variance_explained": 0.8165556229650974
+        },
+        "32": {
+          "training_unique_proteins": 346,
+          "pca_dimensions": 32,
+          "training_variance_explained": 0.9039998210500926
+        }
+      },
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.5266719056181142,
+          "component_macro_rmse": 1.4136384438602232
+        },
+        "ridge_esm_kmer": {
+          "pooled_rmse": 1.5111195812764617,
+          "component_macro_rmse": 1.4050298690415013
+        },
+        "nested_reference_joint": {
+          "pooled_rmse": 1.4431091472297584,
+          "component_macro_rmse": 1.3442300638938114
+        },
+        "nested_esm_pca16_joint": {
+          "pooled_rmse": 1.4389257094536878,
+          "component_macro_rmse": 1.3382782236551292
+        },
+        "nested_esm_pca32_joint": {
+          "pooled_rmse": 1.4413600515853373,
+          "component_macro_rmse": 1.3395059896508044
+        },
+        "nested_esm_pca32_no_aa": {
+          "pooled_rmse": 1.4382338477493857,
+          "component_macro_rmse": 1.3422262789813466
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "fit_unique_pairs": 4730,
+      "heldout_original_pairs": 3884,
+      "heldout_alignment_components": 99,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "pca_fit": {
+        "16": {
+          "training_unique_proteins": 353,
+          "pca_dimensions": 16,
+          "training_variance_explained": 0.8254173072054982
+        },
+        "32": {
+          "training_unique_proteins": 353,
+          "pca_dimensions": 32,
+          "training_variance_explained": 0.9108445027377456
+        }
+      },
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4397193855386106,
+          "component_macro_rmse": 1.451849081855799
+        },
+        "ridge_esm_kmer": {
+          "pooled_rmse": 1.5484514972945917,
+          "component_macro_rmse": 1.4626792708604333
+        },
+        "nested_reference_joint": {
+          "pooled_rmse": 1.5173360104779294,
+          "component_macro_rmse": 1.41170165064436
+        },
+        "nested_esm_pca16_joint": {
+          "pooled_rmse": 1.5288644262417896,
+          "component_macro_rmse": 1.424547687537318
+        },
+        "nested_esm_pca32_joint": {
+          "pooled_rmse": 1.5250620063788178,
+          "component_macro_rmse": 1.4223602998796505
+        },
+        "nested_esm_pca32_no_aa": {
+          "pooled_rmse": 1.516128331496263,
+          "component_macro_rmse": 1.4349079701991667
+        }
+      }
+    }
+  ],
+  "out_of_fold": {
+    "pooled_rmse": {
+      "train_mean": 1.441199343607045,
+      "ridge_esm_kmer": 1.4828713463919208,
+      "nested_reference_joint": 1.4302662436733156,
+      "nested_esm_pca16_joint": 1.4324766052599176,
+      "nested_esm_pca32_joint": 1.4299124599725337,
+      "nested_esm_pca32_no_aa": 1.4270075678754173
+    },
+    "component_macro_rmse": {
+      "train_mean": 1.3973270723627096,
+      "ridge_esm_kmer": 1.3941160694749586,
+      "nested_reference_joint": 1.3375483457779385,
+      "nested_esm_pca16_joint": 1.3427026311291872,
+      "nested_esm_pca32_joint": 1.3446059540383717,
+      "nested_esm_pca32_no_aa": 1.3486587463223134
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "ridge_esm_kmer_minus_train_mean": {
+          "pooled_delta": 0.04167200278487582,
+          "pooled_CI95": [
+            -0.02423872888814689,
+            0.10640130735260002
+          ],
+          "macro_delta": -0.003211002887751002,
+          "macro_CI95": [
+            -0.06000008193535345,
+            0.05378295511791642
+          ],
+          "protein_groups_won": 160
+        },
+        "nested_reference_joint_minus_train_mean": {
+          "pooled_delta": -0.010933099933729373,
+          "pooled_CI95": [
+            -0.07841872670798565,
+            0.0567519514127796
+          ],
+          "macro_delta": -0.059778726584771125,
+          "macro_CI95": [
+            -0.11295160604007855,
+            -0.00763029489922199
+          ],
+          "protein_groups_won": 173
+        },
+        "nested_esm_pca16_joint_minus_train_mean": {
+          "pooled_delta": -0.008722738347127335,
+          "pooled_CI95": [
+            -0.07643617673201276,
+            0.06211985428822932
+          ],
+          "macro_delta": -0.05462444123352239,
+          "macro_CI95": [
+            -0.10790917547912798,
+            -0.001698463127225545
+          ],
+          "protein_groups_won": 175
+        },
+        "nested_esm_pca32_joint_minus_train_mean": {
+          "pooled_delta": -0.011286883634511247,
+          "pooled_CI95": [
+            -0.08011037401387455,
+            0.06217837593583243
+          ],
+          "macro_delta": -0.0527211183243379,
+          "macro_CI95": [
+            -0.10636156663455523,
+            0.0011410711374697537
+          ],
+          "protein_groups_won": 171
+        },
+        "nested_esm_pca32_no_aa_minus_train_mean": {
+          "pooled_delta": -0.014191775731627665,
+          "pooled_CI95": [
+            -0.0812994791699754,
+            0.05630436725184658
+          ],
+          "macro_delta": -0.04866832604039617,
+          "macro_CI95": [
+            -0.1016621659789909,
+            0.004881239925820676
+          ],
+          "protein_groups_won": 179
+        },
+        "train_mean_minus_nested_reference_joint": {
+          "pooled_delta": 0.010933099933729373,
+          "pooled_CI95": [
+            -0.056751951412779625,
+            0.07841872670798561
+          ],
+          "macro_delta": 0.059778726584771125,
+          "macro_CI95": [
+            0.007630294899221844,
+            0.1129516060400785
+          ],
+          "protein_groups_won": 223
+        },
+        "ridge_esm_kmer_minus_nested_reference_joint": {
+          "pooled_delta": 0.05260510271860519,
+          "pooled_CI95": [
+            0.04072535130201614,
+            0.06565199540622436
+          ],
+          "macro_delta": 0.05656772369702012,
+          "macro_CI95": [
+            0.042268702357421604,
+            0.0714775530595055
+          ],
+          "protein_groups_won": 110
+        },
+        "nested_esm_pca16_joint_minus_nested_reference_joint": {
+          "pooled_delta": 0.0022103615866020387,
+          "pooled_CI95": [
+            -0.004001509353298405,
+            0.009154183449538547
+          ],
+          "macro_delta": 0.005154285351248733,
+          "macro_CI95": [
+            -0.001010420869600742,
+            0.011064495214740653
+          ],
+          "protein_groups_won": 184
+        },
+        "nested_esm_pca32_joint_minus_nested_reference_joint": {
+          "pooled_delta": -0.0003537837007818734,
+          "pooled_CI95": [
+            -0.008514785663334185,
+            0.008936316107642225
+          ],
+          "macro_delta": 0.0070576082604332235,
+          "macro_CI95": [
+            -0.00014377998364310528,
+            0.014213265491942887
+          ],
+          "protein_groups_won": 195
+        },
+        "nested_esm_pca32_no_aa_minus_nested_reference_joint": {
+          "pooled_delta": -0.0032586757978982916,
+          "pooled_CI95": [
+            -0.012389517183922921,
+            0.006215882425269945
+          ],
+          "macro_delta": 0.011110400544374954,
+          "macro_CI95": [
+            0.00020704827622462514,
+            0.021954673625858328
+          ],
+          "protein_groups_won": 197
+        }
+      }
+    }
+  },
+  "seconds": 43.47,
+  "caveats": [
+    "Only original frozen TRAIN records; no development/test labels, features, or predictions accessed.",
+    "Alpha, number of PCA dimensions and variants are exploratory feature ablations, not confirmatory analysis.",
+    "Protein local alignment group rules are proxy for homology, not ortholog/domain validation.",
+    "Strict Bemis-Murcko core exclusion may retain structurally similar compounds with different cores.",
+    "BALM original assay methods, source DOI and construct provenance absent, conflicting replicate labels.",
+    "ESM2 8M 320-D mean-pooled features truncate 85 long TRAIN protein sequences at 1022 AA.",
+    "Metrics and bootstrap intervals do not correct previous exploratory model selection."
+  ]
+}
