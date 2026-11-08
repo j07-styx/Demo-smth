@@ -1,0 +1,29 @@
+{
+  "status": "ELIGIBLE_SOURCE_PROVENANCE_REPLAY_NOT_ASSAY_APPROVAL",
+  "scope": "Original source IDs for technically eligible >=15-compound tasks, same inventory as frozen preliminary study-family graph",
+  "source_families_with_cross_role_conflicts": 7,
+  "all_eligible_tasks_total": 1146,
+  "all_eligible_source_identifiers_total": 729,
+  "all_shared_cross_component_source_identifiers_total": 26,
+  "all_eligible_source_families_total": 142,
+  "conflict_families_eligible_tasks_total": 708,
+  "conflict_families_distinct_original_source_identifiers": 220,
+  "conflict_families_source_identifier_counts_by_type": {
+    "doi": 74,
+    "patent": 56,
+    "pmid": 90
+  },
+  "conflict_families_tasks_without_DOI_PMID_patent": 62,
+  "conflict_families_with_complete_eligible_task_source_ID_inventory": 7,
+  "families_original_assay_record_crosswalk_verified": 0,
+  "families_assayed_construct_verified": 0,
+  "families_scientifically_approved": 0,
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "warnings": [
+    "An exhaustive bibliography for the PREVIOUSLY SELECTED technically eligible inventory is not exhaustive of all papers, ineligible assays, patents, sources absent from BindingDB, or unresolved source aliases.",
+    "The original source technical JSONL contains affinity fields, but the existing provenance projection accessed only metadata keys; no numeric affinity labels, predictions or held-out outcomes were used or emitted.",
+    "Source-family membership is conservative DOI/PMID/patent connectivity, not proof of an identical assay, batch, construct or independently reviewed protein-homology relationship.",
+    "All original source IDs and source-to-component/role links are CONFIDENTIAL, private and never committed.",
+    "No source-table/record matching, reviewer approval, change in split membership, retraining, or reserved-test metric was performed."
+  ]
+}
