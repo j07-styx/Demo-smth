@@ -1,0 +1,511 @@
+{
+  "status": "BALM_TRAIN_ONLY_DUAL_SIMILARITY_MEMORY_ALIGNMENT_AND_SCAFFOLD_COLD_EXPLORATORY",
+  "protein_alignment_rule": "identity40_cover80",
+  "train_original_rows": 15538,
+  "total_heldout_alignment_components": 396,
+  "memory_specs": [
+    {
+      "name": "chemical_only_k64",
+      "ligand_exponent": 4,
+      "protein_exponent": 0,
+      "neighbor_count": 64
+    },
+    {
+      "name": "joint_esm8_k64",
+      "ligand_exponent": 2,
+      "protein_exponent": 8,
+      "neighbor_count": 64
+    },
+    {
+      "name": "joint_esm16_k64",
+      "ligand_exponent": 2,
+      "protein_exponent": 16,
+      "neighbor_count": 64
+    },
+    {
+      "name": "joint_esm8_k256",
+      "ligand_exponent": 2,
+      "protein_exponent": 8,
+      "neighbor_count": 256
+    }
+  ],
+  "similarity": "Normalized chiral Morgan2048 bit cosine; normalized frozen ESM2 8M protein cosine; topk similarity-weighted training labels.",
+  "weighting": "Neighbor-weighted prediction shrunk halfway toward fit-fold training mean, then 25pct blended with existing 75pct ridge/25pct descriptor booster plus inherited beta.",
+  "esm_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "folds": [
+    {
+      "fold": 1,
+      "fit_unique_pairs": 5082,
+      "heldout_original_rows": 3885,
+      "heldout_alignment_components": 98,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.3188876084957677,
+          "component_macro_rmse": 1.2860380834168499
+        },
+        "nested_esm8_reference": {
+          "pooled_rmse": 1.3003253215014958,
+          "component_macro_rmse": 1.266188151074739
+        },
+        "memory_chemical_only_k64": {
+          "pooled_rmse": 1.2777259087329458,
+          "component_macro_rmse": 1.2612211437717868
+        },
+        "ensemble_plus_memory_chemical_only_k64": {
+          "pooled_rmse": 1.273921052784789,
+          "component_macro_rmse": 1.2421483148180656
+        },
+        "memory_joint_esm8_k64": {
+          "pooled_rmse": 1.2696228324680252,
+          "component_macro_rmse": 1.2471989323676294
+        },
+        "ensemble_plus_memory_joint_esm8_k64": {
+          "pooled_rmse": 1.274243963760429,
+          "component_macro_rmse": 1.2436212747690965
+        },
+        "memory_joint_esm16_k64": {
+          "pooled_rmse": 1.2690888644276617,
+          "component_macro_rmse": 1.243538735389995
+        },
+        "ensemble_plus_memory_joint_esm16_k64": {
+          "pooled_rmse": 1.2739820501010943,
+          "component_macro_rmse": 1.241441235169015
+        },
+        "memory_joint_esm8_k256": {
+          "pooled_rmse": 1.2732212103944904,
+          "component_macro_rmse": 1.2362413660674993
+        },
+        "ensemble_plus_memory_joint_esm8_k256": {
+          "pooled_rmse": 1.2747456942457038,
+          "component_macro_rmse": 1.2398519284056233
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "fit_unique_pairs": 4278,
+      "heldout_original_rows": 3885,
+      "heldout_alignment_components": 100,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.4714968057639244,
+          "component_macro_rmse": 1.4362652343489555
+        },
+        "nested_esm8_reference": {
+          "pooled_rmse": 1.451551979654631,
+          "component_macro_rmse": 1.3274546638346016
+        },
+        "memory_chemical_only_k64": {
+          "pooled_rmse": 1.4558894245416973,
+          "component_macro_rmse": 1.398351737613701
+        },
+        "ensemble_plus_memory_chemical_only_k64": {
+          "pooled_rmse": 1.4323991177478645,
+          "component_macro_rmse": 1.3281157584509429
+        },
+        "memory_joint_esm8_k64": {
+          "pooled_rmse": 1.433837063694238,
+          "component_macro_rmse": 1.387309850257611
+        },
+        "ensemble_plus_memory_joint_esm8_k64": {
+          "pooled_rmse": 1.4307918838430747,
+          "component_macro_rmse": 1.3258521912402819
+        },
+        "memory_joint_esm16_k64": {
+          "pooled_rmse": 1.4353450408221773,
+          "component_macro_rmse": 1.3815598890295684
+        },
+        "ensemble_plus_memory_joint_esm16_k64": {
+          "pooled_rmse": 1.4299087551235103,
+          "component_macro_rmse": 1.3232906605728119
+        },
+        "memory_joint_esm8_k256": {
+          "pooled_rmse": 1.429292260223934,
+          "component_macro_rmse": 1.3819708672151998
+        },
+        "ensemble_plus_memory_joint_esm8_k256": {
+          "pooled_rmse": 1.4293989605350743,
+          "component_macro_rmse": 1.325392962536369
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "fit_unique_pairs": 4148,
+      "heldout_original_rows": 3884,
+      "heldout_alignment_components": 99,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.5266719056181142,
+          "component_macro_rmse": 1.4136384438602232
+        },
+        "nested_esm8_reference": {
+          "pooled_rmse": 1.4431091472297584,
+          "component_macro_rmse": 1.3442300638938114
+        },
+        "memory_chemical_only_k64": {
+          "pooled_rmse": 1.456009034517616,
+          "component_macro_rmse": 1.3780393050624464
+        },
+        "ensemble_plus_memory_chemical_only_k64": {
+          "pooled_rmse": 1.4169614360786673,
+          "component_macro_rmse": 1.329678718398852
+        },
+        "memory_joint_esm8_k64": {
+          "pooled_rmse": 1.4462512285885147,
+          "component_macro_rmse": 1.3603460337201692
+        },
+        "ensemble_plus_memory_joint_esm8_k64": {
+          "pooled_rmse": 1.4169031499531635,
+          "component_macro_rmse": 1.3284396496088706
+        },
+        "memory_joint_esm16_k64": {
+          "pooled_rmse": 1.4471791750037366,
+          "component_macro_rmse": 1.3665503319359058
+        },
+        "ensemble_plus_memory_joint_esm16_k64": {
+          "pooled_rmse": 1.4150630605903438,
+          "component_macro_rmse": 1.328375547349209
+        },
+        "memory_joint_esm8_k256": {
+          "pooled_rmse": 1.463683628422812,
+          "component_macro_rmse": 1.3610009886513506
+        },
+        "ensemble_plus_memory_joint_esm8_k256": {
+          "pooled_rmse": 1.419001435708928,
+          "component_macro_rmse": 1.3264483273288339
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "fit_unique_pairs": 4730,
+      "heldout_original_rows": 3884,
+      "heldout_alignment_components": 99,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "scores": {
+        "train_mean": {
+          "pooled_rmse": 1.4397193855386106,
+          "component_macro_rmse": 1.451849081855799
+        },
+        "nested_esm8_reference": {
+          "pooled_rmse": 1.5173360104779294,
+          "component_macro_rmse": 1.41170165064436
+        },
+        "memory_chemical_only_k64": {
+          "pooled_rmse": 1.4352505226790147,
+          "component_macro_rmse": 1.3964764734203885
+        },
+        "ensemble_plus_memory_chemical_only_k64": {
+          "pooled_rmse": 1.467764399114393,
+          "component_macro_rmse": 1.3886548908054763
+        },
+        "memory_joint_esm8_k64": {
+          "pooled_rmse": 1.417792225527682,
+          "component_macro_rmse": 1.391169329293983
+        },
+        "ensemble_plus_memory_joint_esm8_k64": {
+          "pooled_rmse": 1.469563046431653,
+          "component_macro_rmse": 1.3885778600890228
+        },
+        "memory_joint_esm16_k64": {
+          "pooled_rmse": 1.4020161716385955,
+          "component_macro_rmse": 1.4014088032298195
+        },
+        "ensemble_plus_memory_joint_esm16_k64": {
+          "pooled_rmse": 1.4639532574131926,
+          "component_macro_rmse": 1.3896599424586504
+        },
+        "memory_joint_esm8_k256": {
+          "pooled_rmse": 1.4279767604299411,
+          "component_macro_rmse": 1.3846573830560656
+        },
+        "ensemble_plus_memory_joint_esm8_k256": {
+          "pooled_rmse": 1.471671861312463,
+          "component_macro_rmse": 1.386169631939516
+        }
+      }
+    }
+  ],
+  "out_of_fold": {
+    "pooled_rmse": {
+      "train_mean": 1.441199343607045,
+      "nested_esm8_reference": 1.4302662436733156,
+      "memory_chemical_only_k64": 1.408194662725716,
+      "memory_joint_esm8_k64": 1.393695843498732,
+      "memory_joint_esm16_k64": 1.3902094040836948,
+      "memory_joint_esm8_k256": 1.4004811133025952,
+      "ensemble_plus_memory_chemical_only_k64": 1.3997045561807673,
+      "ensemble_plus_memory_joint_esm8_k64": 1.3998240324338607,
+      "ensemble_plus_memory_joint_esm16_k64": 1.397602447448092,
+      "ensemble_plus_memory_joint_esm8_k256": 1.4006672795569377
+    },
+    "component_macro_rmse": {
+      "train_mean": 1.3973270723627096,
+      "nested_esm8_reference": 1.3375483457779385,
+      "memory_chemical_only_k64": 1.3588684543454692,
+      "memory_joint_esm8_k64": 1.346859851859065,
+      "memory_joint_esm16_k64": 1.3486129781630887,
+      "memory_joint_esm8_k256": 1.3413356550383058,
+      "ensemble_plus_memory_chemical_only_k64": 1.322366510122458,
+      "ensemble_plus_memory_joint_esm8_k64": 1.3218303977562906,
+      "ensemble_plus_memory_joint_esm16_k64": 1.320898536855613,
+      "ensemble_plus_memory_joint_esm8_k256": 1.319681725265037
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "nested_esm8_reference_minus_train_mean": {
+          "pooled_delta": -0.010933099933729373,
+          "pooled_CI95": [
+            -0.07841872670798565,
+            0.0567519514127796
+          ],
+          "macro_delta": -0.059778726584771125,
+          "macro_CI95": [
+            -0.11295160604007855,
+            -0.00763029489922199
+          ],
+          "protein_groups_won": 173
+        },
+        "memory_chemical_only_k64_minus_train_mean": {
+          "pooled_delta": -0.03300468088132891,
+          "pooled_CI95": [
+            -0.060291001571319065,
+            -0.010462159500371184
+          ],
+          "macro_delta": -0.038458618017240376,
+          "macro_CI95": [
+            -0.06154418493939072,
+            -0.015651227773182303
+          ],
+          "protein_groups_won": 202
+        },
+        "memory_joint_esm8_k64_minus_train_mean": {
+          "pooled_delta": -0.047503500108312835,
+          "pooled_CI95": [
+            -0.07820986727206491,
+            -0.019253610704541818
+          ],
+          "macro_delta": -0.050467220503644494,
+          "macro_CI95": [
+            -0.07400528559765476,
+            -0.026384210055123865
+          ],
+          "protein_groups_won": 220
+        },
+        "memory_joint_esm16_k64_minus_train_mean": {
+          "pooled_delta": -0.05098993952335018,
+          "pooled_CI95": [
+            -0.08194610478885257,
+            -0.02274588899885701
+          ],
+          "macro_delta": -0.048714094199620916,
+          "macro_CI95": [
+            -0.0709925225725571,
+            -0.025830366885306006
+          ],
+          "protein_groups_won": 227
+        },
+        "memory_joint_esm8_k256_minus_train_mean": {
+          "pooled_delta": -0.040718230304449765,
+          "pooled_CI95": [
+            -0.06703290085971225,
+            -0.01587620752266467
+          ],
+          "macro_delta": -0.055991417324403825,
+          "macro_CI95": [
+            -0.07472287985188099,
+            -0.03713863452613713
+          ],
+          "protein_groups_won": 222
+        },
+        "ensemble_plus_memory_chemical_only_k64_minus_train_mean": {
+          "pooled_delta": -0.04149478742627766,
+          "pooled_CI95": [
+            -0.09680693130675151,
+            0.012159965455482364
+          ],
+          "macro_delta": -0.0749605622402516,
+          "macro_CI95": [
+            -0.11863810112068465,
+            -0.0315634668921961
+          ],
+          "protein_groups_won": 185
+        },
+        "ensemble_plus_memory_joint_esm8_k64_minus_train_mean": {
+          "pooled_delta": -0.04137531117318427,
+          "pooled_CI95": [
+            -0.09762510568122455,
+            0.015262303858788325
+          ],
+          "macro_delta": -0.07549667460641896,
+          "macro_CI95": [
+            -0.11940942671616682,
+            -0.031073866244720815
+          ],
+          "protein_groups_won": 192
+        },
+        "ensemble_plus_memory_joint_esm16_k64_minus_train_mean": {
+          "pooled_delta": -0.043596896158953014,
+          "pooled_CI95": [
+            -0.0996075676659536,
+            0.012073557555907173
+          ],
+          "macro_delta": -0.0764285355070966,
+          "macro_CI95": [
+            -0.120307113083658,
+            -0.032539173667797884
+          ],
+          "protein_groups_won": 192
+        },
+        "ensemble_plus_memory_joint_esm8_k256_minus_train_mean": {
+          "pooled_delta": -0.04053206405010723,
+          "pooled_CI95": [
+            -0.096139934008224,
+            0.015839030689522044
+          ],
+          "macro_delta": -0.07764534709767257,
+          "macro_CI95": [
+            -0.1208819733049076,
+            -0.034069184425040276
+          ],
+          "protein_groups_won": 185
+        },
+        "train_mean_minus_nested_esm8_reference": {
+          "pooled_delta": 0.010933099933729373,
+          "pooled_CI95": [
+            -0.056751951412779625,
+            0.07841872670798561
+          ],
+          "macro_delta": 0.059778726584771125,
+          "macro_CI95": [
+            0.007630294899221844,
+            0.1129516060400785
+          ],
+          "protein_groups_won": 223
+        },
+        "memory_chemical_only_k64_minus_nested_esm8_reference": {
+          "pooled_delta": -0.022071580947599534,
+          "pooled_CI95": [
+            -0.07772911296678059,
+            0.028590093011690573
+          ],
+          "macro_delta": 0.02132010856753075,
+          "macro_CI95": [
+            -0.020422928805808187,
+            0.06333859751202739
+          ],
+          "protein_groups_won": 224
+        },
+        "memory_joint_esm8_k64_minus_nested_esm8_reference": {
+          "pooled_delta": -0.03657040017458346,
+          "pooled_CI95": [
+            -0.08365046748846201,
+            0.009167448758091076
+          ],
+          "macro_delta": 0.00931150608112663,
+          "macro_CI95": [
+            -0.029788041150975435,
+            0.04793871698161504
+          ],
+          "protein_groups_won": 235
+        },
+        "memory_joint_esm16_k64_minus_nested_esm8_reference": {
+          "pooled_delta": -0.04005683958962081,
+          "pooled_CI95": [
+            -0.0904090692821692,
+            0.008625710796130103
+          ],
+          "macro_delta": 0.011064632385150208,
+          "macro_CI95": [
+            -0.02997733509641152,
+            0.05199999069786524
+          ],
+          "protein_groups_won": 239
+        },
+        "memory_joint_esm8_k256_minus_nested_esm8_reference": {
+          "pooled_delta": -0.029785130370720392,
+          "pooled_CI95": [
+            -0.07795473528072902,
+            0.01886010865710397
+          ],
+          "macro_delta": 0.0037873092603672998,
+          "macro_CI95": [
+            -0.036986097788265386,
+            0.04505896411891509
+          ],
+          "protein_groups_won": 233
+        },
+        "ensemble_plus_memory_chemical_only_k64_minus_nested_esm8_reference": {
+          "pooled_delta": -0.030561687492548284,
+          "pooled_CI95": [
+            -0.046622299108564816,
+            -0.016857789472068535
+          ],
+          "macro_delta": -0.01518183565548048,
+          "macro_CI95": [
+            -0.02581558934809487,
+            -0.004502859748396425
+          ],
+          "protein_groups_won": 253
+        },
+        "ensemble_plus_memory_joint_esm8_k64_minus_nested_esm8_reference": {
+          "pooled_delta": -0.030442211239454897,
+          "pooled_CI95": [
+            -0.04317607934201614,
+            -0.01851323774318495
+          ],
+          "macro_delta": -0.015717948021647832,
+          "macro_CI95": [
+            -0.025544592519768893,
+            -0.005764094067800044
+          ],
+          "protein_groups_won": 259
+        },
+        "ensemble_plus_memory_joint_esm16_k64_minus_nested_esm8_reference": {
+          "pooled_delta": -0.03266379622522364,
+          "pooled_CI95": [
+            -0.046506746050895276,
+            -0.01993367131883461
+          ],
+          "macro_delta": -0.016649808922325482,
+          "macro_CI95": [
+            -0.02696793717431214,
+            -0.0061815835178086
+          ],
+          "protein_groups_won": 260
+        },
+        "ensemble_plus_memory_joint_esm8_k256_minus_nested_esm8_reference": {
+          "pooled_delta": -0.029598964116377857,
+          "pooled_CI95": [
+            -0.041996462638697295,
+            -0.017918692517832936
+          ],
+          "macro_delta": -0.017866620512901443,
+          "macro_CI95": [
+            -0.028090881579123823,
+            -0.007386715271054283
+          ],
+          "protein_groups_won": 263
+        }
+      }
+    }
+  },
+  "seconds": 47.18,
+  "caveats": [
+    "Only frozen TRAIN records, never original inner-development or reserved-test labels/inputs.",
+    "All hyperparameters are exploratory, not independent verification.",
+    "Neighborhood memory uses only fold-training labels; no validation labels fitted.",
+    "Alignment-groups are homology proxies, Murcko exclusion does not guarantee chemical dissimilarity.",
+    "BALM source lacks assay DOI/method/construct, repeated identical inputs can disagree."
+  ]
+}
