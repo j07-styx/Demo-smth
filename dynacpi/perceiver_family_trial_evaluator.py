@@ -1,4 +1,4 @@
-"""Evaluator-only source-family-clustered six-/seven-arm K-shot comparisons.
+"""Evaluator-only source-family-clustered seven- or ten-arm K-shot comparisons.
 
 This module accepts already-created paired predictions and separately held
 evaluation labels. It NEVER constructs episodes, trains models or reads files.
@@ -22,6 +22,10 @@ ARMS=(
     "d5_no_geometry", "d5_shuffled", "d5_geometry",
 )
 SUPPORT_CONTROLS=("p5_global","p5_local","p5_kernel_ridge")
+KRR_CHALLENGERS=(
+    "krr_loo_geometry","krr_permutation_geometry",
+    "krr_shuffled_permutation_geometry",
+)
 REQUIRED=(
     "task_id","construct_id","protein_component_id","source_family_sha256",
     "assay_key","seed","draw","query_id","support_panel_sha256",
@@ -57,6 +61,7 @@ def evaluate_source_family_fewshot(
     bootstrap_draws: int=2000,
     bootstrap_seed: int=1109,
     min_independent_families: int=5,
+    include_krr_challengers: bool=False,
 ):
     """Calculate paired differences on source-independent family clusters.
 
@@ -67,6 +72,12 @@ def evaluate_source_family_fewshot(
     """
     if reference_arm not in SUPPORT_CONTROLS:
         raise ValueError("reference_arm must be a PRESELECTED same-support Perceiver control")
+    if not isinstance(include_krr_challengers,bool):
+        raise TypeError("include_krr_challengers must be an explicit bool")
+    if include_krr_challengers and reference_arm!="p5_kernel_ridge":
+        raise ValueError("KRR challenge requires PRESELECTED p5_kernel_ridge reference")
+    arms=ARMS+(KRR_CHALLENGERS if include_krr_challengers else ())
+    required=REQUIRED+(KRR_CHALLENGERS if include_krr_challengers else ())
     for name,val,least in (
         ("expected_queries",expected_queries,1),
         ("expected_support",expected_support,0),
@@ -86,11 +97,11 @@ def evaluate_source_family_fewshot(
     query_truth={}
     queries_by_task=defaultdict(set)
     seen=set()
-    pooled_sum_squares={a:0.0 for a in ARMS}
-    pooled_sum_absolutes={a:0.0 for a in ARMS}
+    pooled_sum_squares={a:0.0 for a in arms}
+    pooled_sum_absolutes={a:0.0 for a in arms}
     total=0
     for row in records:
-        if any(k not in row for k in REQUIRED):
+        if any(k not in row for k in required):
             raise ValueError("Incomplete paired source-family evaluation row")
         task,construct,component,family,assay=[
             str(row[key]) for key in (
@@ -138,7 +149,7 @@ def evaluate_source_family_fewshot(
             raise ValueError("Duplicate paired query row")
         seen.add(key)
         y=float(row["y"])
-        predictions={a:float(row[a]) for a in ARMS}
+        predictions={a:float(row[a]) for a in arms}
         if not math.isfinite(y) or any(not math.isfinite(x) for x in predictions.values()):
             raise ValueError("Nonfinite label or model prediction")
         if (task,query) in query_truth and abs(y-query_truth[(task,query)])>1e-10:
@@ -152,6 +163,17 @@ def evaluate_source_family_fewshot(
             abs(predictions["d5_shuffled"]-predictions["p5_global"])>1e-10
         ):
             raise ValueError("Unavailable geometry must fall back exactly to P5-global")
+        if include_krr_challengers:
+            # All KRR challengers are bounded, opt-in refinements of exactly
+            # the SAME frozen Perceiver KRR reference, never new label budgets.
+            for name in KRR_CHALLENGERS:
+                if abs(predictions[name]-predictions["p5_kernel_ridge"])>0.50000001:
+                    raise ValueError("KRR challenger escaped predeclared geometry delta cap")
+            if not row["geometry_available"] and any(
+                abs(predictions[name]-predictions["p5_kernel_ridge"])>1e-10
+                for name in KRR_CHALLENGERS
+            ):
+                raise ValueError("Unavailable geometry must fall back exactly to P5-KRR")
         episodes[ep].append((query,y,predictions))
         for a,value in predictions.items():
             pooled_sum_squares[a]+=(y-value)**2
@@ -168,7 +190,7 @@ def evaluate_source_family_fewshot(
             raise ValueError("Same task has mismatched query set across draws")
         grids[task].add((seed,draw))
         row_scores={}
-        for arm in ARMS:
+        for arm in arms:
             squares=[(y-p[arm])**2 for _,y,p in items]
             row_scores[arm]=math.sqrt(_mean(squares))
         task_scores[task].append(row_scores)
@@ -189,8 +211,8 @@ def evaluate_source_family_fewshot(
         raise ValueError("Not enough independent source families for family-cluster uncertainty")
     family_scores={fam:_average_dicts(scores) for fam,scores in components_by_family.items()}
     macro=_average_dicts(list(family_scores.values()))
-    pooled={a:math.sqrt(pooled_sum_squares[a]/total) for a in ARMS}
-    pooled_mae={a:pooled_sum_absolutes[a]/total for a in ARMS}
+    pooled={a:math.sqrt(pooled_sum_squares[a]/total) for a in arms}
+    pooled_mae={a:pooled_sum_absolutes[a]/total for a in arms}
 
     family_values=list(family_scores.values())
     rng=random.Random(bootstrap_seed)
@@ -213,8 +235,33 @@ def evaluate_source_family_fewshot(
             ],
             "family_count":len(family_values),
         }
+    if include_krr_challengers:
+        krr_ref="p5_kernel_ridge"
+        krr_candidate="krr_permutation_geometry"
+        for comparison_arm in (
+            krr_ref,"krr_loo_geometry","krr_shuffled_permutation_geometry"
+        ):
+            differences=[
+                row[comparison_arm]-row[krr_candidate]
+                for row in family_values
+            ]
+            draws=[_mean(differences[j] for j in sample) for sample in resamples]
+            observed=_mean(differences)
+            comparison["krr_perm_vs_"+comparison_arm]={
+                "family_macro_RMSE_reduction":observed,
+                "relative_reduction_percent":(
+                    observed/macro[comparison_arm]*100
+                    if macro[comparison_arm]>0 else None
+                ),
+                "paired_family_bootstrap_CI95":[
+                    _interpolate_quantile(draws,0.025),
+                    _interpolate_quantile(draws,0.975)
+                ],
+                "family_count":len(family_values),
+            }
     return {
         "status":"UNVERIFIED_DATA_ORIGIN_EVALUATOR_ONLY_NO_SCIENTIFIC_APPROVAL",
+        "include_krr_challengers":include_krr_challengers,
         "reference_arm_preselected":reference_arm,
         "expected_support":expected_support,
         "n_source_families":len(family_values),
