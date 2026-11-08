@@ -1,0 +1,150 @@
+{
+  "status": "EXPLORATORY_PUBLIC_BALM_COLD_TARGET_NONLINEAR_DESCRIPTOR_DEV_ONLY",
+  "training_pairs_unique": 12315,
+  "inner_dev_original_pairs": 3891,
+  "component_disjoint": true,
+  "input_features": "21 RDKit physicochemical descriptors; 21 protein AA-composition features",
+  "model": "HistGradientBoostingRegressor",
+  "fixed_hyperparameters": {
+    "max_iter": 180,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 40,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "cv_baseline": [
+    {
+      "pooled_rmse": 1.391102564145054,
+      "component_macro_rmse": 1.2868731297992564
+    },
+    {
+      "pooled_rmse": 1.5234755514327498,
+      "component_macro_rmse": 1.346942385331757
+    },
+    {
+      "pooled_rmse": 1.3943445996421933,
+      "component_macro_rmse": 1.3499002674285108
+    }
+  ],
+  "cv_models": {
+    "chemical_only": [
+      {
+        "pooled_rmse": 1.2190753138654118,
+        "component_macro_rmse": 1.2671909369165146
+      },
+      {
+        "pooled_rmse": 1.3828224957848896,
+        "component_macro_rmse": 1.2528269336661815
+      },
+      {
+        "pooled_rmse": 1.4673320360343696,
+        "component_macro_rmse": 1.3189559082449422
+      }
+    ],
+    "chemical_plus_protein": [
+      {
+        "pooled_rmse": 1.3000552141972148,
+        "component_macro_rmse": 1.2232361573946187
+      },
+      {
+        "pooled_rmse": 1.384346530827419,
+        "component_macro_rmse": 1.2030566536080696
+      },
+      {
+        "pooled_rmse": 1.4845193359906632,
+        "component_macro_rmse": 1.283900932926477
+      }
+    ],
+    "chemical_weighted_by_component": [
+      {
+        "pooled_rmse": 1.2185213984087437,
+        "component_macro_rmse": 1.2148556786922127
+      },
+      {
+        "pooled_rmse": 1.4045253945529967,
+        "component_macro_rmse": 1.2463461170834786
+      },
+      {
+        "pooled_rmse": 1.4676408545934025,
+        "component_macro_rmse": 1.332310097552443
+      }
+    ],
+    "chemical_plus_protein_weighted": [
+      {
+        "pooled_rmse": 1.2851611567395098,
+        "component_macro_rmse": 1.186629745725772
+      },
+      {
+        "pooled_rmse": 1.4256092023293188,
+        "component_macro_rmse": 1.2204023972165836
+      },
+      {
+        "pooled_rmse": 1.3767624559177813,
+        "component_macro_rmse": 1.2488534974194638
+      }
+    ]
+  },
+  "cv_ranking": [
+    {
+      "name": "chemical_plus_protein_weighted",
+      "cv_pooled": 1.36251093832887,
+      "cv_macro": 1.2186285467872733,
+      "relative_joint": 0.9331640192639644
+    },
+    {
+      "name": "chemical_plus_protein",
+      "cv_pooled": 1.3896403603384322,
+      "cv_macro": 1.2367312479763883,
+      "relative_joint": 0.9494244363542838
+    },
+    {
+      "name": "chemical_weighted_by_component",
+      "cv_pooled": 1.3635625491850476,
+      "cv_macro": 1.2645039644427116,
+      "relative_joint": 0.9508037040223851
+    },
+    {
+      "name": "chemical_only",
+      "cv_pooled": 1.3564099485615568,
+      "cv_macro": 1.2796579262758794,
+      "relative_joint": 0.954019742484835
+    }
+  ],
+  "cv_selected": "chemical_plus_protein_weighted",
+  "dev_train_only_mean": {
+    "pooled_rmse": 1.589844112086348,
+    "component_macro_rmse": 1.4640933905703184
+  },
+  "dev_model_ablation": {
+    "chemical_only": {
+      "pooled_rmse": 1.4197584441725406,
+      "component_macro_rmse": 1.3241094321696292
+    },
+    "chemical_plus_protein": {
+      "pooled_rmse": 1.4395209889547205,
+      "component_macro_rmse": 1.2995600382928385
+    },
+    "chemical_weighted_by_component": {
+      "pooled_rmse": 1.410521050474152,
+      "component_macro_rmse": 1.309430333078203
+    },
+    "chemical_plus_protein_weighted": {
+      "pooled_rmse": 1.4966178544286077,
+      "component_macro_rmse": 1.2993126693676205
+    }
+  },
+  "dev_cv_selected": {
+    "pooled_rmse": 1.4966178544286077,
+    "component_macro_rmse": 1.2993126693676205
+  },
+  "seconds": 19.4,
+  "warnings": [
+    "Inner-dev repeatedly inspected; exploratory only.",
+    "Protein 3-mer graph grouping is not validated sequence homology clustering.",
+    "Published BALM source lacks original assay DOI and measurement protocol fields.",
+    "Prospective test not evaluated or used for model selection."
+  ]
+}
