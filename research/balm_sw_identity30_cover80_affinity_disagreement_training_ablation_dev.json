@@ -1,0 +1,346 @@
+{
+  "status": "EXPLORATORY_BALM_TRAIN_ONLY_SW_PROTEIN_AND_SCAFFOLD_COLD_LABEL_NOISE_ABLATION",
+  "alignment_group_rule": "identity30_cover80",
+  "cohort": "frozen BALM TRAIN only",
+  "affinity_disagreement_filter": "remove entire exact protein+canonical-isomeric-SMILES groups from each outer training fold when repeated labels have span >=1.0 p-affinity units; no heldout labels used",
+  "median_aggregation": "median on repeated exact protein+raw SMILES training pairs; no exclusion",
+  "selection": "thresholds and treatments fixed after independent TRAIN-only label distribution audit, exploratory",
+  "esm_feature_cache_sha256": "4efd898570f57e7d5fee65f56e0b345ef280025859f3ef802f17e587017bbf95",
+  "folds": [
+    {
+      "fold": 1,
+      "training_original_pairs": 6386,
+      "training_unique_original": 5676,
+      "training_unique_median": 5676,
+      "training_unique_after_conflict_exclusion": 5572,
+      "removed_groups": {
+        "discarded_canonical_exact_input_groups": 104,
+        "discarded_original_training_rows": 342,
+        "retained_training_rows": 6044,
+        "conflict_log_affinity_span_threshold": 1.0
+      },
+      "heldout_original_pairs": 3885,
+      "heldout_alignment_groups": 61,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "metrics": {
+        "original_mean": {
+          "pooled_rmse": 1.1543913701059498,
+          "component_macro_rmse": 1.40133856464408
+        },
+        "original_ensemble": {
+          "pooled_rmse": 1.3938966839026539,
+          "component_macro_rmse": 1.3493085946480117
+        },
+        "median_mean": {
+          "pooled_rmse": 1.1544432587382998,
+          "component_macro_rmse": 1.401380704067539
+        },
+        "median_ensemble": {
+          "pooled_rmse": 1.399685354231032,
+          "component_macro_rmse": 1.347935721081347
+        },
+        "exclude_mean": {
+          "pooled_rmse": 1.1532427404414416,
+          "component_macro_rmse": 1.4004023935985075
+        },
+        "exclude_ge1_ensemble": {
+          "pooled_rmse": 1.406184298162226,
+          "component_macro_rmse": 1.34673407412663
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_original_pairs": 4552,
+      "training_unique_original": 3904,
+      "training_unique_median": 3904,
+      "training_unique_after_conflict_exclusion": 3787,
+      "removed_groups": {
+        "discarded_canonical_exact_input_groups": 117,
+        "discarded_original_training_rows": 409,
+        "retained_training_rows": 4143,
+        "conflict_log_affinity_span_threshold": 1.0
+      },
+      "heldout_original_pairs": 3885,
+      "heldout_alignment_groups": 66,
+      "scaffold_overlap": 0,
+      "inherited_beta": 0.75,
+      "metrics": {
+        "original_mean": {
+          "pooled_rmse": 1.5954902745710502,
+          "component_macro_rmse": 1.3900208731710328
+        },
+        "original_ensemble": {
+          "pooled_rmse": 1.4411480873603681,
+          "component_macro_rmse": 1.342305874247129
+        },
+        "median_mean": {
+          "pooled_rmse": 1.5954358464301424,
+          "component_macro_rmse": 1.3900580606788546
+        },
+        "median_ensemble": {
+          "pooled_rmse": 1.4410105635947206,
+          "component_macro_rmse": 1.3405372182677309
+        },
+        "exclude_mean": {
+          "pooled_rmse": 1.6013527067260123,
+          "component_macro_rmse": 1.3861444001721808
+        },
+        "exclude_ge1_ensemble": {
+          "pooled_rmse": 1.444791353959491,
+          "component_macro_rmse": 1.334116685532558
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_original_pairs": 5391,
+      "training_unique_original": 4869,
+      "training_unique_median": 4869,
+      "training_unique_after_conflict_exclusion": 4780,
+      "removed_groups": {
+        "discarded_canonical_exact_input_groups": 89,
+        "discarded_original_training_rows": 259,
+        "retained_training_rows": 5132,
+        "conflict_log_affinity_span_threshold": 1.0
+      },
+      "heldout_original_pairs": 3884,
+      "heldout_alignment_groups": 72,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "metrics": {
+        "original_mean": {
+          "pooled_rmse": 1.6804527538671503,
+          "component_macro_rmse": 1.6316645993280003
+        },
+        "original_ensemble": {
+          "pooled_rmse": 1.6304216703414165,
+          "component_macro_rmse": 1.4746774413920432
+        },
+        "median_mean": {
+          "pooled_rmse": 1.6805190336102804,
+          "component_macro_rmse": 1.6317947432873237
+        },
+        "median_ensemble": {
+          "pooled_rmse": 1.6334338414973606,
+          "component_macro_rmse": 1.4750948763448886
+        },
+        "exclude_mean": {
+          "pooled_rmse": 1.680122620413984,
+          "component_macro_rmse": 1.6310137736739516
+        },
+        "exclude_ge1_ensemble": {
+          "pooled_rmse": 1.6227950455247808,
+          "component_macro_rmse": 1.4760670969354397
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_original_pairs": 5766,
+      "training_unique_original": 5063,
+      "training_unique_median": 5063,
+      "training_unique_after_conflict_exclusion": 4954,
+      "removed_groups": {
+        "discarded_canonical_exact_input_groups": 109,
+        "discarded_original_training_rows": 350,
+        "retained_training_rows": 5416,
+        "conflict_log_affinity_span_threshold": 1.0
+      },
+      "heldout_original_pairs": 3884,
+      "heldout_alignment_groups": 72,
+      "scaffold_overlap": 0,
+      "inherited_beta": 1.0,
+      "metrics": {
+        "original_mean": {
+          "pooled_rmse": 1.354834452727313,
+          "component_macro_rmse": 1.4143386596567942
+        },
+        "original_ensemble": {
+          "pooled_rmse": 1.362212798021461,
+          "component_macro_rmse": 1.342200647308473
+        },
+        "median_mean": {
+          "pooled_rmse": 1.3547579109412275,
+          "component_macro_rmse": 1.4144833795830118
+        },
+        "median_ensemble": {
+          "pooled_rmse": 1.3597773238252078,
+          "component_macro_rmse": 1.3384218349576493
+        },
+        "exclude_mean": {
+          "pooled_rmse": 1.355202996337079,
+          "component_macro_rmse": 1.4136607839680315
+        },
+        "exclude_ge1_ensemble": {
+          "pooled_rmse": 1.3629884481228225,
+          "component_macro_rmse": 1.3350211631498392
+        }
+      }
+    }
+  ],
+  "out_of_fold": {
+    "pooled_rmse": {
+      "original_mean": 1.4609590975570728,
+      "original_ensemble": 1.460624071566603,
+      "median_mean": 1.460955802157353,
+      "median_ensemble": 1.462247332614941,
+      "exclude_mean": 1.4623258880158636,
+      "exclude_ge1_ensemble": 1.4625254457925103
+    },
+    "component_macro_rmse": {
+      "original_mean": 1.4632297591124805,
+      "original_ensemble": 1.3790230050194698,
+      "median_mean": 1.4633213276737578,
+      "median_ensemble": 1.3773901793557755,
+      "exclude_mean": 1.4617219356866997,
+      "exclude_ge1_ensemble": 1.3749108283875031
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "comparisons": {
+        "original_mean_minus_original_ensemble": {
+          "pooled_delta": 0.00033502599046975057,
+          "pooled_CI95": [
+            -0.13054891611170857,
+            0.13210002381530472
+          ],
+          "macro_delta": 0.0842067540930107,
+          "macro_CI95": [
+            0.018733212712616028,
+            0.15014517648050751
+          ],
+          "protein_groups_won": 136
+        },
+        "median_mean_minus_original_ensemble": {
+          "pooled_delta": 0.000331730590749979,
+          "pooled_CI95": [
+            -0.13050198542847713,
+            0.13213177016198402
+          ],
+          "macro_delta": 0.08429832265428794,
+          "macro_CI95": [
+            0.018832871550604324,
+            0.15026057028384462
+          ],
+          "protein_groups_won": 136
+        },
+        "median_ensemble_minus_original_ensemble": {
+          "pooled_delta": 0.0016232610483379872,
+          "pooled_CI95": [
+            -0.0014547992573433477,
+            0.00406414129089469
+          ],
+          "macro_delta": -0.0016328256636943816,
+          "macro_CI95": [
+            -0.00514023088277008,
+            0.0019097110231670082
+          ],
+          "protein_groups_won": 143
+        },
+        "exclude_mean_minus_original_ensemble": {
+          "pooled_delta": 0.0017018164492605958,
+          "pooled_CI95": [
+            -0.13118828096522767,
+            0.1355209439819988
+          ],
+          "macro_delta": 0.08269893066722989,
+          "macro_CI95": [
+            0.017394902626866927,
+            0.14842947330322256
+          ],
+          "protein_groups_won": 136
+        },
+        "exclude_ge1_ensemble_minus_original_ensemble": {
+          "pooled_delta": 0.001901374225907304,
+          "pooled_CI95": [
+            -0.005566670547510644,
+            0.0063320027571856
+          ],
+          "macro_delta": -0.004112176631966724,
+          "macro_CI95": [
+            -0.010295692269089562,
+            0.0023186783553140904
+          ],
+          "protein_groups_won": 150
+        },
+        "original_ensemble_minus_original_mean": {
+          "pooled_delta": -0.00033502599046975057,
+          "pooled_CI95": [
+            -0.13210002381530475,
+            0.1305489161117085
+          ],
+          "macro_delta": -0.0842067540930107,
+          "macro_CI95": [
+            -0.15014517648050751,
+            -0.018733212712616045
+          ],
+          "protein_groups_won": 135
+        },
+        "median_mean_minus_original_mean": {
+          "pooled_delta": -3.2953997197715523e-06,
+          "pooled_CI95": [
+            -6.118425815525575e-05,
+            7.35468649888936e-05
+          ],
+          "macro_delta": 9.156856127723323e-05,
+          "macro_CI95": [
+            4.698867029765408e-05,
+            0.00013598730578830978
+          ],
+          "protein_groups_won": 106
+        },
+        "median_ensemble_minus_original_mean": {
+          "pooled_delta": 0.0012882350578682367,
+          "pooled_CI95": [
+            -0.1308788566993896,
+            0.13290003868327158
+          ],
+          "macro_delta": -0.08583957975670509,
+          "macro_CI95": [
+            -0.1519030229549639,
+            -0.0205328721705
+          ],
+          "protein_groups_won": 135
+        },
+        "exclude_mean_minus_original_mean": {
+          "pooled_delta": 0.0013667904587908453,
+          "pooled_CI95": [
+            -0.0011378483648606496,
+            0.004353137181509689
+          ],
+          "macro_delta": -0.0015078234257808187,
+          "macro_CI95": [
+            -0.002350784362791747,
+            -0.0007147801452914281
+          ],
+          "protein_groups_won": 165
+        },
+        "exclude_ge1_ensemble_minus_original_mean": {
+          "pooled_delta": 0.0015663482354375535,
+          "pooled_CI95": [
+            -0.13161680151533398,
+            0.1320866701477175
+          ],
+          "macro_delta": -0.08831893072497743,
+          "macro_CI95": [
+            -0.15513691861539275,
+            -0.023235647998414016
+          ],
+          "protein_groups_won": 135
+        }
+      }
+    }
+  },
+  "seconds": 140.5,
+  "warnings": [
+    "Conflicting repeated labels may represent different legitimate assay conditions; no claim they are errors.",
+    "Original source assay DOI, technique, experimental condition and construct absent.",
+    "No data change applied to reserved test; all training exclusions are within fit fold only.",
+    "Original inner-development or reserved prospective test inputs, labels and predictions not accessed.",
+    "Protein grouping is an alignment-derived homology PROXY, not verified homology.",
+    "Data filtering and median are motivated by explored TRAIN labels; model benchmarking still exploratory."
+  ]
+}
