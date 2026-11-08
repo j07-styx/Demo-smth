@@ -1,0 +1,195 @@
+{
+  "status": "BALM_EXPLORATORY_GROUPED_TRAIN_CV_SELECTED_INTERACTION_DEV_NO_TEST",
+  "train_unique_pairs": 12315,
+  "dev_rows": 3891,
+  "train_protein_components": 519,
+  "dev_protein_components": 173,
+  "features": "Morgan chirality2048 + TF-IDF protein 3-4mers max4096 scale0.25, optional normalized rank16 by rank16 outer-product interaction learned via TruncatedSVD on training only",
+  "rank": 16,
+  "alpha_grid": [
+    1.0,
+    10.0
+  ],
+  "cross_scale_grid": [
+    0.0,
+    0.25,
+    1.0
+  ],
+  "train_only_groupcv": {
+    "folds": [
+      {
+        "fold": 1,
+        "train_pairs": 9841,
+        "valid_pairs": 2474,
+        "train_groups": 415,
+        "valid_groups": 104,
+        "baseline": {
+          "pooled_rmse": 1.3965925670035368,
+          "component_macro_rmse": 1.278199384111795
+        },
+        "models": {
+          "alpha=1.0|cross=0.0": {
+            "pooled_rmse": 1.1289876391473308,
+            "component_macro_rmse": 1.1014504894702017
+          },
+          "alpha=1.0|cross=0.25": {
+            "pooled_rmse": 1.1398802966003887,
+            "component_macro_rmse": 1.0923441567950927
+          },
+          "alpha=1.0|cross=1.0": {
+            "pooled_rmse": 1.1745241533680817,
+            "component_macro_rmse": 1.0996514874731202
+          },
+          "alpha=10.0|cross=0.0": {
+            "pooled_rmse": 1.185340215965361,
+            "component_macro_rmse": 1.1459644467832386
+          },
+          "alpha=10.0|cross=0.25": {
+            "pooled_rmse": 1.1861123562001172,
+            "component_macro_rmse": 1.1321590177274357
+          },
+          "alpha=10.0|cross=1.0": {
+            "pooled_rmse": 1.2033074567106832,
+            "component_macro_rmse": 1.1259540390299623
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_pairs": 9468,
+        "valid_pairs": 2847,
+        "train_groups": 415,
+        "valid_groups": 104,
+        "baseline": {
+          "pooled_rmse": 1.5061670730387564,
+          "component_macro_rmse": 1.3374281146199054
+        },
+        "models": {
+          "alpha=1.0|cross=0.0": {
+            "pooled_rmse": 1.29657623025173,
+            "component_macro_rmse": 1.1932657356632486
+          },
+          "alpha=1.0|cross=0.25": {
+            "pooled_rmse": 1.2920034678303278,
+            "component_macro_rmse": 1.1752311377986617
+          },
+          "alpha=1.0|cross=1.0": {
+            "pooled_rmse": 1.28554218874565,
+            "component_macro_rmse": 1.1723688475165968
+          },
+          "alpha=10.0|cross=0.0": {
+            "pooled_rmse": 1.3550295317269097,
+            "component_macro_rmse": 1.237385112970125
+          },
+          "alpha=10.0|cross=0.25": {
+            "pooled_rmse": 1.3478892397090334,
+            "component_macro_rmse": 1.2224189975454827
+          },
+          "alpha=10.0|cross=1.0": {
+            "pooled_rmse": 1.3442353165200212,
+            "component_macro_rmse": 1.2083997673939038
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_pairs": 9879,
+        "valid_pairs": 2436,
+        "train_groups": 415,
+        "valid_groups": 104,
+        "baseline": {
+          "pooled_rmse": 1.4154089588724441,
+          "component_macro_rmse": 1.3279937378259408
+        },
+        "models": {
+          "alpha=1.0|cross=0.0": {
+            "pooled_rmse": 1.5358426373080958,
+            "component_macro_rmse": 1.2567310871182569
+          },
+          "alpha=1.0|cross=0.25": {
+            "pooled_rmse": 1.5088038396701917,
+            "component_macro_rmse": 1.2349166309751176
+          },
+          "alpha=1.0|cross=1.0": {
+            "pooled_rmse": 1.4875757195334158,
+            "component_macro_rmse": 1.22522366377288
+          },
+          "alpha=10.0|cross=0.0": {
+            "pooled_rmse": 1.4629230323250173,
+            "component_macro_rmse": 1.2678427503416922
+          },
+          "alpha=10.0|cross=0.25": {
+            "pooled_rmse": 1.4465600241064143,
+            "component_macro_rmse": 1.2573771798891469
+          },
+          "alpha=10.0|cross=1.0": {
+            "pooled_rmse": 1.4090159114885605,
+            "component_macro_rmse": 1.2368649306348358
+          }
+        }
+      }
+    ],
+    "ranking": [
+      {
+        "name": "alpha=1.0|cross=0.25",
+        "pooled": 1.3135625347003028,
+        "macro": 1.1674973085229574,
+        "balanced_normalized_cv": 0.9003620679813769
+      },
+      {
+        "name": "alpha=1.0|cross=1.0",
+        "pooled": 1.3158806872157156,
+        "macro": 1.1657479995875324,
+        "balanced_normalized_cv": 0.9005019544040966
+      },
+      {
+        "name": "alpha=1.0|cross=0.0",
+        "pooled": 1.3204688355690521,
+        "macro": 1.183815770750569,
+        "balanced_normalized_cv": 0.9089680139353918
+      },
+      {
+        "name": "alpha=10.0|cross=1.0",
+        "pooled": 1.3188528949064215,
+        "macro": 1.190406245686234,
+        "balanced_normalized_cv": 0.910913445570184
+      },
+      {
+        "name": "alpha=10.0|cross=0.25",
+        "pooled": 1.3268538733385216,
+        "macro": 1.2039850650540218,
+        "balanced_normalized_cv": 0.9188575956107298
+      },
+      {
+        "name": "alpha=10.0|cross=0.0",
+        "pooled": 1.3344309266724295,
+        "macro": 1.2170641033650187,
+        "balanced_normalized_cv": 0.9264643897500815
+      }
+    ],
+    "selected": "alpha=1.0|cross=0.25"
+  },
+  "dev_baseline": {
+    "pooled_rmse": 1.589844112086348,
+    "component_macro_rmse": 1.4640933905703184
+  },
+  "dev_selected": {
+    "pooled_rmse": 1.4101246848082498,
+    "component_macro_rmse": 1.2579236503635964
+  },
+  "dev_fixed_comparator_additive_alpha1": {
+    "pooled_rmse": 1.4050918440691933,
+    "component_macro_rmse": 1.2692162612256408
+  },
+  "dev_fixed_interaction_alpha1": {
+    "pooled_rmse": 1.4232991505012649,
+    "component_macro_rmse": 1.2494125962090854
+  },
+  "duration_seconds": 46.85,
+  "caveats": [
+    "No original assay source method or construct evidence approval",
+    "Three overlapping folds, exploratory dev has been repeatedly inspected",
+    "Trigam similarity graph is approximate protein homology",
+    "Reserved prospective test not accessed or scored"
+  ]
+}
