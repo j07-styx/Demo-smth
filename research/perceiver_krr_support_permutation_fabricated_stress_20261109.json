@@ -1,0 +1,79 @@
+{
+  "status": "FABRICATED_SUPPORT_PERMUTATION_RELIABILITY_ONLY_NOT_CPI_EVIDENCE",
+  "source": "Only local synthetic formula-based test fixtures",
+  "seed": 2601,
+  "trial_count_per_case": 128,
+  "n_support_null_permutations": 49,
+  "support_null_max_pvalue": 0.05,
+  "test_split_used": false,
+  "real_affinity_labels_used": false,
+  "neural_training_performed": false,
+  "results": {
+    "geometry_signal_K5": {
+      "fabricated_trials": 128,
+      "support_count": 5,
+      "fictional_query_count_per_trial": 3,
+      "old_LOO_gate_active_trials": 128,
+      "permutation_guard_applied_trials": 72,
+      "permutation_nulls_computed_trials": 128,
+      "mean_permutation_pvalue_when_computed": 0.05625,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.572994,
+        "loo_geometry": 0.486068,
+        "support_permutation_geometry": 0.520084
+      },
+      "note": "All labels and geometry effects are deliberately fabricated."
+    },
+    "geometry_signal_K6": {
+      "fabricated_trials": 128,
+      "support_count": 6,
+      "fictional_query_count_per_trial": 2,
+      "old_LOO_gate_active_trials": 128,
+      "permutation_guard_applied_trials": 111,
+      "permutation_nulls_computed_trials": 128,
+      "mean_permutation_pvalue_when_computed": 0.033594,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.46103,
+        "loo_geometry": 0.400476,
+        "support_permutation_geometry": 0.406785
+      },
+      "note": "All labels and geometry effects are deliberately fabricated."
+    },
+    "geometry_null_K5": {
+      "fabricated_trials": 128,
+      "support_count": 5,
+      "fictional_query_count_per_trial": 3,
+      "old_LOO_gate_active_trials": 28,
+      "permutation_guard_applied_trials": 6,
+      "permutation_nulls_computed_trials": 28,
+      "mean_permutation_pvalue_when_computed": 0.129286,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.275628,
+        "loo_geometry": 0.275212,
+        "support_permutation_geometry": 0.275448
+      },
+      "note": "All labels and geometry effects are deliberately fabricated."
+    },
+    "geometry_null_K6": {
+      "fabricated_trials": 128,
+      "support_count": 6,
+      "fictional_query_count_per_trial": 2,
+      "old_LOO_gate_active_trials": 23,
+      "permutation_guard_applied_trials": 6,
+      "permutation_nulls_computed_trials": 23,
+      "mean_permutation_pvalue_when_computed": 0.106957,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.279612,
+        "loo_geometry": 0.279909,
+        "support_permutation_geometry": 0.279838
+      },
+      "note": "All labels and geometry effects are deliberately fabricated."
+    }
+  },
+  "limitations": [
+    "Permutation test assumes exchangeability of support geometry disagreement conditional on the chemical baseline; this may be false for real protein/chemical groups.",
+    "The add-one Monte Carlo p-value is a support-only screening heuristic, not proof of improvement on independently held-out queries.",
+    "Support chemical panel is tiny and family independence has not been reviewed.",
+    "Synthetic trials contain the deliberately generated signal and cannot establish empirical PerceiverCPI superiority."
+  ]
+}
