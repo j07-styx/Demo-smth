@@ -1,0 +1,105 @@
+{
+  "status": "BALM_FROZEN_TRAIN_ONLY_DUPLICATE_AFFINITY_DISAGREEMENT_AUDIT_NO_DEV_OR_TEST",
+  "raw_training_rows": 15538,
+  "unique_exact_protein_canonical_isomeric_smiles": 12315,
+  "repeated_exact_input_groups": 1305,
+  "rows_in_repeated_groups": 4528,
+  "maximum_repeat_count": 27,
+  "unique_smiles": 5971,
+  "label_distribution": {
+    "count": 15538,
+    "min": 1.999999995657055,
+    "median": 6.443576878628715,
+    "mean": 6.4894094412199514,
+    "p90": 8.4089353929735,
+    "max": 10.0
+  },
+  "repeat_count_distribution": {
+    "count": 1305,
+    "min": 2.0,
+    "median": 2.0,
+    "mean": 3.4697318007662834,
+    "p90": 7.0,
+    "max": 27.0
+  },
+  "label_range_across_repeat_group": {
+    "count": 1305,
+    "min": 9.841375359087579e-07,
+    "median": 0.7056785145435978,
+    "mean": 0.9629403542076995,
+    "p90": 2.1531585629202254,
+    "max": 6.31662561979344
+  },
+  "conflict_thresholds_log_affinity_units": {
+    "0.1": {
+      "exact_input_groups": 1138,
+      "original_rows_in_groups": 4191,
+      "share_of_15538_original_rows": 0.26972583344059725,
+      "share_of_repeated_groups": 0.8720306513409962
+    },
+    "0.3": {
+      "exact_input_groups": 914,
+      "original_rows_in_groups": 3699,
+      "share_of_15538_original_rows": 0.23806152657999743,
+      "share_of_repeated_groups": 0.7003831417624521
+    },
+    "0.5": {
+      "exact_input_groups": 774,
+      "original_rows_in_groups": 3343,
+      "share_of_15538_original_rows": 0.2151499549491569,
+      "share_of_repeated_groups": 0.593103448275862
+    },
+    "1.0": {
+      "exact_input_groups": 462,
+      "original_rows_in_groups": 2542,
+      "share_of_15538_original_rows": 0.16359891877976573,
+      "share_of_repeated_groups": 0.35402298850574715
+    },
+    "2.0": {
+      "exact_input_groups": 152,
+      "original_rows_in_groups": 1251,
+      "share_of_15538_original_rows": 0.08051229244433003,
+      "share_of_repeated_groups": 0.11647509578544062
+    },
+    "3.0": {
+      "exact_input_groups": 38,
+      "original_rows_in_groups": 331,
+      "share_of_15538_original_rows": 0.02130261294889947,
+      "share_of_repeated_groups": 0.029118773946360154
+    }
+  },
+  "repeat_groups_range_ge_1_by_repeat_count": {
+    "2": 164,
+    "3": 78,
+    "4": 43,
+    "5": 20,
+    "6": 13,
+    "7": 28,
+    "8": 20,
+    "9": 19,
+    "10": 12,
+    "11": 14,
+    "12": 13,
+    "13": 1,
+    "14": 12,
+    "15": 3,
+    "16": 2,
+    "17": 3,
+    "18": 3,
+    "19": 1,
+    "20": 4,
+    "21": 2,
+    "22": 1,
+    "23": 2,
+    "24": 1,
+    "25": 2,
+    "27": 1
+  },
+  "caveats": [
+    "Repeated input does not guarantee the same assay method, construct, buffer or measurement provenance.",
+    "BALM source lacks per-record assay DOI and conditions, so disagreements cannot automatically be called experimental errors.",
+    "Input canonicalization uses RDKit isomeric SMILES; stereoisomers remain distinct.",
+    "Only frozen TRAIN labels accessed, not original inner development or prospective reserved test.",
+    "No labels excluded or relabeled by this audit."
+  ]
+}
