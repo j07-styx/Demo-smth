@@ -1,0 +1,48 @@
+{
+  "status": "EXPLORATORY_INNER_DEV_ONLY_NO_TEST",
+  "matched_seed_results": [
+    {
+      "seed": 2103,
+      "mode": "uniform",
+      "best_epoch": 6,
+      "best_dev_rmse": 2.2242414568639948,
+      "epoch10_rmse": 2.387794245175862
+    },
+    {
+      "seed": 2103,
+      "mode": "component_rebalanced",
+      "best_epoch": 1,
+      "best_dev_rmse": 2.1071615781502495,
+      "epoch10_rmse": 2.3816893072755887
+    },
+    {
+      "seed": 2104,
+      "mode": "uniform",
+      "best_epoch": 1,
+      "best_dev_rmse": 2.183969950230217,
+      "epoch10_rmse": 2.5476555530890432
+    },
+    {
+      "seed": 2104,
+      "mode": "component_rebalanced",
+      "best_epoch": 3,
+      "best_dev_rmse": 1.9562609290888262,
+      "epoch10_rmse": 2.307579976382652
+    }
+  ],
+  "mean_best_dev_rmse": {
+    "uniform": 2.204105703547106,
+    "component_rebalanced": 2.031711253619538
+  },
+  "mean_epoch10_rmse": {
+    "uniform": 2.4677248991324525,
+    "component_rebalanced": 2.3446346418291206
+  },
+  "warnings": [
+    "Two seeds only, no uncertainty inference",
+    "Best epoch chosen by repeated inner-dev inspection",
+    "Component resampling also changes minibatch stochasticity",
+    "Train-only mean RMSE 1.803902 remains better than all four trained models",
+    "Provisional assay and construct QC; test untouched"
+  ]
+}
