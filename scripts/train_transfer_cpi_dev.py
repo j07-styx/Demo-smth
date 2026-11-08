@@ -5,6 +5,7 @@ from types import SimpleNamespace
 import numpy as np,torch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from dynacpi.transfer_data import load_development
+from dynacpi.provisional_transfer_training_lock import refuse_provisional_transfer_retraining
 from dynacpi.transfer_batch import TransferCollator
 from dynacpi.transfer_cpi import TransferCPI
 from dynacpi.dual_transfer_cpi import DualTransferCPI
@@ -16,6 +17,8 @@ def metrics(rows,pred):
     per={g:float(np.sqrt(np.mean(err[[r["component"]==g for r in rows]]))) for g in groups}
     return {"pooled_rmse":float(np.sqrt(err.mean())),"component_macro_rmse":float(np.mean(list(per.values()))),"component_rmse":per}
 def main(args):
+    # Retired provisional protocol: guard before any affinity-label read or CUDA work.
+    refuse_provisional_transfer_retraining(ROOT)
     torch.set_num_threads(4);torch.manual_seed(args.seed);np.random.seed(args.seed);random.seed(args.seed)
     assert torch.cuda.is_available()
     rows,seq,split_hash=load_development()
@@ -101,4 +104,6 @@ def main(args):
     (out/"COMPLETE.json").write_text(json.dumps({"best_component_macro_rmse":best,"epochs":args.epochs,"status":"COMPLETE_NO_TEST_EVALUATION"},indent=2))
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("--model",choices=["transfer","chemical","perceiver","transfer_clm","chemical_clm"],required=True);p.add_argument("--seed",type=int,default=2601);p.add_argument("--epochs",type=int,default=5);args=p.parse_args()
+    # Reject the compromised provisional source split before leasing the GPU.
+    refuse_provisional_transfer_retraining(ROOT)
     with gpu_lease(ROOT):main(args)
