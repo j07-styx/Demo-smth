@@ -1,0 +1,119 @@
+{
+  "status": "EXPLORATORY_IN_SAMPLE_ASSAY_CONDITIONAL_IDENTIFIABILITY_NO_MODEL_PREDICTIONS",
+  "partitions": {
+    "train": {
+      "pairs": 27118,
+      "endpoint_counts": {
+        "apparent": 88,
+        "binding_affinity": 2978,
+        "generic_kd": 7181,
+        "intrinsic": 231,
+        "other": 16640
+      },
+      "modality_counts": {
+        "cell": 7591,
+        "dsf": 826,
+        "itc": 446,
+        "other": 15447,
+        "spr": 2808
+      },
+      "sequence_compound_only": {
+        "oracle_empirical_mse": 0.24973230772632737,
+        "oracle_rmse": 0.4997322360287831,
+        "input_groups": 21267,
+        "duplicate_input_rows": 8837,
+        "duplicated_groups_spread_gt1": 575
+      },
+      "plus_endpoint_descriptor": {
+        "oracle_empirical_mse": 0.24865632338682828,
+        "oracle_rmse": 0.4986545130517002,
+        "input_groups": 21853,
+        "duplicate_input_rows": 7707,
+        "duplicated_groups_spread_gt1": 564
+      },
+      "plus_modality_descriptor": {
+        "oracle_empirical_mse": 0.03464064348974739,
+        "oracle_rmse": 0.18611997069027114,
+        "input_groups": 22425,
+        "duplicate_input_rows": 6531,
+        "duplicated_groups_spread_gt1": 220
+      },
+      "plus_endpoint_and_modality_descriptors": {
+        "oracle_empirical_mse": 0.033956785604552876,
+        "oracle_rmse": 0.1842736704050605,
+        "input_groups": 22555,
+        "duplicate_input_rows": 6309,
+        "duplicated_groups_spread_gt1": 215
+      },
+      "plus_exact_assay_id_control": {
+        "oracle_empirical_mse": 0.0,
+        "oracle_rmse": 0.0,
+        "input_groups": 27118,
+        "duplicate_input_rows": 0,
+        "duplicated_groups_spread_gt1": 0
+      },
+      "fraction_same_input_sse_explained_by_endpoint": 0.004308550821058521,
+      "fraction_same_input_sse_explained_by_endpoint_and_modality": 0.8640272621764066
+    },
+    "inner_dev": {
+      "pairs": 7387,
+      "endpoint_counts": {
+        "apparent": 25,
+        "binding_affinity": 2043,
+        "generic_kd": 3223,
+        "intrinsic": 1000,
+        "other": 1096
+      },
+      "modality_counts": {
+        "cell": 128,
+        "dsf": 4638,
+        "itc": 283,
+        "other": 1047,
+        "spr": 1291
+      },
+      "sequence_compound_only": {
+        "oracle_empirical_mse": 0.9472530150184812,
+        "oracle_rmse": 0.9732692407645899,
+        "input_groups": 4866,
+        "duplicate_input_rows": 4434,
+        "duplicated_groups_spread_gt1": 1716
+      },
+      "plus_endpoint_descriptor": {
+        "oracle_empirical_mse": 0.32855776342614174,
+        "oracle_rmse": 0.5731995842864348,
+        "input_groups": 6116,
+        "duplicate_input_rows": 2424,
+        "duplicated_groups_spread_gt1": 932
+      },
+      "plus_modality_descriptor": {
+        "oracle_empirical_mse": 0.922897073728742,
+        "oracle_rmse": 0.9606753217027811,
+        "input_groups": 5030,
+        "duplicate_input_rows": 4254,
+        "duplicated_groups_spread_gt1": 1678
+      },
+      "plus_endpoint_and_modality_descriptors": {
+        "oracle_empirical_mse": 0.32535956843115726,
+        "oracle_rmse": 0.5704029877473971,
+        "input_groups": 6243,
+        "duplicate_input_rows": 2260,
+        "duplicated_groups_spread_gt1": 919
+      },
+      "plus_exact_assay_id_control": {
+        "oracle_empirical_mse": 0.0,
+        "oracle_rmse": 0.0,
+        "input_groups": 7387,
+        "duplicate_input_rows": 0,
+        "duplicated_groups_spread_gt1": 0
+      },
+      "fraction_same_input_sse_explained_by_endpoint": 0.6531467747086226,
+      "fraction_same_input_sse_explained_by_endpoint_and_modality": 0.6565230584937126
+    }
+  },
+  "limitations": [
+    "All conditional lower bounds use split labels and are in-sample oracles, not model predictions.",
+    "Endpoint/modality categories are heuristic keyword parsing, not verified scientific assay harmonization.",
+    "Fewer repeat groups after adding assay metadata mechanically reduce the oracle lower bound.",
+    "No reserved test labels or candidate metrics are accessed for selection."
+  ]
+}

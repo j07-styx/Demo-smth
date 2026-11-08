@@ -1,0 +1,43 @@
+{
+  "status": "EXPLORATORY_FIXED_ASSAY_PRIOR_WITHIN_COMPONENT_MODALITY_NEGATIVE_CONTROL_NO_TEST",
+  "train_pairs": 27118,
+  "development_pairs": 7387,
+  "train_protein_components": 82,
+  "dev_components": 20,
+  "shuffle_unit": "assay-modality token per record, permuted within each train protein component",
+  "n_permutations": 1000,
+  "seed": 20261108,
+  "global_train_mean": 7.054023643032478,
+  "component_balanced_global_train_mean": 6.412968768033781,
+  "global_train_mean_metrics": {
+    "pooled_rmse": 1.803901684183753,
+    "component_macro_rmse": 1.698288655524816
+  },
+  "balanced_global_train_mean_metrics": {
+    "pooled_rmse": 1.9833549230387748,
+    "component_macro_rmse": 1.3920153863002622
+  },
+  "actual_assay_modality_prior": {
+    "pooled_rmse": 1.810654881375082,
+    "component_macro_rmse": 1.4059701848637012
+  },
+  "permuted_pooled": {
+    "median": 1.8017446604190406,
+    "q025": 1.7993100217811886,
+    "q975": 1.80450301317642
+  },
+  "permuted_macro": {
+    "median": 1.3941638706265878,
+    "q025": 1.3910873526938294,
+    "q975": 1.3978211557227205
+  },
+  "empirical_lower_rmse_rank": {
+    "pooled": 1.0,
+    "macro": 1.0
+  },
+  "warnings": [
+    "Exploratory negative control after multiple dev inspections, not confirmatory statistical significance.",
+    "Modality parsing is heuristic and may hide target- or assay-specific context.",
+    "Reserved prospective test excluded."
+  ]
+}

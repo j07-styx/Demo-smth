@@ -1,0 +1,153 @@
+{
+  "status": "EXPLORATORY_ASSAY_CLASS_PRIOR_TRAIN_GROUP_CV_AND_INNER_DEV_NO_TEST",
+  "training_pairs": 27118,
+  "dev_pairs": 7387,
+  "training_components": 82,
+  "dev_components": 20,
+  "candidate_models": 24,
+  "baseline_cv_pooled_mean": 1.6880239785012652,
+  "baseline_cv_macro_mean": 1.8217622454386075,
+  "cv_best_ranked": [
+    {
+      "mode": "modality",
+      "lambda": 100.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.6840455634820668,
+      "cv_macro_rmse": 1.5135838035256561,
+      "relative_joint": 0.9142390675817567
+    },
+    {
+      "mode": "modality",
+      "lambda": 10.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.6872824610186978,
+      "cv_macro_rmse": 1.5139896529801529,
+      "relative_joint": 0.9153092398740567
+    },
+    {
+      "mode": "modality",
+      "lambda": 1000.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.7265852197966225,
+      "cv_macro_rmse": 1.5140562005518146,
+      "relative_joint": 0.9269691515503866
+    },
+    {
+      "mode": "modality",
+      "lambda": 10000.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.7344307518242517,
+      "cv_macro_rmse": 1.5177947570358103,
+      "relative_joint": 0.9303191144899846
+    },
+    {
+      "mode": "endpoint",
+      "lambda": 10000.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.717973898036269,
+      "cv_macro_rmse": 1.5369867529602501,
+      "relative_joint": 0.9307119493321343
+    },
+    {
+      "mode": "both",
+      "lambda": 1000.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.7326989747882393,
+      "cv_macro_rmse": 1.5212348434335297,
+      "relative_joint": 0.930750319122845
+    },
+    {
+      "mode": "both",
+      "lambda": 10000.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.731358783549492,
+      "cv_macro_rmse": 1.5280580652212203,
+      "relative_joint": 0.9322260468928649
+    },
+    {
+      "mode": "modality",
+      "lambda": 100.0,
+      "component_balanced": false,
+      "cv_pooled_rmse": 1.6392459096468268,
+      "cv_macro_rmse": 1.641742139621586,
+      "relative_joint": 0.9361434924517464
+    },
+    {
+      "mode": "endpoint",
+      "lambda": 1000.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.7349878367855898,
+      "cv_macro_rmse": 1.547197357392972,
+      "relative_joint": 0.9385539491828694
+    },
+    {
+      "mode": "modality",
+      "lambda": 10.0,
+      "component_balanced": false,
+      "cv_pooled_rmse": 1.6608485786818112,
+      "cv_macro_rmse": 1.6343629925662129,
+      "relative_joint": 0.9405170192178107
+    },
+    {
+      "mode": "both",
+      "lambda": 100.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.7573413098298551,
+      "cv_macro_rmse": 1.5476080613829464,
+      "relative_joint": 0.9452878661577074
+    },
+    {
+      "mode": "both",
+      "lambda": 10.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.759683073833538,
+      "cv_macro_rmse": 1.5560025809564284,
+      "relative_joint": 0.9482854626316025
+    },
+    {
+      "mode": "both",
+      "lambda": 100.0,
+      "component_balanced": false,
+      "cv_pooled_rmse": 1.6855596887311934,
+      "cv_macro_rmse": 1.642190361316237,
+      "relative_joint": 0.9499848527508692
+    },
+    {
+      "mode": "modality",
+      "lambda": 1000.0,
+      "component_balanced": false,
+      "cv_pooled_rmse": 1.6489307352242422,
+      "cv_macro_rmse": 1.6879230760546735,
+      "relative_joint": 0.9516869775202956
+    },
+    {
+      "mode": "endpoint",
+      "lambda": 100.0,
+      "component_balanced": true,
+      "cv_pooled_rmse": 1.783531699035576,
+      "cv_macro_rmse": 1.5655300574293936,
+      "relative_joint": 0.9579644351818105
+    }
+  ],
+  "selected_cv": {
+    "mode": "modality",
+    "lambda": 100.0,
+    "component_balanced": true,
+    "cv_pooled_rmse": 1.6840455634820668,
+    "cv_macro_rmse": 1.5135838035256561,
+    "relative_joint": 0.9142390675817567
+  },
+  "development_train_only_mean": {
+    "pooled_rmse": 1.803901684183753,
+    "component_macro_rmse": 1.698288655524816
+  },
+  "development_selected": {
+    "pooled_rmse": 1.810654881375082,
+    "component_macro_rmse": 1.4059701848637012
+  },
+  "warnings": [
+    "Keywords and assay protocol are not verified harmonized endpoints.",
+    "No prospective test labels used for architecture selection or evaluation.",
+    "Development has been inspected in prior experiments; exploratory only."
+  ]
+}
