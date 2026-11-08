@@ -1,0 +1,52 @@
+{
+  "scope": "Provisional component/source-metadata split-leakage preflight only",
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "data_access": "Only source-family preflight metadata JSON and split role-manifest JSON; no affinity labels, protein/chemical sequences, prediction values or test outcomes",
+  "original_source_linkage_sha256": "76032b21215ce8d86e6b6f3014b143fdca495837342723bc9569fe3299daefdf",
+  "original_provisional_split_sha256": "4f66961f2854123346f598b8816344118e7ff764a1389c8f36d505cc66fe4412",
+  "role_counts": {
+    "train": {
+      "components": 82,
+      "distinct_source_families": 74
+    },
+    "inner_dev": {
+      "components": 20,
+      "distinct_source_families": 17
+    },
+    "test": {
+      "components": 33,
+      "distinct_source_families": 33
+    }
+  },
+  "families_total_among_role_components": 117,
+  "families_crossing_two_or_more_roles": 7,
+  "components_in_cross_role_families": 25,
+  "cross_role_pattern_counts": {
+    "inner_dev": 12,
+    "inner_dev+test": 2,
+    "test": 29,
+    "train": 69,
+    "train+inner_dev": 3,
+    "train+test": 2
+  },
+  "pairwise_overlap": {
+    "train_vs_inner_dev": {
+      "families_in_both": 3,
+      "role_a_components_in_shared_families": 10,
+      "role_b_components_in_shared_families": 6
+    },
+    "train_vs_test": {
+      "families_in_both": 2,
+      "role_a_components_in_shared_families": 3,
+      "role_b_components_in_shared_families": 2
+    },
+    "inner_dev_vs_test": {
+      "families_in_both": 2,
+      "role_a_components_in_shared_families": 2,
+      "role_b_components_in_shared_families": 2
+    }
+  },
+  "publication_family_disjoint": false,
+  "readiness": "PROVISIONAL_SPLIT_SOURCE_LINKS_CROSS_ROLES",
+  "caveat": "DOI/PMID/patent links do not establish assay identity. Missing source IDs can hide overlap. Protein homology and construct identity require independent review. No role changes or approvals performed."
+}
