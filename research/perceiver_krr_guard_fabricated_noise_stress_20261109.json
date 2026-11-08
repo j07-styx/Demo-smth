@@ -1,0 +1,73 @@
+{
+  "status": "FABRICATED_KRR_SUPPORT_GATE_STRESS_NOT_SCIENTIFIC_EVIDENCE",
+  "seed": 2601,
+  "trial_count_per_case": 128,
+  "geometry_signal_beta": 0.8,
+  "geometry_null_beta": 0.0,
+  "random_noise_sd": 0.15,
+  "assay_shift": 0.25,
+  "approval_or_training_performed": false,
+  "results": {
+    "geometry_signal_K5": {
+      "fabricated_trials": 128,
+      "support_size": 5,
+      "fabricated_queries_per_trial": 3,
+      "geometry_gate_active_trials": 128,
+      "shuffled_geometry_gate_active_trials": 30,
+      "mean_LOO_relative_gain": 0.413283,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.572994,
+        "krr_plus_geometry": 0.486068,
+        "krr_plus_shuffled_geometry": 0.573997
+      },
+      "geometry_minus_krr_RMSE": -0.086926,
+      "note": "Generated labels are built from a known signal or no signal, not from observed drug binding."
+    },
+    "geometry_signal_K6": {
+      "fabricated_trials": 128,
+      "support_size": 6,
+      "fabricated_queries_per_trial": 2,
+      "geometry_gate_active_trials": 128,
+      "shuffled_geometry_gate_active_trials": 26,
+      "mean_LOO_relative_gain": 0.458637,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.46103,
+        "krr_plus_geometry": 0.400476,
+        "krr_plus_shuffled_geometry": 0.461648
+      },
+      "geometry_minus_krr_RMSE": -0.060554,
+      "note": "Generated labels are built from a known signal or no signal, not from observed drug binding."
+    },
+    "geometry_null_K5": {
+      "fabricated_trials": 128,
+      "support_size": 5,
+      "fabricated_queries_per_trial": 3,
+      "geometry_gate_active_trials": 28,
+      "shuffled_geometry_gate_active_trials": 29,
+      "mean_LOO_relative_gain": -0.02324,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.275628,
+        "krr_plus_geometry": 0.275212,
+        "krr_plus_shuffled_geometry": 0.27646
+      },
+      "geometry_minus_krr_RMSE": -0.000416,
+      "note": "Generated labels are built from a known signal or no signal, not from observed drug binding."
+    },
+    "geometry_null_K6": {
+      "fabricated_trials": 128,
+      "support_size": 6,
+      "fabricated_queries_per_trial": 2,
+      "geometry_gate_active_trials": 23,
+      "shuffled_geometry_gate_active_trials": 21,
+      "mean_LOO_relative_gain": -0.031584,
+      "fabricated_RMSE": {
+        "perceiver_krr": 0.279612,
+        "krr_plus_geometry": 0.279909,
+        "krr_plus_shuffled_geometry": 0.279859
+      },
+      "geometry_minus_krr_RMSE": 0.000297,
+      "note": "Generated labels are built from a known signal or no signal, not from observed drug binding."
+    }
+  },
+  "warning": "Mathematical synthetic noise stress only. Hyperparameters are prototype defaults, not optimized or validated against actual CPI. Do not use these results as an experimental improvement claim."
+}
