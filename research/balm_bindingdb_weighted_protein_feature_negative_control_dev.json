@@ -1,0 +1,195 @@
+{
+  "status": "EXPLORATORY_CV_SELECTED_PROTEIN_WEIGHT_NEGATIVE_CONTROL_NO_TEST",
+  "selected_parameters": {
+    "name": "protein_scale_0.25_alpha_1.0",
+    "pooled_cv": 1.32131840921548,
+    "macro_cv": 1.200436985051184,
+    "joint_relative_to_chemical": 0.9712315607194189
+  },
+  "train_unique_pairs": 12315,
+  "inner_dev_rows": 3891,
+  "inner_dev_components": 173,
+  "train_mean": {
+    "pooled_rmse": 1.589844112086348,
+    "component_macro_rmse": 1.4640933905703184
+  },
+  "chemical_only_alpha10": {
+    "pooled_rmse": 1.4229865990210067,
+    "component_macro_rmse": 1.3253833063114226
+  },
+  "chemical_only_alpha1": {
+    "pooled_rmse": 1.4037006831681644,
+    "component_macro_rmse": 1.2960691212805986
+  },
+  "selected_weighted_chemical_protein": {
+    "pooled_rmse": 1.4050918440691933,
+    "component_macro_rmse": 1.2692162612256408
+  },
+  "paired_bootstrap_selected_vs_chemical_alpha10": {
+    "number_components": 173,
+    "n_resamples": 10000,
+    "pooled_improvement_bootstrap_q025_q975": [
+      -0.04809595446179579,
+      0.07787843159798703
+    ],
+    "macro_improvement_bootstrap_q025_q975": [
+      0.01014328932087624,
+      0.10383102580941592
+    ],
+    "fraction_pooled_improvement": 0.7218,
+    "fraction_macro_improvement": 0.9907
+  },
+  "n_training_protein_assignment_shuffles": 32,
+  "protein_assignment_shuffle_seed": 20261108,
+  "null_mean_pooled": 1.409672655225339,
+  "null_mean_macro": 1.30154813217124,
+  "null_pooled_q025_q975": [
+    1.3924746416251954,
+    1.4375070037348012
+  ],
+  "null_macro_q025_q975": [
+    1.290259318049639,
+    1.3141585909499995
+  ],
+  "actual_better_than_all_shuffles_pooled": false,
+  "actual_better_than_all_shuffles_macro": true,
+  "observed_fraction_shuffles_worse_pooled": 0.59375,
+  "observed_fraction_shuffles_worse_macro": 1.0,
+  "shuffle_metrics": [
+    {
+      "pooled_rmse": 1.3932504976584845,
+      "component_macro_rmse": 1.2981132600811882
+    },
+    {
+      "pooled_rmse": 1.4106323698936603,
+      "component_macro_rmse": 1.3033083122673281
+    },
+    {
+      "pooled_rmse": 1.4001418262303655,
+      "component_macro_rmse": 1.2952438537378104
+    },
+    {
+      "pooled_rmse": 1.4095700924825234,
+      "component_macro_rmse": 1.3025743021853258
+    },
+    {
+      "pooled_rmse": 1.3949844433104455,
+      "component_macro_rmse": 1.287396803832471
+    },
+    {
+      "pooled_rmse": 1.4152533801381828,
+      "component_macro_rmse": 1.3092241210169158
+    },
+    {
+      "pooled_rmse": 1.4006894760979012,
+      "component_macro_rmse": 1.3094961755229353
+    },
+    {
+      "pooled_rmse": 1.4041044723105511,
+      "component_macro_rmse": 1.2961989013837594
+    },
+    {
+      "pooled_rmse": 1.4051459079048094,
+      "component_macro_rmse": 1.2951159309198117
+    },
+    {
+      "pooled_rmse": 1.4144417930971918,
+      "component_macro_rmse": 1.293167240934861
+    },
+    {
+      "pooled_rmse": 1.4160785162362655,
+      "component_macro_rmse": 1.3057552671448136
+    },
+    {
+      "pooled_rmse": 1.4130628857881984,
+      "component_macro_rmse": 1.3000685791511257
+    },
+    {
+      "pooled_rmse": 1.4363874905595901,
+      "component_macro_rmse": 1.3158235603727861
+    },
+    {
+      "pooled_rmse": 1.3898022486216444,
+      "component_macro_rmse": 1.2947727974417769
+    },
+    {
+      "pooled_rmse": 1.4002525881686552,
+      "component_macro_rmse": 1.2947912164695201
+    },
+    {
+      "pooled_rmse": 1.3970530304183426,
+      "component_macro_rmse": 1.2910903705643006
+    },
+    {
+      "pooled_rmse": 1.4042980459127112,
+      "component_macro_rmse": 1.2968169245877919
+    },
+    {
+      "pooled_rmse": 1.4413631046716395,
+      "component_macro_rmse": 1.3122059769343142
+    },
+    {
+      "pooled_rmse": 1.4022616351659773,
+      "component_macro_rmse": 1.2976672308044268
+    },
+    {
+      "pooled_rmse": 1.425167852870187,
+      "component_macro_rmse": 1.3136752127304807
+    },
+    {
+      "pooled_rmse": 1.4167779184700702,
+      "component_macro_rmse": 1.2985142942122192
+    },
+    {
+      "pooled_rmse": 1.4147613063969784,
+      "component_macro_rmse": 1.310416494202151
+    },
+    {
+      "pooled_rmse": 1.414241695061191,
+      "component_macro_rmse": 1.3040535629449401
+    },
+    {
+      "pooled_rmse": 1.4105721408066043,
+      "component_macro_rmse": 1.3051600619099222
+    },
+    {
+      "pooled_rmse": 1.4014239101993762,
+      "component_macro_rmse": 1.2985614557811842
+    },
+    {
+      "pooled_rmse": 1.4192621313925433,
+      "component_macro_rmse": 1.3000695255722488
+    },
+    {
+      "pooled_rmse": 1.4153230967752153,
+      "component_macro_rmse": 1.2999854805574869
+    },
+    {
+      "pooled_rmse": 1.4197469847723336,
+      "component_macro_rmse": 1.3012896786250252
+    },
+    {
+      "pooled_rmse": 1.4063311261956981,
+      "component_macro_rmse": 1.2995457409207272
+    },
+    {
+      "pooled_rmse": 1.4036348670633476,
+      "component_macro_rmse": 1.3040903934988184
+    },
+    {
+      "pooled_rmse": 1.4023408755063853,
+      "component_macro_rmse": 1.3022844884466591
+    },
+    {
+      "pooled_rmse": 1.4111672570337808,
+      "component_macro_rmse": 1.3130630147245543
+    }
+  ],
+  "seconds": 29.1,
+  "limits": [
+    "Thirty-two shuffles are descriptive and not a calibrated p-value for repeated model selection.",
+    "Development is repeatedly inspected, so do not infer confirmatory significance.",
+    "Protein graph split is approximate, not validated alignment homology.",
+    "Reserved test set remains untouched and assay provenance remains absent."
+  ]
+}

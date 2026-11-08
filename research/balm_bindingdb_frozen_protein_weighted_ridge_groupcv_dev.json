@@ -1,0 +1,174 @@
+{
+  "status": "TRAIN_ONLY_GROUPCV_WEIGHTED_PROTEIN_RIDGE_NO_TEST",
+  "train_unique": 12315,
+  "dev": 3891,
+  "train_components": 519,
+  "dev_components": 173,
+  "protein_feature_scales": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "regularization_alphas": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "cv_folds": [
+    {
+      "fold": 1,
+      "train_unique": 9841,
+      "heldout": 2759,
+      "train_mean": {
+        "pooled_rmse": 1.391102564145054,
+        "component_macro_rmse": 1.2868731297992564
+      },
+      "chemical_only_alpha10": {
+        "pooled_rmse": 1.2027201538071548,
+        "component_macro_rmse": 1.169894308694821
+      }
+    },
+    {
+      "fold": 2,
+      "train_unique": 9468,
+      "heldout": 3820,
+      "train_mean": {
+        "pooled_rmse": 1.5234755514327498,
+        "component_macro_rmse": 1.346942385331757
+      },
+      "chemical_only_alpha10": {
+        "pooled_rmse": 1.4186286809109736,
+        "component_macro_rmse": 1.2640874230851553
+      }
+    },
+    {
+      "fold": 3,
+      "train_unique": 9879,
+      "heldout": 3260,
+      "train_mean": {
+        "pooled_rmse": 1.3943445996421933,
+        "component_macro_rmse": 1.3499002674285108
+      },
+      "chemical_only_alpha10": {
+        "pooled_rmse": 1.429691990771958,
+        "component_macro_rmse": 1.3019722053898044
+      }
+    }
+  ],
+  "cv_chemical_reference_pooled": 1.350346941830029,
+  "cv_chemical_reference_macro": 1.2453179790565936,
+  "cv_ranking": [
+    {
+      "name": "protein_scale_0.25_alpha_1.0",
+      "pooled_cv": 1.32131840921548,
+      "macro_cv": 1.200436985051184,
+      "joint_relative_to_chemical": 0.9712315607194189
+    },
+    {
+      "name": "protein_scale_0.5_alpha_1.0",
+      "pooled_cv": 1.3282522750668837,
+      "macro_cv": 1.1973245090644455,
+      "joint_relative_to_chemical": 0.9725493281826869
+    },
+    {
+      "name": "protein_scale_1.0_alpha_10.0",
+      "pooled_cv": 1.3288161459159866,
+      "macro_cv": 1.2099309693055869,
+      "joint_relative_to_chemical": 0.9778196582763943
+    },
+    {
+      "name": "protein_scale_0.5_alpha_10.0",
+      "pooled_cv": 1.3291620896856013,
+      "macro_cv": 1.2196510243126988,
+      "joint_relative_to_chemical": 0.9818503924748394
+    },
+    {
+      "name": "protein_scale_2.0_alpha_10.0",
+      "pooled_cv": 1.344629709685975,
+      "macro_cv": 1.2171330455872977,
+      "joint_relative_to_chemical": 0.9865666905206375
+    },
+    {
+      "name": "protein_scale_0.25_alpha_10.0",
+      "pooled_cv": 1.3388721603870202,
+      "macro_cv": 1.2334061745757547,
+      "joint_relative_to_chemical": 0.9909685371571
+    },
+    {
+      "name": "protein_scale_1.0_alpha_1.0",
+      "pooled_cv": 1.3602371760210463,
+      "macro_cv": 1.2173645672732427,
+      "joint_relative_to_chemical": 0.9924387052799255
+    },
+    {
+      "name": "protein_scale_0.0_alpha_1.0",
+      "pooled_cv": 1.354194705020747,
+      "macro_cv": 1.2307034883987031,
+      "joint_relative_to_chemical": 0.9955569566323346
+    },
+    {
+      "name": "protein_scale_0.0_alpha_10.0",
+      "pooled_cv": 1.350346941830029,
+      "macro_cv": 1.2453179790565936,
+      "joint_relative_to_chemical": 1.0
+    },
+    {
+      "name": "protein_scale_2.0_alpha_100.0",
+      "pooled_cv": 1.3592020171007482,
+      "macro_cv": 1.247509052212031,
+      "joint_relative_to_chemical": 1.0041585392446186
+    },
+    {
+      "name": "protein_scale_1.0_alpha_100.0",
+      "pooled_cv": 1.3689632455265335,
+      "macro_cv": 1.259216866718181,
+      "joint_relative_to_chemical": 1.0124736131147467
+    },
+    {
+      "name": "protein_scale_0.5_alpha_100.0",
+      "pooled_cv": 1.3781139579548087,
+      "macro_cv": 1.2704051182626763,
+      "joint_relative_to_chemical": 1.020354021499708
+    },
+    {
+      "name": "protein_scale_2.0_alpha_1.0",
+      "pooled_cv": 1.4028798144498797,
+      "macro_cv": 1.24837889751815,
+      "joint_relative_to_chemical": 1.0206805911777068
+    },
+    {
+      "name": "protein_scale_0.25_alpha_100.0",
+      "pooled_cv": 1.3824138993328905,
+      "macro_cv": 1.2759851003873603,
+      "joint_relative_to_chemical": 1.0241865676760433
+    },
+    {
+      "name": "protein_scale_0.0_alpha_100.0",
+      "pooled_cv": 1.3842415549495721,
+      "macro_cv": 1.2783991021287178,
+      "joint_relative_to_chemical": 1.025832534311415
+    }
+  ],
+  "cv_selected_or_chemical": {
+    "name": "protein_scale_0.25_alpha_1.0",
+    "pooled_cv": 1.32131840921548,
+    "macro_cv": 1.200436985051184,
+    "joint_relative_to_chemical": 0.9712315607194189
+  },
+  "dev_chemical_only_alpha10": {
+    "pooled_rmse": 1.4229865990210067,
+    "component_macro_rmse": 1.3253833063114226
+  },
+  "dev_cv_selected": {
+    "pooled_rmse": 1.4050918440691933,
+    "component_macro_rmse": 1.2692162612256408
+  },
+  "seconds": 43.4,
+  "limitations": [
+    "All settings selected on grouped train-only folds; development already repeatedly inspected.",
+    "Exact protein sequences blocked by approximate trigram-graph grouping, not verified homology identity.",
+    "Prospective test untouched; source assay provenance unavailable."
+  ]
+}
