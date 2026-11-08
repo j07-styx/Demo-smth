@@ -1,0 +1,19 @@
+{
+  "status": "PROVISIONAL_INNER_DEV_ONLY_NO_TEST",
+  "architecture": "Morgan radius2 chirality2048 sparse ridge with free intercept",
+  "alpha_fixed_predeclared": 100.0,
+  "train_pairs": 27118,
+  "inner_dev_pairs": 7387,
+  "train_mean_rmse": 1.803901684183753,
+  "morgan_ridge_rmse": 2.566153328314476,
+  "morgan_ridge_component_macro_rmse": 1.598079954286383,
+  "inner_dev_components": 20,
+  "lsqr_iterations": 64,
+  "lsqr_stop_code": 2,
+  "seconds": 11.02,
+  "warnings": [
+    "Provisional assay/construct QC, no scientific cohort approval.",
+    "Chemical-only baseline; held-out proteins are not represented explicitly.",
+    "No reserved test pairs evaluated or fitted; development set has been inspected repeatedly."
+  ]
+}
