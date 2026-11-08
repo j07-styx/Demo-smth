@@ -75,6 +75,30 @@ def get_train_dev():
         out[name]=records
     return out
 
+def get_train_only():
+    """Materialize label-bearing records only for the frozen TRAIN partition.
+
+    source_and_membership still reads public Arrow table and split membership,
+    but only TRAIN row indices have Y projected into Python records here.
+    """
+    table,parts,group_ids=source_and_membership()
+    idx=parts["train"]
+    sub=table.take(pa.array(idx)).select(["Target","Target_ID","Drug","Drug_ID","Y"])
+    data=sub.to_pydict()
+    records=[]
+    for i,k in enumerate(idx):
+        records.append({
+            "protein":data["Target"][i],
+            "target_id":data["Target_ID"][i],
+            "smiles":data["Drug"][i],
+            "compound_id":data["Drug_ID"][i],
+            "label":float(data["Y"][i]),
+            "group":group_ids[k],
+            "source_row_index":k,
+        })
+    return records
+
 if __name__=="__main__":
     r=get_train_dev()
     print({name:len(part) for name,part in r.items()})
+

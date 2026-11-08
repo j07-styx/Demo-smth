@@ -1,0 +1,357 @@
+{
+  "status": "BALM_TRAIN_ONLY_PROTEIN_AND_CANONICAL_COMPOUND_COLD_CV_NO_FROZEN_DEV_OR_TEST",
+  "restriction": "Each fold holds out protein graph components and removes all training records sharing any isomeric canonical RDKit SMILES with heldout records.",
+  "train_original_rows": 15538,
+  "unique_train_components": 519,
+  "cv_folds": [
+    {
+      "fold": 1,
+      "original_train_fold_rows": 11653,
+      "dual_cold_train_unique_rows": 4842,
+      "removed_training_rows": 6126,
+      "holdout_rows": 3885,
+      "holdout_protein_components": 129,
+      "holdout_unique_canonical_compounds": 1842,
+      "train_unique_canonical_compounds": 4129,
+      "canonical_compound_overlap_count": 0,
+      "max_morgan_cosine_mean": 0.5738078331625139,
+      "fraction_max_morgan_cosine_ge_0p999": 0.0005148005148005148,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4953533086994077,
+          "component_macro_rmse": 1.3726289349279066
+        },
+        "ridge": {
+          "pooled_rmse": 1.4441918279224435,
+          "component_macro_rmse": 1.3292859287768035
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.3988134150560896,
+          "component_macro_rmse": 1.267157239007613
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.367988601065742,
+          "component_macro_rmse": 1.272335629105182
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.3679250865572037,
+          "component_macro_rmse": 1.2700939649909584
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "original_train_fold_rows": 11653,
+      "dual_cold_train_unique_rows": 4807,
+      "removed_training_rows": 6307,
+      "holdout_rows": 3885,
+      "holdout_protein_components": 130,
+      "holdout_unique_canonical_compounds": 1792,
+      "train_unique_canonical_compounds": 4179,
+      "canonical_compound_overlap_count": 0,
+      "max_morgan_cosine_mean": 0.5561111351237794,
+      "fraction_max_morgan_cosine_ge_0p999": 0.0,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4468430709926652,
+          "component_macro_rmse": 1.351689343079858
+        },
+        "ridge": {
+          "pooled_rmse": 1.4967051828495472,
+          "component_macro_rmse": 1.3921902639974173
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.4459038225682201,
+          "component_macro_rmse": 1.331417369437485
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4652204333478878,
+          "component_macro_rmse": 1.32454355688459
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.4588134193548064,
+          "component_macro_rmse": 1.330874732151029
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "original_train_fold_rows": 11654,
+      "dual_cold_train_unique_rows": 4425,
+      "removed_training_rows": 6744,
+      "holdout_rows": 3884,
+      "holdout_protein_components": 130,
+      "holdout_unique_canonical_compounds": 2154,
+      "train_unique_canonical_compounds": 3817,
+      "canonical_compound_overlap_count": 0,
+      "max_morgan_cosine_mean": 0.539759498822333,
+      "fraction_max_morgan_cosine_ge_0p999": 0.0012873326467559218,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.4163680304276598,
+          "component_macro_rmse": 1.3525532206308526
+        },
+        "ridge": {
+          "pooled_rmse": 1.4848249972626966,
+          "component_macro_rmse": 1.4050659464224744
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.4113319203678267,
+          "component_macro_rmse": 1.348196524724973
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4177015668144317,
+          "component_macro_rmse": 1.330811041464315
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.418212824164711,
+          "component_macro_rmse": 1.3405385707768367
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "original_train_fold_rows": 11654,
+      "dual_cold_train_unique_rows": 5199,
+      "removed_training_rows": 5822,
+      "holdout_rows": 3884,
+      "holdout_protein_components": 130,
+      "holdout_unique_canonical_compounds": 1487,
+      "train_unique_canonical_compounds": 4484,
+      "canonical_compound_overlap_count": 0,
+      "max_morgan_cosine_mean": 0.5490889451346609,
+      "fraction_max_morgan_cosine_ge_0p999": 0.001544799176107106,
+      "metrics": {
+        "train_mean": {
+          "pooled_rmse": 1.420414879335214,
+          "component_macro_rmse": 1.3457106714421398
+        },
+        "ridge": {
+          "pooled_rmse": 1.5274227040878692,
+          "component_macro_rmse": 1.3991120971046638
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.4532973366896649,
+          "component_macro_rmse": 1.3497310084845364
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4450777303955584,
+          "component_macro_rmse": 1.3375671158565519
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.445302045493072,
+          "component_macro_rmse": 1.337583450859297
+        }
+      }
+    }
+  ],
+  "fold_mean_metrics": {
+    "train_mean": {
+      "pooled_rmse": 1.4447448223637367,
+      "component_macro_rmse": 1.3556455425201892
+    },
+    "ridge": {
+      "pooled_rmse": 1.4882861780306393,
+      "component_macro_rmse": 1.3814135590753396
+    },
+    "ridge_plus_chemical_boost": {
+      "pooled_rmse": 1.4273366236704503,
+      "component_macro_rmse": 1.3241255354136519
+    },
+    "ridge_plus_joint_boost": {
+      "pooled_rmse": 1.423997082905905,
+      "component_macro_rmse": 1.3163143358276597
+    },
+    "ridge_plus_explicit_interaction_boost": {
+      "pooled_rmse": 1.4225633438924483,
+      "component_macro_rmse": 1.3197726796945304
+    }
+  },
+  "pooled_out_of_fold_across_nonoverlapping_4_folds": {
+    "macro_component_rmse": {
+      "train_mean": 1.3556128192207524,
+      "ridge": 1.381513997669364,
+      "ridge_plus_chemical_boost": 1.3242353009173244,
+      "ridge_plus_joint_boost": 1.3163990732201887,
+      "ridge_plus_explicit_interaction_boost": 1.3198683997613965
+    },
+    "pooled_rmse": {
+      "train_mean": 1.4450910501878775,
+      "ridge": 1.4885827616768939,
+      "ridge_plus_chemical_boost": 1.4275188689958134,
+      "ridge_plus_joint_boost": 1.4244631296206303,
+      "ridge_plus_explicit_interaction_boost": 1.4229870228328843
+    },
+    "paired_bootstrap": {
+      "replicates": 5000,
+      "seed": 20261108,
+      "controls": {
+        "train_mean_minus_ridge": {
+          "pooled_delta": -0.043491711489016316,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.10485747198736192,
+            0.02069758231040915
+          ],
+          "macro_delta": -0.025901178448611617,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.0721942476294281,
+            0.02161756814338015
+          ],
+          "heldout_component_wins": 307
+        },
+        "ridge_plus_chemical_boost_minus_ridge": {
+          "pooled_delta": -0.06106389268108048,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.07475002602472879,
+            -0.047618319183076956
+          ],
+          "macro_delta": -0.05727869675203956,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.06925691350563869,
+            -0.0457278113685853
+          ],
+          "heldout_component_wins": 387
+        },
+        "ridge_plus_joint_boost_minus_ridge": {
+          "pooled_delta": -0.06411963205626359,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.08919358039198878,
+            -0.03859849955665612
+          ],
+          "macro_delta": -0.06511492444917533,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.07598561146694935,
+            -0.053699634056862976
+          ],
+          "heldout_component_wins": 391
+        },
+        "ridge_plus_explicit_interaction_boost_minus_ridge": {
+          "pooled_delta": -0.0655957388440096,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.08857546661016048,
+            -0.04262746032797828
+          ],
+          "macro_delta": -0.06164559790796753,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.07289161146701356,
+            -0.05017684515978719
+          ],
+          "heldout_component_wins": 375
+        },
+        "ridge_minus_train_mean": {
+          "pooled_delta": 0.043491711489016316,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.020697582310409173,
+            0.10485747198736188
+          ],
+          "macro_delta": 0.025901178448611617,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.021617568143380166,
+            0.07219424762942807
+          ],
+          "heldout_component_wins": 212
+        },
+        "ridge_plus_chemical_boost_minus_train_mean": {
+          "pooled_delta": -0.017572181192064162,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.0757382771724777,
+            0.03848665742335609
+          ],
+          "macro_delta": -0.03137751830342794,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.07596488950963029,
+            0.011265305294849997
+          ],
+          "heldout_component_wins": 225
+        },
+        "ridge_plus_joint_boost_minus_train_mean": {
+          "pooled_delta": -0.02062792056724727,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.07951133087065396,
+            0.037965055549019716
+          ],
+          "macro_delta": -0.03921374600056371,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.08369568394847203,
+            0.0035504232337081757
+          ],
+          "heldout_component_wins": 215
+        },
+        "ridge_plus_explicit_interaction_boost_minus_train_mean": {
+          "pooled_delta": -0.022104027354993283,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.08051395487192049,
+            0.035281020285136806
+          ],
+          "macro_delta": -0.035744419459355914,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.08063032109318809,
+            0.007595079557375051
+          ],
+          "heldout_component_wins": 214
+        },
+        "train_mean_minus_ridge_plus_joint_boost": {
+          "pooled_delta": 0.02062792056724727,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.03796505554901985,
+            0.07951133087065396
+          ],
+          "macro_delta": 0.03921374600056371,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.003550423233708183,
+            0.083695683948472
+          ],
+          "heldout_component_wins": 304
+        },
+        "ridge_minus_ridge_plus_joint_boost": {
+          "pooled_delta": 0.06411963205626359,
+          "pooled_95pct_group_bootstrap_CI": [
+            0.03859849955665611,
+            0.08919358039198877
+          ],
+          "macro_delta": 0.06511492444917533,
+          "macro_95pct_group_bootstrap_CI": [
+            0.05369963405686297,
+            0.07598561146694933
+          ],
+          "heldout_component_wins": 128
+        },
+        "ridge_plus_chemical_boost_minus_ridge_plus_joint_boost": {
+          "pooled_delta": 0.0030557393751831086,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.015986998969310606,
+            0.02261872223734578
+          ],
+          "macro_delta": 0.007836227697135767,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.0032867968061823347,
+            0.019332381120350114
+          ],
+          "heldout_component_wins": 233
+        },
+        "ridge_plus_explicit_interaction_boost_minus_ridge_plus_joint_boost": {
+          "pooled_delta": -0.0014761067877460121,
+          "pooled_95pct_group_bootstrap_CI": [
+            -0.0071800730298201,
+            0.004170335644993676
+          ],
+          "macro_delta": 0.0034693265412077956,
+          "macro_95pct_group_bootstrap_CI": [
+            -0.0016685620923264366,
+            0.008447180393151846
+          ],
+          "heldout_component_wins": 242
+        }
+      }
+    }
+  },
+  "seconds": 36.18,
+  "caveats": [
+    "Applies only within original frozen TRAIN; does not inspect frozen dev or reserved test.",
+    "This removes exact canonical molecules; related scaffolds and similar chemistry may remain.",
+    "Protein groups are approximate trigram graph components, not verified sequence-identity homology.",
+    "No assay source DOI/method in BALM; same exact inputs can have conflicting labels.",
+    "Paired group bootstrap assumes group sampling despite group size variation.",
+    "Model configurations were already explored on another dev split; use for stress testing, not unbiased proof."
+  ]
+}
