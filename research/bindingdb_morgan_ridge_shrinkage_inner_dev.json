@@ -1,0 +1,200 @@
+{
+  "status": "PROVISIONAL_INNER_DEV_ONLY_NO_TEST",
+  "architecture": "Morgan radius2 chirality2048 sparse ridge with free intercept, development-only shrinkage diagnostic",
+  "alpha_fixed_predeclared": 100.0,
+  "train_pairs": 27118,
+  "inner_dev_pairs": 7387,
+  "train_mean_rmse": 1.803901684183753,
+  "morgan_ridge_rmse": 2.566153328314476,
+  "morgan_ridge_component_macro_rmse": 1.598079954286383,
+  "shrinkage_results_exploratory": [
+    {
+      "ridge_weight": 0.0,
+      "pooled_rmse": 1.803901684183753,
+      "component_macro_rmse": 1.698288655524816
+    },
+    {
+      "ridge_weight": 0.1,
+      "pooled_rmse": 1.8368369975295382,
+      "component_macro_rmse": 1.6651553318935064
+    },
+    {
+      "ridge_weight": 0.2,
+      "pooled_rmse": 1.881822692324595,
+      "component_macro_rmse": 1.6365990796952783
+    },
+    {
+      "ridge_weight": 0.35,
+      "pooled_rmse": 1.970030309077359,
+      "component_macro_rmse": 1.6027659857573053
+    },
+    {
+      "ridge_weight": 0.5,
+      "pooled_rmse": 2.080236005429151,
+      "component_macro_rmse": 1.5805508528787409
+    },
+    {
+      "ridge_weight": 0.75,
+      "pooled_rmse": 2.3039547102959834,
+      "component_macro_rmse": 1.5717084945522315
+    },
+    {
+      "ridge_weight": 1.0,
+      "pooled_rmse": 2.566153328314476,
+      "component_macro_rmse": 1.598079954286383
+    }
+  ],
+  "inner_dev_components": 20,
+  "component_error_ranking_anonymous": [
+    {
+      "n": 5027,
+      "ridge_rmse": 2.8672654587793382,
+      "mean_rmse": 1.8400881792741024,
+      "ridge_sse": 41328.028758245295,
+      "mean_sse": 17021.042499223964
+    },
+    {
+      "n": 937,
+      "ridge_rmse": 1.9461611760350725,
+      "mean_rmse": 1.520601232790384,
+      "ridge_sse": 3548.928093750524,
+      "mean_sse": 2166.5577382863266
+    },
+    {
+      "n": 256,
+      "ridge_rmse": 1.8840026032410906,
+      "mean_rmse": 2.0295244217877833,
+      "ridge_sse": 908.6632471089159,
+      "mean_sse": 1054.456160930057
+    },
+    {
+      "n": 232,
+      "ridge_rmse": 1.748976732704145,
+      "mean_rmse": 1.7955488956292482,
+      "ridge_sse": 709.6693498773882,
+      "mean_sse": 747.9670340901345
+    },
+    {
+      "n": 36,
+      "ridge_rmse": 3.741186792177237,
+      "mean_rmse": 2.7488845601546497,
+      "ridge_sse": 503.87323010261053,
+      "mean_sse": 272.02918770203837
+    },
+    {
+      "n": 310,
+      "ridge_rmse": 1.2194456111338348,
+      "mean_rmse": 1.8879514809363416,
+      "ridge_sse": 460.9847555392075,
+      "mean_sse": 1104.951846254612
+    },
+    {
+      "n": 104,
+      "ridge_rmse": 1.5323400552948538,
+      "mean_rmse": 2.0360747492889986,
+      "ridge_sse": 244.19886868634774,
+      "mean_sse": 431.1424400079956
+    },
+    {
+      "n": 155,
+      "ridge_rmse": 1.1400218259897748,
+      "mean_rmse": 1.079311999997676,
+      "ridge_sse": 201.44571337862425,
+      "mean_sse": 180.5617309675424
+    },
+    {
+      "n": 35,
+      "ridge_rmse": 2.383264812905518,
+      "mean_rmse": 3.6341151558466565,
+      "ridge_sse": 198.79829089517517,
+      "mean_sse": 462.2377538084029
+    },
+    {
+      "n": 55,
+      "ridge_rmse": 1.7747025562893033,
+      "mean_rmse": 0.7804440977467212,
+      "ridge_sse": 173.22630398148837,
+      "mean_sse": 33.50011443392316
+    },
+    {
+      "n": 20,
+      "ridge_rmse": 2.598938495983579,
+      "mean_rmse": 3.340881062952891,
+      "ridge_sse": 135.08962611810773,
+      "mean_sse": 223.2297255359448
+    },
+    {
+      "n": 19,
+      "ridge_rmse": 2.069217831975358,
+      "mean_rmse": 1.660597407918381,
+      "ridge_sse": 81.35158628713125,
+      "mean_sse": 52.39409127251967
+    },
+    {
+      "n": 15,
+      "ridge_rmse": 1.5298715032314096,
+      "mean_rmse": 2.1918186974499996,
+      "ridge_sse": 35.10760224599299,
+      "mean_sse": 72.06103803737119
+    },
+    {
+      "n": 15,
+      "ridge_rmse": 1.2325906812629817,
+      "mean_rmse": 1.702773318858663,
+      "ridge_sse": 22.78919681304512,
+      "mean_sse": 43.49155463125418
+    },
+    {
+      "n": 33,
+      "ridge_rmse": 0.8182116249741787,
+      "mean_rmse": 1.2161570805523376,
+      "ridge_sse": 22.092518687015243,
+      "mean_sse": 48.80825547106029
+    },
+    {
+      "n": 39,
+      "ridge_rmse": 0.7312493606314533,
+      "mean_rmse": 1.0016195791591647,
+      "ridge_sse": 20.854299469532453,
+      "mean_sse": 39.1264294728443
+    },
+    {
+      "n": 23,
+      "ridge_rmse": 0.8996838533454387,
+      "mean_rmse": 1.043118798920033,
+      "ridge_sse": 18.616913827321426,
+      "mean_sse": 25.026227059188557
+    },
+    {
+      "n": 37,
+      "ridge_rmse": 0.7006663589558976,
+      "mean_rmse": 0.9933143062373208,
+      "ridge_sse": 18.164533823183046,
+      "mean_sse": 36.506912506102005
+    },
+    {
+      "n": 17,
+      "ridge_rmse": 0.6687842467023491,
+      "mean_rmse": 0.5912328091648658,
+      "ridge_sse": 7.6036302668328855,
+      "mean_sse": 5.942455988760637
+    },
+    {
+      "n": 22,
+      "ridge_rmse": 0.4750175041148442,
+      "mean_rmse": 0.8717152758301044,
+      "ridge_sse": 4.964115842740913,
+      "mean_sse": 16.71752548654221
+    }
+  ],
+  "top_3_ridge_sse_share": 0.9412300786929243,
+  "components_ridge_beats_mean": 13,
+  "lsqr_iterations": 64,
+  "lsqr_stop_code": 2,
+  "seconds": 10.06,
+  "warnings": [
+    "Provisional assay/construct QC, no scientific cohort approval.",
+    "Chemical-only baseline; held-out proteins are not represented explicitly.",
+    "No reserved test pairs evaluated or fitted; shrinkage grid evaluated on development labels and cannot establish an unbiased gain."
+  ]
+}
