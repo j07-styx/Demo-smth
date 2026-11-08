@@ -48,3 +48,6 @@ Run \`python -m scripts.train_balm_bindingdb_explicit_interaction_ensemble_dev\`
 
 ## Scientific limitations
 No per-record assay DOI/method on BALM source, duplicate label conflicts, approximate protein similarity graph, only three overlapping training folds, non-independent repeatedly inspected development, no full match to reference-model training budgets or seed replication. Reserved test has not been evaluated. Maintain scientific cohort gate.
+
+## Matched negative-control addendum (2026-11-08)
+The later report at research/BALM_RIDGE_BOOSTING_CONTROLS_20261108.md demonstrates that both ordinary joint-feature boosting and chemical-only boosting improve Ridge. Explicit cross-product features do not show distinct mechanistic value. Development macro RMSE of joint ensemble was 1.24565 versus explicit-cross ensemble 1.24710, while chemical-only ensemble had best inspected pooled RMSE 1.37639. Prior observed improvement is a valid exploratory ensemble observation, not proof that hand-designed cross-products are necessary.

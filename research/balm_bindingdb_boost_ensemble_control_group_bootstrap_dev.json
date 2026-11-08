@@ -1,0 +1,100 @@
+{
+  "status": "EXPLORATORY_BALM_GROUP_BOOTSTRAP_CONTROLS_NO_TEST",
+  "model_names": [
+    "ridge",
+    "ridge_plus_chemical_boost",
+    "ridge_plus_joint_boost",
+    "ridge_plus_explicit_interaction_boost"
+  ],
+  "dev_rows": 3891,
+  "heldout_protein_components": 173,
+  "replicates": 5000,
+  "rng_seed": 20261108,
+  "rmse_pooled": {
+    "ridge": 1.4050918440691935,
+    "ridge_plus_chemical_boost": 1.3763884740179322,
+    "ridge_plus_joint_boost": 1.3822357263271656,
+    "ridge_plus_explicit_interaction_boost": 1.3837429403518775
+  },
+  "rmse_macro": {
+    "ridge": 1.2692162612256408,
+    "ridge_plus_chemical_boost": 1.251580321125695,
+    "ridge_plus_joint_boost": 1.245648843284583,
+    "ridge_plus_explicit_interaction_boost": 1.2470974571775486
+  },
+  "paired_comparisons": {
+    "ridge_plus_chemical_boost_minus_ridge": {
+      "pooled_delta": -0.028703370051261334,
+      "pooled_95pct_group_bootstrap_ci": [
+        -0.05456875454485396,
+        -0.003206361535146636
+      ],
+      "macro_delta": -0.017635940099945735,
+      "macro_95pct_group_bootstrap_ci": [
+        -0.03684777621997223,
+        0.0016567742488500835
+      ],
+      "groups_candidate_better_than_control": 91
+    },
+    "ridge_plus_joint_boost_minus_ridge": {
+      "pooled_delta": -0.022856117742027893,
+      "pooled_95pct_group_bootstrap_ci": [
+        -0.0448174639171755,
+        -0.0004247674945486206
+      ],
+      "macro_delta": -0.023567417941057878,
+      "macro_95pct_group_bootstrap_ci": [
+        -0.045715351607536106,
+        -0.002332367802131504
+      ],
+      "groups_candidate_better_than_control": 90
+    },
+    "ridge_plus_explicit_interaction_boost_minus_ridge": {
+      "pooled_delta": -0.021348903717316015,
+      "pooled_95pct_group_bootstrap_ci": [
+        -0.0465804911774005,
+        0.005726130698517745
+      ],
+      "macro_delta": -0.02211880404809219,
+      "macro_95pct_group_bootstrap_ci": [
+        -0.04441494125266625,
+        -0.0008066738584390492
+      ],
+      "groups_candidate_better_than_control": 93
+    },
+    "ridge_plus_joint_boost_minus_ridge_plus_chemical_boost": {
+      "pooled_delta": 0.005847252309233442,
+      "pooled_95pct_group_bootstrap_ci": [
+        -0.00995353617888785,
+        0.021303367148048386
+      ],
+      "macro_delta": -0.005931477841112143,
+      "macro_95pct_group_bootstrap_ci": [
+        -0.020698311389808755,
+        0.008736139228526193
+      ],
+      "groups_candidate_better_than_control": 87
+    },
+    "ridge_plus_explicit_interaction_boost_minus_ridge_plus_joint_boost": {
+      "pooled_delta": 0.0015072140247118782,
+      "pooled_95pct_group_bootstrap_ci": [
+        -0.008487435559827866,
+        0.013065504213322926
+      ],
+      "macro_delta": 0.0014486138929656889,
+      "macro_95pct_group_bootstrap_ci": [
+        -0.005084810909805076,
+        0.00789026841709477
+      ],
+      "groups_candidate_better_than_control": 82
+    }
+  },
+  "seconds": 20.7,
+  "caveats": [
+    "Retrospective negative controls after inspecting development scores; exploratory only",
+    "Shared development set, not independent testing",
+    "Protein groups reflect approximate tri-gram graph, not verified homology",
+    "Missing assay provenance and conflicting same-input labels",
+    "Reserved prospective test never evaluated"
+  ]
+}

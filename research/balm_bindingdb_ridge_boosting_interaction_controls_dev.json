@@ -1,0 +1,131 @@
+{
+  "status": "BALM_NEGATIVE_CONTROL_EXPLORATORY_INNER_DEV_NO_TEST",
+  "hypothesis": "Is selected blend improvement attributable to explicit compound-protein interaction products rather than any boosting diversity?",
+  "fixed_blend_weight": 0.25,
+  "boost_hyperparameters": {
+    "max_iter": 160,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "max_depth": 5,
+    "min_samples_leaf": 50,
+    "l2_regularization": 15.0,
+    "early_stopping": false,
+    "random_state": 2103
+  },
+  "train_unique_pairs": 12315,
+  "inner_dev_rows": 3891,
+  "train_only_groupcv_folds": [
+    {
+      "fold": 1,
+      "train_unique": 9841,
+      "heldout_rows": 2759,
+      "results": {
+        "ridge": {
+          "pooled_rmse": 1.1428179158836593,
+          "component_macro_rmse": 1.1119528244498946
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.137472203019688,
+          "component_macro_rmse": 1.1227405641947417
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.1465630234932225,
+          "component_macro_rmse": 1.1131712512996224
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.1433586961290225,
+          "component_macro_rmse": 1.1163616661291547
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_unique": 9468,
+      "heldout_rows": 3820,
+      "results": {
+        "ridge": {
+          "pooled_rmse": 1.3303406759647292,
+          "component_macro_rmse": 1.205547045640061
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.317267781656825,
+          "component_macro_rmse": 1.2021284700983477
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.3192091163319608,
+          "component_macro_rmse": 1.1845956471059202
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.318521008256355,
+          "component_macro_rmse": 1.1914526287110254
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_unique": 9879,
+      "heldout_rows": 3260,
+      "results": {
+        "ridge": {
+          "pooled_rmse": 1.4907966357980509,
+          "component_macro_rmse": 1.2838110850635966
+        },
+        "ridge_plus_chemical_boost": {
+          "pooled_rmse": 1.4596122494491746,
+          "component_macro_rmse": 1.2677155013461634
+        },
+        "ridge_plus_joint_boost": {
+          "pooled_rmse": 1.4481689495157104,
+          "component_macro_rmse": 1.2582579246284877
+        },
+        "ridge_plus_explicit_interaction_boost": {
+          "pooled_rmse": 1.4485227932080214,
+          "component_macro_rmse": 1.262703060824701
+        }
+      }
+    }
+  ],
+  "cv_mean_metrics": {
+    "ridge": {
+      "pooled_rmse": 1.32131840921548,
+      "component_macro_rmse": 1.200436985051184
+    },
+    "ridge_plus_chemical_boost": {
+      "pooled_rmse": 1.3047840780418958,
+      "component_macro_rmse": 1.1975281785464176
+    },
+    "ridge_plus_joint_boost": {
+      "pooled_rmse": 1.304647029780298,
+      "component_macro_rmse": 1.1853416076780101
+    },
+    "ridge_plus_explicit_interaction_boost": {
+      "pooled_rmse": 1.3034674991977997,
+      "component_macro_rmse": 1.1901724518882937
+    }
+  },
+  "development_metrics": {
+    "ridge": {
+      "pooled_rmse": 1.4050918440691933,
+      "component_macro_rmse": 1.2692162612256408
+    },
+    "ridge_plus_chemical_boost": {
+      "pooled_rmse": 1.3763884740179322,
+      "component_macro_rmse": 1.251580321125695
+    },
+    "ridge_plus_joint_boost": {
+      "pooled_rmse": 1.3822357263271656,
+      "component_macro_rmse": 1.245648843284583
+    },
+    "ridge_plus_explicit_interaction_boost": {
+      "pooled_rmse": 1.3837429403518777,
+      "component_macro_rmse": 1.2470974571775486
+    }
+  },
+  "seconds": 49.54,
+  "caveats": [
+    "Control comparisons are post-hoc after seeing original development results.",
+    "Selection of 25pct interaction blend was train-CV based, but using same hyperparameters for new controls does not make the post-hoc comparison independent.",
+    "The interaction cross features are not mechanistically validated; source assay metadata missing.",
+    "Protein group graph based on approximate trigram similarity; reserved prospective test untouched."
+  ]
+}
