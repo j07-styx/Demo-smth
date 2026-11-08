@@ -1,0 +1,1896 @@
+{
+  "status": "LABEL_BLIND_COMPONENT_BALANCED_SOURCE_TRIAGE_NOT_ASSAY_APPROVED",
+  "selection_rules": {
+    "metadata_priority_only": true,
+    "max_one_task_per_preliminary_mmseqs_component": true,
+    "source_metadata_priority": "article DOI, PMID, exact source sequence hash, one accession and target annotation, nonpatent literature, assay method clues and condition completeness",
+    "tie_breakers": "negative number of unique compounds (identity count), then lexicographic SHA256 task ID",
+    "never_used_for_priority": [
+      "pKd",
+      "Kd numeric value",
+      "median affinity",
+      "model score",
+      "development outcome",
+      "prospective test label",
+      "replicate disagreement magnitude"
+    ],
+    "review_slots": 40
+  },
+  "full_candidate_counts": {
+    "all_pre_split_technical_tasks": 15145,
+    "eligible_tasks_at_least_15_compounds": 1146,
+    "distinct_eligible_protein_components": 168,
+    "eligible_source_reactant_ids": 43629,
+    "reactant_ids_with_exact_source_row": 43629
+  },
+  "metadata_counts_across_eligible_tasks": {
+    "source_construct_hash_matched": 1146,
+    "unique_uniprot_accession": 1096,
+    "unique_target_name": 1144,
+    "assay_text_present": 1146,
+    "tasks_with_any_SPR_ITC_BLI_keyword": 189,
+    "tasks_with_any_assay_risk_keyword": 422,
+    "tasks_with_reported_ph": 64,
+    "tasks_with_reported_temperature": 39,
+    "has_one_article_doi": 780,
+    "has_one_pmid": 870,
+    "nonpatent_literature_source": 875
+  },
+  "shortlist_distinct_components": 40,
+  "shortlist_source_categories": {
+    "ChEMBL": 35,
+    "Curated from the literature by BindingDB": 5
+  },
+  "shortlist_with_prior_worklist_overlap": 4,
+  "shortlist_with_doi": 40,
+  "shortlist_with_pmid": 40,
+  "shortlist_with_spr_itc_bli_keyword": 36,
+  "shortlist_with_risk_keyword": 0,
+  "shortlist_missing_ph": 35,
+  "shortlist_missing_temperature": 38,
+  "shortlist": [
+    {
+      "task_id": "a4a24fc2885141fff773e5527a2c0ac4c76b75e115702db2e827fc94d92b82be",
+      "protein_component_id": "5de81f208e7148a6c5163dc26042423d3e3fdd21b2eb3c95625b3a80f58583fb",
+      "protein_sha256": "866223ef286528c1d0fc85282826478eed3a3714c289b5a33f6da461b1ea0a03",
+      "assay_key": "50026193_2",
+      "n_unique_compounds": 149,
+      "raw_source_records": 149,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmc.2008.05.004"
+      ],
+      "pmid_candidates": [
+        "18501614"
+      ],
+      "uniprot_accessions": [
+        "P55899"
+      ],
+      "target_names": [
+        "IgG receptor FcRn large subunit p51"
+      ],
+      "assay_name": "ChEMBL_552585 (CHEMBL956457)",
+      "assay_description": "Binding affinity to human FcRn at pH 6 by surface plasmon resonance assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 23,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 1,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "703929adb99f4a921ab17901cb4d293bfff04e4c149e465e9854512d6ff745d3",
+      "protein_component_id": "37034eceadf17b5a65e3a6d258049b1b65c77419835a1a8eceb0e808a2aa2be4",
+      "protein_sha256": "edbd5d8a5deb16bfd31ff3029c7897b816b752cb26cd0dcf23d089dcdd841586",
+      "assay_key": "9878_2",
+      "n_unique_compounds": 83,
+      "raw_source_records": 84,
+      "source_category": [
+        "Curated from the literature by BindingDB"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.1c01307"
+      ],
+      "pmid_candidates": [
+        "34665619"
+      ],
+      "uniprot_accessions": [
+        "P0DTD1"
+      ],
+      "target_names": [
+        "Replicase polyprotein 1ab"
+      ],
+      "assay_name": "Secondary Binding Analysis by Surface Plasmon Resonance",
+      "assay_description": "The His-tagged SARS-CoV-2 PLpro enzyme was initially prepared in phosphate buffer and diluted to 50 ug/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% Tween-20). The CM5 sensor chip surface was first activated by 1-ethyl-3-(3- (dimethylamino)propyl)carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture using a Biacore 8K instrument (Cytiva). SARS-CoV-2 PLpro enzyme was immobilized to flow channels 1&#8722;4 followed by ethanolamine blocking on the unoccupied surface area, and immobilization levels for all four channels were similar at 12,000 RU. Each flow channel has its own reference channel, and blank immobilization using EDC/NHS and ethanolamine was done for all reference channels. Compound solutions with a series of increasing concentrations (0.049&#8722;30 uM at 2.5-fold dilution) were applied to all active and reference channels in SPR binding buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, and 0.05% Tween-20, 0.5 mM TCEP, and 2% DMSO) at a 30 uL/min flow rate at 25 \u00b0C. The data were double referenced with a reference channel and zero concentration (2% DMSO) responses, and reference subtracted sensorgrams were fitted with 1:1 Langmuir kinetic model using a Biacore Insight evaluation software, producing two rate constants (ka and kd) (Figure S1). The equilibrium dissociation constants (KD) were determined from two rate constants (KD = kd/ ka). For steady-state affinity fittings, response units at each concentration were measured during the equilibration phase, and the KD values were determined by fitting the data to a single rectangular hyperbolic curve equation, where y is the response, ymax is the maximum response, and x is the compound concentration.",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "f9674ae2f7e240d8b51ecf478e1c2b5e3eb0cd6b5e7b6e4c52624f460953dfc2",
+      "protein_component_id": "4defde59a1d7277cd859067b22fac5ce59d32d0832d20e381ed616842f122d39",
+      "protein_sha256": "c99a8829d634437fcf2bb8cba2ab913ddd61b130f26eb5c2881ba4ab96461fd4",
+      "assay_key": "50008121_2",
+      "n_unique_compounds": 60,
+      "raw_source_records": 60,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.ejmech.2019.111656"
+      ],
+      "pmid_candidates": [
+        "31494467"
+      ],
+      "uniprot_accessions": [
+        "Q9Y232"
+      ],
+      "target_names": [
+        "Chromodomain Y-like protein"
+      ],
+      "assay_name": "ChEMBL_1862774 (CHEMBL4363630)",
+      "assay_description": "Binding affinity to recombinant human N-terminal GST-tagged CDYL (1 to 60 residues) expressed in Escherichia coli BL2 by SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "f842ffbba31ea17646a796c65e288ebaf38810c413763ae98e81f4480d3c2c1c",
+      "protein_component_id": "17751c0357a6eda7ce33fd14293e75dfdbe8fe0beba8a87b4345e4ac9f7aa28b",
+      "protein_sha256": "7c2c9a4005a08f9f8ed2ce2e3b7d9432dd39547abafef80ffab6adbb89753b2c",
+      "assay_key": "50021809_1",
+      "n_unique_compounds": 44,
+      "raw_source_records": 44,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm0707424"
+      ],
+      "pmid_candidates": [
+        "18038971"
+      ],
+      "uniprot_accessions": [
+        "P62942"
+      ],
+      "target_names": [
+        "Peptidyl-prolyl cis-trans isomerase FKBP1A"
+      ],
+      "assay_name": "ChEMBL_452413 (CHEMBL902649)",
+      "assay_description": "Binding affinity to human FKBP12 expressed in Escherichia coli BL21(DE3) by isothermal titration calorimetry",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "ITC"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "1632cad148183614bd7292f625c774938a1b967c0a7fb97feda019b1bad090ff",
+      "protein_component_id": "c6c68b0fd0d91ac09b4d54081495e3a55d20808d2506fbd3cfa99ee0129dde5d",
+      "protein_sha256": "c6c68b0fd0d91ac09b4d54081495e3a55d20808d2506fbd3cfa99ee0129dde5d",
+      "assay_key": "50008121_1",
+      "n_unique_compounds": 42,
+      "raw_source_records": 42,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.ejmech.2019.111656"
+      ],
+      "pmid_candidates": [
+        "31494467"
+      ],
+      "uniprot_accessions": [
+        "O95931"
+      ],
+      "target_names": [
+        "Chromobox protein homolog 7"
+      ],
+      "assay_name": "ChEMBL_1862780 (CHEMBL4363636)",
+      "assay_description": "Binding affinity to recombinant human N-terminal GST-tagged CBX7 (1 to 62 residues) expressed in Escherichia coli BL2 by SPR analysis",
+      "previous_30_task_worklist": true,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "e495c6d81baac65c01393014d0cafc016d3612cda4f8f516dbbf5ca14c81613b",
+      "protein_component_id": "85340f1c02b3bcc4c96a518886d7604dbfe0201c282b67cece660911f7d31aa1",
+      "protein_sha256": "85340f1c02b3bcc4c96a518886d7604dbfe0201c282b67cece660911f7d31aa1",
+      "assay_key": "50047663_3",
+      "n_unique_compounds": 41,
+      "raw_source_records": 41,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.6b00002"
+      ],
+      "pmid_candidates": [
+        "27094768"
+      ],
+      "uniprot_accessions": [
+        "P26281"
+      ],
+      "target_names": [
+        "2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase"
+      ],
+      "assay_name": "ChEMBL_1585632 (CHEMBL3820451)",
+      "assay_description": "Binding affinity to biotinylated Escherichia coli HPPK expressed in Escherichia coli BL21 (DE3) in presence of 1 mM ATP by SPR assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "5b04c30246176098be3a36ab96d7e55cc2713f14a2c2f66e072dcdff6c03a088",
+      "protein_component_id": "7b8d960f96e40af6d8b8eef938d9dccaeebc526e0bdbafcbff4b6711fae64da6",
+      "protein_sha256": "bc397cc8eb78693a226a23c89a09eb3c0054deef0ef8c9cae74b11a491fad1df",
+      "assay_key": "50019394_3",
+      "n_unique_compounds": 40,
+      "raw_source_records": 40,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.3c00332"
+      ],
+      "pmid_candidates": [
+        "37403966"
+      ],
+      "uniprot_accessions": [
+        "Q99814"
+      ],
+      "target_names": [
+        "Endothelial PAS domain-containing protein 1"
+      ],
+      "assay_name": "ChEMBL_2317828",
+      "assay_description": "Binding affinity to human recombinant HIF-2alpha (240 to 350 residues) assessed as as dissociation constant by ITC analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "ITC"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "5424dcc1f75fce0341243e997a1119bcef1399a3b8c5b57b17dc6304d4bf3d5c",
+      "protein_component_id": "14dbf9627717fe4d45d5ceb37a1a4b43c26c0640762cc7dd1d277f076aa7d738",
+      "protein_sha256": "14dbf9627717fe4d45d5ceb37a1a4b43c26c0640762cc7dd1d277f076aa7d738",
+      "assay_key": "50008549_2",
+      "n_unique_compounds": 35,
+      "raw_source_records": 35,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.9b01492"
+      ],
+      "pmid_candidates": [
+        "31922756"
+      ],
+      "uniprot_accessions": [
+        "P14598"
+      ],
+      "target_names": [
+        "Neutrophil cytosol factor 1"
+      ],
+      "assay_name": "ChEMBL_1879639 (CHEMBL4381033)",
+      "assay_description": "Binding affinity to immobilized recombinant human His-tagged p47phox SH3A-B domain (151 to 285 residues) expressed in Escherichia coli BL21 (DE3) cells assessed as dissociation constant by SPR assay",
+      "previous_30_task_worklist": true,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "360fc623c062e5d0a38d5f94c6e2fde539c1b38ce63ee3a8d47eb893d67c72e9",
+      "protein_component_id": "1745754698cfda0da91a4ab57a3167699fd9968011b4a7887a53c1da2876fbe1",
+      "protein_sha256": "88abe6a1f2fc7ff270386a822ee3bdaba5f15825e48fca2c7df3ad1e326c41bf",
+      "assay_key": "50039359_1",
+      "n_unique_compounds": 31,
+      "raw_source_records": 31,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/ml100224d"
+      ],
+      "pmid_candidates": [
+        "21243039"
+      ],
+      "uniprot_accessions": [
+        "P42227"
+      ],
+      "target_names": [
+        "Signal transducer and activator of transcription 3"
+      ],
+      "assay_name": "ChEMBL_701933 (CHEMBL1657357)",
+      "assay_description": "Binding affinity to mouse Stat3 by surface plasmon resonance assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "7af4c3526746bae6b8fcc98242beb31a764f3e877c0ff1ee0ef86143bd3535c5",
+      "protein_component_id": "0549a3a6ebe72e5e9c32dece1d192881d1008842fb9a450c3f268fd676fac751",
+      "protein_sha256": "def682a884ad0af1b561871a9351799b3c6e87894f4bb2ac82e1a1b957d8e7a6",
+      "assay_key": "50007822_3",
+      "n_unique_compounds": 29,
+      "raw_source_records": 29,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.9b00096"
+      ],
+      "pmid_candidates": [
+        "30998845"
+      ],
+      "uniprot_accessions": [
+        "Q92831"
+      ],
+      "target_names": [
+        "Histone acetyltransferase KAT2B"
+      ],
+      "assay_name": "ChEMBL_1850994 (CHEMBL4351618)",
+      "assay_description": "Binding affinity to human N-terminal His-tagged PCAF by isothermal titration calorimetry",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "ITC"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "fd68476242bd5f3013d23875b885b10ff50faff35416f06e151c8d7832fe9909",
+      "protein_component_id": "00faf52e877f8ec4d0da6ca32313f09350fb35484546287f7d68e8d95efc02b9",
+      "protein_sha256": "808152c23dd7903f79cd211e69be307502872a8319329ebfdb49ad3c6d25ad55",
+      "assay_key": "50042869_2",
+      "n_unique_compounds": 28,
+      "raw_source_records": 28,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmc.2013.02.021"
+      ],
+      "pmid_candidates": [
+        "23498914"
+      ],
+      "uniprot_accessions": [
+        "P53779"
+      ],
+      "target_names": [
+        "Mitogen-activated protein kinase 10"
+      ],
+      "assay_name": "ChEMBL_952816 (CHEMBL2351321)",
+      "assay_description": "Binding affinity to N-terminal His6X-tagged human recombinant JNK3 catalytic domain expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "339ce3f0626b4b36f5bce7e3164ecd3edf4c5620ccf99334af0b8c5e3319a246",
+      "protein_component_id": "23d8ef29b75dc248cf4f6b5a130886882f8419a9cc1cb5d7c5b89ad14488fc81",
+      "protein_sha256": "80c9dcf26007a1f459742d55f95a198ea22283e4806693d7f27497c053940836",
+      "assay_key": "50032699_2",
+      "n_unique_compounds": 26,
+      "raw_source_records": 26,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmc.2010.11.049"
+      ],
+      "pmid_candidates": [
+        "21169023"
+      ],
+      "uniprot_accessions": [
+        "P35961"
+      ],
+      "target_names": [
+        "Envelope glycoprotein gp160"
+      ],
+      "assay_name": "ChEMBL_698262 (CHEMBL1646732)",
+      "assay_description": "Binding affinity to HIV1 YU2 gp120 by isothermal titration calorimetry assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "ITC"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "83775558aead8993bb3100cbac91d08f9d2879c15bad712388ba49dd380c0a59",
+      "protein_component_id": "1d2551ade453a33a915755fda9144bb4924af48001cae8fe701fa2663318092c",
+      "protein_sha256": "1d2551ade453a33a915755fda9144bb4924af48001cae8fe701fa2663318092c",
+      "assay_key": "50002067_1",
+      "n_unique_compounds": 26,
+      "raw_source_records": 26,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.8b00210"
+      ],
+      "pmid_candidates": [
+        "29648813"
+      ],
+      "uniprot_accessions": [
+        "O14786"
+      ],
+      "target_names": [
+        "Neuropilin-1"
+      ],
+      "assay_name": "ChEMBL_1748923 (CHEMBL4183433)",
+      "assay_description": "Binding affinity to N-terminal His6-tagged recombinant human NRP1-b1 domain expressed in Escherichia coli Rosetta Gami 2 (DE3) pLysS cells by SPR method",
+      "previous_30_task_worklist": true,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "4c1e5aafd3262ca00989277d58ae7aeb0ce3e20bf730a08fcd0840396d76b1de",
+      "protein_component_id": "9a06387610edd099466d614941c42a433f444feb6a8f25375bb0b6ad8ec9c6f4",
+      "protein_sha256": "9a06387610edd099466d614941c42a433f444feb6a8f25375bb0b6ad8ec9c6f4",
+      "assay_key": "50015109_1",
+      "n_unique_compounds": 25,
+      "raw_source_records": 25,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.ejmech.2021.113887"
+      ],
+      "pmid_candidates": [
+        "34624824"
+      ],
+      "uniprot_accessions": [
+        "P37840"
+      ],
+      "target_names": [
+        "Alpha-synuclein"
+      ],
+      "assay_name": "ChEMBL_2155874 (CHEMBL5040534)",
+      "assay_description": "Binding affinity to recombinant human alpha-syn aggregates assessed as dissociation constant by SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "a6769954d814192bc73979f3919781b78e52671a29110cf4e0c8704251472ce0",
+      "protein_component_id": "905879029f7662ec37900d7cc2267b92db649621d6bbd9ffb215b082f40dacf2",
+      "protein_sha256": "e2e37cb8956473db663196cc55b7336f68505552863364417d19cdb9aa1e0b78",
+      "assay_key": "50042142_1",
+      "n_unique_compounds": 25,
+      "raw_source_records": 25,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmcl.2012.08.001"
+      ],
+      "pmid_candidates": [
+        "22929233"
+      ],
+      "uniprot_accessions": [
+        "P15692"
+      ],
+      "target_names": [
+        "Vascular endothelial growth factor A"
+      ],
+      "assay_name": "ChEMBL_840112 (CHEMBL2090815)",
+      "assay_description": "Binding affinity to VEGF by surface plasmon resonance-based solution affinity assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "53fbde01df4d80c12f9a38a7a87fc053e5be03f5f6f303905e86f15e6d241145",
+      "protein_component_id": "24e3b138fc0a2cccb5ec43815284c4275c9272df3f603652af49b1a8c2d7e8a3",
+      "protein_sha256": "43a542f95ef320006f30650d76938cf42b281b6594d78e5744e914f7ac2b55af",
+      "assay_key": "50042142_3",
+      "n_unique_compounds": 24,
+      "raw_source_records": 24,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmcl.2012.08.001"
+      ],
+      "pmid_candidates": [
+        "22929233"
+      ],
+      "uniprot_accessions": [
+        "P05230"
+      ],
+      "target_names": [
+        "Fibroblast growth factor 1"
+      ],
+      "assay_name": "ChEMBL_840110 (CHEMBL2090813)",
+      "assay_description": "Binding affinity to FGF1 by surface plasmon resonance-based solution affinity assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "f7367fa4e1bf1dfe82d40cf00c27022e7e922c65757079c8ad0f4f4ae06e95da",
+      "protein_component_id": "030ef1b424381b56f9f5794a5a8f5526cf73f1a02d7d305f1c0b51d8b3c2485c",
+      "protein_sha256": "030ef1b424381b56f9f5794a5a8f5526cf73f1a02d7d305f1c0b51d8b3c2485c",
+      "assay_key": "50020671_1",
+      "n_unique_compounds": 24,
+      "raw_source_records": 24,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.2c02132"
+      ],
+      "pmid_candidates": [
+        "36948210"
+      ],
+      "uniprot_accessions": [
+        "Q9Y4B6"
+      ],
+      "target_names": [
+        "DDB1- and CUL4-associated factor 1"
+      ],
+      "assay_name": "ChEMBL_2371922",
+      "assay_description": "Binding affinity to biotinylated human DCAF1 (1038 to 1400 residues) expressed in baculovirus infected in Sf9 insect cells assessed as dissociation constant measured for 60 secs by SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "017471a8d9dc299f07cd700c2e919ec12ea56a510ca7d8e422bb19d5c61fff99",
+      "protein_component_id": "3501ff1a2c34e139907d0b8726e0ce2d830cfc7304472a862525f3428a6a534c",
+      "protein_sha256": "9a0b636052d7bfbc9f8a5dc7fc8a2030c65e938473ac234df2c8550a0d071815",
+      "assay_key": "50039571_5",
+      "n_unique_compounds": 22,
+      "raw_source_records": 22,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.ejmech.2012.02.050"
+      ],
+      "pmid_candidates": [
+        "22440859"
+      ],
+      "uniprot_accessions": [
+        "Q8N1Q1"
+      ],
+      "target_names": [
+        "Carbonic anhydrase 13"
+      ],
+      "assay_name": "ChEMBL_811728 (CHEMBL2014303)",
+      "assay_description": "Binding affinity to human recombinant carbonic anhydrase-13 by isothermal titration calorimetry assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "ITC"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "0eed22a59fceeb4c53c5e83d4d55159b0a65f524deb162161de81bea5a4652d5",
+      "protein_component_id": "2b786a6db716e3e887b22be571240bab2f5ece00a09ed5d79924f54bbed70aba",
+      "protein_sha256": "2b786a6db716e3e887b22be571240bab2f5ece00a09ed5d79924f54bbed70aba",
+      "assay_key": "50009215_1",
+      "n_unique_compounds": 22,
+      "raw_source_records": 22,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmcl.2019.01.035"
+      ],
+      "pmid_candidates": [
+        "30773430"
+      ],
+      "uniprot_accessions": [
+        "Q16658"
+      ],
+      "target_names": [
+        "Fascin"
+      ],
+      "assay_name": "ChEMBL_1899421 (CHEMBL4401536)",
+      "assay_description": "Binding affinity to human fascin (1 to 493 residues) expressed in Escherichia coli BL21(DE3) pLysS by SPR assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "16c9bfd381f4c3c5aa05247d02d05ab500bf80fc642ca7c6675097ce1caad07f",
+      "protein_component_id": "19fad6122957287e994f5b674a6ed813fad5c4be3a60f4403e005ed2dbed0ffa",
+      "protein_sha256": "19fad6122957287e994f5b674a6ed813fad5c4be3a60f4403e005ed2dbed0ffa",
+      "assay_key": "50020219_1",
+      "n_unique_compounds": 22,
+      "raw_source_records": 22,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.3c00960"
+      ],
+      "pmid_candidates": [
+        "37566998"
+      ],
+      "uniprot_accessions": [
+        "Q8TDQ0"
+      ],
+      "target_names": [
+        "Hepatitis A virus cellular receptor 2"
+      ],
+      "assay_name": "ChEMBL_2353672",
+      "assay_description": "Binding affinity to His-tagged recombinant human TIM3 expressed in HEK293 cells assessed as dissociation constant by sensor chip immobilization based SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "ba29c0985a8ac7007d60c9c3e90495773103463d0a8da0801914b5c972ae1c4a",
+      "protein_component_id": "0451c5f5ef052711dec57df65d688e28c0027e49dc4be546d73beb880c6181ed",
+      "protein_sha256": "0451c5f5ef052711dec57df65d688e28c0027e49dc4be546d73beb880c6181ed",
+      "assay_key": "50015095_1",
+      "n_unique_compounds": 22,
+      "raw_source_records": 22,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.0c02051"
+      ],
+      "pmid_candidates": [
+        "34266235"
+      ],
+      "uniprot_accessions": [
+        "Q8NBP7"
+      ],
+      "target_names": [
+        "Proprotein convertase subtilisin/kexin type 9"
+      ],
+      "assay_name": "ChEMBL_2155618 (CHEMBL5040278)",
+      "assay_description": "Binding affinity to human PCSK9 by surface plasmon resonance",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "e457bb9e52c17d83790531db47a55190708281aa6923a6d33d609c2b96412e1a",
+      "protein_component_id": "3bb208c70fae5e918193c5890270882dd259665df276ae2365dcc3d887a67944",
+      "protein_sha256": "3bb208c70fae5e918193c5890270882dd259665df276ae2365dcc3d887a67944",
+      "assay_key": "50041859_3",
+      "n_unique_compounds": 22,
+      "raw_source_records": 22,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm100834y"
+      ],
+      "pmid_candidates": [
+        "20828128"
+      ],
+      "uniprot_accessions": [
+        "P58154"
+      ],
+      "target_names": [
+        "Acetylcholine-binding protein"
+      ],
+      "assay_name": "ChEMBL_665337 (CHEMBL1261014)",
+      "assay_description": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "49365823722759f29b761232e9be8552bd6a5bf2553342f3167c698b5e4bb4d9",
+      "protein_component_id": "5f82b0395c4c6abf61ba8684beacf04e89e591b23d1a79671ffbd32e4a003172",
+      "protein_sha256": "c112aa9c99862dfe30fa098927f9a009576ee0af4777ee668725e6e058129c26",
+      "assay_key": "50045429_2",
+      "n_unique_compounds": 21,
+      "raw_source_records": 21,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm500955s"
+      ],
+      "pmid_candidates": [
+        "25470204"
+      ],
+      "uniprot_accessions": [
+        "P0AEG4"
+      ],
+      "target_names": [
+        "Thiol:disulfide interchange protein DsbA"
+      ],
+      "assay_name": "ChEMBL_1462817 (CHEMBL3399656)",
+      "assay_description": "Binding affinity to oxidized Escherichia coli DsbA by isothermal titration calorimetry assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "ITC"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "8c4f9e08e6ae889f672348a5f1eb74d69723551ece620e7efa91ba7d905491aa",
+      "protein_component_id": "a2ad3f52daa5740755ca14f0a5a1c060d28a58645d39ca59b2f1779ad7b3ff92",
+      "protein_sha256": "a2ad3f52daa5740755ca14f0a5a1c060d28a58645d39ca59b2f1779ad7b3ff92",
+      "assay_key": "50000150_2",
+      "n_unique_compounds": 21,
+      "raw_source_records": 21,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.7b00576"
+      ],
+      "pmid_candidates": [
+        "28926243"
+      ],
+      "uniprot_accessions": [
+        "O75530"
+      ],
+      "target_names": [
+        "Polycomb protein EED"
+      ],
+      "assay_name": "ChEMBL_1670154 (CHEMBL4020042)",
+      "assay_description": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "c05f632bef3c441488dcf6ece879a463f621675662b29e78053bdafc70eb1a82",
+      "protein_component_id": "01a94f11705e76d6747b6e29529607e32c7dac0df85b78165c8fbc95731e31e5",
+      "protein_sha256": "01a94f11705e76d6747b6e29529607e32c7dac0df85b78165c8fbc95731e31e5",
+      "assay_key": "50042962_1",
+      "n_unique_compounds": 21,
+      "raw_source_records": 21,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmcl.2013.04.001"
+      ],
+      "pmid_candidates": [
+        "23628333"
+      ],
+      "uniprot_accessions": [
+        "P00338"
+      ],
+      "target_names": [
+        "L-lactate dehydrogenase A chain"
+      ],
+      "assay_name": "ChEMBL_959389 (CHEMBL2384180)",
+      "assay_description": "Binding affinity to human recombinant carboxy-terminal avi-tagged LDHA (1 to 331) expressed in Escherichia coli by surface plasmon resonance analysis presence of NADH",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "fe50d9a975554fdb09498e3f77e2a75a8b886fa131cb8c7ebaecff8f54abe097",
+      "protein_component_id": "28788d540965503ac4ba2957cf738ab146ac26405f42f0d7b99d0d273a39a065",
+      "protein_sha256": "4f82267b47e9a3dc9935d07e33e891ec34a8d93749865563728543dc8d31febf",
+      "assay_key": "50039040_1",
+      "n_unique_compounds": 21,
+      "raw_source_records": 21,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm901517k"
+      ],
+      "pmid_candidates": [
+        "20095613"
+      ],
+      "uniprot_accessions": [
+        "P20917"
+      ],
+      "target_names": [
+        "Myelin-associated glycoprotein"
+      ],
+      "assay_name": "ChEMBL_611876 (CHEMBL1070831)",
+      "assay_description": "Binding affinity to mouse MAGd1-3Fc expressed in CHO-Lec 3.2.8.1 cells by SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "d693036f58d7b8b83eed98ca3ee79a0b31e69db65fc3f7920429c333f87f6ef9",
+      "protein_component_id": "33693b303138ed8342c492fd4e8eb7ef52dbb288038c72355590e4c266128662",
+      "protein_sha256": "33693b303138ed8342c492fd4e8eb7ef52dbb288038c72355590e4c266128662",
+      "assay_key": "50047053_1",
+      "n_unique_compounds": 20,
+      "raw_source_records": 20,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.5b01552"
+      ],
+      "pmid_candidates": [
+        "26700752"
+      ],
+      "uniprot_accessions": [
+        "P35790"
+      ],
+      "target_names": [
+        "Choline kinase alpha"
+      ],
+      "assay_name": "ChEMBL_1554155 (CHEMBL3769127)",
+      "assay_description": "Binding affinity to human N-terminal truncated ChoKalpha1 (75 to 457 residues) by surface plasmon resonance assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "6f717b23d332c4ac10982e34cd5bc682c2f80f70ea3e07e9b7e0c0c35875e259",
+      "protein_component_id": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+      "protein_sha256": "b04020d6a298b87e7e20c83b346f59825468dc2001355b699e4b91d67d9bea6c",
+      "assay_key": "50005891_1",
+      "n_unique_compounds": 18,
+      "raw_source_records": 18,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmc.2013.11.036"
+      ],
+      "pmid_candidates": [
+        "24369839"
+      ],
+      "uniprot_accessions": [
+        "P07900"
+      ],
+      "target_names": [
+        "Heat shock protein HSP 90-alpha"
+      ],
+      "assay_name": "ChEMBL_1284217 (CHEMBL3107812)",
+      "assay_description": "Binding affinity to human biotinylated N-terminal Hsp90alpha (9 to 236) by surface plasmon resonance assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "acd2848f6578d20241364b2d456e8dbb96f6df786c205a1594314a989c60fb2b",
+      "protein_component_id": "13f7773edf55938a8fd07f165007b380dec6ca038472181aac060857640addd3",
+      "protein_sha256": "fb7792982e9928f0036d5d090309c0bab5a98e8285d14fe380913b5ff2fffb8c",
+      "assay_key": "50047702_1",
+      "n_unique_compounds": 18,
+      "raw_source_records": 18,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.5b02001"
+      ],
+      "pmid_candidates": [
+        "27119979"
+      ],
+      "uniprot_accessions": [
+        "P11142"
+      ],
+      "target_names": [
+        "Heat shock cognate 71 kDa protein"
+      ],
+      "assay_name": "ChEMBL_1588265 (CHEMBL3825930)",
+      "assay_description": "Binding affinity to human truncated HSC70 NBD (1 to 381 residues) by SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "cc877ce485426c4c9f471d563edb69957df84d2fd77a42906b45ac3c8a09ffc3",
+      "protein_component_id": "11ab955957f0c834f2f2074b528046aa776f8a449a79b5eac27f043dd7cb8e21",
+      "protein_sha256": "549dc2f31d2981e3cd99a62ea027bf7d8a5cd3b7232c910e4a3fbec108f88c17",
+      "assay_key": "50014416_2",
+      "n_unique_compounds": 18,
+      "raw_source_records": 18,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.0c02094"
+      ],
+      "pmid_candidates": [
+        "33818106"
+      ],
+      "uniprot_accessions": [
+        "Q14145"
+      ],
+      "target_names": [
+        "Kelch-like ECH-associated protein 1"
+      ],
+      "assay_name": "ChEMBL_2126181 (CHEMBL4835526)",
+      "assay_description": "Binding affinity to human recombinant His-tagged Keap1 Kelch domain (321 to 609 residues) expressed in Escherichia coli BL21 (DE3) assessed as dissociation constant by surface plasmon resonance method",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "e18b121d1829e00b3f1c1e2fcea803ffea44c5667f7a57786508436b4f63521c",
+      "protein_component_id": "c7b71df336e2c001f2840290e8b2e3ca6ada952138d9ab37f1bc5845b0d6765a",
+      "protein_sha256": "c7b71df336e2c001f2840290e8b2e3ca6ada952138d9ab37f1bc5845b0d6765a",
+      "assay_key": "50028790_1",
+      "n_unique_compounds": 18,
+      "raw_source_records": 18,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm801637f"
+      ],
+      "pmid_candidates": [
+        "19459643"
+      ],
+      "uniprot_accessions": [
+        "Q8NG68"
+      ],
+      "target_names": [
+        "Tubulin--tyrosine ligase"
+      ],
+      "assay_name": "ChEMBL_519880 (CHEMBL961245)",
+      "assay_description": "Binding affinity to TTL by surface plasmon resonance",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "02e1f0aa98ed28bb82f11370d3bca2345ae5dc2ef60f98fa8edfa5e12c178d9f",
+      "protein_component_id": "3e723e9b939c852d117a2a4862213f89c492ff4b6056a25176e677a8fd066a27",
+      "protein_sha256": "3e723e9b939c852d117a2a4862213f89c492ff4b6056a25176e677a8fd066a27",
+      "assay_key": "50043864_2",
+      "n_unique_compounds": 16,
+      "raw_source_records": 16,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1016/j.bmcl.2013.12.062"
+      ],
+      "pmid_candidates": [
+        "24433859"
+      ],
+      "uniprot_accessions": [
+        "P43490"
+      ],
+      "target_names": [
+        "Nicotinamide phosphoribosyltransferase"
+      ],
+      "assay_name": "ChEMBL_1289424 (CHEMBL3116920)",
+      "assay_description": "Binding affinity to N-terminal His6-tagged/biotinylated C-terminal Avi-tagged human NAMPT (2 to 491) by SPR analysis",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "6f7eef70c076507f973b7f33b93294065ac28c37ed2fc286dd3be6f785e2eff4",
+      "protein_component_id": "03530bcba0a65441225b5278da2e0c5005109c1a77a1123a9535dc0b0e70edd3",
+      "protein_sha256": "71376b3a50a1cc063e09d51d93e09c4aacc3b77edd60a922db188157a62b0de4",
+      "assay_key": "5774_1",
+      "n_unique_compounds": 16,
+      "raw_source_records": 16,
+      "source_category": [
+        "Curated from the literature by BindingDB"
+      ],
+      "doi_candidates": [
+        "10.1021/cc0501561"
+      ],
+      "pmid_candidates": [
+        "16677001"
+      ],
+      "uniprot_accessions": [
+        "P62937",
+        "V9HWF5"
+      ],
+      "target_names": [
+        "Peptidyl-prolyl cis-trans isomerase A"
+      ],
+      "assay_name": "Surface Plasmon Resonance Assay",
+      "assay_description": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": false,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 1,
+      "temp_values_reported": 1,
+      "metadata_flags": [
+        "uniprot_accession_missing_or_mixed"
+      ]
+    },
+    {
+      "task_id": "a1017b66fa51b2ac0f0659d44b06062db9bc55b0765cb1127bde91c1bd3b46f5",
+      "protein_component_id": "4bc37e873a119418b1c915dcfcbc6cc483e3c641a511a9203a50ff1614c7b6b1",
+      "protein_sha256": "4bc37e873a119418b1c915dcfcbc6cc483e3c641a511a9203a50ff1614c7b6b1",
+      "assay_key": "50033814_5",
+      "n_unique_compounds": 16,
+      "raw_source_records": 16,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm200544q"
+      ],
+      "pmid_candidates": [
+        "21707077"
+      ],
+      "uniprot_accessions": [
+        "P56817"
+      ],
+      "target_names": [
+        "Beta-secretase 1"
+      ],
+      "assay_name": "ChEMBL_765826 (CHEMBL1827651)",
+      "assay_description": "Binding affinity to BACE1 after 90 seconds by surface plasmon resonance assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "abc76938bb95d8e824e958864f15fe57d0591857809a307511e2d5785906724e",
+      "protein_component_id": "0964b8ab750f4f675886036ee344acb048e251156e11a6c965cc39525773b4e8",
+      "protein_sha256": "b8e153be006734dda60fb93b7e5c8243d84669d49b302418714ad4e1989e4b6e",
+      "assay_key": "50008590_1",
+      "n_unique_compounds": 16,
+      "raw_source_records": 16,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.8b01287"
+      ],
+      "pmid_candidates": [
+        "30226381"
+      ],
+      "uniprot_accessions": [
+        "P47205"
+      ],
+      "target_names": [
+        "UDP-3-O-acyl-N-acetylglucosamine deacetylase"
+      ],
+      "assay_name": "ChEMBL_1881663 (CHEMBL4383162)",
+      "assay_description": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "02f71486da71d5ac2ca82491176740c665dd3998b9f4049c40d03db62385481c",
+      "protein_component_id": "1273bce74b2d5d679d060dccfd35a78dc314e0099a9548bcf797f35a15d07dd9",
+      "protein_sha256": "4602a348ca21f49c27d1dfd706dbfb54f20ab49a7de362ece550dbb1dd236c87",
+      "assay_key": "50010799_5",
+      "n_unique_compounds": 15,
+      "raw_source_records": 15,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/acs.jmedchem.0c01025"
+      ],
+      "pmid_candidates": [
+        "32672458"
+      ],
+      "uniprot_accessions": [
+        "Q9BY41"
+      ],
+      "target_names": [
+        "Histone deacetylase 8"
+      ],
+      "assay_name": "ChEMBL_1986246 (CHEMBL4619652)",
+      "assay_description": "Binding affinity to His-tagged recombinant human HDAC8 by SPR assay",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 22,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [
+        "SPR"
+      ],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "ph_missing_or_inconsistent",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "303c4ceaaae540eae56ff2a5658ba38a6855c72edef38a383fc2d77db18e4114",
+      "protein_component_id": "4b0f30eef05bbfcd04a4fbab58f8766daf460e03d95e0b4e07c33892fd52dcc8",
+      "protein_sha256": "59cbe9aa0b9a749e727ba67691872f5fe2e29fcd1e603ea60509c9dd6eb00eb5",
+      "assay_key": "5749_1",
+      "n_unique_compounds": 17,
+      "raw_source_records": 17,
+      "source_category": [
+        "Curated from the literature by BindingDB"
+      ],
+      "doi_candidates": [
+        "10.1074/jbc.M112.414516"
+      ],
+      "pmid_candidates": [
+        "23306195"
+      ],
+      "uniprot_accessions": [
+        "P9WQD9"
+      ],
+      "target_names": [
+        "3-oxoacyl-[acyl-carrier-protein] synthase 1"
+      ],
+      "assay_name": "Binding Fluorescence Titrations",
+      "assay_description": "Binding of TLM and the TLM analogs to KasA was quantified by monitoring changes in the intrinsic tryptophan fluroescence of the enzyme using 280-nm excitation and 557-nm emission.",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 21,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 1,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "no_explicit_spr_itc_bli_keyword",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "4cf18e3e7c30cba748281b0f3a2d76552bb12d7a57c1ce7f9d53c2edc7eca6a8",
+      "protein_component_id": "2d1ea9acc8df2965da341a854df3a334d067a0d45c7814661502b19c1ce3196a",
+      "protein_sha256": "2d1ea9acc8df2965da341a854df3a334d067a0d45c7814661502b19c1ce3196a",
+      "assay_key": "4616_1",
+      "n_unique_compounds": 17,
+      "raw_source_records": 18,
+      "source_category": [
+        "Curated from the literature by BindingDB"
+      ],
+      "doi_candidates": [
+        "10.1016/j.chembiol.2007.10.011"
+      ],
+      "pmid_candidates": [
+        "18022567"
+      ],
+      "uniprot_accessions": [
+        "Q385E8"
+      ],
+      "target_names": [
+        "Lanosterol 14-alpha-demethylase"
+      ],
+      "assay_name": "Inhibition Assay",
+      "assay_description": "Azole derivatives used as an inhibitor of TB and TC CYP51.",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 21,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 1,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "no_explicit_spr_itc_bli_keyword",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "4488f29766cbe2653ea93739d332ffc50219fdf10a5a27284d66aca2e73306cd",
+      "protein_component_id": "454ee663ce3048464365fc4a533e1f189d56c62d467c28a5d53d4b7ce8560415",
+      "protein_sha256": "f01679b357e85183133b6e765b5bbb10fb34aac343f1185d3cae27b684632907",
+      "assay_key": "50005563_3",
+      "n_unique_compounds": 16,
+      "raw_source_records": 16,
+      "source_category": [
+        "ChEMBL"
+      ],
+      "doi_candidates": [
+        "10.1021/jm00050a017"
+      ],
+      "pmid_candidates": [
+        "7990119"
+      ],
+      "uniprot_accessions": [
+        "P00374"
+      ],
+      "target_names": [
+        "Dihydrofolate reductase"
+      ],
+      "assay_name": "ChEMBL_54267 (CHEMBL669263)",
+      "assay_description": "Apparent dissociation constant at pH 6.6 for human dihydrofolate reductase in the presence of cofactor NADPH",
+      "previous_30_task_worklist": true,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 21,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 1,
+      "temp_values_reported": 0,
+      "metadata_flags": [
+        "no_explicit_spr_itc_bli_keyword",
+        "temperature_missing_or_inconsistent"
+      ]
+    },
+    {
+      "task_id": "ecda92ab07807dc83bd9e209cdaaf37ed6dde042b57c859d54cd304eb7109163",
+      "protein_component_id": "1584f3e4bad2ba2f584b31a1e423f5830f273f124a946c021d543afac7dab7fa",
+      "protein_sha256": "f1aefe532ff750beda0af155e8a3c525c8d66786424d05470326737734f3f4cf",
+      "assay_key": "6984_1",
+      "n_unique_compounds": 15,
+      "raw_source_records": 15,
+      "source_category": [
+        "Curated from the literature by BindingDB"
+      ],
+      "doi_candidates": [
+        "10.1021/acschembio.5b00370"
+      ],
+      "pmid_candidates": [
+        "26214585"
+      ],
+      "uniprot_accessions": [
+        "Q48481"
+      ],
+      "target_names": [
+        "Probable UDP-galactopyranose mutase"
+      ],
+      "assay_name": "HPLC-based Assay",
+      "assay_description": "Reactions were performed in duplicate at 22 C in 50 mM NaH2PO4 buffer (pH 7) with 20 nM enzyme and 20 mM fresh sodium dithionite. Small molecules were added from DMSO stocks to a final concentration of 1% DMSO. Concentration of UDP-Galf was held constant at the Km of the UGM homolog being analyzed, except for generation of Lineweaver-Burk plots. Reaction time and substrate concentration were varied for Lineweaver-Burk analysis, and each condition was tested in triplicate. Quenched reactions were analyzed using a CarboPac PA-100 column (Thermo Scientific) on an Agilent 1260 Infinity HPLC using an isocratic elution of 200 mM ammonium acetate (pH 8) to separate substrate and product peaks.",
+      "previous_30_task_worklist": false,
+      "status": "UNREVIEWED_METADATA_PRIORITY_ONLY_NOT_APPROVED",
+      "metadata_priority_score": 21,
+      "has_one_article_doi": true,
+      "has_one_pmid": true,
+      "source_construct_hash_matched": true,
+      "unique_uniprot_accession": true,
+      "unique_target_name": true,
+      "single_source": true,
+      "nonpatent_literature_source": true,
+      "assay_text_present": true,
+      "explicit_physical_binding_method_keywords": [],
+      "potential_indirect_or_competition_keywords": [],
+      "ph_values_reported": 0,
+      "temp_values_reported": 1,
+      "metadata_flags": [
+        "no_explicit_spr_itc_bli_keyword",
+        "ph_missing_or_inconsistent"
+      ]
+    }
+  ],
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "approval_count": 0,
+  "reserved_balm_prospective_test_touched": false,
+  "warning": [
+    "Metadata presence/keywords do not verify original paper measurements or assay semantics.",
+    "Source construct hash equality to candidate sequence does not confirm original wet-lab protein construct.",
+    "Source DOI or PMID points to a publication, not an approved affinity result.",
+    "Original preliminary MMseqs homology components are not a scientifically certified split.",
+    "No affinity labels or model results were consulted to rank the worklist.",
+    "A reviewer must inspect source tables, compound identities, assay conditions, construct and exact Kd endpoint; all remain unreviewed.",
+    "No final scientific cohort or split was generated."
+  ]
+}
