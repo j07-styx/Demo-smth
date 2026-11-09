@@ -1,0 +1,28 @@
+{
+  "status": "PUBLIC_METHOD_METADATA_TRIAGE_ZERO_ASSAY_APPROVAL",
+  "fixed_original_review_tasks": 6,
+  "original_candidate_source_record_count": 147,
+  "target_relationship_annotation_counts": {
+    "direct_registry": 1,
+    "homologous_registry": 2,
+    "unknown_or_unverified": 3
+  },
+  "source_metadata_indicating_kinase_domain_assay_tasks": 3,
+  "original_published_kinase_table_with_censoring_warning_tasks": 3,
+  "SPR_recombinant_protein_public_registry_described_tasks": 1,
+  "NMR_conditional_method_requires_assay_comparability_review_tasks": 1,
+  "review_citation_not_primary_assay_tasks": 1,
+  "tasks_with_exact_original_source_row_crosswalk_verified": 0,
+  "physically_assayed_protein_constructs_sequence_verified": 0,
+  "scientifically_approved_tasks": 0,
+  "full_length_sequence_assay_constructs_authorized": 0,
+  "training_or_prospective_test_scoring_authorized": false,
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "limitations": [
+    "D/H/UNKNOWN describes a public registry target relationship; D does not prove a source-matched physically assayed protein sequence and H requires additional scrutiny.",
+    "A published kinase Kd matrix may contain censored/blank values, which cannot be silently substituted as exact binding constants.",
+    "Original-source task metadata and publication titles are not original experimental table crosswalks or independent source/construct validation.",
+    "The detailed six-task/source-annotation mapping remains confidential; the public projection contains only aggregate method risk counts.",
+    "No raw Kd/pKd labels, measured drug affinities, model predictions, training or reserved-test outcomes were accessed."
+  ]
+}
