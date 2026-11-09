@@ -1,0 +1,27 @@
+{
+  "status": "UNATTRIBUTED_ASSAY_CONTEXT_TRIAGE_NO_EXPERIMENTAL_APPROVAL",
+  "original_unattributed_task_count": 62,
+  "original_pre_split_component_count": 2,
+  "assay_context_exact_task_sequence_matches": 62,
+  "assay_context_categories": {
+    "GENERIC_KINASE_SELECTIVITY_PROFILING": 54,
+    "D3R_CHALLENGE_SERIES": 4,
+    "OCTETRED_LABELED_METHOD": 3,
+    "THERMOFLUOR_LABELED_METHOD": 1,
+    "OTHER_UNRESOLVED_ASSAY_CONTEXT": 0
+  },
+  "tasks_with_assay_context_DOI_count_zero": 62,
+  "tasks_with_no_explicit_Kd_or_IC50_keyword_flag": 62,
+  "tasks_with_exact_source_record_verified": 0,
+  "tasks_with_physical_construct_verified": 0,
+  "tasks_with_exact_Kd_endpoint_verified": 0,
+  "tasks_with_independent_source_approval": 0,
+  "tasks_added_to_training_or_test": 0,
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "warnings": [
+    "Generic assay metadata and keyword flags are not evidence of no actual affinity values; they cannot verify original measurement type or numerical quality.",
+    "The 54 generic kinase contexts could share method prose without sharing an original assay source; no new bibliographic family merges are made.",
+    "No task, source, protein, compound, sequence, assay or original assay-description identifiers are emitted in the public aggregate.",
+    "No raw binding affinity outcome, model prediction, reserved TEST result, original numerical label, or protected role assignment was read."
+  ]
+}
