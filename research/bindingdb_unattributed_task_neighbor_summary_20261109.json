@@ -1,0 +1,23 @@
+{
+  "status": "UNATTRIBUTED_TASK_BIBLIOGRAPHIC_NEIGHBORS_NOT_SOURCE_APPROVAL",
+  "pre_split_conflicted_source_families": 7,
+  "technical_tasks_in_those_families": 708,
+  "technical_tasks_with_no_original_DOI_PMID_or_patent": 62,
+  "source_neighbor_tier_counts": {
+    "SAME_COMPONENT_AND_ASSAY_NEIGHBORS": 0,
+    "SAME_COMPONENT_OTHER_ASSAY_NEIGHBORS": 62,
+    "SAME_ASSAY_OTHER_COMPONENT_NEIGHBORS": 0,
+    "FAMILY_ONLY_NO_NEARBY_BIBLIOGRAPHY": 0
+  },
+  "original_source_records_verified": 0,
+  "physical_constructs_verified": 0,
+  "scientifically_approved_tasks": 0,
+  "source_imputation_performed": false,
+  "reassigned_split_roles": false,
+  "scientific_gate": "BLOCKED_UNAPPROVED_NOT_TRAINING_READY",
+  "warnings": [
+    "A bibliography shared by another task or by the same family is a review lead, NOT evidence that it produced this task's measurements.",
+    "Neither the earlier reserved test outcomes nor any numerical affinity measurements or chemical identifiers are used.",
+    "Private task, source, assay and component mappings are excluded from this aggregate."
+  ]
+}
