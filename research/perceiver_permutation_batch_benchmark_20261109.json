@@ -1,0 +1,34 @@
+{
+  "scope": "Synthetic null-kernel runtime only; not CPI accuracy or end-to-end speedup",
+  "seed": 2612,
+  "repetitions": 20,
+  "blas_threads": 1,
+  "python": "3.9.13",
+  "numpy": "1.23.5",
+  "results": [
+    {
+      "support": 5,
+      "nulls": 49,
+      "max_abs_mse_error": 2.220446049250313e-16,
+      "median_seconds": {
+        "scalar": 0.01574060000000002,
+        "batched": 0.00031884999999998165
+      },
+      "speedup": 49.36678689039024,
+      "solve_calls_scalar": 735,
+      "solve_calls_batched": 5
+    },
+    {
+      "support": 10,
+      "nulls": 49,
+      "max_abs_mse_error": 5.773159728050814e-15,
+      "median_seconds": {
+        "scalar": 0.03190575000000001,
+        "batched": 0.0006648000000000209
+      },
+      "speedup": 47.99300541516096,
+      "solve_calls_scalar": 1470,
+      "solve_calls_batched": 10
+    }
+  ]
+}

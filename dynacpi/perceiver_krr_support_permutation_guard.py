@@ -76,8 +76,9 @@ def _support_null_permutations(n:int,seed:int,count:int):
     a uniform Monte Carlo permutation null. The identity is excluded because
     the observed sample is included explicitly in the add-one numerator.
     """
-    if count>math.factorial(n)-1:
-        raise ValueError("Requested more unique support permutations than exist")
+    # Exhaust the finite null when the requested Monte Carlo budget is larger.
+    # In particular K=3/4 and K=5 with a budget of 199 remain valid.
+    count=min(count,math.factorial(n)-1)
     rng=random.Random(seed)
     observed=tuple(range(n))
     shuffles=[]
@@ -118,6 +119,44 @@ def _permuted_support_mse(
                           disagreement[i],chemical_ridge,geometry_settings)
         errors.append((residual[i]-base-geo)**2)
     return float(np.mean(errors))
+
+
+def _permuted_support_mses(
+    chemical_k, residual, disagreements, *,
+    chemical_ridge, cap, geometry_settings,
+):
+    """Evaluate all null columns with shared LOO linear systems.
+
+    Same centering, clipping and ridge algebra as _permuted_support_mse.
+    Only support-sized matrices are allocated; no query labels are accepted.
+    """
+    d=np.asarray(disagreements,dtype=np.float64)
+    n=len(residual)
+    if d.ndim!=2 or d.shape[0]!=n or d.shape[1]==0:
+        raise ValueError("Expected nonempty support-by-permutation matrix")
+    errors=np.zeros(d.shape[1],dtype=np.float64)
+    s=geometry_settings
+    for i in range(n):
+        ix=np.asarray([j for j in range(n) if j!=i],dtype=np.int64)
+        kernel=chemical_k[np.ix_(ix,ix)]
+        A=kernel+chemical_ridge*np.eye(n-1)
+        means=d[ix].mean(axis=0)
+        centered=d[ix]-means
+        # One multiple-RHS solve per fold instead of three per permutation.
+        solved=np.linalg.solve(A,np.column_stack([residual[ix],centered]))
+        inv_r,inv_d=solved[:,0],solved[:,1:]
+        mr=residual[ix]-kernel@inv_r
+        md=centered-kernel@inv_d
+        spread=np.sum(centered*centered,axis=0)
+        denominator=np.sum(centered*md,axis=0)+s.geometry_ridge
+        theta=np.clip(centered.T@mr/denominator,-s.max_geometry_slope,s.max_geometry_slope)
+        extent=np.max(np.abs(centered),axis=0)
+        raw=np.clip(d[i]-means,-extent,extent)
+        geo=np.clip(theta*(raw-chemical_k[i,ix]@inv_d),-s.max_geometry_delta,s.max_geometry_delta)
+        geo=np.where(spread<s.min_disagreement_variation,0.0,geo)
+        base=float(np.clip(chemical_k[i,ix]@inv_r,-cap,cap))
+        errors+=(residual[i]-base-geo)**2
+    return errors/n
 
 
 def compare_krr_with_support_permutation_guard(
@@ -182,16 +221,13 @@ def compare_krr_with_support_permutation_guard(
     ).encode("utf-8")).digest()[:8],"big")
     permutations=_support_null_permutations(
         n,null_seed,permutation_settings.n_null_permutations)
-    extreme=0
-    for permutation in permutations:
-        null_mse=_permuted_support_mse(
-            k,r,d[np.asarray(permutation,dtype=np.int64)],
-            chemical_ridge=float(control_settings.lambda_kernel),
-            cap=float(control_settings.residual_cap),
-            geometry_settings=geometry_settings)
-        null_gain=float(original[0].loo_krr_mse-null_mse)
-        if null_gain>=actual-1e-12:
-            extreme+=1
+    null_mses=_permuted_support_mses(
+        k,r,d[np.asarray(permutations,dtype=np.int64)].T,
+        chemical_ridge=float(control_settings.lambda_kernel),
+        cap=float(control_settings.residual_cap),
+        geometry_settings=geometry_settings)
+    null_gains=original[0].loo_krr_mse-null_mses
+    extreme=int(np.sum(null_gains>=actual-1e-12))
     pvalue=(extreme+1)/(len(permutations)+1)
     accepted=pvalue<=permutation_settings.max_pvalue
     return tuple(PermutationGuardQuery(
