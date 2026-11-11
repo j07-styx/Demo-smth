@@ -1,0 +1,29 @@
+﻿{
+  "proteins": 298,
+  "proteins_with_changed_3di": 298,
+  "negative_controls_rejected": 3,
+  "features": {
+    "esm2_sequence.npz": {
+      "shape": [
+        298,
+        480
+      ],
+      "mean_feature_sd": 0.08305048942565918
+    },
+    "saprot_real.npz": {
+      "shape": [
+        298,
+        480
+      ],
+      "mean_feature_sd": 0.04131849855184555
+    },
+    "saprot_shuffled.npz": {
+      "shape": [
+        298,
+        480
+      ],
+      "mean_feature_sd": 0.0404612235724926
+    }
+  },
+  "real_shuffled_feature_rms": 0.08682620525360107
+}
