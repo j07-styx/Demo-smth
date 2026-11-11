@@ -1,0 +1,20 @@
+{
+  "evidence": "ENGINEERING_ONLY_BALM_FROZEN_TRAIN",
+  "rows": 5808,
+  "proteins": 298,
+  "groups": 253,
+  "compounds": 3405,
+  "atom_truncated_molecules": 195,
+  "max_atoms": 96,
+  "max_residues": 96,
+  "structure_manifest_sha256": "095cdb3b98fcb904b61c6ea2d9e8050e6150985f3d83b3916b86f5bc926b9d06",
+  "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+  "source_loader_sha256": "e7eada1a58a7e1b0fdfd5672e351c0bc42f9c2929594c4cc01cb0759407a20e3",
+  "notes": [
+    "No inner-dev/reserved affinity labels materialized",
+    "No binding pockets or poses inferred",
+    "AF mappings are reference alignments, not independently approved assay constructs",
+    "No pretrained SaProt or SPMM; lightweight token-fusion ablation"
+  ],
+  "skipped": {}
+}

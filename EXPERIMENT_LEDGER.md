@@ -167,3 +167,12 @@ Implemented `dynacpi/pocket_interaction_dev.py` and a matched four-arm engineeri
 The completed BALM descriptor probe (5 folds x 2 repeats; 5,808 TRAIN rows in 253 groups) did not establish structural benefit: pooled RMSE 1.487624 baseline vs 1.506438 with structure; group-macro delta -0.009682 with 95% CI [-0.0354, 0.0151]. Reserved test remains unscored. These are development engineering results, not approved exact-Kd cohort evidence.
 
 Implementation, input contract, limitations and full aggregate results: [pocket repair report](research/pocket_repair_20261110/README.md). Run `python scripts/validate_pocket_repair_dev.py` for the new engineering checks; saved `validation.json` records the result and source hashes. No real-affinity pocket-model training is claimed: a provenance-backed, residue-aligned pocket feature bundle is still required. Scientific cohort review requirements remain in force.
+
+
+## 11 November 2026 — v5.2 structural token interaction experiment
+
+Implemented bidirectional atom/residue attention, direct fingerprint preservation, local invariant structural tokens, a train-only feature builder, matched four-arm training and read-only mechanism diagnostics. Completed 24 real-data engineering fits (3 seeds x 4 arms x uncapped/capped correction policies) on an internal holdout of the BALM TRAIN partition. No reserved-test scoring.
+
+Mean pooled RMSE: ridge 1.489130; uncapped real-geometry residual 1.708872; capped real-geometry residual 1.535797; capped shuffled 1.535785. Capping reduces harm, but no reliable geometry advantage or baseline win. Compound representations remain diverse; neither chemical discrimination nor nonzero geometry sensitivity establishes useful residue correspondence. Six new engineering tests passed. This borrows an interaction-design idea from GenSPARC but does not use its pretrained SaProt/SPMM representations or claim replication.
+
+Details, exact scope, full negative outcomes, commands and limitations: [structural token experiment](research/structural_token_trial_20261111/README.md). Core v4 inference and original checkpoints remain unchanged.

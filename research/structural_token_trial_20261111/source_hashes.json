@@ -1,0 +1,22 @@
+[
+    {
+        "Hash":  "D099D2646F8E45587D8B52C8AB375AB440E2A63571472D8CB6BEFC48C88BACBF",
+        "Path":  "C:\\Users\\J0124\\Demo-smth\\dynacpi\\structural_token_fusion_dev.py"
+    },
+    {
+        "Hash":  "7325935A3FF06F8609173BFE9F37DB659849BBC8BE2ADB964D1F45F0E6743A4D",
+        "Path":  "C:\\Users\\J0124\\Demo-smth\\scripts\\build_structural_token_bundle_dev.py"
+    },
+    {
+        "Hash":  "19B29D34E731CCD2C3A2DE152DE4B4F206D910DB0AB7DFC2DFC5676ADAD157EF",
+        "Path":  "C:\\Users\\J0124\\Demo-smth\\scripts\\run_structural_token_trial_dev.py"
+    },
+    {
+        "Hash":  "C26B107837425342DFBFCC1840861B441E8A936172A14B4A072E12A879BC538B",
+        "Path":  "C:\\Users\\J0124\\Demo-smth\\scripts\\diagnose_structural_tokens_dev.py"
+    },
+    {
+        "Hash":  "1F0486C36768465EC764DA0C6803182E160FEBA3E940A68ABA29E4D5C9C55409",
+        "Path":  "C:\\Users\\J0124\\Demo-smth\\tests_v4\\structural_token_fusion_test.py"
+    }
+]

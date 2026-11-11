@@ -1,0 +1,53 @@
+{
+  "evidence": "ENGINEERING_ONLY_TRAIN_INTERNAL_HOLDOUT",
+  "feature_manifest": {
+    "evidence": "ENGINEERING_ONLY_BALM_FROZEN_TRAIN",
+    "rows": 5808,
+    "proteins": 298,
+    "groups": 253,
+    "compounds": 3405,
+    "atom_truncated_molecules": 195,
+    "max_atoms": 96,
+    "max_residues": 96,
+    "structure_manifest_sha256": "095cdb3b98fcb904b61c6ea2d9e8050e6150985f3d83b3916b86f5bc926b9d06",
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "source_loader_sha256": "e7eada1a58a7e1b0fdfd5672e351c0bc42f9c2929594c4cc01cb0759407a20e3",
+    "notes": [
+      "No inner-dev/reserved affinity labels materialized",
+      "No binding pockets or poses inferred",
+      "AF mappings are reference alignments, not independently approved assay constructs",
+      "No pretrained SaProt or SPMM; lightweight token-fusion ablation"
+    ],
+    "skipped": {}
+  },
+  "args": {
+    "bundle_dir": "C:\\Users\\J0124\\dynacpi_v4\\data\\structural_token_trial_20261111",
+    "out": "C:\\Users\\J0124\\dynacpi_v4\\research\\structural_token_trial_20261111",
+    "seeds": [
+      4111,
+      4112,
+      4113
+    ],
+    "epochs": 5,
+    "steps_per_epoch": 64,
+    "threads": 2
+  },
+  "split_seed": 4110,
+  "train_rows": 4982,
+  "dev_rows": 826,
+  "dev_groups": 50,
+  "selection": "fixed final epoch, scale 0.25, no dev tuning",
+  "baseline": {
+    "pooled_rmse": 1.4891304969787598,
+    "group_macro_rmse": 1.2692064046859741
+  },
+  "arms": [
+    "sequence",
+    "real",
+    "mean",
+    "shuffled"
+  ],
+  "source_row_train_sha256": "85df314f75b299682d77b809ab07ca411b77db4e17ce4636e31217ea4fb44c25",
+  "source_row_dev_sha256": "b1d07b4fc0ee3a1b7c2a8d50b0bc8607a8b050a22b4ebec6355845d7cdc73b24",
+  "runs": []
+}

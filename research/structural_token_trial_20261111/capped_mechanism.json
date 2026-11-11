@@ -1,0 +1,31 @@
+{
+  "scope": "READ_ONLY_INTERVENTION_NO_LABELS_NO_ACCURACY_CLAIM",
+  "proteins": 16,
+  "compounds": 16,
+  "runs": [
+    {
+      "seed": 4111,
+      "compound_cosine_mean": 0.17075927555561066,
+      "compound_centered_effective_rank": 13.597195625305176,
+      "geometry_effect_rms": 0.2214653431979195,
+      "correspondence_shuffle_rms": 0.005657619505885093,
+      "interaction_fraction_of_geometry_effect_energy": 0.43806615452982156
+    },
+    {
+      "seed": 4112,
+      "compound_cosine_mean": 0.12744280695915222,
+      "compound_centered_effective_rank": 13.584576606750488,
+      "geometry_effect_rms": 0.39765085454388754,
+      "correspondence_shuffle_rms": 0.01116774394172028,
+      "interaction_fraction_of_geometry_effect_energy": 0.19662747223273103
+    },
+    {
+      "seed": 4113,
+      "compound_cosine_mean": 0.09894628077745438,
+      "compound_centered_effective_rank": 14.0408353805542,
+      "geometry_effect_rms": 0.3233919483166181,
+      "correspondence_shuffle_rms": 0.005892865262402026,
+      "interaction_fraction_of_geometry_effect_energy": 0.29017789255486015
+    }
+  ]
+}
