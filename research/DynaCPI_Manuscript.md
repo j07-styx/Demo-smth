@@ -454,3 +454,11 @@ Reported scores below belong to Nguyen et al. Each record identifies the locatio
 **S09 · Table S7.** Screening performance varies by target. PerceiverCPI reports EF1%/BEDROC of 43.13/0.51 on DRD3 and 0/0 on AMPC. The target-level data qualify the family averages in main Table 8. Prospective ranking utility remains unmeasured in DynaCPI.
 
 **S10 · Data availability.** The supplement identifies DeepPurpose for DAVIS/KIBA, KinasepKipred for METZ, MONN for PDBbind, TransformerCPI for GPCR training and DUD-E for screening. The next provenance check is to trace local split generation to those specific source releases and original construct identifiers. These links alone do not verify the local labels.
+
+## 11 November 2026 — opt-in pocket interaction repair
+
+Implemented `dynacpi/pocket_interaction_dev.py` and a matched four-arm engineering runner (`scripts/train_pocket_repair_dev.py`) on `v5-redesign`. Direct compound features, pocket-restricted distance messages, compound-conditioned attention, jointly trainable heads and exact missing-geometry fallback are implemented. The original v4 architecture/checkpoints and demo endpoints are unchanged. This is an experimental extension, not a validated replacement model.
+
+The completed BALM descriptor probe (5 folds x 2 repeats; 5,808 TRAIN rows in 253 groups) did not establish structural benefit: pooled RMSE 1.487624 baseline vs 1.506438 with structure; group-macro delta -0.009682 with 95% CI [-0.0354, 0.0151]. Reserved test remains unscored. These are development engineering results, not approved exact-Kd cohort evidence.
+
+Implementation, input contract, limitations and full aggregate results: [pocket repair report](pocket_repair_20261110/README.md). Run `python scripts/validate_pocket_repair_dev.py` for the new engineering checks; saved `validation.json` records the result and source hashes. No real-affinity pocket-model training is claimed: a provenance-backed, residue-aligned pocket feature bundle is still required. Scientific cohort review requirements remain in force.

@@ -595,3 +595,11 @@ The selected architecture is final enough to implement. Hyperparameter performan
 - [MINE](https://doi.org/10.1016/j.ins.2020.07.056), [Local prediction pools](https://doi.org/10.1002/for.3030), [FS-CAP](https://doi.org/10.1021/acs.jcim.4c00485), [AdaMBind](https://doi.org/10.1038/s41467-026-70554-5), [MetaDTA official implementation](https://github.com/Standigm/MetaDTA), and [AssayRouter preprint](https://arxiv.org/abs/2609.37285): prior-art context from the preceding review. MetaDTA's full PDF was not available for direct full-text review.
 
 All layer sizes, bounds, sampling rules, training defaults and decision thresholds in this document are explicit project decisions unless attributed to an upstream source. No trained DynaCPI performance result is asserted.
+
+## 11 November 2026 — opt-in pocket interaction repair
+
+Implemented `dynacpi/pocket_interaction_dev.py` and a matched four-arm engineering runner (`scripts/train_pocket_repair_dev.py`) on `v5-redesign`. Direct compound features, pocket-restricted distance messages, compound-conditioned attention, jointly trainable heads and exact missing-geometry fallback are implemented. The original v4 architecture/checkpoints and demo endpoints are unchanged. This is an experimental extension, not a validated replacement model.
+
+The completed BALM descriptor probe (5 folds x 2 repeats; 5,808 TRAIN rows in 253 groups) did not establish structural benefit: pooled RMSE 1.487624 baseline vs 1.506438 with structure; group-macro delta -0.009682 with 95% CI [-0.0354, 0.0151]. Reserved test remains unscored. These are development engineering results, not approved exact-Kd cohort evidence.
+
+Implementation, input contract, limitations and full aggregate results: [pocket repair report](research/pocket_repair_20261110/README.md). Run `python scripts/validate_pocket_repair_dev.py` for the new engineering checks; saved `validation.json` records the result and source hashes. No real-affinity pocket-model training is claimed: a provenance-backed, residue-aligned pocket feature bundle is still required. Scientific cohort review requirements remain in force.

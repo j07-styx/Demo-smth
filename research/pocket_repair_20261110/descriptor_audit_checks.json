@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "bootstrap_explicit_resampling",
+    "rigid_transform_invariance",
+    "zero_init_gradient_recovery",
+    "additive_structure_is_offset"
+  ],
+  "illustrative_zero_init_encoder_gradient_norms": [
+    0.0,
+    2.6663870812626556e-05,
+    5.332395085133612e-05
+  ],
+  "note": "Synthetic checks establish algebra/software behavior, not historical checkpoint performance."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "evidence": "ENGINEERING_ONLY_SYNTHETIC",
+  "timestamp_utc": "2026-11-11T04:35:15.136789+00:00",
+  "checks": [
+    {
+      "file": "pocket_interaction_repair_test.py",
+      "sha256": "d90598eb40d987b7f71e4d8cfccb74023d3b5308be8b6d856bb9dee2845887ea",
+      "exit_code": 0,
+      "test_count": 7
+    },
+    {
+      "file": "pocket_repair_training_test.py",
+      "sha256": "e1e07ead6c626b78413cb6903573d3d1c2b0ffa643480cedd1a0d4e54d607fa4",
+      "exit_code": 0,
+      "test_count": 4
+    }
+  ],
+  "source_sha256": {
+    "dynacpi\\pocket_interaction_dev.py": "39cc50f3f52ced1108c77e3a294785412153c48831d386ddd4aa041a68c9bcee",
+    "scripts\\train_pocket_repair_dev.py": "3bded045051ba435abc6c6c9c4d57b68fa2071e949db2ba9a49e86917a8892c9"
+  }
+}
