@@ -1,0 +1,222 @@
+{
+  "protocol": {
+    "evidence": "ENGINEERING_ONLY_TRAIN_NESTED_GROUP_CV",
+    "outer_folds": 5,
+    "split_seed": 4110,
+    "assignment": "shuffled sorted groups, round robin",
+    "inner_folds": 3,
+    "scale_grid": [
+      0,
+      0.1,
+      0.3,
+      1
+    ],
+    "arms": [
+      "baseline",
+      "esm2_sequence",
+      "saprot_real",
+      "saprot_shuffled"
+    ],
+    "selection": "same v5.3 readout; inner group-macro RMSE only",
+    "decision": "real must improve both pooled and macro versus baseline, ESM2 and shuffled; intervals reported without claiming independent-test significance",
+    "limitations": [
+      "TRAIN cohort already used for exploratory development",
+      "Group bootstrap conditions on overlapping CV fits; not full retraining uncertainty",
+      "Single outer partition and one shuffled token realization",
+      "No reserved test is read"
+    ],
+    "evaluator_sha256": "a60f966bda6784d512ec17f2583b014a7598349f5e2118dd01118bdd3b7c63f2"
+  },
+  "rows": 5808,
+  "groups": 253,
+  "metrics": {
+    "baseline": {
+      "pooled_rmse": 1.5563037495512397,
+      "group_macro_rmse": 1.3622206613167283
+    },
+    "esm2_sequence": {
+      "pooled_rmse": 1.5483790738959455,
+      "group_macro_rmse": 1.335627330430901
+    },
+    "saprot_real": {
+      "pooled_rmse": 1.569070216107301,
+      "group_macro_rmse": 1.3456428943621899
+    },
+    "saprot_shuffled": {
+      "pooled_rmse": 1.5617157539086144,
+      "group_macro_rmse": 1.3416359833854024
+    }
+  },
+  "fold_metrics": [
+    {
+      "baseline": {
+        "pooled_rmse": 1.7312134504318237,
+        "group_macro_rmse": 1.4657856225967407
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.6596978902816772,
+        "group_macro_rmse": 1.4144082069396973
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.6846479177474976,
+        "group_macro_rmse": 1.417434811592102
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.7079832553863525,
+        "group_macro_rmse": 1.4090735912322998
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.5393924713134766,
+        "group_macro_rmse": 1.1849663257598877
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.4300276041030884,
+        "group_macro_rmse": 1.1220320463180542
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.432364821434021,
+        "group_macro_rmse": 1.142931580543518
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.506091594696045,
+        "group_macro_rmse": 1.1768256425857544
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.4768120050430298,
+        "group_macro_rmse": 1.4090040922164917
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.4829661846160889,
+        "group_macro_rmse": 1.399842619895935
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.486323595046997,
+        "group_macro_rmse": 1.3824875354766846
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.5372031927108765,
+        "group_macro_rmse": 1.3831466436386108
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.568627119064331,
+        "group_macro_rmse": 1.368491768836975
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.7019075155258179,
+        "group_macro_rmse": 1.4224029779434204
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.7556891441345215,
+        "group_macro_rmse": 1.4912179708480835
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.5918244123458862,
+        "group_macro_rmse": 1.3568576574325562
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.2990018129348755,
+        "group_macro_rmse": 1.383393406867981
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.2707525491714478,
+        "group_macro_rmse": 1.320862889289856
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.2630910873413086,
+        "group_macro_rmse": 1.296023964881897
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.2990018129348755,
+        "group_macro_rmse": 1.383393406867981
+      }
+    }
+  ],
+  "selected_scales": [
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.3
+    },
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.3
+    },
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.3
+    },
+    {
+      "esm2_sequence": 1.0,
+      "saprot_real": 1.0,
+      "saprot_shuffled": 0.3
+    },
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.0
+    }
+  ],
+  "contrasts": {
+    "real_minus_baseline": {
+      "macro_delta": -0.016577766954538192,
+      "macro_ci95": [
+        -0.05982986815142173,
+        0.028101697343134398
+      ],
+      "pooled_delta": 0.012766466556061173,
+      "pooled_ci95": [
+        -0.05929102503949524,
+        0.09581487778321708
+      ],
+      "groups_improved": 138,
+      "groups_worsened": 115,
+      "top5_absolute_sse_share": 0.43520616874727697,
+      "fold_pooled_wins": 3,
+      "fold_macro_wins": 4
+    },
+    "real_minus_esm2_sequence": {
+      "macro_delta": 0.010015563931288763,
+      "macro_ci95": [
+        -0.021455652308400363,
+        0.04095968213431697
+      ],
+      "pooled_delta": 0.020691142211355373,
+      "pooled_ci95": [
+        -0.01975490622689884,
+        0.06026087834026307
+      ],
+      "groups_improved": 122,
+      "groups_worsened": 131,
+      "top5_absolute_sse_share": 0.38399100066969216,
+      "fold_pooled_wins": 1,
+      "fold_macro_wins": 2
+    },
+    "real_minus_saprot_shuffled": {
+      "macro_delta": 0.004006910976787375,
+      "macro_ci95": [
+        -0.028848335108837643,
+        0.039342397589023824
+      ],
+      "pooled_delta": 0.007354462198686518,
+      "pooled_ci95": [
+        -0.04813747119601254,
+        0.06931570229222014
+      ],
+      "groups_improved": 122,
+      "groups_worsened": 131,
+      "top5_absolute_sse_share": 0.42483404563324384,
+      "fold_pooled_wins": 4,
+      "fold_macro_wins": 3
+    }
+  }
+}

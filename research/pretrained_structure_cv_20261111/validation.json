@@ -1,0 +1,6 @@
+﻿{
+  "rows_exactly_once": 5808,
+  "groups_in_exactly_one_fold": 253,
+  "negative_partition_controls_rejected": 3,
+  "all_reported_metrics_reproduced": true
+}

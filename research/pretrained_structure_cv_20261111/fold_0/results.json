@@ -1,0 +1,96 @@
+{
+  "protocol": {
+    "evidence": "ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT",
+    "arms": [
+      "esm2_sequence",
+      "saprot_real",
+      "saprot_shuffled"
+    ],
+    "scales": [
+      0.0,
+      0.1,
+      0.3,
+      1.0
+    ],
+    "selection": "3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121",
+    "outer_fold": 0,
+    "split_seed": 4110,
+    "fit_rows": 4210,
+    "eval_rows": 1598,
+    "eval_groups": 51,
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "feature_hashes": {
+      "esm2_sequence": "74fb2ff5ca9cdba23744f3caf44bbf7cc26db1da1a8e6d5914b7fcb7a822a27e",
+      "saprot_real": "d232fb01d49e8d6e21d00cea4be5ce68a76f555a36670521734a14ca856aa568",
+      "saprot_shuffled": "8a5fb2e7d1273ea4067a69eeb9e75cc45d1870dc6bffbea676087652dff15124"
+    },
+    "design": "Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms",
+    "limitations": [
+      "Previously inspected holdout; exploratory, not independent test",
+      "Frozen pooled 35M representations, not full GenSPARC",
+      "SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control",
+      "Shuffled tokens can be out of distribution"
+    ]
+  },
+  "selected_scales": {
+    "esm2_sequence": 0.3,
+    "saprot_real": 0.3,
+    "saprot_shuffled": 0.3
+  },
+  "metrics": {
+    "baseline": {
+      "pooled_rmse": 1.7312134504318237,
+      "group_macro_rmse": 1.4657856225967407
+    },
+    "esm2_sequence": {
+      "pooled_rmse": 1.6596978902816772,
+      "group_macro_rmse": 1.4144082069396973
+    },
+    "saprot_real": {
+      "pooled_rmse": 1.6846479177474976,
+      "group_macro_rmse": 1.417434811592102
+    },
+    "saprot_shuffled": {
+      "pooled_rmse": 1.7079832553863525,
+      "group_macro_rmse": 1.4090735912322998
+    }
+  },
+  "contrasts": {
+    "real_minus_baseline": {
+      "macro_delta": -0.04835080727934837,
+      "macro_ci95": [
+        -0.0953836178407073,
+        -0.003258991311304311
+      ],
+      "pooled_delta": -0.04656553268432617,
+      "pooled_ci95": [
+        -0.09380749931878703,
+        -0.0019104822104350147
+      ]
+    },
+    "real_minus_esm2_sequence": {
+      "macro_delta": 0.0030267660040408373,
+      "macro_ci95": [
+        -0.04662518985569477,
+        0.04933432983234523
+      ],
+      "pooled_delta": 0.024950027465820312,
+      "pooled_ci95": [
+        -0.0405949488181623,
+        0.0876769791325038
+      ]
+    },
+    "real_minus_saprot_shuffled": {
+      "macro_delta": 0.008361056447029114,
+      "macro_ci95": [
+        -0.03246899368241429,
+        0.0493564274162054
+      ],
+      "pooled_delta": -0.02333533763885498,
+      "pooled_ci95": [
+        -0.0971337414731058,
+        0.057200233411021144
+      ]
+    }
+  }
+}

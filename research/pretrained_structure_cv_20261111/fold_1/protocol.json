@@ -1,0 +1,33 @@
+{
+  "evidence": "ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT",
+  "arms": [
+    "esm2_sequence",
+    "saprot_real",
+    "saprot_shuffled"
+  ],
+  "scales": [
+    0.0,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "selection": "3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121",
+  "outer_fold": 1,
+  "split_seed": 4110,
+  "fit_rows": 4952,
+  "eval_rows": 856,
+  "eval_groups": 51,
+  "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+  "feature_hashes": {
+    "esm2_sequence": "74fb2ff5ca9cdba23744f3caf44bbf7cc26db1da1a8e6d5914b7fcb7a822a27e",
+    "saprot_real": "d232fb01d49e8d6e21d00cea4be5ce68a76f555a36670521734a14ca856aa568",
+    "saprot_shuffled": "8a5fb2e7d1273ea4067a69eeb9e75cc45d1870dc6bffbea676087652dff15124"
+  },
+  "design": "Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms",
+  "limitations": [
+    "Previously inspected holdout; exploratory, not independent test",
+    "Frozen pooled 35M representations, not full GenSPARC",
+    "SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control",
+    "Shuffled tokens can be out of distribution"
+  ]
+}

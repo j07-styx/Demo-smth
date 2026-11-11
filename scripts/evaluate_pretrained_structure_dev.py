@@ -18,7 +18,7 @@ def metrics(y,p,g):
     e=(y-p)**2
     return {'pooled_rmse':float(np.sqrt(e.mean())), 'group_macro_rmse':float(np.mean([np.sqrt(e[g==k].mean()) for k in np.unique(g)]))}
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--bundle-dir',required=True);ap.add_argument('--features',required=True);ap.add_argument('--out',required=True);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--bundle-dir',required=True);ap.add_argument('--features',required=True);ap.add_argument('--out',required=True);ap.add_argument('--outer-fold',type=int,choices=range(5));a=ap.parse_args()
     out=Path(a.out);out.mkdir(parents=True,exist_ok=False);b=Path(a.bundle_dir);f=Path(a.features)
     meta=json.loads((b/'manifest.json').read_text());assert meta['evidence']=='ENGINEERING_ONLY_BALM_FROZEN_TRAIN';assert sha(b/'features.npz')==meta['bundle_sha256']
     with np.load(b/'features.npz',allow_pickle=False) as z:d={k:z[k] for k in ['protein_sha','protein_sequence','protein_index','compound_index','groups','fp','label','source_row']}
@@ -27,10 +27,14 @@ def main():
         with np.load(f/(arm+'.npz'),allow_pickle=False) as z:
             assert np.array_equal(z['protein_sha'],d['protein_sha']);features[arm]=z['features'].copy();assert np.isfinite(features[arm]).all()
     pi,ci,y=d['protein_index'],d['compound_index'],d['label'];g=d['groups'][pi]
-    ug=np.array(sorted(set(d['groups'])));np.random.RandomState(4110).shuffle(ug);held=set(ug[:len(ug)//5]);tr=np.flatnonzero([x not in held for x in g]);va=np.flatnonzero([x in held for x in g])
+    ug=np.array(sorted(set(d['groups'])));np.random.RandomState(4110).shuffle(ug);held=set(ug[:len(ug)//5] if a.outer_fold is None else ug[a.outer_fold::5]);tr=np.flatnonzero([x not in held for x in g]);va=np.flatnonzero([x in held for x in g])
+    assert not set(g[tr]) & set(g[va])
+    assert len(tr)+len(va)==len(y)
     tg=np.array(sorted(set(g[tr])));np.random.RandomState(4114).shuffle(tg);fold={x:i%3 for i,x in enumerate(tg)}
-    prov=json.loads((f/'provenance.json').read_text());conf=np.array(prov['mask_counts'])/np.array([len(s) for s in d['protein_sequence']]);common=np.column_stack([conf,np.log1p([len(s) for s in d['protein_sequence']])])
-    protocol={'evidence':'ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT','arms':ARMS,'scales':SCALES,'selection':'3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121','split_seed':4110,'fit_rows':len(tr),'eval_rows':len(va),'eval_groups':len(held),'bundle_sha256':sha(b/'features.npz'),'feature_hashes':{arm:sha(f/(arm+'.npz')) for arm in ARMS},'design':'Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms','limitations':['Previously inspected holdout; exploratory, not independent test','Frozen pooled 35M representations, not full GenSPARC','SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control','Shuffled tokens can be out of distribution']}
+    prov=json.loads((f/'provenance.json').read_text())
+    for arm in ARMS:assert sha(f/(arm+'.npz'))==prov['feature_sha256'][arm+'.npz']
+    conf=np.array(prov['mask_counts'])/np.array([len(s) for s in d['protein_sequence']]);common=np.column_stack([conf,np.log1p([len(s) for s in d['protein_sequence']])])
+    protocol={'evidence':'ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT','arms':ARMS,'scales':SCALES,'selection':'3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121','outer_fold':a.outer_fold,'split_seed':4110,'fit_rows':len(tr),'eval_rows':len(va),'eval_groups':len(held),'bundle_sha256':sha(b/'features.npz'),'feature_hashes':{arm:sha(f/(arm+'.npz')) for arm in ARMS},'design':'Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms','limitations':['Previously inspected holdout; exploratory, not independent test','Frozen pooled 35M representations, not full GenSPARC','SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control','Shuffled tokens can be out of distribution']}
     (out/'protocol.json').write_text(json.dumps(protocol,indent=2));print('PROTOCOL LOCKED',flush=True)
     fp=normalize(csr_matrix(d['fp']))
     def blocks(fit,ev):
