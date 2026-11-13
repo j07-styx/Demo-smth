@@ -1,0 +1,50 @@
+{
+  "evidence": "EXPLORATORY_TRAIN_GROUP_CV",
+  "arms": {
+    "esm_attention": [
+      "esm2_sequence",
+      "attention"
+    ],
+    "real_attention": [
+      "saprot_real",
+      "attention"
+    ],
+    "shuffle_attention": [
+      "saprot_shuffled",
+      "attention"
+    ],
+    "real_mean": [
+      "saprot_real",
+      "mean"
+    ]
+  },
+  "seeds": [
+    6111,
+    6112
+  ],
+  "epochs": 5,
+  "batches_per_epoch_max": 64,
+  "batch_size": 32,
+  "optimizer": "AdamW lr .0003 decay .01; grad clip 1",
+  "residual_cap": 0.25,
+  "target": "raw-unit residual to three-fold group-cross-fitted shared ridge baseline",
+  "selection": "fixed final epoch, no validation tuning",
+  "outer_split_seed": 4110,
+  "device": "cuda",
+  "validation": {
+    "consistent_residue_permutation": true,
+    "masked_residue_invariance": true,
+    "ligand_changes_attention": true,
+    "uniform_control": true,
+    "nonzero_query_gradient": true,
+    "bounded_correction": true
+  },
+  "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+  "feature_manifest_sha256": "3cf607bdcfe45a8592e33fa3d5d4307294b5d10344d902edd07c95594b414f4e",
+  "limitations": [
+    "Reused TRAIN cohort, exploratory",
+    "96 uniformly sampled contextual residue embeddings, not verified binding pockets",
+    "Frozen encoders, no ligand pose",
+    "Bounded short training pilot; negative result does not exhaust architecture"
+  ]
+}

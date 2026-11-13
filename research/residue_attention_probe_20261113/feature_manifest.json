@@ -1,0 +1,20 @@
+{
+  "evidence": "LABEL_FREE_RESIDUE_CACHE",
+  "parent_provenance_sha256": "38b82c80681b1d94ec633494bea273d2a9683e66ca9d2b57c2315ab67599b1d6",
+  "positions": "up to 96 uniformly spaced residues across full sequence, same positions in every arm",
+  "features": {
+    "saprot_real": {
+      "sha256": "532c2a3e2407585a384b5228651f41e18caacd870939ffa3117b2b5d3a133164",
+      "mean_cache_max_error": 2.0265579223632812e-06
+    },
+    "saprot_shuffled": {
+      "sha256": "587957a78eb310136860d9225884b6f0e68e2a7c0dd75c4834135f9b04ef1dc3",
+      "mean_cache_max_error": 1.8477439880371094e-06
+    },
+    "esm2_sequence": {
+      "sha256": "cece7e97de570f23cc565d24ec358943294509d0fa979aceb7337d86a1f771c1",
+      "mean_cache_max_error": 5.7220458984375e-06
+    }
+  },
+  "device": "cuda"
+}

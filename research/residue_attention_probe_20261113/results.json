@@ -1,0 +1,168 @@
+{
+  "protocol": {
+    "evidence": "EXPLORATORY_TRAIN_GROUP_CV",
+    "arms": {
+      "esm_attention": [
+        "esm2_sequence",
+        "attention"
+      ],
+      "real_attention": [
+        "saprot_real",
+        "attention"
+      ],
+      "shuffle_attention": [
+        "saprot_shuffled",
+        "attention"
+      ],
+      "real_mean": [
+        "saprot_real",
+        "mean"
+      ]
+    },
+    "seeds": [
+      6111,
+      6112
+    ],
+    "epochs": 5,
+    "batches_per_epoch_max": 64,
+    "batch_size": 32,
+    "optimizer": "AdamW lr .0003 decay .01; grad clip 1",
+    "residual_cap": 0.25,
+    "target": "raw-unit residual to three-fold group-cross-fitted shared ridge baseline",
+    "selection": "fixed final epoch, no validation tuning",
+    "outer_split_seed": 4110,
+    "device": "cuda",
+    "validation": {
+      "consistent_residue_permutation": true,
+      "masked_residue_invariance": true,
+      "ligand_changes_attention": true,
+      "uniform_control": true,
+      "nonzero_query_gradient": true,
+      "bounded_correction": true
+    },
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "feature_manifest_sha256": "3cf607bdcfe45a8592e33fa3d5d4307294b5d10344d902edd07c95594b414f4e",
+    "limitations": [
+      "Reused TRAIN cohort, exploratory",
+      "96 uniformly sampled contextual residue embeddings, not verified binding pockets",
+      "Frozen encoders, no ligand pose",
+      "Bounded short training pilot; negative result does not exhaust architecture"
+    ]
+  },
+  "rows": 5808,
+  "groups": 253,
+  "baseline": {
+    "pooled_rmse": 1.5563037495512397,
+    "group_macro_rmse": 1.3622206613167283
+  },
+  "ensemble_metrics": {
+    "esm_attention": {
+      "pooled_rmse": 1.5536656225145948,
+      "group_macro_rmse": 1.3503996792334463
+    },
+    "real_attention": {
+      "pooled_rmse": 1.5398964952788743,
+      "group_macro_rmse": 1.3374850048603888
+    },
+    "shuffle_attention": {
+      "pooled_rmse": 1.5661394379624467,
+      "group_macro_rmse": 1.3469964046105425
+    },
+    "real_mean": {
+      "pooled_rmse": 1.5343682955857285,
+      "group_macro_rmse": 1.3381419915538382
+    }
+  },
+  "seed_metrics": {
+    "esm_attention": [
+      {
+        "pooled_rmse": 1.5564535135027717,
+        "group_macro_rmse": 1.3510116373959764
+      },
+      {
+        "pooled_rmse": 1.5524145969633458,
+        "group_macro_rmse": 1.3512022329549933
+      }
+    ],
+    "real_attention": [
+      {
+        "pooled_rmse": 1.5430290133047422,
+        "group_macro_rmse": 1.3380995272080363
+      },
+      {
+        "pooled_rmse": 1.5377404140789186,
+        "group_macro_rmse": 1.3387178822464263
+      }
+    ],
+    "shuffle_attention": [
+      {
+        "pooled_rmse": 1.5620776620133578,
+        "group_macro_rmse": 1.3447553373988494
+      },
+      {
+        "pooled_rmse": 1.5710832008762226,
+        "group_macro_rmse": 1.3499986893379994
+      }
+    ],
+    "real_mean": [
+      {
+        "pooled_rmse": 1.5374586233804397,
+        "group_macro_rmse": 1.3401742960756755
+      },
+      {
+        "pooled_rmse": 1.5324054267295768,
+        "group_macro_rmse": 1.3372544687679389
+      }
+    ]
+  },
+  "contrasts": {
+    "baseline": {
+      "macro_delta": -0.024735656456339156,
+      "macro_ci95": [
+        -0.04070687133945426,
+        -0.00882340009927741
+      ],
+      "pooled_delta": -0.016407254272365668,
+      "pooled_ci95": [
+        -0.04506773194369459,
+        0.012896445658358732
+      ]
+    },
+    "esm_attention": {
+      "macro_delta": -0.01291467437305759,
+      "macro_ci95": [
+        -0.026203468768561788,
+        0.0005932799131150973
+      ],
+      "pooled_delta": -0.013769127235720546,
+      "pooled_ci95": [
+        -0.03026710620398637,
+        0.0025542996604790073
+      ]
+    },
+    "shuffle_attention": {
+      "macro_delta": -0.009511399750153762,
+      "macro_ci95": [
+        -0.021872989069826796,
+        0.002871286487328391
+      ],
+      "pooled_delta": -0.02624294268357219,
+      "pooled_ci95": [
+        -0.05800851020952548,
+        0.005674713625760667
+      ]
+    },
+    "real_mean": {
+      "macro_delta": -0.0006569866934495151,
+      "macro_ci95": [
+        -0.0058541249315054045,
+        0.0044963437511520345
+      ],
+      "pooled_delta": 0.005528199693145774,
+      "pooled_ci95": [
+        -0.000721418229232279,
+        0.01237696683056179
+      ]
+    }
+  }
+}
