@@ -1,0 +1,34 @@
+{
+  "evidence": "LABEL_FREE_MATCHED_NEIGHBORHOOD_CACHE",
+  "encoder": "same frozen ESM2 35M for all arms",
+  "parent_provenance_sha256": "38b82c80681b1d94ec633494bea273d2a9683e66ca9d2b57c2315ab67599b1d6",
+  "neighbors": 16,
+  "edge_features": "12 distance RBFs, log distance, contacts at 8/12/20 angstrom; sequence control uses 3.8*index separation",
+  "centers": "up to 96 uniform among mapped pLDDT>=70 residues, shared all arms",
+  "mean_sequence_spatial_neighbor_overlap": 0.4967294587055542,
+  "mean_confident_sequence_coverage": 0.776068549352421,
+  "old_mean_max_error": 5.7220458984375e-06,
+  "unit_checks": {
+    "rigid_motion_invariance": true,
+    "coordinate_corruption_changes_graph": true,
+    "sequence_control_ignores_coordinates": true,
+    "no_self_edges": true
+  },
+  "features": {
+    "sequence_neighborhood": {
+      "sha256": "acac1e5568d597e9135f8e280f001b06c2750682921e564cbff5354b486b5e8a"
+    },
+    "spatial_neighborhood": {
+      "sha256": "60f0c1e8c283bcecc5e1c0788862e8c5627f9d82bc93435ff602afea20ce3333"
+    },
+    "shuffled_coordinates": {
+      "sha256": "dd15582fdc90298bd795ffd05f35f395e55e4e96dcb7b9a03619ae21923deb10"
+    }
+  },
+  "limitations": [
+    "Uniform centers, not binding-pocket annotations",
+    "Protein-only coordinates, no ligand pose",
+    "Reference structure mappings not verified assay constructs",
+    "One fixed coordinate permutation per protein"
+  ]
+}

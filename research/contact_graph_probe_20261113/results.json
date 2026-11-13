@@ -1,0 +1,139 @@
+{
+  "protocol": {
+    "evidence": "EXPLORATORY_TRAIN_GROUP_CV",
+    "cache_semantics": "Same raw ESM nodes; learned ligand-conditioned edge messages; 16 spatial vs sequence neighbors vs coordinate permutation",
+    "arms": {
+      "sequence_attention": [
+        "sequence_neighborhood",
+        "attention"
+      ],
+      "spatial_attention": [
+        "spatial_neighborhood",
+        "attention"
+      ],
+      "shuffled_attention": [
+        "shuffled_coordinates",
+        "attention"
+      ]
+    },
+    "seeds": [
+      6111,
+      6112
+    ],
+    "epochs": 5,
+    "batches_per_epoch_max": 64,
+    "batch_size": 32,
+    "optimizer": "AdamW lr .0003 decay .01; grad clip 1",
+    "residual_cap": 0.25,
+    "target": "raw-unit residual to three-fold group-cross-fitted shared ridge baseline",
+    "selection": "fixed final epoch, no validation tuning",
+    "outer_split_seed": 4110,
+    "device": "cuda",
+    "validation": {
+      "consistent_graph_permutation": true,
+      "masked_residue_invariance": true,
+      "edge_changes_output": true,
+      "ligand_changes_attention": true,
+      "nonzero_edge_and_ligand_edge_gradients": true,
+      "bounded_correction": true
+    },
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "feature_manifest_sha256": "7c2ca897d609b549fb52ea1d0f4b99362a4f0e8de04437322d7add1b2f10bbd1",
+    "limitations": [
+      "Reused TRAIN cohort, exploratory",
+      "96 uniformly sampled contextual residue embeddings, not verified binding pockets",
+      "Frozen encoders, no ligand pose",
+      "Bounded short training pilot; negative result does not exhaust architecture"
+    ]
+  },
+  "rows": 5808,
+  "groups": 253,
+  "baseline": {
+    "pooled_rmse": 1.5563037495512397,
+    "group_macro_rmse": 1.3622206613167283
+  },
+  "ensemble_metrics": {
+    "sequence_attention": {
+      "pooled_rmse": 1.5429085653035062,
+      "group_macro_rmse": 1.343881949524781
+    },
+    "spatial_attention": {
+      "pooled_rmse": 1.5420046072028644,
+      "group_macro_rmse": 1.3435103286137176
+    },
+    "shuffled_attention": {
+      "pooled_rmse": 1.5422760856310114,
+      "group_macro_rmse": 1.34389993449296
+    }
+  },
+  "seed_metrics": {
+    "sequence_attention": [
+      {
+        "pooled_rmse": 1.5456257455239335,
+        "group_macro_rmse": 1.3437049126976197
+      },
+      {
+        "pooled_rmse": 1.5413473093252223,
+        "group_macro_rmse": 1.3450676996301363
+      }
+    ],
+    "spatial_attention": [
+      {
+        "pooled_rmse": 1.5446330273791928,
+        "group_macro_rmse": 1.3433900610139489
+      },
+      {
+        "pooled_rmse": 1.540518465434579,
+        "group_macro_rmse": 1.34461717474473
+      }
+    ],
+    "shuffled_attention": [
+      {
+        "pooled_rmse": 1.5451622264227811,
+        "group_macro_rmse": 1.343862016528076
+      },
+      {
+        "pooled_rmse": 1.5405725592077346,
+        "group_macro_rmse": 1.3449770451570702
+      }
+    ]
+  },
+  "contrasts": {
+    "baseline": {
+      "macro_delta": -0.018710332703010552,
+      "macro_ci95": [
+        -0.03626862336223202,
+        -0.001354197227265253
+      ],
+      "pooled_delta": -0.014299142348375593,
+      "pooled_ci95": [
+        -0.0447182976341996,
+        0.016424014324631607
+      ]
+    },
+    "sequence_attention": {
+      "macro_delta": -0.0003716209110636046,
+      "macro_ci95": [
+        -0.0006806242903971976,
+        -7.268925465177488e-05
+      ],
+      "pooled_delta": -0.0009039581006418107,
+      "pooled_ci95": [
+        -0.001886644458445469,
+        -0.00015936907594921745
+      ]
+    },
+    "shuffled_attention": {
+      "macro_delta": -0.0003896058792426739,
+      "macro_ci95": [
+        -0.0009793126964951146,
+        0.00011404419242755792
+      ],
+      "pooled_delta": -0.0002714784281470095,
+      "pooled_ci95": [
+        -0.0009639901506914794,
+        0.0003114654535237292
+      ]
+    }
+  }
+}

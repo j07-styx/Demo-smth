@@ -1,0 +1,202 @@
+{
+  "label_values_loaded": false,
+  "meaning": "same trained real-geometry model, change only edge inputs; interventions may be out of distribution",
+  "records": [
+    {
+      "fold": 0,
+      "seed": 6111,
+      "correction_rms": 0.20695871114730835,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 5.073419015388936e-05,
+          "max_abs_difference": 0.0003402531147003174
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.001453625620342791,
+          "max_abs_difference": 0.007156901061534882
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.00173848494887352,
+          "max_abs_difference": 0.005487523972988129
+        }
+      }
+    },
+    {
+      "fold": 0,
+      "seed": 6112,
+      "correction_rms": 0.21053475141525269,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00010482027573743835,
+          "max_abs_difference": 0.0005533751100301743
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0008691828697919846,
+          "max_abs_difference": 0.004865467548370361
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.0013696604873985052,
+          "max_abs_difference": 0.005765147507190704
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "seed": 6111,
+      "correction_rms": 0.21265500783920288,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00016295995737891644,
+          "max_abs_difference": 0.0005548670887947083
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0017711156979203224,
+          "max_abs_difference": 0.006503726355731487
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.0017040219390764832,
+          "max_abs_difference": 0.006175503134727478
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "seed": 6112,
+      "correction_rms": 0.19936588406562805,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00034061033511534333,
+          "max_abs_difference": 0.001091688871383667
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0033868032041937113,
+          "max_abs_difference": 0.010406426154077053
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.003991179633885622,
+          "max_abs_difference": 0.014263388700783253
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "seed": 6111,
+      "correction_rms": 0.21394813060760498,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00015927213826216757,
+          "max_abs_difference": 0.0013212952762842178
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0017279323656111956,
+          "max_abs_difference": 0.007815089076757431
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.002594277961179614,
+          "max_abs_difference": 0.01073065772652626
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "seed": 6112,
+      "correction_rms": 0.21871379017829895,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00012596347369253635,
+          "max_abs_difference": 0.0007895827293395996
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0009448211058042943,
+          "max_abs_difference": 0.009826503694057465
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.0018967330688610673,
+          "max_abs_difference": 0.008732728660106659
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "seed": 6111,
+      "correction_rms": 0.20383182168006897,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00011351345892762765,
+          "max_abs_difference": 0.0007394477725028992
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0019489502301439643,
+          "max_abs_difference": 0.005119111388921738
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.002727891318500042,
+          "max_abs_difference": 0.010911375284194946
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "seed": 6112,
+      "correction_rms": 0.21261072158813477,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00016143896209541708,
+          "max_abs_difference": 0.0016473326832056046
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0010871583363041282,
+          "max_abs_difference": 0.0035602785646915436
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.0019475228618830442,
+          "max_abs_difference": 0.007450126111507416
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "seed": 6111,
+      "correction_rms": 0.16715797781944275,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00020679019507952034,
+          "max_abs_difference": 0.0005189962685108185
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.0021622832864522934,
+          "max_abs_difference": 0.0069565437734127045
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.003114356892183423,
+          "max_abs_difference": 0.01708422228693962
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "seed": 6112,
+      "correction_rms": 0.18967083096504211,
+      "interventions": {
+        "zero_edges": {
+          "prediction_difference_rms": 0.00038966466672718525,
+          "max_abs_difference": 0.003159739077091217
+        },
+        "sequence_edges": {
+          "prediction_difference_rms": 0.001970527693629265,
+          "max_abs_difference": 0.006153479218482971
+        },
+        "shuffled_edges": {
+          "prediction_difference_rms": 0.003992755431681871,
+          "max_abs_difference": 0.03416663408279419
+        }
+      }
+    }
+  ],
+  "mean_correction_rms": 0.20354476273059846,
+  "mean_intervention_rms": {
+    "zero_edges": 0.00018157676531700418,
+    "sequence_edges": 0.001732240041019395,
+    "shuffled_edges": 0.0025076884543523193
+  }
+}

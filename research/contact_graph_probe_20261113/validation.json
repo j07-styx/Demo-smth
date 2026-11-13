@@ -1,0 +1,16 @@
+﻿{
+  "runs": 30,
+  "rows": 5808,
+  "groups": 253,
+  "all_metrics_reproduced": true,
+  "baseline_reference_max_error": 0.0,
+  "all_corrections_within_cap": true,
+  "model_unit_checks": {
+    "consistent_graph_permutation": true,
+    "masked_residue_invariance": true,
+    "edge_changes_output": true,
+    "ligand_changes_attention": true,
+    "nonzero_edge_and_ligand_edge_gradients": true,
+    "bounded_correction": true
+  }
+}
