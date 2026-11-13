@@ -1,0 +1,98 @@
+{
+  "protocol": {
+    "evidence": "ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT",
+    "arms": [
+      "esm2_sequence",
+      "saprot_real",
+      "saprot_shuffled"
+    ],
+    "scales": [
+      0.0,
+      0.1,
+      0.3
+    ],
+    "readout": "ESM interaction .3 plus protein-only block",
+    "max_scale": 0.3,
+    "selection": "3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121",
+    "outer_fold": 3,
+    "split_seed": 4112,
+    "fit_rows": 4506,
+    "eval_rows": 1302,
+    "eval_groups": 50,
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "feature_hashes": {
+      "esm2_sequence": "74fb2ff5ca9cdba23744f3caf44bbf7cc26db1da1a8e6d5914b7fcb7a822a27e",
+      "saprot_real": "d232fb01d49e8d6e21d00cea4be5ce68a76f555a36670521734a14ca856aa568",
+      "saprot_shuffled": "8a5fb2e7d1273ea4067a69eeb9e75cc45d1870dc6bffbea676087652dff15124"
+    },
+    "base_esm_scale": 0.3,
+    "design": "Fixed ESM32/product1024 base + extra protein32; duplicate ESM controls feature rescaling. Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms",
+    "limitations": [
+      "Previously inspected holdout; exploratory, not independent test",
+      "Frozen pooled 35M representations, not full GenSPARC",
+      "SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control",
+      "Shuffled tokens can be out of distribution"
+    ]
+  },
+  "selected_scales": {
+    "esm2_sequence": 0.3,
+    "saprot_real": 0.3,
+    "saprot_shuffled": 0.0
+  },
+  "metrics": {
+    "baseline": {
+      "pooled_rmse": 1.4372062683105469,
+      "group_macro_rmse": 1.3795192241668701
+    },
+    "esm2_sequence": {
+      "pooled_rmse": 1.4516009092330933,
+      "group_macro_rmse": 1.386439561843872
+    },
+    "saprot_real": {
+      "pooled_rmse": 1.4553320407867432,
+      "group_macro_rmse": 1.3923617601394653
+    },
+    "saprot_shuffled": {
+      "pooled_rmse": 1.4372062683105469,
+      "group_macro_rmse": 1.3795192241668701
+    }
+  },
+  "contrasts": {
+    "real_minus_baseline": {
+      "macro_delta": 0.012842398136854172,
+      "macro_ci95": [
+        -0.027302190335467456,
+        0.053838151227682825
+      ],
+      "pooled_delta": 0.01812577247619629,
+      "pooled_ci95": [
+        -0.02050589699409073,
+        0.050784021576348114
+      ]
+    },
+    "real_minus_esm2_sequence": {
+      "macro_delta": 0.00592220202088356,
+      "macro_ci95": [
+        -0.0371966864913702,
+        0.05070308474823832
+      ],
+      "pooled_delta": 0.0037311315536499023,
+      "pooled_ci95": [
+        -0.04679799316988788,
+        0.043259795378299784
+      ]
+    },
+    "real_minus_saprot_shuffled": {
+      "macro_delta": 0.012842398136854172,
+      "macro_ci95": [
+        -0.027302190335467456,
+        0.053838151227682825
+      ],
+      "pooled_delta": 0.01812577247619629,
+      "pooled_ci95": [
+        -0.02050589699409073,
+        0.050784021576348114
+      ]
+    }
+  }
+}

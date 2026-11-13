@@ -1,0 +1,223 @@
+{
+  "protocol": {
+    "evidence": "ENGINEERING_ONLY_TRAIN_NESTED_GROUP_CV",
+    "outer_folds": 5,
+    "split_seed": 4111,
+    "assignment": "shuffled sorted groups, round robin",
+    "inner_folds": 3,
+    "scale_grid": [
+      0,
+      0.1,
+      0.3
+    ],
+    "readout": "interaction",
+    "max_scale": 0.3,
+    "arms": [
+      "baseline",
+      "esm2_sequence",
+      "saprot_real",
+      "saprot_shuffled"
+    ],
+    "selection": "fixed ESM interaction scale .3, tune added protein block using inner group-macro RMSE only; esm2_sequence arm is duplicate ESM control",
+    "decision": "real must improve both pooled and macro versus baseline, ESM2 and shuffled; intervals reported without claiming independent-test significance",
+    "limitations": [
+      "TRAIN cohort already used for exploratory development",
+      "Group bootstrap conditions on overlapping CV fits; not full retraining uncertainty",
+      "Single outer partition and one shuffled token realization",
+      "No reserved test is read"
+    ],
+    "evaluator_sha256": "8e54d812a8720cad8efbacf3ff0ac81f671b4dbef0a7cb694b451115677500b5"
+  },
+  "rows": 5808,
+  "groups": 253,
+  "metrics": {
+    "baseline": {
+      "pooled_rmse": 1.5034149412517892,
+      "group_macro_rmse": 1.3126614220661774
+    },
+    "esm2_sequence": {
+      "pooled_rmse": 1.50617714542469,
+      "group_macro_rmse": 1.3149773632273092
+    },
+    "saprot_real": {
+      "pooled_rmse": 1.494820655651596,
+      "group_macro_rmse": 1.2982018485328042
+    },
+    "saprot_shuffled": {
+      "pooled_rmse": 1.5214202983567933,
+      "group_macro_rmse": 1.3204614041075569
+    }
+  },
+  "fold_metrics": [
+    {
+      "baseline": {
+        "pooled_rmse": 1.453304648399353,
+        "group_macro_rmse": 1.3332922458648682
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.453304648399353,
+        "group_macro_rmse": 1.3332922458648682
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.461632251739502,
+        "group_macro_rmse": 1.3174883127212524
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.453304648399353,
+        "group_macro_rmse": 1.3332922458648682
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.4385676383972168,
+        "group_macro_rmse": 1.264591097831726
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.4375145435333252,
+        "group_macro_rmse": 1.2790491580963135
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.3939073085784912,
+        "group_macro_rmse": 1.263321042060852
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.4476932287216187,
+        "group_macro_rmse": 1.287487506866455
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.5005903244018555,
+        "group_macro_rmse": 1.3591887950897217
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.5191963911056519,
+        "group_macro_rmse": 1.3564927577972412
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.5355193614959717,
+        "group_macro_rmse": 1.363467812538147
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.5818288326263428,
+        "group_macro_rmse": 1.3797783851623535
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.6484118700027466,
+        "group_macro_rmse": 1.3423842191696167
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.6484118700027466,
+        "group_macro_rmse": 1.3423842191696167
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.6154460906982422,
+        "group_macro_rmse": 1.3094314336776733
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.6484118700027466,
+        "group_macro_rmse": 1.3423842191696167
+      }
+    },
+    {
+      "baseline": {
+        "pooled_rmse": 1.4296737909317017,
+        "group_macro_rmse": 1.263468861579895
+      },
+      "esm2_sequence": {
+        "pooled_rmse": 1.4271118640899658,
+        "group_macro_rmse": 1.2631906270980835
+      },
+      "saprot_real": {
+        "pooled_rmse": 1.4242568016052246,
+        "group_macro_rmse": 1.2363070249557495
+      },
+      "saprot_shuffled": {
+        "pooled_rmse": 1.4412286281585693,
+        "group_macro_rmse": 1.2585811614990234
+      }
+    }
+  ],
+  "selected_scales": [
+    {
+      "esm2_sequence": 0.0,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.0
+    },
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.3
+    },
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.3
+    },
+    {
+      "esm2_sequence": 0.0,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.0
+    },
+    {
+      "esm2_sequence": 0.3,
+      "saprot_real": 0.3,
+      "saprot_shuffled": 0.1
+    }
+  ],
+  "contrasts": {
+    "real_minus_baseline": {
+      "macro_delta": -0.014459573533373366,
+      "macro_ci95": [
+        -0.03540505776849642,
+        0.005416812291076078
+      ],
+      "pooled_delta": -0.008594285600193263,
+      "pooled_ci95": [
+        -0.0350341262904664,
+        0.01694119037602671
+      ],
+      "groups_improved": 128,
+      "groups_worsened": 125,
+      "top5_absolute_sse_share": 0.3343235750564144,
+      "fold_pooled_wins": 3,
+      "fold_macro_wins": 4
+    },
+    "real_minus_esm2_sequence": {
+      "macro_delta": -0.016775514694505233,
+      "macro_ci95": [
+        -0.036926317727571156,
+        0.0026456190344742955
+      ],
+      "pooled_delta": -0.011356489773094003,
+      "pooled_ci95": [
+        -0.034254017268106104,
+        0.011103885490468706
+      ],
+      "groups_improved": 130,
+      "groups_worsened": 123,
+      "top5_absolute_sse_share": 0.3448033975042122,
+      "fold_pooled_wins": 3,
+      "fold_macro_wins": 4
+    },
+    "real_minus_saprot_shuffled": {
+      "macro_delta": -0.022259555574752832,
+      "macro_ci95": [
+        -0.043958680056543194,
+        -0.0011270731691330677
+      ],
+      "pooled_delta": -0.026599642705197324,
+      "pooled_ci95": [
+        -0.048496190564313826,
+        -0.005022396478867234
+      ],
+      "groups_improved": 133,
+      "groups_worsened": 120,
+      "top5_absolute_sse_share": 0.3106585525539921,
+      "fold_pooled_wins": 4,
+      "fold_macro_wins": 5
+    }
+  }
+}

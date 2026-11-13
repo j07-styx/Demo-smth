@@ -1,0 +1,29 @@
+{
+  "evidence": "ENGINEERING_ONLY_TRAIN_NESTED_GROUP_CV",
+  "outer_folds": 5,
+  "split_seed": 4112,
+  "assignment": "shuffled sorted groups, round robin",
+  "inner_folds": 3,
+  "scale_grid": [
+    0,
+    0.1,
+    0.3
+  ],
+  "readout": "interaction",
+  "max_scale": 0.3,
+  "arms": [
+    "baseline",
+    "esm2_sequence",
+    "saprot_real",
+    "saprot_shuffled"
+  ],
+  "selection": "fixed ESM interaction scale .3, tune added protein block using inner group-macro RMSE only; esm2_sequence arm is duplicate ESM control",
+  "decision": "real must improve both pooled and macro versus baseline, ESM2 and shuffled; intervals reported without claiming independent-test significance",
+  "limitations": [
+    "TRAIN cohort already used for exploratory development",
+    "Group bootstrap conditions on overlapping CV fits; not full retraining uncertainty",
+    "Single outer partition and one shuffled token realization",
+    "No reserved test is read"
+  ],
+  "evaluator_sha256": "8e54d812a8720cad8efbacf3ff0ac81f671b4dbef0a7cb694b451115677500b5"
+}
