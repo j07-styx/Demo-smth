@@ -1,0 +1,139 @@
+{
+  "protocol": {
+    "evidence": "EXPLORATORY_TRAIN_GROUP_CV",
+    "cache_semantics": "Same raw ESM nodes; learned ligand-conditioned edge messages; 16 spatial vs sequence neighbors vs coordinate permutation",
+    "arms": {
+      "sequence_attention": [
+        "sequence_neighborhood",
+        "attention"
+      ],
+      "spatial_attention": [
+        "spatial_neighborhood",
+        "attention"
+      ],
+      "shuffled_attention": [
+        "shuffled_coordinates",
+        "attention"
+      ]
+    },
+    "seeds": [
+      6111,
+      6112
+    ],
+    "epochs": 5,
+    "batches_per_epoch_max": 64,
+    "batch_size": 32,
+    "optimizer": "AdamW lr .0003 decay .01; grad clip 1",
+    "residual_cap": 0.25,
+    "target": "raw-unit residual to three-fold group-cross-fitted shared ridge baseline; add unit-weight same-protein pair-difference MSE",
+    "selection": "fixed final epoch, no validation tuning; auxiliary weight 1 fixed before this run",
+    "outer_split_seed": 4110,
+    "device": "cuda",
+    "validation": {
+      "consistent_graph_permutation": true,
+      "masked_residue_invariance": true,
+      "edge_changes_output": true,
+      "ligand_changes_attention": true,
+      "nonzero_edge_and_ligand_edge_gradients": true,
+      "bounded_correction": true
+    },
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "feature_manifest_sha256": "7c2ca897d609b549fb52ea1d0f4b99362a4f0e8de04437322d7add1b2f10bbd1",
+    "limitations": [
+      "Reused TRAIN cohort, exploratory",
+      "96 uniformly sampled contextual residue embeddings, not verified binding pockets",
+      "Frozen encoders, no ligand pose",
+      "Bounded short training pilot; negative result does not exhaust architecture"
+    ]
+  },
+  "rows": 5808,
+  "groups": 253,
+  "baseline": {
+    "pooled_rmse": 1.5563037495512397,
+    "group_macro_rmse": 1.3622206613167283
+  },
+  "ensemble_metrics": {
+    "sequence_attention": {
+      "pooled_rmse": 1.5521581639912505,
+      "group_macro_rmse": 1.3456126722578066
+    },
+    "spatial_attention": {
+      "pooled_rmse": 1.5513895432301334,
+      "group_macro_rmse": 1.345115103296491
+    },
+    "shuffled_attention": {
+      "pooled_rmse": 1.5517455788978727,
+      "group_macro_rmse": 1.345798605531146
+    }
+  },
+  "seed_metrics": {
+    "sequence_attention": [
+      {
+        "pooled_rmse": 1.555491336219259,
+        "group_macro_rmse": 1.3471670147265962
+      },
+      {
+        "pooled_rmse": 1.5505203756756694,
+        "group_macro_rmse": 1.3457771105555805
+      }
+    ],
+    "spatial_attention": [
+      {
+        "pooled_rmse": 1.5548782375660863,
+        "group_macro_rmse": 1.3468901526768733
+      },
+      {
+        "pooled_rmse": 1.5495729299639753,
+        "group_macro_rmse": 1.345055322483145
+      }
+    ],
+    "shuffled_attention": [
+      {
+        "pooled_rmse": 1.5552942147721587,
+        "group_macro_rmse": 1.3472909103527342
+      },
+      {
+        "pooled_rmse": 1.5498315879985098,
+        "group_macro_rmse": 1.3459850862860077
+      }
+    ]
+  },
+  "contrasts": {
+    "baseline": {
+      "macro_delta": -0.017105558020237013,
+      "macro_ci95": [
+        -0.03475162470929382,
+        -2.6269275340241437e-05
+      ],
+      "pooled_delta": -0.004914206321106507,
+      "pooled_ci95": [
+        -0.03614523213043624,
+        0.025920700307491017
+      ]
+    },
+    "sequence_attention": {
+      "macro_delta": -0.0004975689613156644,
+      "macro_ci95": [
+        -0.0008852912046275733,
+        -0.00012895632506032144
+      ],
+      "pooled_delta": -0.0007686207611170559,
+      "pooled_ci95": [
+        -0.0014806165040541718,
+        -0.0002080942833950554
+      ]
+    },
+    "shuffled_attention": {
+      "macro_delta": -0.0006835022346548056,
+      "macro_ci95": [
+        -0.0013688600967192719,
+        -8.711286097298904e-05
+      ],
+      "pooled_delta": -0.00035603566773922957,
+      "pooled_ci95": [
+        -0.0012319557665704307,
+        0.0004371845509523734
+      ]
+    }
+  }
+}

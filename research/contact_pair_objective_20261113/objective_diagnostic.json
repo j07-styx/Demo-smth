@@ -1,0 +1,77 @@
+{
+  "evidence": "EXPLORATORY_REUSED_TRAIN_CV_DIAGNOSTIC",
+  "interpretation": "Post-hoc error decomposition, not deployable protein-label calibration; protein means use evaluation labels only for scoring. Does not separate compound main effects from true interactions.",
+  "rows": 5808,
+  "proteins": 298,
+  "singleton_proteins": 61,
+  "validation": {
+    "offset_and_within_positive_controls": true,
+    "exact_source_row_alignment": true,
+    "orthogonal_decomposition": true
+  },
+  "baseline_error": {
+    "total_mse": 2.422081360867248,
+    "protein_mean_mse": 1.1402486439891473,
+    "within_protein_mse": 1.281832716878101,
+    "protein_mean_energy_fraction": 0.47077223020322945
+  },
+  "arms": {
+    "sequence_attention": {
+      "error": {
+        "total_mse": 2.40919496604469,
+        "protein_mean_mse": 1.1208559614855769,
+        "within_protein_mse": 1.2883390045591128,
+        "protein_mean_energy_fraction": 0.46524086978554036
+      },
+      "correction": {
+        "total_mse": 0.04075820338158491,
+        "protein_mean_mse": 0.04019438622434388,
+        "within_protein_mse": 0.0005638171572410329,
+        "protein_mean_energy_fraction": 0.9861667809063496
+      },
+      "fraction_individual_corrections_above_95pct_cap": 0.4637568870523416,
+      "mean_tanh_derivative_factor": 0.305654343100923,
+      "total_mse_reduction": 0.012886394822558156,
+      "protein_mean_mse_reduction": 0.019392682503570402,
+      "within_protein_mse_reduction": -0.006506287681011802
+    },
+    "spatial_attention": {
+      "error": {
+        "total_mse": 2.406809514843802,
+        "protein_mean_mse": 1.1185580423276997,
+        "within_protein_mse": 1.2882514725161023,
+        "protein_mean_energy_fraction": 0.4647472246677953
+      },
+      "correction": {
+        "total_mse": 0.04090514433853279,
+        "protein_mean_mse": 0.040344336195927394,
+        "within_protein_mse": 0.0005608081426054019,
+        "protein_mean_energy_fraction": 0.9862900338900134
+      },
+      "fraction_individual_corrections_above_95pct_cap": 0.46298209366391185,
+      "mean_tanh_derivative_factor": 0.30388913661424544,
+      "total_mse_reduction": 0.015271846023446223,
+      "protein_mean_mse_reduction": 0.02169060166144754,
+      "within_protein_mse_reduction": -0.006418755638001317
+    },
+    "shuffled_attention": {
+      "error": {
+        "total_mse": 2.4079143416290942,
+        "protein_mean_mse": 1.1196695393229834,
+        "within_protein_mse": 1.2882448023061108,
+        "protein_mean_energy_fraction": 0.46499558558443643
+      },
+      "correction": {
+        "total_mse": 0.0408463965331784,
+        "protein_mean_mse": 0.04028344460436961,
+        "within_protein_mse": 0.0005629519288087881,
+        "protein_mean_energy_fraction": 0.9862178312754831
+      },
+      "fraction_individual_corrections_above_95pct_cap": 0.46410123966942146,
+      "mean_tanh_derivative_factor": 0.30574275624082814,
+      "total_mse_reduction": 0.014167019238153777,
+      "protein_mean_mse_reduction": 0.02057910466616386,
+      "within_protein_mse_reduction": -0.006412085428009862
+    }
+  }
+}
