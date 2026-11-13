@@ -1,0 +1,12 @@
+{
+  "evidence": "LABEL_FREE_RESIDUE_RETENTION",
+  "proteins": 298,
+  "total_residues": 157568,
+  "retained_residues": 28604,
+  "retained_fraction_micro": 0.1815343216896832,
+  "retained_fraction_median": 0.23329317553681525,
+  "proteins_below_quarter_retention": 180,
+  "longest_sequence": 2671,
+  "largest_sample_spacing": 29,
+  "limits": "Token retention is not information retention: contextual embeddings incorporate neighboring sequence. Pocket coverage and lost affinity information are not measured."
+}

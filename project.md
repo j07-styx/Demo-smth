@@ -679,3 +679,8 @@ Implemented opt-in complete molecular-graph preprocessing and a bond-aware atom/
 ## 2026-11-13 — v5.15 real-data atom/residue fit diagnostic
 
 Completed and independently validated four fixed-budget fits on a tiny frozen-TRAIN panel (64 fit rows/four proteins, 64 held rows/four other groups). Complete molecular graphs are recovered from source metadata; pretrained ESM2/real SaProt/shuffled SaProt residues are hash verified. Real-structure train RMSE 0.259692 vs constant 1.762829, but held RMSE 1.952780 vs constant 1.741742; sequence 1.934855 and shuffled 1.773211 also beat real on held pooled error. Chemical-only train RMSE 0.279797 indicates training fit alone does not establish interactions. All learned arms lose to the constant held baseline. Conclusion: successful training fit, poor transfer, no 3D gain. One seed, tiny reused panel, unknown assay comparability, existing uniformly sampled residues; no broad scientific conclusion. Details: research/atom_residue_panel_20261113/README.md. No full sweep launched.
+
+
+## 2026-11-13 — v5.16 full-residue preprocessing repair
+
+Label-free audit: prior uniform cache retains 28,604/157,568 positions (18.1534%) across 298 proteins; 180 retain under 25%. This is token retention, not measured information loss or pocket coverage. Implemented full ragged residue caches for real SaProt, shuffled SaProt and ESM2, with model/feature hashes and old sampled-token/global-mean agreement checks. Generation launched; independent validator requires all three completed arms before training use. No new affinity result. Details and completion evidence: research/full_residue_cache_20261113/README.md.
