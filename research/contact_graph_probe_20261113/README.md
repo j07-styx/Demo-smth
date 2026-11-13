@@ -37,3 +37,10 @@ Prioritize a training-fold-only diagnostic of correction saturation and within-p
 
 ## Artifacts
 Four scripts under scripts/: cache_contact_graph_dev.py, train_contact_graph_dev.py, validate_contact_graph_dev.py, diagnose_contact_graph_dev.py. This folder contains protocol, feature manifest, per-fit aggregates, final metrics, mechanism diagnostics and independent validation. Weights, predictions and graph arrays remain gitignored in Demo-smth/research_local. Original core model and other repositories are unchanged.
+
+
+## 2026-11-13 — v5.12 objective diagnosis and paired-loss experiment
+
+Existing real-graph corrections are 99.8697% protein-mean energy; within-protein error MSE worsens by 0.000979 while protein-mean error MSE improves by 0.045282. These are post-hoc decompositions of reused TRAIN-CV predictions, not inference-time label calibration. 61 of 298 proteins have one observation, contributing no within-protein information. 46.04% of per-seed corrections exceed 95% of the 0.25 cap. This supports protein-offset dominance but does not isolate its cause or separate compound main effects from interactions.
+
+Implemented scripts/train_contact_pair_objective_dev.py: adds unit-weight same-protein pair-difference residual MSE to the existing absolute residual MSE. Distinct row partners come exclusively from the current outer training fold; singleton proteins retain absolute loss only. Independent pairing RNG preserves anchor minibatch schedules. Same architecture, cap, epochs, seeds and three geometry controls; additional forward computation means compute is not matched to the previous objective. Thirty fits launched; no performance result yet. Existing synthetic architecture checks run before training, and runtime assertions enforce partner identity and fold separation. Reserved test remains unscored.
