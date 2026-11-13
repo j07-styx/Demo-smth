@@ -1,0 +1,24 @@
+{
+  "evidence": "SMALL_REUSED_TRAIN_FIT_DIAGNOSTIC",
+  "seed": 7133,
+  "steps": 200,
+  "batch": 8,
+  "train_rows": 64,
+  "held_rows": 64,
+  "selection": "first four eligible distinct groups per role, 16 distinct SMILES per protein; at most 96 atoms, no atom truncation; no label-based selection",
+  "split": "outer fold zero, seed 4110; frozen TRAIN only",
+  "assay_comparability": "unknown; no pair-difference loss",
+  "limitations": [
+    "96 uniformly sampled residue tokens, not full protein coverage",
+    "Single seed, tiny selected panel, no performance claim",
+    "ESM vs SaProt comparison confounds pretraining with structure; SaProt shuffled is matched encoder control"
+  ],
+  "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+  "residue_manifest_sha256": "3cf607bdcfe45a8592e33fa3d5d4307294b5d10344d902edd07c95594b414f4e",
+  "arms": [
+    "chemical_only",
+    "sequence",
+    "real",
+    "shuffled"
+  ]
+}

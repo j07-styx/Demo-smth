@@ -1,0 +1,56 @@
+{
+  "chemical_only": {
+    "train": {
+      "rmse": 0.27979740500450134,
+      "within_protein_rmse": 0.23731335997581482
+    },
+    "held": {
+      "rmse": 1.820683240890503,
+      "within_protein_rmse": 1.2124724388122559
+    },
+    "initial_first_batch_standardized_mse": 0.47896865010261536
+  },
+  "sequence": {
+    "train": {
+      "rmse": 0.26408812403678894,
+      "within_protein_rmse": 0.2295658439397812
+    },
+    "held": {
+      "rmse": 1.9348549842834473,
+      "within_protein_rmse": 1.1290185451507568
+    },
+    "initial_first_batch_standardized_mse": 0.48277783393859863
+  },
+  "real": {
+    "train": {
+      "rmse": 0.2596920132637024,
+      "within_protein_rmse": 0.23006796836853027
+    },
+    "held": {
+      "rmse": 1.9527798891067505,
+      "within_protein_rmse": 1.1379936933517456
+    },
+    "initial_first_batch_standardized_mse": 0.477439820766449
+  },
+  "shuffled": {
+    "train": {
+      "rmse": 0.25094982981681824,
+      "within_protein_rmse": 0.23425212502479553
+    },
+    "held": {
+      "rmse": 1.7732105255126953,
+      "within_protein_rmse": 1.1462208032608032
+    },
+    "initial_first_batch_standardized_mse": 0.4734320044517517
+  },
+  "constant_train_mean": {
+    "train": {
+      "rmse": 1.762829065322876,
+      "within_protein_rmse": 0.7508763074874878
+    },
+    "held": {
+      "rmse": 1.7417423725128174,
+      "within_protein_rmse": 1.1490061283111572
+    }
+  }
+}

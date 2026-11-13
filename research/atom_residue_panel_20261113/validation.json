@@ -1,0 +1,7 @@
+{
+  "all_metrics_reproduced": true,
+  "train_only_row_membership": true,
+  "group_disjoint": true,
+  "four_proteins_sixteen_rows_per_role": true,
+  "finite_predictions": true
+}
