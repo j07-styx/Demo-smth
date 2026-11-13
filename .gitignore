@@ -32,3 +32,6 @@ __editable__*
 # Private local record-level source evidence worksheet and reviewer notes
 # Never commit individual Reactant_set_ids or human review declarations
 data/audit/*LOCAL_PRIVATE*.csv
+
+# Local-only structural experiment arrays and checkpoints
+research_local/

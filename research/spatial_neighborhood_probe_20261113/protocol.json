@@ -1,0 +1,51 @@
+{
+  "evidence": "EXPLORATORY_TRAIN_GROUP_CV",
+  "cache_semantics": "Same ESM encoder in every arm; 16 nearest 3D neighbors vs 16 nearest sequence neighbors vs coordinate permutation",
+  "arms": {
+    "sequence_attention": [
+      "sequence_neighborhood",
+      "attention"
+    ],
+    "spatial_attention": [
+      "spatial_neighborhood",
+      "attention"
+    ],
+    "shuffled_attention": [
+      "shuffled_coordinates",
+      "attention"
+    ],
+    "spatial_mean": [
+      "spatial_neighborhood",
+      "mean"
+    ]
+  },
+  "seeds": [
+    6111,
+    6112
+  ],
+  "epochs": 5,
+  "batches_per_epoch_max": 64,
+  "batch_size": 32,
+  "optimizer": "AdamW lr .0003 decay .01; grad clip 1",
+  "residual_cap": 0.25,
+  "target": "raw-unit residual to three-fold group-cross-fitted shared ridge baseline",
+  "selection": "fixed final epoch, no validation tuning",
+  "outer_split_seed": 4110,
+  "device": "cuda",
+  "validation": {
+    "consistent_residue_permutation": true,
+    "masked_residue_invariance": true,
+    "ligand_changes_attention": true,
+    "uniform_control": true,
+    "nonzero_query_gradient": true,
+    "bounded_correction": true
+  },
+  "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+  "feature_manifest_sha256": "6ebb602363238b5791bd33f8ed5373114c718cd3dd619988199e42f73d510ee6",
+  "limitations": [
+    "Reused TRAIN cohort, exploratory",
+    "96 uniformly sampled contextual residue embeddings, not verified binding pockets",
+    "Frozen encoders, no ligand pose",
+    "Bounded short training pilot; negative result does not exhaust architecture"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "protocol": {
+    "evidence": "EXPLORATORY_TRAIN_GROUP_CV",
+    "cache_semantics": "Same ESM encoder in every arm; 16 nearest 3D neighbors vs 16 nearest sequence neighbors vs coordinate permutation",
+    "arms": {
+      "sequence_attention": [
+        "sequence_neighborhood",
+        "attention"
+      ],
+      "spatial_attention": [
+        "spatial_neighborhood",
+        "attention"
+      ],
+      "shuffled_attention": [
+        "shuffled_coordinates",
+        "attention"
+      ],
+      "spatial_mean": [
+        "spatial_neighborhood",
+        "mean"
+      ]
+    },
+    "seeds": [
+      6111,
+      6112
+    ],
+    "epochs": 5,
+    "batches_per_epoch_max": 64,
+    "batch_size": 32,
+    "optimizer": "AdamW lr .0003 decay .01; grad clip 1",
+    "residual_cap": 0.25,
+    "target": "raw-unit residual to three-fold group-cross-fitted shared ridge baseline",
+    "selection": "fixed final epoch, no validation tuning",
+    "outer_split_seed": 4110,
+    "device": "cuda",
+    "validation": {
+      "consistent_residue_permutation": true,
+      "masked_residue_invariance": true,
+      "ligand_changes_attention": true,
+      "uniform_control": true,
+      "nonzero_query_gradient": true,
+      "bounded_correction": true
+    },
+    "bundle_sha256": "f5cd473cc7cfbf29c21b5a7188648aa8c575b27d73fc387dddd35419c789db6a",
+    "feature_manifest_sha256": "6ebb602363238b5791bd33f8ed5373114c718cd3dd619988199e42f73d510ee6",
+    "limitations": [
+      "Reused TRAIN cohort, exploratory",
+      "96 uniformly sampled contextual residue embeddings, not verified binding pockets",
+      "Frozen encoders, no ligand pose",
+      "Bounded short training pilot; negative result does not exhaust architecture"
+    ]
+  },
+  "rows": 5808,
+  "groups": 253,
+  "baseline": {
+    "pooled_rmse": 1.5563037495512397,
+    "group_macro_rmse": 1.3622206613167283
+  },
+  "ensemble_metrics": {
+    "sequence_attention": {
+      "pooled_rmse": 1.5452160673882893,
+      "group_macro_rmse": 1.348270528243087
+    },
+    "spatial_attention": {
+      "pooled_rmse": 1.544657534994323,
+      "group_macro_rmse": 1.347726777228382
+    },
+    "shuffled_attention": {
+      "pooled_rmse": 1.5466206033042182,
+      "group_macro_rmse": 1.3482496242951483
+    },
+    "spatial_mean": {
+      "pooled_rmse": 1.5456429175796265,
+      "group_macro_rmse": 1.3456507943244547
+    }
+  },
+  "seed_metrics": {
+    "sequence_attention": [
+      {
+        "pooled_rmse": 1.5471705753236569,
+        "group_macro_rmse": 1.3489482758795301
+      },
+      {
+        "pooled_rmse": 1.5444983527936338,
+        "group_macro_rmse": 1.3484789691167622
+      }
+    ],
+    "spatial_attention": [
+      {
+        "pooled_rmse": 1.5463049743632942,
+        "group_macro_rmse": 1.3479433769115061
+      },
+      {
+        "pooled_rmse": 1.5443265548296277,
+        "group_macro_rmse": 1.3485256562171204
+      }
+    ],
+    "shuffled_attention": [
+      {
+        "pooled_rmse": 1.547336234203781,
+        "group_macro_rmse": 1.3485509120154855
+      },
+      {
+        "pooled_rmse": 1.5471817274504747,
+        "group_macro_rmse": 1.3489754622049013
+      }
+    ],
+    "spatial_mean": [
+      {
+        "pooled_rmse": 1.545465397144028,
+        "group_macro_rmse": 1.3463703039570305
+      },
+      {
+        "pooled_rmse": 1.5465805872085607,
+        "group_macro_rmse": 1.3458076984505276
+      }
+    ]
+  },
+  "contrasts": {
+    "baseline": {
+      "macro_delta": -0.014493884088345895,
+      "macro_ci95": [
+        -0.032031399578306356,
+        0.0025431652304665057
+      ],
+      "pooled_delta": -0.011646214556916945,
+      "pooled_ci95": [
+        -0.0426312964673188,
+        0.01857455521857436
+      ]
+    },
+    "sequence_attention": {
+      "macro_delta": -0.000543751014704952,
+      "macro_ci95": [
+        -0.002583848478996522,
+        0.0015890861476294295
+      ],
+      "pooled_delta": -0.0005585323939663045,
+      "pooled_ci95": [
+        -0.0020635138953150724,
+        0.0006103548545785206
+      ]
+    },
+    "shuffled_attention": {
+      "macro_delta": -0.00052284706676603,
+      "macro_ci95": [
+        -0.0036665379648857938,
+        0.002627047599155301
+      ],
+      "pooled_delta": -0.001963068309895233,
+      "pooled_ci95": [
+        -0.006632102909504894,
+        0.002151085633778946
+      ]
+    },
+    "spatial_mean": {
+      "macro_delta": 0.002075982903927285,
+      "macro_ci95": [
+        -0.0010501767629768602,
+        0.005405449231886686
+      ],
+      "pooled_delta": -0.0009853825853034515,
+      "pooled_ci95": [
+        -0.006147000784299583,
+        0.004871552942638594
+      ]
+    }
+  }
+}
