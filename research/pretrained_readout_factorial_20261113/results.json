@@ -1,0 +1,435 @@
+{
+  "protocol": {
+    "evidence": "EXPLORATORY_TRAIN_ONLY_FACTORIAL",
+    "cells": [
+      [
+        "interaction",
+        1.0
+      ],
+      [
+        "interaction",
+        0.3
+      ],
+      [
+        "protein",
+        1.0
+      ],
+      [
+        "protein",
+        0.3
+      ]
+    ],
+    "reused_cell": "interaction_1.0",
+    "previous_results_sha256": "cf46bde112968c2d0062a8098efe5ad53d7151c8cb0335a9cd42b583b03a7bab",
+    "selection": "unchanged three-fold inner group-macro selection within each cell; same five outer folds",
+    "purpose": "isolate explicit compound products from protein main effects, and excluding scale 1 from retaining it",
+    "limitations": [
+      "Designed after examining previous CV: no confirmatory inference",
+      "Protein-only refers to added pretrained block; shared baseline still includes chemistry",
+      "No held-out test access or demo replacement"
+    ],
+    "evaluator_sha256": "8cc58044699ffba9935f8b4870804d6a12e38308ad881cb5c40fff36094733cb"
+  },
+  "cells": {
+    "interaction_1.0": {
+      "metrics": {
+        "baseline": {
+          "pooled_rmse": 1.5563037495512397,
+          "group_macro_rmse": 1.3622206613167283
+        },
+        "esm2_sequence": {
+          "pooled_rmse": 1.5483790738959455,
+          "group_macro_rmse": 1.335627330430901
+        },
+        "saprot_real": {
+          "pooled_rmse": 1.569070216107301,
+          "group_macro_rmse": 1.3456428943621899
+        },
+        "saprot_shuffled": {
+          "pooled_rmse": 1.5617157539086144,
+          "group_macro_rmse": 1.3416359833854024
+        }
+      },
+      "contrasts": {
+        "real_minus_baseline": {
+          "macro_delta": -0.016577766954538192,
+          "macro_ci95": [
+            -0.05982986815142173,
+            0.028101697343134398
+          ],
+          "pooled_delta": 0.012766466556061173,
+          "pooled_ci95": [
+            -0.05929102503949524,
+            0.09581487778321708
+          ],
+          "groups_improved": 138,
+          "groups_worsened": 115,
+          "top5_absolute_sse_share": 0.43520616874727697,
+          "fold_pooled_wins": 3,
+          "fold_macro_wins": 4
+        },
+        "real_minus_esm2_sequence": {
+          "macro_delta": 0.010015563931288763,
+          "macro_ci95": [
+            -0.021455652308400363,
+            0.04095968213431697
+          ],
+          "pooled_delta": 0.020691142211355373,
+          "pooled_ci95": [
+            -0.01975490622689884,
+            0.06026087834026307
+          ],
+          "groups_improved": 122,
+          "groups_worsened": 131,
+          "top5_absolute_sse_share": 0.38399100066969216,
+          "fold_pooled_wins": 1,
+          "fold_macro_wins": 2
+        },
+        "real_minus_saprot_shuffled": {
+          "macro_delta": 0.004006910976787375,
+          "macro_ci95": [
+            -0.028848335108837643,
+            0.039342397589023824
+          ],
+          "pooled_delta": 0.007354462198686518,
+          "pooled_ci95": [
+            -0.04813747119601254,
+            0.06931570229222014
+          ],
+          "groups_improved": 122,
+          "groups_worsened": 131,
+          "top5_absolute_sse_share": 0.42483404563324384,
+          "fold_pooled_wins": 4,
+          "fold_macro_wins": 3
+        }
+      },
+      "selected_scales": [
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 1.0,
+          "saprot_real": 1.0,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.0
+        }
+      ]
+    },
+    "interaction_0.3": {
+      "metrics": {
+        "baseline": {
+          "pooled_rmse": 1.5563037495512397,
+          "group_macro_rmse": 1.3622206613167283
+        },
+        "esm2_sequence": {
+          "pooled_rmse": 1.520690917174036,
+          "group_macro_rmse": 1.325041362612526
+        },
+        "saprot_real": {
+          "pooled_rmse": 1.5296814033414685,
+          "group_macro_rmse": 1.3204684261620268
+        },
+        "saprot_shuffled": {
+          "pooled_rmse": 1.5617157539086144,
+          "group_macro_rmse": 1.3416359833854024
+        }
+      },
+      "contrasts": {
+        "real_minus_baseline": {
+          "macro_delta": -0.04175223515470142,
+          "macro_ci95": [
+            -0.07394853058320501,
+            -0.0097694887164115
+          ],
+          "pooled_delta": -0.02662234620977122,
+          "pooled_ci95": [
+            -0.07619685387212306,
+            0.02288378202858378
+          ],
+          "groups_improved": 145,
+          "groups_worsened": 108,
+          "top5_absolute_sse_share": 0.3735577157099241,
+          "fold_pooled_wins": 3,
+          "fold_macro_wins": 5
+        },
+        "real_minus_esm2_sequence": {
+          "macro_delta": -0.0045729364504995635,
+          "macro_ci95": [
+            -0.027921679642221354,
+            0.01812376194901518
+          ],
+          "pooled_delta": 0.008990486167432588,
+          "pooled_ci95": [
+            -0.024592797547230955,
+            0.04294815272539305
+          ],
+          "groups_improved": 124,
+          "groups_worsened": 129,
+          "top5_absolute_sse_share": 0.3992269782243105,
+          "fold_pooled_wins": 1,
+          "fold_macro_wins": 3
+        },
+        "real_minus_saprot_shuffled": {
+          "macro_delta": -0.02116755722337585,
+          "macro_ci95": [
+            -0.04528226266120721,
+            0.0022795969362136813
+          ],
+          "pooled_delta": -0.032034350567145875,
+          "pooled_ci95": [
+            -0.06472153564153242,
+            0.0021644505389994562
+          ],
+          "groups_improved": 127,
+          "groups_worsened": 126,
+          "top5_absolute_sse_share": 0.3777670105473077,
+          "fold_pooled_wins": 4,
+          "fold_macro_wins": 3
+        }
+      },
+      "selected_scales": [
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.0
+        }
+      ]
+    },
+    "protein_1.0": {
+      "metrics": {
+        "baseline": {
+          "pooled_rmse": 1.5563037495512397,
+          "group_macro_rmse": 1.3622206613167283
+        },
+        "esm2_sequence": {
+          "pooled_rmse": 1.5455286520462808,
+          "group_macro_rmse": 1.343248319880048
+        },
+        "saprot_real": {
+          "pooled_rmse": 1.5304540917655942,
+          "group_macro_rmse": 1.3240152591730416
+        },
+        "saprot_shuffled": {
+          "pooled_rmse": 1.57321574995885,
+          "group_macro_rmse": 1.3481422583641876
+        }
+      },
+      "contrasts": {
+        "real_minus_baseline": {
+          "macro_delta": -0.03820540214368627,
+          "macro_ci95": [
+            -0.07640128314150936,
+            -0.0012747961821829685
+          ],
+          "pooled_delta": -0.02584965778564552,
+          "pooled_ci95": [
+            -0.09571029324646935,
+            0.03408640311387694
+          ],
+          "groups_improved": 139,
+          "groups_worsened": 114,
+          "top5_absolute_sse_share": 0.3274113381838033,
+          "fold_pooled_wins": 4,
+          "fold_macro_wins": 4
+        },
+        "real_minus_esm2_sequence": {
+          "macro_delta": -0.019233060707006137,
+          "macro_ci95": [
+            -0.04751237608176986,
+            0.008299982721147322
+          ],
+          "pooled_delta": -0.015074560280686544,
+          "pooled_ci95": [
+            -0.056720441447330135,
+            0.02388332596789995
+          ],
+          "groups_improved": 135,
+          "groups_worsened": 118,
+          "top5_absolute_sse_share": 0.3424789113108163,
+          "fold_pooled_wins": 4,
+          "fold_macro_wins": 4
+        },
+        "real_minus_saprot_shuffled": {
+          "macro_delta": -0.02412699919114582,
+          "macro_ci95": [
+            -0.05114279049456673,
+            0.0035112572369740028
+          ],
+          "pooled_delta": -0.042761658193255725,
+          "pooled_ci95": [
+            -0.08330744471963669,
+            -0.001979479486001345
+          ],
+          "groups_improved": 127,
+          "groups_worsened": 126,
+          "top5_absolute_sse_share": 0.3747326440904573,
+          "fold_pooled_wins": 5,
+          "fold_macro_wins": 4
+        }
+      },
+      "selected_scales": [
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 1.0,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 1.0,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.1,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.0
+        }
+      ]
+    },
+    "protein_0.3": {
+      "metrics": {
+        "baseline": {
+          "pooled_rmse": 1.5563037495512397,
+          "group_macro_rmse": 1.3622206613167283
+        },
+        "esm2_sequence": {
+          "pooled_rmse": 1.5455286520462808,
+          "group_macro_rmse": 1.343248319880048
+        },
+        "saprot_real": {
+          "pooled_rmse": 1.5324374148270772,
+          "group_macro_rmse": 1.3231403415478487
+        },
+        "saprot_shuffled": {
+          "pooled_rmse": 1.57321574995885,
+          "group_macro_rmse": 1.3481422583641876
+        }
+      },
+      "contrasts": {
+        "real_minus_baseline": {
+          "macro_delta": -0.03908031976887927,
+          "macro_ci95": [
+            -0.07126114364512787,
+            -0.0070772047455033744
+          ],
+          "pooled_delta": -0.023866334724162552,
+          "pooled_ci95": [
+            -0.07902624660840539,
+            0.0245758488324594
+          ],
+          "groups_improved": 142,
+          "groups_worsened": 111,
+          "top5_absolute_sse_share": 0.3337982762489339,
+          "fold_pooled_wins": 4,
+          "fold_macro_wins": 5
+        },
+        "real_minus_esm2_sequence": {
+          "macro_delta": -0.020107978332199142,
+          "macro_ci95": [
+            -0.04531670030718382,
+            0.0035511442189624523
+          ],
+          "pooled_delta": -0.013091237219203578,
+          "pooled_ci95": [
+            -0.04850802032822983,
+            0.02173407094399105
+          ],
+          "groups_improved": 134,
+          "groups_worsened": 119,
+          "top5_absolute_sse_share": 0.3437535404371603,
+          "fold_pooled_wins": 4,
+          "fold_macro_wins": 4
+        },
+        "real_minus_saprot_shuffled": {
+          "macro_delta": -0.025001916816338822,
+          "macro_ci95": [
+            -0.04927089106534287,
+            -0.0011703379488769343
+          ],
+          "pooled_delta": -0.04077833513177276,
+          "pooled_ci95": [
+            -0.07442840014718459,
+            -0.007198949831286628
+          ],
+          "groups_improved": 134,
+          "groups_worsened": 119,
+          "top5_absolute_sse_share": 0.35721754242215814,
+          "fold_pooled_wins": 5,
+          "fold_macro_wins": 3
+        }
+      },
+      "selected_scales": [
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.3,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.3
+        },
+        {
+          "esm2_sequence": 0.1,
+          "saprot_real": 0.3,
+          "saprot_shuffled": 0.0
+        }
+      ]
+    }
+  }
+}

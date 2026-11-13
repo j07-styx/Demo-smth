@@ -18,7 +18,8 @@ def metrics(y,p,g):
     e=(y-p)**2
     return {'pooled_rmse':float(np.sqrt(e.mean())), 'group_macro_rmse':float(np.mean([np.sqrt(e[g==k].mean()) for k in np.unique(g)]))}
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--bundle-dir',required=True);ap.add_argument('--features',required=True);ap.add_argument('--out',required=True);ap.add_argument('--outer-fold',type=int,choices=range(5));a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--bundle-dir',required=True);ap.add_argument('--features',required=True);ap.add_argument('--out',required=True);ap.add_argument('--outer-fold',type=int,choices=range(5));ap.add_argument('--readout',choices=['interaction','protein'],default='interaction');ap.add_argument('--max-scale',type=float,choices=[.3,1.],default=1.);a=ap.parse_args()
+    scales=[s for s in SCALES if s<=a.max_scale]
     out=Path(a.out);out.mkdir(parents=True,exist_ok=False);b=Path(a.bundle_dir);f=Path(a.features)
     meta=json.loads((b/'manifest.json').read_text());assert meta['evidence']=='ENGINEERING_ONLY_BALM_FROZEN_TRAIN';assert sha(b/'features.npz')==meta['bundle_sha256']
     with np.load(b/'features.npz',allow_pickle=False) as z:d={k:z[k] for k in ['protein_sha','protein_sequence','protein_index','compound_index','groups','fp','label','source_row']}
@@ -34,7 +35,7 @@ def main():
     prov=json.loads((f/'provenance.json').read_text())
     for arm in ARMS:assert sha(f/(arm+'.npz'))==prov['feature_sha256'][arm+'.npz']
     conf=np.array(prov['mask_counts'])/np.array([len(s) for s in d['protein_sequence']]);common=np.column_stack([conf,np.log1p([len(s) for s in d['protein_sequence']])])
-    protocol={'evidence':'ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT','arms':ARMS,'scales':SCALES,'selection':'3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121','outer_fold':a.outer_fold,'split_seed':4110,'fit_rows':len(tr),'eval_rows':len(va),'eval_groups':len(held),'bundle_sha256':sha(b/'features.npz'),'feature_hashes':{arm:sha(f/(arm+'.npz')) for arm in ARMS},'design':'Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms','limitations':['Previously inspected holdout; exploratory, not independent test','Frozen pooled 35M representations, not full GenSPARC','SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control','Shuffled tokens can be out of distribution']}
+    protocol={'evidence':'ENGINEERING_ONLY_FROZEN_TRAIN_INTERNAL_HOLDOUT','arms':ARMS,'scales':scales,'readout':a.readout,'max_scale':a.max_scale,'selection':'3 inner group folds; macro RMSE; tie favors lower scale; alpha=1; fixed PCA/SVD seed 5121','outer_fold':a.outer_fold,'split_seed':4110,'fit_rows':len(tr),'eval_rows':len(va),'eval_groups':len(held),'bundle_sha256':sha(b/'features.npz'),'feature_hashes':{arm:sha(f/(arm+'.npz')) for arm in ARMS},'design':'Morgan L2 + sequence 3/4mer TFIDF*.25 + shared mask fraction/log length*.1; pretrained PCA32 and compound SVD32 outer product scaled by block dimension; train-only unique-molecule and unique-protein transforms','limitations':['Previously inspected holdout; exploratory, not independent test','Frozen pooled 35M representations, not full GenSPARC','SaProt vs ESM2 confounds pretraining; real vs shuffled is the within-model structural control','Shuffled tokens can be out of distribution']}
     (out/'protocol.json').write_text(json.dumps(protocol,indent=2));print('PROTOCOL LOCKED',flush=True)
     fp=normalize(csr_matrix(d['fp']))
     def blocks(fit,ev):
@@ -50,22 +51,22 @@ def main():
             pc=PCA(n_components=32,svd_solver='full').fit(p[np.unique(pi[fit])]);p=pc.transform(p);pstd=StandardScaler().fit(p[np.unique(pi[fit])]);p=pstd.transform(p).astype('float32')
             def ext(ix):
                 interaction=np.einsum('bi,bj->bij',chem[ci[ix]],p[pi[ix]]).reshape(len(ix),-1)/32
-                return csr_matrix(np.concatenate([p[pi[ix]]/np.sqrt(32),interaction],axis=1))
+                return csr_matrix(p[pi[ix]]/np.sqrt(32) if a.readout=='protein' else np.concatenate([p[pi[ix]]/np.sqrt(32),interaction],axis=1))
             extras[arm]=(ext(fit),ext(ev))
         return bt,bv,extras
     def predict(bt,bv,fit,ext=None,scale=0.):
         if scale:bt=hstack([bt,ext[0]*scale],format='csr');bv=hstack([bv,ext[1]*scale],format='csr')
         mu=y[fit].mean();sd=y[fit].std();reg=Ridge(alpha=1,solver='lsqr',tol=1e-5);reg.fit(bt,(y[fit]-mu)/sd);return reg.predict(bv)*sd+mu
-    scores={arm:{str(s):[] for s in SCALES} for arm in ARMS}
+    scores={arm:{str(s):[] for s in scales} for arm in ARMS}
     for k in range(3):
         fit=np.array([i for i in tr if fold[g[i]]!=k]);ev=np.array([i for i in tr if fold[g[i]]==k]);bt,bv,ex=blocks(fit,ev);base=predict(bt,bv,fit)
         for arm in ARMS:
-            for s in SCALES:
+            for s in scales:
                 p=base if s==0 else predict(bt,bv,fit,ex[arm],s)
                 # Store per-group errors to weight groups equally across folds.
                 scores[arm][str(s)].extend([float(np.sqrt(np.mean((y[ev][g[ev]==v]-p[g[ev]==v])**2))) for v in np.unique(g[ev])])
         print('INNER FOLD',k+1,flush=True)
-    chosen={arm:min(SCALES,key=lambda s:(np.mean(scores[arm][str(s)]),s)) for arm in ARMS}
+    chosen={arm:min(scales,key=lambda s:(np.mean(scores[arm][str(s)]),s)) for arm in ARMS}
     (out/'selection.json').write_text(json.dumps({'chosen':chosen,'scores':{arm:{s:float(np.mean(v)) for s,v in vals.items()} for arm,vals in scores.items()}},indent=2))
     bt,bv,ex=blocks(tr,va);pred={'baseline':predict(bt,bv,tr)}
     for arm in ARMS:pred[arm]=predict(bt,bv,tr,ex[arm],chosen[arm])

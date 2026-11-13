@@ -5,12 +5,12 @@ import numpy as np
 from evaluate_pretrained_structure_dev import ARMS,metrics,sha
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--bundle-dir',required=True);ap.add_argument('--features',required=True);ap.add_argument('--out',required=True);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--bundle-dir',required=True);ap.add_argument('--features',required=True);ap.add_argument('--out',required=True);ap.add_argument('--readout',choices=['interaction','protein'],default='interaction');ap.add_argument('--max-scale',type=float,choices=[.3,1.],default=1.);a=ap.parse_args()
     out=Path(a.out);out.mkdir(parents=True,exist_ok=False)
-    protocol={'evidence':'ENGINEERING_ONLY_TRAIN_NESTED_GROUP_CV','outer_folds':5,'split_seed':4110,'assignment':'shuffled sorted groups, round robin','inner_folds':3,'scale_grid':[0,.1,.3,1],'arms':['baseline']+ARMS,'selection':'same v5.3 readout; inner group-macro RMSE only','decision':'real must improve both pooled and macro versus baseline, ESM2 and shuffled; intervals reported without claiming independent-test significance','limitations':['TRAIN cohort already used for exploratory development','Group bootstrap conditions on overlapping CV fits; not full retraining uncertainty','Single outer partition and one shuffled token realization','No reserved test is read'],'evaluator_sha256':sha(Path(__file__).with_name('evaluate_pretrained_structure_dev.py'))}
+    protocol={'evidence':'ENGINEERING_ONLY_TRAIN_NESTED_GROUP_CV','outer_folds':5,'split_seed':4110,'assignment':'shuffled sorted groups, round robin','inner_folds':3,'scale_grid':[s for s in [0,.1,.3,1] if s<=a.max_scale],'readout':a.readout,'max_scale':a.max_scale,'arms':['baseline']+ARMS,'selection':'same v5.3 readout; inner group-macro RMSE only','decision':'real must improve both pooled and macro versus baseline, ESM2 and shuffled; intervals reported without claiming independent-test significance','limitations':['TRAIN cohort already used for exploratory development','Group bootstrap conditions on overlapping CV fits; not full retraining uncertainty','Single outer partition and one shuffled token realization','No reserved test is read'],'evaluator_sha256':sha(Path(__file__).with_name('evaluate_pretrained_structure_dev.py'))}
     (out/'protocol.json').write_text(json.dumps(protocol,indent=2))
     for fold in range(5):
-        cmd=[sys.executable,'-u',str(Path(__file__).with_name('evaluate_pretrained_structure_dev.py')),'--bundle-dir',a.bundle_dir,'--features',a.features,'--out',str(out/('fold_'+str(fold))),'--outer-fold',str(fold)]
+        cmd=[sys.executable,'-u',str(Path(__file__).with_name('evaluate_pretrained_structure_dev.py')),'--bundle-dir',a.bundle_dir,'--features',a.features,'--out',str(out/('fold_'+str(fold))),'--outer-fold',str(fold),'--readout',a.readout,'--max-scale',str(a.max_scale)]
         print('START OUTER',fold,flush=True);subprocess.run(cmd,check=True);print('DONE OUTER',fold,flush=True)
     with np.load(Path(a.bundle_dir)/'features.npz',allow_pickle=False) as z:
         rows=z['source_row'];y=z['label'];g=z['groups'][z['protein_index']]
