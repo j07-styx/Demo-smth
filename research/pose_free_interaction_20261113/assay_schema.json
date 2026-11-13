@@ -1,0 +1,13 @@
+{
+  "evidence": "SCHEMA_ONLY_NO_LABEL_VALUES_READ",
+  "fields": [
+    "Index",
+    "Drug_ID",
+    "Drug",
+    "Target_ID",
+    "Target",
+    "Y"
+  ],
+  "assay_like_fields": [],
+  "meaning": "Column names alone cannot authenticate comparability. No automatic same-assay assumption."
+}
