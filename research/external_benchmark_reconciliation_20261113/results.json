@@ -1,0 +1,205 @@
+{
+  "status": "EXISTING_COMPLETED_RESULTS_INTEGRITY_PASS",
+  "aggregate_sha256": "38b179767a0505c2ed2cbe6a04d90865409451f53fab8279763c88115bdba471",
+  "source_commit_recorded": "755f076ef51099a90332fd1ec8437f94e3750c0b",
+  "raw_test_values_parsed": false,
+  "new_test_scoring": false,
+  "model_training": false,
+  "comparisons": [
+    {
+      "dataset": "metz",
+      "split": "protein_cold",
+      "test_pairs": 5981,
+      "dyna": {
+        "macro_rmse": 0.7511608195848253,
+        "pooled_rmse": 0.73578831115951,
+        "pooled_mse": 0.5413844388389639,
+        "n_proteins_scored": 31,
+        "n_compound_protein_pairs": 5981
+      },
+      "perceiver": {
+        "macro_rmse": 0.7770717763215639,
+        "pooled_rmse": 0.7720575492100072,
+        "pooled_mse": 0.5960728592921628,
+        "n_proteins_scored": 31,
+        "n_compound_protein_pairs": 5981
+      },
+      "macro_ci": [
+        -0.08585785372555194,
+        0.033047192667970245
+      ],
+      "pooled_ci": [
+        -0.08499954653438925,
+        0.016172217577540046
+      ],
+      "both_point_estimates_better": true,
+      "both_intervals_below_zero": false,
+      "checkpoint_hashes_verified": 4,
+      "split_sha256": "105c26e6f6e03d1273dad0e2b8e603ef9840e62c15497080f1405371519f9d40"
+    },
+    {
+      "dataset": "metz",
+      "split": "compound_cold",
+      "test_pairs": 6117,
+      "dyna": {
+        "macro_rmse": 0.7485088021355013,
+        "pooled_rmse": 0.781367212163204,
+        "pooled_mse": 0.6105347202436976,
+        "n_proteins_scored": 170,
+        "n_compound_protein_pairs": 6117
+      },
+      "perceiver": {
+        "macro_rmse": 0.7640609466609122,
+        "pooled_rmse": 0.804359963264102,
+        "pooled_mse": 0.6469949505022276,
+        "n_proteins_scored": 170,
+        "n_compound_protein_pairs": 6117
+      },
+      "macro_ci": [
+        -0.051546023404864846,
+        0.02433977207821269
+      ],
+      "pooled_ci": [
+        -0.0652676452828184,
+        0.021794219819929607
+      ],
+      "both_point_estimates_better": true,
+      "both_intervals_below_zero": false,
+      "checkpoint_hashes_verified": 4,
+      "split_sha256": "b04bf8d4467e7d01c0e5b49445699968205a1d34f1cfbb4e8d91dfb631e8771c"
+    },
+    {
+      "dataset": "metz",
+      "split": "double_cold",
+      "test_pairs": 1416,
+      "dyna": {
+        "macro_rmse": 0.8859217374750982,
+        "pooled_rmse": 0.8906685412755899,
+        "pooled_mse": 0.7932904504179873,
+        "n_proteins_scored": 31,
+        "n_compound_protein_pairs": 1416
+      },
+      "perceiver": {
+        "macro_rmse": 1.0580082833689488,
+        "pooled_rmse": 1.0187376988813124,
+        "pooled_mse": 1.0378264991219917,
+        "n_proteins_scored": 31,
+        "n_compound_protein_pairs": 1416
+      },
+      "macro_ci": [
+        -0.2883761320306361,
+        -0.05315469551037714
+      ],
+      "pooled_ci": [
+        -0.22023707210894317,
+        -0.0365169018948492
+      ],
+      "both_point_estimates_better": true,
+      "both_intervals_below_zero": true,
+      "checkpoint_hashes_verified": 4,
+      "split_sha256": "f3d926e7c397244e13d2868b4213ef2dcf98f019d6024d073712849349af52a5"
+    },
+    {
+      "dataset": "kiba",
+      "split": "protein_cold",
+      "test_pairs": 20755,
+      "dyna": {
+        "macro_rmse": 0.6473697918975523,
+        "pooled_rmse": 0.6088409369397652,
+        "pooled_mse": 0.37068728649369104,
+        "n_proteins_scored": 41,
+        "n_compound_protein_pairs": 20755
+      },
+      "perceiver": {
+        "macro_rmse": 0.7539143266514023,
+        "pooled_rmse": 0.6944402948916273,
+        "pooled_mse": 0.4822473231691703,
+        "n_proteins_scored": 41,
+        "n_compound_protein_pairs": 20755
+      },
+      "macro_ci": [
+        -0.16401256419229399,
+        -0.05118664065702073
+      ],
+      "pooled_ci": [
+        -0.15368372809188324,
+        -0.02686454242654676
+      ],
+      "both_point_estimates_better": true,
+      "both_intervals_below_zero": true,
+      "checkpoint_hashes_verified": 4,
+      "split_sha256": "cd80808ee1e024d83d7a3f2df5ac51139fdd1b0bd9b855eb7e9d92a82e8e56c0"
+    },
+    {
+      "dataset": "kiba",
+      "split": "compound_cold",
+      "test_pairs": 23899,
+      "dyna": {
+        "macro_rmse": 0.6684043189844386,
+        "pooled_rmse": 0.6467670574246883,
+        "pooled_mse": 0.4183076265697901,
+        "n_proteins_scored": 225,
+        "n_compound_protein_pairs": 23899
+      },
+      "perceiver": {
+        "macro_rmse": 0.808298023304865,
+        "pooled_rmse": 0.8143414898117384,
+        "pooled_mse": 0.6631520620288016,
+        "n_proteins_scored": 225,
+        "n_compound_protein_pairs": 23899
+      },
+      "macro_ci": [
+        -0.18872811779293427,
+        -0.07901515832597798
+      ],
+      "pooled_ci": [
+        -0.2252536966115169,
+        -0.10964488630625484
+      ],
+      "both_point_estimates_better": true,
+      "both_intervals_below_zero": true,
+      "checkpoint_hashes_verified": 4,
+      "split_sha256": "edc70318c1c80d9cb3168b9916c025dfca71f529f436ddbb3f740895b47245bd"
+    },
+    {
+      "dataset": "kiba",
+      "split": "double_cold",
+      "test_pairs": 3442,
+      "dyna": {
+        "macro_rmse": 0.7451770953116987,
+        "pooled_rmse": 0.8104351347838795,
+        "pooled_mse": 0.656805107692165,
+        "n_proteins_scored": 37,
+        "n_compound_protein_pairs": 3442
+      },
+      "perceiver": {
+        "macro_rmse": 0.8630343002612172,
+        "pooled_rmse": 0.9266801880866423,
+        "pooled_mse": 0.8587361709922948,
+        "n_proteins_scored": 37,
+        "n_compound_protein_pairs": 3442
+      },
+      "macro_ci": [
+        -0.21602050381512725,
+        -0.024604784480076036
+      ],
+      "pooled_ci": [
+        -0.1994684780845691,
+        -0.038656331942881525
+      ],
+      "both_point_estimates_better": true,
+      "both_intervals_below_zero": true,
+      "checkpoint_hashes_verified": 4,
+      "split_sha256": "01167adb7e91cb0015f2e5e3e3f73e432a0352efdd35809fb7ed0a0588cae8c5"
+    }
+  ],
+  "wins_both": 6,
+  "both_intervals_favor_dyna": 4,
+  "limits": [
+    "Different published-paper dataset variants/splits and training budget",
+    "Different protein pretraining budgets; not architecture-only attribution",
+    "Two seeds, one partition per scenario; descriptive unadjusted intervals",
+    "These completed external tests belong to backend v5, not the BALM structure probe reserved test",
+    "No 3D encoder or expert routing in the winning model"
+  ]
+}
